@@ -1,0 +1,88 @@
+html {
+    background-color: gold;
+}
+
+body {
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+}
+
+p.error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('/ggwiki_images/error.png');
+}
+
+p.success {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('/ggwiki_images/success.png');
+}
+
+.edittable {
+    background-color: NavajoWhite;
+    margin-bottom: 3px;
+    padding: 3px 3px 3px 3px;
+}
+
+.description {
+    width: 96%;
+    height: 150px;
+    margin: 3px 3px 3px 3px;
+    resize: none;
+}
+
+button {
+    margin-top: 5px;
+}
+
+.content_edittable {
+    margin-bottom: 10px;
+}
+
+.subcontent_edittable {
+    margin-left: 20px;
+    background-color: NavajoWhite;
+    margin-bottom: 3px;
+    padding: 3px 3px 3px 3px;
+}
+
+.subcontent_button {
+    margin-left: 20px;
+}
+
+.pic {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#quick_search {
+    position: absolute;
+    z-index: 1;
+}
+
+button.quick_search {
+    border: solid 1px black;
+    display: block;
+    padding: 5px 5px 5px 5px;
+    width: 192px;
+    text-decoration: none;
+    background-color: white;
+    margin: -1px;
+}
+
+.top_button {
+    margin-bottom: 5px;
+}   

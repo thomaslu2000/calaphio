@@ -1,0 +1,22 @@
+#process_roster_results {
+	
+}
+
+#process_roster_results table {
+	width: 100%;
+}
+
+#process_roster_results th {
+	font-weight: bold;
+	text-align: center;
+}
+
+#process_roster_results td {
+	border: 1px solid white;
+	padding: 2px;
+	font-size: smaller;
+}
+
+#process_roster_results tr.odd_row td {
+	background-color: #B4B5D6;
+}

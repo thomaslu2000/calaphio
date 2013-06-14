@@ -1,0 +1,10 @@
+#paper .mailer {
+	float: none;
+	width: 508px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#paper .mailer textarea {
+	width: 500px;
+}

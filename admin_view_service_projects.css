@@ -1,0 +1,32 @@
+table.service_report
+{
+  margin-top: 1em;
+  width: 100%;
+}
+
+table.service_report th
+{
+  font-weight: bold;
+  text-align: center;
+}
+
+table.service_report td.heading
+{
+  padding-top: 1em;
+}
+
+table.service_report td.heading div
+{
+  border: solid 1px black;
+  background-color: #BBC;
+}
+
+table.service_report td.name
+{
+  padding-left: 1em;
+}
+
+table.service_report td.checklist
+{
+  text-align: center;
+}

@@ -1,0 +1,61 @@
+table.admin_superstar
+{
+  margin-top: 1em;
+  width: 100%;
+}
+
+table.admin_superstar caption
+{
+	width: 100%;
+	font-weight: bold;
+	background-color: #B4B5D6;
+	border: solid 1px black;
+}
+
+table.admin_superstar td.heading div
+{
+  border: solid 1px black;
+  background-color: #BBC;
+}
+
+table.admin_superstar td.rank
+{
+  padding-left: 1em;
+}
+
+table.admin_superstar td.name
+{
+  padding-left: 1em;
+}
+
+table.admin_superstar td.attendedTime
+{
+  padding-left: 1em;
+}
+
+table.admin_superstar td.flakedTime
+{
+  padding-left: 1em;
+}
+
+table.admin_superstar td.totalTime
+{
+  padding-left: 1em;
+}
+
+table.admin_superstar td.
+{
+  text-align: center;
+}
+
+table.admin_superstar p.left
+{
+	width: 40%;
+	float: left;
+}
+
+table.admin_superstar p.right
+{
+	margin-left: 15px;
+	float: right;
+}

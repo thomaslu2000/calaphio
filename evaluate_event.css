@@ -1,0 +1,68 @@
+div.errorMessage {
+	width: 460px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#add_evaluation {
+	
+}
+
+#add_evaluation .center {
+	text-align: center;
+}
+
+#event_title {
+	font-weight: bold;
+	font-size: larger;
+	background-color: #d5e4f2;
+}
+
+#event_title .subtitle {
+	font-weight: normal;
+	font-size: smaller;
+	text-align: left;
+	background-color: white;
+}
+
+#evaluation_attendance {
+	width: 100%;
+}
+
+#add_evaluation th {
+	text-align: left;
+}
+
+#add_evaluation td {
+	background-color: #d5e4f2;
+}
+
+#add_evaluation tr.odd {
+	
+}
+
+#add_evaluation td.center, #add_evaluation th.center {
+	text-align: center;
+}
+
+#eval_questions {
+	margin-top: 0.5em;
+	padding: 5px;
+	background-color: #d5e4f2;
+}
+
+#eval_questions .question {
+	font-weight: bold;
+}
+
+#eval_questions .text {
+	margin-bottom: 1em;
+}
+
+#eval_questions .numerical {
+	margin-bottom: 1em;
+}
+
+#eval_submit {
+	text-align: center;
+}

@@ -1,0 +1,30 @@
+#requirements table {
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+#requirements caption {
+	width: 100%;
+	font-weight: bold;
+	background-color: #B4B5D6;
+	border: solid 1px black;
+}
+
+#requirements td {
+	width: auto;
+}
+
+#requirements td.hours {
+	text-align: right;
+	width: 50px;
+	padding-right: 5px;
+}
+
+#requirements td.date {
+	width: 75px;
+	padding-left: 5px;
+}
+
+#requirements td.attendance {
+	width: 100px;
+}

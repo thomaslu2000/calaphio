@@ -1,0 +1,110 @@
+/******************
+* Yahoo! UI Reset *
+******************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym {
+	border:0;
+}
+
+/********************
+* GENERAL HTML TAGS *
+*********************/
+
+body
+{
+	font-family: "Times New Roman", times;
+	font-size: 10pt;
+	line-height: 1.2;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+em
+{
+	font-style: italic;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+p
+{
+	margin: 1.2em 0px;
+	font-size: 12pt;
+}
+
+div.document
+{
+}
+
+h1
+{
+	font-size: 3em;
+	font-family: "palatino linotype", palatino, times;
+	color: #003;
+	border-bottom: solid 1px #05B;
+	margin-bottom: 0.375em;
+}
+
+h2
+{
+	font-size: 2em;
+	font-family: "palatino linotype", palatino, times;
+	font-weight: bold;
+	color: #006;
+}
+
+.service_report td
+{
+	padding: 0px 0.5em;
+	line-height: 1.2;
+}
+
+.service_report td.date,
+.service_report td.title,
+.service_report td.hours
+{
+	font-weight: bold;
+}
+
+.service_report td.description
+{
+	padding-bottom: 1.2em;
+}
+
+.signature
+{
+	font-weight: bold;
+}

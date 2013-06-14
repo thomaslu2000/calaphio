@@ -1,0 +1,78 @@
+div.errorMessage {
+	width: 938px;
+	background-color: pink;
+	border: solid 1px red;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+div.errorMessage p {
+	margin: 0px;
+}
+
+div.successMessage {
+	width: 938px;
+	background-color: #99FF99;
+	border: solid 1px green;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+div.successMessage p {
+	margin: 0px;
+}
+
+#login_form {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+
+#login_email {
+	float: left;
+	padding: 5px; /* Padding and not margin because floated IE6 margin are buggy and doubled */
+}
+
+#login_passphrase {
+	float: left;
+	padding: 5px;
+}
+
+#login_submit {
+	float: left;
+	padding: 5px;
+}
+
+#login_footer {
+	clear: both;
+}
+
+#awards h2 {
+	text-decoration:underline;
+}
+
+#awards ul {
+	list-style: circle;
+	margin-left: 20px;
+	margin-top:5px;
+}
+
+#award_requirements table, #award_requirements th, #award_requirements td {
+	border: 1px solid black;
+	padding:5px;
+	text-align: center;
+}
+
+#award_requirements ul {
+	padding:5px;
+	text-align: center;
+}
+
+div#awards {
+	margin-left: 10px;
+}
+
+div#award_requirements {
+	margin-left: 10px;
+}
+

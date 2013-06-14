@@ -1,0 +1,68 @@
+body {
+  font-size: 8pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  display: block;
+  text-align: left;
+}
+
+h1 {
+  font-size: 16pt;
+}
+
+h2 {
+  font-size: 14pt;
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img#header {
+  display: none;
+}
+
+#paperLayer1 {
+}
+
+#paperLayer2 {
+}
+
+#paperHeader {
+  display: none;
+}
+
+#paperSubHeader {
+  display: none;
+}
+
+#paper {
+}
+
+#paper .login {
+  display: none;
+}
+
+#paper .login form {
+  display: none;
+}
+
+#paperFooter {
+  display: none;
+}
+
+#disclaimer p {
+  text-align: center;
+  font-size: 8pt;
+}

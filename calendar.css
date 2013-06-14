@@ -1,0 +1,107 @@
+#month_selection {
+	text-align: left;
+}
+
+#calendar {
+	width: 100%;
+	border: solid 1px #B8C3CD;
+	background-color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px; 
+	color: #444E58;
+	border-collapse: collapse;
+}
+
+#calendar ul {
+	list-style: none;
+	margin: 0px;
+	padding: 2px;
+}
+
+#calendar a {
+	text-decoration: none;
+	color: black;
+}
+
+#calendar a:hover {
+	text-decoration: underline;
+}
+
+#calendar caption {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#calendar tr {
+}
+
+#calendar th, #calendar td {
+	width: 14%;
+	padding: 0px;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	border-color: #5d8cc9;
+	font-size: 12px;
+}
+
+#calendar th {
+	color: #6593cf;
+	background-color: #d5e4f2;
+	text-align: center;
+	font-weight: normal;
+}
+
+#calendar td {
+ 	color: black
+	background-color: white;
+ 	text-align: left;
+	vertical-align: top;
+	height: 100px;
+}
+
+#calendar td a.dateTitle {
+	display: block;
+	color: black;
+	background-image: url('images/dateTitleGradient.jpg');
+	background-repeat: repeat-x;
+	height: 17px;
+	line-height: 17px;
+	padding-left: 2px;
+	font-weight: bold;
+}
+
+#calendar td.shade {
+	background-color: #a5bfe1;
+}
+
+#calendar td.today {
+	/*background-color: #fbc84f;*/
+	background-color: #ffffaa;
+}
+
+#calendar .attending {
+	color: red;
+}
+
+#calendar span, .upcomingEvents span {
+	font-weight: bold;
+	color: black;
+}
+
+#calendar .service, .upcomingEvents .service {
+	color: red;
+}
+
+#calendar .fellowship, .upcomingEvents .fellowship {
+	color: blue;
+}
+
+#calendar .fundraiser, .upcomingEvents .fundraiser {
+	color: green;
+}
+
+#calendar .deleted {
+	color: gray;
+	text-decoration: line-through;
+}

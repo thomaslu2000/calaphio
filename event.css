@@ -1,0 +1,141 @@
+div.errorMessage {
+	width: 460px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	margin: 0px;
+}
+
+#event {
+	margin: 10px 10px 0px 10px;
+	font-family: 'Verdana';
+	font-size: 8pt;
+}
+
+#event form {
+	margin: 0px;
+}
+
+#event_details caption {
+	display: none;
+}
+
+#event_details th {
+	text-align: left;
+	font-weight: normal;
+}
+
+#event_details td {
+	
+}
+
+#event_description_title {
+	
+}
+
+#event_description {
+	
+}
+
+#event_attendees {
+	width: 100%;
+	clear: both;
+}
+
+#event_attendees caption {
+	display: none;
+}
+
+#event_attendees th {
+	text-align: left;
+}
+
+#event_title {
+	font-weight: bold;
+	font-size: 12pt;
+	padding: 2px;
+	background-color: #d5e4f2;
+}
+
+#event_navbar {
+	text-align: right;
+	float: right;
+	margin: 5px 0px 5px 5px;
+	padding: 5px;
+	background-color: white;
+	border: dashed 1px black;
+}
+
+#event_navbar ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#event_navbar button {
+	width: 112px;
+	margin: 2px;
+}
+
+#event_body {
+	
+}
+
+#event_special_people {
+    height: 15px;
+}
+
+#event_driver {
+  	text-align: center;
+}
+
+#event_photographer {
+        float: right;
+}
+
+#event_comments {
+	margin: 1.5em 0px 1.5em 0px;
+	padding: 5px;
+	background-color: #d5e4f2;
+}
+
+#event_comments_title {
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 3px;
+}
+
+.event_comment {
+	margin: 0px 0px 3px 0px;
+	border: dashed 1px black;
+}
+
+.event_comment_body {
+	padding: 5px;
+}
+
+
+.event_comment_like {
+	padding-left: 5px;
+}
+
+
+/*
+.event_comment_like {
+	padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 5px center;    
+    background-image:url('images/facebooklikebutton.png');
+}
+*/
+
+.event_comment_signature {
+	padding: 2px;
+	text-align: right;
+}
+
+#event_post_comment {
+	text-align: center;
+}

@@ -1,0 +1,14 @@
+#quick_search {
+    position: absolute; 
+    z-index: 1;
+}
+
+a.quick_search {
+    border: solid 1px black;
+    border-top: solid 0px black;
+    display: block;
+    padding: 5px 5px 5px 5px;
+    width: 180px;
+    text-decoration: none;
+    background-color: white;
+}
