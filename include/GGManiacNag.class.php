@@ -39,6 +39,7 @@ class GGManiacNag {
 						
 						$size = ($now - $start_time) / 50000;
 						$size < 1.5 ? $size = 1.5 : $size = $size;
+						$size = min($size, 5);
 						$size .= "em";
 						$results .= <<<HEREDOC
 			<div style="text-align: center; font-weight: bold; font-size: $size;">$title</div>

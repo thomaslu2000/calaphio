@@ -22,6 +22,7 @@ class EvalNag {
 				if ($event_time > $today) continue;
 				$title = Calendar::format_event_title($row);
 				$size = ($today - $event_time) / 100000;
+				$size = min($size, 5);
 				$size .= "em";
 				$results .= <<<HEREDOC
 	<div style="text-align: center; font-weight: bold; font-size: $size;">$title</div>
