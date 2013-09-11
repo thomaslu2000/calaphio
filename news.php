@@ -72,7 +72,7 @@ if (!$g_user->is_logged_in()) {
 	To download the slides and minutes, click <a href="/CM-documents/CM1-Slides-Minutes.zip">here</a>.
     </p>
     <p style="margin-bottom: 1.5em">
-	EDIT: <a href="/CM-documents/CM1-Slideshow.zip">Slideshow</a>.
+	EDIT: <a href="/CM-documents/CM1-Slideshow.mov.zip">Slideshow</a>.
     </p>
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
