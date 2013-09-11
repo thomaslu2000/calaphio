@@ -7,7 +7,7 @@ Template::print_body_header('Home', 'OFFICERS');
 
 echo <<<DOCHERE_print_gg_maniac_poll_create
 	<div id='galleryDiv' text-align='center'>
-		<h1 align='center'> Spring 2013 Excomm </h1>
+		<h1 align='center'> Fall 2013 Excomm </h1>
 		<br>
 		<br>
 		<ul id='gallery'>
