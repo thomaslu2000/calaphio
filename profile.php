@@ -123,6 +123,7 @@ function content_maker_human($user_id) {
 }
 
 function print_requirements() {
+	global $g_user;
 	if ($g_user->is_logged_in()) {
 		// Find out if user is a pledge
 		$query = new Query(sprintf("SELECT user_id FROM %spledges WHERE user_id=%d LIMIT 1", TABLE_PREFIX, $g_user->data['user_id']));
@@ -905,7 +906,6 @@ DOCHERE;
 
 <?php
 print_requirements();
-random_function();
 ?>
 <?php
 Template::print_body_footer();
