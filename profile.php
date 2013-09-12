@@ -957,7 +957,7 @@ DOCHERE;
 
 <?php
 if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
-	$user_id = $_REQUEST['page_id'];
+	$user_id = $_REQUEST['user_id'];
 	$is_human = false;
 	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 	$row = $query->fetch_row();
