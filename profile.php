@@ -7,7 +7,7 @@ require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
 Template::print_head(array("requirements.css"));
-Template::print_body_header('Calendar', 'REQUIREMENTS');
+Template::print_body_header('Calendar', '');
  ca
 
 ?>
@@ -901,6 +901,9 @@ DOCHERE;
 		trigger_error("You must be logged in to view your requirements.", E_USER_ERROR);
 	}
 }
+?>
+
+<?php
 print_requirements();
 ?>
 <?php
