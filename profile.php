@@ -119,12 +119,66 @@ function content_maker_human($user_id) {
 	$content .= $subcontent;
 	$content .= "</div>";
 	$content .= "</div>";
-	return $content;
+
+	echo <<<HEREDOC
+	<body onmousedown="clicked_position()">
+		<div class="wiki_wrapper">
+			<div class="top">
+				<a name="home" href="ggwiki.php#home">
+					<img class="logo" src="/ggwiki_images/ggwiki_logo.png">
+				</a>
+					
+				<div class="search_wrapper">
+					<form action="ggwiki_search_result.php#home" method="get">
+					<input type="text" name="search_input" id="search_input" onclick="search_help(event, this.value, 0)" onkeyup="search_help(event, this.value, event)" onblur="clean_search(event)" autocomplete="off" />
+					<input class="button" type="submit" value="Search" />
+					<p id="search_help"></p>
+					</form>
+				</div>
+
+				<h1 class="title">
+					$main
+				</h1>
+
+				<div class="right_top">	
+					<img class="main" src="$img_name">
+					<div class="main_name">
+						<b> 
+							$main
+						</b>
+					</div>
+					<table>
+						$top_right_info
+					</table>
+					$edit_right_top
+				</div>
+	
+				<p class="description">
+					$description
+				</p>
+				$edit_main
+			</div>
+			
+			$toc
+
+			$content
+
+			<div class="cleaner"></div>
+
+			$not_admin_view
+
+			$make_new_page
+
+			$delete_page
+
+		</div>
+	</body>
+HEREDOC;
 }
 
-function print_requirements() {
+function print_requirements($user_id) {
 	global $g_user;
-	if ($g_user->is_logged_in()) {
+	if ($g_user->is_logged_in() && $g_user->data['user_id'] == $user_id) {
 		// Find out if user is a pledge
 		$query = new Query(sprintf("SELECT user_id FROM %spledges WHERE user_id=%d LIMIT 1", TABLE_PREFIX, $g_user->data['user_id']));
 		if ($row = $query->fetch_row()) {
@@ -134,8 +188,8 @@ function print_requirements() {
 		}
 		
 		$is_active = !$is_pledge;
-		$start_date = strtotime("2012-12-4");
-		$end_date = strtotime("2013-4-30");
+		$start_date = strtotime("2013-5-7");
+		$end_date = strtotime("2013-12-3");
 		$sql_start_date = date("Y-m-d", $start_date);
 		$sql_end_date = date("Y-m-d", $end_date);
 		$user_id = $g_user->data['user_id'];
@@ -662,8 +716,6 @@ $fellowship_events
 <table width="100%">
 <caption>Joining an Excomm Committee is required this year! Counts as a leadership credit as well!</caption>
 </table>
-
-<a href="requirements_fa2012.php">Fall 2012 (MH) Requirements ></a>
 </div>
 
 DOCHERE;
@@ -899,13 +951,24 @@ DOCHERE;
 			// User is neither an active or a pledge
 		}
 	} else {
-		trigger_error("You must be logged in to view your requirements.", E_USER_ERROR);
 	}
 }
 ?>
 
 <?php
-print_requirements();
+if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
+	$user_id = $_REQUEST['page_id'];
+	$is_human = false;
+	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
+	$row = $query->fetch_row();
+	if (!$row) {
+		trigger_error("This User does not exist.", E_USER_ERROR);
+	}
+} else {
+	trigger_error("No User Specified", E_USER_ERROR);	
+}
+content_maker_human($user_id);
+print_requirements($user_id);
 ?>
 <?php
 Template::print_body_footer();
