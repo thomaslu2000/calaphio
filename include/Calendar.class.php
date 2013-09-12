@@ -1712,7 +1712,7 @@ DOCHERE_print_upcoming_events;
 				trigger_error("Please check your date.", E_USER_ERROR);
 				$error = true;
 			} else {
-				$date_string = date("'Ymd'", $date);
+				$date_string = date("Y-m-d'", $date);
 			}
 		} else {
 			trigger_error("Please check your date.");
@@ -1858,7 +1858,7 @@ DOCHERE_print_upcoming_events;
 				$query = new Query("commit");
 				$old_date = date("m-d-Y", $date);
 				$date = $date + $interval;
-				$date_string = date("'Ymd'", $date);
+				$date_string = date("Y-m-d", $date);
 				if ($signup_begin_string != "NULL") {
 					$signup_begin = $signup_begin + $interval;
 					$signup_begin_string = date("Ymd", $signup_begin);
@@ -1961,7 +1961,7 @@ DOCHERE_print_upcoming_events;
 				trigger_error("Please check your date.", E_USER_ERROR);
 				$error = true;
 			} else {
-				$date = date("'Ymd'", $date);
+				$date = date("Y-m-d", $date);
 			}
 		} else {
 			trigger_error("Please check your date.");
