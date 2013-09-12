@@ -59,8 +59,8 @@ if ($g_user->is_logged_in()) {
 	}
 	
 	$is_active = !$is_pledge;
-	$start_date = strtotime("2012-12-4");
-	$end_date = strtotime("2013-4-30");
+	$start_date = strtotime("2013-5-7");
+	$end_date = strtotime("2013-12-3");
 	$sql_start_date = date("Y-m-d", $start_date);
 	$sql_end_date = date("Y-m-d", $end_date);
 	$user_id = $g_user->data['user_id'];
@@ -518,11 +518,11 @@ if ($g_user->is_logged_in()) {
 $ic_events
 </table>
 <table>
-<caption>Attend 4 out of 5 rush events - You have completed $rush_events_count</caption>
+<caption>Attend 3 out of 5 rush events - You have completed $rush_events_count</caption>
 $rush_events
 </table>
 <table>
-<caption>Complete 3 hours tabling - You have completed $tabling_hours hours</caption>
+<caption>Complete 4 hours tabling - You have completed $tabling_hours hours</caption>
 $tabling_events
 </table>
 <table>
@@ -566,7 +566,7 @@ $service_type_country
 $fellowship_events
 </table>
 <table>
-<caption>Pay your \$50 active dues (\$55 at CM3, $60 at CM6)</caption>
+<caption>Pay your \$50 active dues (\$60 at CM4, $70 at CM5)</caption>
 </table>
 
 
@@ -587,7 +587,7 @@ $fellowship_events
 <caption>Joining an Excomm Committee is required this year! Counts as a leadership credit as well!</caption>
 </table>
 
-<a href="requirements_fa2012.php">Fall 2012 (MH) Requirements ></a>
+<a href="requirements_fa2012.php">Spring 2013 (KK) Requirements ></a>
 
 DOCHERE;
 	} else if ($is_pledge) {
