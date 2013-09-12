@@ -1829,15 +1829,15 @@ DOCHERE_print_upcoming_events;
 		if (!$error) {
 			do {
 				if ($time_start == "NULL") {
-					$start_at = $date_string . " " . "00:00:00"
+					$start_at = $date_string . " " . "00:00:00";
 				} else {
-					$start_at = $date_string . " " . $time_start
+					$start_at = $date_string . " " . $time_start;
 				}
 
 				if ($time_end == "NULL") {
-					$end_at = $date_string . " " . "00:00:00"
+					$end_at = $date_string . " " . "00:00:00";
 				} else {
-					$end_at = $date_string . " " . $time_end
+					$end_at = $date_string . " " . $time_end;
 				}
 
 				$insert_statement = sprintf("INSERT INTO %scalendar_event SET title='%s', location='%s', 
@@ -2061,15 +2061,15 @@ DOCHERE_print_upcoming_events;
 		if (!$error) {
 			if ($date != null) {
 				if ($time_start == "NULL") {
-					$start_at = $date . " " . "00:00:00"
+					$start_at = $date . " " . "00:00:00";
 				} else {
-					$start_at = $date . " " . $time_start
+					$start_at = $date . " " . $time_start;
 				}
 
 				if ($time_end == "NULL") {
-					$end_at = $date . " " . "00:00:00"
+					$end_at = $date . " " . "00:00:00";
 				} else {
-					$end_at = $date . " " . $time_end
+					$end_at = $date . " " . $time_end;
 				}
 				$insert_statement = sprintf("UPDATE %scalendar_event SET title='%s', location='%s', 
 					description='%s', date=%s, time_start=%s, time_end=%s, time_allday=%s,
