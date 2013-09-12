@@ -72,8 +72,9 @@ if (!$g_user->is_logged_in()) {
 	To download the slides and minutes, click <a href="/CM-documents/CM1-Slides-Minutes.zip">here</a>.
     </p>
     <p style="margin-bottom: 1.5em">
-	EDIT: <iframe width="480" height="360" src="//www.youtube.com/embed/UDp8nnf2dSs" frameborder="0" allowfullscreen></iframe>
+	   CM1 Slideshow!
     </p>
+    <iframe width="480" height="360" src="//www.youtube.com/embed/UDp8nnf2dSs" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
