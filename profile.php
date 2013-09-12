@@ -905,6 +905,7 @@ DOCHERE;
 
 <?php
 print_requirements();
+random_function();
 ?>
 <?php
 Template::print_body_footer();
