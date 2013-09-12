@@ -13,8 +13,6 @@ Template::print_body_header('Calendar', 'REQUIREMENTS');
 ?>
 
 <script language="javascript" type="text/javascript" src="popup.js"></script>
-<div id="requirements">
-
 <?php
 
 /**
