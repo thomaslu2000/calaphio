@@ -964,11 +964,11 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 	if (!$row) {
 		trigger_error("This User does not exist.", E_USER_ERROR);
 	}
+	content_maker_human($user_id);
+	print_requirements($user_id);
 } else {
 	trigger_error("No User Specified", E_USER_ERROR);	
 }
-content_maker_human($user_id);
-print_requirements($user_id);
 ?>
 <?php
 Template::print_body_footer();
