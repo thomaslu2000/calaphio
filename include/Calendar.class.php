@@ -1712,7 +1712,7 @@ DOCHERE_print_upcoming_events;
 				trigger_error("Please check your date.", E_USER_ERROR);
 				$error = true;
 			} else {
-				$date_string = date("Y-m-d'", $date);
+				$date_string = date("Y-m-d", $date);
 			}
 		} else {
 			trigger_error("Please check your date.");
@@ -1843,7 +1843,7 @@ DOCHERE_print_upcoming_events;
 				$insert_statement = sprintf("INSERT INTO %scalendar_event SET title='%s', location='%s', 
 					description='%s', date='%s', time_start=%s, time_end=%s, time_allday=%s,
 					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, signup_lock=FALSE, creator_id=%s, time_tba=%s, start_at='%s', end_at='%s'",
-					TABLE_PREFIX, $title, $location, $description, $date_string, $time_start, $time_end, $time_allday, $signup_begin_string, $signup_cutoff_string, $signup_limit, $user_id, $time_tba, $start_at, $end_at);
+					TABLE_PREFIX, $title, $location, $description, $date_string, $time_start, $time_end, $time_allday, $signup_begin_string, $signup_cutoff_string, $signup_limit, $user_id);
 				foreach ($this->filter as $key => $value) {
 					$insert_statement .= ", $key=" . $$key;
 				}
