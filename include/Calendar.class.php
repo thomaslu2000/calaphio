@@ -1841,8 +1841,8 @@ DOCHERE_print_upcoming_events;
 				}
 
 				$insert_statement = sprintf("INSERT INTO %scalendar_event SET title='%s', location='%s', 
-					description='%s', date=%s, time_start=%s, time_end=%s, time_allday=%s,
-					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, signup_lock=FALSE, creator_id=%s, time_tba=%s, start_at=%s, end_at=%s",
+					description='%s', date='%s', time_start=%s, time_end=%s, time_allday=%s,
+					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, signup_lock=FALSE, creator_id=%s, time_tba=%s, start_at='%s', end_at='%s'",
 					TABLE_PREFIX, $title, $location, $description, $date_string, $time_start, $time_end, $time_allday, $signup_begin_string, $signup_cutoff_string, $signup_limit, $user_id, $time_tba, $start_at, $end_at);
 				foreach ($this->filter as $key => $value) {
 					$insert_statement .= ", $key=" . $$key;
@@ -2072,8 +2072,8 @@ DOCHERE_print_upcoming_events;
 					$end_at = $date . " " . $time_end;
 				}
 				$insert_statement = sprintf("UPDATE %scalendar_event SET title='%s', location='%s', 
-					description='%s', date=%s, time_start=%s, time_end=%s, time_allday=%s,
-					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, time_tba=%s, start_at=%s, end_at=%s",
+					description='%s', date='%s', time_start=%s, time_end=%s, time_allday=%s,
+					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, time_tba=%s, start_at='%s', end_at='%s'",
 					TABLE_PREFIX, $title, $location, $description, $date, $time_start, $time_end, $time_allday, $signup_begin, $signup_cutoff, $signup_limit, $time_tba, $start_at, $end_at);
 			} else {
 				$insert_statement = sprintf("UPDATE %scalendar_event SET title='%s', location='%s', 
