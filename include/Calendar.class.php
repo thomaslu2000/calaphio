@@ -1722,10 +1722,12 @@ DOCHERE_print_upcoming_events;
 			$time_start = "NULL";
 			$time_end = "NULL";
 			$time_allday = "TRUE";
+			$time_tba = "FALSE";
 		} else if (isset($_POST['tba']) && $_POST['tba']) {
 			$time_start = "NULL";
 			$time_end = "NULL";
 			$time_allday = "FALSE";
+			$time_tba = "TRUE";
 		} else if (isset($_POST['never_ends']) && $_POST['never_ends']) {
 			if (isset($_POST['start_hour']) && isset($_POST['start_minute']) && isset($_POST['start_period'])) {
 				$time_start = strtotime(sprintf("%s:%s%s", $_POST['start_hour'], $_POST['start_minute'], $_POST['start_period'] == 1 ? "pm" : "am"));
@@ -1737,6 +1739,7 @@ DOCHERE_print_upcoming_events;
 				}
 				$time_end = "NULL";
 				$time_allday = "FALSE";
+				$time_tba = "FALSE";
 			}
 		} else if (isset($_POST['start_hour']) && isset($_POST['start_minute']) && isset($_POST['start_period'])
 		&& isset($_POST['end_hour']) && isset($_POST['end_minute']) && isset($_POST['end_period'])) {
@@ -1755,6 +1758,7 @@ DOCHERE_print_upcoming_events;
 				$time_end = date("\"H:i:00\"", $time_end);
 			}
 			$time_allday = "FALSE";
+			$time_tba = "FALSE";
 		} else {
 			trigger_error("You must specify a time.", E_USER_ERROR);
 			$error = true;
@@ -1824,10 +1828,22 @@ DOCHERE_print_upcoming_events;
 		
 		if (!$error) {
 			do {
+				if ($time_start == "NULL") {
+					$start_at = $date_string . " " . "00:00:00"
+				} else {
+					$start_at = $date_string . " " . $time_start
+				}
+
+				if ($time_end == "NULL") {
+					$end_at = $date_string . " " . "00:00:00"
+				} else {
+					$end_at = $date_string . " " . $time_end
+				}
+
 				$insert_statement = sprintf("INSERT INTO %scalendar_event SET title='%s', location='%s', 
 					description='%s', date=%s, time_start=%s, time_end=%s, time_allday=%s,
-					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, signup_lock=FALSE, creator_id=%s",
-					TABLE_PREFIX, $title, $location, $description, $date_string, $time_start, $time_end, $time_allday, $signup_begin_string, $signup_cutoff_string, $signup_limit, $user_id);
+					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, signup_lock=FALSE, creator_id=%s, time_tba=%s, start_at=%s, end_at=%s",
+					TABLE_PREFIX, $title, $location, $description, $date_string, $time_start, $time_end, $time_allday, $signup_begin_string, $signup_cutoff_string, $signup_limit, $user_id, $time_tba, $start_at, $end_at);
 				foreach ($this->filter as $key => $value) {
 					$insert_statement .= ", $key=" . $$key;
 				}
@@ -1955,10 +1971,12 @@ DOCHERE_print_upcoming_events;
 			$time_start = "NULL";
 			$time_end = "NULL";
 			$time_allday = "TRUE";
+			$time_tba = "FALSE";
 		} else if (isset($_POST['tba']) && $_POST['tba']) {
 			$time_start = "NULL";
 			$time_end = "NULL";
 			$time_allday = "FALSE";
+			$time_tba = "TRUE";
 		} else if (isset($_POST['never_ends']) && $_POST['never_ends']) {
 			if (isset($_POST['start_hour']) && isset($_POST['start_minute']) && isset($_POST['start_period'])) {
 				$time_start = strtotime(sprintf("%s:%s%s", $_POST['start_hour'], $_POST['start_minute'], $_POST['start_period'] == 1 ? "pm" : "am"));
@@ -1970,6 +1988,7 @@ DOCHERE_print_upcoming_events;
 				}
 				$time_end = "NULL";
 				$time_allday = "FALSE";
+				$time_tba = "FALSE";
 			}
 		} else if (isset($_POST['start_hour']) && isset($_POST['start_minute']) && isset($_POST['start_period'])
 		&& isset($_POST['end_hour']) && isset($_POST['end_minute']) && isset($_POST['end_period'])) {
@@ -1988,6 +2007,7 @@ DOCHERE_print_upcoming_events;
 				$time_end = date("\"H:i:00\"", $time_end);
 			}
 			$time_allday = "FALSE";
+			$time_tba = "FALSE";
 		} else {
 			trigger_error("You must specify a time.", E_USER_ERROR);
 			$error = true;
@@ -2040,15 +2060,26 @@ DOCHERE_print_upcoming_events;
 		
 		if (!$error) {
 			if ($date != null) {
+				if ($time_start == "NULL") {
+					$start_at = $date . " " . "00:00:00"
+				} else {
+					$start_at = $date . " " . $time_start
+				}
+
+				if ($time_end == "NULL") {
+					$end_at = $date . " " . "00:00:00"
+				} else {
+					$end_at = $date . " " . $time_end
+				}
 				$insert_statement = sprintf("UPDATE %scalendar_event SET title='%s', location='%s', 
 					description='%s', date=%s, time_start=%s, time_end=%s, time_allday=%s,
-					signup_begin=%s, signup_cutoff=%s, signup_limit=%d",
-					TABLE_PREFIX, $title, $location, $description, $date, $time_start, $time_end, $time_allday, $signup_begin, $signup_cutoff, $signup_limit);
+					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, time_tba=%s, start_at=%s, end_at=%s",
+					TABLE_PREFIX, $title, $location, $description, $date, $time_start, $time_end, $time_allday, $signup_begin, $signup_cutoff, $signup_limit, $time_tba, $start_at, $end_at);
 			} else {
 				$insert_statement = sprintf("UPDATE %scalendar_event SET title='%s', location='%s', 
 					description='%s', time_start=%s, time_end=%s, time_allday=%s,
-					signup_begin=%s, signup_cutoff=%s, signup_limit=%d",
-					TABLE_PREFIX, $title, $location, $description, $time_start, $time_end, $time_allday, $signup_begin, $signup_cutoff, $signup_limit);
+					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, time_tba=%s",
+					TABLE_PREFIX, $title, $location, $description, $time_start, $time_end, $time_allday, $signup_begin, $signup_cutoff, $signup_limit, $time_tba);
 			}
 			foreach ($this->filter as $key => $value) {
 				$insert_statement .= ", $key=" . $$key;
