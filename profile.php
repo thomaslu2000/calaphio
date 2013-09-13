@@ -7,7 +7,7 @@ require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
 Template::print_head(array("requirements.css", "ggwiki.css", "profile.css"));
-Template::print_body_header('Calendar', '');
+Template::print_body_header('Brothers', '');
  ca
 
 ?>
@@ -985,8 +985,8 @@ DOCHERE;
 	if ($g_user->data['user_id'] == $user_id) {
 		echo <<<DOCHERE
 		<ul class="nav nav-tabs" id="profileTabs">
-		  <li><a href="#profile" data-toggle="tab">Profile</a></li>
-		  <li><a href="#profile-requirements" data-toggle="tab">Requirements</a></li>
+		  <li><a href="#profile" data-toggle="tab"><strong>Profile</strong></a></li>
+		  <li><a href="#profile-requirements" data-toggle="tab"><strong>My Requirements</strong></a></li>
 		</ul>
 DOCHERE;
 	 
