@@ -980,24 +980,41 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 		trigger_error("This User does not exist.", E_USER_ERROR);
 	}
 	profile_header($user_id);
-	echo <<<DOCHERE
-	<ul class="nav nav-tabs" id="profileTabs">
-	  <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
-	  <li><a href="#requirements" data-toggle="tab">Requirements</a></li>
-	</ul>
+	if ($g_user->data['user_id'] == $user_id) {
+		echo <<<DOCHERE
+		<ul class="nav nav-tabs" id="profileTabs">
+		  <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
+		  <li><a href="#requirements" data-toggle="tab">Requirements</a></li>
+		</ul>
 DOCHERE;
- 
- 	echo <<<DOCHERE
-	<div class="tab-content">
-	  <div class="tab-pane active" id="profile">
-	  </div>
-	  <div class="tab-pane" id="requirements">
+	 
+	 	echo <<<DOCHERE
+		<div class="tab-content">
+		  <div class="tab-pane active" id="profile">
+		  </div>
+		  <div class="tab-pane" id="requirements">
 DOCHERE;
-	print_requirements($user_id);
-	echo <<<DOCHERE
+		print_requirements($user_id);
+		echo <<<DOCHERE
+			</div>
 		</div>
-	</div>
 DOCHERE;
+	} else {
+		echo <<<DOCHERE
+		<ul class="nav nav-tabs" id="profileTabs">
+		  <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
+		</ul>
+DOCHERE;
+	 
+	 	echo <<<DOCHERE
+		<div class="tab-content">
+		  <div class="tab-pane active" id="profile">
+		  </div>
+DOCHERE;
+		echo <<<DOCHERE
+		</div>
+DOCHERE;
+	}
 
 } else {
 	trigger_error("No User Specified", E_USER_ERROR);	
