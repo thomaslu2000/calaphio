@@ -986,7 +986,7 @@ HEREDOC;
 			$event_types = implode(", ", $event_types_array);
 			
 			// Figure out who the chairs are
-			$query = new Query(sprintf("SELECT email, firstname, lastname, pledgeclass FROM %scalendar_attend JOIN %susers USING (user_id) WHERE event_id=%d AND chair=TRUE", TABLE_PREFIX, TABLE_PREFIX, $event_id));
+			$query = new Query(sprintf("SELECT user_id, email, firstname, lastname, pledgeclass FROM %scalendar_attend JOIN %susers USING (user_id) WHERE event_id=%d AND chair=TRUE", TABLE_PREFIX, TABLE_PREFIX, $event_id));
 			$chairs_array = array();
 			$chair_emails = array();
 			while ($row = $query->fetch_row()) {
