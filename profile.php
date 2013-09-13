@@ -47,7 +47,7 @@ function event_link($event_id, $title)
 	return "<a href=\"event.php?id=$event_id&sid=$session_id\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$title</a>";
 }
 
-function top_right_info_maker_helper ($key, $value) {
+function info_maker_helper ($key, $value) {
 	$info = "<tr>";
 	$info .= "<td class=\"key\">";
 	$info .= $key;
