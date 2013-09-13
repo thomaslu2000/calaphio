@@ -18,7 +18,6 @@ $shoutbox = new Shoutbox();
 $shoutbox->process();
 echo $shoutbox->display();
 
-Calendar::print_upcoming_events(5);
 
 $g_user->process_mailer(false);
 $g_user->print_mailer(false);
