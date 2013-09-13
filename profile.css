@@ -14,11 +14,12 @@
 }
 
 .profile-info {
-
+	float: left;
+	padding: 20px;
 }
 
 .basic-info {
-
+	margin-top: 20px;
 }
 
 .profile-left {
@@ -29,4 +30,13 @@
 .profile-right {
 	width: 240px;
 	float: right;
+}
+
+table.basic-info td{
+	font-size: 14px;
+}
+
+table.basic-info td.key{
+	color: gray;
+	font-weight: normal;
 }
