@@ -69,6 +69,8 @@ function basic_info($user_id) {
 		$info .= info_maker_helper("Email", $row['email']);
 		$info .= info_maker_helper("Cellphone", $row['cellphone']);
 		$info .= info_maker_helper("Major", $row['major']);
+		$info .= info_maker_helper("Address", $row['address']);
+		$info .= info_maker_helper("Shirt Size", $row['shirtsize']);
 		$info .= "</table>";
 	}
 	return $info;
