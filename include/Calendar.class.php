@@ -1476,7 +1476,7 @@ DOCHERE_print_upcoming_events;
 		}
 	}
 	
-	function print_upcoming_events($user_id, $count) {
+	function print_upcoming_events($count) {
 		print_upcoming_events_for($g_user->data['user_id'], $count);
 	}
 	
