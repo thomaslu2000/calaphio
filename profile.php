@@ -996,6 +996,9 @@ DOCHERE;
 	 	echo <<<DOCHERE
 		<div class="tab-content">
 		  <div class="tab-pane active" id="profile">
+DOCHERE;
+		print_profile($user_id);
+		echo <<<DOCHERE
 		  </div>
 		  <div class="tab-pane" id="requirements">
 DOCHERE;
@@ -1020,7 +1023,7 @@ DOCHERE;
 DOCHERE;
 		}
 	} else {
-		print_profile();
+		print_profile($user_id);
 	}
 
 } else {
