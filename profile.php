@@ -982,20 +982,20 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 	profile_header($user_id);
 	echo <<<DOCHERE
 	<ul class="nav nav-tabs" id="profileTabs">
-	  <li class="active"><a href="#profile">Profile</a></li>
-	  <li><a href="#requirements">Requirements</a></li>
+	  <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
+	  <li><a href="#requirements" data-toggle="tab">Requirements</a></li>
 	</ul>
 DOCHERE;
  
  	echo <<<DOCHERE
 	<div class="tab-content">
 	  <div class="tab-pane active" id="profile">
-
+	  </div>
+	  <div class="tab-pane" id="requirements">
 DOCHERE;
 	print_requirements($user_id);
 	echo <<<DOCHERE
-	  </div>
-	  <div class="tab-pane" id="requirements">...</div>
+		</div>
 	</div>
 DOCHERE;
 
