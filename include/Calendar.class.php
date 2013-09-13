@@ -991,7 +991,7 @@ HEREDOC;
 			$chair_emails = array();
 			while ($row = $query->fetch_row()) {
 				//$chairs_array[] = sprintf("<a href=\"mailto:%s\">%s %s</a>", $row['email'], $row['firstname'], $row['lastname']);
-				$chairs_array[] = sprintf("%s %s (%s)", $row['firstname'], $row['lastname'], $row['pledgeclass']);
+				$chairs_array[] = sprintf("<a href=\"profile.php?user_id=%d\">%s %s (%s)</a>", $row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass']);
 				$chair_emails[] = $row['email'];
 			}
 			$chairs = $chairs_array && $g_user->is_logged_in() ? implode(", ", $chairs_array) : "";
@@ -1013,11 +1013,11 @@ HEREDOC;
 				$attendee_emails[] = $row['email'];
 				$remove_attendee = !$signup_hardlock && $is_chair && $now < $event_time && $row['user_id'] != $g_user->data['user_id'] || $g_user->permit("calendar drop users") ? "<td axis=\"remove\">[<a href=\"event.php?id=$event_id&function=removeUser&user_id=$row[user_id]\" onclick=\"return confirm('Are you sure you want to REMOVE this person?')\">x</a>]</td>" : "";
 				if ($signup_limit == 0 || $attendee_count <= $signup_limit) {
-					$attendees .= sprintf("<tr><td axis=\"name\">%d. %s %s</td><td axis=\"pledgeclass\">%s</td><td axis=\"photographer\">%s</td><td axis=\"driving\">%s</td><td axis=\"phone\">%s</td><td axis=\"cell\">%s</td><td axis=\"signup\">%s</td>$remove_attendee</tr>\r\n",
-						$attendee_count, $row['firstname'], $row['lastname'], $row['pledgeclass'], $photographer, $driving, $row['phone'], $row['cellphone'], $signup_time);
+					$attendees .= sprintf("<tr><td axis=\"name\">%d. <a href=\"profile.php?user_id=%d\">%s %s</a></td><td axis=\"pledgeclass\">%s</td><td axis=\"photographer\">%s</td><td axis=\"driving\">%s</td><td axis=\"phone\">%s</td><td axis=\"cell\">%s</td><td axis=\"signup\">%s</td>$remove_attendee</tr>\r\n",
+						$attendee_count, $row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass'], $photographer, $driving, $row['phone'], $row['cellphone'], $signup_time);
 				} else {
-					$waitlist .= sprintf("<tr><td axis=\"name\">%d. %s %s</td><td axis=\"pledgeclass\">%s</td><td axis=\"photographer\">%s</td><td axis=\"driving\">%s</td><td axis=\"phone\">%s</td><td axis=\"cell\">%s</td><td axis=\"signup\">%s</td>$remove_attendee</tr>\r\n",
-						$attendee_count, $row['firstname'], $row['lastname'], $row['pledgeclass'], $photographer, $driving, $row['phone'], $row['cellphone'], $signup_time);
+					$waitlist .= sprintf("<tr><td axis=\"name\">%d. <a href=\"profile.php?user_id=%d\">%s %s</a></td><td axis=\"pledgeclass\">%s</td><td axis=\"photographer\">%s</td><td axis=\"driving\">%s</td><td axis=\"phone\">%s</td><td axis=\"cell\">%s</td><td axis=\"signup\">%s</td>$remove_attendee</tr>\r\n",
+						$attendee_count, $row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass'], $photographer, $driving, $row['phone'], $row['cellphone'], $signup_time);
 				}
 			}
 			
@@ -1080,7 +1080,7 @@ HEREDOC;
 			while ($row = $query->fetch_row()) {
 				$unlike = 0;
 				$comment_body = $this->format_add_links($row['body']);
-				$name = $row['firstname'] . " " . $row['lastname'];
+				$name = "<a href=\"profile.php?user_id=" . $row['user_id'] . "\">" . $row['firstname'] . " " . $row['lastname'] . "</a>";
 				$post_time = date("M d, Y g:ia", strtotime($row['timestamp']));
 				$queryLike = new Query(sprintf("SELECT count(*) as total FROM apo_calendar_comment_like WHERE comment_id=%d and unlike=0", $row['comment_id']));
 				$rowLike = $queryLike->fetch_row();
