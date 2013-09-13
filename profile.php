@@ -974,6 +974,9 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 	if (!$row) {
 		trigger_error("This User does not exist.", E_USER_ERROR);
 	}
+	echo <<<DOCHERE
+	<div class="profile-left">
+DOCHERE;
 	profile_header($user_id);
 	if ($g_user->data['user_id'] == $user_id) {
 		echo <<<DOCHERE
@@ -1015,6 +1018,15 @@ DOCHERE;
 	} else {
 		print_profile($user_id);
 	}
+	echo <<<DOCHERE
+	</div>
+	<div class="profile-right">
+DOCHERE;
+	
+	echo <<<DOCHERE
+	</div>
+DOCHERE;
+
 
 } else {
 	trigger_error("No User Specified", E_USER_ERROR);	

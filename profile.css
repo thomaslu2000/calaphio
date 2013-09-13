@@ -1,6 +1,7 @@
 .profile-header {
-	background-color: rgb(51, 51, 51);
+	background-color: rgb(216, 216, 216);
 	display: inline-block;
+	width: 100%;
 }
 
 .profile-picture img{
@@ -9,9 +10,7 @@
 }
 
 .profile-picture {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
+	padding: 20px;
 }
 
 .profile-info {
@@ -20,4 +19,14 @@
 
 .basic-info {
 
+}
+
+.profile-left {
+	width: 720px;
+	float: left;
+}
+
+.profile-right {
+	width: 240px;
+	float: right;
 }
