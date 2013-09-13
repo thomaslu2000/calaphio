@@ -126,9 +126,6 @@ function content_maker_human($user_id) {
 	$query = new Query(sprintf("SELECT * FROM apo_wiki_user_description WHERE user_id=%d", $user_id));
 	$row = $query->fetch_row();
 	$description = $row['description'];
-	$youtube = auto_youtube($description);
-	$description = auto_link($description);
-	$description .= $youtube;
 	$img_name = "face/" . $user_id;
 	if (file_exists($img_name . ".jpg")) {
 		$img_name = $img_name . ".jpg";
