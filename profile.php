@@ -204,6 +204,13 @@ function profile_header($user_id) {
 HEREDOC;
 }
 
+function print_upcoming_events($user_id) {
+	global $g_user;
+	if ($g_user->is_logged_in()) {
+		Calendar::print_upcoming_events_for($user_id, 5);
+	}
+}
+
 function print_requirements($user_id) {
 	global $g_user;
 	if ($g_user->is_logged_in() && $g_user->data['user_id'] == $user_id) {
@@ -1044,7 +1051,7 @@ DOCHERE;
 	</div>
 	<div class="profile-right">
 DOCHERE;
-	
+	print_upcoming_events($user_id);
 	echo <<<DOCHERE
 	</div>
 DOCHERE;

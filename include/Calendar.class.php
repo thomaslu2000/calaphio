@@ -1425,12 +1425,12 @@ $feed
 
 DOCHERE_calendar_footer;
 	}
-	
-	function print_upcoming_events($count) {
+
+	function print_upcoming_events_for($user_id, $count) {
 		global $g_user;
 		if ($g_user->is_logged_in()) {
 			$query = new Query(sprintf("SELECT %scalendar_event.* FROM %scalendar_event JOIN %scalendar_attend USING (event_id) WHERE %scalendar_attend.user_id = %d AND date >= '%s' AND deleted = FALSE ORDER BY date ASC LIMIT %d",
-				TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $g_user->data['user_id'], date("Y-m-d"), $count));
+				TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $user_id, date("Y-m-d"), $count));
 			$odd = true;
 			$event = array();
 			while ($row = $query->fetch_row()) {
@@ -1469,6 +1469,10 @@ $events
 
 DOCHERE_print_upcoming_events;
 		}
+	}
+	
+	function print_upcoming_events($user_id, $count) {
+		print_upcoming_events_for($g_user->data['user_id'], $count);
 	}
 	
 	function process_add_evaluation() {
