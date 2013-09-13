@@ -984,7 +984,7 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 		echo <<<DOCHERE
 		<ul class="nav nav-tabs" id="profileTabs">
 		  <li><a href="#profile" data-toggle="tab">Profile</a></li>
-		  <li class="active"><a href="#requirements" data-toggle="tab">Requirements</a></li>
+		  <li><a href="#requirements" data-toggle="tab">Requirements</a></li>
 		</ul>
 DOCHERE;
 	 
@@ -999,6 +999,21 @@ DOCHERE;
 			</div>
 		</div>
 DOCHERE;
+
+		$requirements = $_REQUEST['requirements'];
+		if ($requirements == "true") {
+			echo <<<DOCHERE
+			<script>
+				$('#profileTabs a[href="#requirements"]').tab('show');
+			</script>
+DOCHERE;
+		} else {
+			echo <<<DOCHERE
+			<script>
+				$('#profileTabs a[href="#profile"]').tab('show');
+			</script>
+DOCHERE;
+		}
 	} else {
 	}
 
