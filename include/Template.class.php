@@ -93,7 +93,7 @@ DOCHERE_print_head;
 				"ADD EVENT" => array("popup", "add_event.php"),
 				"CALENDAR" => "calendar.php",
 				"IC CALENDAR" => "ic_calendar.php",
-				"REQUIREMENTS" => "profile.php?requirements=true&user_id" . $g_user->data['user_id'],
+				"REQUIREMENTS" => "profile.php?requirements=true&user_id=" . $g_user->data['user_id'],
 				"BUDGET" => "https://docs.google.com/spreadsheet/ccc?key=0AuBHDr13KG8LdFNBR3l1eXVTSnBvam5kTFpkb2xhMGc#gid=0",
 				"AWARDS" => "awards.php"
 				),
