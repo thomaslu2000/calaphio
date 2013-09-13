@@ -47,8 +47,7 @@ table.basic-info td.key{
 	font-weight: normal;
 }
 
-.position {
-	margin-top: 0px;
+.about-me {
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -60,7 +59,7 @@ table.basic-info td.key{
 }
 
 #requirements table {
-	width: 95%;
+	width: 99%;
 }
 
 #requirements td.hours {

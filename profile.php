@@ -149,8 +149,24 @@ function print_profile($user_id) {
 	$content .= "</div>";
 	$content .= "</div>";
 
+	$query = new Query(sprintf("SELECT * FROM apo_wiki_user_description WHERE user_id=%d", $user_id));
+	$row = $query->fetch_row();
+	$description = $row['description'];
+	$about_me .= "<div class=\"about-me\">";
+	$about_me .= "<div class=\"section\">";
+	$about_me .= "<h2 class=\"title\">";
+	$about_me .= "About me";
+	$about_me .= "</h2>";
+	$about_me .= "<div class=\"subsection\">";
+	$about_me .= $description;
+	$about_me .= "</div>";
+	$about_me .= "</div>";
+	$about_me .= "</div>";
+
 	echo <<<HEREDOC
+		<div class="profile-content">
 		$content
+		</div>
 HEREDOC;
 }
 
