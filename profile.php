@@ -978,6 +978,9 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 	<div class="profile-left">
 DOCHERE;
 	profile_header($user_id);
+	echo <<<DOCHERE
+	<div class="main-profile">
+DOCHERE;
 	if ($g_user->data['user_id'] == $user_id) {
 		echo <<<DOCHERE
 		<ul class="nav nav-tabs" id="profileTabs">
@@ -1019,6 +1022,7 @@ DOCHERE;
 		print_profile($user_id);
 	}
 	echo <<<DOCHERE
+		</div>
 	</div>
 	<div class="profile-right">
 DOCHERE;
