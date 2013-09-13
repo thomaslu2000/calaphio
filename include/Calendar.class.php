@@ -1433,6 +1433,11 @@ DOCHERE_calendar_footer;
 				TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $user_id, date("Y-m-d"), $count));
 			$odd = true;
 			$event = array();
+			if ($g_user->data['user_id'] == $user_id) {
+				$moduleTitle = "YOUR NEXT " . $count . " EVENTS";
+			} else {
+				$moduleTitle = "NEXT " . $count . " EVENTS";
+			}
 			while ($row = $query->fetch_row()) {
 				$odd = !$odd;
 				$class = $odd ? " odd" : "";
@@ -1463,7 +1468,7 @@ DOCHERE_print_upcoming_events_item;
 			$events = implode("<hr />\r\n", $event);
 			echo <<<DOCHERE_print_upcoming_events
 <div class="upcomingEvents">
-  <p class="moduleTitle">YOUR NEXT $count EVENTS</p>
+  <p class="moduleTitle">$moduleTitle</p>
 $events
 </div>
 

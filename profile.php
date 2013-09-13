@@ -998,65 +998,65 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 	$row = $query->fetch_row();
 	if (!$row) {
 		trigger_error("This User does not exist.", E_USER_ERROR);
-	}
-	echo <<<DOCHERE
-	<div class="profile-left">
-DOCHERE;
-	profile_header($user_id);
-	echo <<<DOCHERE
-	<div class="main-profile">
-DOCHERE;
-	if ($g_user->data['user_id'] == $user_id) {
+	} else {
 		echo <<<DOCHERE
-		<ul class="nav nav-tabs" id="profileTabs">
-		  <li><a href="#profile" data-toggle="tab"><strong>Profile</strong></a></li>
-		  <li><a href="#profile-requirements" data-toggle="tab"><strong>My Requirements</strong></a></li>
-		</ul>
+		<div class="profile-left">
 DOCHERE;
-	 
-	 	echo <<<DOCHERE
-		<div class="tab-content">
-		  <div class="tab-pane active" id="profile">
-DOCHERE;
-		print_profile($user_id);
+		profile_header($user_id);
 		echo <<<DOCHERE
-		  </div>
-		  <div class="tab-pane" id="profile-requirements">
+		<div class="main-profile">
 DOCHERE;
-		print_requirements($user_id);
+		if ($g_user->data['user_id'] == $user_id) {
+			echo <<<DOCHERE
+			<ul class="nav nav-tabs" id="profileTabs">
+			  <li><a href="#profile" data-toggle="tab"><strong>Profile</strong></a></li>
+			  <li><a href="#profile-requirements" data-toggle="tab"><strong>My Requirements</strong></a></li>
+			</ul>
+DOCHERE;
+		 
+		 	echo <<<DOCHERE
+			<div class="tab-content">
+			  <div class="tab-pane active" id="profile">
+DOCHERE;
+			print_profile($user_id);
+			echo <<<DOCHERE
+			  </div>
+			  <div class="tab-pane" id="profile-requirements">
+DOCHERE;
+			print_requirements($user_id);
+			echo <<<DOCHERE
+				</div>
+			</div>
+DOCHERE;
+
+			$requirements = $_REQUEST['requirements'];
+			if ($requirements == "true") {
+				echo <<<DOCHERE
+				<script>
+					$('#profileTabs a[href="#profile-requirements"]').tab('show');
+				</script>
+DOCHERE;
+			} else {
+				echo <<<DOCHERE
+				<script>
+					$('#profileTabs a[href="#profile"]').tab('show');
+				</script>
+DOCHERE;
+			}
+		} else {
+			print_profile($user_id);
+		}
 		echo <<<DOCHERE
 			</div>
 		</div>
+		<div class="profile-right">
 DOCHERE;
-
-		$requirements = $_REQUEST['requirements'];
-		if ($requirements == "true") {
-			echo <<<DOCHERE
-			<script>
-				$('#profileTabs a[href="#profile-requirements"]').tab('show');
-			</script>
-DOCHERE;
-		} else {
-			echo <<<DOCHERE
-			<script>
-				$('#profileTabs a[href="#profile"]').tab('show');
-			</script>
-DOCHERE;
-		}
-	} else {
-		print_profile($user_id);
-	}
-	echo <<<DOCHERE
+		print_upcoming_events($user_id);
+		echo <<<DOCHERE
 		</div>
-	</div>
-	<div class="profile-right">
-DOCHERE;
-	print_upcoming_events($user_id);
-	echo <<<DOCHERE
-	</div>
 DOCHERE;
 
-
+	}
 } else {
 	trigger_error("No User Specified", E_USER_ERROR);	
 }
