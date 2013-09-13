@@ -47,6 +47,28 @@ function event_link($event_id, $title)
 	return "<a href=\"event.php?id=$event_id&sid=$session_id\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$title</a>";
 }
 
+function top_right_info_maker_helper ($key, $value) {
+	$top_right_info = "<tr>";
+	$top_right_info .= "<td class=\"key\">";
+	$top_right_info .= $key;
+	$top_right_info .= "</td>";
+	$top_right_info .= "<td class=\"value\">";
+	$top_right_info .= $value;
+	$top_right_info .= "</td>";
+	$top_right_info .= "</tr>";
+	return $top_right_info;
+}
+
+function top_right_info_maker_human ($user_id) {
+	$top_right_info = "";
+	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
+	$row = $query->fetch_row();
+	$top_right_info .= top_right_info_maker_helper("Pledge Class", $row['pledgeclass']);
+	$top_right_info .= top_right_info_maker_helper("Major", $row['major']);
+	$top_right_info .= top_right_info_maker_helper("Birthday", $row['birthday']);
+	return $top_right_info;
+}
+
 function content_maker_human($user_id) {
 	$content .= "<div class=\"position\">";
 	$content .= "<div class=\"section\">";
