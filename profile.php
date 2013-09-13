@@ -120,22 +120,31 @@ function content_maker_human($user_id) {
 	$content .= "</div>";
 	$content .= "</div>";
 
+	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
+	$row = $query->fetch_row();
+	$main = $row['firstname'] . " " . $row['lastname'];
+	$query = new Query(sprintf("SELECT * FROM apo_wiki_user_description WHERE user_id=%d", $user_id));
+	$row = $query->fetch_row();
+	$description = $row['description'];
+	$youtube = auto_youtube($description);
+	$description = auto_link($description);
+	$description .= $youtube;
+	$img_name = "face/" . $user_id;
+	if (file_exists($img_name . ".jpg")) {
+		$img_name = $img_name . ".jpg";
+	}
+	elseif (file_exists($img_name . ".png")) {
+		$img_name = $img_name . ".png";
+	}
+	else {
+		$img_name = "face/default.jpg";
+	}
+	$top_right_info =  top_right_info_maker_human($user_id);
+
 	echo <<<HEREDOC
 	<body onmousedown="clicked_position()">
 		<div class="wiki_wrapper">
 			<div class="top">
-				<a name="home" href="ggwiki.php#home">
-					<img class="logo" src="/ggwiki_images/ggwiki_logo.png">
-				</a>
-					
-				<div class="search_wrapper">
-					<form action="ggwiki_search_result.php#home" method="get">
-					<input type="text" name="search_input" id="search_input" onclick="search_help(event, this.value, 0)" onkeyup="search_help(event, this.value, event)" onblur="clean_search(event)" autocomplete="off" />
-					<input class="button" type="submit" value="Search" />
-					<p id="search_help"></p>
-					</form>
-				</div>
-
 				<h1 class="title">
 					$main
 				</h1>
@@ -150,7 +159,6 @@ function content_maker_human($user_id) {
 					<table>
 						$top_right_info
 					</table>
-					$edit_right_top
 				</div>
 	
 				<p class="description">
@@ -158,19 +166,7 @@ function content_maker_human($user_id) {
 				</p>
 				$edit_main
 			</div>
-			
-			$toc
-
 			$content
-
-			<div class="cleaner"></div>
-
-			$not_admin_view
-
-			$make_new_page
-
-			$delete_page
-
 		</div>
 	</body>
 HEREDOC;
