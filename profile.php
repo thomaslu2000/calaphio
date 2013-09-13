@@ -165,6 +165,7 @@ function print_profile($user_id) {
 
 	echo <<<HEREDOC
 		<div class="profile-content">
+		$about_me
 		$content
 		</div>
 HEREDOC;
