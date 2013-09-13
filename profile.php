@@ -984,7 +984,7 @@ DOCHERE;
 		echo <<<DOCHERE
 		<ul class="nav nav-tabs" id="profileTabs">
 		  <li><a href="#profile" data-toggle="tab">Profile</a></li>
-		  <li><a href="#requirements" data-toggle="tab">Requirements</a></li>
+		  <li><a href="#profile-requirements" data-toggle="tab">Requirements</a></li>
 		</ul>
 DOCHERE;
 	 
