@@ -61,7 +61,7 @@ function info_maker_helper($key, $value) {
 
 function basic_info($user_id) {
 	$info = "";
-	global $g_user
+	global $g_user;
 	if ($g_user->is_logged_in()) {
 		$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 		$row = $query->fetch_row();
