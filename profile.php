@@ -181,7 +181,6 @@ function profile_header($user_id) {
 				<h1>$name</h1>
 				<p>$basic_info</p>
 			</div>
-			</div>
 		</div>
 HEREDOC;
 }
@@ -996,7 +995,7 @@ DOCHERE;
 		print_profile($user_id);
 		echo <<<DOCHERE
 		  </div>
-		  <div class="tab-pane" id="requirements">
+		  <div class="tab-pane" id="profile-requirements">
 DOCHERE;
 		print_requirements($user_id);
 		echo <<<DOCHERE
@@ -1008,7 +1007,7 @@ DOCHERE;
 		if ($requirements == "true") {
 			echo <<<DOCHERE
 			<script>
-				$('#profileTabs a[href="#requirements"]').tab('show');
+				$('#profileTabs a[href="#profile-requirements"]').tab('show');
 			</script>
 DOCHERE;
 		} else {
