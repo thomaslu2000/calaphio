@@ -69,7 +69,7 @@ function top_right_info_maker_human ($user_id) {
 	return $top_right_info;
 }
 
-function profile_header($user_id) {
+function print_profile($user_id) {
 	$content .= "<div class=\"position\">";
 	$content .= "<div class=\"section\">";
 	$content .= "<h2 class=\"title\">";
@@ -142,6 +142,12 @@ function profile_header($user_id) {
 	$content .= "</div>";
 	$content .= "</div>";
 
+	echo <<<HEREDOC
+		$content
+HEREDOC;
+}
+
+function profile_header($user_id) {
 	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 	$row = $query->fetch_row();
 	$main = $row['firstname'] . " " . $row['lastname'];
@@ -185,7 +191,6 @@ function profile_header($user_id) {
 				</p>
 				$edit_main
 			</div>
-			$content
 		</div>
 	</body>
 HEREDOC;
@@ -1015,6 +1020,7 @@ DOCHERE;
 DOCHERE;
 		}
 	} else {
+		print_profile()
 	}
 
 } else {
