@@ -63,8 +63,11 @@ function basic_info($user_id) {
 	$info = "";
 	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 	$row = $query->fetch_row();
+	$info .= "<table class='basic-info'>"
 	$info .= info_maker_helper("Major", $row['major']);
-	$info .= info_maker_helper("Birthday", $row['birthday']);
+	$info .= info_maker_helper("Major", $row['major']);
+	$info .= info_maker_helper("Major", $row['major']);
+	$info .= "</table>";
 	return $info;
 }
 
@@ -166,12 +169,12 @@ function profile_header($user_id) {
 	$basic_info = basic_info($user_id);
 
 	echo <<<HEREDOC
-		<div class="profile_header">
-			<div class="profile_picture left">
+		<div class="profile-header">
+			<div class="profile-picture left">
 				<img src="$img_name">
 			</div>
 
-			<div class="profile_info">
+			<div class="profile-info">
 				<h1>$name</h1>
 				<p>$basic_info</p>
 			</div>
