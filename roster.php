@@ -7,7 +7,7 @@ Template::print_body_header('Brothers', 'ROSTER');
 $g_user->process_roster();
 echo <<<DOCHERE_print_photobox_script
 <script>
-	$('#process_roster_results').photobox('a',{ thumbs:true });
+	$('#process_roster_results').photobox('a.pic',{ thumbs:true });
 </script>
 DOCHERE_print_photobox_script;
 Template::print_body_footer();

@@ -619,14 +619,14 @@ DOCHERE_process_edit_roster;
 				if(file_exists("face/$row[user_id].png")) {
 					list($width, $height, $type, $attr) = getimagesize("face/$row[user_id].png");
 					#$person_pic = "<Center><a style=\"cursor: pointer\" onClick=\"window.open('face/$row[user_id].png','','width=$width,height=$height')\"><img src=\"face/$row[user_id].png\" width=20 height=22></a></Center>";
-					$person_pic = "<Center><a href =\"face/$row[user_id].png\" ><img src=\"face/$row[user_id].png\" width=20 height=22 alt=\"$row[firstname] $row[lastname]\"></a></Center>";		
+					$person_pic = "<Center><a class=\"pic\" href =\"face/$row[user_id].png\" ><img src=\"face/$row[user_id].png\" width=20 height=22 alt=\"$row[firstname] $row[lastname]\"></a></Center>";		
 				} else if(file_exists("face/$row[user_id].jpg")) {
 					list($width, $height, $type, $attr) = getimagesize("face/$row[user_id].jpg");
 					#$person_pic = "<Center><a style=\"cursor: pointer\" onClick=\"window.open('face/$row[user_id].jpg','','width=$width,height=$height')\"><img src=\"face/$row[user_id].jpg\" width=20 height=22></a></Center>";
-					$person_pic = "<Center><a href =\"face/$row[user_id].jpg\")\"><img src=\"face/$row[user_id].jpg\" width=20 height=22 alt=\"$row[firstname] $row[lastname]\"></a></Center>";
+					$person_pic = "<Center><a class=\"pic\" href =\"face/$row[user_id].jpg\")\"><img src=\"face/$row[user_id].jpg\" width=20 height=22 alt=\"$row[firstname] $row[lastname]\"></a></Center>";
 				} else {
 					#$person_pic = "<Center><a  style=\"cursor: pointer\" onClick=\"window.open('face/default.jpg','','width=325,height=384')\"><img src=\"face/default.jpg\" width=20 height=22></a></Center>";	
-					$person_pic = "<Center><a href =\"face/default.jpg\")\"><img src=\"face/default.jpg\" width=20 height=22 alt=\"$row[firstname] $row[lastname]\"></a></Center>";	
+					$person_pic = "<Center><a class=\"pic\" href =\"face/default.jpg\")\"><img src=\"face/default.jpg\" width=20 height=22 alt=\"$row[firstname] $row[lastname]\"></a></Center>";	
 				}
 				#<a href="buddy_list.php?pledgeclass=$row[pledgeclass]"><img src="images/bl.gif" alt="Add the pledge class to your AIM buddy list" /></a> took out of the Dochere from pledgeclass row
 				$search_results .= <<<DOCHERE_process_roster_results
