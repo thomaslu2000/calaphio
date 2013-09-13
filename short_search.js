@@ -11,7 +11,7 @@ function apo_short_search_statechange()
       for (var i = 0; i < users.length; i++) {
 	var div_node = document.createElement("div");
 	var a_node = document.createElement("a");
-	a_node.setAttribute("href", "roster.php?function=Search&user_id=" + users[i].getAttribute("user_id"));
+	a_node.setAttribute("href", "profile.php?user_id=" + users[i].getAttribute("user_id"));
 	a_node.appendChild(document.createTextNode(users[i].firstChild.nodeValue));
 	eval("a_node.onclick = function() {" +
 	     //"alert('Clicked " + users[i].getAttribute("user_id") + "');" + 

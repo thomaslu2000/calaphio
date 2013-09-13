@@ -632,7 +632,7 @@ DOCHERE_process_edit_roster;
 				$search_results .= <<<DOCHERE_process_roster_results
 <tr class="$odd_row_class">
   <td axis="pic">$person_pic</td>
-  <td axis="name">$row[firstname] $row[lastname]</td>
+  <td axis="name"><a href="profile.php?user_id=$row[user_id]>$row[firstname] $row[lastname]</a></td>
   <td axis="email"><a href="mailto:$row[email]">$row[email]</a></td>
   <td axis="address">$row[address]<br/>$row[city] $row[zipcode]</td>
   <td axis="phone">$row[phone]</td>
