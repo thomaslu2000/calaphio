@@ -58,7 +58,7 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em">
 	Leadership. Friendship. Service. Interested in pledging Alpha Phi Omega? Head over to <a href="http://rush.calaphio.com">rush.calaphio.com</a>
 	</p>
-	<p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+	<p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
 <?php endif ?>
