@@ -69,7 +69,7 @@ function top_right_info_maker_human ($user_id) {
 	return $top_right_info;
 }
 
-function content_maker_human($user_id) {
+function profile_header($user_id) {
 	$content .= "<div class=\"position\">";
 	$content .= "<div class=\"section\">";
 	$content .= "<h2 class=\"title\">";
@@ -979,8 +979,26 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 	if (!$row) {
 		trigger_error("This User does not exist.", E_USER_ERROR);
 	}
-	content_maker_human($user_id);
+	profile_header($user_id);
+	echo <<<DOCHERE
+	<ul class="nav nav-tabs" id="profileTabs">
+	  <li class="active"><a href="#profile">Profile</a></li>
+	  <li><a href="#requirements">Requirements</a></li>
+	</ul>
+DOCHERE;
+ 
+ 	echo <<<DOCHERE
+	<div class="tab-content">
+	  <div class="tab-pane active" id="profile">
+
+DOCHERE;
 	print_requirements($user_id);
+	echo <<<DOCHERE
+	  </div>
+	  <div class="tab-pane" id="requirements">...</div>
+	</div>
+DOCHERE;
+
 } else {
 	trigger_error("No User Specified", E_USER_ERROR);	
 }
