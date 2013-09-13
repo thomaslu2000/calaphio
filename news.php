@@ -76,7 +76,7 @@ if (!$g_user->is_logged_in()) {
     </p>
     <iframe width="480" height="360" src="//www.youtube.com/embed/UDp8nnf2dSs" frameborder="0" allowfullscreen></iframe>
     <br>
-    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+    <p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
 
@@ -92,7 +92,7 @@ if (!$g_user->is_logged_in()) {
       <br><a href="https://docs.google.com/document/d/14XHz9QJ3SSrlqM-O1ZLvm8R_ZnkrPzVIjE27RSM5eME/edit">Pledge Requirements</a>
     </p>
     <p style="margin-bottom: 1.5em">See you at CM!</p>
-    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+    <p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 <?php endif ?>
 

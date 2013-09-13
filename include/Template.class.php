@@ -93,7 +93,7 @@ DOCHERE_print_head;
 				"ADD EVENT" => array("popup", "add_event.php"),
 				"CALENDAR" => "calendar.php",
 				"IC CALENDAR" => "ic_calendar.php",
-				"REQUIREMENTS" => "requirements.php",
+				"REQUIREMENTS" => "profile.php?requirements=true&user_id" . $g_user->data['user_id'],
 				"BUDGET" => "https://docs.google.com/spreadsheet/ccc?key=0AuBHDr13KG8LdFNBR3l1eXVTSnBvam5kTFpkb2xhMGc#gid=0",
 				"AWARDS" => "awards.php"
 				),
@@ -153,7 +153,7 @@ DOCHERE_print_head;
 
 		// Process welcome bar
 		$logout = $g_user->is_logged_in() ? "<a href=\"logout.php\">Logout</a>" : "<div style=\"float: right\">Region 10 - Section 4</div>";
-		$welcome_message = $g_user->is_logged_in() ? "Hello, " . $g_user->data['firstname'] . " " . $g_user->data['lastname'] . "!" : "Welcome to the Gamma Gamma Chapter of Alpha Phi Omega!";
+		$welcome_message = $g_user->is_logged_in() ? "Hello, " . $g_user->data['firstname'] . " " . $g_user->data['lastname'] . "! " . "<a href=\"profile.php?user_id=" . $g_user->data['user_id'] . "\">(My Profile)</a>"  : "Welcome to the Gamma Gamma Chapter of Alpha Phi Omega!";
 		$notifications = ($g_user->is_logged_in() &&  $g_user->data['user_id'] == 2000) ? "<div class=\"dropdown\" style=\"display:inline\">
             <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Dropdown trigger</a>
             <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"dLabel\">
