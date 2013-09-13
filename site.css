@@ -76,3 +76,11 @@ div#award_requirements {
 	margin-left: 10px;
 }
 
+.right {
+	float: right;
+}
+
+,left {
+	float: left;
+}
+

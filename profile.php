@@ -47,7 +47,7 @@ function event_link($event_id, $title)
 	return "<a href=\"event.php?id=$event_id&sid=$session_id\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$title</a>";
 }
 
-function info_maker_helper ($key, $value) {
+function info_maker_helper($key, $value) {
 	$info = "<tr>";
 	$info .= "<td class=\"key\">";
 	$info .= $key;
@@ -63,7 +63,6 @@ function basic_info($user_id) {
 	$info = "";
 	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 	$row = $query->fetch_row();
-	$info .= info_maker_helper("Pledge Class", $row['pledgeclass']);
 	$info .= info_maker_helper("Major", $row['major']);
 	$info .= info_maker_helper("Birthday", $row['birthday']);
 	return $info;
@@ -150,7 +149,7 @@ HEREDOC;
 function profile_header($user_id) {
 	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 	$row = $query->fetch_row();
-	$name = $row['firstname'] . " " . $row['lastname'] . "(". $row['pledgeclass'] . ")";
+	$name = $row['firstname'] . " " . $row['lastname'] . " (". $row['pledgeclass'] . ")";
 	$query = new Query(sprintf("SELECT * FROM apo_wiki_user_description WHERE user_id=%d", $user_id));
 	$row = $query->fetch_row();
 	$description = $row['description'];
@@ -164,16 +163,16 @@ function profile_header($user_id) {
 	else {
 		$img_name = "face/default.jpg";
 	}
-	$basic_info =  basic_info($user_id);
+	$basic_info = basic_info($user_id);
 
 	echo <<<HEREDOC
 		<div class="profile_header">
-			<div class="profile_picture">
+			<div class="profile_picture left">
 				<img src="$img_name">
 			</div>
 
 			<div class="profile_info">
-				<h2>$name</h2>
+				<h1>$name</h1>
 				<p>$basic_info</p>
 			</div>
 			</div>
