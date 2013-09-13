@@ -61,13 +61,16 @@ function info_maker_helper($key, $value) {
 
 function basic_info($user_id) {
 	$info = "";
-	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
-	$row = $query->fetch_row();
-	$info .= "<table class='basic-info'>"
-	$info .= info_maker_helper("Major", $row['major']);
-	$info .= info_maker_helper("Major", $row['major']);
-	$info .= info_maker_helper("Major", $row['major']);
-	$info .= "</table>";
+	global $g_user
+	if ($g_user->is_logged_in()) {
+		$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
+		$row = $query->fetch_row();
+		$info .= "<table class='basic-info'>";
+		$info .= info_maker_helper("Email", $row['email']);
+		$info .= info_maker_helper("Cellphone", $row['cellphone']);
+		$info .= info_maker_helper("Major", $row['major']);
+		$info .= "</table>";
+	}
 	return $info;
 }
 
