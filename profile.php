@@ -48,25 +48,25 @@ function event_link($event_id, $title)
 }
 
 function top_right_info_maker_helper ($key, $value) {
-	$top_right_info = "<tr>";
-	$top_right_info .= "<td class=\"key\">";
-	$top_right_info .= $key;
-	$top_right_info .= "</td>";
-	$top_right_info .= "<td class=\"value\">";
-	$top_right_info .= $value;
-	$top_right_info .= "</td>";
-	$top_right_info .= "</tr>";
-	return $top_right_info;
+	$info = "<tr>";
+	$info .= "<td class=\"key\">";
+	$info .= $key;
+	$info .= "</td>";
+	$info .= "<td class=\"value\">";
+	$info .= $value;
+	$info .= "</td>";
+	$info .= "</tr>";
+	return $info;
 }
 
-function top_right_info_maker_human ($user_id) {
-	$top_right_info = "";
+function basic_info($user_id) {
+	$info = "";
 	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 	$row = $query->fetch_row();
-	$top_right_info .= top_right_info_maker_helper("Pledge Class", $row['pledgeclass']);
-	$top_right_info .= top_right_info_maker_helper("Major", $row['major']);
-	$top_right_info .= top_right_info_maker_helper("Birthday", $row['birthday']);
-	return $top_right_info;
+	$info .= info_maker_helper("Pledge Class", $row['pledgeclass']);
+	$info .= info_maker_helper("Major", $row['major']);
+	$info .= info_maker_helper("Birthday", $row['birthday']);
+	return $info;
 }
 
 function print_profile($user_id) {
@@ -150,7 +150,7 @@ HEREDOC;
 function profile_header($user_id) {
 	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 	$row = $query->fetch_row();
-	$main = $row['firstname'] . " " . $row['lastname'];
+	$name = $row['firstname'] . " " . $row['lastname'] . "(". $row['pledgeclass'] . ")";
 	$query = new Query(sprintf("SELECT * FROM apo_wiki_user_description WHERE user_id=%d", $user_id));
 	$row = $query->fetch_row();
 	$description = $row['description'];
@@ -164,35 +164,20 @@ function profile_header($user_id) {
 	else {
 		$img_name = "face/default.jpg";
 	}
-	$top_right_info =  top_right_info_maker_human($user_id);
+	$basic_info =  basic_info($user_id);
 
 	echo <<<HEREDOC
-	<body onmousedown="clicked_position()">
-		<div class="wiki_wrapper">
-			<div class="top">
-				<h1 class="title">
-					$main
-				</h1>
+		<div class="profile_header">
+			<div class="profile_picture">
+				<img src="$img_name">
+			</div>
 
-				<div class="right_top">	
-					<img class="main" src="$img_name">
-					<div class="main_name">
-						<b> 
-							$main
-						</b>
-					</div>
-					<table>
-						$top_right_info
-					</table>
-				</div>
-	
-				<p class="description">
-					$description
-				</p>
-				$edit_main
+			<div class="profile_info">
+				<h2>$name</h2>
+				<p>$basic_info</p>
+			</div>
 			</div>
 		</div>
-	</body>
 HEREDOC;
 }
 
