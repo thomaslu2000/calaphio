@@ -1020,7 +1020,7 @@ DOCHERE;
 DOCHERE;
 		}
 	} else {
-		print_profile()
+		print_profile();
 	}
 
 } else {
