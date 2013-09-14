@@ -212,7 +212,9 @@ function profile_header($user_id) {
 	echo <<<HEREDOC
 		<div class="profile-header">
 			<div class="profile-picture left">
+				<a class="pic" href="$img_name">
 				<img src="$img_name">
+				</a>
 			</div>
 
 			<div class="profile-info">
@@ -1080,6 +1082,10 @@ DOCHERE;
 	trigger_error("No User Specified", E_USER_ERROR);	
 }
 ?>
+
+<script>
+		$('.profile-picture').photobox('a.pic',{ thumbs:true });
+	</script>
 <?php
 Template::print_body_footer();
 Template::print_disclaimer();
