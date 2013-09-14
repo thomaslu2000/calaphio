@@ -20,7 +20,6 @@ User Search: <input id="apo_short_search_input" type="text" />
 </form>
 <div id="apo_short_search_result" style="padding-left: 15ex"></div>
 </br>
-</br>
 <?php
 
 /**
