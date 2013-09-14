@@ -103,4 +103,3 @@ class SimpleImage {
  
 }
 ?>
-- See more at: http://www.white-hat-web-design.co.uk/blog/resizing-images-with-php/#sthash.KUBLoUps.dpuf
