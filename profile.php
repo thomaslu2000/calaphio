@@ -47,6 +47,40 @@ function event_link($event_id, $title)
 	return "<a href=\"event.php?id=$event_id&sid=$session_id\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$title</a>";
 }
 
+// Best Function Ever
+function auto_link($text) {
+	$pattern = "/(((http[s]?:\/\/)|(www\.))(([a-z][-a-z0-9]+\.)?[a-z][-a-z0-9]+\.[a-z]+(\.[a-z]{2,3})?)\/?[a-z0-9.,_\/~#&=;%+?-]+[a-z0-9\/#=?]{1,1})/is";
+	$text = preg_replace($pattern, "<a href='$1'>$1</a>", $text);
+	$text = preg_replace("/href='www\./", "href='http://www\.", $text);
+	$pattern = "/((<a href='(((http[s]?:\/\/)|(www\.))(([a-z][-a-z0-9]+\.)?[a-z][-a-z0-9]+\.[a-z]+(\.[a-z]{2,3})?)\/?[a-z0-9.,_\/~#&=;%+?-]+[a-z0-9\/#=?]{1,1})'>)(((http[s]?:\/\/)|(www\.))(([a-z][-a-z0-9]+\.)?[a-z][-a-z0-9]+\.[a-z]+(\.[a-z]{2,3})?)\/?[a-z0-9.,_\/~#&=;%+?-]+[a-z0-9\/#=?]{1,1})(<\/a>)( &quot;([\w\W ]+)&quot;))/is";
+    $orig_text = $text;
+    $count = 14;
+    while ($count < strlen($orig_text)) {
+        $text = preg_replace($pattern, "$2$19$17", substr($orig_text, 0, $count));
+        $orig_text = $text . substr($orig_text, $count);
+        $count = strlen($text);
+        if ($count + 1 == strlen($orig_text)) {
+            break;
+        } else {
+            $count = $count + 14;
+            if ($count >= strlen($orig_text)) {
+                $count = strlen($orig_text) - 1;
+            }
+        }
+    }
+	return $orig_text;
+}
+
+// Second Best Function Ever
+function auto_youtube($text) {
+	$pattern = "/http[s]?:\/\/(?:[a-zA_Z]{2,3}.)?(?:youtube\.com\/watch\?)((?:[\w\d\-\_\=]+&amp;(?:amp;)?)*v(?:&lt;[A-Z]+&gt;)?=([0-9a-zA-Z\-\_]+))/i";
+	preg_match($pattern, $text, $matches);
+	if($matches[2]) {
+		$ret = "<br /><br /><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/" . $matches[2] . "\" frameborder=\"0\" allowfullscreen></iframe>";
+	}
+	return $ret;
+}
+
 function info_maker_helper($key, $value) {
 	$info = "<tr>";
 	$info .= "<td class=\"key\">";
@@ -165,13 +199,16 @@ function print_profile($user_id) {
 	$query = new Query(sprintf("SELECT * FROM apo_wiki_user_description WHERE user_id=%d", $user_id));
 	$row = $query->fetch_row();
 	$description = $row['description'];
+	$youtube = auto_youtube($description);
+	$description = auto_link($description);
+	$description .= $youtube;
 	$about_me .= "<div class=\"about-me\">";
 	$about_me .= "<div class=\"section\">";
 	$about_me .= "<h2 class=\"title\">";
 	$about_me .= "About me";
 	$about_me .= "</h2>";
 	if ($g_user->data['user_id'] == $user_id) {
-		$about_me .= "<p class=\"description\"><button href=\"ggwiki_edit.php?function=edit_main_human&user_id=$user_id\" class=\"edit\" onclick=\"return popup('ggwiki_edit.php?function=edit_main_human&user_id=$user_id', 550, 560)\" resize=\"none\">Edit Main Description</button></p>";
+		$about_me .= "<p class=\"description\"><button href=\"ggwiki_edit.php?function=edit_main_human&user_id=$user_id\" class=\"edit\" onclick=\"return popup('ggwiki_edit.php?function=edit_main_human&user_id=$user_id', 550, 560)\" resize=\"none\">Edit About Me</button></p>";
 	}
 	$about_me .= "<div class=\"subsection\">";
 	$about_me .= $description;
