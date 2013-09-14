@@ -6,7 +6,6 @@
 require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
-require("requirements.php");
 Template::print_head(array("requirements.css", "ggwiki.css", "profile.css"));
 Template::print_body_header('Brothers', '');
  ca
