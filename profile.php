@@ -16,9 +16,11 @@ Template::print_body_header('Brothers', '');
 <script type="text/javascript" src="ajax.js"></script>
 <script type="text/javascript" src="short_search.js"></script>
 <form method="get" action="" onsubmit="return false">
-Quick Search: <input id="apo_short_search_input" type="text" />
+User Search: <input id="apo_short_search_input" type="text" />
 </form>
 <div id="apo_short_search_result" style="padding-left: 15ex"></div>
+</br>
+</br>
 <?php
 
 /**
