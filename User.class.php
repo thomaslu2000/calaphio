@@ -425,8 +425,8 @@ DOCHERE_process_change_passphrase;
 <tr><td axis="name">Phone Carrier</td><td axis="value"><select name="carrier">$carrier</td></tr>
 <tr><td axis="name">Email Requirements Reminders</td><td axis="value"><input type="checkbox" name="mail_requirements_update" $checked/></td></tr>
 </table>
-<button type="submit" name="function" value="Submit">Submit</button>
-<button type="reset">Reset</button>
+<button class="btn btn-small btn-primary" type="submit" name="function" value="Submit">Submit</button>
+<button class="btn btn-small btn-inverse" type="reset">Reset</button>
 </form>
 </div>
 DOCHERE_print_edit_roster;
