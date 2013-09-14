@@ -105,7 +105,7 @@ function print_profile($user_id) {
 		  $page_query = new Query(sprintf("SELECT * FROM apo_wiki_pages WHERE page_name LIKE '%s'", ("%(" . $ns. ")" . " Semester%")));
 		  if ($page_row = $page_query->fetch_row()) {
 			$page_id = $sem_row['page_id'];
-			$subcontent .= sprinff("<a href =\"ggwiki.php?page_id=%d#home\">", $page_id);
+			$subcontent .= sprintf("<a href =\"ggwiki.php?page_id=%d#home\">", $page_id);
 			$subcontent .= "<h2 class =\"subtitle\">";
 			$subcontent .= $ns . " Semester (" . $semester_year  . ")";
 		  	$subcontent .= "</h2>";
