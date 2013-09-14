@@ -48,9 +48,9 @@ if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
 echo <<<DOCHERE
 <body>
 <form method="post" enctype="multipart/form-data">
-  <input type="file" name="upfile" size="30" /><br />
+  <input class="btn btn-small" type="file" name="upfile" size="30" /><br />
   <br />
-  <input type="submit" value="Upload" />
+  <input class="btn btn-primary btn-small" type="submit" value="Upload" />
 </form>
 DOCHERE;
 Template::print_body_footer();
