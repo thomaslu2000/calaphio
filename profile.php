@@ -77,6 +77,7 @@ function basic_info($user_id) {
 }
 
 function print_profile($user_id) {
+	global $g_user;
 	$content .= "<div class=\"position\">";
 	$content .= "<div class=\"section\">";
 	$content .= "<h2 class=\"title\">";
@@ -169,6 +170,9 @@ function print_profile($user_id) {
 	$about_me .= "<h2 class=\"title\">";
 	$about_me .= "About me";
 	$about_me .= "</h2>";
+	if ($g_user->data['user_id'] == $user_id) {
+		$about_me .= "<p class=\"description\"><button href=\"ggwiki_edit.php?function=edit_main_human&user_id=$user_id\" class=\"edit\" onclick=\"return popup('ggwiki_edit.php?function=edit_main_human&user_id=$user_id', 550, 560)\" resize=\"none\">Edit Main Description</button></p>";
+	}
 	$about_me .= "<div class=\"subsection\">";
 	$about_me .= $description;
 	$about_me .= "</div>";
@@ -213,7 +217,7 @@ function profile_header($user_id) {
 		<div class="profile-header">
 			<div class="profile-picture left">
 				<a class="pic" href="$img_name">
-				<img src="$img_name">
+				<img src="$img_name" alt="$name">
 				</a>
 			</div>
 
