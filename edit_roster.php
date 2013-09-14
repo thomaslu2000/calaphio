@@ -2,7 +2,6 @@
 require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
-require("include/SimpleImage.class.php");
 Template::print_head(array());
 Template::print_body_header('Brothers', 'ACCOUNT');
 if (!$g_user->process_change_passphrase()) {
@@ -16,47 +15,34 @@ echo "<br />";
 
 if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
   if ($file = getimagesize($_FILES["upfile"]["tmp_name"])) {
-	if($file[2] == IMAGETYPE_PNG) {
+	if($_FILES["upfile"]["size"] <= 1000000 && $file[2] == IMAGETYPE_PNG) {
 		if (file_exists("./face/" . $g_user->data['user_id'] . ".jpg")) {
 			unlink("./face/" . $g_user->data[user_id] . ".jpg");
 		} 
-		$image->load($_FILES['uploaded_image']['tmp_name']); 
-		$image->resizeToWidth(150); 
-		$image->output();
 		if (move_uploaded_file($_FILES["upfile"]["tmp_name"], "face/" . $g_user->data['user_id'] . ".png")) {
-				$filename = "face/" . $g_user->data['user_id'] . ".png";
-    			$image = new SimpleImage();
-    			$image->load($filename); 
-    			$image->resizeToWidth(400); 
-    			$image->save($filename);
-    			chmod($filename, 0644);
+    			chmod("files/" . $g_user->data['user_id'] . ".png", 0644);
     			echo $_FILES["upfile"]["name"] . " upload successful";
 		} else {
 			echo "Can not upload the photo for an unknown reason";
 		}
-	} else if ($file[2] == IMAGETYPE_JPEG) { 
+	} else if ($_FILES["upfile"]["size"] <= 1000000 && $file[2] == IMAGETYPE_JPEG) { 
 		if (file_exists("./face/" . $g_user->data['user_id'] . ".png")) {
 			unlink("./face/" . $g_user->data['user_id'] . ".png");
 		}
 		if (move_uploaded_file($_FILES["upfile"]["tmp_name"], "face/" . $g_user->data['user_id'] . ".jpg")) {
-    			$filename = "face/" . $g_user->data['user_id'] . ".jpg";
-    			$image = new SimpleImage();
-    			$image->load($filename); 
-    			$image->resizeToWidth(400); 
-    			$image->save($filename);
-    			chmod($filename, 0644);
+    			chmod("files/" . $g_user->data['user_id'] . ".jpg", 0644);
     			echo $_FILES["upfile"]["name"] . " upload successful";
 		} else {
 			echo "Can't upload the photo for an unknown reason";
 		}
   	} else {
-    	     echo "Can't upload the photo (check that the format is PNG or JPG)";
+    	     echo "Can't upload the photo (check the size/format)";
  	 } 
   }else {
   	echo "Not a photo";
   }
 } else {
-  echo "Upload your APO profile photo (.PNG or .JPG and the size has to be under 100KB)";
+  echo "Upload your APO profile photo (.PNG or .JPG and the size has to be under 1.0MB)";
 }
 
 echo <<<DOCHERE
