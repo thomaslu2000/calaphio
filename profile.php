@@ -95,7 +95,6 @@ function print_profile($user_id) {
 		    $subcontent .= "</div>";	
 		  }
 		  $subcontent .= "<div class=\"subsection\">";
-		  $subcontent .= "<h2 class =\"subtitle\">";
 		  $sem_query = new Query(sprintf("SELECT * FROM apo_wiki_semesters WHERE semester=%d and year=%d", $row['semester'], $row['year']));
 		  if ($sem_row = $sem_query->fetch_row()) {
 			$ns = $sem_row['namesake_short'];
@@ -103,8 +102,21 @@ function print_profile($user_id) {
 		  else {
 			$ns = "Unknown Namesake";
 		  }
-		  $subcontent .= $ns . " Semester (" . $semester_year  . ")";
-		  $subcontent .= "</h2>";
+		  $page_query = new Query(sprintf("SELECT * FROM apo_wiki_pages WHERE semester LIKE %s", "(" . $ns. ")" . " Semester"));
+		  if ($page_row = $page_query->fetch_row()) {
+			$page_id = $sem_row['page_id'];
+			$subcontent .= sprinff("<a href =\"ggwiki.php?page_id=%d#home\">", $page_id);
+			$subcontent .= "<h2 class =\"subtitle\">";
+			$subcontent .= $ns . " Semester (" . $semester_year  . ")";
+		  	$subcontent .= "</h2>";
+		  	$subcontent .= "</a>";
+		  }
+		  else {
+		  	$subcontent .= "<h2 class =\"subtitle\">";
+			$subcontent .= $ns . " Semester (" . $semester_year  . ")";
+		  	$subcontent .= "</h2>";
+		  }
+
 		  $subcontent .= "<p class=\"description\">";
 		  $array = array();
 		}
