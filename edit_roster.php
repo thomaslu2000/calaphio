@@ -2,7 +2,7 @@
 require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
-require("include/Simple.class.php");
+require("include/SimpleImage.class.php");
 Template::print_head(array());
 Template::print_body_header('Brothers', 'ACCOUNT');
 if (!$g_user->process_change_passphrase()) {
@@ -22,6 +22,10 @@ if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
 		} 
 		if (move_uploaded_file($_FILES["upfile"]["tmp_name"], "face/" . $g_user->data['user_id'] . ".png")) {
 				$filename = "files/" . $g_user->data['user_id'] . ".png";
+    			$image = new SimpleImage();
+    			$image->load($filename); 
+    			$image->resizeToWidth(400); 
+    			$image->save($filename);
     			chmod($filename, 0644);
     			echo $_FILES["upfile"]["name"] . " upload successful";
 		} else {
@@ -33,6 +37,10 @@ if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
 		}
 		if (move_uploaded_file($_FILES["upfile"]["tmp_name"], "face/" . $g_user->data['user_id'] . ".jpg")) {
     			$filename = "files/" . $g_user->data['user_id'] . ".jpg";
+    			$image = new SimpleImage();
+    			$image->load($filename); 
+    			$image->resizeToWidth(400); 
+    			$image->save($filename);
     			chmod($filename, 0644);
     			echo $_FILES["upfile"]["name"] . " upload successful";
 		} else {
