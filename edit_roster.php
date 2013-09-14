@@ -20,8 +20,11 @@ if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
 		if (file_exists("./face/" . $g_user->data['user_id'] . ".jpg")) {
 			unlink("./face/" . $g_user->data[user_id] . ".jpg");
 		} 
+		$image->load($_FILES['uploaded_image']['tmp_name']); 
+		$image->resizeToWidth(150); 
+		$image->output();
 		if (move_uploaded_file($_FILES["upfile"]["tmp_name"], "face/" . $g_user->data['user_id'] . ".png")) {
-				$filename = "files/" . $g_user->data['user_id'] . ".png";
+				$filename = "face/" . $g_user->data['user_id'] . ".png";
     			$image = new SimpleImage();
     			$image->load($filename); 
     			$image->resizeToWidth(400); 
@@ -36,7 +39,7 @@ if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
 			unlink("./face/" . $g_user->data['user_id'] . ".png");
 		}
 		if (move_uploaded_file($_FILES["upfile"]["tmp_name"], "face/" . $g_user->data['user_id'] . ".jpg")) {
-    			$filename = "files/" . $g_user->data['user_id'] . ".jpg";
+    			$filename = "face/" . $g_user->data['user_id'] . ".jpg";
     			$image = new SimpleImage();
     			$image->load($filename); 
     			$image->resizeToWidth(400); 
