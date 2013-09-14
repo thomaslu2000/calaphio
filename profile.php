@@ -37,17 +37,6 @@ function process_attendance($attended, $flaked, $chair)
 	}
 }
 
-/**
- *
- */
-function event_link($event_id, $title)
-{
-	$popup_width = CALENDAR_POPUP_WIDTH;
-	$popup_height = CALENDAR_POPUP_HEIGHT;
-	$session_id = session_id(); // JavaScript popups in IE tend to block cookies, so need to explicitly set session id
-	return "<a href=\"event.php?id=$event_id&sid=$session_id\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$title</a>";
-}
-
 function info_maker_helper($key, $value) {
 	$info = "<tr>";
 	$info .= "<td class=\"key\">";
