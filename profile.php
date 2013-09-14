@@ -192,9 +192,9 @@ function profile_header($user_id) {\
 	$basic_info = basic_info($user_id);
 
 	if ($g_user->data['user_id'] == $user_id) {
-		$edit_profile = "<i class=\"icon-pencil\"><a href=\"edit_roster.php\">Edit Account Info</a></i>"
+		$edit_profile = "<i class=\"icon-pencil\"><a href=\"edit_roster.php\">Edit Account Info</a></i>";
 	} else {
-		$edit_profile = ""
+		$edit_profile = "";
 	}
 
 	echo <<<HEREDOC
