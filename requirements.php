@@ -6,6 +6,7 @@
 require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
+require("requirements.php")
 Template::print_head(array("requirements.css"));
 Template::print_body_header('Calendar', 'REQUIREMENTS');
  ca
@@ -36,17 +37,6 @@ function process_attendance($attended, $flaked, $chair)
 		trigger_error("Woops, something happened behind the scenes that wasn't expected. Please contact the webmaster!", E_USER_ERROR);
 		return "";
 	}
-}
-
-/**
- *
- */
-function event_link($event_id, $title)
-{
-	$popup_width = CALENDAR_POPUP_WIDTH;
-	$popup_height = CALENDAR_POPUP_HEIGHT;
-	$session_id = session_id(); // JavaScript popups in IE tend to block cookies, so need to explicitly set session id
-	return "<a href=\"event.php?id=$event_id&sid=$session_id\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$title</a>";
 }
 
 if ($g_user->is_logged_in()) {
