@@ -217,7 +217,7 @@ class User {
 <tr><td>New Passphrase: </td><td><input type="password" name="new_passphrase" /></td></tr>
 <tr><td>Repeat Passphrase: </td><td><input type="password" name="repeat_passphrase" /></td></tr>
 </table>
-<button type="submit" name="function" value="Change Passphrase">Change Passphrase</button>
+<button class="btn btn-small btn-primary" type="submit" name="function" value="Change Passphrase">Change Passphrase</button>
 </form>
 </div>
 
