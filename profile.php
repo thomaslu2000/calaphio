@@ -171,7 +171,8 @@ function print_profile($user_id) {
 HEREDOC;
 }
 
-function profile_header($user_id) {
+function profile_header($user_id) {\
+	global $g_user;
 	$query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d and depledged=0 LIMIT 1", $user_id));
 	$row = $query->fetch_row();
 	$name = $row['firstname'] . " " . $row['lastname'] . " (". $row['pledgeclass'] . ")";
@@ -190,6 +191,12 @@ function profile_header($user_id) {
 	}
 	$basic_info = basic_info($user_id);
 
+	if ($g_user->data['user_id'] == $user_id) {
+		$edit_profile = "<i class=\"icon-pencil\"><a href=\"edit_roster.php\">Edit Account Info</a></i>"
+	} else {
+		$edit_profile = ""
+	}
+
 	echo <<<HEREDOC
 		<div class="profile-header">
 			<div class="profile-picture left">
@@ -197,7 +204,7 @@ function profile_header($user_id) {
 			</div>
 
 			<div class="profile-info">
-				<h1>$name</h1>
+				<h1>$name</h1> <span>$edit_profile</span>
 				<p>$basic_info</p>
 			</div>
 		</div>
