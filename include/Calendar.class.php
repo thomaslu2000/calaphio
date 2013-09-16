@@ -1829,6 +1829,7 @@ DOCHERE_print_upcoming_events;
 				$interval = 86400 * $interval;
 			}
 			$multiple_events_end = strtotime(sprintf("%s-%s-%s", $_POST['multiple_events_begin_year'], $_POST['multiple_events_begin_month'], $_POST['multiple_events_begin_day']));
+			$multiple_events_end = $multiple_events_end + 43200;
 			if (!$multiple_events_end|| $multiple_events_end == -1) {
 				trigger_error("Please check your multiple events end date.", E_USER_ERROR);
 				$error = true;
