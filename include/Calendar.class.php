@@ -1720,6 +1720,7 @@ DOCHERE_print_upcoming_events;
 		
 		if (isset($_POST['year']) && isset($_POST['month']) && isset($_POST['day']) && $_POST['year'] >= 1925) {
 			$date = strtotime(sprintf("%s-%s-%s", $_POST['year'], $_POST['month'], $_POST['day']));
+			$date = $date + 43200
 			if (!$date || $date == -1) {
 				trigger_error("Please check your date.", E_USER_ERROR);
 				$error = true;
