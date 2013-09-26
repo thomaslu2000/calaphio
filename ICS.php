@@ -26,7 +26,7 @@ if (isset($_REQUEST['function']) && isset($_REQUEST['id']) && is_numeric($_REQUE
 		// Figure out the Time formatting
 		if ($row['time_allday']) {
 			$timeStart = "000000";
-			$timeEnd="240000";
+			$timeEnd="235959";
 		} else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
 			$timeStart = "010000";
 			$timeEnd="010000";
