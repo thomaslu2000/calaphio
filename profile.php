@@ -752,11 +752,11 @@ function print_requirements($user_id) {
 $ic_events
 </table>
 <table>
-<caption>Attend 4 out of 5 rush events - You have completed $rush_events_count</caption>
+<caption>Attend 3 out of 5 rush events - You have completed $rush_events_count</caption>
 $rush_events
 </table>
 <table>
-<caption>Complete 3 hours tabling - You have completed $tabling_hours hours</caption>
+<caption>Complete 4 hours tabling - You have completed $tabling_hours hours</caption>
 $tabling_events
 </table>
 <table>
