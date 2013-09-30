@@ -250,7 +250,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 			}
 		}
 		if ($tabling_hours < 4) {
-			$tabling_events = "<FONT COLOR='RED'43 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
+			$tabling_events = "<FONT COLOR='RED'4 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
 		} else {
 			$tabling_events = "4 Hours of Tabling: $tabling_hours Hours <br/>";
 		}
