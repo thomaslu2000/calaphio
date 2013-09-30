@@ -33,6 +33,10 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 
 <div class="newsItem">
+	<h2>CM3 Documents</h2>
+    <p class="date">September 26, 2013</p>
+
+<div class="newsItem">
 	<h2>Fall 2013 Budget + Proposed Bylaws Amendment</h2>
     <p class="date">August 29, 2013</p>
     <p style="margin-bottom: 1.5em">Budget: <a></a><br>Amendment: <a></a>
@@ -64,6 +68,69 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
+
+<div class="newsItem">
+	<h2>Photo of the Week</h2>
+	<p class="date">September  26, 2013</p>
+	<img src="/documents/fa13/potw2.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">Lovely.</p>
+   <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<div class="newsItem">
+    <h2>Congratulations to GG Maniac, Kevin Nguyen</h2>
+    <p class="date">September  26, 2013</p>
+    <img src="/documents/fa13/ggmaniac2.jpg" width=300 style="border:1px solid black"/></a><br><br>
+    <p style="margin-bottom: 1.5em">Kevin pledged KK semester and has been actively contributing to the chapter as Active Retreat, IC, and GG Sports Chair.</p>
+    <p style="margin-bottom: 1.5em">Please help us in congratulating him!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<div class="newsItem">
+    <h2>CM3 Recap</h2>
+    <p class="date">September  26, 2013</p>
+    <p style="margin-bottom: 1.5em">This week's CM passed remarkably fast as we passed a groundbreaking ammendment to the Bylaws.</p>
+    <p style="margin-bottom: 1.5em">For more information download the slideshow and minutes <a href="/documents/fa13/CM3.zip">here</a>.</p>
+    <iframe width="420" height="315" src="//www.youtube.com/embed/b72MJSMaQuQ" frameborder="0" allowfullscreen></iframe>
+    <br><br>
+    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<div class="newsItem">
+	<h2>Photo of the Week</h2>
+	<p class="date">September  25, 2013</p>
+	<img src="/documents/fa13/potw1.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">No comment.</p>
+   <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<div class="newsItem">
+    <h2>Congratulations to GG Maniac, Sridatta Thatipamala</h2>
+    <p class="date">September  19, 2013</p>
+    <img src="/documents/fa13/ggmaniac1.jpg" width=300 style="border:1px solid black"/></a><br><br>
+    <p style="margin-bottom: 1.5em">Sridatta pledged KK semester and has been very active in contributing to the chapter as Rush and Fundraising Chair and plans on bigging this semester.</p>
+    <p style="margin-bottom: 1.5em">Please help us in congratulating him!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<div class="newsItem">
+	<h2>CM2 Recap</h2>
+    <p class="date">September 17, 2013</p>
+    <p style="margin-bottom: 1.5em">
+	Although we did not have quorum, some interesting proposals were put to the table. Look forward to voting on them next week!<br><br>
+	For brothers who have not attended CM, please peruse the following:<br>
+	<a href="https://docs.google.com/document/d/1DrHNeue9H06_0BD9PJOdHrxwxx1Jp0RuM8-uL-OneUE/edit">Proposed Amendment to Bylaws</a><br>
+	<a href="https://docs.google.com/document/d/1WlyzUq4KMwBf9L2VK3FGODXsV7F0CWBzz4AyJvG5CQY/edit">Appeals Form</a><br>
+	To download the slides and minutes, click <a href="/CM-documents/CM2-Slides-Minutes.zip">here</a>.
+    </p>
+    <p style="margin-bottom: 1.5em">
+	   CM2 Slideshow!
+    </p>
+    <iframe width="420" height="315" src="//www.youtube.com/embed/wBMK7fOKYoM" frameborder="0" allowfullscreen></iframe>
+    <br>
+    <p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
 
 <div class="newsItem">
 	<h2>CM1 Slides & Minutes</h2>
