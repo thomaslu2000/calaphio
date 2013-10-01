@@ -57,7 +57,7 @@ if ($g_user->data['user_id'] == 1190 || $g_user->data['user_id'] == 1086) {
 }
 
 			echo <<<DOCHERE
-<h1>MVP Power (KK)</h1>
+<h1>MVP Power (DE)</h1>
 <br/>
 DOCHERE;
 
