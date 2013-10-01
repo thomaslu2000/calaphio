@@ -55,7 +55,7 @@ if ($g_user->data['user_id'] == 1190 || $g_user->data['user_id'] == 1086) {
 }
 
 			echo <<<DOCHERE
-<h1>PComm Power (DE)</h1>
+<h1>PComm Power (KK)</h1>
 <br/>
 DOCHERE;
 
@@ -65,10 +65,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
 //	trigger_error("You must be Tomo or Bonnie to access this feature", E_USER_ERROR);
 } else {
 	
-	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname FROM apo_users join apo_pledges using (user_id) where depledged=0 order by apo_users.lastname"));
+	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname FROM apo_users join apo_pledges_sp13 using (user_id) where depledged=0 order by apo_users.lastname"));
 
-	$start_date = strtotime("2013-5-7");
-	$end_date = strtotime("2013-12-3");
+	$start_date = strtotime("2012-12-4");
+	$end_date = strtotime("2013-4-30");
 	$sql_start_date = date("Y-m-d", $start_date);
 	$sql_end_date = date("Y-m-d", $end_date);
 	
