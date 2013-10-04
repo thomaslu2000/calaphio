@@ -800,7 +800,7 @@ $service_type_country
 $fellowship_events
 </table>
 <table>
-<caption>Pay your \$50 active dues (\$55 at CM3, $60 at CM6)</caption>
+<caption>Pay your \$50 active dues (\$60 at CM3, $70 at CM6)</caption>
 </table>
 
 
