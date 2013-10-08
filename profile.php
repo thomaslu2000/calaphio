@@ -805,20 +805,16 @@ $fellowship_events
 
 
 <table width="100%">
-<caption>Complete 5 leadership credits - You can get credit by doing any of the following:</caption>
-<tr><td axis="name">Serving on a committee - <a href="ggwiki.php?page_id=31#3">Search for one here</a> (2 credits not repeatable)</td></tr>
+<caption>Complete 3 leadership credits - You can get credit by doing any of the following:</caption>
+<tr><td axis="name">Serving on a committee - <a href="ggwiki.php?page_id=31#3">Search for one here</a> <strong>(required)</strong></td></tr>
 <tr><td axis="name">Submit 3 (original content) Stylus Submissions (1 credit)</td></tr>
 <tr><td axis="name">Chairing an event (1 credit)</td></tr>
 <tr><td axis="name">Attending a LEADS workshop (1 credit)</td></tr>
-<tr><td axis="name">Driving to 3 events (1 credit) 5 events (2 credits)</td></tr>
-<tr><td axis="name">Attending Nationals, Sectionals, or Regionals (2 credits)</td></tr>
+<tr><td axis="name">Driving to 3 events (1 credit)</td></tr>
+<tr><td axis="name">Attending Nationals, Sectionals, or Regionals (1 credit)</td></tr>
 <tr><td axis="name">Participating in Leadership Workshop (1 credit)</td></tr>
 <tr><td axis="name">Attending Mid-semester or End-of-semester forum (if not used as a chapter event) (1 credit)</td></tr>
-<tr><td axis="name">Being a Big, Aunt, Uncle, or Parent (<b>MUST ATTEND</b> Campout, Broomball, and 1 out of 3 Interfams) (2 credits)</td></tr>
-</table>
-
-<table width="100%">
-<caption>Joining an Excomm Committee is required this year! Counts as a leadership credit as well!</caption>
+<tr><td axis="name">Being a Big, Aunt, Uncle, or Parent (<b>MUST ATTEND</b> Campout, Broomball, and 1 out of 3 Interfams) (1 credit)</td></tr>
 </table>
 </div>
 
