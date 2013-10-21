@@ -99,7 +99,7 @@ DOCHERE_print_head;
 				),
 			'Brothers' => array(
 				"HISTORY" => "history.php",
-				"ALUMNI" => "http://www.facebook.com/group.php?gid=101430558612",
+				"ALUMNI" => "alumni.php",
 				"ROSTER" => "roster.php",
 				"WIKI" => "ggwiki.php",
 				"GALLERY" => "http://calaphio.smugmug.com/",
