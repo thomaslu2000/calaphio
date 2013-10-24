@@ -116,10 +116,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
 				$service_hours -= $row['hours'];
 			}
 		}
-		if ($service_hours < 20) {
-			$service_events = "<FONT COLOR='RED'>20 Service Hours: $service_hours Hours <br/></FONT>";
+		if ($service_hours < 25) {
+			$service_events = "<FONT COLOR='RED'>25 Service Hours: $service_hours Hours <br/></FONT>";
 		} else {
-			$service_events = "20 Service Hours: $service_hours Hours <br/>";
+			$service_events = "25 Service Hours: $service_hours Hours <br/>";
 		}
 		
 		// Retrieve Fellowship events

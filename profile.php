@@ -1013,7 +1013,7 @@ $excomm_events
 $interfam_events
 </table>
 <table>
-<caption>Complete 20 service hours - You have completed $service_hours hours</caption>
+<caption>Complete 25 service hours - You have completed $service_hours hours</caption>
 $service_events
 </table>
 <table>
