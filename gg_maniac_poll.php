@@ -6,7 +6,7 @@ Template::print_head(array());
 Template::print_body_header('Home', 'ADMIN');
 if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase") || $g_user->data['user_id'] != 1416) /*ERROR IF NOT ANNIE F.*/{
 	trigger_error("You must be logged in as an admin and a historian to access this feature", E_USER_ERROR);
-}
+} else {
 
 $query = new Query(sprintf("SELECT poll_name FROM gg_maniac_polls WHERE id=%s", $_REQUEST['id']));
 $row = $query->fetch_row();
@@ -36,6 +36,7 @@ echo <<<DOCHERE
 		</table>
 	</div>
 DOCHERE;
+}
 
 Template::print_body_footer();
 Template::print_disclaimer();
