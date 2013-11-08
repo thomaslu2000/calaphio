@@ -338,10 +338,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 				$leadership_count++;
 			}
 		}
-		if ($leadership_count < 5) {
-			$leadership = "<FONT COLOR='RED'>5 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
+		if ($leadership_count < 3) {
+			$leadership = "<FONT COLOR='RED'>3 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
 		} else {
-			$leadership = "5 Leadership Credits: $leadership_count Chairing Credits <br/>";
+			$leadership = "3 Leadership Credits: $leadership_count Chairing Credits <br/>";
 		}
 
 		//Retrieve Active events
