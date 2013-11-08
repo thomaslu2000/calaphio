@@ -202,10 +202,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 							$tabling_hours -= $row['hours'];
 						}
 					}
-					if ($tabling_hours < 3) {
-						$tabling_events = "<FONT COLOR='RED'>3 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
+					if ($tabling_hours < 4) {
+						$tabling_events = "<FONT COLOR='RED'>4 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
 					} else {
-						$tabling_events = "3 Hours of Tabling: $tabling_hours Hours <br/>";
+						$tabling_events = "4 Hours of Tabling: $tabling_hours Hours <br/>";
 					}
 					
 					// Retrieve Rush events
@@ -224,10 +224,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 						//	$rush_events_count--;
 						}
 					}
-					if ($rush_events_count < 4) {
-						$rush_events = "<FONT COLOR='RED'>4 Rush Events: $rush_events_count Events <br/></FONT>";
+					if ($rush_events_count < 3) {
+						$rush_events = "<FONT COLOR='RED'>3 Rush Events: $rush_events_count Events <br/></FONT>";
 					} else {
-						$rush_events = "4 Rush Events: $rush_events_count Events <br/>";
+						$rush_events = "3 Rush Events: $rush_events_count Events <br/>";
 					}
 					
 					// Retrieve Chapter events
@@ -291,10 +291,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 							$leadership_count++;
 						}
 					}
-					if ($leadership_count < 5) {
-						$leadership = "<FONT COLOR='RED'>5 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
+					if ($leadership_count < 3) {
+						$leadership = "<FONT COLOR='RED'>3 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
 					} else {
-						$leadership = "5 Leadership Credits: $leadership_count Chairing Credits <br/>";
+						$leadership = "3 Leadership Credits: $leadership_count Chairing Credits <br/>";
 					}
 
 					//Retrieve Active events
