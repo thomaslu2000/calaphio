@@ -55,27 +55,79 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 -->
 
-<?php if (!$g_user->is_logged_in()): ?>
 <div class="newsItem">
-	<h2>Rush Alpha Phi Omega!</h2>
-	<p class="date">September 8, 2013</p>
-	<p style="margin-bottom: 1.5em">
-	Leadership. Friendship. Service. Interested in pledging Alpha Phi Omega? Head over to <a href="http://rush.calaphio.com">rush.calaphio.com</a>
-	</p>
-	<p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
+	<h2>CM6</h2>
+	<p class="date">November 5, 2013</p>
+	<p style="margin-bottom: 1.5em">Nominations went by quickly and efficiently.</p>
+	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM6.zip">Slides and Minutes.</a></p>
+	<p style="margin-bottom: 1.5em"><a href="#">Slideshow!</a></p>
+   <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
+<div class="newsItem">
+    <h2>Congratulations to GG Maniac, Ben Le</h2>
+    <p class="date">November 5, 2013</p>
+    <img src="/documents/fa13/ggmaniac4.jpg" width=300 style="border:1px solid black"/></a><br><br>
+    <p style="margin-bottom: 1.5em">Ben pledged KS semester and was Admin VP as well as continuing to contribute to the chapter as webmaster and developing a new Ruby on Rails mobile-compatible website.</p>
+    <p style="margin-bottom: 1.5em">Congratulations Ben!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<?php if (!$g_user->is_logged_in()): ?>
+<div class="newsItem">
+	<h2>POTW #4</h2>
+	<p class="date">October 27, 2013</p>
+	<img src="/documents/fa13/potw4.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">Hue hue hue.</p>
+   <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
 
 <div class="newsItem">
-	<h2>Photo of the Week</h2>
+	<h2>CM5</h2>
+	<p class="date">October 27, 2013</p>
+	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM5.zip">Slides and Minutes.</a></p>
+	<p style="margin-bottom: 1.5em"><a href="#">Slideshow!</a></p>
+   <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<?php if (!$g_user->is_logged_in()): ?>
+<div class="newsItem">
+	<h2>POTW #3</h2>
+	<p class="date">October 27, 2013</p>
+	<img src="/documents/fa13/potw3.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">KK represent!</p>
+   <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+<?php endif ?>
+
+<div class="newsItem">
+    <h2>Congratulations to GG Maniac, Zachary Lee</h2>
+    <p class="date">October 24, 2013</p>
+    <img src="/documents/fa13/ggmaniac3.jpg" width=300 style="border:1px solid black"/></a><br><br>
+    <p style="margin-bottom: 1.5em">Zachary pledged GL semester and has been a long-standing member of this chapter and contributed as IC Chair, Alumni Relations Chair, Sergeant-at-Arms, just to name a few.</p>
+    <p style="margin-bottom: 1.5em">Please help us in congratulating him!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<div class="newsItem">
+	<h2>CM4</h2>
+	<p class="date">October 10, 2013</p>
+	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM4.zip">Slides and Minutes.</a></p>
+	<p style="margin-bottom: 1.5em"><a href="http://www.vimeo.com/76535729">Annie has really outdone herself this time. Without a doubt the best slideshow I've seen any Historian make!</a></p>
+   <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<?php if (!$g_user->is_logged_in()): ?>
+<div class="newsItem">
+	<h2>Photo of the Week #2</h2>
 	<p class="date">September  26, 2013</p>
 	<img src="/documents/fa13/potw2.jpg" width=300 style="border:1px solid black"/></a><br><br>
 	<p style="margin-bottom: 1.5em">Lovely.</p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Kevin Nguyen</h2>
@@ -96,6 +148,7 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
+<?php if (!$g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Photo of the Week</h2>
 	<p class="date">September  25, 2013</p>
@@ -103,6 +156,7 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em">No comment.</p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Sridatta Thatipamala</h2>
@@ -161,7 +215,6 @@ if (!$g_user->is_logged_in()) {
     <p style="margin-bottom: 1.5em">See you at CM!</p>
     <p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
 </div>
-<?php endif ?>
 
 <a href="news_sp13.php">Older News ></a>
 <?php
