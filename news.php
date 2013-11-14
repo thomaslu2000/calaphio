@@ -55,6 +55,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 -->
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>CM6</h2>
 	<p class="date">November 5, 2013</p>
@@ -63,6 +64,7 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em"><a href="#">Slideshow!</a></p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Ben Le</h2>
@@ -73,7 +75,6 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
-<?php if (!$g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>POTW #4</h2>
 	<p class="date">October 27, 2013</p>
@@ -81,9 +82,8 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em">Hue hue hue.</p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
-<?php endif ?>
 
-
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>CM5</h2>
 	<p class="date">October 27, 2013</p>
@@ -91,8 +91,8 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em"><a href="#">Slideshow!</a></p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
-<?php if (!$g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>POTW #3</h2>
 	<p class="date">October 27, 2013</p>
@@ -100,7 +100,6 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em">KK represent!</p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
-<?php endif ?>
 
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Zachary Lee</h2>
@@ -111,6 +110,7 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>CM4</h2>
 	<p class="date">October 10, 2013</p>
@@ -118,8 +118,8 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em"><a href="http://www.vimeo.com/76535729">Annie has really outdone herself this time. Without a doubt the best slideshow I've seen any Historian make!</a></p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
-<?php if (!$g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Photo of the Week #2</h2>
 	<p class="date">September  26, 2013</p>
@@ -127,7 +127,6 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em">Lovely.</p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
-<?php endif ?>
 
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Kevin Nguyen</h2>
@@ -138,6 +137,7 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>CM3 Recap</h2>
     <p class="date">September  26, 2013</p>
@@ -147,8 +147,8 @@ if (!$g_user->is_logged_in()) {
     <br><br>
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
-<?php if (!$g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Photo of the Week</h2>
 	<p class="date">September  25, 2013</p>
@@ -156,7 +156,6 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em">No comment.</p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
-<?php endif ?>
 
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Sridatta Thatipamala</h2>
@@ -167,6 +166,7 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>CM2 Recap</h2>
     <p class="date">September 17, 2013</p>
@@ -184,8 +184,9 @@ if (!$g_user->is_logged_in()) {
     <br>
     <p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
-
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>CM1 Slides & Minutes</h2>
     <p class="date">September 5, 2013</p>
@@ -199,8 +200,9 @@ if (!$g_user->is_logged_in()) {
     <br>
     <p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
-
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Fall 2013 Budget & Requirements</h2>
     <p class="date">August 29, 2013</p>
@@ -215,6 +217,7 @@ if (!$g_user->is_logged_in()) {
     <p style="margin-bottom: 1.5em">See you at CM!</p>
     <p>-<a href="profile.php?user_id=1411">Andrew Cai (JS)</a></p>
 </div>
+<?php endif ?>
 
 <a href="news_sp13.php">Older News ></a>
 <?php
