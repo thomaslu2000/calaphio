@@ -934,7 +934,7 @@ HEREDOC;
 			$date = date("l, M d, Y", $event_time);
 			$location = $row['location'] && $g_user->is_logged_in() ? "<a href=\"https://maps.google.com/maps?hl=en&q=" . $row['location'] . "&near=Berkeley, CA" . "\">" . $row['location'] . "</a>" : "";
 			$signup_limit = $row['signup_limit'] == 0 ? "No Max!" : $row['signup_limit'];
-			$description =  htmlentities($this->format_add_links($row['description']));
+			$description =  html_entity_decode($this->format_add_links($row['description']));
 			$signup_begin_time = $row['signup_begin'] ? strtotime($row['signup_begin']) : false;
 			$signup_cutoff_time = $row['signup_cutoff'] ? strtotime($row['signup_cutoff']) : strtotime("-3 days", strtotime($row['date']));
 			$signup_cutoff = date("l, M d, Y", $signup_cutoff_time);
