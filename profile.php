@@ -292,10 +292,19 @@ function print_requirements($user_id) {
 		}
 		
 		$is_active = !$is_pledge;
-		$start_date = strtotime("2013-5-7");
-		$end_date = strtotime("2013-12-3");
-		$sql_start_date = date("Y-m-d", $start_date);
-		$sql_end_date = date("Y-m-d", $end_date);
+		if (isset($_REQUEST['semester'])) {
+			$query = new Query(sprintf("SELECT start, end FROM apo_semesters WHERE semester='%s'", $_REQUEST['semester']));
+			$row = $query->fetch_row();
+			$start_date = strtotime($row['start']);
+			$end_date = strtotime($row['end']);	
+			$sql_start_date = date("Y-m-d", $start_date);
+			$sql_end_date = date("Y-m-d", $end_date);
+		} else {
+			$start_date = strtotime("2013-5-7");
+			$end_date = strtotime("2013-12-3");
+			$sql_start_date = date("Y-m-d", $start_date);
+			$sql_end_date = date("Y-m-d", $end_date);
+		}
 		$user_id = $g_user->data['user_id'];
 		
 		if ($is_active) {
@@ -728,7 +737,7 @@ function print_requirements($user_id) {
 				}
 			}
 
-			$query = new Query(sprintf("SELECT semester FROM apo_semesters ORDER BY end ASC"));
+			$query = new Query(sprintf("SELECT semester FROM apo_semesters ORDER BY end"));
 			while ($row = $query->fetch_row()) {
 				$semester = $row['semester'];
 				if ($semester == $_REQUEST['semester']) {
