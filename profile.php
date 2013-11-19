@@ -737,7 +737,7 @@ function print_requirements($user_id) {
 				}
 			}
 
-			$query = new Query(sprintf("SELECT semester FROM apo_semesters ORDER BY end"));
+			$query = new Query(sprintf("SELECT semester FROM apo_semesters ORDER BY end DESC"));
 			while ($row = $query->fetch_row()) {
 				$semester = $row['semester'];
 				if ($semester == $_REQUEST['semester']) {
