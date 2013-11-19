@@ -728,6 +728,16 @@ function print_requirements($user_id) {
 				}
 			}
 			
+			$query = new Query(sprintf("SELECT semester FROM apo_semesters ORDER BY semester ASC"));
+			while ($row = $query->fetch_row()) {
+				$semester = $row['semester'];
+				if ($semester == $_REQUEST['semester']) {
+					$semesters = $semesters . '<option class="" value="' . $semester . '" selected="selected">' . $semester . '</option>';
+				} else {
+					$semesters = $semesters . '<option class="" value="' . $semester . '" >' . $semester . '</option>';
+				}
+			}
+			
 			/*// Retrieve Driver Miles
 			$driving_events = "";
 			$miles = 0;
