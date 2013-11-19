@@ -746,6 +746,9 @@ function print_requirements($user_id) {
 			}*/
 		
 			echo <<<DOCHERE
+<form style="margin-top: 1em">
+<p>Start date: <input type="text" name="start" value="$start" /> End date: <input type="text" name="end" value="$end" /> <button type="submit">Submit</button>
+</form>
 <div id="requirements">
 <table>
 <caption>Complete 1 IC credit - You have completed $ic_events_count</caption>
