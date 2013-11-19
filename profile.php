@@ -727,7 +727,7 @@ function print_requirements($user_id) {
 					$active_events_count--;
 				}
 			}
-			
+
 			$query = new Query(sprintf("SELECT semester FROM apo_semesters ORDER BY semester ASC"));
 			while ($row = $query->fetch_row()) {
 				$semester = $row['semester'];
@@ -756,7 +756,7 @@ function print_requirements($user_id) {
 			}*/
 		
 			echo <<<DOCHERE
-<div style="margin-top:1em">
+<div style="margin:1em">
 	<form action="#" method="post" onsubmit="">
 		<span style="font-weight:bold;margin-right:1em"> Semester </span>
 		<select id="semester" name="semester">$semesters</select>
