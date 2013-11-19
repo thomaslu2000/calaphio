@@ -746,9 +746,13 @@ function print_requirements($user_id) {
 			}*/
 		
 			echo <<<DOCHERE
-<form style="margin-top: 1em">
-<p>Start date: <input type="text" name="start" value="$start" /> End date: <input type="text" name="end" value="$end" /> <button type="submit">Submit</button>
-</form>
+<div style="margin-top:1em">
+	<form action="#" method="post" onsubmit="">
+		<span style="font-weight:bold;margin-right:1em"> Semester </span>
+		<select id="semester" name="semester">$semesters</select>
+		<input class="btn btn-primary btn-small" type="submit" value="View">
+	</form>
+</div>	
 <div id="requirements">
 <table>
 <caption>Complete 1 IC credit - You have completed $ic_events_count</caption>
