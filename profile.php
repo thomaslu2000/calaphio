@@ -756,7 +756,7 @@ function print_requirements($user_id) {
 			}*/
 		
 			echo <<<DOCHERE
-<div style="margin:1em">
+<div style="margin:1em 0em">
 	<form action="#" method="post" onsubmit="">
 		<span style="font-weight:bold;margin-right:1em"> Semester </span>
 		<select id="semester" name="semester">$semesters</select>
