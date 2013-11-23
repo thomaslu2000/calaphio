@@ -55,12 +55,46 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 -->
 
+<div class="newsItem">
+	<h2>Congratulations Spring 2014 Executive Committee!</h2>
+	<p class="date">November 21, 2013</p>
+	<p style="margin-bottom: 1.5em">President - Jeffrey Ma<br />
+	Admin VP - Ngoc Tran<br />
+	Membership VP - Stephanie Chan<br />
+	Service VP - Susan Guan<br />
+	Finance VP - Jane Tam<br />
+	Fellowship VP - Sara Wang<br />
+	Pledgemaster - Vivian Nguyen<br />
+	Historian - Kelsey Chan</p>
+	<p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+
+<div class="newsItem">
+    <h2>Congratulations to GG Maniac, Christopher Ching</h2>
+    <p class="date">November 17, 2013</p>
+    <img src="/documents/fa13/ggmaniac5.jpg" width=300 style="border:1px solid black"/></a><br><br>
+    <p style="margin-bottom: 1.5em">Christopher pledged CPZ semester and bigged twice and was Membership VP in MH semester.</p>
+    <p style="margin-bottom: 1.5em">Congratulations Christopher!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
+<div class="newsItem">
+	<h2>POTW #5</h2>
+	<p class="date">November 17, 2013</p>
+	<img src="/documents/fa13/potw5a.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">We rock the house!</p>
+	<img src="/documents/fa13/potw5b.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">LFS.</p>
+   <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
+</div>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>CM6</h2>
 	<p class="date">November 5, 2013</p>
 	<p style="margin-bottom: 1.5em">Nominations went by quickly and efficiently.</p>
-	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM6.zip">Slides and Minutes.</a></p>
+	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM6.rar">Slides and Minutes.</a></p>
 	<p style="margin-bottom: 1.5em"><a href="#">Slideshow!</a></p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
@@ -87,8 +121,9 @@ if (!$g_user->is_logged_in()) {
 <div class="newsItem">
 	<h2>CM5</h2>
 	<p class="date">October 27, 2013</p>
-	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM5.zip">Slides and Minutes.</a></p>
-	<p style="margin-bottom: 1.5em"><a href="#">Slideshow!</a></p>
+	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM5.rar">Slides and Minutes.</a></p>
+	<br />
+	<iframe width="420" height="315" src="//www.youtube.com/embed/RErmzafrAEA" frameborder="0" allowfullscreen></iframe>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 <?php endif ?>
@@ -114,7 +149,7 @@ if (!$g_user->is_logged_in()) {
 <div class="newsItem">
 	<h2>CM4</h2>
 	<p class="date">October 10, 2013</p>
-	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM4.zip">Slides and Minutes.</a></p>
+	<p style="margin-bottom: 1.5em"><a href="/documents/fa13/CM4.rar">Slides and Minutes.</a></p>
 	<p style="margin-bottom: 1.5em"><a href="http://www.vimeo.com/76535729">Annie has really outdone herself this time. Without a doubt the best slideshow I've seen any Historian make!</a></p>
    <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
@@ -142,7 +177,7 @@ if (!$g_user->is_logged_in()) {
     <h2>CM3 Recap</h2>
     <p class="date">September  26, 2013</p>
     <p style="margin-bottom: 1.5em">This week's CM passed remarkably fast as we passed a groundbreaking ammendment to the Bylaws.</p>
-    <p style="margin-bottom: 1.5em">For more information download the slideshow and minutes <a href="/documents/fa13/CM3.zip">here</a>.</p>
+    <p style="margin-bottom: 1.5em">For more information download the slideshow and minutes <a href="/documents/fa13/CM3.rar">here</a>.</p>
     <iframe width="420" height="315" src="//www.youtube.com/embed/b72MJSMaQuQ" frameborder="0" allowfullscreen></iframe>
     <br><br>
     <p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
@@ -175,7 +210,7 @@ if (!$g_user->is_logged_in()) {
 	For brothers who have not attended CM, please peruse the following:<br>
 	<a href="https://docs.google.com/document/d/1DrHNeue9H06_0BD9PJOdHrxwxx1Jp0RuM8-uL-OneUE/edit">Proposed Amendment to Bylaws</a><br>
 	<a href="https://docs.google.com/document/d/1WlyzUq4KMwBf9L2VK3FGODXsV7F0CWBzz4AyJvG5CQY/edit">Appeals Form</a><br>
-	To download the slides and minutes, click <a href="/CM-documents/CM2-Slides-Minutes.zip">here</a>.
+	To download the slides and minutes, click <a href="/CM-documents/CM2-Slides-Minutes.rar">here</a>.
     </p>
     <p style="margin-bottom: 1.5em">
 	   CM2 Slideshow!
@@ -191,7 +226,7 @@ if (!$g_user->is_logged_in()) {
 	<h2>CM1 Slides & Minutes</h2>
     <p class="date">September 5, 2013</p>
     <p style="margin-bottom: 1.5em">
-	To download the slides and minutes, click <a href="/CM-documents/CM1-Slides-Minutes.zip">here</a>.
+	To download the slides and minutes, click <a href="/CM-documents/CM1-Slides-Minutes.rar">here</a>.
     </p>
     <p style="margin-bottom: 1.5em">
 	   CM1 Slideshow!
