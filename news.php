@@ -58,17 +58,29 @@ if (!$g_user->is_logged_in()) {
 <div class="newsItem">
 	<h2>Congratulations Spring 2014 Executive Committee!</h2>
 	<p class="date">November 21, 2013</p>
-	<p style="margin-bottom: 1.5em">President - Jeffrey Ma<br />
-	Admin VP - Ngoc Tran<br />
-	Membership VP - Stephanie Chan<br />
-	Service VP - Susan Guan<br />
-	Finance VP - Jane Tam<br />
-	Fellowship VP - Sara Wang<br />
-	Pledgemaster - Vivian Nguyen<br />
-	Historian - Kelsey Chan</p>
+	    <p> <strong>President</strong>: Jeff Ma<br/>
+        <strong>Service VP</strong>: Susan Guan<br/>
+        <strong>Pledgemaster</strong>: Vivian Nguyen<br/>
+        <strong>Administrative VP</strong>: Ngoc Tran<br/>
+        <strong>Membership VP</strong>: Stephanie Chan<br/>
+        <strong>Finance VP</strong>: Jane Tam<br/>
+        <strong>Fellowship VP</strong>: Sarah Wang<br/>
+        <strong>Historian</strong>: Kelsey Chan
+    </p>
 	<p>-<a href="roster.php?function=Search&user_id=1411">Andrew Cai (JS)</a></p>
 </div>
 
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>Election Platforms!</h2>
+        <p class="date">November 18, 2013</p>
+        <p style="margin-bottom: 1.5em">Please read these Election Platforms so you guys can all be informed this Tuesday during Elections!<br><br>
+
+        <a href="fa13platforms.php">Election Platforms Link</a><br>
+
+        <p>-<a href="roster.php?function=Search&user_id=1289">Benjamin Le (KS)</a></p>
+    </div>
+<?php endif ?>
 
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Christopher Ching</h2>
