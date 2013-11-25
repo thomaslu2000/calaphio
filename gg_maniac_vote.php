@@ -39,6 +39,7 @@ if (isset($_REQUEST['active_name']) && isset($_REQUEST['reason'])) {
 
 echo <<<DOCHERE
 	<h2>$poll_name</h2>
+	<a href="https://docs.google.com/document/d/1yXgUBY0hvJQ2LKidf0NZ5h92soaMVYEbcrHcrPV_KtE/edit">Past Maniacs!</a>
 	<div style="margin-top:1em">
 		<form id="GGManiacVote" action="#" method="post" onsubmit="">
 			<span style="font-weight:bold;margin-right:1em"> Active Name </span>
