@@ -30,7 +30,6 @@ DOCHERE;
 
 echo <<<DOCHERE
 	<h2>$poll_name</h2>
-	<a href="https://docs.google.com/document/d/1yXgUBY0hvJQ2LKidf0NZ5h92soaMVYEbcrHcrPV_KtE/edit">Past Maniacs!</a>
 	<div style="margin-top:1em">
 		<table border="1">
 			$table_rows
