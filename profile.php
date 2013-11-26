@@ -301,7 +301,7 @@ function print_requirements($user_id) {
 			$sql_end_date = date("Y-m-d", $end_date);
 		} else {
 			$start_date = strtotime("2013-5-7");
-			$end_date = strtotime("2013-12-3");
+			$end_date = strtotime("2013-12-9");
 			$sql_start_date = date("Y-m-d", $start_date);
 			$sql_end_date = date("Y-m-d", $end_date);
 		}
