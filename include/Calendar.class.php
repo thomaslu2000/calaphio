@@ -1961,7 +1961,7 @@ DOCHERE_print_upcoming_events;
 		}
 		
 		if (isset($_POST['description']) && strlen($_POST['description']) > 0) {
-			$description = htmlentities($_POST['description'], ENT_QUOTES, 'UTF-8');
+			//$description = htmlentities($_POST['description'], ENT_QUOTES, 'UTF-8');
 			$description = str_replace("\r\n", "<br />", $description);
 			$description = str_replace(array("\r", "\n"), "<br />", $description);
 			$description = Query::escape_string($description);
