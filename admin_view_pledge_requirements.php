@@ -65,8 +65,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
 			$where_statement_array[] = "type_custom=$_POST[type_custom]";
 		}
 		
-		$begin_date = "2013-5-7";
-		$end_date = "2013-12-9";
+		$begin_date = "2013-12-10";
+		$end_date = "2014-5-5";
 		
 		$where_statement = $where_statement_array ? "WHERE " . implode(" OR ", $where_statement_array) : '';
 		

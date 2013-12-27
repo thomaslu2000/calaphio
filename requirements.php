@@ -59,8 +59,8 @@ if ($g_user->is_logged_in()) {
 	}
 	
 	$is_active = !$is_pledge;
-	$start_date = strtotime("2013-5-7");
-	$end_date = strtotime("2013-12-9");
+	$start_date = strtotime("2013-12-10");
+	$end_date = strtotime("2014-5-5");
 	$sql_start_date = date("Y-m-d", $start_date);
 	$sql_end_date = date("Y-m-d", $end_date);
 	$user_id = $g_user->data['user_id'];
@@ -587,7 +587,7 @@ $fellowship_events
 <caption>Joining an Excomm Committee is required this year! Counts as a leadership credit as well!</caption>
 </table>
 
-<a href="requirements_sp2013.php">Spring 2013 (KK) Requirements ></a>
+<a href="requirements_fa2013.php">Fall 2013 (DE) Requirements ></a>
 
 DOCHERE;
 	} else if ($is_pledge) {

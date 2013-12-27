@@ -513,3 +513,26 @@ ul#gallery img {
   border: solid black 1px;
   border-radius: 3px;
 }
+
+.collage-container{
+  width: 100%;
+  height: auto;
+  text-align:center;
+}
+.collage-pictures
+{
+  display: inline-block;
+  margin: 10px;
+}
+.person-picture{
+  float: left;
+  margin: 10px;
+}
+.person-picture img{
+  width: 200px; 
+  height: 200px;
+  border: 1px solid black;
+}
+.center{
+  text-align: center;
+}
