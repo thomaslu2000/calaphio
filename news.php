@@ -36,16 +36,16 @@ if (!$g_user->is_logged_in()) {
     <div class="collage-container">
 	<div class="collage-pictures">
 		<div class="person-picture">
-			<img src="/documents/sp14/rush/lakana_bun.jpg"></img>
+			<img src="documents/sp14/rush/lakana_bun.jpg"></img>
 			<p class="center">Lakana Bun</p>
 			
 		</div>
 		<div class="person-picture">
-			<img src="/documents/sp14/rush/sharon_wang.jpg"></img>
+			<img src="documents/sp14/rush/sharon_wang.jpg"></img>
 			<p class="center">Sharon Wang</p>
 		</div>
 		<div class="person-picture">
-			<img src="/documents/sp14/rush/wiemond_wu.jpg"></img>
+			<img src="documents/sp14/rush/wiemond_wu.jpg"></img>
 			<p class="center">Wiemond Wu</p>
 		</div>
 	</div>
@@ -63,37 +63,37 @@ if (!$g_user->is_logged_in()) {
     <div class="collage-container">
 	<div class="collage-pictures">
 		<div class="person-picture">
-			<img src="/documents/sp14/pcomm/bella_tsay.jpg"></img>
+			<img src="documents/sp14/pcomm/bella_tsay.jpg"></img>
 			<p class="center"><strong>Leadership Trainer</strong>: Bella Tsay</p>
 			
 		</div>
 		<div class="person-picture">
-			<img src="/documents/sp14/pcomm/ann_chan.jpg"></img>
+			<img src="documents/sp14/pcomm/ann_chan.jpg"></img>
 			<p class="center"><strong>Fellowship Trainer</strong>: Ann Chan</p>
 			
 		</div>
 		<div class="person-picture">
-			<img src="/documents/sp14/pcomm/kevin_nguyen.jpg"></img>
+			<img src="documents/sp14/pcomm/kevin_nguyen.jpg"></img>
 			<p class="center"><strong>Fellowship Trainer</strong>: Kevin Nguyen</p>
 			
 		</div>
 		<div class="person-picture">
-			<img src="/documents/sp14/pcomm/preston_chan.jpg"></img>
+			<img src="documents/sp14/pcomm/preston_chan.jpg"></img>
 			<p class="center"><strong>Service Trainer</strong>: Preston Chan</p>
 			
 		</div>
 		<div class="person-picture">
-			<img src="/documents/sp14/pcomm/jejee_hasdarngkul.jpg"></img>
+			<img src="documents/sp14/pcomm/jejee_hasdarngkul.jpg"></img>
 			<p class="center"><strong>Finance Trainer</strong>: Jejee Hasdarngkul</p>
 			
 		</div>
 		<div class="person-picture">
-			<img src="/documents/sp14/pcomm/tinoi_lui.jpg"></img>
+			<img src="documents/sp14/pcomm/tinoi_lui.jpg"></img>
 			<p class="center"><strong>Finance Trainer</strong>: TinOi Lui</p>
 			
 		</div>
 		<div class="person-picture">
-			<img src="/documents/sp14/pcomm/janice_lai.jpg"></img>
+			<img src="documents/sp14/pcomm/janice_lai.jpg"></img>
 			<p class="center"><strong>Historian Trainer</strong>: Janice Lai</p>
 			
 		</div>
