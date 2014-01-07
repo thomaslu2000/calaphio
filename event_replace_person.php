@@ -10,10 +10,8 @@ $calendar = new Calendar();
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <link type="text/css" rel="stylesheet" href="site.css" />
 <link type="text/css" rel="stylesheet" href="calendar.css" />
-  <link type="text/css" rel="stylesheet" href="bootstrap.css" />
 <script language="javascript" type="text/javascript" src="popup.js"></script>
 <script language="javascript" type="text/javascript" src="add_event.js"></script>
-<script language="javascript" type="text/javascript" src="bootstrap.min.js"></script>
 <title>Alpha Phi Omega - Replace a person</title>
 </head>
 <body>

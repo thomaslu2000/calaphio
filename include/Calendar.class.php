@@ -606,8 +606,8 @@ DOCHERE_print_add_people;
 <form action="event_replace_person.php" method="get">
 <table style="margin-left:auto; margin-right:auto">
 <caption style="font-size:larger">Replace a person</caption>
-<tr><td>Adding: </td><td><select id="add-person" name="add-person">$everyone</select></td></tr>
-<tr><td>Removing: </td><td><select id="remove-person" name="remove-person">$attendees</select></td></tr>
+<tr><td>Adding: </td><td><select id="add-person" style="width:100%" name="add-person">$everyone</select></td></tr>
+<tr><td>Removing: </td><td><select id="remove-person" style="width:100%" name="remove-person">$attendees</select></td></tr>
 </table>
 <button class="btn btn-primary" type="submit" name="function" value="replace">Replace</button> 
 <input type="hidden" name="id" value="$event_id" />
