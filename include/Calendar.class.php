@@ -606,10 +606,10 @@ DOCHERE_print_add_people;
 <form action="event_replace_person.php" method="get">
 <table style="margin-left:auto; margin-right:auto">
 <caption style="font-size:larger">Replace a person</caption>
-<select id="add-person" name="add-person">$everyone</select>
-<select id="remove-person" name="remove-person">$attendees</select>
+<tr><td>Adding: </td><td><select id="add-person" name="add-person">$everyone</select></td></tr>
+<tr><td>Removing: </td><td><select id="remove-person" name="remove-person">$attendees</select></td></tr>
 </table>
-<button type="submit" name="function" value="Search">Search</button> 
+<button type="submit" name="function" value="replace">Replace</button> 
 <input type="hidden" name="id" value="$event_id" />
 $evaluate
 </form>
