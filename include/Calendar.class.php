@@ -595,7 +595,7 @@ DOCHERE_print_add_people;
 		while ($row = $query->fetch_row()) {
 			$everyone = $everyone . '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . "(" . $row['pledgeclass'] . ")" . '</option>';
 		}
-		$query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, user_id FROM apo_users INNER JOIN apo_calendar_attend ON apo_calendar_attend.user_id == apo_users.user_id WHERE apo_calendar_attend.event_id=%d", $event_id));
+		$query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, user_id FROM apo_users INNER JOIN apo_calendar_attend ON apo_calendar_attend.user_id = apo_users.user_id WHERE apo_calendar_attend.event_id=%d", $event_id));
 		$attendees = "";
 		while ($row = $query->fetch_row()) {
 			$attendees = $attendees. '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . "(" . $row['pledgeclass'] . ")" . '</option>';
