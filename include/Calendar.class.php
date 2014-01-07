@@ -600,6 +600,7 @@ DOCHERE_print_add_people;
           $query = new Query(sprintf("DELETE FROM %scalendar_attend WHERE event_id=%d AND user_id=%d LIMIT 1", TABLE_PREFIX, $event_id, $remove_user_id));
           $query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description));
           $query = new Query("commit");
+          $g_user->redirect("evaluate_event.php?id=$event_id");
       }
      
       $evaluate = isset($_REQUEST['evaluate']) && $_REQUEST['evaluate'] ? "<input type=\"hidden\" name=\"evaluate\" value=\"true\" />" : "";
