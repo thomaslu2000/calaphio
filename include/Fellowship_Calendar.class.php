@@ -84,8 +84,11 @@ class Calendar {
 	
 	/**
 	 * This takes in an associative array containing data for an event
-	 * and returns an HTML formatted title. */
-	function format_event_title($row) {
+	 * and returns an HTML formatted title. 
+	 * Added an extra parameter, $attendee_hash defaulting to array() -1/3/2014
+	 * Now displays number of people attending event.
+	 */
+	function format_event_title($row, $attendee_count_hash=NULL) {
 		if ($row['type_scouting']) {
 			$prefix = '<span class="service" style="color: #0CF;">[BSA]</span> ';
 		} else if ($row['type_interchapter']) {
@@ -109,12 +112,18 @@ class Calendar {
 		}
 		$event_id = $row['event_id'];
 		$class = isset($row['attending']) ? "attending" : "";
+		//Check for auto_deleted fellowships and mark them differently!
+		if(!$row['deleted']){
+			$class .=$row['auto_deleted'] ? " auto_deleted" : "";
+		}
 		$class .= $row['deleted'] ? " deleted" : "";
 		$title = $row['title'];
 		$popup_width = CALENDAR_POPUP_WIDTH;
 		$popup_height = CALENDAR_POPUP_HEIGHT;
+		$people = $attendee_count_hash['event-id'];
+		$total = is_null($attendee_count_hash) ? "": sprintf(" <strong>[%d]</strong>",$attendee_count_hash[$event_id]);
 		$session_id = session_id(); // JavaScript popups in IE tend to block cookies, so need to explicitly set session id
-		return "<a href=\"event.php?id=$event_id\" class=\"$class\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$prefix$title</a>";
+		return "<a href=\"event.php?id=$event_id\" class=\"$class\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$prefix$title$total</a>";
 	}
 	
 	function format_list_minutes($class, $select, $interval) {
@@ -437,7 +446,20 @@ DOCHERE_print_add_evaluation;
 
 DOCHERE_add_event;
 	}
-	
+	/* Function that allows one to replace people */
+	/*function print_replace_people(){
+		global $g_user;
+		
+		if (!isset($_REQUEST['id']) || !is_numeric($_REQUEST['id'])) {
+			trigger_error("Print Add People: Invalid event id.", E_USER_ERROR);
+			return;
+		} else if (!$g_user->is_logged_in()) {
+			trigger_error("You must be logged in to do that.", E_USER_ERROR);
+			return;
+		}
+		$event_id = $_REQUEST['id'];
+		
+	}*/
 	function print_add_people() {
 		global $g_user;
 		
@@ -525,7 +547,6 @@ $search_results
 
 DOCHERE_print_add_people;
 	}
-	
 	function print_edit_event() {
 		global $g_user;
 		// Make sure user is allowed to edit this event
@@ -1115,6 +1136,7 @@ $table
 DOCHERE_log;
 	}
 	
+	
 	/**
 	 * Year and Month are numerical values, or Timestamp may be used in their place */
 	function print_month() {
@@ -1141,6 +1163,12 @@ DOCHERE_log;
 		$query = $this->query_range($query_start_day, $query_end_day);
 		$row = $query->fetch_row();
 		
+		//Query number of people attending events. Also deletes expired fellowships. Look at function for more details. - Added 1/3/2014
+		$query_attending = $this->query_range_attending($query_start_day, $query_end_day);
+		$row_attending = $query_attending->fetch_row();
+		$attendee_count_hash = array();
+		
+
 		// Generate values for month selection pulldown menu
 		$select_month_options = "\r\n";
 		$select_month = strtotime("-5 months", $first_day);
@@ -1226,12 +1254,22 @@ DOCHERE_calendar_header;
 				$internal_month = date("m", $current_day);
 				$internal_day = date("d", $current_day);
 				
-				// Process all the events for this day
+				/* Process number of people for each event - Added 1/3/2014
+				 * This makes a hash table with the key being the event_id, and the value as the number of people attending that event
+				*/
+				while($row_attending)
+				{
+					$attendee_count_hash[$row_attending['event_id']] = intval($row_attending['total']);
+					$row_attending = $query_attending->fetch_row();
+				}
+				
+				// Process all the events for this day -Changed by adding "$attendee_count_hash to format_event_title parameter 1/4/2014" 
 				$event_items = "";
 				while ($row && strtotime($row['date']) <= $current_day) {
-					$event_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row) . "</li>\r\n";
+					$event_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					$row = $query->fetch_row();
 				}
+				
 				
 				$popup_width = CALENDAR_POPUP_WIDTH;
 				$popup_height = CALENDAR_POPUP_HEIGHT;
@@ -1984,14 +2022,15 @@ DOCHERE_print_upcoming_events;
 		}
 	}
 	
+	
 	/**
 	 * Returns a Query containing events ordered by ascending date.
 	 * Begin and End are integers formatted YYYYMMDD and are inclusive. */
 	function query_range($begin, $end) {
 		global $g_user;
-		$select_expression = sprintf("%scalendar_event.event_id, title, date, signup_begin, signup_cutoff, signup_lock, deleted, type_custom", TABLE_PREFIX);
+		$select_expression = sprintf("%scalendar_event.event_id, title, date, signup_begin, signup_cutoff, signup_lock, deleted, auto_deleted,type_custom", TABLE_PREFIX);
 		$join_expression = "";
-		$where_expression = $g_user->is_logged_in() && $g_user->permit("calendar view deleted") ? "TRUE" : "deleted=FALSE";
+		$where_expression = $g_user->is_logged_in() && $g_user->permit("calendar view deleted") ? "TRUE" : "deleted=FALSE AND auto_deleted=FALSE";
 		
 		// Append date range to where_expression
 		$where_expression .= sprintf(" AND date >= %d AND date <= %d", $begin, $end);
@@ -2029,5 +2068,31 @@ DOCHERE_print_upcoming_events;
 		}
 		
 		return new Query(sprintf("SELECT %s FROM %scalendar_event%s WHERE %s and type_fellowship = 1 ORDER BY date ASC", $select_expression, TABLE_PREFIX, $join_expression, $where_expression));
+	}
+	
+	
+	/*Function that creates a TEMPORARY TABLE that stores the event_id, number of people attending, type_fellowship, auto_deleted, deleted, and date
+	 * It will call on a function to auto delete fellowships that are more than 2 weeks old. - Added 1/4/2014
+	*/
+	function query_range_attending($begin, $end){
+		global $g_user;
+		//Where expression to check user permissions to see if they can see deleted events
+		$where_expression = $g_user->is_logged_in() && $g_user->permit("calendar view deleted") ? "TRUE" : "deleted=FALSE AND auto_deleted=FALSE";
+
+		$select_expression = sprintf("SELECT %scalendar_event.event_id, %scalendar_event.date, %scalendar_event.type_fellowship, %scalendar_event.deleted, %scalendar_event.auto_deleted, count(%scalendar_attend.event_id) total", TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX);
+		
+		new Query(sprintf("CREATE TEMPORARY TABLE table_attend AS(%s FROM %scalendar_event LEFT JOIN %scalendar_attend ON %scalendar_event.event_id=%scalendar_attend.event_id WHERE date >=%d AND date <=%d GROUP BY %scalendar_event.event_id)",$select_expression, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $begin, $end, TABLE_PREFIX));
+		$two_weeks_ago = date("Ymd", strtotime("-2 weeks"));
+		//Only delete fellowships that are more than 2 weeks old.
+		if($begin<$two_weeks_ago){
+			$this->auto_delete_fellowships($begin, $two_weeks_ago);
+		}
+		return new Query(sprintf("SELECT * FROM table_attend WHERE %s", $where_expression));
+	}
+	
+	
+	/*Auto delete fellowships within a date range that are less than 5 people. */
+	function auto_delete_fellowships($begin, $end){
+		new Query(sprintf("UPDATE table_attend, %scalendar_event SET table_attend.auto_deleted=1, %scalendar_event.auto_deleted=1 WHERE %scalendar_event.date>= %d AND %scalendar_event.date <= %d AND table_attend.total < 5 AND table_attend.event_id = %scalendar_event.event_id AND %scalendar_event.type_fellowship=TRUE AND %scalendar_event.type_interchapter=FALSE AND %scalendar_event.title!='Study Table' AND table_attend.auto_deleted=FALSE AND table_attend.deleted=FALSE", TABLE_PREFIX, TABLE_PREFIX,TABLE_PREFIX, $begin, TABLE_PREFIX,$end, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX));
 	}
 }
