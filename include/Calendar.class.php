@@ -593,12 +593,12 @@ DOCHERE_print_add_people;
 		$query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, user_id FROM apo_users WHERE disabled = false AND user_id NOT IN (Select user_id from apo_calendar_attend WHERE event_id=%d) ORDER BY firstname, lastname DESC", $event_id));
 		$everyone = "";
 		while ($row = $query->fetch_row()) {
-			$everyone = $everyone . '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . "(" . $row['pledgeclass'] . ")" . '</option>';
+			$everyone = $everyone . '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . " (" . $row['pledgeclass'] . ")" . '</option>';
 		}
 		$query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, apo_users.user_id FROM apo_users INNER JOIN apo_calendar_attend ON apo_calendar_attend.user_id = apo_users.user_id WHERE apo_calendar_attend.event_id=%d", $event_id));
 		$attendees = "";
 		while ($row = $query->fetch_row()) {
-			$attendees = $attendees. '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . "(" . $row['pledgeclass'] . ")" . '</option>';
+			$attendees = $attendees. '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . " (" . $row['pledgeclass'] . ")" . '</option>';
 		}
 		echo <<<DOCHERE_print_add_people
 <div id="add_people">
@@ -609,7 +609,7 @@ DOCHERE_print_add_people;
 <tr><td>Adding: </td><td><select id="add-person" name="add-person">$everyone</select></td></tr>
 <tr><td>Removing: </td><td><select id="remove-person" name="remove-person">$attendees</select></td></tr>
 </table>
-<button type="submit" name="function" value="replace">Replace</button> 
+<button class="btn btn-primary" type="submit" name="function" value="replace">Replace</button> 
 <input type="hidden" name="id" value="$event_id" />
 $evaluate
 </form>
