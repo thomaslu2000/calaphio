@@ -108,7 +108,10 @@ class Calendar {
 			$prefix = '<span class="pledge" style="color: #399;">[PLE]</span> ';
 		} else if ($row['type_custom'] == 14) {
 			$prefix = '<span class="active" style="color: #355E3B;">[ADM]</span> ';
-		} else {
+		} else if($row['type_custom']== 15){
+			$prefix = '<span class="active" style="color: #00FFFF;">[SPON]</span> ';
+			
+		}else {
 			$prefix = '';
 		}
 		$event_id = $row['event_id'];
