@@ -586,7 +586,16 @@ DOCHERE_print_add_people;
 		}
 		
 		if (isset($_REQUEST['function'])) {
-	
+				$add_user_id = $_POST['add-person'];
+				$remove_user_id = $_POST['remove_person']
+				$description = "Replaced User " . $remove_user_id . " with User " . $add_user_id;
+				$timestamp = date("Y-m-d H:i:s");
+				$query = new Query("start transaction");
+				$query = new Query(sprintf("INSERT INTO %scalendar_attend SET event_id=%d, user_id=%d, signup_time='%s'", TABLE_PREFIX, $event_id, $add_user_id, $timestamp));
+				$query = new Query(sprintf("DELETE FROM %scalendar_attend WHERE event_id=%d AND user_id=%d LIMIT 1", TABLE_PREFIX, $event_id, $remove_user_id));
+				$query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description));
+				$query = new Query("commit");
+				break;
 		}
 		
 		$evaluate = isset($_REQUEST['evaluate']) && $_REQUEST['evaluate'] ? "<input type=\"hidden\" name=\"evaluate\" value=\"true\" />" : "";
@@ -603,7 +612,7 @@ DOCHERE_print_add_people;
 		echo <<<DOCHERE_print_add_people
 <div id="add_people">
 <div style="text-align:center">
-<form action="event_replace_person.php" method="get">
+<form action="event_replace_person.php" method="post">
 <table style="margin-left:auto; margin-right:auto">
 <caption style="font-size:larger">Replace a person</caption>
 <tr><td>Adding: </td><td><select id="add-person" style="width:100%" name="add-person">$everyone</select></td></tr>
