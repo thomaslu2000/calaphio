@@ -309,6 +309,7 @@ $title
 $attendees
 </table>
 <div class="center">[<a href="event_add_people.php?id=$event_id&evaluate=true">Add People</a>]</div>
+<div class="center">[<a href="event_replace_person.php?id=$event_id&evaluate=true">Replace Person</a>]</div>
 <div id="eval_questions">
 <div class="question">How many hours was this event? (Required)</div>
 <div class="numerical"><input type="text" name="event_hours" size="2" maxlength="5"/></div>
@@ -560,6 +561,58 @@ $evaluate
 </div>
 $search_results
 </div>
+
+DOCHERE_print_add_people;
+	}
+
+	function print_replace_person() {
+		global $g_user;
+		
+		if (!isset($_REQUEST['id']) || !is_numeric($_REQUEST['id'])) {
+			trigger_error("Print Add People: Invalid event id.", E_USER_ERROR);
+			return;
+		} else if (!$g_user->is_logged_in()) {
+			trigger_error("You must be logged in to do that.", E_USER_ERROR);
+			return;
+		}
+		$event_id = $_REQUEST['id'];
+		
+		// Find out if user is chair or has permissions
+		$query = new Query(sprintf("SELECT chair FROM %scalendar_attend WHERE event_id=%d AND user_id=%d LIMIT 1", TABLE_PREFIX, $event_id, $g_user->data['user_id']));
+		$row = $query->fetch_row();
+		if ((!$row || !$row['chair']) && !$g_user->permit("calendar add users")) {
+			trigger_error("You do not have permission to do that.", E_USER_ERROR);
+			return;
+		}
+		
+		if (isset($_REQUEST['function'])) {
+	
+		}
+		
+		$evaluate = isset($_REQUEST['evaluate']) && $_REQUEST['evaluate'] ? "<input type=\"hidden\" name=\"evaluate\" value=\"true\" />" : "";
+		$query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, user_id FROM apo_users WHERE disabled = false AND user_id NOT IN (Select user_id from apo_calendar_attend WHERE event_id=%d) ORDER BY firstname, lastname DESC", $event_id));
+		$everyone = "";
+		while ($row = $query->fetch_row()) {
+			$everyone = $everyone . '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . "(" . $row['pledgeclass'] . ")" . '</option>';
+		}
+		$query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, user_id FROM apo_users INNER JOIN apo_calendar_attend ON apo_calendar_attend.user_id == apo_users.user_id WHERE apo_calendar_attend.event_id=%d", $event_id));
+		$attendees = "";
+		while ($row = $query->fetch_row()) {
+			$attendees = $attendees. '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . "(" . $row['pledgeclass'] . ")" . '</option>';
+		}
+		echo <<<DOCHERE_print_add_people
+<div id="add_people">
+<div style="text-align:center">
+<form action="event_replace_person.php" method="get">
+<table style="margin-left:auto; margin-right:auto">
+<caption style="font-size:larger">Replace a person</caption>
+<select id="add-person" name="add-person">$everyone</select>
+<select id="remove-person" name="remove-person">$attendees</select>
+</table>
+<button type="submit" name="function" value="Search">Search</button> 
+<input type="hidden" name="id" value="$event_id" />
+$evaluate
+</form>
 
 DOCHERE_print_add_people;
 	}
