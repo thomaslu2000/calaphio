@@ -587,7 +587,7 @@ DOCHERE_print_add_people;
 		
 		if (isset($_REQUEST['function'])) {
 				$add_user_id = $_POST['add-person'];
-				$remove_user_id = $_POST['remove_person']
+				$remove_user_id = $_POST['remove_person'];
 				$description = "Replaced User " . $remove_user_id . " with User " . $add_user_id;
 				$timestamp = date("Y-m-d H:i:s");
 				$query = new Query("start transaction");
