@@ -8,3 +8,8 @@ require("include/GGManiacNag.class.php");
 Template::print_head(array("site.css", "calendar.css", "excel.css"));
 Template::print_body_header('Home', 'NEWS');
 ?>
+
+<?php
+Template::print_body_footer();
+Template::print_disclaimer();
+?>
