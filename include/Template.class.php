@@ -104,7 +104,8 @@ DOCHERE_print_head;
 				"WIKI" => "ggwiki.php",
 				"GALLERY" => "http://calaphio.smugmug.com/",
 				"TESTBANK" => "testbank.php",
-				"ACCOUNT" => "edit_roster.php"
+				"ACCOUNT" => "edit_roster.php",
+				"GG Maniacs" => "past_ggmaniacs.php"
 				),
 			'Contact' => array(
 				));
