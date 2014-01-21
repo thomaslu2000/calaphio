@@ -87,7 +87,7 @@ class Calendar {
 	/**
 	 * This takes in an associative array containing data for an event
 	 * and returns an HTML formatted title. */
-	function format_event_title($row) {
+	function format_event_title($row, $attendee_count_hash=NULL) {
 		if ($row['type_scouting']) {
 			$prefix = '<span class="service" style="color: #0CF;">[BSA]</span> ';
 		} else if ($row['type_interchapter'] || $row['type_interchapter_half']) {
@@ -108,17 +108,25 @@ class Calendar {
 			$prefix = '<span class="pledge" style="color: #399;">[PLE]</span> ';
 		} else if ($row['type_custom'] == 14) {
 			$prefix = '<span class="active" style="color: #355E3B;">[ADM]</span> ';
-		} else {
+		} else if($row['type_custom']== 15){
+			$prefix = '<span class="active" style="color: #00FFFF;">[SPON]</span> ';
+			
+		}else {
 			$prefix = '';
 		}
 		$event_id = $row['event_id'];
 		$class = isset($row['attending']) ? "attending" : "";
+		//Check for auto_deleted fellowships and mark them differently!
+		if(!$row['deleted']){
+			$class .=$row['auto_deleted'] ? " auto_deleted" : "";
+		}
 		$class .= $row['deleted'] ? " deleted" : "";
 		$title = $row['title'];
 		$popup_width = CALENDAR_POPUP_WIDTH;
 		$popup_height = CALENDAR_POPUP_HEIGHT;
+		$total = is_null($attendee_count_hash) ? "": sprintf(" <b>[%d]</b>",$attendee_count_hash[$event_id]);
 		$session_id = session_id(); // JavaScript popups in IE tend to block cookies, so need to explicitly set session id
-		return "<a href=\"event.php?id=$event_id\" class=\"$class\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$prefix$title</a>";
+		return "<a href=\"event.php?id=$event_id\" class=\"$class\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$prefix$title $total</a>";
 	}
 	
 	function format_list_minutes($class, $select, $interval) {
@@ -564,58 +572,67 @@ $search_results
 
 DOCHERE_print_add_people;
 	}
-
-	function print_replace_person() {
-		global $g_user;
-		
-		if (!isset($_REQUEST['id']) || !is_numeric($_REQUEST['id'])) {
-			trigger_error("Print Add People: Invalid event id.", E_USER_ERROR);
-			return;
-		} else if (!$g_user->is_logged_in()) {
-			trigger_error("You must be logged in to do that.", E_USER_ERROR);
-			return;
-		}
-		$event_id = $_REQUEST['id'];
-		
-		// Find out if user is chair or has permissions
-		$query = new Query(sprintf("SELECT chair FROM %scalendar_attend WHERE event_id=%d AND user_id=%d LIMIT 1", TABLE_PREFIX, $event_id, $g_user->data['user_id']));
-		$row = $query->fetch_row();
-		if ((!$row || !$row['chair']) && !$g_user->permit("calendar add users")) {
-			trigger_error("You do not have permission to do that.", E_USER_ERROR);
-			return;
-		}
-		
-		if (isset($_REQUEST['function'])) {
 	
-		}
-		
-		$evaluate = isset($_REQUEST['evaluate']) && $_REQUEST['evaluate'] ? "<input type=\"hidden\" name=\"evaluate\" value=\"true\" />" : "";
-		$query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, user_id FROM apo_users WHERE disabled = false AND user_id NOT IN (Select user_id from apo_calendar_attend WHERE event_id=%d) ORDER BY firstname, lastname DESC", $event_id));
-		$everyone = "";
-		while ($row = $query->fetch_row()) {
-			$everyone = $everyone . '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . " (" . $row['pledgeclass'] . ")" . '</option>';
-		}
-		$query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, apo_users.user_id FROM apo_users INNER JOIN apo_calendar_attend ON apo_calendar_attend.user_id = apo_users.user_id WHERE apo_calendar_attend.event_id=%d", $event_id));
-		$attendees = "";
-		while ($row = $query->fetch_row()) {
-			$attendees = $attendees. '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . " (" . $row['pledgeclass'] . ")" . '</option>';
-		}
-		echo <<<DOCHERE_print_add_people
-<div id="add_people">
-<div style="text-align:center">
-<form action="event_replace_person.php" method="get">
-<table style="margin-left:auto; margin-right:auto">
-<caption style="font-size:larger">Replace a person</caption>
-<tr><td>Adding: </td><td><select id="add-person" style="width:100%" name="add-person">$everyone</select></td></tr>
-<tr><td>Removing: </td><td><select id="remove-person" style="width:100%" name="remove-person">$attendees</select></td></tr>
-</table>
-<button class="btn btn-primary" type="submit" name="function" value="replace">Replace</button> 
-<input type="hidden" name="id" value="$event_id" />
-$evaluate
-</form>
+	function print_replace_person() {
+      global $g_user;
+     
+      if (!isset($_REQUEST['id']) || !is_numeric($_REQUEST['id'])) {
+        trigger_error("Print Add People: Invalid event id.", E_USER_ERROR);
+        return;
+      } else if (!$g_user->is_logged_in()) {
+        trigger_error("You must be logged in to do that.", E_USER_ERROR);
+        return;
+      }
+      $event_id = $_REQUEST['id'];
+     
+      // Find out if user is chair or has permissions
+      $query = new Query(sprintf("SELECT chair FROM %scalendar_attend WHERE event_id=%d AND user_id=%d LIMIT 1", TABLE_PREFIX, $event_id, $g_user->data['user_id']));
+      $row = $query->fetch_row();
+      if ((!$row || !$row['chair']) && !$g_user->permit("calendar add users")) {
+        trigger_error("You do not have permission to do that.", E_USER_ERROR);
+        return;
+      }
+      
+      if (isset($_REQUEST['function'])) {
+          $add_user_id = $_POST['add-person'];
+          $remove_user_id = $_POST['remove-person'];
+          $description = "Replaced User " . $remove_user_id . " with User " . $add_user_id;
+          $timestamp = date("Y-m-d H:i:s");
+          $query = new Query("start transaction");
+          $query = new Query(sprintf("INSERT INTO %scalendar_attend SET event_id=%d, user_id=%d, signup_time='%s'", TABLE_PREFIX, $event_id, $add_user_id, $timestamp));
+          $query = new Query(sprintf("DELETE FROM %scalendar_attend WHERE event_id=%d AND user_id=%d LIMIT 1", TABLE_PREFIX, $event_id, $remove_user_id));
+          $query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description));
+          $query = new Query("commit");
+          $g_user->redirect("evaluate_event.php?id=$event_id");
+      }
+     
+      $evaluate = isset($_REQUEST['evaluate']) && $_REQUEST['evaluate'] ? "<input type=\"hidden\" name=\"evaluate\" value=\"true\" />" : "";
+      $query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, user_id FROM apo_users WHERE disabled = false AND user_id NOT IN (Select user_id from apo_calendar_attend WHERE event_id=%d) ORDER BY firstname, lastname DESC", $event_id));
+      $everyone = "";
+      while ($row = $query->fetch_row()) {
+        $everyone = $everyone . '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . " (" . $row['pledgeclass'] . ")" . '</option>';
+      }
+      $query = new Query(sprintf("SELECT firstname, lastname, pledgeclass, apo_users.user_id FROM apo_users INNER JOIN apo_calendar_attend ON apo_calendar_attend.user_id = apo_users.user_id WHERE apo_calendar_attend.event_id=%d", $event_id));
+      $attendees = "";
+      while ($row = $query->fetch_row()) {
+        $attendees = $attendees. '<option class="" value="' . $row['user_id'] . '" >' . $row['firstname'] . " " . $row['lastname'] . " (" . $row['pledgeclass'] . ")" . '</option>';
+      }
+      echo <<<DOCHERE_print_replace_person
+  <div id="replace-person">
+  <div style="text-align:center">
+  <form action="event_replace_person.php" method="post">
+  <table style="margin-left:auto; margin-right:auto">
+  <caption style="font-size:larger">Replace a person</caption>
+  <tr><td>Adding: </td><td><select id="add-person" style="width:100%" name="add-person">$everyone</select></td></tr>
+  <tr><td>Removing: </td><td><select id="remove-person" style="width:100%" name="remove-person">$attendees</select></td></tr>
+  </table>
+  <button class="btn btn-primary" type="submit" name="function" value="replace">Replace</button> 
+  <input type="hidden" name="id" value="$event_id" />
+  $evaluate
+  </form>
 
-DOCHERE_print_add_people;
-	}
+DOCHERE_print_replace_person;
+    }
 	
 	function print_edit_event() {
 		global $g_user;
@@ -1300,12 +1317,10 @@ $table
 
 DOCHERE_log;
 	}
-	
 	/**
 	 * Year and Month are numerical values, or Timestamp may be used in their place */
 	function print_month() {
 		global $g_user;
-		
 		// User input validation
 		$year = isset($_REQUEST['year']) && is_numeric($_REQUEST['year']) ? $_REQUEST['year'] : date("Y");
 		$month = isset($_REQUEST['month']) && is_numeric($_REQUEST['month']) && $_REQUEST['month'] >= 1 && $_REQUEST['month'] <= 12 ? $_REQUEST['month'] : date("m");
@@ -1326,6 +1341,11 @@ DOCHERE_log;
 		$query_end_day = date("Ymd", strtotime("this saturday", $last_day));
 		$query = $this->query_range($query_start_day, $query_end_day);
 		$row = $query->fetch_row();
+		
+		//Query number of people attending events. Also deletes expired fellowships. Look at function for more details. - Added 1/3/2014
+		$query_attending = $this->query_range_attending($query_start_day, $query_end_day);
+		$row_attending = $query_attending->fetch_row();
+		$attendee_count_hash = array();
 		
 		// Generate values for month selection pulldown menu
 		$select_month_options = "\r\n";
@@ -1411,6 +1431,15 @@ DOCHERE_calendar_header;
 				$internal_month = date("m", $current_day);
 				$internal_day = date("d", $current_day);
 				
+				/* Process number of people for each event - Added 1/3/2014
+				 * This makes a hash table with the key being the event_id, and the value as the number of people attending that event
+				*/
+				while($row_attending)
+				{
+					$attendee_count_hash[$row_attending['event_id']] = intval($row_attending['total']);
+					$row_attending = $query_attending->fetch_row();
+				}
+				
 				// Process all the events for this day
 				$event_items = "";
 				$service_items = "";
@@ -1418,13 +1447,13 @@ DOCHERE_calendar_header;
 				$fundraiser_items = "";
 				while ($row && strtotime($row['date']) <= $current_day) {
 					if (($row['type_service_chapter'] | $row['type_service_campus'] | $row['type_service_community'] | $row['type_service_country']) && ! $row['type_fundraiser']) {
-						$service_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row) . "</li>\r\n";
+						$service_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					} elseif ($row['type_fellowship']) {
-						$fellowship_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row) . "</li>\r\n";
+						$fellowship_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					} elseif ($row['type_fundraiser']) {
-						$fundraiser_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row) . "</li>\r\n";
+						$fundraiser_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					} else {
-						$event_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row) . "</li>\r\n";
+						$event_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					}
 					$row = $query->fetch_row();
 				}
@@ -2517,9 +2546,9 @@ DOCHERE_print_upcoming_events;
 	 * Begin and End are integers formatted YYYYMMDD and are inclusive. */
 	function query_range($begin, $end) {
 		global $g_user;
-		$select_expression = sprintf("%scalendar_event.event_id, title, date, signup_begin, signup_cutoff, signup_lock, deleted, type_custom", TABLE_PREFIX);
+		$select_expression = sprintf("%scalendar_event.event_id, title, date, signup_begin, signup_cutoff, signup_lock, deleted, auto_deleted, type_custom", TABLE_PREFIX);
 		$join_expression = "";
-		$where_expression = $g_user->is_logged_in() && $g_user->permit("calendar view deleted") ? "TRUE" : "deleted=FALSE";
+		$where_expression = $g_user->is_logged_in() && $g_user->permit("calendar view deleted") ? "TRUE" : "deleted=FALSE AND auto_deleted=FALSE";
 		
 		// Append date range to where_expression
 		$where_expression .= sprintf(" AND date >= %d AND date <= %d", $begin, $end);
@@ -2557,5 +2586,32 @@ DOCHERE_print_upcoming_events;
 		}
 		
 		return new Query(sprintf("SELECT %s FROM %scalendar_event%s WHERE %s ORDER BY date ASC", $select_expression, TABLE_PREFIX, $join_expression, $where_expression));
+	}
+	
+	
+	
+	/*Function that creates a TEMPORARY TABLE that stores the event_id, number of people attending, type_fellowship, auto_deleted, deleted, and date
+	 * It will call on a function to auto delete fellowships that are more than 2 weeks old. - Added 1/4/2014
+	*/
+	function query_range_attending($begin, $end){
+		global $g_user;
+		//Where expression to check user permissions to see if they can see deleted events
+		$where_expression = $g_user->is_logged_in() && $g_user->permit("calendar view deleted") ? "TRUE" : "deleted=FALSE AND auto_deleted=FALSE";
+
+		$select_expression = sprintf("SELECT %scalendar_event.event_id, %scalendar_event.date, %scalendar_event.type_fellowship, %scalendar_event.deleted, %scalendar_event.auto_deleted, count(%scalendar_attend.event_id) total", TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX);
+		
+		new Query(sprintf("CREATE TEMPORARY TABLE table_attend AS(%s FROM %scalendar_event LEFT JOIN %scalendar_attend ON %scalendar_event.event_id=%scalendar_attend.event_id WHERE date >=%d AND date <=%d GROUP BY %scalendar_event.event_id)",$select_expression, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $begin, $end, TABLE_PREFIX));
+		$two_weeks_ago = date("Ymd", strtotime("-2 weeks"));
+		//Only delete fellowships that are more than 2 weeks old.
+		if($begin<$two_weeks_ago){
+			$this->auto_delete_fellowships($begin, $two_weeks_ago);
+		}
+		return new Query(sprintf("SELECT * FROM table_attend WHERE %s", $where_expression));
+	}
+	
+	
+	/*Auto delete fellowships within a date range that are less than 5 people. */
+	function auto_delete_fellowships($begin, $end){
+		new Query(sprintf("UPDATE table_attend, %scalendar_event SET table_attend.auto_deleted=1, %scalendar_event.auto_deleted=1 WHERE %scalendar_event.date>= %d AND %scalendar_event.date <= %d AND table_attend.total < 5 AND table_attend.event_id = %scalendar_event.event_id AND %scalendar_event.type_fellowship=TRUE AND %scalendar_event.type_interchapter=FALSE AND %scalendar_event.title!='Study Table' AND table_attend.auto_deleted=FALSE AND table_attend.deleted=FALSE", TABLE_PREFIX, TABLE_PREFIX,TABLE_PREFIX, $begin, TABLE_PREFIX,$end, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX));
 	}
 }
