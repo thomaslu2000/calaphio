@@ -29,6 +29,18 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
+
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+
+<div class="newsItem">
+	<h2>Take a look at our approved Budget!</h2>
+    <p class="date">January 21, 2014</p>
+    <p style="margin-bottom: 1.5em">Check out our <a href="https://docs.google.com/spreadsheet/ccc?key=0AjUhxDpscmUidDQtVkNWVVFpSWhvMzY3Z3ZOcEVWX1E&usp=sharing#gid=0">budget here!</a> If you have any questions, please do not hesitate to contact Jane Tam, your Finance-VP
+	or other members of Excomm!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
+
+<?php endif ?>
 <div class="newsItem">
     <h2>Congratulations to the Spring 2014 Rush Chairs!</h2>
     <p class="date">December 13, 2013</p>
