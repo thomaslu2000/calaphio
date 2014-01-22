@@ -35,9 +35,17 @@ if (!$g_user->is_logged_in()) {
 <div class="newsItem">
 	<h2>Take a look at our approved Budget!</h2>
     <p class="date">January 21, 2014</p>
-    <p style="margin-bottom: 1.5em">Check out our <a href="https://docs.google.com/spreadsheet/ccc?key=0AjUhxDpscmUidDQtVkNWVVFpSWhvMzY3Z3ZOcEVWX1E&usp=sharing#gid=0">budget here!</a> If you have any questions, please do not hesitate to contact Jane Tam, your Finance-VP
-	or other members of Excomm!</p>
+    <p style="margin-bottom: 1.5em">Check out our budget below!</p>
+	<p style="margin-bottom: 1.5em"><a href="https://docs.google.com/spreadsheet/ccc?key=0AjUhxDpscmUidDQtVkNWVVFpSWhvMzY3Z3ZOcEVWX1E&usp=sharing#gid=0">Spring 2014 Budget!</a></p>
     <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
+<div class="newsItem">
+	<h2>Flyer for Rush!</h2>
+    <p class="date">January 21, 2014</p>
+    <p style="margin-bottom: 1.5em">Sign up for flyering and get some good <strong>CM</strong> pledges!</p>
+	<p style="margin-bottom: 1.5em"><a href="https://docs.google.com/spreadsheets/d/1SSCfj2-rx_HMjs2zx9N-nGbKQk1rf7iPkTyZw-s7SXM/edit#gid=1267904948">Flyering and Chalking Sign Ups!</a></p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+
 </div>
 
 <?php endif ?>
