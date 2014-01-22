@@ -29,7 +29,16 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
-
+<div class="newsItem">
+	<h2>Congratulations to Courtney for getting namesake!</h2>
+    <p class="date">January 21, 2014</p>
+    <img src="/documents/sp14/courtney_namesake.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">Please congratulate Courtney for all her achievements in Alpha Phi Omega. She pledged in the Fall of 2009 (JM pledge class).
+	Ever since then, she has served as Service Trainer, Service Vice President, and eventually becoming President in the Fall of 2011! Although she has graduated,
+	she still contributes to the chapter and was recently a parent for Sour Ratch Kids in the Spring of 2013. The chapter is proud to have Courtney as our namesake!</p>
+	<p style="margin-bottom: 1.5em">If you ever see Courtney, please join me in congratulating her and strike a conversation to get a feel of her dazzling personality!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
 <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 
 <div class="newsItem">
