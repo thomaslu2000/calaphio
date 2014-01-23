@@ -29,12 +29,29 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Notes From CM 1</h2>
+    <p class="date">January 22, 2013</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM1!<br><br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/151wXXN87QKPoquhJzYC8-2d5vPxjbEf5IJiiE1IhSqs/edit?usp=sharing"> CM1 Slides</a><br><br>
+    </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3a1pYU1lWVVNENTQ/edit?usp=sharing">CM 1 Minutes</a></p>
+    <p style="margin-bottom: 1em"> Since this is our first CM, we also had the Following Business Documents!<br/>
+     1) <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3MjRMOEFmanM5MHM/edit?usp=sharing">Active Requirements</a><br/>
+     2) <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3X1pxLWZRcmpmTUU/edit?usp=sharing">Pledge Requirements</a>
+    </p>
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/GZ2u6Cd-lvg" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="roster.php?function=Search&user_id=1584">Ngoc Tran (MH)</a></p>
+</div>
+<?php endif ?>
 <div class="newsItem">
 	<h2>Congratulations to Courtney for getting namesake!</h2>
     <p class="date">January 21, 2014</p>
     <img src="/documents/sp14/courtney_namesake.jpg" width=300 style="border:1px solid black"/></a><br><br>
-	<p style="margin-bottom: 1.5em">Please congratulate Courtney for all her achievements in Alpha Phi Omega. She pledged in the Fall of 2009 (JM pledge class).
-	Ever since then, she has served as Service Trainer, Service Vice President, and eventually becoming President in the Fall of 2011! Although she has graduated,
+	<p style="margin-bottom: 1.5em">Please congratulate Courtney for all her achievements in Alpha Phi Omega. She pledged in the Fall of 2008 (WK pledge class).
+	Ever since then, she has served as Service Trainer, Service Vice President, and eventually becoming President in the Spring of 2011 and also chaired Regionals! Although she has graduated,
 	she still contributes to the chapter and was recently a parent for Sour Ratch Kids in the Spring of 2013. The chapter is proud to have Courtney as our namesake!</p>
 	<p style="margin-bottom: 1.5em">If you ever see Courtney, please join me in congratulating her and strike a conversation to get a feel of her dazzling personality!</p>
     <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
