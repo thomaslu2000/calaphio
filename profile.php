@@ -300,8 +300,10 @@ function print_requirements($user_id) {
 			$sql_start_date = date("Y-m-d", $start_date);
 			$sql_end_date = date("Y-m-d", $end_date);
 		} else {
-			$start_date = strtotime("2013-5-7");
-			$end_date = strtotime("2013-12-9");
+			$query = new Query(sprintf("SELECT start, end FROM apo_semesters ORDER BY end DESC LIMIT 1"));
+			$row = $query->fetch_row();
+			$start_date = strtotime($row['start']);
+			$end_date = strtotime($row['end']);
 			$sql_start_date = date("Y-m-d", $start_date);
 			$sql_end_date = date("Y-m-d", $end_date);
 		}
