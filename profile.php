@@ -677,7 +677,33 @@ function print_requirements($user_id) {
 					$rush_events_count++;
 				}
 			}
+
+			// Retrieve Sponsorship events
+			$sponsorship_events = "";
+			$sponsorship_events_count = 0;
+			$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair, hours FROM %scalendar_event
+				JOIN %scalendar_attend USING (event_id)
+				JOIN %scalendar_event_type_custom ON (type_id=type_custom AND type_name='Sponsorship Event')
+				WHERE deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+				TABLE_PREFIX, TABLE_PREFIX,
+				TABLE_PREFIX,
+				TABLE_PREFIX,
+				$sql_start_date, $sql_end_date, $user_id));
+			while ($row = $query->fetch_row()) {
+				$date = date("M d", strtotime($row['date']));
+				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
+				$title_link = event_link($row['event_id'], $row['title']);
+				$sponsorship_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
+				if ($row['attended']) {
+					$sponsorship_events_count++;
+				} else if ($row['flaked']) {
+					$sponsorship_events_count--;
+				}
+			}
+
 			
+			
+
 			// Retrieve Chapter events
 			$chapter_events = "";
 			$chapter_events_count = 0;
@@ -784,6 +810,10 @@ $ic_events
 $rush_events
 </table>
 <table>
+<caption>Attend 1 out of 3 Sponsorship Events - You have completed $sponsorship_events_count</caption>
+$sponsorship_events
+</table>
+<table>
 <caption>Complete 4 hours tabling - You have completed $tabling_hours hours</caption>
 $tabling_events
 </table>
@@ -836,13 +866,16 @@ $fellowship_events
 <caption>Complete 3 leadership credits - You can get credit by doing any of the following:</caption>
 <tr><td axis="name">Serving on a committee - <a href="ggwiki.php?page_id=31#3">Search for one here</a> <strong>(required)</strong></td></tr>
 <tr><td axis="name">Submit 3 (original content) Stylus Submissions (1 credit)</td></tr>
-<tr><td axis="name">Chairing an event (1 credit)</td></tr>
+<tr><td axis="name">Chairing 2 events (1 credit)</td></tr>
 <tr><td axis="name">Attending a LEADS workshop (1 credit)</td></tr>
 <tr><td axis="name">Driving to 3 events (1 credit)</td></tr>
 <tr><td axis="name">Attending Nationals, Sectionals, or Regionals (1 credit)</td></tr>
 <tr><td axis="name">Participating in Leadership Workshop (1 credit)</td></tr>
 <tr><td axis="name">Attending Mid-semester or End-of-semester forum (if not used as a chapter event) (1 credit)</td></tr>
-<tr><td axis="name">Being a Big, Aunt, Uncle, or Parent (<b>MUST ATTEND</b> Campout, Broomball, and 1 out of 3 Interfams) (1 credit)</td></tr>
+<tr><td axis="name">Being a Big, Aunt, Uncle, or Parent ( MUST ATTEND Campout, Pledge Class Fellowship, 1/2 Interfams, 1/2 Spirit Week Events) (1 credit)</td></tr>
+<tr><td axis="name">Become a sponsor (MUST ATTEND 1 fellowship and 1 service event with your sponsoree)(1 credit)</td></tr>
+<tr><td axis="name"> Chair a committee (separate from serving on a committee)(1 credit)</td></tr>
+
 </table>
 </div>
 

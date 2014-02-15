@@ -29,11 +29,33 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
-
+<div class="newsItem">
+	<h2>Congratulations to Rebecca Phuong for getting GG Maniac!</h2>
+    <p class="date">February 05, 2014</p>
+    <img src="/documents/sp14/ggmaniac/ggmaniac1.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">Please congratulate Rebecca Phuong for winning GG Maniac! She has been a big, but has always been there for her family by being an aunt and no one questions that she
+does as much, if not more than a big should. She pledged JS semester and was Gamma Gamma's Finance Vice President last semester! </p>
+	<p style="margin-bottom: 1.5em">Without her, the chapter wouldn't have made it this far! If you see her, please
+remember to thank her and congratulate her because she deserves it after putting in so much work!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
 <?php if ($g_user->is_logged_in()): ?>
+
+<div class="newsItem">
+    <h2>Notes From CM 2</h2>
+    <p class="date">February 05, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM2!<br><br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1Ig_RB6qDtSggxrpvgmjyo-ECbRk69deYZMJEveq33X4/edit?usp=sharing"> CM2 Slides</a><br><br>
+    </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://docs.google.com/file/d/0B2qOHCQXVkc3d1hwOUZjUVdFVEE/edit">CM 2 Minutes</a></p>
+    
+    </p>
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/uygn3MZplUw" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="roster.php?function=Search&user_id=1584">Ngoc Tran (MH)</a></p>
+</div>
 <div class="newsItem">
     <h2>Notes From CM 1</h2>
-    <p class="date">January 22, 2013</p>
+    <p class="date">January 22, 2014</p>
     <p style="margin-bottom: 1em">Here are the documents from CM1!<br><br>
         Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/151wXXN87QKPoquhJzYC8-2d5vPxjbEf5IJiiE1IhSqs/edit?usp=sharing"> CM1 Slides</a><br><br>
     </p>
