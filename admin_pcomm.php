@@ -116,10 +116,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
 				$service_hours -= $row['hours'];
 			}
 		}
-		if ($service_hours < 25) {
-			$service_events = "<FONT COLOR='RED'>25 Service Hours: $service_hours Hours <br/></FONT>";
+		if ($service_hours < 20) {
+			$service_events = "<FONT COLOR='RED'>20 Service Hours: $service_hours Hours <br/></FONT>";
 		} else {
-			$service_events = "25 Service Hours: $service_hours Hours <br/>";
+			$service_events = "20 Service Hours: $service_hours Hours <br/>";
 		}
 		
 		// Retrieve Fellowship events
@@ -248,10 +248,10 @@ $interfam_events = "";
 				$interfam_events_count++;
 			}
 		}
-		if ($interfam_events_count < 2) {
-			$interfam_events = "<FONT COLOR='RED'>2 Interfams: $interfam_events_count Interfams <br/></FONT>";
+		if ($interfam_events_count < 1) {
+			$interfam_events = "<FONT COLOR='RED'>1 Interfams: $interfam_events_count Interfams <br/></FONT>";
 		} else {
-			$interfam_events = "2 Interfams: $interfam_events_count Interfams <br/>";
+			$interfam_events = "1 Interfams: $interfam_events_count Interfams <br/>";
 		}
 
 		// Retrieve ExComm Meeting events

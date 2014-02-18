@@ -1037,11 +1037,11 @@ $election_events
 $excomm_events
 </table>
 <table>
-<caption>Attend 2/3 Interfams - You have completed $interfam_events_count</caption>
+<caption>Attend 1/2 Interfams - You have completed $interfam_events_count</caption>
 $interfam_events
 </table>
 <table>
-<caption>Complete 25 service hours - You have completed $service_hours hours</caption>
+<caption>Complete 20 service hours - You have completed $service_hours hours</caption>
 $service_events
 </table>
 <table>
@@ -1064,10 +1064,10 @@ $fellowship_events
 <tr><td axis="name">Attend Campout</td></tr>
 <tr><td axis="name">Attend all Pledge Reviews (5)</td></tr>
 <tr><td axis="name">Pass all Pledge Quizzes (4)</td></tr>
-<tr><td axis="name">Attend 1 Office Hour per Pledge Committee Member (10 total)</td></tr>
+<tr><td axis="name">Attend 1 Office Hour per Pledge Committee Member (8 total)</td></tr>
 <tr><td axis="name">Fill out 30 Interviews</td></tr>
 <tr><td axis="name">Complete 4 reflections</td></tr>
-<tr><td axis="name">Complete 1/2 of Active Signature Sheet</td></tr>
+<tr><td axis="name">Complete 2/3 of Active Signature Sheet</td></tr>
 <tr><td axis="name">Complete Pledge Binder</td></tr>
 <tr><td axis="name">Pass Pledge Test</td></tr>
 <tr><td axis="name">Attend Activation</td></tr>
