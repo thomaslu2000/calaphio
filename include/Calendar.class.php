@@ -16,12 +16,7 @@
 define('CALENDAR_POPUP_WIDTH', 700);
 define('CALENDAR_POPUP_HEIGHT', 700);
 
-require_once 'include/library/HTMLPurifier.auto.php';
-
 class Calendar {
-
-	var $config = HTMLPurifier_Config::createDefault();
-	var $purifier = new HTMLPurifier($config);
 	
 	var $event_type_names = array(
 		'type_interchapter' => 'Interchapter',
@@ -1010,7 +1005,11 @@ HEREDOC;
 			$location = $row['location'] && $g_user->is_logged_in() ? "<a href=\"https://maps.google.com/maps?hl=en&q=" . $row['location'] . "&near=Berkeley, CA" . "\">" . $row['location'] . "</a>" : "";
 			$signup_limit = $row['signup_limit'] == 0 ? "No Max!" : $row['signup_limit'];
 			$description =  html_entity_decode($this->format_add_links($row['description']));
-			$description = $this->purifier->purify($description);
+			
+			require_once 'library/HTMLPurifier.auto.php';
+			$config = HTMLPurifier_Config::createDefault();
+			$purifier = new HTMLPurifier($config);
+			$description = $purifier->purify($description);
 			$signup_begin_time = $row['signup_begin'] ? strtotime($row['signup_begin']) : false;
 			$signup_cutoff_time = $row['signup_cutoff'] ? strtotime($row['signup_cutoff']) : strtotime("-3 days", strtotime($row['date']));
 			$signup_cutoff = date("l, M d, Y", $signup_cutoff_time);
