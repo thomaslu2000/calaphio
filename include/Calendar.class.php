@@ -16,7 +16,7 @@
 define('CALENDAR_POPUP_WIDTH', 700);
 define('CALENDAR_POPUP_HEIGHT', 700);
 
-require_once 'library/HTMLPurifier.auto.php'
+require_once 'library/HTMLPurifier.auto.php';
 
 class Calendar {
 
