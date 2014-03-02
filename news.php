@@ -34,7 +34,7 @@ if (!$g_user->is_logged_in()) {
 	<h2>Congratulations to Annie Ferguson for getting GG Maniac!</h2>
     <p class="date">March 1, 2014</p>
     <img src="/documents/sp14/ggmaniac/ggmaniac3.jpg" width=300 style="border:1px solid black"/></a><br><br>
-	<p style="margin-bottom: 1.5em">Please congratulate Annie Ferguson for winning GG Maniac! Annie pledged Maura Harty semester and was Historian last semester. She is currently an aunt for Whale I Am 
+	<p style="margin-bottom: 1.5em">Please congratulate Annie Ferguson for winning GG Maniac! Annie pledged Jennifer Sun semester and was Historian last semester. She is currently an aunt for Whale I Am 
 	and chairing YTA Mosswood where she helps tutor little kids! She has always been a great friend to many in APhiO and is always involved to help her family out! </p>
 	<p style="margin-bottom: 1.5em">When you see Annie, thank her to show your appreciation! Maybe give her a ducky or two as well!</p>
     <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
