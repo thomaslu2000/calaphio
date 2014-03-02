@@ -29,7 +29,20 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
+<?php if($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Notes From CM 4</h2>
+    <p class="date">March 01, 2014/p>
+    <p style="margin-bottom: 1em">Here are the documents from CM4!<br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1vIXK59gco0iRwziCzmYLXEpmpt42e3_zJQEvayrSmrA/edit?usp=sharing"> CM4 Slides</a><br>
+    </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3UW05VTA5MzAwMjQ/edit?usp=sharing">CM 4 Minutes</a></p>
+    <p style="margin-bottom: em"> Here is our wonderful <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3ZVpEZ2tOYmR0UEU/edit?usp=sharing">CM 4 STYLUS! </a> Read it and enjoy a great laugh! </p>
 
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/ixXIrP9Vgb8" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="roster.php?function=Search&user_id=1584">Ngoc Tran (MH)</a></p>
+</div>
+<?php endif ?>
 <div class="newsItem">
 	<h2>Congratulations to James Wang for getting GG Maniac!</h2>
     <p class="date">February 11, 2014</p>
