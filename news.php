@@ -29,6 +29,30 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
+
+<div class="newsItem">
+	<h2>Congratulations to James Wang for getting GG Maniac!</h2>
+    <p class="date">February 11, 2014</p>
+    <img src="/documents/sp14/ggmaniac/ggmaniac2.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">Please congratulate James Wang for winning GG Maniac! James is like a teddy bear and is loved by his family and friends in Alpha Phi Omega! James pledged Maura Harty semester
+and is now bigging again this semester! Whenever you need someone to fill up a spot for you at a fellowship, fundraiser, or service, James will be there to help you out! </p>
+	<p style="margin-bottom: 1.5em">When you see James, give him a hug and show him your appreciation. For those who do end up being his littles, you will really love having him around! </p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Notes From CM 3</h2>
+    <p class="date">February 11, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM3!<br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1tn75YPWZ_BCyMeDeBhmhGMJdWGUfKmSvIWsZT2qbqxU/edit?usp=sharing"> CM3 Slides</a><br>
+    </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://docs.google.com/file/d/0B2qOHCQXVkc3VEVlMWtqSUFjYVE/edit">CM 3 Minutes</a></p>
+    <p style="margin-bottom: em"> Here is our wonderful <a href="https://docs.google.com/file/d/0B2qOHCQXVkc3WkVIbjVwSldRc28/edit">CM 3 STYLUS!</a> Read it and enjoy a great laugh! </p>
+
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/58kugX6pBiA" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="roster.php?function=Search&user_id=1584">Ngoc Tran (MH)</a></p>
+</div>
+<?php endif ?>
 <div class="newsItem">
 	<h2>Congratulations to Rebecca Phuong for getting GG Maniac!</h2>
     <p class="date">February 05, 2014</p>
