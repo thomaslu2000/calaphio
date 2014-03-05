@@ -31,6 +31,17 @@ if (!$g_user->is_logged_in()) {
 ?>
 <?php if($g_user->is_logged_in()): ?>
 <div class="newsItem">
+	<h2>Submit to Caption Contest! Last day to submit is March 11, 2014 at 5pm before CM 5 starts!</h2>
+	<p class="date">March 05, 2014</p>
+	<img src="/documents/sp14/caption_contest/caption contest4.jpg" width="300" style="border:1px solid black"/>
+	<p>Submit! We want all the funny comments you can dish out there! Winners will get <em><b>$5 Jamba Juice or Yogurt Land Gift Card!</b></em></p>
+	<img src="/documents/sp14/caption_contest/caption_contest4_1.jpg" width="300" style="border:1px solid black"/>
+	<p>We have another picture as well! We will have two $5 winners! There will be a winner for each photo so SUBMIT SUBMIT SUBMIT</p>
+	<p style="margin-bottom: 1.5em"><a href="https://docs.google.com/forms/d/1ELsVwAiney9Rm7AoXn7CZYv7t68iXD749siiO3Cx-	/edit"><b>Also, if you got something dirt or something funny you want everyone else to know, submit to the Stylus Dirt Box!
+		It really helps to make a better Caption Contest!</b></a></p>
+	<p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
+<div class="newsItem">
 	<h2>Congratulations to Annie Ferguson for getting GG Maniac!</h2>
     <p class="date">March 1, 2014</p>
     <img src="/documents/sp14/ggmaniac/ggmaniac3.jpg" width=300 style="border:1px solid black"/></a><br><br>
