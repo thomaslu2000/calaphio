@@ -36,9 +36,10 @@ if (!$g_user->is_logged_in()) {
 	<img src="/documents/sp14/caption_contest/caption contest4.jpg" width="300" style="border:1px solid black"/>
 	<p>Submit! We want all the funny comments you can dish out there! Winners will get <em><b>$5 Jamba Juice or Yogurt Land Gift Card!</b></em></p>
 	<img src="/documents/sp14/caption_contest/caption_contest4_1.jpg" width="300" style="border:1px solid black"/>
-	<p>We have another picture as well! We will have two $5 winners! There will be a winner for each photo so SUBMIT SUBMIT SUBMIT</p>
-	<p style="margin-bottom: 1.5em"><a href="https://docs.google.com/forms/d/1ELsVwAiney9Rm7AoXn7CZYv7t68iXD749siiO3Cx-	/edit"><b>Also, if you got something dirt or something funny you want everyone else to know, submit to the Stylus Dirt Box!
-		It really helps to make a better Caption Contest!</b></a></p>
+	<p style="margin-bottom: 1.5em">We have another picture as well! We will have two $5 winners! There will be a winner for each photo so please submit</p>
+	<p style="margin-bottom: 1.5em"><a href="https://docs.google.com/forms/d/1D1W2-wtDM1mIIiEG8eQKJqi6K_UiGAMU3adFIiYtvwg/viewform">Submit to Caption Contest!</a></p>
+	<p style="margin-bottom: 1.5em"><b>Also, if you got something dirt or something funny you want everyone else to know, submit to the <a href="https://docs.google.com/forms/d/1ELsVwAiney9Rm7AoXn7CZYv7t68iXD749siiO3Cx-JQ/viewform">Stylus Dirt Box!</a>
+		It really helps to make a better Caption Contest!</b></p>
 	<p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
 </div>
 <div class="newsItem">
