@@ -30,6 +30,66 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 <?php if($g_user->is_logged_in()): ?>
+<!--<div class="newsItem">
+<h2>Submit to Caption Contest! Last day to submit is April 1, 2014 at 5pm before CM 5 starts!</h2>
+<p class="date">March 27, 2014</p>
+<img src="/documents/sp14/caption_contest/caption contest4.jpg" width="300" style="border:1px solid black"/>
+<p>Submit! We want all the funny comments you can dish out there! Winners will get <em><b>$5 Jamba Juice or Yogurt Land Gift Card!</b></em></p>
+<img src="/documents/sp14/caption_contest/caption_contest4_1.jpg" width="300" style="border:1px solid black"/>
+<p style="margin-bottom: 1.5em">We have another picture as well! We will have two $5 winners! There will be a winner for each photo so please submit</p>
+<p style="margin-bottom: 1.5em"><a href="https://docs.google.com/forms/d/1D1W2-wtDM1mIIiEG8eQKJqi6K_UiGAMU3adFIiYtvwg/viewform">Submit to Caption Contest!</a></p>
+<p style="margin-bottom: 1.5em"><b>Also, if you got something dirt or something funny you want everyone else to know, submit to the <a href="https://docs.google.com/forms/d/1ELsVwAiney9Rm7AoXn7CZYv7t68iXD749siiO3Cx-JQ/viewform">Stylus Dirt Box!</a>
+	It really helps to make a better Caption Contest!</b></p>
+<p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
+<div class="newsItem">
+    <h2>Notes From CM 6</h2>
+    <p class="date">April 1, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM6!<br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1iU_xCGpzzwKHojZFBWwxZiELlb1KCRg6SPnXzix4G98/edit?usp=sharing"> CM6 Slides</a><br>
+    </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3QUFvY0hrd2pINmc/edit?usp=sharing">CM 6 Minutes</a></p>
+    <p style="margin-bottom: em"> Here is our wonderful <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3amZNZWV2dXdieWc/edit?usp=sharing">CM 6 STYLUS! </a> Read it and enjoy a great laugh! </p>
+
+    <iframe width="420" height="315" src="//www.youtube.com/embed/4Cem30N-gRc" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="roster.php?function=Search&user_id=1584">Ngoc Tran (MH)</a></p>
+</div>-->
+<?php endif ?>
+<div class="newsItem">
+	<h2>Congratulations to Ryan Fong for getting GG Maniac!</h2>
+    <p class="date">March 16, 2014</p>
+    <img src="/documents/sp14/ggmaniac/ggmaniac4.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">Ryan is one of the nicest and most inspirational people that you will ever meet in APO! Many people will recognize Ryan from his amazing 
+	hand gestures whenever he talks, but also because he is always super energetic. He pledged Maura Harty semester and has been contributing so much to APO since then. This
+	semester, he stepped up to become the Spirit Chair and is leading the Roll Call Dance Team! I can tell we are going to have an amazing dance team already! </p>
+	<p style="margin-bottom: 1.5em">If you see Ryan, congratulate him and talk to him if you don't know him! I promise you won't regret it! Everyone who knows Ryan 
+		feels very lucky because he is one of the coolest and down to earth people you will ever meet!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
+<?php if($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Notes From CM 5</h2>
+    <p class="date">March 15, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM5!<br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1iU_xCGpzzwKHojZFBWwxZiELlb1KCRg6SPnXzix4G98/edit?usp=sharing"> CM5 Slides</a><br>
+    </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3QUFvY0hrd2pINmc/edit?usp=sharing">CM 5 Minutes</a></p>
+    <p style="margin-bottom: em"> Here is our wonderful <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3amZNZWV2dXdieWc/edit?usp=sharing">CM 5 STYLUS! </a> Read it and enjoy a great laugh! </p>
+
+    <iframe width="420" height="315" src="//www.youtube.com/embed/4Cem30N-gRc" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="roster.php?function=Search&user_id=1584">Ngoc Tran (MH)</a></p>
+</div>
+<?php endif ?>
+<div class="newsItem">
+	<h2>Congratulations to Annie Ferguson for getting GG Maniac!</h2>
+    <p class="date">March 1, 2014</p>
+    <img src="/documents/sp14/ggmaniac/ggmaniac3.jpg" width=300 style="border:1px solid black"/></a><br><br>
+	<p style="margin-bottom: 1.5em">Please congratulate Annie Ferguson for winning GG Maniac! Annie pledged Jennifer Sun semester and was Historian last semester. She is currently an aunt for Whale I Am 
+	and chairing YTA Mosswood where she helps tutor little kids! She has always been a great friend to many in APhiO and is always involved to help her family out! </p>
+	<p style="margin-bottom: 1.5em">When you see Annie, thank her to show your appreciation! Maybe give her a ducky or two as well!</p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
+<?php if($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Submit to Caption Contest! Last day to submit is March 11, 2014 at 5pm before CM 5 starts!</h2>
 	<p class="date">March 05, 2014</p>
@@ -41,15 +101,6 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em"><b>Also, if you got something dirt or something funny you want everyone else to know, submit to the <a href="https://docs.google.com/forms/d/1ELsVwAiney9Rm7AoXn7CZYv7t68iXD749siiO3Cx-JQ/viewform">Stylus Dirt Box!</a>
 		It really helps to make a better Caption Contest!</b></p>
 	<p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
-</div>
-<div class="newsItem">
-	<h2>Congratulations to Annie Ferguson for getting GG Maniac!</h2>
-    <p class="date">March 1, 2014</p>
-    <img src="/documents/sp14/ggmaniac/ggmaniac3.jpg" width=300 style="border:1px solid black"/></a><br><br>
-	<p style="margin-bottom: 1.5em">Please congratulate Annie Ferguson for winning GG Maniac! Annie pledged Jennifer Sun semester and was Historian last semester. She is currently an aunt for Whale I Am 
-	and chairing YTA Mosswood where she helps tutor little kids! She has always been a great friend to many in APhiO and is always involved to help her family out! </p>
-	<p style="margin-bottom: 1.5em">When you see Annie, thank her to show your appreciation! Maybe give her a ducky or two as well!</p>
-    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
 </div>
 <div class="newsItem">
     <h2>Notes From CM 4</h2>
