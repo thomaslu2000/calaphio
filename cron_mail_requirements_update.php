@@ -321,6 +321,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 
 					$headers  = 'MIME-Version: 1.0' . "\r\n";
 					$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+					$headers .= 'From: admin@calaphio.com' . "\r\n" .
+   								'Reply-To: admin@calaphio.com' . "\r\n";
 					$subject = '[APO] Requirements Update For ' . $firstname . ' ' . $lastname;
 					$message = '<html>
 								<head>
