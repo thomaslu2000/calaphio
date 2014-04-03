@@ -341,7 +341,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 								';
 					mail($to, $subject, $message, $headers);
 					$counter= $counter+1;
-					echo "$counter)You have sent a successful message to $firstname $lastname with the following email: $to </br>";
+					echo "$counter) You have sent a successful message to <strong>$firstname $lastname</strong> with the following email: <strong>$to</strong></br>";
 				}
 
 			}
