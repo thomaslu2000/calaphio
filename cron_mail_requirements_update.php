@@ -316,7 +316,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($active_events_count < 1) {
 						$active_event = "<FONT COLOR='RED'>1 Active Event: $active_events_count Active Event <br/></FONT>";
 					} else {
-						$active_event = "1 Active Event: $active_events_count Active Event <br/>";
+						$active_event = "<FONT COLOR='GREEN'>1 Active Event: $active_events_count Active Event <br/></FONT>";
 					}
 
 					$headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -330,16 +330,20 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					$message .= '</title>
 								</head>
 								<body>';
+					$message .= '<p>This is a progress update for' . $firstname . ' ' . $lastname . ' on active requirements! Requirements
+								are due by CM 8 so please make sure to complete them by then!</p>';
 					$message .= $ic_events . $rush_events . $tabling_events . $fundraiser_events . $chapter_events . $chaptermeeting_events . $election_events . $service_events . $fellowship_events . $leadership;
+					$message .= '<p>You are also required to join a committee as part of your requirements!</p>';
 					$message .= '<br/>
 								</body>
 								</html>
 								';
 					mail($to, $subject, $message, $headers);
+					echo "You have sent a successful message to $firstname, $lastname : $to \n";
 				}
 
 			}
-			echo "You have just sent the actives update successfully!";
+			
 		}
 	}
 
