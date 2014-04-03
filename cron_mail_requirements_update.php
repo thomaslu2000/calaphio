@@ -339,7 +339,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 				}
 
 			}
-echo "You have just sent the actives update successfully!"
+			echo "You have just sent the actives update successfully!";
 		}
 	}
 
