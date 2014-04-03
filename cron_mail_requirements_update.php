@@ -331,7 +331,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 								</head>
 								<body>';
 					$message .= '<p><FONT COLOR="gray">This is a progress update for ' . $firstname . ' ' . $lastname . ' on active requirements! 
-								<br/>Requirements are due by CM 8 so please make sure to complete them by then!</FONT></p>';
+								<br/>Requirements are due by CM 8 so please make sure to complete them by then if you have not done so!</FONT></p>';
 					$message .= $ic_events . $rush_events . $tabling_events . $fundraiser_events . $chapter_events . $chaptermeeting_events . $election_events . $service_events . $fellowship_events . $leadership;
 					$message .= '<p><FONT COLOR="aqua">You are also required to join a committee as part of your requirements! Join one
 					 			if you have not done so yet!</FONT></p>';
