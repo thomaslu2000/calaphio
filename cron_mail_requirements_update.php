@@ -181,7 +181,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($election_events_count < 1) {
 						$election_events = "<FONT COLOR='RED'>1 Election: $election_events_count Election <br/></FONT>";
 					} else {
-						$election_events = "<FONT COLOR='GREEN'>31 Election: $election_events_count Election <br/>";
+						$election_events = "<FONT COLOR='GREEN'>1 Election: $election_events_count Election <br/>";
 					}
 					
 					// Retrieve Tabling hours
@@ -205,7 +205,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($tabling_hours < 4) {
 						$tabling_events = "<FONT COLOR='RED'>4 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
 					} else {
-						$tabling_events = "<FONT COLOR='GREEN'>34 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
+						$tabling_events = "<FONT COLOR='GREEN'>4 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
 					}
 					
 					// Retrieve Rush events
@@ -227,7 +227,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($rush_events_count < 3) {
 						$rush_events = "<FONT COLOR='RED'>3 Rush Events: $rush_events_count Events <br/></FONT>";
 					} else {
-						$rush_events = "<FONT COLOR='GREEN'>33 Rush Events: $rush_events_count Events <br/></FONT>";
+						$rush_events = "<FONT COLOR='GREEN'>3 Rush Events: $rush_events_count Events <br/></FONT>";
 					}
 					
 					// Retrieve Chapter events
