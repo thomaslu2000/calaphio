@@ -340,7 +340,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 								</html>
 								';
 					mail($to, $subject, $message, $headers);
-					echo "You have sent a successful message to $firstname $lastname with the following email: $to <\br>";
+					echo "You have sent a successful message to $firstname $lastname with the following email: $to </br>";
 				}
 
 			}
