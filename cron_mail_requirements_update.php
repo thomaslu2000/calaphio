@@ -22,7 +22,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 		$sql_start_date = date("Y-m-d", $start_date);
 		$sql_end_date = date("Y-m-d", $end_date);
 		$today = time();
-		
+		$counter = 0;
 		if ($today > $start_date && $today < $end_date) {
 			
 			while ($peopleRow = $query->fetch_row()) {
@@ -340,7 +340,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 								</html>
 								';
 					mail($to, $subject, $message, $headers);
-					echo "You have sent a successful message to $firstname $lastname with the following email: $to </br>";
+					$counter= $counter+1;
+					echo "$counter)You have sent a successful message to $firstname $lastname with the following email: $to </br>";
 				}
 
 			}
