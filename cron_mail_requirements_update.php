@@ -66,7 +66,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($ic_events_count < 1) {
 						$ic_events = "<FONT COLOR='RED'>1 IC Credit: $ic_events_count Credits <br/></FONT>";
 					} else {
-						$ic_events = "1 IC Credit: $ic_events_count Credits <br/>";
+						$ic_events = "<FONT COLOR='GREEN'>1 IC Credit: $ic_events_count Credits <br/></FONT>";
 					}
 
 					// Retrieve Service events
@@ -105,7 +105,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($service_hours < 20) {
 						$service_events = "<FONT COLOR='RED'>20 Service Hours: $service_hours Hours <br/></FONT>";
 					} else {
-						$service_events = "20 Service Hours: $service_hours Hours <br/>";
+						$service_events = "<FONT COLOR='GREEN'>20 Service Hours: $service_hours Hours <br/></FONT>";
 					}
 
 					$service_total = $service_chapter + $service_campus + $service_community + $service_country;
@@ -113,7 +113,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($service_total < 3) {
 						$four_cs = "<FONT COLOR='RED'>3 Cs of Service: $service_total Cs <br/></FONT>";
 					} else {
-						$four_cs = "3 Cs of Service: $service_total Cs <br/>";
+						$four_cs = "<FONT COLOR='GREEN'>3 Cs of Service: $service_total Cs <br/></FONT>";
 					}		
 
 					// Retrieve Fellowship events
@@ -135,7 +135,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($fellowship_events_count < 5) {
 						$fellowship_events = "<FONT COLOR='RED'>5 Fellowships: $fellowship_events_count Fellowships <br/></FONT>";
 					} else {
-						$fellowship_events = "5 Fellowships: $fellowship_events_count Fellowships <br/>";
+						$fellowship_events = "<FONT COLOR='GREEN'>5 Fellowships: $fellowship_events_count Fellowships <br/></FONT>";
 					}
 					
 					// Retrieve Fundraiser events
@@ -157,7 +157,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($fundraiser_events_count < 1) {
 						$fundraiser_events = "<FONT COLOR='RED'>1 Fundraiser: $fundraiser_events_count Fundraiser <br/></FONT>";
 					} else {
-						$fundraiser_events = "1 Fundraiser: $fundraiser_events_count Fundraiser <br/>";
+						$fundraiser_events = "<FONT COLOR='GREEN'>1 Fundraiser: $fundraiser_events_count Fundraiser <br/></FONT>";
 					}
 
 					// Retrieve Election events
@@ -181,7 +181,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($election_events_count < 1) {
 						$election_events = "<FONT COLOR='RED'>1 Election: $election_events_count Election <br/></FONT>";
 					} else {
-						$election_events = "1 Election: $election_events_count Election <br/>";
+						$election_events = "<FONT COLOR='GREEN'>31 Election: $election_events_count Election <br/>";
 					}
 					
 					// Retrieve Tabling hours
@@ -205,7 +205,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($tabling_hours < 4) {
 						$tabling_events = "<FONT COLOR='RED'>4 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
 					} else {
-						$tabling_events = "4 Hours of Tabling: $tabling_hours Hours <br/>";
+						$tabling_events = "<FONT COLOR='GREEN'>34 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
 					}
 					
 					// Retrieve Rush events
@@ -227,7 +227,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($rush_events_count < 3) {
 						$rush_events = "<FONT COLOR='RED'>3 Rush Events: $rush_events_count Events <br/></FONT>";
 					} else {
-						$rush_events = "3 Rush Events: $rush_events_count Events <br/>";
+						$rush_events = "<FONT COLOR='GREEN'>33 Rush Events: $rush_events_count Events <br/></FONT>";
 					}
 					
 					// Retrieve Chapter events
@@ -251,7 +251,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($chapter_events_count < 2) {
 						$chapter_events = "<FONT COLOR='RED'>2 Chapter Events: $chapter_events_count Events <br/></FONT>";
 					} else {
-						$chapter_events = "2 Chapter Events: $chapter_events_count Events <br/>";
+						$chapter_events = "<FONT COLOR='GREEN'>2 Chapter Events: $chapter_events_count Events <br/></FONT>";
 					}
 					
 					// Retrieve Chapter Meeting events
@@ -273,7 +273,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($chaptermeeting_events_count < 5) {
 						$chaptermeeting_events = "<FONT COLOR='RED'>5 Chapter Meetings: $chaptermeeting_events_count Meetings <br/></FONT>";
 					} else {
-						$chaptermeeting_events = "5 Chapter Meetings: $chaptermeeting_events_count Meetings <br/>";
+						$chaptermeeting_events = "<FONT COLOR='GREEN'>5 Chapter Meetings: $chaptermeeting_events_count Meetings <br/></FONT>";
 					}
 
 
@@ -294,7 +294,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($leadership_count < 3) {
 						$leadership = "<FONT COLOR='RED'>3 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
 					} else {
-						$leadership = "3 Leadership Credits: $leadership_count Chairing Credits <br/>";
+						$leadership = "<FONT COLOR='GREEN'>3 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
 					}
 
 					//Retrieve Active events
@@ -330,16 +330,17 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					$message .= '</title>
 								</head>
 								<body>';
-					$message .= '<p>This is a progress update for' . $firstname . ' ' . $lastname . ' on active requirements! Requirements
-								are due by CM 8 so please make sure to complete them by then!</p>';
+					$message .= '<p><FONT COLOR="gray">This is a progress update for ' . $firstname . ' ' . $lastname . ' on active requirements! 
+								<br/>Requirements are due by CM 8 so please make sure to complete them by then!</FONT></p>';
 					$message .= $ic_events . $rush_events . $tabling_events . $fundraiser_events . $chapter_events . $chaptermeeting_events . $election_events . $service_events . $fellowship_events . $leadership;
-					$message .= '<p>You are also required to join a committee as part of your requirements!</p>';
+					$message .= '<p><FONT COLOR="aqua">You are also required to join a committee as part of your requirements! Join one
+					 			if you have not done so yet!</FONT></p>';
 					$message .= '<br/>
 								</body>
 								</html>
 								';
 					mail($to, $subject, $message, $headers);
-					echo "You have sent a successful message to $firstname, $lastname : $to \n";
+					echo "You have sent a successful message to $firstname $lastname (with email $to): $to \n";
 				}
 
 			}
