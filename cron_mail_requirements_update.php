@@ -17,9 +17,9 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 
 	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass, email, mail_requirements_update FROM apo_users join apo_actives using (user_id) order by lastname, firstname"));
 
-		$start_date = strtotime("2013-5-7");
-		$end_date = strtotime("2013-12-9");
-		$sql_start_date = date("Y-m-d", $start_date);
+		$start_date = strtotime("2013-12-10");
+		$end_date = strtotime("2014-12-9");
+		$sql_start_date = date("2014-4-29", $start_date);
 		$sql_end_date = date("Y-m-d", $end_date);
 		$today = time();
 		
@@ -339,6 +339,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 				}
 
 			}
+echo "You have just sent the actives update successfully!"
 		}
 	}
 
