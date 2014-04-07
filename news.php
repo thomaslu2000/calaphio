@@ -31,7 +31,7 @@ if (!$g_user->is_logged_in()) {
 ?>
 <?php if($g_user->is_logged_in()): ?>
 <!--<div class="newsItem">
-<h2>Submit to Caption Contest! Last day to submit is April 1, 2014 at 5pm before CM 5 starts!</h2>
+<h2>Submit to Caption Contest! Last day to submit is April 1, 2014 at 5pm before CM 6 starts!</h2>
 <p class="date">March 27, 2014</p>
 <img src="/documents/sp14/caption_contest/caption contest4.jpg" width="300" style="border:1px solid black"/>
 <p>Submit! We want all the funny comments you can dish out there! Winners will get <em><b>$5 Jamba Juice or Yogurt Land Gift Card!</b></em></p>
@@ -41,6 +41,15 @@ if (!$g_user->is_logged_in()) {
 <p style="margin-bottom: 1.5em"><b>Also, if you got something dirt or something funny you want everyone else to know, submit to the <a href="https://docs.google.com/forms/d/1ELsVwAiney9Rm7AoXn7CZYv7t68iXD749siiO3Cx-JQ/viewform">Stylus Dirt Box!</a>
 	It really helps to make a better Caption Contest!</b></p>
 <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>-->
+<div class="newsItem">
+    <h2>Congratulations to Angela Wu for getting GG Maniac!</h2>
+    <p class="date">April 1st, 2014</p>
+    <img src="/documents/sp14/ggmaniac/ggmaniac5.jpg" width=300 style="border:1px solid black"/></a><br><br>
+    <p style="margin-bottom: 1.5em">Ever since pledging APO during Dave Emery(DE) semester, she has been a great help and contributed a lot of Gamma Gamma's active chapter.
+    This semester, she is a chair for College Day and is also a chair for Spring Youth Service Day! She is rather shy, but if you see her around, don't be afraid to engage
+    in a conversation with her because she is extremely friendly. </p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
 </div>
 <div class="newsItem">
     <h2>Notes From CM 6</h2>
@@ -48,12 +57,12 @@ if (!$g_user->is_logged_in()) {
     <p style="margin-bottom: 1em">Here are the documents from CM6!<br>
         Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1iU_xCGpzzwKHojZFBWwxZiELlb1KCRg6SPnXzix4G98/edit?usp=sharing"> CM6 Slides</a><br>
     </p>
-    <p style="margin-bottom: 1em">Here are the <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3QUFvY0hrd2pINmc/edit?usp=sharing">CM 6 Minutes</a></p>
-    <p style="margin-bottom: em"> Here is our wonderful <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3amZNZWV2dXdieWc/edit?usp=sharing">CM 6 STYLUS! </a> Read it and enjoy a great laugh! </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3T3ViVEtndFdadUk/edit?usp=sharing">CM 6 Minutes</a></p>
+    <p style="margin-bottom: em"> Here is our wonderful <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3QThHY3VLdXRtcTA/edit?usp=sharing">CM 6 STYLUS! </a> Read it and enjoy a great laugh! </p>
 
-    <iframe width="420" height="315" src="//www.youtube.com/embed/4Cem30N-gRc" frameborder="0" allowfullscreen></iframe>
+    <iframe width="420" height="315" src="//www.youtube.com/embed/gYSu6pkV9F0" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="roster.php?function=Search&user_id=1584">Ngoc Tran (MH)</a></p>
-</div>-->
+</div>
 <?php endif ?>
 <div class="newsItem">
 	<h2>Congratulations to Ryan Fong for getting GG Maniac!</h2>
