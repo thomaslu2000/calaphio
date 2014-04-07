@@ -29,6 +29,15 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
+<div class="newsItem">
+    <h2>Congratulations to Angela Wu for getting GG Maniac!</h2>
+    <p class="date">April 1st, 2014</p>
+    <img src="/documents/sp14/ggmaniac/ggmaniac5.jpg" width=300 style="border:1px solid black"/></a><br><br>
+    <p style="margin-bottom: 1.5em">Ever since pledging APO during Dave Emery(DE) semester, she has been a great help and contributed a lot of Gamma Gamma's active chapter.
+    This semester, she is a chair for College Day and is also a chair for Spring Youth Service Day! She is rather shy, but if you see her around, don't be afraid to engage
+    in a conversation with her because she is extremely friendly. </p>
+    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
+</div>
 <?php if($g_user->is_logged_in()): ?>
 <!--<div class="newsItem">
 <h2>Submit to Caption Contest! Last day to submit is April 1, 2014 at 5pm before CM 6 starts!</h2>
@@ -42,15 +51,7 @@ if (!$g_user->is_logged_in()) {
 	It really helps to make a better Caption Contest!</b></p>
 <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
 </div>-->
-<div class="newsItem">
-    <h2>Congratulations to Angela Wu for getting GG Maniac!</h2>
-    <p class="date">April 1st, 2014</p>
-    <img src="/documents/sp14/ggmaniac/ggmaniac5.jpg" width=300 style="border:1px solid black"/></a><br><br>
-    <p style="margin-bottom: 1.5em">Ever since pledging APO during Dave Emery(DE) semester, she has been a great help and contributed a lot of Gamma Gamma's active chapter.
-    This semester, she is a chair for College Day and is also a chair for Spring Youth Service Day! She is rather shy, but if you see her around, don't be afraid to engage
-    in a conversation with her because she is extremely friendly. </p>
-    <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
-</div>
+
 <div class="newsItem">
     <h2>Notes From CM 6</h2>
     <p class="date">April 1, 2014</p>
@@ -64,6 +65,7 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="roster.php?function=Search&user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
 <?php endif ?>
+
 <div class="newsItem">
 	<h2>Congratulations to Ryan Fong for getting GG Maniac!</h2>
     <p class="date">March 16, 2014</p>
