@@ -29,7 +29,30 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
-
+<?php if($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Elections is Coming Up! Send in Your Past Election Platforms</h2>
+    <p class="date">April 7, 2014</p>
+    <p style="margin-bottom: 1 em">Hello everyone! As you all know, elections is coming up and it is highly favourable that anyone who is running for an Executive Committee
+        position submit a platform prior so that everyone else in the chapter can read and review it!</p>
+    <p style="margin-bottom: 1 em">Drafting an election platform may be a daunting and hard task so I provided some example Election Platforms from the past for anyone who is interested in taking a look!</p>
+    <p><ul style="margin-bottom: 1 em">
+        <li><a href="fa13platforms.php">Fall 2013 Platforms</a></li>
+        <li><a href="sp13platforms.php">Spring 2013 Platforms</a></li>
+        <li><a href="fa12platforms.php">Fall 2012 Platforms</a></li>
+        <li><a href="sp12platforms.php">Spring 2012 Platforms</a></li>
+        <li><a href="fa11platforms.php">Fall 2011 Platforms</a></li>
+        <li><a href="sp11platforms.php">Spring 2011 Platforms</a></li>
+        <li><a href="fa10platforms.php">Fall 2010 Platforms</a></li>
+        <li><a href="sp10platforms.php">Spring 2010 Platforms</a></li>
+    </ul></p>
+    <p>In addition, I will be doing LIVE UPDATES as soon as a candidate submits their platforms for Fall 2014 Excomm. The link to view Spring 2014 Platforms as soon as they
+        get submitted will be: <br/>
+        <a href="fa14platforms.php">Fall 2014 Platforms</a>
+        <br/>
+    </p>
+</div>
+<?php endif ?>
 <div class="newsItem">
     <h2>Congratulations to Angela Wu for getting GG Maniac!</h2>
     <p class="date">April 1st, 2014</p>
@@ -52,28 +75,6 @@ if (!$g_user->is_logged_in()) {
 	It really helps to make a better Caption Contest!</b></p>
 <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
 </div>-->
-<div class="newsItem">
-    <h2>Elections is Coming Up! Send in Your Past Election Platforms</h2>
-    <p class="date">April 7, 2014</p>
-    <p style="margin-bottom: 1 em">Hello everyone! As you all know, elections is coming up and it is highly favourable that anyone who is running for an Executive Committee
-        position submit a platform prior so that everyone else in the chapter can read and review it!</p>
-    <p style="margin-bottom: 1 em">Drafting an election platform may be a daunting and hard task so I provided some example Election Platforms from the past for anyone who is interested in taking a look!</p>
-    <ul style="margin-bottom: 1 em">
-        <li><a href="fa13platforms.php">Fall 2013 Platforms</a></li>
-        <li><a href="sp13platforms.php">Spring 2013 Platforms</a></li>
-        <li><a href="fa12platforms.php">Fall 2012 Platforms</a></li>
-        <li><a href="sp12platforms.php">Spring 2012 Platforms</a></li>
-        <li><a href="fa11platforms.php">Fall 2011 Platforms</a></li>
-        <li><a href="sp11platforms.php">Spring 2011 Platforms</a></li>
-        <li><a href="fa10platforms.php">Fall 2010 Platforms</a></li>
-        <li><a href="sp10platforms.php">Spring 2010 Platforms</a></li>
-    </ul>
-    <p>In addition, I will be doing LIVE UPDATES as soon as a candidate submits their platforms for Fall 2014 Excomm. The link to view Spring 2014 Platforms as soon as they
-        get submitted will be: <br/>
-        <a href="fa14platforms.php">Fall 2014 Platforms</a>
-        <br/>
-    </p>
-</div>
 <div class="newsItem">
     <h2>Notes From CM 6</h2>
     <p class="date">April 1, 2014</p>
