@@ -33,10 +33,10 @@ if (!$g_user->is_logged_in()) {
 <div class="newsItem">
     <h2>Elections is Coming Up! Send in Your Past Election Platforms</h2>
     <p class="date">April 7, 2014</p>
-    <p style="margin-bottom: 1 em">Hello everyone! As you all know, elections is coming up and it is highly favourable that anyone who is running for an Executive Committee
+    <p style="margin-bottom: 1 em;">Hello everyone! As you all know, elections is coming up and it is highly favourable that anyone who is running for an Executive Committee
         position submit a platform prior so that everyone else in the chapter can read and review it!</p>
-    <p style="margin-bottom: 1 em">Drafting an election platform may be a daunting and hard task so I provided some example Election Platforms from the past for anyone who is interested in taking a look!</p>
-    <p><ul style="margin-bottom: 1 em">
+    <p style="margin-bottom: 1 em;">Drafting an election platform may be a daunting and hard task so I provided some example Election Platforms from the past for anyone who is interested in taking a look!</p>
+    <p><ul style="list-style: inside disc; margin-bottom: 1.5em;">
         <li><a href="fa13platforms.php">Fall 2013 Platforms</a></li>
         <li><a href="sp13platforms.php">Spring 2013 Platforms</a></li>
         <li><a href="fa12platforms.php">Fall 2012 Platforms</a></li>
@@ -48,7 +48,7 @@ if (!$g_user->is_logged_in()) {
     </ul></p>
     <p>In addition, I will be doing LIVE UPDATES as soon as a candidate submits their platforms for Fall 2014 Excomm. The link to view Spring 2014 Platforms as soon as they
         get submitted will be: <br/>
-        <a href="fa14platforms.php">Fall 2014 Platforms</a>
+        <a style="margin-left: 1em;"href="fa14platforms.php">Fall 2014 Platforms</a>
         <br/>
     </p>
 </div>
