@@ -35,7 +35,7 @@ if (!$g_user->is_logged_in()) {
     <p class="date">April 1st, 2014</p>
     <img src="/documents/sp14/ggmaniac/ggmaniac5.jpg" width=300 style="border:1px solid black"/></a><br><br>
     <p style="margin-bottom: 1.5em">Ever since pledging APO during Dave Emery(DE) semester, she has been a great help and contributed a lot of Gamma Gamma's active chapter.
-    This semester, she is a chair for College Day and is also a chair for Spring Youth Service Day! She is rather shy, but if you see her around, don't be afraid to engage
+    This semester, she is a chair for College Day! She is rather shy, but if you see her around, don't be afraid to engage
     in a conversation with her because she is extremely friendly. </p>
     <p>-<a href="roster.php?function=Search&user_id=1216">Ngoc Tran (MH)</a></p>
 </div>
