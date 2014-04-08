@@ -36,7 +36,7 @@ if (!$g_user->is_logged_in()) {
     <p style="margin-bottom: 1 em;">Hello everyone! As you all know, elections is coming up and it is highly favourable that anyone who is running for an Executive Committee
         position submit a platform prior so that everyone else in the chapter can read and review it!</p>
     <p style="margin-bottom: 1 em;">Drafting an election platform may be a daunting and hard task so I provided some example Election Platforms from the past for anyone who is interested in taking a look!</p>
-    <p><ul style="list-style: inside disc; margin-bottom: 1.5em;">
+    <p><ul style="margin-left: 1em; list-style: inside disc; margin-bottom: 1.5em;">
         <li><a href="fa13platforms.php">Fall 2013 Platforms</a></li>
         <li><a href="sp13platforms.php">Spring 2013 Platforms</a></li>
         <li><a href="fa12platforms.php">Fall 2012 Platforms</a></li>
