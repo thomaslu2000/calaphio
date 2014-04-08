@@ -37,18 +37,18 @@ if (!$g_user->is_logged_in()) {
         position submit a platform prior so that everyone else in the chapter can read and review it!</p>
     <p style="margin-bottom: 1 em;">Drafting an election platform may be a daunting and hard task so I provided some example Election Platforms from the past for anyone who is interested in taking a look!</p>
     <p><ul style="margin-left: 1em; list-style: inside disc; margin-bottom: 1.5em;">
-        <li><a href="fa13platforms.php">Fall 2013 Platforms</a></li>
-        <li><a href="sp13platforms.php">Spring 2013 Platforms</a></li>
-        <li><a href="fa12platforms.php">Fall 2012 Platforms</a></li>
-        <li><a href="sp12platforms.php">Spring 2012 Platforms</a></li>
-        <li><a href="fa11platforms.php">Fall 2011 Platforms</a></li>
-        <li><a href="sp11platforms.php">Spring 2011 Platforms</a></li>
-        <li><a href="fa10platforms.php">Fall 2010 Platforms</a></li>
-        <li><a href="sp10platforms.php">Spring 2010 Platforms</a></li>
+        <li><a target="_blank" href="fa13platforms.php">Fall 2013 Platforms</a></li>
+        <li><a target="_blank" href="sp13platforms.php">Spring 2013 Platforms</a></li>
+        <li><a target="_blank" href="fa12platforms.php">Fall 2012 Platforms</a></li>
+        <li><a target="_blank" href="sp12platforms.php">Spring 2012 Platforms</a></li>
+        <li><a target="_blank" href="fa11platforms.php">Fall 2011 Platforms</a></li>
+        <li><a target="_blank" href="sp11platforms.php">Spring 2011 Platforms</a></li>
+        <li><a target="_blank" href="fa10platforms.php">Fall 2010 Platforms</a></li>
+        <li><a target="_blank" href="sp10platforms.php">Spring 2010 Platforms</a></li>
     </ul></p>
     <p>In addition, I will be doing LIVE UPDATES as soon as a candidate submits their platforms for Fall 2014 Excomm. The link to view Spring 2014 Platforms as soon as they
         get submitted will be: <br/>
-        <a style="margin-left: 1em;"href="fa14platforms.php">Fall 2014 Platforms</a>
+        <a target="_blank" style="margin-left: 1em;"href="fa14platforms.php">Fall 2014 Platforms</a>
         <br/>
     </p>
 </div>
