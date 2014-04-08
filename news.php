@@ -45,6 +45,8 @@ if (!$g_user->is_logged_in()) {
         <li><a target="_blank" href="sp11platforms.php">Spring 2011 Platforms</a></li>
         <li><a target="_blank" href="fa10platforms.php">Fall 2010 Platforms</a></li>
         <li><a target="_blank" href="sp10platforms.php">Spring 2010 Platforms</a></li>
+        <li><a target="_blank" href="fa09platforms.php">Fall 2009 Platforms</a></li>
+        <li><a target="_blank" href="sp09platforms.php">Spring 2009 Platforms</a></li>
     </ul></p>
     <p>In addition, I will be doing LIVE UPDATES as soon as a candidate submits their platforms for Fall 2014 Excomm. The link to view Spring 2014 Platforms as soon as they
         get submitted will be: <br/>
