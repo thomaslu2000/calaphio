@@ -137,11 +137,25 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring14_fellowships = $row['count'];
 
-
+function query_attending_services($start, end){
 $select_expression = sprintf("SELECT %scalendar_event.event_id, %scalendar_event.title, %scalendar_event.date, %scalendar_event.type_service_country, %scalendar_event.type_service_community, %scalendar_event.type_service_campus, %scalendar_event.type_service_chapter, %scalendar_event.deleted, %scalendar_event.auto_deleted, count(%scalendar_attend.event_id) total", TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX,TABLE_PREFIX);
 		
 new Query(sprintf("CREATE TEMPORARY TABLE table_attend AS(%s FROM %scalendar_event LEFT JOIN %scalendar_attend ON %scalendar_event.event_id=%scalendar_attend.event_id WHERE date >=%d AND date <=%d AND (%scalendar_event.type_service_country=TRUE OR %scalendar_event.type_service_chapter=TRUE OR %scalendar_event.type_service_campus OR %scalendar_event.type_service_community) GROUP BY %scalendar_event.event_id)",$select_expression, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $start, $end, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX));
+return new Query(sprintf("SELECT * FROM table_attend WHERE %s", $where_expression));
+}
 
+$query_attending = $this->query_range_attending('2012-8-28', '2014-4-29');
+$row_attending = $query_attending->fetch_row();
+$popular_services = "";
+while($row_attending)
+{
+	if(intval($row_attend['total']) >=10){
+		$event_title = $row_attending['title'];
+		$num_attendees = intval($row_attending['total']);
+		$popular_services.="<br/> $event_title : Has num_attendees attending it!<br/>";
+	}
+	$row_attending = $query_attending->fetch_row();
+}
 	
 	echo <<<HEREDOC
 <h1>View Total Service Hours</h1>
@@ -160,7 +174,8 @@ new Query(sprintf("CREATE TEMPORARY TABLE table_attend AS(%s FROM %scalendar_eve
 <tr><td axis="semester">$spring14_dates (Spring 2014) CM Semester</td><td axis="hours">$spring14</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments">Number of Pledges: $spring14_pledges, Number of Actives: $spring14_actives </td></tr>
 
 </table>
-<p>This is a print out of all service events that have over 10 people attending!</p>
+<p>This is a print out of all service events that have 10 or more people attending!</p>
+<p>$popular_services</p>
 
 HEREDOC;
 
