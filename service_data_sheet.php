@@ -5,7 +5,7 @@ Template::print_head(array('admin_view_requirements.css'));
 Template::print_body_header('Home', 'ADMIN');
 
 function query_attending_services($start, $end){
-	$select_expression = sprintf("SELECT %scalendar_event.event_id, %scalendar_event.title, %scalendar_event.date, %scalendar_event.type_service_country, %scalendar_event.type_service_community, %scalendar_event.type_service_campus, %scalendar_event.type_service_chapter, %scalendar_event.deleted, %scalendar_event.auto_deleted, count(%scalendar_attend.event_id) total", TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX,TABLE_PREFIX);
+	$select_expression = sprintf("SELECT %scalendar_event.event_id, %scalendar_event.title, %scalendar_event.date, %scalendar_event.type_service_country, %scalendar_event.type_service_community, %scalendar_event.type_service_campus, %scalendar_event.type_service_chapter, %scalendar_event.deleted, %scalendar_event.auto_deleted, count(%scalendar_attend.event_id) AS total", TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX,TABLE_PREFIX);
 			
 	new Query(sprintf("CREATE TEMPORARY TABLE table_attend AS(%s FROM %scalendar_event LEFT JOIN %scalendar_attend ON %scalendar_event.event_id=%scalendar_attend.event_id WHERE date >='%s' AND date <='%s' AND (%scalendar_event.type_service_country=TRUE OR %scalendar_event.type_service_chapter=TRUE OR %scalendar_event.type_service_campus OR %scalendar_event.type_service_community) GROUP BY %scalendar_event.event_id)",$select_expression, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $start, $end, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX));
 	return new Query(sprintf("SELECT * FROM table_attend"));
@@ -150,11 +150,9 @@ $popular_services = "Check popular events <br/>";
 while($row_attending)
 {
 	$event_title = $row_attending['title'];
-	echo $event_title;
 	$num_attendees = intval($row_attending['total']);
-	$event_date = $row_attend['date'];
-	echo $num_attendees;
-	$popular_services.="<br/> $event_title on $event_date: Has num_attendees attending it!<br/>";
+	$event_date = $row_attending['date'];
+	$popular_services.="<br/> $event_title on $event_date: Has $num_attendees attending it!<br/>";
 	$row_attending = $query_attending->fetch_row();
 }
 	
