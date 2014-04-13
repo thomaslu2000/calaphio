@@ -4,8 +4,8 @@ require("include/Template.class.php");
 Template::print_head(array('admin_view_requirements.css'));
 Template::print_body_header('Home', 'ADMIN');
 
-$start = '2012-5-2';
-$end = '2012-12-2';
+$start = '2012-8-28';
+$end = '2012-11-27';
 $query = new Query("
 		SELECT sum(hours) AS hours FROM apo_calendar_event
 			JOIN apo_calendar_attend USING (event_id)
@@ -29,7 +29,7 @@ $query = new Query("
 $row = $query->fetch_row();
 $fall12_fellowships = $row['count'];
 
-$start = '2012-12-4';
+$start = '2013-1-22';
 $end = '2013-4-30';
 $query = new Query("
 		SELECT sum(hours) AS hours FROM apo_calendar_event
@@ -54,8 +54,8 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring13_fellowships = $row['count'];
 
-$start = '2013-5-1';
-$end = '2013-12-10';
+$start = '2013-9-3';
+$end = '2013-12-3';
 $query = new Query("
 		SELECT sum(hours) AS hours FROM apo_calendar_event
 			JOIN apo_calendar_attend USING (event_id)
@@ -79,8 +79,8 @@ $query = new Query("
 $row = $query->fetch_row();
 $fall13_fellowships = $row['count'];
 
-$start = '2013-12-9';
-$end = '2014-5-5';
+$start = '2014-1-21';
+$end = '2014-4-29';
 $query = new Query("
 		SELECT sum(hours) AS hours FROM apo_calendar_event
 			JOIN apo_calendar_attend USING (event_id)
