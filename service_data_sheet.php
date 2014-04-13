@@ -149,11 +149,9 @@ $row_attending = $query_attending->fetch_row();
 $popular_services = "Check popular events <br/>";
 while($row_attending)
 {
-	if(intval($row_attend['total']) >=10){
-		$event_title = $row_attending['title'];
-		$num_attendees = intval($row_attending['total']);
-		$popular_services.="<br/> $event_title : Has num_attendees attending it!<br/>";
-	}
+	$event_title = $row_attending['title'];
+	$num_attendees = intval($row_attending['total']);
+	$popular_services.="<br/> $event_title : Has num_attendees attending it!<br/>";
 	$row_attending = $query_attending->fetch_row();
 }
 	
