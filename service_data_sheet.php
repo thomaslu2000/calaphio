@@ -25,7 +25,7 @@ $fall12_projects = $row['count'];
 $query = new Query("
 		SELECT count(*) AS count FROM apo_calendar_event
 			WHERE (type_fellowship=TRUE)
-			AND e® AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+			 AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $fall12_fellowships = $row['count'];
 
