@@ -10,7 +10,7 @@ function query_attending_services($start, $end){
 	new Query(sprintf("CREATE TEMPORARY TABLE table_attend AS(%s FROM %scalendar_event LEFT JOIN %scalendar_attend ON %scalendar_event.event_id=%scalendar_attend.event_id WHERE date >=%d AND date <=%d AND (%scalendar_event.type_service_country=TRUE OR %scalendar_event.type_service_chapter=TRUE OR %scalendar_event.type_service_campus OR %scalendar_event.type_service_community) GROUP BY %scalendar_event.event_id)",$select_expression, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $start, $end, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX));
 	return new Query(sprintf("SELECT * FROM table_attend WHERE %s", $where_expression));
 }
-echo 'Check here!';
+
 $start = '2012-8-28';
 $end = '2012-11-27';
 $query = new Query("
@@ -144,9 +144,11 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring14_fellowships = $row['count'];
 
-
+echo 'Check here!';
 $query_attending = $this->query_attending_services('2012-8-28', '2014-4-29');
+echo 'Check here 2';
 $row_attending = $query_attending->fetch_row();
+echo 'Check here 3';
 $popular_services = "";
 while($row_attending)
 {
