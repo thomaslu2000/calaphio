@@ -144,12 +144,9 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring14_fellowships = $row['count'];
 
-echo 'Check here!';
 $query_attending = query_attending_services('2012828', '2014429');
-echo 'Check here 2';
 $row_attending = $query_attending->fetch_row();
-echo 'Check here 3';
-$popular_services = "";
+$popular_services = "Check popular events <br/>";
 while($row_attending)
 {
 	if(intval($row_attend['total']) >=10){
