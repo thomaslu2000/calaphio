@@ -144,7 +144,7 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring14_fellowships = $row['count'];
 
-$query_attending = query_attending_services('2012828', '2014429');
+$query_attending = query_attending_services('2012-8-28', '2014-4-29');
 $row_attending = $query_attending->fetch_row();
 $popular_services = "Check popular events <br/>";
 while($row_attending)
