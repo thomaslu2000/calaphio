@@ -535,10 +535,10 @@ $spring14_fellowships = $row['count'];
 <tr><td axis="semester">$spring11_dates (Spring 2011)</td><td axis="hours">$spring11</td><td axis="hours">$spring11_projects</td><td axis="hours">$spring11_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$fall11_dates (Fall 2011)</td><td axis="hours">$fall11</td><td axis="hours">$fall11_projects</td><td axis="hours">$fall11_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$spring12_dates (Spring 2012)</td><td axis="hours">$spring12</td><td axis="hours">$spring12_projects</td><td axis="hours">$spring12_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall12_dates (Fall 2012)</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring13_dates (Spring 2013)</td><td axis="hours">$spring13</td><td axis="hours">$spring13_projects</td><td axis="hours">$spring13_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall13_dates (Fall 2013)</td><td axis="hours">$fall13</td><td axis="hours">$fall13_projects</td><td axis="hours">$fall13_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring14_dates (Spring 2014)</td><td axis="hours">$fall13</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall12_dates (Fall 2012) MH Semester</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring13_dates (Spring 2013) KK Semester</td><td axis="hours">$spring13</td><td axis="hours">$spring13_projects</td><td axis="hours">$spring13_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall13_dates (Fall 2013) DE Semester</td><td axis="hours">$fall13</td><td axis="hours">$fall13_projects</td><td axis="hours">$fall13_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring14_dates (Spring 2014) CM Semester</td><td axis="hours">$fall13</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments"></td></tr>
 </table>
 
 HEREDOC;
