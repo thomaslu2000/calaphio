@@ -501,7 +501,7 @@ $spring14_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", str
 $query = new Query("
 		SELECT count(*) AS count FROM apo_calendar_event
 			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
-			AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+			AND evaluated=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $spring14_projects = $row['count'];
 
