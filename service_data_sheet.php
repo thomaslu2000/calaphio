@@ -150,7 +150,9 @@ $popular_services = "Check popular events <br/>";
 while($row_attending)
 {
 	$event_title = $row_attending['title'];
+	echo $event_title;
 	$num_attendees = intval($row_attending['total']);
+	echo $num_attendees;
 	$popular_services.="<br/> $event_title : Has num_attendees attending it!<br/>";
 	$row_attending = $query_attending->fetch_row();
 }
