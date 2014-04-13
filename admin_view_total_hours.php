@@ -538,7 +538,7 @@ $spring14_fellowships = $row['count'];
 <tr><td axis="semester">$fall12_dates (Fall 2012) MH Semester</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$spring13_dates (Spring 2013) KK Semester</td><td axis="hours">$spring13</td><td axis="hours">$spring13_projects</td><td axis="hours">$spring13_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$fall13_dates (Fall 2013) DE Semester</td><td axis="hours">$fall13</td><td axis="hours">$fall13_projects</td><td axis="hours">$fall13_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring14_dates (Spring 2014) CM Semester</td><td axis="hours">$fall13</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring14_dates (Spring 2014) CM Semester</td><td axis="hours">$spring14</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments"></td></tr>
 </table>
 
 HEREDOC;
