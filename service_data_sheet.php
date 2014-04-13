@@ -137,12 +137,6 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring14_fellowships = $row['count'];
 
-function query_attending_services($start, end){
-$select_expression = sprintf("SELECT %scalendar_event.event_id, %scalendar_event.title, %scalendar_event.date, %scalendar_event.type_service_country, %scalendar_event.type_service_community, %scalendar_event.type_service_campus, %scalendar_event.type_service_chapter, %scalendar_event.deleted, %scalendar_event.auto_deleted, count(%scalendar_attend.event_id) total", TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX,TABLE_PREFIX);
-		
-new Query(sprintf("CREATE TEMPORARY TABLE table_attend AS(%s FROM %scalendar_event LEFT JOIN %scalendar_attend ON %scalendar_event.event_id=%scalendar_attend.event_id WHERE date >=%d AND date <=%d AND (%scalendar_event.type_service_country=TRUE OR %scalendar_event.type_service_chapter=TRUE OR %scalendar_event.type_service_campus OR %scalendar_event.type_service_community) GROUP BY %scalendar_event.event_id)",$select_expression, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, $start, $end, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX, TABLE_PREFIX));
-return new Query(sprintf("SELECT * FROM table_attend WHERE %s", $where_expression));
-}
 
 $query_attending = $this->query_range_attending('2012-8-28', '2014-4-29');
 $row_attending = $query_attending->fetch_row();
