@@ -15,6 +15,15 @@ $row = $query->fetch_row();
 $fall12 = $row['hours'];
 $fall12_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_fa12");
+$row = $query->fetch_row();
+$fall12_actives = $row['count'];
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_fa12");
+$row = $query->fetch_row();
+$fall12_pledges = $row['count'];
+
 $query = new Query("
 		SELECT count(*) AS count FROM apo_calendar_event
 			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
@@ -39,6 +48,14 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring13 = $row['hours'];
 $spring13_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_sp13");
+$row = $query->fetch_row();
+$spring13_actives = $row['count'];
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_sp13");
+$row = $query->fetch_row();
+$spring13_pledges = $row['count'];
 
 $query = new Query("
 		SELECT count(*) AS count FROM apo_calendar_event
@@ -65,6 +82,14 @@ $row = $query->fetch_row();
 $fall13 = $row['hours'];
 $fall13_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_fa13");
+$row = $query->fetch_row();
+$fall13_actives = $row['count'];
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_fa13");
+$row = $query->fetch_row();
+$fall13_pledges = $row['count'];
+
 $query = new Query("
 		SELECT count(*) AS count FROM apo_calendar_event
 			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
@@ -90,6 +115,14 @@ $row = $query->fetch_row();
 $spring14 = $row['hours'];
 $spring14_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives");
+$row = $query->fetch_row();
+$spring14_actives = $row['count'];
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges");
+$row = $query->fetch_row();
+$spring14_pledges = $row['count'];
+
 $query = new Query("
 		SELECT count(*) AS count FROM apo_calendar_event
 			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
@@ -110,11 +143,17 @@ $spring14_fellowships = $row['count'];
 <p style="padding: 1em 0px">This is a service report on the calendar showing as much data on the progress and trends of service events!</p>
 <table style="width: auto;">
 <caption></caption>
+
 <tr><th axis="semester" style="width: 300px; font-weight: bold; padding: 0px 2px">Semester</th><th axis="hours" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Hours</th><th axis="projects" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Events</th><th axis="fellowships" style="width: 100px; font-weight: bold; padding: 0px 2px">Fellowships</th><th axis="Comments" style="font-weight: bold; padding: 0px 2px">Comments</th></tr>
-<tr><td axis="semester">$fall12_dates (Fall 2012) MH Semester</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring13_dates (Spring 2013) KK Semester</td><td axis="hours">$spring13</td><td axis="hours">$spring13_projects</td><td axis="hours">$spring13_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall13_dates (Fall 2013) DE Semester</td><td axis="hours">$fall13</td><td axis="hours">$fall13_projects</td><td axis="hours">$fall13_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring14_dates (Spring 2014) CM Semester</td><td axis="hours">$spring14</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments"></td></tr>
+
+<tr><td axis="semester">$fall12_dates (Fall 2012) MH Semester</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments">Number of Pledges: $fall12_pledges , Number of Actives: $fall12_actives</td></tr>
+
+<tr><td axis="semester">$spring13_dates (Spring 2013) KK Semester</td><td axis="hours">$spring13</td><td axis="hours">$spring13_projects</td><td axis="hours">$spring13_fellowships</td><td axis="comments">Number of Pledges: $spring13_pledges, Number of Actives: $spring13_actives</td></tr>
+
+<tr><td axis="semester">$fall13_dates (Fall 2013) DE Semester</td><td axis="hours">$fall13</td><td axis="hours">$fall13_projects</td><td axis="hours">$fall13_fellowships</td><td axis="comments">Number of Pledges: $fall13_pledges, Number of Actives: $fall13_actives</td></tr>
+
+<tr><td axis="semester">$spring14_dates (Spring 2014) CM Semester</td><td axis="hours">$spring14</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments">Number of Pledges: $spring14_pledges, Number of Actives: $spring14_actives </td></tr>
+
 </table>
 
 HEREDOC;
