@@ -146,7 +146,7 @@ $spring14_fellowships = $row['count'];
 
 $query_attending = query_attending_services('2012-8-28', '2012-11-27');
 $row_attending = $query_attending->fetch_row();
-$popular_services = "<h2>Popular Service Events FOR MH Semester!</h2><br/>";
+$popular_services = "<h2>Popular Service Events FOR MH Semester!</h2>";
 while($row_attending)
 {
 	if(intval($row_attending['total']) >= 10){
@@ -160,7 +160,7 @@ while($row_attending)
 
 $query_attending = query_attending_services('2013-1-22', '2013-4-30');
 $row_attending = $query_attending->fetch_row();
-$popular_services .= "<h2>Popular Service Events FOR KK Semester!</h2><br/>";
+$popular_services .= "<h2>Popular Service Events FOR KK Semester!</h2>";
 while($row_attending)
 {
 	if(intval($row_attending['total']) >= 10){
@@ -174,7 +174,7 @@ while($row_attending)
 
 $query_attending = query_attending_services('2013-9-3', '2013-12-3');
 $row_attending = $query_attending->fetch_row();
-$popular_services .= "<h2>Popular Service Events FOR DE Semester!</h2><br/>";
+$popular_services .= "<h2>Popular Service Events FOR DE Semester!</h2>";
 while($row_attending)
 {
 	if(intval($row_attending['total']) >= 10){
@@ -188,7 +188,7 @@ while($row_attending)
 
 $query_attending = query_attending_services('2014-1-21', '2014-4-29');
 $row_attending = $query_attending->fetch_row();
-$popular_services .= "<h2>Popular Service Events FOR CM Semester!</h2><br/>";
+$popular_services .= "<h2>Popular Service Events FOR CM Semester!</h2>";
 while($row_attending)
 {
 	if(intval($row_attending['total']) >= 10){
