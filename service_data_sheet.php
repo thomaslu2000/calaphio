@@ -198,21 +198,7 @@ $query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges");
 $row = $query->fetch_row();
 $spring14_pledges = $row['count'];
 
-$query = new Query("
-		SELECT count(*) AS count FROM apo_calendar_event
-			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
-			 AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
-$row = $query->fetch_row();
-$spring14_projects = $row['count'];
-
-$query = new Query("
-		SELECT count(*) AS count FROM apo_calendar_event
-			WHERE (type_fellowship=TRUE)
-			 AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
-$row = $query->fetch_row();
-$spring14_fellowships = $row['count'];
-
-$query_attending = query_attending_services('2012-8-28', '2014-4-29');
+$query_attending = query_attending_services('2011-8-30', '2014-11-29');
 $row_attending = $query_attending->fetch_row();
 $popular_services = "<h2>Popular Service Events FOR CPZ Semester!</h2>";
 while($row_attending)
@@ -240,7 +226,7 @@ while($row_attending)
 	$row_attending = $query_attending->fetch_row();
 }
 new Query("DROP TABLE table_attend");
-$query_attending = query_attending_services('2012-8-28', '2014-4-29');
+$query_attending = query_attending_services('2012-1-17', '2014-4-24');
 $row_attending = $query_attending->fetch_row();
 $popular_services .= "<h2>Popular Service Events FOR MH Semester!</h2>";
 while($row_attending)
