@@ -144,9 +144,9 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring14_fellowships = $row['count'];
 
-$query_attending = query_attending_services('2012-8-28', '2014-4-29');
+$query_attending = query_attending_services('2012-8-28', '2012-11-27');
 $row_attending = $query_attending->fetch_row();
-$popular_services = "Check popular events <br/>";
+$popular_services = "<h2>Popular Service Events FOR MH Semester!</h2><br/>";
 while($row_attending)
 {
 	if(intval($row_attending['total']) >= 10){
@@ -157,7 +157,49 @@ while($row_attending)
 	}
 	$row_attending = $query_attending->fetch_row();
 }
-	
+
+$query_attending = query_attending_services('2013-1-22', '2013-4-30');
+$row_attending = $query_attending->fetch_row();
+$popular_services .= "<h2>Popular Service Events FOR KK Semester!</h2><br/>";
+while($row_attending)
+{
+	if(intval($row_attending['total']) >= 10){
+		$event_title = $row_attending['title'];
+		$num_attendees = intval($row_attending['total']);
+		$event_date = $row_attending['date'];
+		$popular_services .= "<br/><strong><FONT COLOR='GREEN'>$event_title</FONT></strong> on <strong><FONT COLOR='ORANGE'>$event_date</FONT></strong>: Has <strong><em><FONT COLOR='BLUE'>$num_attendees</FONT></em></strong> attending it!<br/>";
+	}
+	$row_attending = $query_attending->fetch_row();
+}
+
+$query_attending = query_attending_services('2013-9-3', '2013-12-3');
+$row_attending = $query_attending->fetch_row();
+$popular_services .= "<h2>Popular Service Events FOR DE Semester!</h2><br/>";
+while($row_attending)
+{
+	if(intval($row_attending['total']) >= 10){
+		$event_title = $row_attending['title'];
+		$num_attendees = intval($row_attending['total']);
+		$event_date = $row_attending['date'];
+		$popular_services .= "<br/><strong><FONT COLOR='GREEN'>$event_title</FONT></strong> on <strong><FONT COLOR='ORANGE'>$event_date</FONT></strong>: Has <strong><em><FONT COLOR='BLUE'>$num_attendees</FONT></em></strong> attending it!<br/>";
+	}
+	$row_attending = $query_attending->fetch_row();
+}
+
+$query_attending = query_attending_services('2014-1-21', '2014-4-29');
+$row_attending = $query_attending->fetch_row();
+$popular_services .= "<h2>Popular Service Events FOR CM Semester!</h2><br/>";
+while($row_attending)
+{
+	if(intval($row_attending['total']) >= 10){
+		$event_title = $row_attending['title'];
+		$num_attendees = intval($row_attending['total']);
+		$event_date = $row_attending['date'];
+		$popular_services .= "<br/><strong><FONT COLOR='GREEN'>$event_title</FONT></strong> on <strong><FONT COLOR='ORANGE'>$event_date</FONT></strong>: Has <strong><em><FONT COLOR='BLUE'>$num_attendees</FONT></em></strong> attending it!<br/>";
+	}
+	$row_attending = $query_attending->fetch_row();
+}
+
 	echo <<<HEREDOC
 <h1>View Total Service Hours</h1>
 <p style="padding: 1em 0px">This is a service report on the calendar showing as much data on the progress and trends of service events!</p>
