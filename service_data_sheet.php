@@ -153,7 +153,7 @@ while($row_attending)
 		$event_title = $row_attending['title'];
 		$num_attendees = intval($row_attending['total']);
 		$event_date = $row_attending['date'];
-		$popular_services.="<br/> <strong><FONT COLOR='GREEN'>$event_title</FONT></strong> on <strong><FONT COLOR='ORANGE'>$event_date</FONT></strong>: Has <strong><em><FONT COLOR='BLUE'>$num_attendees</FONT></em></strong> attending it!<br/>";
+		$popular_services .= "<br/><strong><FONT COLOR='GREEN'>$event_title</FONT></strong> on <strong><FONT COLOR='ORANGE'>$event_date</FONT></strong>: Has <strong><em><FONT COLOR='BLUE'>$num_attendees</FONT></em></strong> attending it!<br/>";
 		$row_attending = $query_attending->fetch_row();
 	}
 }
