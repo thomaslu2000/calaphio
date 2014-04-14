@@ -11,6 +11,74 @@ function query_attending_services($start, $end){
 	return new Query(sprintf("SELECT * FROM table_attend"));
 }
 
+$start = '2011-8-30';
+$end = '2011-11-29';
+$query = new Query("
+		SELECT sum(hours) AS hours FROM apo_calendar_event
+			JOIN apo_calendar_attend USING (event_id)
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			AND flaked=FALSE  AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$fall11 = $row['hours'];
+$fall11_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
+
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_fa12");
+$row = $query->fetch_row();
+$fall11_actives = $row['count'];
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_fa12");
+$row = $query->fetch_row();
+$fall11_pledges = $row['count'];
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			 AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$fall11_projects = $row['count'];
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_fellowship=TRUE)
+			 AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$spring12_fellowships = $row['count'];
+
+$start = '2012-1-17';
+$end = '2012-4-24';
+$query = new Query("
+		SELECT sum(hours) AS hours FROM apo_calendar_event
+			JOIN apo_calendar_attend USING (event_id)
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			AND flaked=FALSE  AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$spring12 = $row['hours'];
+$spring12_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
+
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_fa12");
+$row = $query->fetch_row();
+$spring12_actives = $row['count'];
+
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_fa12");
+$row = $query->fetch_row();
+$spring12_pledges = $row['count'];
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			 AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$spring12_projects = $row['count'];
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_fellowship=TRUE)
+			 AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$spring12_fellowships = $row['count'];
+
 $start = '2012-8-28';
 $end = '2012-11-27';
 $query = new Query("
@@ -146,7 +214,35 @@ $spring14_fellowships = $row['count'];
 
 $query_attending = query_attending_services('2012-8-28', '2014-4-29');
 $row_attending = $query_attending->fetch_row();
-$popular_services = "<h2>Popular Service Events FOR MH Semester!</h2>";
+$popular_services = "<h2>Popular Service Events FOR CPZ Semester!</h2>";
+while($row_attending)
+{
+	if(intval($row_attending['total']) >= 10){
+		$event_title = $row_attending['title'];
+		$num_attendees = intval($row_attending['total']);
+		$event_date = $row_attending['date'];
+		$popular_services .= "<br/><strong><FONT COLOR='GREEN'>$event_title</FONT></strong> on <strong><FONT COLOR='ORANGE'>$event_date</FONT></strong>: Has <strong><em><FONT COLOR='BLUE'>$num_attendees</FONT></em></strong> attending it!<br/>";
+	}
+	$row_attending = $query_attending->fetch_row();
+}
+
+$query_attending = query_attending_services('2012-8-28', '2014-4-29');
+$row_attending = $query_attending->fetch_row();
+$popular_services .= "<h2>Popular Service Events FOR JS Semester!</h2>";
+while($row_attending)
+{
+	if(intval($row_attending['total']) >= 10){
+		$event_title = $row_attending['title'];
+		$num_attendees = intval($row_attending['total']);
+		$event_date = $row_attending['date'];
+		$popular_services .= "<br/><strong><FONT COLOR='GREEN'>$event_title</FONT></strong> on <strong><FONT COLOR='ORANGE'>$event_date</FONT></strong>: Has <strong><em><FONT COLOR='BLUE'>$num_attendees</FONT></em></strong> attending it!<br/>";
+	}
+	$row_attending = $query_attending->fetch_row();
+}
+
+$query_attending = query_attending_services('2012-8-28', '2014-4-29');
+$row_attending = $query_attending->fetch_row();
+$popular_services .= "<h2>Popular Service Events FOR MH Semester!</h2>";
 while($row_attending)
 {
 	if(intval($row_attending['total']) >= 10){
@@ -207,6 +303,10 @@ while($row_attending)
 <caption></caption>
 
 <tr><th axis="semester" style="width: 300px; font-weight: bold; padding: 0px 2px">Semester</th><th axis="hours" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Hours</th><th axis="projects" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Events</th><th axis="fellowships" style="width: 100px; font-weight: bold; padding: 0px 2px">Fellowships</th><th axis="Comments" style="font-weight: bold; padding: 0px 2px">Comments</th></tr>
+
+<tr><td axis="semester">$fall11_dates (Fall 2011) CPZ Semester</td><td axis="hours">$fall11</td><td axis="hours">$fall11_projects</td><td axis="hours">$fall11_fellowships</td><td axis="comments">Number of Pledges: $fall11_pledges , Number of Actives: $fall11_actives</td></tr>
+
+<tr><td axis="semester">$spring12_dates (Spring 2012) KK Semester</td><td axis="hours">$spring12</td><td axis="hours">$spring12_projects</td><td axis="hours">$spring12_fellowships</td><td axis="comments">Number of Pledges: $spring12_pledges , Number of Actives: $spring12_actives</td></tr>
 
 <tr><td axis="semester">$fall12_dates (Fall 2012) MH Semester</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments">Number of Pledges: $fall12_pledges , Number of Actives: $fall12_actives</td></tr>
 
