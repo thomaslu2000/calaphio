@@ -43,7 +43,7 @@ $query = new Query("
 			WHERE (type_fellowship=TRUE)
 			 AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
-$spring12_fellowships = $row['count'];
+$fall11_fellowships = $row['count'];
 
 $start = '2012-1-17';
 $end = '2012-4-24';
@@ -225,7 +225,7 @@ while($row_attending)
 	}
 	$row_attending = $query_attending->fetch_row();
 }
-
+new Query("DROP TABLE table_attend");
 $query_attending = query_attending_services('2012-8-28', '2014-4-29');
 $row_attending = $query_attending->fetch_row();
 $popular_services .= "<h2>Popular Service Events FOR JS Semester!</h2>";
@@ -239,7 +239,7 @@ while($row_attending)
 	}
 	$row_attending = $query_attending->fetch_row();
 }
-
+new Query("DROP TABLE table_attend");
 $query_attending = query_attending_services('2012-8-28', '2014-4-29');
 $row_attending = $query_attending->fetch_row();
 $popular_services .= "<h2>Popular Service Events FOR MH Semester!</h2>";
@@ -306,7 +306,7 @@ while($row_attending)
 
 <tr><td axis="semester">$fall11_dates (Fall 2011) CPZ Semester</td><td axis="hours">$fall11</td><td axis="hours">$fall11_projects</td><td axis="hours">$fall11_fellowships</td><td axis="comments">Number of Pledges: $fall11_pledges , Number of Actives: $fall11_actives</td></tr>
 
-<tr><td axis="semester">$spring12_dates (Spring 2012) KK Semester</td><td axis="hours">$spring12</td><td axis="hours">$spring12_projects</td><td axis="hours">$spring12_fellowships</td><td axis="comments">Number of Pledges: $spring12_pledges , Number of Actives: $spring12_actives</td></tr>
+<tr><td axis="semester">$spring12_dates (Spring 2012) JS Semester</td><td axis="hours">$spring12</td><td axis="hours">$spring12_projects</td><td axis="hours">$spring12_fellowships</td><td axis="comments">Number of Pledges: $spring12_pledges , Number of Actives: $spring12_actives</td></tr>
 
 <tr><td axis="semester">$fall12_dates (Fall 2012) MH Semester</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments">Number of Pledges: $fall12_pledges , Number of Actives: $fall12_actives</td></tr>
 
