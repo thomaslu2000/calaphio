@@ -149,7 +149,6 @@ $row_attending = $query_attending->fetch_row();
 $popular_services = "<h2>Popular Service Events FOR MH Semester!</h2>";
 while($row_attending)
 {
-	if($row_attending['date'] >)
 	if(intval($row_attending['total']) >= 10){
 		$event_title = $row_attending['title'];
 		$num_attendees = intval($row_attending['total']);
