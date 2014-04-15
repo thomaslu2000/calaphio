@@ -23,11 +23,11 @@ $fall11 = $row['hours'];
 $fall11_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 
-$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_fa12");
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_fa11");
 $row = $query->fetch_row();
 $fall11_actives = $row['count'];
 
-$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_fa12");
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_fa11");
 $row = $query->fetch_row();
 $fall11_pledges = $row['count'];
 
@@ -57,11 +57,11 @@ $spring12 = $row['hours'];
 $spring12_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 
-$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_fa12");
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_actives_sp12");
 $row = $query->fetch_row();
 $spring12_actives = $row['count'];
 
-$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_fa12");
+$query = new Query("SELECT user_id, count(*) AS count FROM apo_pledges_sp12");
 $row = $query->fetch_row();
 $spring12_pledges = $row['count'];
 
