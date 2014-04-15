@@ -10,7 +10,7 @@ if (!$g_user->is_logged_in()) {
 	echo <<<HEREDOC
 <h1 style="margin-bottom: 1em;">Fall 2014 Election Platforms</h1>
 Service VP | <a href="#">No Platforms Yet</a> | <br/>
-Pledgemaster | <a href="#dy">No Platforms Yet</a>  | <br/>
+Pledgemaster | <a href="#dy">Debbie Yan</a>  | <br/>
 Admin VP | <a href="#ac">No Platforms Yet</a> | <br/>
 Membership VP | <a href="#">No Platforms Yet</a> | <br/>
 Fellowship VP | <a href="#ps">Poojah Shah</a> | <br/>
@@ -139,7 +139,6 @@ Fellowship Vice President: <span style="font-weight: normal;">Pooja Shah (JS)</s
 	</table>
 	<p><b>TL/DR: Vote for me to be your next fellowship vice president! I’m super outgoing, have a lot of cool ideas, promise to work hard, and am super qualified! </b></p>
 </div>
--->
 HEREDOC;
 }
 Template::print_body_footer();

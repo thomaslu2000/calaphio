@@ -49,9 +49,9 @@ if (!$g_user->is_logged_in()) {
         <li><a target="_blank" href="sp09platforms.php">Spring 2009 Platforms</a></li>
     </ul></p>
     <p>Submit all Spring 2014 Platforms to me at admin-vp@calaphio.com. In addition, I will be doing LIVE UPDATES as soon as a candidate submits their platforms for Fall 2014 Excomm. The link to view Spring 2014 Platforms as soon as they
-        get submitted will be: <br/>
-        We have one submission from <a href="roster.php?function=Search&user_id=1673">Pooja Shah (KK)</a>. Please go to the link below to see it! <br/>
-        We have another submission from <a href="roster.php?function=Search&user_id=1400">Debra Yan (JS)</a>. Please go to the link below to see it! <br/>
+        get submitted will be: <br/><br/>
+        We have one submission from <a href="roster.php?function=Search&user_id=1673">Pooja Shah (KK)</a>. Please go to the link below to see it! <br/><br/>
+        We have another submission from <a href="roster.php?function=Search&user_id=1400">Debra Yan (JS)</a>. Please go to the link below to see it! <br<br/>
         <a target="_blank" style="margin-left: 1em;"href="sp14platforms.php">Fall 2014 Platforms</a>
         <br/>
     </p>
