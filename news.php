@@ -50,8 +50,12 @@ if (!$g_user->is_logged_in()) {
     </ul></p>
     <p>Submit all Spring 2014 Platforms to me at admin-vp@calaphio.com. In addition, I will be doing LIVE UPDATES as soon as a candidate submits their platforms for Fall 2014 Excomm. The link to view Spring 2014 Platforms as soon as they
         get submitted will be: <br/><br/>
-        We have one submission from <a href="roster.php?function=Search&user_id=1673">Pooja Shah (KK)</a>. Please go to the link below to see it! <br/><br/>
-        We have another submission from <a href="roster.php?function=Search&user_id=1400">Debra Yan (JS)</a>. Please go to the link below to see it! <br<br/>
+        We have submissions from the following people:
+        <ul style="margin-left: 1em; list-style: inside disc; margin-bottom: 1.5em;">
+            <li><a href="roster.php?function=Search&user_id=1673">Pooja Shah (KK)</a>for Fellowship VP! Submitted 12:34pm, Monday, April 14, 2014</li>
+            <li><a href="roster.php?function=Search&user_id=1400">Debra Yan (JS)</a> for Pledgemaster! Submitted 3:03pm, Tuesday, April 15, 2014.</li>
+        </ul>
+        Please go to the link below to see it! <br/><br/>
         <a target="_blank" style="margin-left: 1em;"href="sp14platforms.php">Fall 2014 Platforms</a>
         <br/>
     </p>
