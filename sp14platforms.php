@@ -13,7 +13,7 @@ Service VP | <a href="#">No Platforms Yet</a> | <br/>
 Pledgemaster | <a href="#dy">Debbie Yan</a>  | <br/>
 Admin VP | <a href="#ac">No Platforms Yet</a> | <br/>
 Membership VP | <a href="#">No Platforms Yet</a> | <br/>
-Fellowship VP | <a href="#ps">Poojah Shah</a> | <br/>
+Fellowship VP | <a href="#ps">Pooja Shah</a> | <br/>
 Historian | <a href="#">No Platforms Yet</a> | <br/>
 <br/>
 <br/>
