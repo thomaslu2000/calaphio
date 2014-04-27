@@ -30,6 +30,20 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 <?php if($g_user->is_logged_in()): ?>
+
+    <div class="newsItem">
+    <h2>Notes From CM 67/h2>
+    <p class="date">April 15, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM7!<br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1lBT8n2tdE_5DRN0gOq38pEqEm1unRXKJ2wyKFVVXvjo/edit?usp=sharing"> CM7 Slides</a><br>
+    </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://drive.google.com/file/d/0B2qOHCQXVkc3LUdhLWgzX2NINFk/edit?usp=sharing">CM 7 Minutes</a></p>
+    <p style="margin-bottom: em"> Here is our wonderful <a href="">CM 7 STYLUS! </a> Read it and enjoy a great laugh! </p>
+
+    <iframe width="420" height="315" src="//www.youtube.com/embed/dnA9zU-MafQ" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="profile.php?user_id=1400">Ngoc Tran (MH)</a></p>
+</div>
+
 <div class="newsItem">
     <h2>Elections is Coming Up! Send in Your Past Election Platforms</h2>
     <p class="date">April 7, 2014</p>
