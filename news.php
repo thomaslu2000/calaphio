@@ -30,9 +30,8 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 <?php if($g_user->is_logged_in()): ?>
-
-    <div class="newsItem">
-    <h2>Notes From CM 67/h2>
+<div class="newsItem">
+    <h2>Notes From CM 67</h2>
     <p class="date">April 15, 2014</p>
     <p style="margin-bottom: 1em">Here are the documents from CM7!<br>
         Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1lBT8n2tdE_5DRN0gOq38pEqEm1unRXKJ2wyKFVVXvjo/edit?usp=sharing"> CM7 Slides</a><br>
