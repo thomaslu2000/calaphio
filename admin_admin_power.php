@@ -58,7 +58,7 @@ function add($group_id, $user_id, $str) {
 			if ($rowCheckTwo != false)
 			{
 			$query = new Query("start transaction");
-			$query = new Query(sprintf("INSERT INTO apo_permissions_groups values (%s, %s)", $group_id, $user_id));	
+			$query = new Query(sprintf("INSERT INTO apo_permissions_groups (group_id, user_id) values (%s, %s)", $group_id, $user_id));	
 			$query = new Query("commit");	
 			$result = $str . ": SUCCESSFUL ADDING";					
 			}
