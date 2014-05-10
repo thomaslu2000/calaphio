@@ -29,98 +29,6 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
-
-<div class="newsItem">
-    <h2>Congratulations to the Fall 2014 Rush Chairs!</h2>
-    <p class="date">May 10, 2014</p>
-    <p class="center"> Please join me in congratulating the Fall 2014 Rush Chairs!</p>
-    <div class="collage-container">
-    <div class="collage-pictures">
-        <div class="person-picture">
-            <img src="documents/fa14/rush/rebecca_phuong.jpg"></img>
-            <p class="center"><a href="profile.php?user_id=1405">Rebecca Phuong</a></p>
-            
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/rush/kevin_lu.jpg"></img>
-            <p class="center"><a href="profile.php?user_id=2532">Kevin Lu</a></p>
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/rush/vivian_rubio.jpg"></img>
-            <p class="center"><a href="profile.php?user_id=2464">Vivian Rubio</a></p>
-        </div>
-    </div>
-    <div style="clear: left;"></div>
-    </div>
-    <p>I know they will recruit amazing new additions to the chapter!</p>
-    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
-</div>
-
-<?php if ($g_user->is_logged_in()): ?>
-<div class="newsItem">
-    <br/>
-    <h2>Congratulations to the Fall 2014 Pledge Committee</h2>
-    <p class="date">May 10th, 2014</p>
-    <p class="center"> Please congratulate the Fall 2014 pledge committee when you see them!</p>
-    <div class="collage-container">
-    <div class="collage-pictures">
-        <div class="person-picture">
-            <img src="documents/fa14/pcomm/edith_ho.jpg"></img>
-            <p class="center"><strong>Leadership Trainer</strong>: <a href="profile.php?user_id=2142">Edith Ho</a></p>
-            
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/pcomm/tyler_weng.jpg"></img>
-            <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=1378">Tyler Weng</a></p>
-            
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/pcomm/sharon_wang.jpg"></img>
-            <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=2155">Sharon Wang</a></p>
-            
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/pcomm/james_wang.jpg"></img>
-            <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=1443">James Wang</a></p>
-            
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/pcomm/pooja_shah.jpg"></img>
-            <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=1673">Pooja Shah</a></p>
-            
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/pcomm/joanna_chang.jpg"></img>
-            <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2139">Joanna Chang</a></p>
-            
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/pcomm/angela_wu.jpg"></img>
-            <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2153">Angela Wu</a></p>
-            
-        </div>
-        <div class="person-picture">
-            <img src="documents/fa14/pcomm/lakana_bun.jpg"></img>
-            <p class="center"><strong>Historian Trainer</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p>
-            
-        </div>
-        
-    </div>
-    <div style="clear: left;"></div>
-    </div>
-
-    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
-</div>
-<?php endif ?>
-<div class="newsItem">
-    <h2>Congratulations to Pooja Shah for getting GG Maniac!</h2>
-    <p class="date">May 2nd 2014</p>
-    <img src="/documents/sp14/ggmaniac/ggmaniac7.jpg" width=300 style="border:1px solid black"/></a><br><br>
-    <p style="margin-bottom: 1.5em">Ever since pledging during her KK semester, Pooja has been actively involved in Gamma Gamma's activities. Each semester, she takes on 
-        many chairing positions to contribute to the chapter. This semester she was IC poker chair and she is going to be on PCOMM next semester! Please give her your
-        congratulations when you see her!</p>
-    <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
-</div>
 <?php if($g_user->is_logged_in()): ?>
 
 <div class="newsItem">
@@ -442,7 +350,7 @@ remember to thank her and congratulate her because she deserves it after putting
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
 <?php endif ?>
-<a href="news_sp14.php">Older News ></a>
+<a href="news_fa13.php">Older News ></a>
 <?php
 Template::print_body_footer();
 Template::print_disclaimer();
