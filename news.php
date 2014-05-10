@@ -29,6 +29,15 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
+<div class="newsItem">
+    <h2>Congratulations to Pooja Shah for getting GG Maniac!</h2>
+    <p class="date">May 2nd 2014</p>
+    <img src="/documents/sp14/ggmaniac/ggmaniac7.jpg" width=300 style="border:1px solid black"/></a><br><br>
+    <p style="margin-bottom: 1.5em">Ever since pledging during her KK semester, Pooja has been actively involved in Gamma Gamma's activities. Each semester, she takes on 
+        many chairing positions to contribute to the chapter. This semester she was IC poker chair and she is going to be on PCOMM next semester! Please give her your
+        congratulations when you see her!</p>
+    <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
+</div>
 <?php if($g_user->is_logged_in()): ?>
 
 <div class="newsItem">
@@ -87,15 +96,6 @@ if (!$g_user->is_logged_in()) {
     </p>
 </div>
 <?php endif ?>
-<div class="newsItem">
-    <h2>Congratulations to Pooja Shah for getting GG Maniac!</h2>
-    <p class="date">May 2nd 2014</p>
-    <img src="/documents/sp14/ggmaniac/ggmaniac7.jpg" width=300 style="border:1px solid black"/></a><br><br>
-    <p style="margin-bottom: 1.5em">Ever since pledging during her KK semester, Pooja has been actively involved in Gamma Gamma's activities. Each semester, she takes on 
-        many chairing positions to contribute to the chapter. This semester she was IC poker chair and she is going to be on PCOMM next semester! Please give her your
-        congratulations when you see her!</p>
-    <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
-</div>
 <div class="newsItem">
     <h2>Congratulations to Angela Wu for getting GG Maniac!</h2>
     <p class="date">April 1st, 2014</p>
