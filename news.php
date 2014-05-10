@@ -30,6 +30,19 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 <?php if($g_user->is_logged_in()): ?>
+
+<div class="newsItem">
+    <h2>Notes From CM 8</h2>
+    <p class="date">May 2nd, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM8!<br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1g3tp6tvR2OmwseZU3zZJrr9AqFcbF3S1GMs12PH_59U/edit?usp=sharing"> CM8 Slides</a><br>
+    </p>
+    <p style="margin-bottom: 1em">Here are the <a href="https://word.office.live.com/wv/WordView.aspx?FBsrc=https%3A%2F%2Fwww.facebook.com%2Fdownload%2Ffile_preview.php%3Fid%3D636812013067682%26time%3D1399704628%26metadata&access_token=100002340245060%3AAVI823PRXGeVx51Ujh6VXTBK6PCvlBW3T27fZBLAE5hNzQ&title=CM8+Minutes.docx">CM 8 Minutes</a></p>
+
+    <iframe width="420" height="315" src="//www.youtube.com/embed/-sREi4mbeEA" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
+</div>
+
 <div class="newsItem">
     <h2>Notes From CM 67</h2>
     <p class="date">April 15, 2014</p>
