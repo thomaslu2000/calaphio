@@ -43,7 +43,7 @@ if (!$g_user->is_logged_in()) {
         </div>
         <div class="person-picture">
             <img src="documents/fa14/rush/kevin_lu.jpg"></img>
-            <p class="center"><a href="profile.php?user_id=2352">Kevin Lu</a></p>
+            <p class="center"><a href="profile.php?user_id=2532">Kevin Lu</a></p>
         </div>
         <div class="person-picture">
             <img src="documents/fa14/rush/vivian_rubio.jpg"></img>
