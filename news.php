@@ -86,7 +86,7 @@ if (!$g_user->is_logged_in()) {
         </div>
         <div class="person-picture">
             <img src="documents/fa14/pcomm/pooja_shah.jpg"></img>
-            <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=1673">Pooja Shah</a></p>
+            <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=1673">Pooja Shah</a></p>
             
         </div>
         <div class="person-picture">
