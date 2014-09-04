@@ -37,7 +37,7 @@ if (!$g_user->is_logged_in()) {
     <p style="margin-bottom: 1em">Here are the documents from CM1!<br>
         Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1dku3CjI3UstuiPeTZRBDWYiwxnJ4tz7bB3ghofgFO5M/edit#slide=id.g3a97cdccd_185"> CM1 Slides</a><br>
     </p>
-    <iframe style="margin-bottom: 1em" width="480" height="360" src="www.youtube.com/embed/kFYDE5jWdHw" frameborder="0" allowfullscreen></iframe>
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/kFYDE5jWdHw" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
 </div>
 <?php endif ?>
