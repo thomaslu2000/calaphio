@@ -30,7 +30,7 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+
 <div class="newsItem">
     <h2>Congratulations Fall 2014 Executive Committee!</h2>
     <p class="date">September 3, 2014</p>
@@ -84,7 +84,7 @@ if (!$g_user->is_logged_in()) {
     </p>
     <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
 </div>
-<?php endif ?>
+
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
@@ -180,8 +180,6 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
 </div>
 <?php endif ?>
-
-
 
 <a href="news_sp14.php">Older News ></a>
 <?php
