@@ -39,42 +39,42 @@ if (!$g_user->is_logged_in()) {
     <div class="collage-pictures">
         <div class="person-picture">
             <img src="documents/fa14/excomm/president.jpg"></img>
-            <p class="center"><strong>President</strong>: Jeff Ma</p>
+            <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1412">Jeff Ma</a></p>
             
         </div>
         <div class="person-picture">
             <img src="documents/fa14/excomm/service.jpg"></img>
-            <p class="center"><strong>Service VP</strong>: Susan Guan</p>
+            <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=1426">Susan Guan</a></p>
             
         </div>
         <div class="person-picture">
             <img src="documents/fa14/excomm/pledgemaster.jpg"></img>
-            <p class="center"><strong>Pledgemaster</strong>: Christopher Wen</p>
+            <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1591">Christopher Wen</a></p>
             
         </div>
         <div class="person-picture">
             <img src="documents/fa14/excomm/admin.jpg"></img>
-            <p class="center"><strong>Administrative VP</strong>: Kelsey Chan</p>
+            <p class="center"><strong>Administrative VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
             
         </div>
         <div class="person-picture">
             <img src="documents/fa14/excomm/membership.jpg"></img>
-            <p class="center"><strong>Membership VP</strong>: Debbie Yan</p>
+            <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=1400">Debbie Yan</a></p>
             
         </div>
         <div class="person-picture">
             <img src="documents/fa14/excomm/finance.jpg"></img>
-            <p class="center"><strong>Finance VP</strong>: Jane Tam</p>
+            <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=1437">Jane Tam</a></p>
             
         </div>
         <div class="person-picture">
             <img src="documents/fa14/excomm/fellowship.jpg"></img>
-            <p class="center"><strong>Fellowship VP</strong>: Karen Wu</p>
+            <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
             
         </div>
         <div class="person-picture">
             <img src="documents/fa14/excomm/historian.jpg"></img>
-            <p class="center"><strong>Historian</strong>: Rita Mae Nuevo</p>
+            <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=1433">Rita Mae Nuevo</a></p>
             
         </div>
         
