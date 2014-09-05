@@ -32,13 +32,67 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
-    <h2>Notes From CM 1</h2>
+    <h2>Congratulations Fall 2014 Executive Committee!</h2>
     <p class="date">September 3, 2014</p>
+
+        <div class="collage-container">
+    <div class="collage-pictures">
+        <div class="person-picture">
+            <img src="documents/fa14/excomm/president.jpg"></img>
+            <p class="center"><strong>President</strong>: Jeff Ma</p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/fa14/excomm/service.jpg"></img>
+            <p class="center"><strong>Service VP</strong>: Susan Guan</p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/fa14/excomm/pledgemaster.jpg"></img>
+            <p class="center"><strong>Pledgemaster</strong>: Christopher Wen</p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/fa14/excomm/admin.jpg"></img>
+            <p class="center"><strong>Administrative VP</strong>: Kelsey Chan</p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/fa14/excomm/membership.jpg"></img>
+            <p class="center"><strong>Membership VP</strong>: Debbie Yan</p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/fa14/excomm/finance.jpg"></img>
+            <p class="center"><strong>Finance VP</strong>: Jane Tam</p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/fa14/excomm/fellowship.jpg"></img>
+            <p class="center"><strong>Fellowship VP</strong>: Karen Wu</p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/fa14/excomm/historian.jpg"></img>
+            <p class="center"><strong>Historian</strong>: Rita Mae Nuevo</p>
+            
+        </div>
+        
+    </div>
+    <div style="clear: left;"></div>
+    </div>
+    </p>
+    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Notes From CM 1</h2>
+    <p class="date">September 2, 2014</p>
     <p style="margin-bottom: 1em">Here are the documents from CM1!<br>
         Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1dku3CjI3UstuiPeTZRBDWYiwxnJ4tz7bB3ghofgFO5M/edit#slide=id.g3a97cdccd_185"> CM1 Slides</a><br>
-    </p>
-    <p style="margin-bottom: 1em">And here are the 
-      <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsWlFSSWR3YnBRUTA/edit">Active Requirements & Budget.</a></p>
+        And here are the <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsWlFSSWR3YnBRUTA/edit">Active Requirements & Budget.</a></p>
     <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/kFYDE5jWdHw" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
 </div>
