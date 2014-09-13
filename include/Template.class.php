@@ -94,7 +94,7 @@ DOCHERE_print_head;
 				"CALENDAR" => "calendar.php",
 				"IC CALENDAR" => "ic_calendar.php",
 				"REQUIREMENTS" => "profile.php?requirements=true&user_id=" . $g_user->data['user_id'],
-				"BUDGET" => "https://docs.google.com/spreadsheet/ccc?key=0AjUhxDpscmUidDQtVkNWVVFpSWhvMzY3Z3ZOcEVWX1E&usp=sharing#gid=0",
+				"BUDGET" => "https://docs.google.com/spreadsheet/ccc?key=0AjUhxDpscmUidFptWWJac1YyRjlkVUh3NG5iY3VuMmc&usp=sharing#gid=0",
 				"AWARDS" => "awards.php"
 				),
 			'Brothers' => array(
