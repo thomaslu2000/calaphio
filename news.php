@@ -30,6 +30,18 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Notes From CM 2</h2>
+    <p class="date">September 16, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM2!<br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1bieo_FUF7AB-Xysj7TLhutvA6D5oB-rSYcwdASBLtOo/edit"> CM2 Slides</a><br>
+        And here are the <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsVmgyWkltdENtQzQ/edit">CM 2 Minutes</a></p>
+        <b>Feature Article</b>: Check out this week’s<a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsTzN6ODVYSXk1cW8/edit"> feature article </a>written by <a href="profile.php?user_id=1425">Ryan Fong</a>!<br>
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/cb5E8S8t4gk" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+<?php endif ?>
 
 <div class="newsItem">
     <h2>Congratulations Fall 2014 Executive Committee!</h2>
