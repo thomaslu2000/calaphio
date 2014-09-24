@@ -30,7 +30,7 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
-?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Notes From CM3</h2>
     <p class="date">September 23, 2014</p>
