@@ -11,9 +11,8 @@ if (!$g_user->is_logged_in()) {
 <h2><b>Constitution and Bylaws</b></h2><br/>
 <p>This is our Bylaws and Constitution. If you are interested, please read it.<br>
 <br>
-<a href="/documents/sp13/APOGGC.pdf">Gamma Gamma Constitution</a><br>
+<a href="https://docs.google.com/file/d/0B1PYMBbhnLMsaE5FWHBnUDNEaDA/edit">Gamma Gamma Constitution and Bylaws</a><br>
 <br>
-<a href="/documents/sp13/APOGGB.pdf">Gamma Gamma Bylaws</a><br><br>
 </p>
 HEREDOC;
 }

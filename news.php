@@ -30,9 +30,25 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Notes From CM3</h2>
+    <p class="date">September 23, 2014</p>
+
+    <p style="margin-bottom: 1em">
+        <b>“Welcome KHK Pledges!”</b><br>
+        Here are the documents from CM3!<br>
+        Excomm Powerpoint Slides: <a href="https://docs.google.com/a/calaphio.com/presentation/d/1zZkkhMKyisGavt2z0LNilxzLVfOSv9dsP5JUJF3LVZc/edit#slide=id.p">CM3 Slides</a><br>
+        Here are the <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsNEFUcHY5NERfUGc/edit">CM 3 Minutes</a>
+        And here is also this week's <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsQmlxclk3ME9IYTQ/edit">Stylus</a>.<br></p>
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/d9Jpf3PkLgs" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
-    <h2>Notes From CM 2</h2>
+    <h2>Notes From CM2</h2>
     <p class="date">September 16, 2014</p>
     <p style="margin-bottom: 1em">Here are the documents from CM2!<br>
         Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1bieo_FUF7AB-Xysj7TLhutvA6D5oB-rSYcwdASBLtOo/edit"> CM2 Slides</a><br>
@@ -100,7 +116,7 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
-    <h2>Notes From CM 1</h2>
+    <h2>Notes From CM1</h2>
     <p class="date">September 2, 2014</p>
     <p style="margin-bottom: 1em">Here are the documents from CM1!<br>
         Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1dku3CjI3UstuiPeTZRBDWYiwxnJ4tz7bB3ghofgFO5M/edit#slide=id.g3a97cdccd_185"> CM1 Slides</a><br>
