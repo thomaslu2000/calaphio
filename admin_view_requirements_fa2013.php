@@ -145,9 +145,9 @@ HEREDOC;
 
 $results
 <br/>
-<a href="admin_view_requirements_fa13.php">Fall 2013 (DE) Admin Powers > </a><br/>
-<a href="admin_view_requirements_sp13.php">Spring 2013 (KK) Admin Powers ></a> <br/>
-<a href="admin_view_requirements_fa12.php">Fall 2012 (MH) Admin Powers ></a> <br/>
+<a href="admin_view_requirements_fa2013.php">Fall 2013 (DE) Admin Powers > </a><br/>
+<a href="admin_view_requirements_sp2013.php">Spring 2013 (KK) Admin Powers ></a> <br/>
+<a href="admin_view_requirements_fa2012.php">Fall 2012 (MH) Admin Powers ></a> <br/>
 <a href="admin_view_requirements_sp2012.php">Spring 2012 (JS) Admin Powers ></a> <br/>
 <a href="admin_view_requirements_fa2011.php">Fall 2011 (CPZ) Admin Powers ></a> <br/>
 <a href="admin_view_requirements_sp2011.php">Spring 2011 (KS) Admin Powers ></a> <br/>

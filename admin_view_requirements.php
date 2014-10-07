@@ -65,8 +65,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 			$where_statement_array[] = "type_custom=$_POST[type_custom]";
 		}
 		
-		$begin_date = "2013-12-10";
-		$end_date = "2014-5-5";
+		$begin_date = "2014-9-1";
+		$end_date = "2014-12-20";
 	
 		$where_statement = $where_statement_array ? "WHERE " . implode(" OR ", $where_statement_array) : '';
 		
@@ -128,7 +128,7 @@ HEREDOC;
 	}
 	
 	echo <<<HEREDOC
-<h1>View Active/Pledge Requirements (DE)</h1>
+<h1>View Active/Pledge Requirements (KHK)</h1>
 <form method="post" action="">
 <table>
 <caption></caption>
@@ -145,9 +145,10 @@ HEREDOC;
 
 $results
 <br/>
-<a href="admin_view_requirements_fa13.php">Fall 2013 (DE) Admin Powers > </a><br/>
-<a href="admin_view_requirements_sp13.php">Spring 2013 (KK) Admin Powers ></a> <br/>
-<a href="admin_view_requirements_fa12.php">Fall 2012 (MH) Admin Powers ></a> <br/>
+<a href="admin_view_requirements_sp2014.php">Spring 2014 (DE) Admin Powers ></a><br/>
+<a href="admin_view_requirements_fa2013.php">Fall 2013 (DE) Admin Powers ></a><br/>
+<a href="admin_view_requirements_sp2013.php">Spring 2013 (KK) Admin Powers ></a> <br/>
+<a href="admin_view_requirements_fa2012.php">Fall 2012 (MH) Admin Powers ></a> <br/>
 <a href="admin_view_requirements_sp2012.php">Spring 2012 (JS) Admin Powers ></a> <br/>
 <a href="admin_view_requirements_fa2011.php">Fall 2011 (CPZ) Admin Powers ></a> <br/>
 <a href="admin_view_requirements_sp2011.php">Spring 2011 (KS) Admin Powers ></a> <br/>
