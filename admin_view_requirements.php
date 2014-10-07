@@ -145,7 +145,7 @@ HEREDOC;
 
 $results
 <br/>
-<a href="admin_view_requirements_sp2014.php">Spring 2014 (DE) Admin Powers ></a><br/>
+<a href="admin_view_requirements_sp2014.php">Spring 2014 (CM) Admin Powers ></a><br/>
 <a href="admin_view_requirements_fa2013.php">Fall 2013 (DE) Admin Powers ></a><br/>
 <a href="admin_view_requirements_sp2013.php">Spring 2013 (KK) Admin Powers ></a> <br/>
 <a href="admin_view_requirements_fa2012.php">Fall 2012 (MH) Admin Powers ></a> <br/>
