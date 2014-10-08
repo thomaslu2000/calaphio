@@ -36,8 +36,9 @@ if (!$g_user->is_logged_in()) {
     <p class="date">October 7, 2014</p>
     <p style="margin-bottom: 1em">Here are the documents from CM 4!<br>
         Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1ENfFE_q1Psb_uXJF3B4M7N2rrnZ9amTdKgTp0sbM-WA/edit#slide=id.p"> CM 4 Slides</a><br>
-        And here are the <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsTG5QOGFwZGJMMHc/edit">CM 4 Minutes</a></p>
-    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/os83a5hPDcA?list=UUWXNoc4YydPI9OWdiQeIGSg" frameborder="0" allowfullscreen></iframe>
+        Here are the <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsTG5QOGFwZGJMMHc/edit">CM 4 Minutes</a></p>
+        And here is this week's <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsZHVkVUdaSS16UDA/edit">Stylus</a>.<br></p>
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/os83a5hPDcA" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
 </div>
 <?php endif ?>
