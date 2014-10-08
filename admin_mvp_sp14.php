@@ -57,7 +57,7 @@ if ($g_user->data['user_id'] == 1190 || $g_user->data['user_id'] == 1086) {
 }
 
 			echo <<<DOCHERE
-<h1>MVP Power (KHK)</h1>
+<h1>MVP Power (DE)</h1>
 <br/>
 DOCHERE;
 
@@ -67,8 +67,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 	
 	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass FROM apo_users join apo_actives using (user_id) order by lastname, firstname"));
 
-	$start_date = strtotime("2014-9-1");
-	$end_date = strtotime("2014-12-20");
+	$start_date = strtotime("2013-12-10");
+	$end_date = strtotime("2014-5-5");
 	$sql_start_date = date("Y-m-d", $start_date);
 	$sql_end_date = date("Y-m-d", $end_date);
 	
