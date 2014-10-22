@@ -32,6 +32,19 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
+    <h2>Notes From CM 5</h2>
+    <p class="date">October 21, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM 5!<br>
+        Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1ho-6PjwZwRE8ofXJM-f1az7I16k2itfQQMVsqtYf7Xo/edit"> CM 5 Slides</a><br>
+        Here are the <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsNnM0NnBDSUNMVmc/edit">CM 5 Minutes</a><br>
+        And here is this week's <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsdElSYlA5dGpocWc/edit">Stylus</a>.<br></p>
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/7PmhX88RxFE" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
     <h2>Notes From CM 4</h2>
     <p class="date">October 7, 2014</p>
     <p style="margin-bottom: 1em">Here are the documents from CM 4!<br>
