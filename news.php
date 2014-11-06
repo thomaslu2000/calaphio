@@ -41,7 +41,7 @@ if (!$g_user->is_logged_in()) {
         Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1DSyHjJ6R4y2LoG_t-gTDTNqx3hfcQLas8kdmGfsOKMY/edit"> CM 6 Slides</a><br>
         Here are the <a href="https://docs.google.com/a/calaphio.com/document/d/1p_AFcWV3Cf4-98Z8sDSYG0-37UE1404qyi1T-8C_IbA/edit">CM 6 Minutes</a><br>
         And here is this week's <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsSHlHRG9vbmxhRjQ/edit?usp=drive_web">Stylus</a>.<br></p>
-    <!-- <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/7PmhX88RxFE" frameborder="0" allowfullscreen></iframe> -->
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/vZz_1n4gaW8" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
 </div>
 <?php endif ?>
