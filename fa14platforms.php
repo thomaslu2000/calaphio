@@ -10,9 +10,9 @@ trigger_error("You must be logged in to view the election platforms.", E_USER_ER
 echo <<<HEREDOC
 <h1 style="margin-bottom: 1em;">Spring 2015 Election Platforms</h1>
 
-President | <a href="#kc">Kelsey Chan</a> | <br>
+President | <a href="#kc">Kelsey Chan</a> | <a href="#kw">Karen Wu</a> | <br>
 Administrative VP | <a href="#jl">Joohyung (Jason) Lee</a> | <br>
-Pledgemaster | <a href="#jt">Jane Tam</a> | <a href="#jw">James Wang</a> <br>
+Pledgemaster | <a href="#jt">Jane Tam</a> | <a href="#jw">James Wang</a> | <br>
 
 <br>
 
@@ -35,8 +35,7 @@ myself to APhiO for another year because I believe in my vision for the chapter 
 </p>
 
 
-<p style="margin: 1.5em 0px;"><strong>
-Leading by Example</strong><br>
+<p style="margin: 1.5em 0px;"><strong>Leading by Example</strong><br>
 During the two consecutive semesters I have served on ExComm as Historian and Administrative VP, 
 I have realized the strength in leading by example. I strongly believe that whether people want to admit it or even come to realize it, 
 they are influenced by the attitudes and actions of those around them. As the main representatives of the fraternity, 
@@ -45,25 +44,26 @@ it should be their desire and responsibility to be role models for not only pled
 If these leaders are not in the right mindset or performing to the best of their abilities, 
 what makes them think that the rest will not follow suit? 
 The bottom line is that people should be excited about Alpha Phi Omega and respect the boundaries 
-that we have created within the organization. </p>
+that we have created within the organization.
+</p>
 
-<p style="margin: 1.5em 0px;">
-<strong>Inter-Chapter Relations </strong> <br>
+<p style="margin: 1.5em 0px;"><strong>Inter-Chapter Relations </strong> <br>
 Our chapter has a history of not being the most active IC chapter in our section. 
 This, I acknowledge cannot be changed overnight or in one semester, but all it takes is a step in the right direction. 
 I hope that with a fresh start, the chapter can begin with a new attitude and desire to get to know brothers in other 
 chapters as well as how the different chapters operate. Our actives are busy with academics and other extracurricular 
 and think that there is nothing outside this chapter, but I believe that there is always something that can be learned 
-by networking and interacting with people coming from different backgrounds. </p>
+by networking and interacting with people coming from different backgrounds.
+</p>
 
 <p style="margin: 1.5em 0px;"><strong>Chapter Feedback</strong><br>
-
 It is important that every active and pledge in the chapter has a voice, even if it is anonymous. 
 I hope to start a feedback box that can be passed around during chapter meetings for people to 
 leave comments, critiques, and suggestions. In addition to this, I also want to make this type 
 of feedback available online via the website or Google Forms. My ExComm and I will be made accessible 
 to the chapter through office hours that are held throughout the week so that individuals may 
-comfortably approach us on a more casual setting.</p>
+comfortably approach us on a more casual setting.
+</p>
 
 <p style="margin: 1.5em 0px;"><strong>Vision</strong><br>
 I believe that, overall, as President I can impact the chapter the most through facilitating conversation. 
@@ -89,9 +89,6 @@ have the capability to accomplish our goals if we set our minds to it.
 <li>Gear Chair</li>
 <li>Fundraiser Chair</li>
 <li>44 service hours, 22 fellowships</li>
-<li>21 Fellowships</li>
-<li>General Leadership and Service Award Recipient</li>
-<li>Sturdy Oak Recipient</li>
 </ul>
 
 <h3 style="font-weight: bold; text-decoration: none;">CM semester</h3>
@@ -107,6 +104,101 @@ have the capability to accomplish our goals if we set our minds to it.
 <li>35.75 service hours, 8 fellowships (to date)</li>
 </ul>
 </div>
+
+//
+<h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
+<a name="kc">
+President: <span style="font-weight: normal;"> Karen Wu (MH)</span>
+</a>
+</h2>
+
+<div style="max-width: 75em; margin-bottom: 3em; line-height: 1.5;">
+<p style="margin: 1.5em 0px;">Hi Brothers,</p>
+
+<p style="margin: 1.5em 0px;">I pledged Alpha Phi Omega my first semester at Cal not knowing 
+what was in store for me three years down the road - and now I am running for President. Alpha 
+Phi Omega has become more than just a club or organization to me. Being a part of this fraternity 
+has: given me the vision of being a leader, taught me many interpersonal skills, and expanded my 
+views on community service. In addition, it has given me a chance to meet lifelong friends that 
+will laugh with me until our dentures fall out.  
+</p>
+
+
+<p style="margin: 1.5em 0px;"><strong>LFS</strong><br>
+I pledged Alpha Phi Omega my first semester at Cal not knowing what was in store for me three years 
+down the road - and now I am running for President. Alpha Phi Omega has become more than just a club 
+or organization to me. Being a part of this fraternity has: given me the vision of being a leader, taught 
+me many interpersonal skills, and expanded my views on community service. In addition, it has given me a 
+chance to meet lifelong friends that will laugh with me until our dentures fall out.
+</p>
+
+<p style="margin: 1.5em 0px;"><strong>Inter-Chapter Relations</strong> <br>
+Alpha Phi Omega is the nation’s largest collegiate fraternity, a fraternity that has a rich history of brotherhood 
+and community, among and between chapters. Yet our IC bonding has been dulled over time. I believe that we must revitalize 
+and build strong relationships with IC brothers. From these relationships, we will be networking, learning from the 
+processes and perspectives of other chapters, and, most importantly, creating long lasting friendships. We can build 
+an even stronger Alpha Phi Omega community and become better individuals, brothers, and community leaders together.
+</p>
+
+<p style="margin: 1.5em 0px;"><strong>Pledge Committee and Executive Committee</strong><br>
+One of the more complex issues is bridging the gap between Pledge Committee and Executive Committee. 
+These two groups play essential roles in the success of our chapter and our chapter’s future. I personally 
+have served on both committees and I understand the difficulty to maintain constant communication when one is 
+swamped with pledges or keeping track of chairs. Unfortunately, time isn’t always the issue regarding the disjunction 
+of the committees. There has been an instance where the two committees are perceived as opposing factions. PComm and 
+ExComm cooperation and teamwork is crucial to maintaining a safe and enjoyable environment for both the active 
+brothers and pledges.  I would like to suggest a possible PComm and ExComm bonding event to kindle a closer relationship 
+between the members of the two committees. Also to avoid any discrepancy, I hope to maintain clear communication between 
+the two committees by utilizing an ExComm and PComm GroupMe as well as a Facebook group.
+</p>
+
+<p style="margin: 1.5em 0px;"><strong>Vision</strong><br>
+As President, I hope to maintain the stability of the chapter through building a strong brotherhood and upholding 
+a pleasant atmosphere. I believe that brothers are happier and more inclined to give back to the chapter when Alpha 
+Phi Omega becomes much more than just another club. 
+</p>
+
+<p style="margin: 1.5em 0px;">Thank you for considering me as a possible candidate.</p>
+<p style="margin: 1.5em 0px;">iLFS,</p>
+<p style="margin: 1.5em 0px;">Karen Wu</p>
+
+<h3 style="font-weight: bold; text-decoration: underline;">Qualifications:</h3><br>
+
+<h3 style="font-weight: bold; text-decoration: none;">MH semester -- Fall 2012</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">                                                                                                            
+<li>Finance Committee</li>
+<li>Pledge Spotlight</li>
+</ul>
+
+<h3 style="font-weight: bold; text-decoration: none;">KK semester -- Spring 2013</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">                                                                                                            
+<li>DMND Big</li>
+<li>Fundraiser Organizer</li>
+<li>Talent Show Chair</li>
+<li>GG Maniac</li>
+</ul>
+
+<h3 style="font-weight: bold; text-decoration: none;">DE semester -- Fall 2013</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">                                                                                                            
+<li>Finance Committee Trainer</li>
+<li>Sturdy Oak Recipient</li>
+</ul>
+
+<h3 style="font-weight: bold; text-decoration: none;">CM semester -- Spring 2014</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">                                                                                                            
+<li>Family Chair</li>
+<li>1LLIONAIRE Big</li>
+</ul>
+
+<h3 style="font-weight: bold; text-decoration: none;">KHK semester -- Fall 2014</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">                                                                                                            
+<li>Fellowship VP</li>
+<li>A\$AP KR3W Aunt</li>
+</ul>
+
+<h3 style="font-weight: bold; text-decoration: none;">Total: 150+ Service Hours, 70+ Fellowships</h3>
+</div>
+
 
 
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
