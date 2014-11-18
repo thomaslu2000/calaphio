@@ -198,6 +198,7 @@ Service VP: <span style="font-weight: normal;"> Pooja Shah (KK)</span>
 </h2>
 <br>
 
+<div style="max-width: 75em; margin-bottom: 3em; line-height: 1.5;">
 <ul style="list-style: inside disc; margin-bottom: 1.5em;">
 <li>I believe Alpha Phi Omega is a platform for all of us to utilize the finances and manpower of a 
 fraternity to share means of service we are individually passionate about. At the end of the day, 
