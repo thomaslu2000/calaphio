@@ -477,7 +477,7 @@ Membership VP: <span style="font-weight: normal;"> Cathy Yin (CM)</span>
 and what I want to do with them.
 </p>
 
-<p style="margin: 1.5em 0px;"><strong>Rush</strong><br>
+<h3 style="font-weight: bold; text-decoration: none;">Rush</h3>
 <ul style="list-style: inside disc; margin-bottom: 1.5em;">
 <li>I want to have more visible and fun rush events (ex.: barbecue, water fight, scavenger hunt, 
 	glow in the dark tag, etc.)</li>
@@ -485,13 +485,13 @@ and what I want to do with them.
 contact people you think would be a good fit for APO.</li>
 </ul>
 
-<p style="margin: 1.5em 0px;"><strong>Families</strong><br>
+<h3 style="font-weight: bold; text-decoration: none;">Families</h3>
 <ul style="list-style: inside disc; margin-bottom: 1.5em;">
 <li>I want to encourage more people to step up and become bigs.</li>
 <li>I want to promote closer relationships between pledges and actives outside of families.</li>
 </ul>
 
-<p style="margin: 1.5em 0px;"><strong>Active Retention</strong><br>
+<h3 style="font-weight: bold; text-decoration: none;">Active Retention</h3>
 <ul style="list-style: inside disc; margin-bottom: 1.5em;">
 <li>To encourage more actives to be more involved, I would have more active-only events and 
 rewards (I would not add more requirements)</li>
