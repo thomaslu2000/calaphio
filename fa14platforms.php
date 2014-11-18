@@ -96,9 +96,9 @@ have the capability to accomplish our goals if we set our minds to it.
 
 <h3 style="font-weight: bold; text-decoration: none;">CM semester</h3>
 <ul style="list-style: inside disc; margin-bottom: 1.5em;">                                                                                                            
-<li>Sturdy Oak Recipient/li>
-<li>ExComm: Historian/li>
-<li>35.25 service hours, 18 fellowships/li>
+<li>Sturdy Oak Recipient</li>
+<li>ExComm: Historian</li>
+<li>35.25 service hours, 18 fellowships</li>
 </ul>
 
 <h3 style="font-weight: bold; text-decoration: none;">KHK semester</h3>
@@ -125,7 +125,7 @@ would like to step up and give something back to the chapter.
 </p>
 
 <p style="margin: 1.5em 0px;"><strong>Things that I would like to achieve</strong><br>
-<p style="margin: 1.5em 0px;">Thanks to former Admin VP, I found no major concerns in room reservations, 
+Thanks to former Admin VP, I found no major concerns in room reservations, 
 Fun pack, and CM slides. So I would like to mostly focus on website improvement and some changes on Stylus. <br>
 1. Website Improvement: organizing website contents, website design, adding formatting function and photo/video 
 attachment function to event creation page. <br>
