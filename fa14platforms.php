@@ -11,8 +11,9 @@ echo <<<HEREDOC
 <h1 style="margin-bottom: 1em;">Spring 2015 Election Platforms</h1>
 
 President | <a href="#kc">Kelsey Chan</a> | <a href="#kw">Karen Wu</a> | <br>
-Administrative VP | <a href="#jl">Joohyung (Jason) Lee</a> | <br>
 Pledgemaster | <a href="#jt">Jane Tam</a> | <a href="#jw">James Wang</a> | <br>
+Administrative VP | <a href="#jl">Joohyung (Jason) Lee</a> | <br>
+Membership VP | <a href="#cy">Cathy Yin</a> | <br>
 
 <br>
 
@@ -197,52 +198,6 @@ Phi Omega becomes much more than just another club.
 </ul>
 
 <h3 style="font-weight: bold; text-decoration: none;">Total: 150+ Service Hours, 70+ Fellowships</h3>
-</div>
-
-
-
-<h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
-<a name="jl">
-Administrative VP: <span style="font-weight: normal;"> Joohyung (Jason) Lee (CM)</span>
-</a>
-</h2>
-
-<div style="max-width: 75em; margin-bottom: 3em; line-height: 1.5;">
-<p style="margin: 1.5em 0px;">Hello Gamma Gamma!</p>
-<p style="margin: 1.5em 0px;">My name is Jason Lee and I am running to be your next Admin Vice President.  
-Thinking back about my experience in Alpha Phi Omega, APO has been center of my college life where I met my 
-loving friends but also allowed me to grow and develop myself in various aspects. Unfortunately, ‘but fortunately,’ 
-I am graduating next semester and will not be able to continue APO journey as an active member. So now that I really 
-would like to step up and give something back to the chapter.
-</p>
-
-<p style="margin: 1.5em 0px;"><strong>Things that I would like to achieve</strong><br>
-Thanks to former Admin VP, I found no major concerns in room reservations, 
-Fun pack, and CM slides. So I would like to mostly focus on website improvement and some changes on Stylus. <br>
-1. Website Improvement: organizing website contents, website design, adding formatting function and photo/video 
-attachment function to event creation page. <br>
-2. Stylus: include more variety, informative contents such as National office news, news from brothers, and Birthdays.
-</p>
-
-<h3 style="font-weight: bold; text-decoration: underline;">Qualifications</h3><br>
-
-<h3 style="font-weight: bold; text-decoration: none;">Courtney McLaughlin – Spring 2014</h3>
-<ul style="list-style: inside disc; margin-bottom: 1.5em;">
-<li>Fellowship committee trainee</li>
-<li>Pledge Maniac Recipient</li>
-<li>34 Fellowships</li>
-<li>25 Service hours</li>
-</ul>
-
-<h3 style="font-weight: bold; text-decoration: none;">Kay Hairgrove Krenek - Fall 2014</h3>
-<ul style="list-style: inside disc; margin-bottom: 1.5em;">
-<li>Big of JustWTH</li>
-<li>GG Event chair</li>
-<li>GG Sports chair</li>
-<li>GG Maniac Recipient</li>
-<li>20+fellowships</li>
-<li>20 Service hours</li>
-</ul>
 </div>
 
 
@@ -463,6 +418,86 @@ visibility is a reflection of involvement.
 <li>10+ Fellowships</li>
 </ul>
 </div>
+
+
+<h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
+<a name="jl">
+Administrative VP: <span style="font-weight: normal;"> Joohyung (Jason) Lee (CM)</span>
+</a>
+</h2>
+
+<div style="max-width: 75em; margin-bottom: 3em; line-height: 1.5;">
+<p style="margin: 1.5em 0px;">Hello Gamma Gamma!</p>
+<p style="margin: 1.5em 0px;">My name is Jason Lee and I am running to be your next Admin Vice President.  
+Thinking back about my experience in Alpha Phi Omega, APO has been center of my college life where I met my 
+loving friends but also allowed me to grow and develop myself in various aspects. Unfortunately, ‘but fortunately,’ 
+I am graduating next semester and will not be able to continue APO journey as an active member. So now that I really 
+would like to step up and give something back to the chapter.
+</p>
+
+<p style="margin: 1.5em 0px;"><strong>Things that I would like to achieve</strong><br>
+Thanks to former Admin VP, I found no major concerns in room reservations, 
+Fun pack, and CM slides. So I would like to mostly focus on website improvement and some changes on Stylus. <br>
+1. Website Improvement: organizing website contents, website design, adding formatting function and photo/video 
+attachment function to event creation page. <br>
+2. Stylus: include more variety, informative contents such as National office news, news from brothers, and Birthdays.
+</p>
+
+<h3 style="font-weight: bold; text-decoration: underline;">Qualifications</h3><br>
+
+<h3 style="font-weight: bold; text-decoration: none;">Courtney McLaughlin – Spring 2014</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">
+<li>Fellowship committee trainee</li>
+<li>Pledge Maniac Recipient</li>
+<li>34 Fellowships</li>
+<li>25 Service hours</li>
+</ul>
+
+<h3 style="font-weight: bold; text-decoration: none;">Kay Hairgrove Krenek - Fall 2014</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">
+<li>Big of JustWTH</li>
+<li>GG Event chair</li>
+<li>GG Sports chair</li>
+<li>GG Maniac Recipient</li>
+<li>20+fellowships</li>
+<li>20 Service hours</li>
+</ul>
+</div>
+
+
+<h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
+<a name="cy">
+Membership VP: <span style="font-weight: normal;"> Cathy Yin (CM)</span>
+</a>
+</h2>
+
+<div style="max-width: 75em; margin-bottom: 3em; line-height: 1.5;">
+<p style="margin: 1.5em 0px;">Hey y'all!</p>
+<p style="margin: 1.5em 0px;">I am running for MVP. Here are three major domains under MVP 
+and what I want to do with them.
+</p>
+
+<p style="margin: 1.5em 0px;"><strong>Rush</strong><br>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">
+<li>I want to have more visible and fun rush events (ex.: barbecue, water fight, scavenger hunt, 
+	glow in the dark tag, etc.)</li>
+<li>I want to set up a referral system in addition to or in place of chalking so that I can directly 
+contact people you think would be a good fit for APO.</li>
+</ul>
+
+<p style="margin: 1.5em 0px;"><strong>Families</strong><br>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">
+<li>I want to encourage more people to step up and become bigs.</li>
+<li>I want to promote closer relationships between pledges and actives outside of families.</li>
+</ul>
+
+<p style="margin: 1.5em 0px;"><strong>Active Retention</strong><br>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">
+<li>To encourage more actives to be more involved, I would have more active-only events and 
+rewards (I would not add more requirements)</li>
+</ul>
+</div>
+
 
 HEREDOC;
 }
