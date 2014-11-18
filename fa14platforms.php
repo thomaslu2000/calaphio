@@ -290,7 +290,10 @@ YTA Mosswood Chair, Cal Star Yoga Chair, American Red Cross Chair, IC Academy of
 
 
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
-<a name="lb">Pledgemaster: <span style="font-weight: normal;"> Lakana Bun (DE) </span></a></h2>
+<a name="lb">
+Pledgemaster: <span style="font-weight: normal;"> Lakana Bun (DE) </span>
+</a>
+</h2>
 
 <div style="max-width: 75em; margin-bottom: 3em; line-height: 1.5;">
 <p style="margin: 1.5em 0px;">Hello everyone. My name is Lakana Bun and I am running for Pledge Master. 
