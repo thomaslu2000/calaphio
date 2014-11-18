@@ -11,10 +11,9 @@ echo <<<HEREDOC
 <h1 style="margin-bottom: 1em;">Fall 2013 Election Platforms</h1>
 
 President | <a href="#kc">Kelsey Chan</a> | <br>
-Administrative VP | <a href="#jl">Jason Lee</a> | <br>
+Administrative VP | <a href="#jl">Joohyung (Jason) Lee</a> | <br>
 Pledgemaster | <a href="#jt">Jane Tam</a> | <a href="#jw">James Wang</a> <br>
 
-<br>
 <br>
 
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
@@ -112,152 +111,48 @@ have the capability to accomplish our goals if we set our minds to it.
 
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
 <a name="jl">
-Administrative VP: <span style="font-weight: normal;"> Jason Lee (CM)</span>
+Administrative VP: <span style="font-weight: normal;"> Joohyung (Jason) Lee (CM)</span>
 </a>
 </h2>
 
 <div style="max-width: 75em; margin-bottom: 3em; line-height: 1.5;">
-<p style="margin: 1.5em 0px;">Hello my fellow brothers of Gamma Gamma!</p>
-<p style="margin: 1.5em 0px;">For the past year, Alpha Phi Omega has become an important aspect of my life as a college student and as a growing individual. I pledged APO with friendship in mind, but since then, I have gained so much more. I have gained not only a loving family and supportive pledge brothers, but also a drive to develop my leadership skills and give back to the community. I am now ready to take my commitment to APO and what the fraternity stands for to another level.</p>
-<p style="margin: 1.5em 0px;">After being a Big in the Family System and an active member in the chapter, I have developed my goals for this spring semester to center around two themes: responsibility and communication.</p>
-<p style="margin: 1.5em 0px;"><strong>RUSH:</strong> This is not only the first big project of the semester, but also the chapter&#39;s opportunity to start off 
+<p style="margin: 1.5em 0px;">Hello Gamma Gamma!</p>
+<p style="margin: 1.5em 0px;">My name is Jason Lee and I am running to be your next Admin Vice President.  
+Thinking back about my experience in Alpha Phi Omega, APO has been center of my college life where I met my 
+loving friends but also allowed me to grow and develop myself in various aspects. Unfortunately, ‘but fortunately,’ 
+I am graduating next semester and will not be able to continue APO journey as an active member. So now that I really 
+would like to step up and give something back to the chapter.
+</p>
 
-on the right foot. I want Rush to take place during the first two weeks of school, beginning with the first 
+<p style="margin: 1.5em 0px;"><strong>Things that I would like to achieve</strong><br>
+<p style="margin: 1.5em 0px;">Thanks to former Admin VP, I found no major concerns in room reservations, 
+Fun pack, and CM slides. So I would like to mostly focus on website improvement and some changes on Stylus.
+</p>
+<p style="margin: 1.5em 0px;">1. Website Improvement: organizing website contents, website design, 
+adding formatting function and photo/video attachment function to event creation page.
+</p>
+<p style="margin: 1.5em 0px;">2. Stylus: include more variety, informative contents such as 
+National office news, news from brothers, and Birthdays.
+</p>
 
-day of instruction. It is important that we put ourselves out there from the very beginning to establish our 
+<h3 style="font-weight: bold; text-decoration: underline;">Qualifications</h3><br>
 
-presence on campus and to attract a larger pool of students/rushees who will choose us as their first choice. 
-
-I will work closely with my Rush Chairs throughout the break to make sure they are meeting deadlines 
-
-and completing their tasks in a timely manner. Even though Rush is the chairs&#39; opportunities to shine, it is 
-
-also essential and necessary that I communicate with them frequently to ensure everyone is on the same 
-
-page and working together as a unified team. It is essential that at least one chair and/or myself is present 
-
-during each and every event, tabling hour, and chalking shift. In addition to chairs, it is very 
-
-important that actives are actively participating and talking to rushees during Rush. This is their
-
-opportunity to attract the future active body of APO, so I hope to see them actively flyering on Sproul
-AND waking up bright and early to chalk with me. </p>
-<p style="margin: 1.5em 0px;"><strong>FAMILY SYSTEM:</strong> Gamma Gamma&#39;s family system is an integral part of the fraternity and is what
-
-makes us different from other service organizations. I want to improve the match-making procedure we
-
-currently have so that <i>Sib Social is pushed back until the 4th week of pledging (between PR2 and PR3).</i>
-
-This is because it is often hard to judge an individual when you first meet them or by just reading a piece
-
-of paper. Between Ritual and this time, potential Bigs and pledges will be encouraged to actively sign up 
-
-for events so they can meet and interact with as many people as possible. During this time, ExComm, 
-
-PComm, Family Committee, and I will actively be attending events and observing how pledges are
-
-getting along with others so that we can make an informed decision when placing pledges into families. I 
-
-would also like to implement an <i>application process for becoming a Big</i> with the extra time allowed
-
-from a later Sib Social. Bigs serve as role models, guides, and friends to their Littles, and picking up
-
-should be a privilege that is earned &#45; not taken for granted. Being a Big is a very rewarding experience, 
-
-but it is not a responsibility that should be taken lightly. It is important for me to stress that no one should 
-
-feel pressured to become a Big. Only pick up because you feel you are ready, not because you feel 
-
-pressured to continue family lines. You can still be an integral part of the family system by becoming an 
-
-Aunt or Uncle.</p>
-
-<p style="margin: 1.5em 0px;">In addition to the points above, I would also like to propose the <i>integration of a 1:1 Big/Little pairing.</i> I 
-
-strongly believe this approach to the family system will not only greatly benefit our chapter but also 
-
-encourage our active members to become more responsible and better leaders. Actives who intend to pick
-
-up a Little should work to prove themselves to the chapter that they are able and capable of taking care of
-
-another individual besides themselves. They will strive to be a good influence on their Littles and do
-
-everything they can to make sure their Littles cross over. Giving each pledge an active that can devote
-
-their entire focus to him/her will have a positive effect on the pledge&#39;s attitude and efforts towards the 
-
-pledging process and APO. Available Bigs will help Littles integrate themselves into the chapter and form 
-
-and strong connection with the people in it. This direct relationship will also give the active a reason to 
-
-step up and make sure that the pledge is getting the attention and guidance he/she needs.</p>
-
-<p style="margin: 1.5em 0px;"><strong>SPIRIT:</strong> I want to bring back <i>Spirit themes</i> at CM. I hope to encourage as many people to participate as
-
-possible by creating a small friendly competition that will end at the end of the semester. The Small 
-
-Family or Big Family with the most points at the end of the semester will get a reward (to be decided 
-
-after discussion with ExComm).</p>
-<p style="margin: 1.5em 0px;"><strong>RETENTION:</strong> Whenever I think about active retention, the phrase &#34;people come for service, but stay for 
-
-friends&#34; always comes to mind. I want to tackle active retention with a permanent family system such that 
-
-there are continuous lineages being extended every semester. I hope this tactic will encourage actives
-
-and/or associates who are not picking up pledges to stay involved in the fraternity by attending various 
-
-family bonding events and activities. I want members of APO who are not Bigging, on PComm, or on 
-
-ExComm to feel included and welcomed in the chapter. With a permanent family system, members will 
-
-always have a family to return to and a group of people to connect with no matter what level of 
-
-involvement they decide to commit to.</p>
-
-<p style="margin: 1.5em 0px;"><strong>COMMUNICATION:</strong> What I say and what I do affects how active members behave and how others
-
-perceive APO. Because of this, I will strive to set a good example in the chapter by being visible to all
-
-members and pledges during service and fellowship events. I want to be accessible to everyone and all the
-
-comments and concerns they may have about requirements or anything. I will work closely with the
-
-Pledgemaster and Family Heads to ensure that there are open lines of communication between us such
-
-that misunderstandings and gaps in planning do not arise. I am always open to sharing and discussing 
-
-ideas, but in the case that someone has a concern or comment that he/she does not wish to openly address, 
-
-then he/she will have access to a Google form where he/she can submit his/her comment to me 
-
-anonymously.</p>
-
-<p style="margin: 1.5em 0px;">Lastly, I want to point out that even though my authority as Membership VP allows me to implement the 
-
-changes I see fit, what I do and accomplish will not be feasible without the support of the chapter. I may 
-
-have a plan, but it is up to you, the active, whether or not this plan will succeed. Everyone should feel 
-
-empowered that they can make a difference in Gamma Gamma and what Alpha Phi Omega stands for.</p>
-
-<p style="margin: 1.5em 0px;">iLFS,</p>
-<p style="margin: 1.5em 0px;">Kelsey Chan</p>
-<h3 style="font-weight: bold; text-decoration: underline;">Qualifications:</h3>
-<br>
-<h3 style="font-weight: bold; text-decoration: none;">Kingsley Kuang - Spring 2013</h3>
-<ul style="list-style: inside disc; margin-bottom: 1.5em;">                                                                                                            
-<li>Finance Committee</li>
-<li>Spirit Committee</li>
-<li>Hotspot Committee</li>
-<li>Banquet Committee</li>
-<li>Pledge Class Maniac Recipient</li>
+<h3 style="font-weight: bold; text-decoration: none;">Courtney McLaughlin – Spring 2014</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">
+<li>Fellowship committee trainee</li>
+<li>Pledge Maniac Recipient</li>
+<li>34 Fellowships</li>
+<li>25 Service hours</li>
 </ul>
-<h3 style="font-weight: bold; text-decoration: none;">David Emery - Fall 2013</h3>
-<ul style="list-style: inside disc; margin-bottom: 1.5em;">                                                                                                            
-<li>Big for $uper $mash Hos</li>
-<li>Fundraising Chair</li>
-<li>Gear Chair</li>
+
+<h3 style="font-weight: bold; text-decoration: none;">Kay Hairgrove Krenek - Fall 2014</h3>
+<ul style="list-style: inside disc; margin-bottom: 1.5em;">
+<li>Big of JustWTH</li>
+<li>GG Event chair</li>
+<li>GG Sports chair</li>
+<li>GG Maniac Recipient</li>
+<li>20+fellowships</li>
+<li>20 Service hours</li>
 </ul>
 </div>
 
@@ -386,7 +281,7 @@ that I can make the biggest difference in shaping a happy, active pledge class w
 in the future.
 </p>
 
-<p style="margin: 1.5em 0px;"><strong>Qualities of Pledge Committee</strong><br>
+<p style="margin: 1.5em 0px;">
 My philosophy regarding pledging and APHIO in general is that you should enjoy helping others through service, 
 enjoy interacting with people, enjoy forming friendships and enjoy having fun. Realistically, these are the only 
 aspects that APHIO can offer and thus should be the emphasis of the pledge program. As Berkeley students, we already 
@@ -404,7 +299,7 @@ of the pledges that as a pledge committee, we have their best interests at heart
 towards making pledging as smooth and enjoyable as possible. 
 </p>
 
-<p style="margin: 1.5em 0px;"><strong>Pledge Program Goals</strong><br></p>
+<p style="margin: 1.5em 0px;"><i>Pledge Program Goals</i><br></p>
 
 <p style="margin: 1.5em 0px;">
 The focus of pledging is two-fold: bonding with people, and helping the community through service 
