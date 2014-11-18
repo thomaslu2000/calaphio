@@ -105,9 +105,9 @@ have the capability to accomplish our goals if we set our minds to it.
 </ul>
 </div>
 
-//
+
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
-<a name="kc">
+<a name="kw">
 President: <span style="font-weight: normal;"> Karen Wu (MH)</span>
 </a>
 </h2>
