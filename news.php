@@ -29,6 +29,18 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Spring 2015 Platforms</h2>
+    <p class="date">November 17, 2014</p>
+    <p style="margin-bottom: 1em">
+        <b>Hi Everyone! Please stay informed and take the time to read the platforms that your future Executive Committee has written.</b><br>
+        <b>If you are informed, you will ask the right questions and be able to make an educational decision when it comes time to vote.</b><br>
+        <b>Please support the candidates no matter the turnout! Thank you.</b><br>
+        Here's the link: <a target="_blank" style="margin-left: 1em;"href="fa14platforms.php">Spring 2015 Platforms</a></p>
+    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">

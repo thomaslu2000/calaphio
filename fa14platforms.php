@@ -8,7 +8,7 @@ if (!$g_user->is_logged_in()) {
 trigger_error("You must be logged in to view the election platforms.", E_USER_ERROR);
 } else {
 echo <<<HEREDOC
-<h1 style="margin-bottom: 1em;">Fall 2014 Election Platforms</h1>
+<h1 style="margin-bottom: 1em;">Spring 2015 Election Platforms</h1>
 
 President | <a href="#kc">Kelsey Chan</a> | <br>
 Administrative VP | <a href="#jl">Joohyung (Jason) Lee</a> | <br>
