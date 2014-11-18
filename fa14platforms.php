@@ -196,7 +196,7 @@ Phi Omega becomes much more than just another club. </p>
 Service VP: <span style="font-weight: normal;"> Pooja Shah (KK)</span>
 </a>
 </h2>
-
+<br>
 
 <ul style="list-style: inside disc; margin-bottom: 1.5em;">
 <li>I believe Alpha Phi Omega is a platform for all of us to utilize the finances and manpower of a 
@@ -348,10 +348,10 @@ the pledges, myself and each other; “Treat others how the way you want to be t
 
 <h3 style="font-weight: bold; text-decoration: none;">CM Semester – Spring 2014</h3>
 <ul style="list-style: inside disc; margin-bottom: 1.5em;">
-<li><b>Chairing</b>Banquet for Fellowship VP</li>
-<li><b>Chairing</b>Rush for Membership VP</li>
-<li><b>Chairing</b>Talent Show for Fellowship VP</li>
-<li><b>Chairing</b>Spring Youth Service Day for Service VP</li>
+<li><b>Chairing: </b>Banquet for Fellowship VP</li>
+<li><b>Chairing: </b>Rush for Membership VP</li>
+<li><b>Chairing: </b>Talent Show for Fellowship VP</li>
+<li><b>Chairing: </b>Spring Youth Service Day for Service VP</li>
 <li><b>Sturdy Oak Recipient</b></li>
 <li>Big for Whale.I.Am (Small Family)</li>
 <li>General Friendship Award for GG Awards</li>
