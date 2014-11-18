@@ -8,7 +8,7 @@ if (!$g_user->is_logged_in()) {
 trigger_error("You must be logged in to view the election platforms.", E_USER_ERROR);
 } else {
 echo <<<HEREDOC
-<h1 style="margin-bottom: 1em;">Fall 2013 Election Platforms</h1>
+<h1 style="margin-bottom: 1em;">Fall 2014 Election Platforms</h1>
 
 President | <a href="#kc">Kelsey Chan</a> | <br>
 Administrative VP | <a href="#jl">Joohyung (Jason) Lee</a> | <br>
@@ -126,13 +126,10 @@ would like to step up and give something back to the chapter.
 
 <p style="margin: 1.5em 0px;"><strong>Things that I would like to achieve</strong><br>
 <p style="margin: 1.5em 0px;">Thanks to former Admin VP, I found no major concerns in room reservations, 
-Fun pack, and CM slides. So I would like to mostly focus on website improvement and some changes on Stylus.
-</p>
-<p style="margin: 1.5em 0px;">1. Website Improvement: organizing website contents, website design, 
-adding formatting function and photo/video attachment function to event creation page.
-</p>
-<p style="margin: 1.5em 0px;">2. Stylus: include more variety, informative contents such as 
-National office news, news from brothers, and Birthdays.
+Fun pack, and CM slides. So I would like to mostly focus on website improvement and some changes on Stylus. <br>
+1. Website Improvement: organizing website contents, website design, adding formatting function and photo/video 
+attachment function to event creation page. <br>
+2. Stylus: include more variety, informative contents such as National office news, news from brothers, and Birthdays.
 </p>
 
 <h3 style="font-weight: bold; text-decoration: underline;">Qualifications</h3><br>
