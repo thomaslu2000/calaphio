@@ -29,6 +29,79 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Election Results!!</h2>
+    <p class="date">November 18, 2014</p>
+    <p style="margin-bottom: 1em">
+        Dear Chapter, please join me in congratulating your new Executive Committee for the Spring 2015 semester! <br>
+        The officers will have their work cut out for them, and all they ask is that you support and stand behind them every step of the way.<br>
+    </p>
+        <div class="collage-container">
+    <div class="collage-pictures">
+        <div class="person-picture">
+            <img src="documents/sp15/excomm/president.jpg"></img>
+            <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/sp15/excomm/service.jpg"></img>
+            <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=1400">Debra Yan</a></p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/sp15/excomm/pledgemaster.jpg"></img>
+            <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1443">James Wang</a></p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/sp15/excomm/admin.jpg"></img>
+            <p class="center"><strong>Administrative VP</strong>: <a href="profile.php?user_id=2448">Jason (Joohyung) Lee</a></p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/sp15/excomm/membership.jpg"></img>
+            <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=1405">Rebecca Phuong</a></p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/sp15/excomm/finance.jpg"></img>
+            <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/sp15/excomm/fellowship.jpg"></img>
+            <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2054">Ann Chan</a></p>
+            
+        </div>
+        <div class="person-picture">
+            <img src="documents/sp15/excomm/historian.jpg"></img>
+            <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p> 
+        </div>
+        
+    </div>
+    <div style="clear: left;"></div>
+    </div>
+    </p>
+    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+<?php endif ?>
+
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2>Notes From CM 7</h2>
+    <p class="date">November 18, 2014</p>
+    <p style="margin-bottom: 1em">Here are the documents from CM 7!<br>
+        Excomm Powerpoint Slides: <a href="https://docs.google.com/a/calaphio.com/presentation/d/1FJQ5lZ9JfDCe4GGnM0iy56DljuaKmkgoVxb1dHBX2bc/edit#slide=id.p">CM 7 Slides</a><br>
+        Here are the <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsQlFZSTNONlVmT3c/edit">CM 7 Minutes</a><br>
+        And here is this week's <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsMXdjS2Z2TWxHbFE/edit">Stylus</a>.<br></p>
+    <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/Ru7WKZH8q0A" frameborder="0" allowfullscreen></iframe>
+    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Spring 2015 Platforms</h2>
@@ -37,7 +110,7 @@ if (!$g_user->is_logged_in()) {
         <b>Hi Everyone! Please stay informed and take the time to read the platforms that your future Executive Committee has written.</b><br>
         <b>If you are informed, you will ask the right questions and be able to make an educational decision when it comes time to vote.</b><br>
         <b>Please support the candidates no matter the turnout! Thank you.</b><br>
-        Here's the link: <a target="_blank" style="margin-left: 1em;"href="fa14platforms.php">Spring 2015 Platforms</a></p>
+        Here's the link: <a href="fa14platforms.php">Spring 2015 Platforms</a></p>
     <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
 </div>
 <?php endif ?>
