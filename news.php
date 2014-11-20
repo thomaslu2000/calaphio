@@ -36,7 +36,7 @@ if (!$g_user->is_logged_in()) {
         <p class="date">November 18, 2014</p>
         <p style="margin-bottom: 1em">
             <b>Dear Chapter, please join me in congratulating your new Executive Committee for the Spring 2015 semester!</b><br>
-            <b>The officers will have their work cut out for them, and all they ask is that you support and stand behind them every step of the way.</>
+            <b>The officers will have their work cut out for them, and all they ask is that you support and stand behind them every step of the way.</b>
             </p>
             <div class="collage-container">
                 <div class="collage-pictures">
