@@ -94,7 +94,9 @@ if (!$g_user->is_logged_in()) {
         <p style="margin-bottom: 1em">Here are the documents from CM 7!<br>
             Excomm Powerpoint Slides: <a href="https://docs.google.com/a/calaphio.com/presentation/d/1FJQ5lZ9JfDCe4GGnM0iy56DljuaKmkgoVxb1dHBX2bc/edit#slide=id.p">CM 7 Slides</a><br>
             Here are the <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsQlFZSTNONlVmT3c/edit">CM 7 Minutes</a><br>
-            And here is this week's <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsMXdjS2Z2TWxHbFE/edit">Stylus</a>.<br></p>
+            Here is this week's <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsMXdjS2Z2TWxHbFE/edit">Stylus</a>.<br>
+            And you may consult here an <a href="https://docs.google.com/a/calaphio.com/file/d/0B1PYMBbhnLMsSkNxdTNnZl9HdlE/edit">Amendment Proposal</a>.<br>
+        </p>
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/Ru7WKZH8q0A" frameborder="0" allowfullscreen></iframe>
             <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
         </div>
