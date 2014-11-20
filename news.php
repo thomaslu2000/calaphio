@@ -30,63 +30,61 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
-    <div class="newsItem">
-        <h2>Election Results!!</h2>
-        <p class="date">November 18, 2014</p>
-        <p style="margin-bottom: 1em">
-            <b>Dear Chapter, please join me in congratulating your new Executive Committee for the Spring 2015 semester!</b><br>
-            <b>The officers will have their work cut out for them, and all they ask is that you support and stand behind them every step of the way.</b>
-            </p>
-            <div class="collage-container">
-                <div class="collage-pictures">
-                    <div class="person-picture">
-                        <img src="documents/sp15/excomm/president.jpg"></img>
-                        <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
-                        
-                    </div>
-                    <div class="person-picture">
-                        <img src="documents/sp15/excomm/service.jpg"></img>
-                        <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=1400">Debra Yan</a></p>
-                        
-                    </div>
-                    <div class="person-picture">
-                        <img src="documents/sp15/excomm/pledgemaster.jpg"></img>
-                        <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1443">James Wang</a></p>
-                        
-                    </div>
-                    <div class="person-picture">
-                        <img src="documents/sp15/excomm/admin.jpg"></img>
-                        <p class="center"><strong>Administrative VP</strong>: <a href="profile.php?user_id=2448">Jason Lee</a></p>
-                        
-                    </div>
-                    <div class="person-picture">
-                        <img src="documents/sp15/excomm/membership.jpg"></img>
-                        <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=1405">Rebecca Phuong</a></p>
-                        
-                    </div>
-                    <div class="person-picture">
-                        <img src="documents/sp15/excomm/finance.jpg"></img>
-                        <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
-                        
-                    </div>
-                    <div class="person-picture">
-                        <img src="documents/sp15/excomm/fellowship.jpg"></img>
-                        <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2054">Ann Chan</a></p>
-                        
-                    </div>
-                    <div class="person-picture">
-                        <img src="documents/sp15/excomm/historian.jpg"></img>
-                        <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p> 
-                    </div>
-                    
-                </div>
-                <div style="clear: left;"></div>
+<div class="newsItem">
+    <h2>Election Results!!</h2>
+    <p class="date">November 18, 2014</p>
+    <p style="margin-bottom: 1em">
+        <b>Dear Chapter, please join me in congratulating your new Executive Committee for the Spring 2015 semester!</b><br>
+        <b>The officers will have their work cut out for them, and all they ask is that you support and stand behind them every step of the way.</b>
+    </p>
+    <div class="collage-container">
+        <div class="collage-pictures">
+            <div class="person-picture">
+                <img src="documents/sp15/excomm/president.jpg"></img>
+                <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
+                
             </div>
-        </p>
-        <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+            <div class="person-picture">
+                <img src="documents/sp15/excomm/service.jpg"></img>
+                <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=1400">Debra Yan</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/excomm/pledgemaster.jpg"></img>
+                <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1443">James Wang</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/excomm/admin.jpg"></img>
+                <p class="center"><strong>Administrative VP</strong>: <a href="profile.php?user_id=2448">Jason Lee</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/excomm/membership.jpg"></img>
+                <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=1405">Rebecca Phuong</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/excomm/finance.jpg"></img>
+                <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/excomm/fellowship.jpg"></img>
+                <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2054">Ann Chan</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/excomm/historian.jpg"></img>
+                <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p> 
+            </div>
+            
+        </div>
+        <div style="clear: left;"></div>
     </div>
-<?php endif ?>
+</p>
+<p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
 
 
 <?php if ($g_user->is_logged_in()): ?>
