@@ -41,7 +41,7 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-pictures">
             <div class="person-picture">
                 <img src="documents/sp15/excomm/president.jpg"></img>
-                <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1623">KarenWu</a></p>
+                <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
                 
             </div>
             <div class="person-picture">
