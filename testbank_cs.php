@@ -8,7 +8,17 @@ if (!$g_user->is_logged_in()) {
 	trigger_error("You must be logged in to view the testbank.", E_USER_ERROR);
 } else {
 	echo "<ul style=\"list-style: disc inside; margin-left: 6px;\">\n";
-	echo "<li><a href="testbank_cs.php">Computer Science</a></li>\n";
+	$files = array();
+	$dir = opendir("testbank/Computer Science");
+	while (false !== ($filename = readdir($dir))) {
+		if (is_file("testbank/$filename")) {
+			$files[] = $filename;
+		}
+	}
+	natcasesort($files);
+	foreach ($files as $filename) {
+		$escaped_filename = htmlentities($filename);
+		echo "<li><a href=\"testbank/$escaped_filename\">$escaped_filename</a></li>\n";
 	}
 	echo "</ul>\n";
 	echo <<<HEREDOC
