@@ -9,9 +9,9 @@ if (!$g_user->is_logged_in()) {
 } else {
 	echo "<ul style=\"list-style: disc inside; margin-left: 6px;\">\n";
 	$files = array();
-	$dir = opendir("testbank/Computer Science");
+	$dir = opendir("testbank/Legal Studies");
 	while (false !== ($filename = readdir($dir))) {
-		if (is_file("testbank/Computer Science/$filename")) {
+		if (is_file("testbank/Legal Studies/$filename")) {
 			$files[] = $filename;
 		}
 	}
