@@ -18,7 +18,7 @@ if (!$g_user->is_logged_in()) {
 	natcasesort($files);
 	foreach ($files as $filename) {
 		$escaped_filename = htmlentities($filename);
-		echo "<li><a href=\"testbank/$escaped_filename\">$escaped_filename</a></li>\n";
+		echo "<li><a href=\"testbank/Electrical Engineering/$escaped_filename\">$escaped_filename</a></li>\n";
 	}
 	echo "</ul>\n";
 	echo <<<HEREDOC
