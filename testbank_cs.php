@@ -11,7 +11,7 @@ if (!$g_user->is_logged_in()) {
 	$files = array();
 	$dir = opendir("testbank/Computer Science");
 	while (false !== ($filename = readdir($dir))) {
-		if (is_file("testbank/$filename")) {
+		if (is_file("testbank/Computer Science/$filename")) {
 			$files[] = $filename;
 		}
 	}
