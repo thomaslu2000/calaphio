@@ -32,11 +32,11 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
-        <h2>Title: Notes from CM 8 & End of Semester Forum</h2>
+        <h2>Notes from CM 8 & End of Semester Forum</h2>
         <p class="date">December 2, 2014</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 8!<br>
-            Excomm Powerpoint Slides: <a href="https://docs.google.com/a/calaphio.com/presentation/d/1AJTqFA0MCOmToiWZr6JY25MsGO9t37FLrkd5fPnDakg/edit">CM 8 Slides</a><br>
-            And <a href="https://docs.google.com/document/d/16oQW1tPwE-BTC2mSwdvBUKxyUO1UzXQM5pjMJqxE_Ro/edit">End of Semester Forum Minutes</a><br>
+            Excomm Powerpoint Slides: <a href="https://docs.google.com/a/calaphio.com/presentation/d/1AJTqFA0MCOmToiWZr6JY25MsGO9t37FLrkd5fPnDakg/edit">CM 8 Slides.</a><br>
+            And <a href="https://docs.google.com/document/d/16oQW1tPwE-BTC2mSwdvBUKxyUO1UzXQM5pjMJqxE_Ro/edit">End of Semester Forum Minutes</a>.<br>
         </p>
         <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
     </div>
