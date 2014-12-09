@@ -46,7 +46,7 @@ if (!$g_user->is_logged_in()) {
                 
             </div>
             <div class="person-picture">
-                <img src="documents/sp15/rush/antony_nguyen.jpg.jpg"></img>
+                <img src="documents/sp15/rush/antony_nguyen.jpg"></img>
                 <p class="center"><a href="profile.php?user_id=2869">Antony Nguyen</a></p>
                 
             </div>
