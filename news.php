@@ -30,6 +30,38 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+<div class="newsItem">
+    <h2>Congratulations to the Spring 2015 Rush Chairs!</h2>
+    <p class="date">December 9, 2014</p>
+    <div class="collage-container">
+        <div class="collage-pictures">
+            <div class="person-picture">
+                <img src="documents/sp15/rush/bella_tsay.jpg"></img>
+                <p class="center"><a href="profile.php?user_id=2073">Bella Tsay</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/rush/joanna_choi.jpg"></img>
+                <p class="center"><a href="profile.php?user_id=2855">Joanna Choi</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/rush/antony_nguyen.jpg.jpg"></img>
+                <p class="center"><a href="profile.php?user_id=2869">Antony Nguyen</a></p>
+                
+            </div>
+            <div class="person-picture">
+                <img src="documents/sp15/rush/nicki_bartak.jpg"></img>
+                <p class="center"><a href="profile.php?user_id=2851">Nicki Bartak</a></p>
+                
+            </div>
+        </div>
+        <div style="clear: left;"></div>
+    </div>
+</p>
+<p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>Notes from CM 8 & End of Semester Forum</h2>
