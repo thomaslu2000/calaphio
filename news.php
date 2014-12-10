@@ -63,6 +63,11 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
+                    <img src="documents/sp15/pcomm/aimee_chan.jpg"></img>
+                    <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=2137">Aimee Chan</a></p>
+                </div>
+
+                <div class="person-picture">
                     <img src="documents/sp15/pcomm/alex_quan.jpg"></img>
                     <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2432">Alex Quan</a></p>
                 </div>
@@ -70,11 +75,6 @@ if (!$g_user->is_logged_in()) {
                 <div class="person-picture">
                     <img src="documents/sp15/pcomm/vivian_rubio.jpg"></img>
                     <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2730">Vivian Rubio</a></p>
-                </div>
-
-                <div class="person-picture">
-                    <img src="documents/sp15/pcomm/aimee_chan.jpg"></img>
-                    <p class="center"><strong>Historian Trainer</strong>: <a href="profile.php?user_id=2137">Aimee Chan</a></p>
                 </div>
 
                 <div class="person-picture">
