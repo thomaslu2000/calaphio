@@ -33,7 +33,7 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <br/>
-        <h2>Congratulations to the Spring 2015 Pledge Committee</h2>
+        <h2>Congratulations to the Spring 2015 Pledge Committee!</h2>
         <p class="date">December 9th, 2014</p>
         <div class="collage-container">
             <div class="collage-pictures">
