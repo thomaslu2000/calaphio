@@ -30,6 +30,66 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <br/>
+        <h2>Congratulations to the Spring 2015 Pledge Committee</h2>
+        <p class="date">December 9th, 2014</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/justin_fang.jpg"></img>
+                    <p class="center"><strong>Leadership Trainer</strong>: <a href="profile.php?user_id=2452">Justin Fang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/joseph_gapuz.jpg"></img>
+                    <p class="center"><strong>Leadership Trainer</strong>: <a href="profile.php?user_id=2175">Joseph Gapuz</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/amanda_thai.jpg"></img>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=2164">Amanda Thai</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/irene_yu.jpg"></img>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=2447">Irene Yu</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/scottie_wan.jpg"></img>
+                    <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=2461">Scottie Wan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/alex_quan.jpg"></img>
+                    <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2432">Alex Quan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/vivian_rubio.jpg"></img>
+                    <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2730">Vivian Rubio</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/aimee_chan.jpg"></img>
+                    <p class="center"><strong>Historian Trainer</strong>: <a href="profile.php?user_id=2137">Aimee Chan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="documents/sp15/pcomm/debbie_phuong.jpg"></img>
+                    <p class="center"><strong>Historian Trainer</strong>: <a href="profile.php?user_id=2170">Debbie Phuong</a></p>
+                </div>
+                
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+    </div>
+<?php endif ?>
+
 <div class="newsItem">
     <h2>Congratulations to the Spring 2015 Rush Chairs!</h2>
     <p class="date">December 9, 2014</p>
