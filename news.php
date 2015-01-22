@@ -35,7 +35,7 @@ if (!$g_user->is_logged_in()) {
         <p class="date">January 22, 2015</p>
 
     <p style="margin: 1.5em 0px;">
-        <h6 style="font-weight: bold; text-decoration: none;"><u>President Chairs</u></h3><br>
+        <font size="2"><b><u>President Chairs</u></b></font><br>
         <b>Sergeant at Arms</b>: Justin Fang, Moncarol Wang, Nicki Bartak, Antony Nguyen, Trinh Huynh<br>
         <b>Public Relations Chair</b>: Elizabeth Yuen, Yoyo Tsai<br>
     </p>
