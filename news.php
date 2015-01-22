@@ -30,18 +30,81 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2>Congratulations to the Spring 2015 Executive Committee Chairs!</h2>
         <p class="date">January 22, 2015</p>
 
     <p style="margin: 1.5em 0px;">
-        <font size="2"><b><u>President Chairs</u></b></font><br>
+        <font size="3"><b><u>President Chairs</u></b></font><br>
         <b>Sergeant at Arms</b>: Justin Fang, Moncarol Wang, Nicki Bartak, Antony Nguyen, Trinh Huynh<br>
         <b>Public Relations Chair</b>: Elizabeth Yuen, Yoyo Tsai<br>
     </p>
 
-    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+    <p style="margin: 1.5em 0px;">
+        <font size="3"><b><u>Admin Chairs</u></b></font><br>
+        <b>Admin Assistant</b>: Dennis Lee<br>
+        <b>Web Master</b>: Bofan Chen, Pooja Shah<br>
+        <b>Stylus Chair</b>: Elizabeth Yuen, Trinh Huynh, Dana Lin<br>
+        <b>Fun Pack Chair</b>: Elizabeth Yuen, Bertha Chui, Lisa Hoang<br>
+    </p>
+
+     <p style="margin: 1.5em 0px;">
+        <font size="3"><b><u>Membership Chairs</u></b></font><br>
+        <b>Membership VP Assistant</b>: Anne Ferguson, Elizabeth Sabiniano<br>
+        <b>Rush Chair</b>: Bella Tsay, Joanna Choi, Nicki Bartak, Antony Nguyen<br>
+        <b>Professional Development Chair</b>: Cathy Yin<br>
+        <b>Active Retreat Chair</b>: Kathleen Wong, Trinh Huynh, Van (Hania) Tran<br>
+        <b>Family Chair</b>: Shirley Lai, Vivian Chen, Ellie Hung<br>
+        <b>Roll Call Chair</b>: We Want You<br>
+        <b>Gear Chair</b>: Susan Guan, Jane Tam<br>
+        <b>Assassins Chair</b>: Sherri Zhang, Antony Nguyen<br>
+    </p>
+
+    <p style="margin: 1.5em 0px;">
+        <font size="3"><b><u>Service Chairs</u></b></font><br>
+        <b>Service VP Assistant</b>: Vivian Chen, Viet Do, Yika Luo<br>
+        <b>Spring Youth Service Day Chair</b>: Virgil Tang, Joanna Choi, Sangmo Arya<br>
+        <b>College Day Chair</b>: Sherri Zhang, Tenzin Paldon, Angela Lee, Lucas Chen<br>
+        <b>Active Day of Service Chair</b>: Yika Luo<br>
+        <b>IC Joint Service Chair</b>: Virgil Tang<br>
+        <b>GG IC Sewing Chair</b>: Elain Gao<br>
+        <b>Bear Trax Chair</b>: Kevin Nguyen, Susan Guan<br>
+        <b>YTA Mosswood Chair</b>: Viet Do<br>
+        <b>POH Chair</b>: Jane Tam<br>
+    </p>
+
+    <p style="margin: 1.5em 0px;">
+        <font size="3"><b><u>Finance Chairs</u></b></font><br>
+        <b>Fundraiser Chair</b>: Virgil Tang, Moncarol Wang, Bertha Chui, April Liu<br>
+        <b>Fundraiser Assistant</b>: Bertha Chui<br>
+        <b>Reimbursement Chair</b>: Jane Tam<br>
+    </p>
+
+    <p style="margin: 1.5em 0px;">
+        <font size="3"><b><u>Fellowship Chairs</u></b></font><br>
+        <b>Fellowship VP Assistant</b>: Antony Nguyen<br>
+        <b>HotSpot Chair</b>: Dana Lin, Tenzin Paldon, Winnie looc, Jeffrey Kuan, Allison Tong, Kirk Chiu<br>
+        <b>GG Sports Chair</b>: Kevin Nguyen, Kirk Chiu<br>
+        <b>GG Events Chair</b>: Calvin Yau, Trinh Huynh<br>
+        <b>IC Poker Chair</b>: Calvin Yau, Hania Tran<br>
+        <b>Talent Show Chair</b>: Chris Wen, Sangmo Arya<br>
+        <b>Banquet Chair</b>: Susan Guan, Ellie Hung, April Liu, Jane Tam<br>
+    </p>
+
+    <p style="margin: 1.5em 0px;">
+        <font size="3"><b><u>Historian Chairs</u></b></font><br>
+        <b>Alumni Relations Chair</b>: Virgil Tang, Sangmo Arya, Bella Tsay, Antony Nguyen<br>
+        <b>Scrapbook Chair</b>: Elizabeth Yuen, Sherri Zhang<br>
+        <b>GG Maniac Chair</b>: Joanna Choi, Lisa Hoang<br>
+        <b>Photography Chair</b>: Benjamin Le, Yoyo Tsai, Moncarol Wang<br>
+        <b>Chapter Wiki Chair</b>: Yoyo Tsai, Kathleen Wong, Pooja Shah<br>
+        <b>Jeweler</b>: Joanna Choi<br>
+    </p>
+    
+    <p>-<a href="profile.php?user_id=2055">Jason Lee (CM)</a></p>
 </div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
