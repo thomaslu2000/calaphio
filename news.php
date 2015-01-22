@@ -30,6 +30,18 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+<div class="newsItem">
+        <h2>Congratulations to the Spring 2015 Executive Committee Chairs!</h2>
+        <p class="date">January 22, 2015</p>
+
+    <p style="margin: 1.5em 0px;">
+        <h3 style="font-weight: bold; text-decoration: none;"><u>President Chairs</u></h3><br>
+        <b>Sergeant at Arms</b>: Justin Fang, Moncarol Wang, Nicki Bartak, Antony Nguyen, Trinh Huynh<br>
+        <b>Public Relations Chair</b>: Elizabeth Yuen, Yoyo Tsai<br>
+
+    <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
+</div>
+
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>Notes From CM 1</h2>
