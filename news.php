@@ -56,7 +56,7 @@ if (!$g_user->is_logged_in()) {
         <b>Professional Development Chair</b>: Cathy Yin<br>
         <b>Active Retreat Chair</b>: Kathleen Wong, Trinh Huynh, Van (Hania) Tran<br>
         <b>Family Chair</b>: Shirley Lai, Vivian Chen, Ellie Hung<br>
-        <b>Roll Call Chair</b>: We Want You<br>
+        <b>Roll Call Chair</b>: Tenzin Paldon, Sangmo Arya, Chris Wen<br>
         <b>Gear Chair</b>: Susan Guan, Jane Tam<br>
         <b>Assassins Chair</b>: Sherri Zhang, Antony Nguyen<br>
     </p>
