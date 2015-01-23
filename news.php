@@ -102,7 +102,7 @@ if (!$g_user->is_logged_in()) {
         <b>Jeweler</b>: Joanna Choi<br>
     </p>
     
-    <p>-<a href="profile.php?user_id=2055">Jason Lee (CM)</a></p>
+    <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
 </div>
 <?php endif ?>
 
@@ -115,7 +115,7 @@ if (!$g_user->is_logged_in()) {
             And here are the <a href="https://docs.google.com/a/calaphio.com/document/d/1xAiRGk0aOvFXGC_OcKugTsRJdTuHq_rhr9Qr55UDcUY/edit">Active Requirements</a> & 
             <a href="https://docs.google.com/a/calaphio.com/spreadsheets/d/1ASILS5dhWOf0F78D3LBrydRED-b7_42c6_GJb_oA5-s/edit#gid=0">Budget.</a></p>
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/NtV0Yso1gqI" frameborder="0" allowfullscreen></iframe>
-        <p>-<a href="profile.php?user_id=2055">Jason Lee (CM)</a></p>
+        <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
     </div>
 <?php endif ?>
 
