@@ -837,7 +837,7 @@ $sponsorship_events
 </table>
 </table>
 <table>
-<caption>Attend 1/2 Interfams - You have completed $interfam_events_count</caption>
+<caption>Attend 1/2 Active Pledge Bondings - You have completed $interfam_events_count</caption>
 $interfam_events
 </table>
 <table>
