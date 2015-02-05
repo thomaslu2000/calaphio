@@ -31,6 +31,122 @@ if (!$g_user->is_logged_in()) {
 ?>
 
 <?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>Notes From CM 2</h2>
+        <p class="date">February 4, 2015</p>
+        <p style="margin-bottom: 1em">Here are the documents from CM 2!<br>
+            Excomm Powerpoint Slides:<a href="https://docs.google.com/presentation/d/1Hzcqt7l_9eY0bA1bAAG-FHA6Vvz4hh19zGOxSTlTeSE/edit"> CM 2 Slides</a><br>
+            And here are the <a href="https://docs.google.com/a/calaphio.com/document/d/1xAbN1zDcrXeyT11JtzAcTnhrBsVhmpMmPmnmAG1KRgk/edit">Pledge Requirements</a></p>
+            <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/R0__LY9KPbE" frameborder="0" allowfullscreen></iframe>
+        <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+	<div class="newsItem">
+		<h2>What does it mean to be an Active?</h2>
+		<p class="date">February 4, 2015</p>
+        <p style="margin-bottom: 1em">
+        We asked a question to the chapter, “What does it mean to be an active?”<br>
+        Here are some answers I would like to share!<br><br>
+		<i>“To be proactive in the chapter, willing to demonstrate leadership and go out of your way to help a brother in need”</i><br><br>
+		<i>“To become one who takes initiative and acts as a mentor”</i><br><br>
+		<i>“Participating in chapter events with enthusiasm and being a good representative of the chapter”</i><br><br>
+		<i>“Someone who is an example to follow, who inspires and motivates people to be the best version of themselves day in and day out.”</i><br><br>
+		<i>“Accountable, Respectable”</i><br><br>
+		<i>“Someone who isn’t afraid of making mistakes and is keen to pass the wisdom around LFS”</i><br><br>
+		<i>“Getting fat with brothers”</i><br><br>
+		<i>“To be of LFS”</i><br><br>
+		<i>“Brotherhood”</i></p>
+		<p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+	</div>
+<?php endif ?>
+
+
+<?php if ($g_user->is_logged_in()): ?>
+	<div class="newsItem">
+		<h2>Section 4 Awards</h2>
+		<p class="date">February 4, 2015</p>
+		<p style="margin-bottom: 1em">
+			Section 4 is accepting Chapter Awards and Individual Awards now!<br>
+			Here are some information about Section 4 Awards:
+		</p>
+
+		<p style="margin-bottom: 1em">
+			<font size="3"><b><u>Chapter Awards</u></b></font><br>
+			
+			<ul style="list-style: inside disc; margin-bottom: 2em;">
+				<li><font size="3">Chapter Gold Pan Award - Leadership</font></li>
+			</ul>
+			<ul style="list-style: circle; margin-bottom: 4em;">
+				<li>leadership development</li>
+				<li>Participation in Sectionals, Regionals, Nationals</li>
+				<li>Hosting of events, especially IC events</li>
+			</ul>
+			
+			<ul style="list-style: inside disc; margin-bottom: 2em;">
+				<li><font size="3">Chapter Gold Pan Award - Fellowship</font></li>
+			</ul>
+			<ul style="list-style: circle; margin-bottom: 4em;">
+				<li>Variety of activities promoting fellowship</li>
+				<li>Promotion of Brotherhood</li>
+			</ul>
+
+			<ul style="list-style: inside disc; margin-bottom: 2em;">
+				<li><font size="3">Chapter Gold Pan Award - Service</font></li>
+			</ul>
+			<ul style="list-style: circle; margin-bottom: 4em;">
+				<li>Chapter initiated projects</li>
+				<li>4 C’s</li>
+				<li>Chapter-wide participation</li>
+				<li>Service with IC/Alumni</li>
+			</ul>
+
+			<ul style="list-style: inside disc; margin-bottom: 2em;">
+				<li><font size="3">Chapter Gold Pan Award - Overall Program</font></li>
+			</ul>
+			<ul style="list-style: circle; margin-bottom: 4em;">
+				<li>Balance between areas of program</li>
+				<li>Completion of a National Service Week project, Spring Youth Service Day project</li>
+			</ul>
+
+			<ul style="list-style: inside disc; margin-bottom: 2em;">
+				<li><font size="3">Most Improved Chapter Award</font></li>
+			</ul>
+			<ul style="list-style: circle; margin-bottom: 4em;">
+				<li>Increased number of member, service, and fellowship activities, and types of innovative programs</li>
+				<li>Improvement of the strength of LFS</li>
+			</ul>
+
+			<ul style="list-style: inside disc; margin-bottom: 2em;">
+				<li><font size="3">Inter Chapter Award</font></li>
+			</ul>
+			<ul style="list-style: circle; margin-bottom: 4em;">
+				<li>To the chapter with the highest percentage of members that have visited the most chapters within one year.</li>
+			</ul>
+			</p>
+		
+		<p style="margin-bottom: 1em">
+			<font size="3"><b><u>Individual Award</u></b></font><br>
+			<ul style="list-style: inside disc; margin-bottom: 2em;">
+				<li><font size="3">Ocho Award</font></li>
+			</ul>
+			<ul style="list-style: circle; margin-bottom: 4em;">
+				<li>To individuals who have visited 8 or more different chapters within one year, measured from one Spring Sectionals to the next.</li>
+				<li>Due on April 16th. Submit application to tracy.m.yamato@gmail.com</li>
+				<li><a href="https://www.facebook.com/download/819534468075963/Ocho%20Award%20Application.pdf">Application Link</a></li>
+			</ul>
+		</p>
+
+		<p style="margin-bottom: 2em">
+			For more information, please visit <a href="https://www.facebook.com/download/231109787082270/Section%204%20Awards%202014.pdf">here</a>! 
+		</p>
+		<p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+	</div>
+<?php endif ?>
+
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2>Congratulations to the Spring 2015 Executive Committee Chairs!</h2>
         <p class="date">January 22, 2015</p>
