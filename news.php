@@ -77,53 +77,42 @@ if (!$g_user->is_logged_in()) {
 			
 			<ul style="list-style: inside disc; margin-bottom: 2em;">
 				<li><font size="3">Chapter Gold Pan Award - Leadership</font></li>
-			</ul>
-			<ul style="list-style: circle; margin-bottom: 4em;">
+			<ul style="list-style: circle; margin-bottom: 3em;">
 				<li>leadership development</li>
 				<li>Participation in Sectionals, Regionals, Nationals</li>
 				<li>Hosting of events, especially IC events</li>
 			</ul>
 			
-			<ul style="list-style: inside disc; margin-bottom: 2em;">
 				<li><font size="3">Chapter Gold Pan Award - Fellowship</font></li>
-			</ul>
-			<ul style="list-style: circle; margin-bottom: 4em;">
+			<ul style="list-style: circle; margin-bottom: 3em;">
 				<li>Variety of activities promoting fellowship</li>
 				<li>Promotion of Brotherhood</li>
 			</ul>
 
-			<ul style="list-style: inside disc; margin-bottom: 2em;">
 				<li><font size="3">Chapter Gold Pan Award - Service</font></li>
-			</ul>
-			<ul style="list-style: circle; margin-bottom: 4em;">
+			<ul style="list-style: circle; margin-bottom: 3em;">
 				<li>Chapter initiated projects</li>
 				<li>4 C’s</li>
 				<li>Chapter-wide participation</li>
 				<li>Service with IC/Alumni</li>
 			</ul>
 
-			<ul style="list-style: inside disc; margin-bottom: 2em;">
 				<li><font size="3">Chapter Gold Pan Award - Overall Program</font></li>
-			</ul>
-			<ul style="list-style: circle; margin-bottom: 4em;">
+			<ul style="list-style: circle; margin-bottom: 3em;">
 				<li>Balance between areas of program</li>
 				<li>Completion of a National Service Week project, Spring Youth Service Day project</li>
 			</ul>
 
-			<ul style="list-style: inside disc; margin-bottom: 2em;">
 				<li><font size="3">Most Improved Chapter Award</font></li>
-			</ul>
-			<ul style="list-style: circle; margin-bottom: 4em;">
+			<ul style="list-style: circle; margin-bottom: 3em;">
 				<li>Increased number of member, service, and fellowship activities, and types of innovative programs</li>
 				<li>Improvement of the strength of LFS</li>
 			</ul>
 
-			<ul style="list-style: inside disc; margin-bottom: 2em;">
 				<li><font size="3">Inter Chapter Award</font></li>
-			</ul>
-			<ul style="list-style: circle; margin-bottom: 4em;">
+			<ul style="list-style: circle; margin-bottom: 3em;">
 				<li>To the chapter with the highest percentage of members that have visited the most chapters within one year.</li>
-			</ul>
+            </ul>
 			</p>
 		
 		<p style="margin-bottom: 1em">
