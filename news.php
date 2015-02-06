@@ -77,20 +77,20 @@ if (!$g_user->is_logged_in()) {
 			
 			<ul style="list-style: inside disc; margin-bottom: 2em;">
 				<li><font size="3">Chapter Gold Pan Award - Leadership</font></li>
-			<ul style="list-style: circle; margin-bottom: 2em;">
+			<ul style="list-style: circle; margin-bottom: 2em; margin-left: 4em">
 				<li>Leadership development</li>
 				<li>Participation in Sectionals, Regionals, Nationals</li>
 				<li>Hosting of events, especially IC events</li>
 			</ul>
 			
 				<li><font size="3">Chapter Gold Pan Award - Fellowship</font></li>
-			<ul style="list-style: circle; margin-bottom: 2em;">
+			<ul style="list-style: circle; margin-bottom: 2em; margin-left: 4em">
 				<li>Variety of activities promoting fellowship</li>
 				<li>Promotion of Brotherhood</li>
 			</ul>
 
 				<li><font size="3">Chapter Gold Pan Award - Service</font></li>
-			<ul style="list-style: circle; margin-bottom: 2em;">
+			<ul style="list-style: circle; margin-bottom: 2em; margin-left: 4em">
 				<li>Chapter initiated projects</li>
 				<li>4 C’s</li>
 				<li>Chapter-wide participation</li>
@@ -98,19 +98,19 @@ if (!$g_user->is_logged_in()) {
 			</ul>
 
 				<li><font size="3">Chapter Gold Pan Award - Overall Program</font></li>
-			<ul style="list-style: circle; margin-bottom: 2em;">
+			<ul style="list-style: circle; margin-bottom: 2em; margin-left: 4em">
 				<li>Balance between areas of program</li>
 				<li>Completion of a National Service Week project, Spring Youth Service Day project</li>
 			</ul>
 
 				<li><font size="3">Most Improved Chapter Award</font></li>
-			<ul style="list-style: circle; margin-bottom: 2em;">
+			<ul style="list-style: circle; margin-bottom: 2em; margin-left: 4em">
 				<li>Increased number of member, service, and fellowship activities, and types of innovative programs</li>
 				<li>Improvement of the strength of LFS</li>
 			</ul>
 
 				<li><font size="3">Inter Chapter Award</font></li>
-			<ul style="list-style: circle; margin-bottom: 2em;">
+			<ul style="list-style: circle; margin-bottom: 2em; margin-left: 4em">
 				<li>To the chapter with the highest percentage of members that have visited the most chapters within one year.</li>
             </ul>
 			</p>
@@ -119,12 +119,12 @@ if (!$g_user->is_logged_in()) {
 			<font size="3"><b><u>Individual Award</u></b></font><br>
 			<ul style="list-style: inside disc; margin-bottom: 2em;">
 				<li><font size="3">Ocho Award</font></li>
-			</ul>
-			<ul style="list-style: circle; margin-bottom: 2em;">
+			<ul style="list-style: circle; margin-bottom: 2em; margin-left: 4em">
 				<li>To individuals who have visited 8 or more different chapters within one year, measured from one Spring Sectionals to the next.</li>
 				<li>Due on April 16th. Submit application to tracy.m.yamato@gmail.com</li>
 				<li><a href="https://www.facebook.com/download/819534468075963/Ocho%20Award%20Application.pdf">Application Link</a></li>
 			</ul>
+            </ul>
 		</p>
 
 		<p style="margin-bottom: 2em">
