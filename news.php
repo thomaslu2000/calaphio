@@ -122,7 +122,7 @@ if (!$g_user->is_logged_in()) {
 			<ul style="list-style: circle; margin-left: 4em">
 				<li>To individuals who have visited 8 or more different chapters within one year, measured from one Spring Sectionals to the next.</li>
 				<li>Due on April 16th. Submit application to tracy.m.yamato@gmail.com</li>
-				<li><a href="https://www.facebook.com/download/819534468075963/Ocho%20Award%20Application.pdf">Application Link</a></li>
+				<li><a href="https://drive.google.com/open?id=0B1PYMBbhnLMsNDNQNmpuRmRWdW8&authuser=1">Application Link</a></li>
 			</ul>
             </ul>
 		</p>
