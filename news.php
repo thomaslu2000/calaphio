@@ -114,6 +114,7 @@ if (!$g_user->is_logged_in()) {
 				<li>To the chapter with the highest percentage of members that have visited the most chapters within one year.</li>
             </ul>
 			</p>
+            <br>
 		
 		<p style="margin-bottom: 1em">
 			<font size="3"><b><u>Individual Award</u></b></font><br>
@@ -130,6 +131,7 @@ if (!$g_user->is_logged_in()) {
 		<p>
 			For more information, please visit <a href="https://www.facebook.com/download/231109787082270/Section%204%20Awards%202014.pdf">here</a>! 
 		</p>
+        <br>
 		<p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
 	</div>
 <?php endif ?>
