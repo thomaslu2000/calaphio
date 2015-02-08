@@ -114,6 +114,8 @@ $webmastersPerson = members(3, "Webmasters");
 
 $stylusPerson = members(4, "Stylus");
 
+$servicePerson = members(6, "Service VP");
+
 if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 	trigger_error("You must be logged in as an admin to access this feature", E_USER_ERROR);
 } else {
@@ -176,6 +178,18 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 		$stylusWritten = Query::escape_string($_REQUEST['stylusR']);
 		$result = remove(4, $stylusWritten, "Stylus");
 		$stylusPerson = members(4, "Stylus");
+	}
+
+	else if (isset($_REQUEST['serviceAdd']) && $_REQUEST['serviceAdd'] == 'Search') {
+		$serviceWritten = Query::escape_string($_REQUEST['serviceA']);
+		$result = add(6, $serviceWritten, "Service");
+		$servicePerson = members(6, "Service");
+	}
+
+	else if (isset($_REQUEST['serviceRemove']) && $_REQUEST['serviceRemove'] == 'Search') {
+		$serviceWritten = Query::escape_string($_REQUEST['serviceR']);
+		$result = remove(6, $serviceWritten, "Service");
+		$servicePerson = members(6, "Service");
 	}
 	
 echo <<<HEREDOC
@@ -261,6 +275,20 @@ echo <<<HEREDOC
 
 	<br>
 	$stylusPerson<br>	
+	<br>
+
+	<form>
+	Service Add: <input type="text" name="serviceA" value="" /><br>
+	<button type="submit" name="serviceAdd" value="Search"> Add </button><br>
+	</form>
+
+	<form>
+	Service Remove: <input type="text" name="serviceR" value="" /><br>
+	<button type="submit" name="serviceRemove" value="Search"> Remove </button><br>	
+	</form>
+
+	<br>
+	$servicePerson<br>	
 	<br>
 </form>
 HEREDOC;
