@@ -88,7 +88,7 @@ DOCHERE_print_head;
 				"ROSTER" => "roster.php",
 				"WIKI" => "wiki.php",
 				"GALLERY" => "gallery.php",
-				"TESTBANK" => "testbank.php",
+				"TESTBANK" => "https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=sharing",
 				"ACCOUNT" => "edit_roster.php"
 				),
 			'Contact' => array(
