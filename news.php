@@ -37,42 +37,42 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <img src="documents/sp15/excomm/president.jpg"></img>
+                    <img src="documents/sp15/excomm/president_h.jpg"></img>
                     <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
                     
                 </div>
                 <div class="person-picture">
-                    <img src="documents/sp15/excomm/service.jpg"></img>
+                    <img src="documents/sp15/excomm/service_h.jpg"></img>
                     <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=1400">Debbie Yan</a></p>
                     
                 </div>
                 <div class="person-picture">
-                    <img src="documents/sp15/excomm/pledgemaster.jpg"></img>
+                    <img src="documents/sp15/excomm/pledgemaster_h.jpg"></img>
                     <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1443">James Wang</a></p>
                     
                 </div>
                 <div class="person-picture">
-                    <img src="documents/sp15/excomm/admin.jpg"></img>
+                    <img src="documents/sp15/excomm/admin_h.jpg"></img>
                     <p class="center"><strong>Administrative VP</strong>: <a href="profile.php?user_id=2448">Jason Lee</a></p>
                     
                 </div>
                 <div class="person-picture">
-                    <img src="documents/sp15/excomm/membership.jpg"></img>
+                    <img src="documents/sp15/excomm/membership_h.jpg"></img>
                     <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=1405">Rebecca Phuong</a></p>
                     
                 </div>
                 <div class="person-picture">
-                    <img src="documents/sp15/excomm/finance.jpg"></img>
+                    <img src="documents/sp15/excomm/finance_h.jpg"></img>
                     <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
                     
                 </div>
                 <div class="person-picture">
-                    <img src="documents/sp15/excomm/fellowship.jpg"></img>
+                    <img src="documents/sp15/excomm/fellowship_h.jpg"></img>
                     <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2054">Ann Chan</a></p>
                     
                 </div>
                 <div class="person-picture">
-                    <img src="documents/sp15/excomm/historian.jpg"></img>
+                    <img src="documents/sp15/excomm/historian_h.jpg"></img>
                     <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p>
                     
                 </div>
