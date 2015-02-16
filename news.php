@@ -30,60 +30,6 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
-<div class="newsItem">
-        <h2>Congratulations Spring 2015 Executive Committee!</h2>
-        <p class="date">February 16, 2015</p>
-
-        <div class="collage-container">
-            <div class="collage-pictures">
-                <div class="person-picture">
-                    <img src="documents/sp15/excomm/president_h.jpg"></img>
-                    <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
-                    
-                </div>
-                <div class="person-picture">
-                    <img src="documents/sp15/excomm/service_h.jpg"></img>
-                    <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=1400">Debbie Yan</a></p>
-                    
-                </div>
-                <div class="person-picture">
-                    <img src="documents/sp15/excomm/pledgemaster_h.jpg"></img>
-                    <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1443">James Wang</a></p>
-                    
-                </div>
-                <div class="person-picture">
-                    <img src="documents/sp15/excomm/admin_h.jpg"></img>
-                    <p class="center"><strong>Administrative VP</strong>: <a href="profile.php?user_id=2448">Jason Lee</a></p>
-                    
-                </div>
-                <div class="person-picture">
-                    <img src="documents/sp15/excomm/membership_h.jpg"></img>
-                    <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=1405">Rebecca Phuong</a></p>
-                    
-                </div>
-                <div class="person-picture">
-                    <img src="documents/sp15/excomm/finance_h.jpg"></img>
-                    <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
-                    
-                </div>
-                <div class="person-picture">
-                    <img src="documents/sp15/excomm/fellowship_h.jpg"></img>
-                    <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2054">Ann Chan</a></p>
-                    
-                </div>
-                <div class="person-picture">
-                    <img src="documents/sp15/excomm/historian_h.jpg"></img>
-                    <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p>
-                    
-                </div>
-                
-            </div>
-            <div style="clear: left;"></div>
-        </div>
-    </p>
-    <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
-</div>
-
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>Notes From CM 3</h2>
