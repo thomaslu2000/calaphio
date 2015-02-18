@@ -10,6 +10,113 @@ Template::print_body_header('Home', 'NEWS');
 ?>
 <h1>Gamma Gamma Maniacs!</h1>
 <div class="newsItem">
+    <h2 class="center">TT Semester GG Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Antony Nguyen </p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">KHK Semester GG Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Jason Lee </p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Scottie Wan</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Michael Zhu</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Cathy Yin</p>
+		
+		</div>
+		<div class="person-picture">
+			<p class="center">Vivian Rubio</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Alex Quan</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Kathleen Wong</p>
+		</div>
+		
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">KHK Semester Pledge Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Virgil Tang</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Joanna Choi</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Nicki Bartak</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">CM Semester GG Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Rebecca Phuong </p>
+		</div>
+		<div class="person-picture">
+			<p class="center">James Wang</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Annie Ferguson</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Ryan Fong</p>
+		
+		</div>
+		<div class="person-picture">
+			<p class="center">Angela Wu</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Christopher Wen</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Pooja Shah</p>
+		</div>
+		
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">CM Semester Pledge Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">The Lee</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Jason Lee</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Kevin Li Lu</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
     <h2 class="center">DE Semester GG Maniacs!</h2>
     <div class="collage-container">
 	<div class="collage-pictures">
@@ -40,6 +147,7 @@ Template::print_body_header('Home', 'NEWS');
 	<div style="clear: left;"></div>
     </div>
 </div>
+
 <div class="newsItem">
     <h2 class="center">DE Semester Pledge Maniacs!</h2>
     <div class="collage-container">
