@@ -890,7 +890,7 @@ $fellowship_events
 
 
 <table width="100%">
-<caption>Complete 3 leadership credits - You can get credit by doing any of the following:</caption>
+<caption>Complete 5 leadership credits - You can get credit by doing any of the following:</caption>
 <tr><td axis="name">Serving on a committee - <a href="ggwiki.php?page_id=31#3">Search for one here</a> <strong>(required)</strong></td></tr>
 <tr><td axis="name">Submit 3 (original content) Stylus Submissions (1 credit)</td></tr>
 <tr><td axis="name">Chairing 2 events (1 credit)</td></tr>
@@ -899,7 +899,7 @@ $fellowship_events
 <tr><td axis="name">Attending Nationals, Sectionals, or Regionals (1 credit)</td></tr>
 <tr><td axis="name">Participating in Leadership Workshop (1 credit)</td></tr>
 <tr><td axis="name">Attending Mid-semester or End-of-semester forum (if not used as a chapter event) (1 credit)</td></tr>
-<tr><td axis="name">Being a Big, Aunt, Uncle, or Parent ( MUST ATTEND Campout, Pledge Class Fellowship, 1/2 Interfams, 1/2 Spirit Week Events) (1 credit)</td></tr>
+<tr><td axis="name">Being a Big, Aunt, Uncle, or Parent (MUST ATTEND Campout, Pledge Class Fellowship, 1/2 Active-pledge bondings, 1/2 Spirit Week Events) (1 credit)</td></tr>
 <tr><td axis="name">Become a sponsor (MUST ATTEND 1 fellowship and 1 service event with your sponsoree)(1 credit)</td></tr>
 <tr><td axis="name"> Chair a committee (separate from serving on a committee)(1 credit)</td></tr>
 
