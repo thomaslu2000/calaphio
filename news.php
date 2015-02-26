@@ -32,6 +32,18 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>Notes From CM 4</h2>
+        <p class="date">February 25, 2015</p>
+        <p style="margin-bottom: 1em">Here are the documents from CM 4!<br>
+            Excomm Powerpoint Slides: <a href="https://docs.google.com/presentation/d/1ogHwVZBaO5-duY28ENUPEz3uATIRKmzGFH2T6H1uR08/edit?usp=sharing">CM 4 Slides</a><br>
+            And here are the <a href="https://docs.google.com/document/d/1rvBEPeCUJy_blaFGoNAb9guMAFDjCSjGzqLnPDK2CPY/edit">CM 4 Minutes</a></p>
+            <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/lfbsjR_Q7pM" frameborder="0" allowfullscreen></iframe>
+        <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>Notes From CM 3</h2>
         <p class="date">February 13, 2015</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 3!<br>
