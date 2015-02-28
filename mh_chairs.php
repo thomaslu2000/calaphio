@@ -41,9 +41,9 @@ Membership Chairs: Rebecca Phuong
 	<p style="margin: 1.5em 0px;">
 	
 <b>Rush:</b> Bella Tsay, Joanna Choi, Nicki Bartak, Antony Nguyen<br>
-*Come help us recruit some AWESOME new pledges! (Note: This committee is now closed)<br><br>
+*Come help us recruit some AWESOME new pledges! <font color "red">Note: This committee is now closed</font><br><br>
 <b>Roll Call:</b> Tenzin Paldon, Sangmo Arya, Chris Wen<br>
-*Come rep Gamma Gamma at Sections by participating in Roll Call! No dance experience necessary!<br><br>
+*Come rep Gamma Gamma at Sectionals by participating in Roll Call! No dance experience necessary!<br><br>
 </p>
 </div>
 
@@ -70,14 +70,14 @@ None! But you can help the Finance department by signing up for fundraisers!
 </div>
 
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
-Fellowship Chairs: Ann Chan
+Fellowship Committees: Ann Chan
 </h2>
 <div style="max-width: 50em; margin-bottom: 3em; line-height: 1.5;">
 	<p style="margin: 1.5em 0px;">
 
 <b>Hot Spot</b>: Dana Lin, Tenzin Paldon, Winnie looc, Jeffrey Kuan, Allison Tong, Kirk Chiu<br>
-* Come help us set up the hottest-spot in town! <br><br>
-<b> Banquet</br></font>: Susan Guan, Ellie Hung, April Liu, Jane Tam<br>
+* Come help us set up the hottest-spot in town! <font color "red">Note: This committee is now full! Sorry! </font> <br><br>
+<b> Banquet</font>: Susan Guan, Ellie Hung, April Liu, Jane Tam<br>
 *Like to decorate? Plan events? BANQUENT COMMITTEE WANTS YOU! (Pledges welcome to join!)<br>
 </p>
 </div>
@@ -88,7 +88,7 @@ Pledgemaster Committees: James Wang
 <div style="max-width: 50em; margin-bottom: 3em; line-height: 1.5;">
 	<p style="margin: 1.5em 0px;">
 
-Unfortunetly, the pledge committee is full. <br>
+<font color="red">Unfortunetly, the pledge committee for this semester is full!.</font><br>
 
 </p>
 </div>
