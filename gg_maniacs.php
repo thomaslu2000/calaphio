@@ -16,6 +16,12 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Antony Nguyen </p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Kirk Chiu </p>
+		</div>
+		<div class=<"person-picture'>
+			<p class-"center">Elizabeth Yuen</p>
+		</div?
 	</div>
 	<div style="clear: left;"></div>
     </div>
