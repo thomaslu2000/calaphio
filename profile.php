@@ -891,7 +891,7 @@ $fellowship_events
 
 <table width="100%">
 <caption>Complete 5 leadership credits - You can get credit by doing any of the following:</caption>
-<tr><td axis="name">Serving on a committee - <a href="ggwiki.php?page_id=31#3">Search for one here</a> <strong>(required)</strong></td></tr>
+<tr><td axis="name">Serving on a committee - <a href="mh_chairs.php">Search for one here</a> <strong>(required)</strong></td></tr>
 <tr><td axis="name">Submit 3 (original content) Stylus Submissions (1 credit)</td></tr>
 <tr><td axis="name">Chairing 2 events (1 credit)</td></tr>
 <tr><td axis="name">Attending a LEADS workshop (1 credit)</td></tr>
