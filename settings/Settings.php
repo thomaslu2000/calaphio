@@ -6,7 +6,7 @@
 define("DB_HOST",		"mysql.calaphio.com");
 define("DB_USER",		"website");
 define("DB_PASSWORD",		"apogg1939");
-define("DB_DATABASE",		"website");
+define("DB_DATABASE",		"GammaGammaAdmin");
 define("TABLE_PREFIX",		"apo_");
 
 /********************
