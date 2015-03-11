@@ -181,7 +181,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					if ($election_events_count < 1) {
 						$election_events = "<FONT COLOR='RED'>1 Election: $election_events_count Election <br/></FONT>";
 					} else {
-						$election_events = "<FONT COLOR='GREEN'>1 Election: $election_events_count Election <br/>";
+						$election_events = "<FONT COLOR='GREEN'>1 Election: $election_events_count Election <br/></FONT>";
 					}
 
 					// Retrieve Interfam events
