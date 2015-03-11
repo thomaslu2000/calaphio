@@ -15,7 +15,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 
 //require("/home/calaphio/live.calaphio.com/include/Database.class.php");	
 
-	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass, email, mail_requirements_update FROM apo_users join apo_actives using (user_id) order by lastname, firstname"));
+	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass, email, mail_requirements_update FROM apo_users join apo_actives using (user_id) WHERE apo_users.disabled=False and apo_users.depledged=False order by lastname, firstname;"));
 
 		$start_date = strtotime("2015-1-01");
 		$end_date = strtotime("2015-5-30");
