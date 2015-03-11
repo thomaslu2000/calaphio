@@ -187,7 +187,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					// Retrieve Interfam events
 					$interfam_events = "";
 					$interfam_events_count = 0;
-					$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
+					$queryIF = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
 						JOIN %scalendar_attend USING (event_id)
 						JOIN %scalendar_event_type_custom ON (type_id=type_custom AND type_name='Interfam')
 						WHERE deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
@@ -195,7 +195,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 						TABLE_PREFIX,
 						TABLE_PREFIX,
 						$sql_start_date, $sql_end_date, $user_id));
-					while ($row = $query->fetch_row()) {
+					while ($row = $queryIF->fetch_row()) {
 						$date = date("M d", strtotime($row['date']));
 						$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
 						$title_link = event_link($row['event_id'], $row['title']);
