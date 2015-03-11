@@ -183,6 +183,33 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 					} else {
 						$election_events = "<FONT COLOR='GREEN'>1 Election: $election_events_count Election <br/>";
 					}
+
+					// Retrieve Interfam events
+					$interfam_events = "";
+					$interfam_events_count = 0;
+					$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
+						JOIN %scalendar_attend USING (event_id)
+						JOIN %scalendar_event_type_custom ON (type_id=type_custom AND type_name='Interfam')
+						WHERE deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+						TABLE_PREFIX, TABLE_PREFIX,
+						TABLE_PREFIX,
+						TABLE_PREFIX,
+						$sql_start_date, $sql_end_date, $user_id));
+					while ($row = $query->fetch_row()) {
+						$date = date("M d", strtotime($row['date']));
+						$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
+						$title_link = event_link($row['event_id'], $row['title']);
+						$interfam_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
+						if ($row['attended']) {
+							$interfam_events_count++;
+						}
+					}
+
+					if ($interfam_events < 1) {
+						$interfam_events = "<FONT COLOR='RED'>1 Active Pledge Bonding: $interfam_events_count event <br/></FONT>";
+					} else {
+						$interfam_events = "<FONT COLOR='GREEN'>1 Active Pledge Bonding: $interfam_events_count event <br/>";
+					}
 					
 					// Retrieve Tabling hours
 					$tabling_events = "";
@@ -291,10 +318,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 							$leadership_count++;
 						}
 					}
-					if ($leadership_count < 3) {
-						$leadership = "<FONT COLOR='RED'>3 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
+					if ($leadership_count < 5) {
+						$leadership = "<FONT COLOR='RED'>5 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
 					} else {
-						$leadership = "<FONT COLOR='GREEN'>3 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
+						$leadership = "<FONT COLOR='GREEN'>5 Leadership Credits: $leadership_count Chairing Credits <br/></FONT>";
 					}
 
 					//Retrieve Active events
@@ -334,7 +361,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 								<body>';
 					$message .= '<p><FONT COLOR="gray">This is a progress update for ' . $firstname . ' ' . $lastname . ' on active requirements! 
 								<br/>Requirements are due by CM 8 so please make sure to complete them by then if you have not done so!</FONT></p>';
-					$message .= $ic_events . $rush_events . $tabling_events . $fundraiser_events . $chapter_events . $chaptermeeting_events . $election_events . $service_events . $fellowship_events . $leadership;
+					$message .= $ic_events . $rush_events . $tabling_events . $fundraiser_events . $chapter_events . $chaptermeeting_events . $election_events . $interfam_events . $service_events . $fellowship_events . $leadership;
 					$message .= '<p><FONT COLOR="aqua">You are also required to join a committee as part of your requirements! Join one
 					 			if you have not done so yet!</FONT></p>';
 					$message .= '<br/>
