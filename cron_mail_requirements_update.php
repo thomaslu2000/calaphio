@@ -205,7 +205,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 						}
 					}
 
-					if ($interfam_events < 1) {
+					if ($interfam_events_count < 1) {
 						$interfam_events = "<FONT COLOR='RED'>1 Active Pledge Bonding: $interfam_events_count event <br/></FONT>";
 					} else {
 						$interfam_events = "<FONT COLOR='GREEN'>1 Active Pledge Bonding: $interfam_events_count event <br/>";
