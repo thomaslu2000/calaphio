@@ -196,10 +196,6 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 						TABLE_PREFIX,
 						$sql_start_date, $sql_end_date, $user_id));
 					while ($row = $queryIF->fetch_row()) {
-						$date = date("M d", strtotime($row['date']));
-						$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-						$title_link = event_link($row['event_id'], $row['title']);
-						$interfam_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
 						if ($row['attended']) {
 							$interfam_events_count++;
 						}
