@@ -17,8 +17,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 
 	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass, email, mail_requirements_update FROM apo_users join apo_actives using (user_id) order by lastname, firstname"));
 
-		$start_date = strtotime("2013-12-09");
-		$end_date = strtotime("2014-4-29");
+		$start_date = strtotime("2015-1-01");
+		$end_date = strtotime("2014-5-30");
 		$sql_start_date = date("Y-m-d", $start_date);
 		$sql_end_date = date("Y-m-d", $end_date);
 		$today = time();
