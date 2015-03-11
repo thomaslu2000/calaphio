@@ -42,7 +42,9 @@ function currentMembers() {
 		select * from apo_users where user_id = %s
 		", $row['user_id']));
 		$rowPerson = $queryPerson->fetch_row();
-		$person .= $rowPerson['user_id'] . " = " . $rowPerson['firstname'] . " " . $rowPerson['lastname'] . " (" . 	$rowPerson['pledgeclass'] . ") <br>";
+		if (!$rowPerson['disabled'] && !$rowPerson['depledged']) {
+			$person .= $rowPerson['user_id'] . " = " . $rowPerson['firstname'] . " " . $rowPerson['lastname'] . " (" . 	$rowPerson['pledgeclass'] . ") <br>";
+		}
 	}
 	return $person;
 }
