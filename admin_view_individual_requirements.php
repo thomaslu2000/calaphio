@@ -241,7 +241,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase")) {
 	$sponsorship_events_count = 0;
 	$queryIF = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
 		JOIN %scalendar_attend USING (event_id)
-		JOIN %scalendar_event_type_custom ON (type_id=type_custom AND type_name='Sponsorhip Event')
+		JOIN %scalendar_event_type_custom ON (type_id=type_custom AND type_name='Sponsorship Event')
 		WHERE deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
 		TABLE_PREFIX, TABLE_PREFIX,
 		TABLE_PREFIX,
