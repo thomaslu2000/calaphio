@@ -65,8 +65,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 			$where_statement_array[] = "type_custom=$_POST[type_custom]";
 		}
 		
-		$begin_date = "2014-9-1";
-		$end_date = "2014-12-20";
+		$begin_date = "2015-01-01";
+		$end_date = "2015-05-30";
 	
 		$where_statement = $where_statement_array ? "WHERE " . implode(" OR ", $where_statement_array) : '';
 		
@@ -128,7 +128,7 @@ HEREDOC;
 	}
 	
 	echo <<<HEREDOC
-<h1>View Active/Pledge Requirements (KHK)</h1>
+<h1>View Active/Pledge Requirements (TT)</h1>
 <form method="post" action="">
 <table>
 <caption></caption>
@@ -145,6 +145,7 @@ HEREDOC;
 
 $results
 <br/>
+<a href="admin_view_requirements_fa2014.php">Fall 2014 (KHK) Admin Powers ></a><br/>
 <a href="admin_view_requirements_sp2014.php">Spring 2014 (CM) Admin Powers ></a><br/>
 <a href="admin_view_requirements_fa2013.php">Fall 2013 (DE) Admin Powers ></a><br/>
 <a href="admin_view_requirements_sp2013.php">Spring 2013 (KK) Admin Powers ></a> <br/>
