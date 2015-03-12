@@ -166,6 +166,29 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase")) {
 	} else {
 		$election_events = "1 Election: $election_events_count Election <br/>";
 	}
+
+	// Retrieve Interfam events
+	$interfam_events = "";
+	$interfam_events_count = 0;
+	$queryIF = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
+		JOIN %scalendar_attend USING (event_id)
+		JOIN %scalendar_event_type_custom ON (type_id=type_custom AND type_name='Interfam')
+		WHERE deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+		TABLE_PREFIX, TABLE_PREFIX,
+		TABLE_PREFIX,
+		TABLE_PREFIX,
+		$sql_start_date, $sql_end_date, $user_id));
+	while ($row = $queryIF->fetch_row()) {
+		if ($row['attended']) {
+			$interfam_events_count++;
+		}
+	}
+
+	if ($interfam_events_count < 1) {
+		$interfam_events = "<FONT COLOR='RED'>1 Active Pledge Bonding: $interfam_events_count Event <br/></FONT>";
+	} else {
+		$interfam_events = "1 Active Pledge Bonding: $interfam_events_count Event <br/>";
+	}
 	
 	// Retrieve Tabling hours
 	$tabling_events = "";
@@ -185,10 +208,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase")) {
 			$tabling_hours -= $row['hours'];
 		}
 	}
-	if ($tabling_hours < 3) {
-		$tabling_events = "<FONT COLOR='RED'>3 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
+	if ($tabling_hours < 4) {
+		$tabling_events = "<FONT COLOR='RED'>4 Hours of Tabling: $tabling_hours Hours <br/></FONT>";
 	} else {
-		$tabling_events = "3 Hours of Tabling: $tabling_hours Hours <br/>";
+		$tabling_events = "4 Hours of Tabling: $tabling_hours Hours <br/>";
 	}
 	
 	// Retrieve Rush events
@@ -207,10 +230,33 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase")) {
 		//	$rush_events_count--;
 		}
 	}
-	if ($rush_events_count < 4) {
-		$rush_events = "<FONT COLOR='RED'>4 Rush Events: $rush_events_count Events <br/></FONT>";
+	if ($rush_events_count < 3) {
+		$rush_events = "<FONT COLOR='RED'>3 Rush Events: $rush_events_count Events <br/></FONT>";
 	} else {
-		$rush_events = "4 Rush Events: $rush_events_count Events <br/>";
+		$rush_events = "3 Rush Events: $rush_events_count Events <br/>";
+	}
+
+	// Retrieve Sponsorship events
+	$sponsorship_events = "";
+	$sponsorship_events_count = 0;
+	$queryIF = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
+		JOIN %scalendar_attend USING (event_id)
+		JOIN %scalendar_event_type_custom ON (type_id=type_custom AND type_name='Sponsorhip Event')
+		WHERE deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+		TABLE_PREFIX, TABLE_PREFIX,
+		TABLE_PREFIX,
+		TABLE_PREFIX,
+		$sql_start_date, $sql_end_date, $user_id));
+	while ($row = $queryIF->fetch_row()) {
+		if ($row['attended']) {
+			$sponsorship_events_count++;
+		}
+	}
+
+	if ($sponsorship_events_count < 1) {
+		$sponsorship_events = "<FONT COLOR='RED'>1 Sponsorhip Event: $sponsorship_events_count Event <br/></FONT>";
+	} else {
+		$sponsorship_events = "1 Sponsorhip Event: $sponsorship_events_count Event <br/>";
 	}
 	
 	// Retrieve Chapter events
@@ -339,11 +385,13 @@ echo <<<DOCHERE_print_gg_maniac_poll_create
 	</div>	
 	$ic_events
 	$rush_events
+	$sponsorship_events
 	$tabling_events
 	$fundraiser_events
 	$chapter_events
 	$chaptermeeting_events
 	$election_events
+	$interfam_events
 	$service_events
 	$four_cs
 	$fellowship_events
