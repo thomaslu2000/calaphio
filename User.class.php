@@ -271,7 +271,7 @@ HEREDOC_login;
 								'240','80');
 				$random = "<input type=\"hidden\" name=\"random\" value=\"" . $captchas->random() . "\" />";
 				$image = $captchas->image();
-				$email_field = "<p class=\"messageBody\">Email: <input type=\"text\" name=\"email\" size=\"50\" /></p>";
+				$email_field = "<p class=\"messageBody\">Your email: <input type=\"text\" name=\"email\" size=\"50\" /></p>";
 				$captcha = "<p class=\"messageBody\">$image<br />\r\nEnter the letters in the CAPTCHA:\r\n<input type=\"text\" name=\"password\" size=\"6\" /></p>";
 			} else {
 				$random = "";
