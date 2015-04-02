@@ -30,7 +30,7 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
-<?php if ($g_user->is_logged_in()):  ?>
+<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>Notes From CM 6</h2>
         <p class="date">April 1, 2015</p>
@@ -48,12 +48,7 @@ if (!$g_user->is_logged_in()) {
         <h2>Notes From CM 5</h2>
         <p class="date">March 10, 2015</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 5!<br>
-<<<<<<< HEAD
-            <a href="https://docs.google.com/presentation/d/1tm0l9tAwi9gSYk90kjN0RQPmL3UehpXK_jsqpWrZ3aM/edit?usp=sharing">CM 5 Slides</a> | <a href="https://docs.google.com/document/d/12X5IJR3CxuXKA_rJraYws9sMaoHIsrw-LPFhtrN34w4/edit">CM 5 Minutes</a><br>
-						
-=======
             <a href="https://docs.google.com/presentation/d/1tm0l9tAwi9gSYk90kjN0RQPmL3UehpXK_jsqpWrZ3aM/edit?usp=sharing">CM 5 Slides</a> | <a href="https://docs.google.com/document/d/12X5IJR3CxuXKA_rJraYws9sMaoHIsrw-LPFhtrN34w4/edit">CM 5 Minutes</a><br>				
->>>>>>> e910dccf2fc183217ce697edd3d7f6984256cae1
             Submit your <a href="http://goo.gl/forms/ief54YXKdw">Caption Contest</a> and <a href="http://goo.gl/forms/GA3QFrpTTf">Richard Golden Duck</a>!</p>
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/9-b3-oDHh0U" frameborder="0" allowfullscreen></iframe>
         <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
