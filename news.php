@@ -33,7 +33,7 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>Notes From CM 6</h2>
-        <p class="date">April 1, 2015</p>
+        <p class="date">April 1, 2015lalala</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 6!<br>
             <a href="https://docs.google.com/presentation/d/1ZoXVRohlI4ey1sQaohWZwwh0cpc_Vn1SXBv2De1y7BA/edit?usp=sharing">CM 6 Slides</a> | <a href="https://docs.google.com/document/d/12X5IJR3CxuXKA_rJraYws9sMaoHIsrw-LPFhtrN34w4/edit">CM 6 Minutes</a><br>				
             Submit your <a href="http://goo.gl/forms/33SHQjKbD7">Caption Contest</a> and <a href="http://goo.gl/forms/GA3QFrpTTf">Richard Golden Duck</a>!</p>
