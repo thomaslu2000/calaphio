@@ -30,6 +30,62 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+        <h2> Congratulations to the Fall 2015 Executive Committee and Pledge Committee!</h2>
+        <p class="date">May 5, 2015</p>
+
+    <p style="margin-bottom: 1em">Congratulations on being elected to Fall 2015's Executive Committee and Pledge Committee!<br>
+    Under your great leadership and guidance, we are confident that Gamma Gamma will strive!
+    <p>
+
+    <p style="margin: 1.5em 0px;">
+        <font size="3"><b><u>Fall 2015 Executive Committee</u></b></font><br>
+        <b>President</b>: Karen Wu<br>
+        <b>Administrative VP</b>: Audrey Tsai<br>
+        <b>Membership VP</b>: Nicki Bartak<br>
+        <b>Service VP</b>: Alex Quan<br>
+        <b>Finance VP</b>: Kelsey Chan<br>
+        <b>Fellowship VP</b>: Allison Tong<br>
+        <b>Pledgemaster</b>: Lakana Bun<br>
+        <b>Historian</b>: Moncarol Wang<br>
+    </p>
+
+    <p style="margin: 1.5em 0px;">
+        <font size="3"><b><u>Fall 2015 Pledge Committee</u></b></font><br>
+        <b>Leadership Committee Trainer</b>: Ellie Hung, Kathleen Wong<br>
+        <b>Fellowship Committee Trainer</b>: Trinh Hyunh, Sangmo Arya<br>
+        <b>Service Committee Trainer</b>: Kirk Chiu, Virgil Tang<br>
+        <b>Finance Committee Trainer</b>: Sherri Zhang, Tenzin Paldon<br>
+        <b>Historian Committee Trainer</b>: Joanna Choi<br>
+    </p>
+    <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+</div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>Notes From CM 8</h2>
+        <p class="date">May 5, 2015</p>
+        <p style="margin-bottom: 1em">Here are the documents from CM 8!<br>
+            <a href="https://docs.google.com/presentation/d/1CM2fsAqCXcpDGUQ2OVJ0WjNn-OupvW5V1pijy0X0iak/edit">CM 8 Slides</a>				
+            <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/FTYn-OhkBik" frameborder="0" allowfullscreen></iframe>
+        <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>Notes From CM 7</h2>
+        <p class="date">May 5, 2015</p>
+        <p style="margin-bottom: 1em">Here are the documents from CM 7!<br>
+            <a href="https://docs.google.com/presentation/d/1KM0rJbNQc7eNSxcQF6NbwKV6UUjNk5VXyE7lVMGV91k/edit?usp=sharing">CM 7 Slides</a>				
+            <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/sn6FYzFKM0A" frameborder="0" allowfullscreen></iframe>
+        <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+    </div>
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>Notes From CM 6</h2>
