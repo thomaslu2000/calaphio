@@ -69,7 +69,7 @@ if (!$g_user->is_logged_in()) {
         <h2>Notes From CM 8</h2>
         <p class="date">May 5, 2015</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 8!<br>
-            <a href="https://docs.google.com/presentation/d/1CM2fsAqCXcpDGUQ2OVJ0WjNn-OupvW5V1pijy0X0iak/edit">CM 8 Slides</a>				
+            <a href="https://docs.google.com/presentation/d/1CM2fsAqCXcpDGUQ2OVJ0WjNn-OupvW5V1pijy0X0iak/edit">CM 8 Slides</a><br>			
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/FTYn-OhkBik" frameborder="0" allowfullscreen></iframe>
         <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
     </div>
@@ -80,7 +80,7 @@ if (!$g_user->is_logged_in()) {
         <h2>Notes From CM 7</h2>
         <p class="date">May 5, 2015</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 7!<br>
-            <a href="https://docs.google.com/presentation/d/1KM0rJbNQc7eNSxcQF6NbwKV6UUjNk5VXyE7lVMGV91k/edit?usp=sharing">CM 7 Slides</a>				
+            <a href="https://docs.google.com/presentation/d/1KM0rJbNQc7eNSxcQF6NbwKV6UUjNk5VXyE7lVMGV91k/edit?usp=sharing">CM 7 Slides</a><br>			
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/sn6FYzFKM0A" frameborder="0" allowfullscreen></iframe>
         <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
     </div>
