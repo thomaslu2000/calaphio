@@ -55,7 +55,7 @@ if (!$g_user->is_logged_in()) {
     <p style="margin: 1.5em 0px;">
         <font size="3"><b><u>Fall 2015 Pledge Committee</u></b></font><br>
         <b>Leadership Committee Trainer</b>: Ellie Hung, Kathleen Wong<br>
-        <b>Fellowship Committee Trainer</b>: Trinh Hyunh, Sangmo Arya<br>
+        <b>Fellowship Committee Trainer</b>: Trinh Huynh, Sangmo Arya<br>
         <b>Service Committee Trainer</b>: Kirk Chiu, Virgil Tang<br>
         <b>Finance Committee Trainer</b>: Sherri Zhang, Tenzin Paldon<br>
         <b>Historian Committee Trainer</b>: Joanna Choi<br>
