@@ -30,6 +30,29 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+        <h2> Chairing Applications are out!</h2>
+        <p class="date">May 27, 2015</p>
+
+    <p style="margin-bottom: 1em">
+    Brothers, <br>
+	Please take some time to look over the applications and complete them early so you all don't have to worry about them later on!<br>
+	The deadline to apply for chairing positions will be August 1st, 2015. <br>
+	Please note that some chairing positions have an earlier deadline than the rest. <br><br>
+	-Karen <br><br>
+	<a href="https://docs.google.com/forms/d/1QPCq-Y_8TevPHKrdpOZh4LKC3QNH8IrUNogLJ0vb9HA/viewform">President</a><br>
+	<a href="https://docs.google.com/forms/d/1gjZkbPDBu0m_lPqprOEb8FxOyxBqVdpC7b2IpZMoGNg/viewform">Administrative</a><br>
+	<a href="https://docs.google.com/forms/d/1e8vTh2Vl2XflZNxQ0NYALOXds47ulUvwbvSTJz2_yrs/viewform?c=0&w=1">Membership</a><br>
+	<a href="https://docs.google.com/forms/d/1fzg1a_cxqxyg4TSrwMAuMaGtT8oiltUC6hQhV8WfhIY/viewform?c=0&w=1">Service</a><br>
+	<a href="https://docs.google.com/forms/d/1aBwJeFzi83cuoUslveY66QJYaWyBgpFuiKgR9mPES40/viewform?c=0&w=1">Finance</a><br>
+	<a href="https://docs.google.com/forms/d/1BKpE3568sdGkyzvknzqVZdb_gTQiMm-vdw7hN1oSCIQ/viewform?c=0&w=1">Fellowship</a><br>
+	<a href="https://docs.google.com/forms/d/1iUuQ-pFoiBKiJHDRseYs25y_u-AQr723mO2ptdBQxCY/viewform">Historian</a><br>
+    </p>
+
+    <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+</div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
