@@ -36,7 +36,7 @@ if (!$g_user->is_logged_in()) {
         <p class="date">May 27, 2015</p>
 
     <p style="margin-bottom: 1em">
-    Brothers, <br>
+    Brothers, <br><br>
 	Please take some time to look over the applications and complete them early so you all don't have to worry about them later on!<br>
 	The deadline to apply for chairing positions will be August 1st, 2015. <br>
 	Please note that some chairing positions have an earlier deadline than the rest. <br><br>
