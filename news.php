@@ -32,7 +32,7 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
-        <h2> Chairing Applications are out!</h2>
+        <h2> Chairing Applications are Out!</h2>
         <p class="date">May 27, 2015</p>
 
     <p style="margin-bottom: 1em">
