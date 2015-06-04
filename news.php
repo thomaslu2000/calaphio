@@ -54,7 +54,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+
 <div class="newsItem">
         <h2> Congratulations to the Fall 2015 Executive Committee and Pledge Committee!</h2>
         <p class="date">May 5, 2015</p>
@@ -85,7 +85,7 @@ if (!$g_user->is_logged_in()) {
     </p>
     <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
 </div>
-<?php endif ?>
+
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
