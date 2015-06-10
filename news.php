@@ -51,7 +51,7 @@ if (!$g_user->is_logged_in()) {
 	<a href="https://docs.google.com/forms/d/1iUuQ-pFoiBKiJHDRseYs25y_u-AQr723mO2ptdBQxCY/viewform">Historian</a><br>
     </p>
 
-    <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
+    <p>-<a href="profile.php?user_id=2192">Audrey(CM)</a></p>
 </div>
 <?php endif ?>
 
