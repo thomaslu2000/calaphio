@@ -1,6 +1,6 @@
 body {
   font-family: 'Verdana';
-  font-size: 20pt;
+  font-size: 100pt; /* 20 pt */ 
   color: black;
   background-color: #6699CC;
   /*background-color: white;*/
