@@ -71,7 +71,6 @@ DOCHERE_print_head;
 		// 	'Contact' => "contact.php");
 		$section_array = array(
 			'Home' => array(
-				"HOME" => "news.php",
 				"NEWS" => "news.php",
 				"CALENDAR" => "calendar.php",
 				"BROTHERS" => "roster.php", 
