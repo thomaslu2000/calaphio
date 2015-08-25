@@ -71,13 +71,13 @@ DOCHERE_print_head;
 		// 	'Contact' => "contact.php");
 		$section_array = array(
 			'Home' => array(
+				"HOME" => "news.php",
 				"NEWS" => "news.php",
 				"CALENDAR" => "calendar.php",
 				"BROTHERS" => "roster.php", 
 				"BYLAWS" => "bylaws.php",
 				"SECTION 4" => "http://www.aposection4.org",
 				"REGION X" => "http://www.apor10.org",
-				"NATIONAL" => "http://www.apo.org"
 				));
 		// 	'Service' => array(
 		// 		"RUSH" => "pledging.php",
