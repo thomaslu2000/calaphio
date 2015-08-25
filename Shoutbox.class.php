@@ -1,4 +1,4 @@
-// <?php
+<?php
 
 // class Shoutbox {
 // 	var $user;
@@ -84,4 +84,4 @@
 // 	}
 // }
 
-// ?>
+?>
