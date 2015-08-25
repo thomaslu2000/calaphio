@@ -77,7 +77,7 @@ DOCHERE_print_head;
 				"BYLAWS" => "bylaws.php",
 				"SECTION 4" => "http://www.aposection4.org",
 				"REGION X" => "http://www.apor10.org",
-				));
+				),
 			'Service' => array(
 				"RUSH" => "pledging.php",
 				"FELLOWSHIP" => "fellowship.php",
