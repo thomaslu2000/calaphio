@@ -94,21 +94,20 @@ DOCHERE_print_head;
 				"HOME" => "news.php",
 				"ADD EVENT" => array("popup", "add_event.php"),
 				"CALENDAR" => "calendar.php",
-				"IC CALENDAR" => "ic_calendar.php",
 				"REQUIREMENTS" => "profile.php?requirements=true&user_id=" . $g_user->data['user_id'],
 				"BUDGET" => "https://docs.google.com/spreadsheets/d/1CgFV2Pt4AWtsJTbh4asi2Xi_CoshFJgHvfK93lAneC0/edit#gid=0",
 				"AWARDS" => "awards.php"
 				),
-			'Members' => array(
-				"HOME" => "news.php",
-				"HISTORY" => "history.php",
-				"ALUMNI" => "alumni.php",
-				"ROSTER" => "roster.php",
-				"WIKI" => "ggwiki.php",
-				"GALLERY" => "http://calaphio.smugmug.com/",
-				"TESTBANK" => "https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=sharing",
-				"ACCOUNT" => "edit_roster.php"
-				),
+			// 'Members' => array(
+			// 	"HOME" => "news.php",
+			// 	"HISTORY" => "history.php",
+			// 	"ALUMNI" => "alumni.php",
+			// 	"ROSTER" => "roster.php",
+			// 	"WIKI" => "ggwiki.php",
+			// 	"GALLERY" => "http://calaphio.smugmug.com/",
+			// 	"TESTBANK" => "https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=sharing",
+			// 	"ACCOUNT" => "edit_roster.php"
+			// 	),
 			'Contact' => array(
 				));
 
