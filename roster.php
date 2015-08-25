@@ -2,8 +2,8 @@
 require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
-Template::print_head(array());
-Template::print_body_header('Brothers', 'ROSTER');
+Template::print_head(array("site.css", "roster.css"));
+Template::print_body_header('Home', 'BROTHERS');
 $g_user->process_roster();
 echo <<<DOCHERE_print_photobox_script
 <script>
