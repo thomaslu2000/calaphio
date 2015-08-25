@@ -71,6 +71,7 @@ DOCHERE_print_head;
 		// 	'Contact' => "contact.php");
 		$section_array = array(
 			'Home' => array(
+				"HOME" => "news.php",
 				"CALENDAR" => "calendar.php",
 				"BROTHERS" => "roster.php", 
 				"BYLAWS" => "bylaws.php",
@@ -78,16 +79,19 @@ DOCHERE_print_head;
 				"REGION X" => "http://www.apor10.org",
 				),
 			'Service' => array(
+				"HOME" => "news.php",
 				"RUSH" => "pledging.php",
 				"FELLOWSHIP" => "fellowship.php",
 				"REIMBURSEMENT" => "reimbursement.php"
 				),
 			'Fellowship' => array(
+				"HOME" => "news.php",
 				"RUSH" => "pledging.php",
 				"SERVICE" => "service.php",
 				"REIMBURSEMENT" => "reimbursement.php"
 				),
 			'Calendar' => array(
+				"HOME" => "news.php",
 				"ADD EVENT" => array("popup", "add_event.php"),
 				"CALENDAR" => "calendar.php",
 				"IC CALENDAR" => "ic_calendar.php",
@@ -96,6 +100,7 @@ DOCHERE_print_head;
 				"AWARDS" => "awards.php"
 				),
 			'Members' => array(
+				"HOME" => "news.php",
 				"HISTORY" => "history.php",
 				"ALUMNI" => "alumni.php",
 				"ROSTER" => "roster.php",
@@ -116,9 +121,6 @@ DOCHERE_print_head;
 				break;
 			}
 		}
-		foreach ($section_array as $key => $value) {
-				$section_array[$key]["HOME"] = "news.php";
-			}
 
 		if ($is_admin) {
 			foreach ($section_array as $key => $value) {
