@@ -62,23 +62,13 @@ DOCHERE_print_head;
 	 * $section and $page are case sensitive. */
 	function print_body_header($section, $page) {
 		global $g_user, $g_error;
-<<<<<<< HEAD
 		$section_links_array = array(
 			'Home' => "news.php",
-			/*'Service' => "service.php",*/ 
+			'Service' => "service.php",
 			'Fellowship' => "fellowship.php",
 			'Calendar' => "calendar.php",
 			'Members' => "roster.php",
 			'Contact' => "contact.php");
-=======
-		// $section_links_array = array(
-		// 	'Home' => "news.php",
-		// 	'Service' => "service.php",
-		// 	'Fellowship' => "fellowship.php",
-		// 	'Calendar' => "calendar.php",
-		// 	'Brothers' => "roster.php",
-		// 	'Contact' => "contact.php");
->>>>>>> origin/master
 		$section_array = array(
 			'Home' => array(
 				"NEWS" => "news.php",
