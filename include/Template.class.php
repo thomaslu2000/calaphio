@@ -72,8 +72,8 @@ DOCHERE_print_head;
 		$section_array = array(
 			'Home' => array(
 				"NEWS" => "news.php",
-				"RUSH" => "pledging.php",
-				"OFFICERS" => "excomm.php", 
+				"CALENDAR" => "calendar.php",
+				"BROTHERS" => "roster.php", 
 				"BYLAWS" => "bylaws.php",
 				"SECTION 4" => "http://www.aposection4.org",
 				"REGION X" => "http://www.apor10.org",
