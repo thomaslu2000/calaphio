@@ -15,9 +15,9 @@ echo $evalnag->display("2007-01-01");
 $gg_maniac_nag = new GGManiacNag();
 echo $gg_maniac_nag->display();
 
-$shoutbox = new Shoutbox();
-$shoutbox->process();
-echo $shoutbox->display();
+// $shoutbox = new Shoutbox();
+// $shoutbox->process();
+// echo $shoutbox->display();
 
 Calendar::print_upcoming_events(5);
 
