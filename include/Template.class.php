@@ -125,13 +125,13 @@ DOCHERE_print_head;
 		}
 
 		// Display each section button
-		$sections = "";
-		$i = 1;
-		foreach ($section_array as $key => $value) {
-			$class = $section == $key ? "active" : "";
-			$sections .= "\r\n	  <li><a class=\"$class\" id=\"link_$i\" href=\"$section_links_array[$key]\">$key</a></li>";
-			$i++;
-		}
+		// $sections = "";
+		// $i = 1;
+		// foreach ($section_array as $key => $value) {
+		// 	$class = $section == $key ? "active" : "";
+		// 	$sections .= "\r\n	  <li><a class=\"$class\" id=\"link_$i\" href=\"$section_links_array[$key]\">$key</a></li>";
+		// 	$i++;
+		// }
 
 		// Display each subnavigation tab
 		$sublinks = "";
