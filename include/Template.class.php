@@ -69,45 +69,45 @@ DOCHERE_print_head;
 		// 	'Calendar' => "calendar.php",
 		// 	'Members' => "roster.php",
 		// 	'Contact' => "contact.php");
-		$section_array = array(
-			'Home' => array(
-				"NEWS" => "news.php",
-				"RUSH" => "pledging.php",
-				"OFFICERS" => "excomm.php", 
-				"BYLAWS" => "bylaws.php",
-				"SECTION 4" => "http://www.aposection4.org",
-				"REGION X" => "http://www.apor10.org",
-				"NATIONAL" => "http://www.apo.org"
-				),
-			'Service' => array(
-				"RUSH" => "pledging.php",
-				"FELLOWSHIP" => "fellowship.php",
-				"REIMBURSEMENT" => "reimbursement.php"
-				),
-			'Fellowship' => array(
-				"RUSH" => "pledging.php",
-				"SERVICE" => "service.php",
-				"REIMBURSEMENT" => "reimbursement.php"
-				),
-			'Calendar' => array(
-				"ADD EVENT" => array("popup", "add_event.php"),
-				"CALENDAR" => "calendar.php",
-				"IC CALENDAR" => "ic_calendar.php",
-				"REQUIREMENTS" => "profile.php?requirements=true&user_id=" . $g_user->data['user_id'],
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/1CgFV2Pt4AWtsJTbh4asi2Xi_CoshFJgHvfK93lAneC0/edit#gid=0",
-				"AWARDS" => "awards.php"
-				),
-			'Members' => array(
-				"HISTORY" => "history.php",
-				"ALUMNI" => "alumni.php",
-				"ROSTER" => "roster.php",
-				"WIKI" => "ggwiki.php",
-				"GALLERY" => "http://calaphio.smugmug.com/",
-				"TESTBANK" => "https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=sharing",
-				"ACCOUNT" => "edit_roster.php"
-				),
-			'Contact' => array(
-				));
+		// $section_array = array(
+		// 	'Home' => array(
+		// 		"NEWS" => "news.php",
+		// 		"RUSH" => "pledging.php",
+		// 		"OFFICERS" => "excomm.php", 
+		// 		"BYLAWS" => "bylaws.php",
+		// 		"SECTION 4" => "http://www.aposection4.org",
+		// 		"REGION X" => "http://www.apor10.org",
+		// 		"NATIONAL" => "http://www.apo.org"
+		// 		),
+		// 	'Service' => array(
+		// 		"RUSH" => "pledging.php",
+		// 		"FELLOWSHIP" => "fellowship.php",
+		// 		"REIMBURSEMENT" => "reimbursement.php"
+		// 		),
+		// 	'Fellowship' => array(
+		// 		"RUSH" => "pledging.php",
+		// 		"SERVICE" => "service.php",
+		// 		"REIMBURSEMENT" => "reimbursement.php"
+		// 		),
+		// 	'Calendar' => array(
+		// 		"ADD EVENT" => array("popup", "add_event.php"),
+		// 		"CALENDAR" => "calendar.php",
+		// 		"IC CALENDAR" => "ic_calendar.php",
+		// 		"REQUIREMENTS" => "profile.php?requirements=true&user_id=" . $g_user->data['user_id'],
+		// 		"BUDGET" => "https://docs.google.com/spreadsheets/d/1CgFV2Pt4AWtsJTbh4asi2Xi_CoshFJgHvfK93lAneC0/edit#gid=0",
+		// 		"AWARDS" => "awards.php"
+		// 		),
+		// 	'Members' => array(
+		// 		"HISTORY" => "history.php",
+		// 		"ALUMNI" => "alumni.php",
+		// 		"ROSTER" => "roster.php",
+		// 		"WIKI" => "ggwiki.php",
+		// 		"GALLERY" => "http://calaphio.smugmug.com/",
+		// 		"TESTBANK" => "https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=sharing",
+		// 		"ACCOUNT" => "edit_roster.php"
+		// 		),
+		// 	'Contact' => array(
+		// 		));
 
 		// Show the admin tab
 		$admin_permissions = array("admin add users", "admin change passphrase", "admin view requirements", "admin view pledge requirements");
