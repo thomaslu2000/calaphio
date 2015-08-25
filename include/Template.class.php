@@ -69,16 +69,16 @@ DOCHERE_print_head;
 		// 	'Calendar' => "calendar.php",
 		// 	'Members' => "roster.php",
 		// 	'Contact' => "contact.php");
-		// $section_array = array(
-		// 	'Home' => array(
-		// 		"NEWS" => "news.php",
-		// 		"RUSH" => "pledging.php",
-		// 		"OFFICERS" => "excomm.php", 
-		// 		"BYLAWS" => "bylaws.php",
-		// 		"SECTION 4" => "http://www.aposection4.org",
-		// 		"REGION X" => "http://www.apor10.org",
-		// 		"NATIONAL" => "http://www.apo.org"
-		// 		),
+		$section_array = array(
+			'Home' => array(
+				"NEWS" => "news.php",
+				"RUSH" => "pledging.php",
+				"OFFICERS" => "excomm.php", 
+				"BYLAWS" => "bylaws.php",
+				"SECTION 4" => "http://www.aposection4.org",
+				"REGION X" => "http://www.apor10.org",
+				"NATIONAL" => "http://www.apo.org"
+				));
 		// 	'Service' => array(
 		// 		"RUSH" => "pledging.php",
 		// 		"FELLOWSHIP" => "fellowship.php",
