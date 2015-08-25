@@ -10,9 +10,9 @@
 	
 // 	function format_add_links($text) {
 // 		// match protocol://address/path/
-// 		$text = ereg_replace("https?://([.]?[a-zA-Z0-9#!_/?&=%+~;:,\\-])*", "<a href=\"\\0\" target=\"_blank\">\\0</a>", $text);
+// 		$text = preg_replace("https?://([.]?[a-zA-Z0-9#!_/?&=%+~;:,\\-])*", "<a href=\"\\0\" target=\"_blank\">\\0</a>", $text);
 // 		// match www.something
-// 		$text = ereg_replace("(^| |\(|\[|>)(www([.]?[a-zA-Z0-9#!_/?&=%+~;:,\\-])*)", "\\1<a href=\"http://\\2\" target=\"_blank\">\\2</a>", $text);
+// 		$text = preg_replace("(^| |\(|\[|>)(www([.]?[a-zA-Z0-9#!_/?&=%+~;:,\\-])*)", "\\1<a href=\"http://\\2\" target=\"_blank\">\\2</a>", $text);
 // 		return $text;
 // 	}
 	
