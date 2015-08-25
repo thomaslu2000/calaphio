@@ -70,7 +70,7 @@ DOCHERE_print_head;
 		// 	'Members' => "roster.php",
 		// 	'Contact' => "contact.php");
 		$section_array = array(
-			' ' => array(
+			'Home' => array(
 				"NEWS" => "news.php",
 				"RUSH" => "pledging.php",
 				"OFFICERS" => "excomm.php", 
