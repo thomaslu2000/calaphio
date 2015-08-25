@@ -1,6 +1,5 @@
 body {
-  font-size: 12pt;
-}
+  font-size: 14pt;
 
 a {
   text-decoration: none;
@@ -8,7 +7,7 @@ a {
 
 div {
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 h1 {

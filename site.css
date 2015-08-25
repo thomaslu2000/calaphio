@@ -1,7 +1,7 @@
 div.errorMessage {
 	width: 938px;
-	background-color: pink;
-	border: solid 1px red;
+	background-color: #00F;
+	border: solid 1px white;
 	margin-bottom: 15px;
 	padding: 5px;
 }
@@ -58,7 +58,7 @@ div.successMessage p {
 }
 
 #award_requirements table, #award_requirements th, #award_requirements td {
-	border: 1px solid black;
+	border: 5px solid black;
 	padding:5px;
 	text-align: center;
 }
@@ -83,4 +83,3 @@ div#award_requirements {
 .left {
 	float: left;
 }
-

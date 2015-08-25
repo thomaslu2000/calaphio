@@ -11,26 +11,24 @@ Template::print_body_header('Calendar', 'AWARDS');
 		
 		<h1> Gamma Gamma Chapter Awards </h1>
 		</br>
-		<p>The Gamma Gamma Chapter Awards Program has been recently developed for the purpose of formally recognizing and acknowledging accomplishments by actives. The Awards Program is a way for the chapter to express gratitude to each outstanding active who has gone above and beyond to embody one, or all, of the principles of Leadership, Friendship, and Service.</p></br>
+		<p>The Gamma Gamma Chapter Awards Program serves to formally recognize and acknowledge accomplishments made by active members. The Awards Program is a way for the chapter to express gratitude to each outstanding active who has gone above and beyond to embody one, or all, of the principles of Leadership, Friendship, and Service.</p></br>
 
 		<h2>Active Awards Program</h2>
-			<ul>
-				<li>General Awards are awarded to everyone who fulfills the requirements.</li>
-						</ul></br>
+			<ul> General Awards are awarded to everyone who fulfills chapter requirements.</ul></br>
 
-			<h2>How to get Awards</h2>
+			<h2>How to Apply for Awards</h2>
 			<ul>
-				<li>Provide a list of events attended (Print your requirements page).</li>
-				<li>Due at CM 8 to ExComm.</li>
-				<li>General awards WILL NOT be used to determine Sturdy Oak.</li>
+				<li>Please provide a list of events attended to ExComm by CM 8 by submitting a copy of your requirements page.</li>
+				<li>Note: General awards will not be used to determine Sturdy Oak.</li>
 			</ul></br>
 
 
 			<h2>Driving Awards</h2>
-			<ul>
-				<li>1st place: Most miles driven ($30 gas card).</li>
-				<li>2nd place: ($25 gas card).</li>
-				<li>3rd place: ($20 gas card).</li>
+			<ul> Ranked my most driven miles </ul>
+            <ul>
+				<li>1st place: awarded a $30 gas card</li>
+				<li>2nd place: awarded $25 gas card</li>
+				<li>3rd place: awarded $20 gas card</li>
 			</ul></br>
 	</div>
 	<div id="award_requirements">
@@ -39,12 +37,15 @@ Template::print_body_header('Calendar', 'AWARDS');
 				<td><strong>General Leadership</strong></td>
 				<td><strong>General Friendship</strong></td>
 				<td><strong>General Service</strong></td>
+                <td><strong>Inter-Chapter Maniac</strong></td>
+                <td><strong>Driving Maniac</strong></td>
 				
 			</tr>
 			<tr>
 				<td>Chair at least 5 fellowships/service</td>
 				<td>Chair at least 3 fellowships</td>
 				<td>Chair at least 3 service projects</td>
+                <td>
 			
 			</tr>
 			<tr>

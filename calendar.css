@@ -4,12 +4,16 @@
 
 #calendar {
 	width: 100%;
-	border: solid 1px #B8C3CD;
+	border: solid 2px #5588ff; 
+	border-radius: 15px;  /* not working */ 
 	background-color: white;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px; 
 	color: #444E58;
 	border-collapse: collapse;
+	margin-bottom: 20px; 
+	margin-top: 20px; 
+	text-transform: uppercase; 
 }
 
 #calendar ul {
@@ -29,8 +33,10 @@
 
 #calendar caption {
 	text-align: center;
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 25px;
+	font-weight: 500;
+	color: #5588FF;
+	margin-bottom: 10px;
 }
 
 #calendar tr {
@@ -38,16 +44,17 @@
 
 #calendar th, #calendar td {
 	width: 14%;
-	padding: 0px;
-	border-width: 0px 1px 1px 0px;
+	padding: 2px;
+	border-width: 0px 2px 2px 0px;
+	border-radius: 5px; 
 	border-style: solid;
-	border-color: #5d8cc9;
+	border-color: #3366ff; 
 	font-size: 12px;
 }
 
 #calendar th {
-	color: #6593cf;
-	background-color: #d5e4f2;
+	color: #3366ff;
+	background-color: #99ccff;
 	text-align: center;
 	font-weight: normal;
 }
@@ -62,17 +69,17 @@
 
 #calendar td a.dateTitle {
 	display: block;
-	color: black;
-	background-image: url('images/dateTitleGradient.jpg');
+	color: #666666;
+	/* background-image: url('images/dateTitleGradient.jpg'); */
 	background-repeat: repeat-x;
-	height: 17px;
+	height: 20px;
 	line-height: 17px;
 	padding-left: 2px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 #calendar td.shade {
-	background-color: #a5bfe1;
+	background-color: #99ccff;
 }
 
 #calendar td.today {

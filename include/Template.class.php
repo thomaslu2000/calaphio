@@ -64,15 +64,15 @@ DOCHERE_print_head;
 		global $g_user, $g_error;
 		$section_links_array = array(
 			'Home' => "news.php",
-			'Service' => "service.php",
+			/*'Service' => "service.php",*/ 
 			'Fellowship' => "fellowship.php",
 			'Calendar' => "calendar.php",
-			'Brothers' => "roster.php",
+			'Members' => "roster.php",
 			'Contact' => "contact.php");
 		$section_array = array(
 			'Home' => array(
 				"NEWS" => "news.php",
-				"PLEDGING" => "pledging.php",
+				"RUSH" => "pledging.php",
 				"OFFICERS" => "excomm.php", 
 				"BYLAWS" => "bylaws.php",
 				"SECTION 4" => "http://www.aposection4.org",
@@ -80,12 +80,12 @@ DOCHERE_print_head;
 				"NATIONAL" => "http://www.apo.org"
 				),
 			'Service' => array(
-				"PLEDGING" => "pledging.php",
+				"RUSH" => "pledging.php",
 				"FELLOWSHIP" => "fellowship.php",
 				"REIMBURSEMENT" => "reimbursement.php"
 				),
 			'Fellowship' => array(
-				"PLEDGING" => "pledging.php",
+				"RUSH" => "pledging.php",
 				"SERVICE" => "service.php",
 				"REIMBURSEMENT" => "reimbursement.php"
 				),
@@ -97,7 +97,7 @@ DOCHERE_print_head;
 				"BUDGET" => "https://docs.google.com/spreadsheets/d/1CgFV2Pt4AWtsJTbh4asi2Xi_CoshFJgHvfK93lAneC0/edit#gid=0",
 				"AWARDS" => "awards.php"
 				),
-			'Brothers' => array(
+			'Members' => array(
 				"HISTORY" => "history.php",
 				"ALUMNI" => "alumni.php",
 				"ROSTER" => "roster.php",
@@ -175,7 +175,7 @@ DOCHERE_print_head;
 <div id="paperLayer1">
   <div id="paperLayer2">
     <div id="paperHeader">
-	<!-- img id="logo" src="images/logo.jpg" alt="alpha phi omega" -->
+	<!-- img id="logo" src="images/logo.jpg" alt="alpha phi omega" 
 	<div id="logo"></div>
 	<img id="header_photo" src="header_photos/$header_photo" alt="Photo of brothers" />
 	<!-- img id="quote" src="images/quote.jpg" alt="Be the change that you want to see" -->
@@ -212,7 +212,7 @@ DOCHERE_print_body_footer;
 	function print_disclaimer() {
 		echo <<<DOCHERE_print_disclaimer
 <div id="disclaimer">
-  <p style="margin-bottom: 1em;">112 Hearst gym #4520 Berkeley, CA 94720-4520 / ASUC Funded / Wheelchair Accessible</p>
+  <p style="margin-bottom: 1em;">112 Hearst Gym #4520 Berkeley, CA 94720-4520 / ASUC Funded / Wheelchair Accessible</p>
   <p style="margin-bottom: 1em;">This electronic document is intended for public viewing and is solely for personal reference. It should not be considered an authoritative source nor an official publication of Alpha Phi Omega. Inquiries regarding Alpha Phi Omega and its official publications may be directed to: Alpha Phi Omega, 14901 E. 42nd Street, Independence, MO, 64055 - USA. "Alpha Phi Omega" is a copyrighted, registered trademark in the USA. All rights reserved.</p>
   <p>This electronic document also does not represent any opinion or statement of the University of California, Berkeley.</p>
 </div>

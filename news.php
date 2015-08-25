@@ -60,12 +60,11 @@ if (!$g_user->is_logged_in()) {
         <h2> Congratulations to the Fall 2015 Executive Committee and Pledge Committee!</h2>
         <p class="date">May 5, 2015</p>
 
-    <p style="margin-bottom: 1em">Congratulations on being elected to Fall 2015's Executive Committee and Pledge Committee!<br>
-    Under your great leadership and guidance, we are confident that Gamma Gamma will strive!
-    <p>
+    <p style="margin-bottom: 1em">Congratulations on being elected to Fall 2015's Executive Committee and Pledge Committee! Under your great leadership and guidance, we are confident that Gamma Gamma will strive!
+    </p>
 
     <p style="margin: 1.5em 0px;">
-        <font size="3"><b><u>Fall 2015 Executive Committee</u></b></font><br>
+        <font size="5"><b><i>Fall 2015 Executive Committee</i></b></font><br>
         <b>President</b>: Karen Wu<br>
         <b>Administrative VP</b>: Audrey Tsai<br>
         <b>Membership VP</b>: Nicki Bartak<br>
@@ -77,7 +76,7 @@ if (!$g_user->is_logged_in()) {
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <font size="3"><b><u>Fall 2015 Pledge Committee</u></b></font><br>
+        <font size="5"><b><i>Fall 2015 Pledge Committee</b></i></font><br>
         <b>Leadership Committee Trainer</b>: Ellie Hung, Kathleen Wong<br>
         <b>Fellowship Committee Trainer</b>: Trinh Huynh, Sangmo Arya<br>
         <b>Service Committee Trainer</b>: Kirk Chiu, Virgil Tang<br>
