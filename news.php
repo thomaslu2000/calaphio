@@ -1,4 +1,3 @@
-<link rel = "stylesheet" type = "text/css" href = "mystyle.css"> 
 <?php
 require("include/includes.php");
 require("include/Calendar.class.php");
