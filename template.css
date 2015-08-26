@@ -133,12 +133,13 @@ img#header {
 /* where graphic belongs */ 
 #quote {
   position: relative;
-  float: right;
+  /*float: right;
   /*width: 379px;*/
-  width: 758px;
-  height: 240px;
-  padding-top: 35px; 
-  border-left: solid 1px white;
+  margin-top: 2px;  
+  width: 999px;
+  height: 325px;
+  margin-top: -50px; 
+  border-radius: 5px; 
   background-image: url('images/new_quote2.jpg'); 
 }
 
@@ -241,7 +242,7 @@ img#header {
 	padding-bottom: 7px;
 	margin-bottom: 10px;
 	/*background-color: #696CD6;*/
-	background-color: #0033a0;   /*#003366; */  /* border: solid 1px black; */
+	background-color: #09477F;   /*#003366; */  /* border: solid 1px black; */
 }
 
 #paperSubHeader #welcomeBar p {
@@ -539,7 +540,8 @@ img#header {
   padding-top: 25px; 
   line-height: 25px; 
   size: 25px; 
-  color: #0333A0;   
+  color: #0333A0; 
+  font-style: none;   
 }
 
 #paper .newsItem .date {
