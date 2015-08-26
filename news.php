@@ -9,6 +9,9 @@ Template::print_head(array("site.css", "calendar.css", "excel.css"));
 Template::print_body_header('Home', 'NEWS');
 ini_set('display_errors',1);  error_reporting(E_ALL);
 
+$template = new Template();
+$calendar = new Calendar();
+
 $evalnag = new EvalNag();
 echo $evalnag->display("2007-01-01");
 
@@ -19,7 +22,7 @@ echo $gg_maniac_nag->display();
 // $shoutbox->process();
 // echo $shoutbox->display();
 
-Calendar::print_upcoming_events(5);
+$calendar->print_upcoming_events(5);
 
 $g_user->process_mailer(false);
 $g_user->print_mailer(false);
@@ -449,6 +452,6 @@ if (!$g_user->is_logged_in()) {
 
 <a href="news_fa14.php">Older News ></a>
 <?php
-Template::print_body_footer();
-Template::print_disclaimer();
+$template->print_body_footer();
+$template->print_disclaimer();
 ?>
