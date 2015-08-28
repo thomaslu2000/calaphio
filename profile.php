@@ -7,7 +7,7 @@ require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
 Template::print_head(array("requirements.css", "ggwiki.css", "profile.css"));
-Template::print_body_header('home', '');
+Template::print_body_header('Home', 'PROFILES');
  ca
 
 ?>
