@@ -828,7 +828,7 @@ function print_requirements($user_id) {
 $ic_events
 </table>
 <table>
-<caption>Attend 3 out of 5 rush events - You have completed $rush_events_count</caption>
+<caption>Attend 3 out of 5 rush events: 1 Info Night, Meet the Chapter, +1 Rush Event of Choice - You have completed $rush_events_count</caption>
 $rush_events
 </table>
 <table>
@@ -849,7 +849,7 @@ $tabling_events
 $fundraiser_events
 </table>
 <table>
-<caption>Attend 2/4 chapter events (Ritual, Activation, 2 Forums) - You have completed $chapter_events_count</caption>
+<caption>Attend 3/5 chapter events (Ritual, Interviews/Vote-in, Activation, 2 Forums) - You have completed $chapter_events_count</caption>
 $chapter_events
 </table>
 <table>
@@ -857,7 +857,7 @@ $chapter_events
 $chaptermeeting_events
 </table>
 <table>
-<caption>Attend both elections - You have completed $election_events_count</caption>
+<caption>Attend elections - You have completed $election_events_count</caption>
 $election_events
 </table>
 <table>
