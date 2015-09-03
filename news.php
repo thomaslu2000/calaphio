@@ -62,7 +62,6 @@ if (!$g_user->is_logged_in()) {
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/FTYn-OhkBik" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="profile.php?user_id=2192">Audrey(CM)</a></p>
 </div>
-<?php endif ?>
 
 
 
