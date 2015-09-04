@@ -45,7 +45,7 @@ if (!$g_user->is_logged_in()) {
     <br>Rush Week begins next week, so sign up on the calendar for rush events! This semester's rush requirements includes attending 1 Info Night, Meet the Chapter, and
     1 rush event of your choice. Don't forget your APO gear and smiles! <br>
 
-	<br> If you are still looking for a chair position, these positions are still open: <br>
+	<br><p style="font-style: italic"> If you are still looking for a chair position, these positions are still open: <br>
     <br><br> Family Chair (1 open position)
     <br><br> Family System Chair (1)
     <br><br> Spirit Chair (1) 
@@ -55,11 +55,13 @@ if (!$g_user->is_logged_in()) {
     <br><br> Alumni / Professional Development Chairs (3)
     <br><br> Scrapbook Chair (1)
     <br><br> Photography Chairs (3)
-    <br><br> Workshop Chair (1)
+    <br><br> Workshop Chair (1) </p> 
     <br><br>
 
-	<p style="margin-bottom: 1em"> Happy Thursday, and see your lovely faces around! Throwback to summer:<br>        
-            <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/FTYn-OhkBik" frameborder="0" allowfullscreen></iframe>
+     <p style="margin-bottom: 1em">Happy Thursday, and see your lovely faces around! CM 1 Notes are linked below<br>
+            <a href="https://docs.google.com/presentation/d/1A_zBaknYbJV1-uU1R8fHVBL8gGrLd1Yhf0AT8SlP3ss/edit#slide=id.g65a9917d1_4_130">CM 1 Slides</a><br>          
+           <iframe width="480" height="360" src="https://www.youtube.com/embed/BeOC_O23zNg" frameborder="0" allowfullscreen></iframe>
+	
     <p>-<a href="profile.php?user_id=2192">Audrey(CM)</a></p>
 </div>
 
