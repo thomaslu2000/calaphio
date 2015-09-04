@@ -34,6 +34,7 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2> Welcome Back to School, Gamma Gamma!</h2>
         <p class="date">Thursday, September 3, 2015</p>
@@ -64,6 +65,7 @@ if (!$g_user->is_logged_in()) {
 	
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
 </div>
+<?php endif ?>
 
 
 
