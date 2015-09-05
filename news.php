@@ -46,8 +46,7 @@ if (!$g_user->is_logged_in()) {
     1 rush event of your choice. Don't forget your APO gear and smiles! <br>
 
 	<br> If you are still looking for a chair position, these positions are still open: 
-    <br><br><p style="font-style: italic">  Family Chair (1 open position)
-    <br><br> Family System Chair (1)
+    <br><br><p style="font-style: italic">  Family System Chair (1)
     <br><br> Spirit Chair (1) 
     <br><br> Roll Call Chair (1)
     <br><br> Service Project Chairs (1-2)
