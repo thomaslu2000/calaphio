@@ -837,10 +837,6 @@ $sponsorship_events
 </table>
 </table>
 <table>
-<caption>Attend 1/2 Active Pledge Bondings - You have completed $interfam_events_count</caption>
-$interfam_events
-</table>
-<table>
 <caption>Complete 4 hours tabling - You have completed $tabling_hours hours</caption>
 $tabling_events
 </table>
