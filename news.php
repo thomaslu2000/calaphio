@@ -40,7 +40,7 @@ if (!$g_user->is_logged_in()) {
         <p class="date">Wednesday, September 16, 2015</p>
         <p style="margin-bottom: 1em">
 
-    <ul> 
+    <br> <ul> 
 
         <li> <br>Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! 
             You must make at least 1 LFS event to make your rush requirement. <br></li> 
@@ -53,7 +53,7 @@ if (!$g_user->is_logged_in()) {
 
         <li><br> Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM <br></li>
     
-    </ul> 
+    </ul> </br> 
 
      
     <br> These chairing positions are still recruiting and want you! 
