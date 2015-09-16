@@ -44,13 +44,13 @@ if (!$g_user->is_logged_in()) {
     <br> Announcements: <br> 
 
         <br>
-        <br> -Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! 
+        <br> - Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! 
             You must make at least 1 LFS event to make your rush requirement. <br> 
-        <br>-Help out with interviews on Sunday 9/20 from 10:30am-12:30pm at the Moffit Basements; please dress in business casual.<br>
-        <br>-Please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a> by CM 3. <br>
-        <br>-Sign up for Fall Fellowship by 9/20/15 for the early bird special fee of $25.<br>
-        <br>-Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM <br>
-        <br>-Finally, these chairing positions are still recruiting and want you! <br> 
+        <br> - Help out with interviews on Sunday 9/20 from 10:30am-12:30pm at the Moffit Basements; please dress in business casual.<br>
+        <br> - Please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a> by CM 3. <br>
+        <br> - Sign up for Fall Fellowship by 9/20/15 for the early bird special fee of $25.<br>
+        <br> - Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM <br>
+        <br> - These chairing positions are still recruiting and want you! <br> 
             <br><br><p style="font-style: italic">  Family System Chair (1)
             <br><br> Spirit Chair (1) 
             <br><br> Roll Call Chair (1)
@@ -64,10 +64,9 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin-bottom: 1em"> 
                
-        <div align = center> <iframe width="640" height="360" src="https://www.youtube.com/embed/gRLcnc5ivgM" frameborder="0" allowfullscreen></iframe></div> 
+        <div align = center> <iframe width="640" height="360" src="https://www.youtube.com/embed/gRLcnc5ivgM" frameborder="0" allowfullscreen></iframe></div></div>  
         <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1QMGtWYohj51K8qZzUo8edyfuKoHWI8-aKw_Iuf_uEF0/edit?usp=sharing">CM 2 Notes</a><br>  
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
-</div>
 <?php endif ?>
 
 
