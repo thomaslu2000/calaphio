@@ -40,20 +40,16 @@ if (!$g_user->is_logged_in()) {
         <p class="date">Wednesday, September 16, 2015</p>
         <p style="margin-bottom: 1em">
 
-    <br> <ul> 
+    <br> 
 
-        <li> <br>Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! 
-            You must make at least 1 LFS event to make your rush requirement. <br></li> 
-        
-        <li> <br>Help out with interviews on Sunday 9/20 from 10:30am-12:30pm at the Moffit Basements; please dress in business casual.</li> <br> 
-
-        <br><li> Please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a> by CM 3. <br></li> 
-
-        <li><br> Sign up for Fall Fellowship by 9/20/15 for the early bird special fee of $25.<br></li>
-
-        <li><br> Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM <br></li>
+        <br>Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! 
+            You must make at least 1 LFS event to make your rush requirement. <br>
+        <br>Help out with interviews on Sunday 9/20 from 10:30am-12:30pm at the Moffit Basements; please dress in business casual.<br> 
+        <br> Please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a> by CM 3. <br>
+        <br> Sign up for Fall Fellowship by 9/20/15 for the early bird special fee of $25.<br>
+        <br> Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM <br>
     
-    </ul> </br> 
+  <br> 
 
      
     <br> These chairing positions are still recruiting and want you! 
