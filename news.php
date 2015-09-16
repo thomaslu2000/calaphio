@@ -59,13 +59,13 @@ if (!$g_user->is_logged_in()) {
             <br><br> Photography Chairs (2)
             <br><br> Workshop Chair (1) </p> 
             <br><br>
-        <br> -Finally, remember to sign up for service! <br>
+        <br> Finally, remember to sign up for service! <br>
         <br>
 
     <p style="margin-bottom: 1em"> 
-               
+        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1QMGtWYohj51K8qZzUo8edyfuKoHWI8-aKw_Iuf_uEF0/edit?usp=sharing">CM 2 Notes</a><br>          
         <div align = center> <iframe width="640" height="360" src="https://www.youtube.com/embed/gRLcnc5ivgM" frameborder="0" allowfullscreen></iframe></div></div>  
-        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1QMGtWYohj51K8qZzUo8edyfuKoHWI8-aKw_Iuf_uEF0/edit?usp=sharing">CM 2 Notes</a><br>  
+       
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
 <?php endif ?>
 
