@@ -40,15 +40,20 @@ if (!$g_user->is_logged_in()) {
         <p class="date">Wednesday, September 16, 2015</p>
         <p style="margin-bottom: 1em">
 
-        <br><p style="font-style: bold">  Announcements: </style></br> 
+    <ul> 
 
-        <br>Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! You must make at least 1 LFS event to make your rush requirement. 
-        Help out with interviews on Sunday 9/20 from 10:30am-12:30pm at the Moffit Basements; please dress in business casual. Finally, please fill out 
-        your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a> by CM 3. <br>
+        <li> <br>Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! 
+            You must make at least 1 LFS event to make your rush requirement. <br></li> 
+        
+        <li> <br>Help out with interviews on Sunday 9/20 from 10:30am-12:30pm at the Moffit Basements; please dress in business casual.</li> <br> 
 
-        <br> Sign up for Fall Fellowship by 9/20/15 for the early bird special fee of $25.<br>
+        <br><li> Please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a> by CM 3. <br></li> 
 
-        <br> Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM <br>
+        <li><br> Sign up for Fall Fellowship by 9/20/15 for the early bird special fee of $25.<br></li>
+
+        <li><br> Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM <br></li>
+    
+    </ul> 
 
      
     <br> These chairing positions are still recruiting and want you! 
@@ -61,12 +66,12 @@ if (!$g_user->is_logged_in()) {
     <br><br> Workshop Chair (1) </p> 
     <br><br>
 
-       <br> Finally, remember to sign up for service! <br>
+    <br> Finally, remember to sign up for service! <br>
 
-     <p style="margin-bottom: 1em"> 
-        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1QMGtWYohj51K8qZzUo8edyfuKoHWI8-aKw_Iuf_uEF0/edit?usp=sharing">CM 2 Notes</a><br>          
+    <p style="margin-bottom: 1em"> 
+               
         <div align = center> <iframe width="640" height="360" src="https://www.youtube.com/embed/gRLcnc5ivgM" frameborder="0" allowfullscreen></iframe></div> 
-    
+        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1QMGtWYohj51K8qZzUo8edyfuKoHWI8-aKw_Iuf_uEF0/edit?usp=sharing">CM 2 Notes</a><br>  
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
 </div>
 <?php endif ?>
