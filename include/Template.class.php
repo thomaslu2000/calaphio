@@ -75,6 +75,7 @@ DOCHERE_print_head;
 				"CALENDAR" => "calendar.php",
 				"BROTHERS" => "roster.php", 
 				"BYLAWS" => "bylaws.php",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1ZztSEtEEgewMOIU4m9PWNswifoGMc8-l4gGOe8Hue8E/edit?usp=sharing ",
 				"SECTION 4" => "http://www.aposection4.org",
 				"REGION X" => "http://www.apor10.org",
 				),
