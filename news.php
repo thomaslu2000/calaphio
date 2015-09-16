@@ -41,28 +41,26 @@ if (!$g_user->is_logged_in()) {
         <p style="margin-bottom: 1em">
 
     <br> 
+    <br> Announcements: <br> 
 
-        <br>Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! 
-            You must make at least 1 LFS event to make your rush requirement. <br>
-        <br>Help out with interviews on Sunday 9/20 from 10:30am-12:30pm at the Moffit Basements; please dress in business casual.<br> 
-        <br> Please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a> by CM 3. <br>
-        <br> Sign up for Fall Fellowship by 9/20/15 for the early bird special fee of $25.<br>
-        <br> Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM <br>
-    
-  <br> 
-
-     
-    <br> These chairing positions are still recruiting and want you! 
-    <br><br><p style="font-style: italic">  Family System Chair (1)
-    <br><br> Spirit Chair (1) 
-    <br><br> Roll Call Chair (1)
-    <br><br> Fundraiser Chairs (3)
-    <br><br> Alumni / Professional Development Chairs (2)
-    <br><br> Photography Chairs (2)
-    <br><br> Workshop Chair (1) </p> 
-    <br><br>
-
-    <br> Finally, remember to sign up for service! <br>
+        <br>
+        -Rush LFS Week continues till Friday, so make sure you attend as many rush events as you can! 
+            You must make at least 1 LFS event to make your rush requirement. 
+        -Help out with interviews on Sunday 9/20 from 10:30am-12:30pm at the Moffit Basements; please dress in business casual.
+        -Please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a> by CM 3. 
+        -Sign up for Fall Fellowship by 9/20/15 for the early bird special fee of $25.
+        -Sign up for <a href="http://tinyurl.com/AMPF2k15 "> the Alumni Mentorship Program </a> by Thursday 9/17, 11:59PM 
+        -Finally, these chairing positions are still recruiting and want you! 
+            <br><br><p style="font-style: italic">  Family System Chair (1)
+            <br><br> Spirit Chair (1) 
+            <br><br> Roll Call Chair (1)
+            <br><br> Fundraiser Chairs (3)
+            <br><br> Alumni / Professional Development Chairs (2)
+            <br><br> Photography Chairs (2)
+            <br><br> Workshop Chair (1) </p> 
+            <br><br>
+        -Finally, remember to sign up for service! 
+        <br>
 
     <p style="margin-bottom: 1em"> 
                
