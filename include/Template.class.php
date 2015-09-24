@@ -96,7 +96,7 @@ DOCHERE_print_head;
 				"ADD EVENT" => array("popup", "add_event.php"),
 				"CALENDAR" => "calendar.php",
 				"REQUIREMENTS" => "profile.php?requirements=true&user_id=" . $g_user->data['user_id'],
-				"REIMBURSEMENT" => "reimbursement.php"
+				"REIMBURSEMENT" => "reimbursement.php",
 				"BUDGET" => "https://docs.google.com/spreadsheets/d/1ZztSEtEEgewMOIU4m9PWNswifoGMc8-l4gGOe8Hue8E/edit?usp=sharing",
 				"AWARDS" => "awards.php"
 				),
