@@ -282,7 +282,6 @@ img#header {
   float: left;  
   width: 117px;
   height: 28px;
-  margin-left: 20px;
   padding-right: 10px; 
   padding-left: 10px; 
   /* background-image: url('images/sublink.jpg'); */ 
@@ -291,7 +290,7 @@ img#header {
 
 /* bottom tabs */ 
 #paperSubHeader li a {
-	color: #0033a0; 
+	color: #0033a0;
 	/* color: #3366ff; */ 
 	width: 120px;
 	height: 30px;
@@ -300,12 +299,12 @@ img#header {
 	font-family: Arial, Helvetica, sans-serif;
 	/*font-size: 10pt;*/
 	font-size: 12pt;
-	font-weight: bold; 
+	font-weight: bold;
 	text-align: center;
 	/* border-style: solid;
     border-color: #ffb81c;*/ 
 	display: list-item;
-	margin-top: 0px;
+	/* [disabled]margin-top: 0px; */
 	margin-right: auto;
 	margin-left: 10px;
 	margin-bottom: 4px;
