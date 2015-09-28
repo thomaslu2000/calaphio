@@ -36,6 +36,39 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
+        <h2> CM 3 Recap </h2>
+        <p class="date">Monday, September 28, 2015</p>
+        <p style="margin-bottom: 1em">
+
+    <br> 
+    <br> Announcements: <br> 
+
+        <br>
+        <br> - Sign up for Fall Fellowship November 14, 2015 by October 18 for $30. Prices will rise after this date, so get your ticket now! <br>
+        <br> - Participate in APO Leads Launch course October 14 - 15 by registering on the calendar. <br>
+        <br> - If you haven't done so already, please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a><br>
+        <br> - Interested in Gear? Fill out this <a href= "tinyurl.com/f15gear"> survey! Pledges welcome. </a><br>
+        <br> - These chairing positions are still recruiting and want you! <br> 
+            <br><br> Spirit Chair (1) 
+            <br><br> Fundraiser Chairs (3)
+            <br><br> Alumni / Professional Development Chairs (2)
+            <br><br> Photography Chairs (2)
+            <br><br> Workshop Chair (1) </p> 
+            <br><br>
+        <br> Finally, SIGN UP FOR SERVICE! :) <br>
+        <br>
+
+    <p style="margin-bottom: 1em"> 
+        <div align = center> <iframe width="640" height="360" src="https://www.youtube.com/embed/hrQP2WaZ6OY" frameborder="0" allowfullscreen></iframe> </div> 
+        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1v4m_gpe0IGZQg1sSp-04KkIOIZOYnMOr6cV6b-t5s9E/edit?usp=sharing">CM 3 Slides</a><br>  
+    <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
+<div> 
+<?php endif ?>
+
+
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
         <h2> CM 2 Recap </h2>
         <p class="date">Wednesday, September 16, 2015</p>
         <p style="margin-bottom: 1em">
