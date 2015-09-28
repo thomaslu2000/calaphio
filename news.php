@@ -41,7 +41,7 @@ if (!$g_user->is_logged_in()) {
         <p style="margin-bottom: 1em">
 
     <br> 
-    <br><p style = "font-weight: bold"> ANNOUNCEMENTS: </p><br> 
+    <br> ANNOUNCEMENTS: <br> 
 
         <br>
         <br> - Sign up for Fall Fellowship November 14, 2015 by October 18 for $30. Prices will rise after this date, so get your ticket now! <br>
