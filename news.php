@@ -47,15 +47,14 @@ if (!$g_user->is_logged_in()) {
         <br> - Sign up for Fall Fellowship November 14, 2015 by October 18 for $30. Prices will rise after this date, so get your ticket now! <br>
         <br> - Participate in APO Leads Launch course October 14 - 15 by registering on the calendar. <br>
         <br> - If you haven't done so already, please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a><br>
-        <br> - Interested in Gear? Fill out this <a href= "tinyurl.com/f15gear"> survey! Pledges welcome. </a><br>
         <br> - These chairing positions are still recruiting and want you! <br> 
-            <br><br> Spirit Chair (1) 
+            <br><br><p style="font-style: italic"> Spirit Chair (1) 
             <br><br> Fundraiser Chairs (3)
             <br><br> Alumni / Professional Development Chairs (2)
             <br><br> Photography Chairs (2)
             <br><br> Workshop Chair (1) </p> 
             <br><br>
-        <br> Finally, SIGN UP FOR SERVICE! :) <br>
+        <br> <p style="font-weight: bold">  Finally, SIGN UP FOR SERVICE! :) </style><br>
         <br>
 
     <p style="margin-bottom: 1em"> 
