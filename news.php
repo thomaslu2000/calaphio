@@ -46,20 +46,20 @@ if (!$g_user->is_logged_in()) {
         <br>
         <br> - Sign up for Fall Fellowship November 14, 2015 by October 18 for $30. Prices will rise after this date, so get your ticket now! <br>
         <br> - Participate in APO Leads Launch course October 14 - 15 by registering on the calendar. <br>
-        <br> - If you haven't done so already, please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing </a><br>
+        <br> - If you haven't done so already, please fill out your <a href= "tinyurl.com/f15standing"> Fall 2015 Standing. </a><br>
         <br> - These chairing positions are still recruiting and want you! <br> 
-            <br><br><p style="font-style: italic"> Spirit Chair (1) 
+            <br><br> Spirit Chair (1) 
             <br><br> Fundraiser Chairs (3)
             <br><br> Alumni / Professional Development Chairs (2)
             <br><br> Photography Chairs (2)
-            <br><br> Workshop Chair (1) </p> 
+            <br><br> Workshop Chair (1) 
             <br><br>
-        <br> <p style="font-weight: bold">  Finally, SIGN UP FOR SERVICE! :) </style><br>
+        <br> Finally, SIGN UP FOR SERVICE! :) <br>
         <br>
 
     <p style="margin-bottom: 1em"> 
         <div align = center> <iframe width="640" height="360" src="https://www.youtube.com/embed/hrQP2WaZ6OY" frameborder="0" allowfullscreen></iframe> </div> 
-        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1v4m_gpe0IGZQg1sSp-04KkIOIZOYnMOr6cV6b-t5s9E/edit?usp=sharing">CM 3 Slides</a><br>  
+        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1v4m_gpe0IGZQg1sSp-04KkIOIZOYnMOr6cV6b-t5s9E/edit?usp=sharing" target="_blank">CM 3 Slides</a><br>  
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
 <div> 
 <?php endif ?>
@@ -96,7 +96,7 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin-bottom: 1em"> 
         <div align = center> <iframe width="640" height="360" src="https://www.youtube.com/embed/gRLcnc5ivgM" frameborder="0" allowfullscreen></iframe></div> 
-        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1QMGtWYohj51K8qZzUo8edyfuKoHWI8-aKw_Iuf_uEF0/edit?usp=sharing">CM 2 Notes</a><br>  
+        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1QMGtWYohj51K8qZzUo8edyfuKoHWI8-aKw_Iuf_uEF0/edit?usp=sharing" target="_blank">CM 2 Notes</a><br>  
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
 <div> 
 <?php endif ?>
@@ -128,7 +128,7 @@ if (!$g_user->is_logged_in()) {
     <br><br>
 
      <p style="margin-bottom: 1em">Happy Thursday, and see your lovely faces around! CM 1 Notes are linked below!
-        <br><br> <a href="https://docs.google.com/presentation/d/1A_zBaknYbJV1-uU1R8fHVBL8gGrLd1Yhf0AT8SlP3ss/edit#slide=id.g65a9917d1_4_130">CM 1 Slides</a><br>          
+        <br><br> <a href="https://docs.google.com/presentation/d/1A_zBaknYbJV1-uU1R8fHVBL8gGrLd1Yhf0AT8SlP3ss/edit#slide=id.g65a9917d1_4_130" target="_blank">CM 1 Slides</a><br>          
         <div align = center> <iframe width="480" height="360" src="https://www.youtube.com/embed/BeOC_O23zNg" frameborder="0" allowfullscreen></iframe></div> 
 	
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
