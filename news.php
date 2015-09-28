@@ -41,7 +41,7 @@ if (!$g_user->is_logged_in()) {
         <p style="margin-bottom: 1em">
 
     <br> 
-    <br> Announcements: <br> 
+    <br><p style = "font-weight: bold"> ANNOUNCEMENTS: </p><br> 
 
         <br>
         <br> - Sign up for Fall Fellowship November 14, 2015 by October 18 for $30. Prices will rise after this date, so get your ticket now! <br>
@@ -54,7 +54,7 @@ if (!$g_user->is_logged_in()) {
             <br><br> Photography Chairs (2)
             <br><br> Workshop Chair (1) 
             <br><br>
-        <br> Finally, SIGN UP FOR SERVICE! :) <br>
+        <br><p style = "font-weight: bold">  Finally, SIGN UP FOR SERVICE! :) </p><br>
         <br>
 
     <p style="margin-bottom: 1em"> 
