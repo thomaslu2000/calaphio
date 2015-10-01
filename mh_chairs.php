@@ -8,7 +8,11 @@ if (!$g_user->is_logged_in()) {
 	trigger_error("You must be logged in to view the chairing positions.", E_USER_ERROR);
 } else {
 	echo <<<HEREDOC
-<h1 style="margin-bottom: 1em; text-align: center;">PMP Semester Committees</h1>
+
+
+<h2 style="font-size: 1.5em; font-weight: bold; margin-bottom: 1em;"> PMP SEMESTER COMMITTEES </h2>
+
+
 <font color = "black"> 
 <font color="black"> Email the ExComm VP or any of the committee chairs to join. </font> <br>
 <br>
