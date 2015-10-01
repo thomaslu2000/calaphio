@@ -15,6 +15,7 @@ if (!$g_user->is_logged_in()) {
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
 Presidential: Karen Wu
 </h2>
+
 <div style="max-width: 50em; margin-bottom: 3em; line-height: 1.5;">
 	<p style="margin: 1.5em 0px;">
 <font color="black"> None! BUT, check out some of the other awesome committees below! </font> 
@@ -44,15 +45,12 @@ Help us create the end of the semester yearbook! No design experience needed!<br
 	
 <b>Rush:</b> Joseph Gapuz, Ya-An Hsiung, Dian Jiang, Elizabeth Yuen, James Young<br>
 Come help us recruit some AWESOME new pledges! <font color "red">Note: This committee is now closed. 
+
 </font><br><br>
-
-
 </p>
 </div>
 
-<h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
-Service: Alex Quan
-</h2>
+<h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;"> Service: Alex Quan </h2>
 <div style="max-width: 50em; margin-bottom: 3em; line-height: 1.5;">
 	<p style="margin: 1.5em 0px;">
 	
@@ -72,8 +70,7 @@ Finance Chairs: Kelsey Chan
 	
 <font color = "black"> None! But you can help the Finance department by signing up for fundraisers! </font> 
 
-</p>
-</div>
+</p> </div>
 
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
 Fellowship Committees: Allison Tong
@@ -100,7 +97,7 @@ Pledgemaster Committees: Joseph Gapuz
 <div style="max-width: 50em; margin-bottom: 3em; line-height: 1.5;">
 	<p style="margin: 1.5em 0px;">
 
-<font color="black">Unfortunetly, the pledge committee for this semester is full!.</font><br>
+<font color="black">Unfortunately, the pledge committee for this semester is full.</font><br>
 
 </p>
 </div>
