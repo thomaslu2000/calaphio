@@ -9,7 +9,7 @@ if (!$g_user->is_logged_in()) {
 } else {
 	echo <<<HEREDOC
 <h1 style="margin-bottom: 1em; text-align: center;">PMP Semester Committees</h1>
-
+<font color = "black"> 
 <font color="black"> Email the ExComm VP or any of the committee chairs to join. </font> <br>
 <br>
 <h2 style="font-size: 1.3em; font-weight: bold; border-bottom: solid 1px black;">
@@ -111,6 +111,8 @@ Historian Committees: Moncarol Wang
 <font color = "black"> 
 <b>Scrapbook</b>: Allyssa Rodriguez <br>
 Help us make the end-of semester Scrapbook! <br><br></font> 
+
+</font> 
 
 
 </p>
