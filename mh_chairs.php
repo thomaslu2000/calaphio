@@ -58,7 +58,7 @@ Come help us recruit some AWESOME new pledges! <font color "red">Note: This comm
 <div style="max-width: 50em; margin-bottom: 3em; line-height: 1.5;">
 	<p style="margin: 1.5em 0px;">
 	
-<b> Halloween Carnival Committee:</b> Sophia Du, Kelly Luu, Annie Yu <br>
+<b> Halloween Carnival Committee:</b> Elaine Do, Sophia Du, Kelly Luu, Annie Yu <br>
 Help us make crafts and design games for local elementary children in our annual Halloween Carnival!<br><br>
 <b> Service Project Committee:</b> Elise Hayashi, Dian Jiang, Ramya Rupanagudi, Hannah Schnell  <br>
 Help plan informational workshops, fun exercises, and activities for kids for Healthy Heroes Day on Saturday, November 21st!<br><br>	
