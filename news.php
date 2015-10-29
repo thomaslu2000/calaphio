@@ -29,10 +29,33 @@ $g_user->print_mailer(false);
 $g_user->print_personal_messages();
 
 if (!$g_user->is_logged_in()) {
-	echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
+    echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
 }
 
 ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+        <h2> CM Recap </h2>
+        <p class="date">Wednesday, October 28, 2015</p>
+        <p style="margin-bottom: 1em">
+
+    <br> 
+    <br> ANNOUNCEMENTS: <br> 
+
+        <br>
+        <br> - Sign up for Fall Fellowship November 14, 2015 by November 2nd for $35. <br>
+        <br> - Banquet tickets are on sale for $40 till CM 6, November 3rd </a><br>
+        <br> - Upload files and access chapter test Bank <a href="https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=drive_web" target="_blank">Test Bank</a> </a><br>
+        <br>
+
+    <p style="margin-bottom: 1em"> 
+        <div align = center><iframe width="560" height="315" src="https://www.youtube.com/embed/CDV8t3Q97H8" frameborder="0" allowfullscreen></iframe> </div> 
+        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1p67KeUHzZKx2Ssdp6HIPlkbFWd6ZdXgdXk5JWcDysFU/edit?usp=sharing" target="_blank">CM 5 Slides</a><br>  
+        <br><br> <a href="https://docs.google.com/a/calaphio.com/presentation/d/1YvHsGyyNAhszoot74Kc2oJ6rQzQCQFv1c_3GPcMsrR4/edit?usp=sharing" target="_blank">CM 4 Slides</a><br>  
+    <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
+<div> 
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
@@ -109,13 +132,13 @@ if (!$g_user->is_logged_in()) {
         <p class="date">Thursday, September 3, 2015</p>
         <p style="margin-bottom: 1em">
 
-	<br> Alpha Phi Omega welcomes you back to school! We hope everyone is having a wonderful start
+    <br> Alpha Phi Omega welcomes you back to school! We hope everyone is having a wonderful start
     to this new school year. Here are a couple reminders for the next two weeks: <br> 
 
     <br>Rush Week begins next week, so sign up on the calendar for rush events! This semester's rush requirements includes attending 1 Info Night, Meet the Chapter, and
     1 rush event of your choice. Don't forget your APO gear and smiles! <br>
 
-	<br> If you are still looking for a chair position, these positions are still open: 
+    <br> If you are still looking for a chair position, these positions are still open: 
     <br><br><p style="font-style: italic">  Family System Chair (1)
     <br><br> Spirit Chair (1) 
     <br><br> Roll Call Chair (1)
@@ -130,7 +153,7 @@ if (!$g_user->is_logged_in()) {
      <p style="margin-bottom: 1em">Happy Thursday, and see your lovely faces around! CM 1 Notes are linked below!
         <br><br> <a href="https://docs.google.com/presentation/d/1A_zBaknYbJV1-uU1R8fHVBL8gGrLd1Yhf0AT8SlP3ss/edit#slide=id.g65a9917d1_4_130" target="_blank">CM 1 Slides</a><br>          
         <div align = center> <iframe width="480" height="360" src="https://www.youtube.com/embed/BeOC_O23zNg" frameborder="0" allowfullscreen></iframe></div> 
-	
+    
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
 </div>
 <?php endif ?>
