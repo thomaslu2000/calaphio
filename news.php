@@ -46,7 +46,7 @@ if (!$g_user->is_logged_in()) {
         <br>
         <br> - Sign up for Fall Fellowship November 14, 2015 by November 2nd for $35. <br>
         <br> - Banquet tickets are on sale for $40 till CM 6, November 3rd </a><br>
-        <br> - Upload files and access chapter test Bank <a href="https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=drive_web" target="_blank">Test Bank</a> </a><br>
+        <br> - Upload files and access chapter <a href="https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=drive_web" target="_blank"> Test Bank</a> </a><br>
         <br>
 
     <p style="margin-bottom: 1em"> 
