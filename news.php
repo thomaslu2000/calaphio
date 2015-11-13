@@ -47,7 +47,7 @@ if (!$g_user->is_logged_in()) {
         <br>
         <br> - Banquet tickets are on sale for $50 till CM 7, November 17th </a><br>
         <br> - Upload files and access chapter <a href="https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=drive_web" target="_blank"> Test Bank</a> </a><br>
-        <br> - Elections is coming up! If you are interested in running, please send your platform to Karen Wu at president@calaphio.com. You may view 
+        <br> - Elections is coming up! If you are interested in running, please send your platform to me at admin-vp@calaphio.com and forward Karen Wu at president@calaphio.com. You may view 
         <a href="https://docs.google.com/spreadsheets/d/15LmMG3J9SihdrVF3DMralnU9RwHOh2j8B7PYOXxJv7Y/edit?usp=sharing" target="_blank"> Nominations </a> here.  </a><br>
  
     <p style="margin-bottom: 1em"> 
