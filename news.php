@@ -47,11 +47,11 @@ if (!$g_user->is_logged_in()) {
         <br>
         <br> - Banquet tickets are on sale for $50 till CM 7, November 17th </a><br>
         <br> - Upload files and access chapter <a href="https://drive.google.com/folderview?id=0B1PYMBbhnLMsNms3Uk4wcFQxLTQ&usp=drive_web" target="_blank"> Test Bank</a> </a><br>
-        <br> - Elections is coming up! If you are interested in running, please send your platform to Karen Wu at president@calaphio.com. </a><br>
+        <br> - Elections is coming up! If you are interested in running, please send your platform to Karen Wu at president@calaphio.com. You may view 
+        <br><br> <a href="https://docs.google.com/spreadsheets/d/15LmMG3J9SihdrVF3DMralnU9RwHOh2j8B7PYOXxJv7Y/edit?usp=sharing" target="_blank"> Nominations </a><br> here.  </a><br>
         <br>
 
     <p style="margin-bottom: 1em"> 
-        <br><br> <a href="https://docs.google.com/spreadsheets/d/15LmMG3J9SihdrVF3DMralnU9RwHOh2j8B7PYOXxJv7Y/edit?usp=sharing" target="_blank"> Nominations </a><br>  
         <br><br> <a href="https://docs.google.com/presentation/d/1BT_GyPrF2KYPGkCTmxXnBMPaOTr6LqAWopH3xHb5HDY/edit?usp=sharing" target="_blank"> CM 6 Slides</a><br>  
         <iframe width="560" height="315" src="https://www.youtube.com/embed/UPisONg_h3g" frameborder="0" allowfullscreen></iframe> 
     <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
