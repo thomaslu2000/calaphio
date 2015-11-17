@@ -51,6 +51,8 @@ if (!$g_user->is_logged_in()) {
     <a href="https://docs.google.com/document/d/1PwSw_NaL9EIHukSfBIIr_BFG450DvJd1zHIqVIwO-jI/edit" target="_blank"> Pledgemaster Platform Joseph Gapuz </a> </a><br>
     <a href="https://docs.google.com/document/d/1hXmP1ZXWBl-XVhbchMclh07kJHrfXFiyg7aTQ1Y7fTA/edit?ts=564b7b38" target="_blank"> Pledgemaster Platform Karen Wu </a> </a><br>
     <a href="https://docs.google.com/document/d/1F0bBHQR1PO1xQAt-Avc4TY23aCECDK-YRl_K0OP1iWU/edit?usp=sharing" target="_blank"> Membership Platform Bella Tsay </a> </a><br>
+     <a href="https://docs.google.com/document/d/10UoThBWXdv_YPDlq7F7BSbBPSCdoCRcqTsz1Ln77swc/edit" target="_blank"> Service Platform Hannah Schnell </a> </a><br>
+
 
 
 
