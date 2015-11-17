@@ -34,6 +34,24 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+        <h2> ELECTION PLATFORMS </h2>
+        <p class="date">Monday, November 16, 2015</p>
+        <p style="margin-bottom: 1em">
+
+    <br> Hello everyone! Elections is coming up tomorow. Please take the time to read the platforms of your fellow 
+    candidates in preparation. </br> 
+
+    <a href="https://docs.google.com/document/d/1ChhGHX3hmeYQIpeepbybwjhy1gHcnC86nA9OJG4nsE8/edit?usp=sharing"> President Platform Elise Hayeshi </a> </a><br>
+    <a href="https://docs.google.com/document/d/1yWrqy5R2v_M3w3eE3Pvpb1xUOK33uPijkMnG1C_vHjE/edit?usp=sharing" target="_blank"> Pledgemaster Platform Kirk Chiu </a> </a><br>
+    <a href="https://docs.google.com/document/d/1F0bBHQR1PO1xQAt-Avc4TY23aCECDK-YRl_K0OP1iWU/edit?usp=sharing" target="_blank"> Membership Platform Bella Tsay </a> </a><br>
+
+
+    <br> Also, remember to sign up for <a href="https://docs.google.com/a/berkeley.edu/forms/d/1Pt65BzEwwuiQ_8qCQIxsfD_d3y80EPGsZv9q2j4K_Ko/viewform" target="_blank"> Talent Show </a> this Thursday, November 19th!<br>
+<div> 
+<?php endif ?>
+
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
