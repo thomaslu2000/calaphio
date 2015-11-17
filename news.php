@@ -42,10 +42,16 @@ if (!$g_user->is_logged_in()) {
 
     <br> Hello everyone! Elections is coming up tomorow. Please take the time to read the platforms of your fellow 
     candidates in preparation. </br> 
-
-    <a href="https://docs.google.com/document/d/1ChhGHX3hmeYQIpeepbybwjhy1gHcnC86nA9OJG4nsE8/edit?usp=sharing"> President Platform Elise Hayeshi </a> </a><br>
+    <br> 
+    <a href="https://docs.google.com/document/d/1ChhGHX3hmeYQIpeepbybwjhy1gHcnC86nA9OJG4nsE8/edit?usp=sharing"> President Platform Elise Hayashi </a> </a><br>
+    <a href="https://docs.google.com/document/d/1gSbOlB4OYj0Sie3V4t3YzhaP4AFQVzfSn4lp6GR2PdI/edit" target="_blank"> President Platform Ellie Hung</a> </a><br>
+    <a href="https://docs.google.com/document/d/1PA63S07j-WmEDvxoEQlDhPPckkbPom-l3i9CaVwrjnc/edit?usp=sharing"> President Platform Virgil Tang </a> </a><br>
     <a href="https://docs.google.com/document/d/1yWrqy5R2v_M3w3eE3Pvpb1xUOK33uPijkMnG1C_vHjE/edit?usp=sharing" target="_blank"> Pledgemaster Platform Kirk Chiu </a> </a><br>
+    <a href="https://docs.google.com/document/d/1hW1e3AInAKSgwQg3mfF5b7wfpHI4PO5kXSDpHq5iLCg/edit" target="_blank"> Pledgemaster Platform Justin Fang </a> </a><br>
+    <a href="https://docs.google.com/document/d/1PwSw_NaL9EIHukSfBIIr_BFG450DvJd1zHIqVIwO-jI/edit" target="_blank"> Pledgemaster Platform Joseph Gapuz </a> </a><br>
+    <a href="" target="_blank"> Pledgemaster Platform Karen Wu </a> </a><br>
     <a href="https://docs.google.com/document/d/1F0bBHQR1PO1xQAt-Avc4TY23aCECDK-YRl_K0OP1iWU/edit?usp=sharing" target="_blank"> Membership Platform Bella Tsay </a> </a><br>
+
 
 
     <br> Also, remember to sign up for <a href="https://docs.google.com/a/berkeley.edu/forms/d/1Pt65BzEwwuiQ_8qCQIxsfD_d3y80EPGsZv9q2j4K_Ko/viewform" target="_blank"> Talent Show </a> this Thursday, November 19th!<br>
