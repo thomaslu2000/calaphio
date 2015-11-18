@@ -41,42 +41,42 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <img src="/images/excomm16/virgil.jpg"></img>
+                    <img src="images/excomm16/virgil.jpg"></img>
                     <p class="center"><strong>President</strong>: <a href="profile.php?user_id=2873">Virgil Tang</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <img src="/images/excomm16/hannah.jpg"></img>
+                    <img src="images/excomm16/hannah.jpg"></img>
                     <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=2920">Hannah Schnell</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <img src="/images/excomm16/karen.jpg"></img>
+                    <img src="images/excomm16/karen.jpg"></img>
                     <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <img src="/images/excomm16/trinh.jpg"></img>
+                    <img src="images/excomm16/trinh.jpg"></img>
                     <p class="center"><strong>Admin VP</strong>: <a href="profile.php?user_id=2859">Trinh Huynh</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <img src="/images/excomm16/bella.jpg"></img>
+                    <img src="images/excomm16/bella.jpg"></img>
                     <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=2073">Bella Tsay</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <img src="/images/excomm16/marilyn.jpg"></img>
+                    <img src="images/excomm16/marilyn.jpg"></img>
                     <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2929">Marilyn Chan</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <img src="/images/excomm16/joseph.jpg"></img>
+                    <img src="images/excomm16/joseph.jpg"></img>
                     <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2175">Joseph Gapuz</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <img src="/images/excomm16/ryan.jpg"></img>
+                    <img src="images/excomm16/ryan.jpg"></img>
                     <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2993">Ryan Yen</a></p>
                 </div>
 
