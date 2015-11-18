@@ -34,6 +34,30 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+
+<div class="newsItem">
+        <h2> ELECTION RESULTS </h2>
+        <p class="date"> Wednesday, November 18, 2015</p>
+        <p style="margin-bottom: 1em">
+
+    <br> Please congratulate next semester's upcoming ExComm Spring 2016! We are confident that APO will continue to grow
+    and strengthen under your leadership. </br> 
+    <br> 
+    <br> President: Virgil Tang </br> 
+    <br> Service: Hannah Schnell </br> 
+    <br> Pledgemaster: Karen Wu </br> 
+    <br> Admin: Trinh Huynh </br> 
+    <br> Membership: Bella Tsay </br> 
+    <br> Finance: Marilyn Chan </br> 
+    <br> Fellowship: Joseph Gapuz </br> 
+    <br> Historian: Ryan Yen </br> 
+    <br> 
+
+    <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
+
+<div> 
+
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2> ELECTION PLATFORMS </h2>
@@ -57,6 +81,7 @@ if (!$g_user->is_logged_in()) {
 
 
     <br> Also, remember to sign up for <a href="https://docs.google.com/a/berkeley.edu/forms/d/1Pt65BzEwwuiQ_8qCQIxsfD_d3y80EPGsZv9q2j4K_Ko/viewform" target="_blank"> Talent Show </a> this Thursday, November 19th!<br>
+    <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
 <div> 
 <?php endif ?>
 
