@@ -34,28 +34,58 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
+ <div class="newsItem">
+        <br/>
+        <h2>Congratulations to the Spring 2016 Executive Committee!</h2>
+        <p class="date">Wednesday November 18, 2015</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <img src="images/excomm16/virgil.jpg"></img>
+                    <p class="center"><strong>President</strong>: <a href="profile.php?user_id=2452">Virgil Tang</a></p>
+                </div>
 
-<div class="newsItem">
-        <h2> ELECTION RESULTS </h2>
-        <p class="date"> Wednesday, November 18, 2015</p>
-        <p style="margin-bottom: 1em">
+                <div class="person-picture">
+                    <img src="images/excomm16/hannah.jpg"></img>
+                    <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=2175">Hannah Schnell</a></p>
+                </div>
 
-    <br> Please congratulate next semester's upcoming ExComm Spring 2016! We are confident that APO will continue to grow
-    and strengthen under your leadership. </br> 
-    <br> 
-    <br> President: Virgil Tang </br> 
-    <br> Service: Hannah Schnell </br> 
-    <br> Pledgemaster: Karen Wu </br> 
-    <br> Admin: Trinh Huynh </br> 
-    <br> Membership: Bella Tsay </br> 
-    <br> Finance: Marilyn Chan </br> 
-    <br> Fellowship: Joseph Gapuz </br> 
-    <br> Historian: Ryan Yen </br> 
-    <br> 
+                <div class="person-picture">
+                    <img src="images/excomm16/karen.jpg"></img>
+                    <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=2164">Karen Wu</a></p>
+                </div>
 
-    <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
+                <div class="person-picture">
+                    <img src="images/excomm16/trinh.jpg"></img>
+                    <p class="center"><strong>Admin VP</strong>: <a href="profile.php?user_id=2447">Trinh Huynh</a></p>
+                </div>
 
-<div> 
+                <div class="person-picture">
+                    <img src="images/excomm16/bella.jpg"></img>
+                    <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=2461">Bella Tsay</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm16/marilyn.jpg"></img>
+                    <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2137">Marilyn Chan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm16/joseph.jpg"></img>
+                    <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2432">Joseph Gapuz</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm16/ryan.jpg"></img>
+                    <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2730">Ryan Yen</a></p>
+                </div>
+
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
+    </div>
 
 
 <?php if ($g_user->is_logged_in()): ?>
