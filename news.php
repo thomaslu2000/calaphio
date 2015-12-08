@@ -64,7 +64,7 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <img src="images/pcomm/virgil.jpg"></img>
+                    <img src="images/excomm16/virgil.jpg"></img>
                     <p class="center"><strong>President</strong>: <a href="profile.php?user_id=2873">Virgil Tang</a></p>
                 </div>
 
