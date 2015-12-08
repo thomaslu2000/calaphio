@@ -106,7 +106,7 @@ if (!$g_user->is_logged_in()) {
         <p  class = "text-align: center"> Driving Maniacs: Antony Nguyen (1st), Karen Wu (2nd), Elise Hayashi (3rd) </p>
         <img src="images/award_fall15/driving.jpg"></img>
 
-        <p  class = "text-align: center"> IC Maniacs: Virgil Tang (1st), James Young (2nd) </p>
+        <p  class = "text-align: center"> IC Maniacs: Virgil Tang (1st), James Young/Joseph Gapuz (2nd) </p>
         <img src="images/award_fall15/IC.jpg"></img>
 
          <p  class = "text-align: center"> Sturdy Oaks </p>
