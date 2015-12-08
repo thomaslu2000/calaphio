@@ -28,20 +28,39 @@ $g_user->process_mailer(false);
 $g_user->print_mailer(false);
 $g_user->print_personal_messages();
 
-if (!$g_user->is_logged_in()) {
-    echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
-}
 
-?>
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+        <h2> Congratulations to the Fall 2015 Award Recipients! </h2>
+        <p class="date"> Monday, December 7, 2015 </p>
+        <p style="margin-bottom: 1em">
 
-    <div class="newsItem">
+        <p class = "text-align: center"> Leadership Awards </p>
+        <img src="images/award_fall15/leadership.jpg"></img>
+
+        <p  class = "text-align: center"> Service Awards </p>
+        <img src="images/award_fall15/service.jpg"></img>
+
+        <p  class = "text-align: center"> Driving Maniacs: Antony Nguyen (1st), Karen Wu (2nd), Elise Hayashi (3rd) </p>
+        <img src="images/award_fall15/driving.jpg"></img>
+
+        <p  class = "text-align: center"> IC Maniacs: Virgil Tang (1st), James Young (2nd) </p>
+        <img src="images/award_fall15/IC.jpg"></img>
+
+         <p  class = "text-align: center"> Sturdy Oaks </p>
+        <img src="images/award_fall15/sturdy.jpg"></img>
+
+<div> 
+<?php endif ?>
+
+<div class="newsItem">
         <br/>
-        <h2>Congratulations to the Fall 2015 Award Recipients!</h2>
-        <p class="date">Monday December 7, 2015</p>
+        <h2>Congratulations to the Spring 2016 Executive Committee!</h2>
+        <p class="date"> Wednesday, November 18 2015</p>
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <img src="images/pcomm/patrick.jpg"></img>
+                    <img src="images/pcomm/virgil.jpg"></img>
                     <p class="center"><strong>President</strong>: <a href="profile.php?user_id=2873">Virgil Tang</a></p>
                 </div>
 
@@ -86,36 +105,6 @@ if (!$g_user->is_logged_in()) {
 
         <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
     </div>
-
-if (!$g_user->is_logged_in()) {
-    echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
-}
-
-?>
-
-<?php if ($g_user->is_logged_in()): ?>
-<div class="newsItem">
-        <h2> Congratulations to the Fall 2015 Award Recipients! </h2>
-        <p class="date"> Monday, December 7, 2015 </p>
-        <p style="margin-bottom: 1em">
-
-        <p> Leadership Awards </p>
-        <img src="images/award_fall15/leadership.jpg"></img>
-
-        <p> Service Awards </p>
-        <img src="images/award_fall15/service.jpg"></img>
-
-        <p> Driving Maniacs: Antony Nguyen (1st), Karen Wu (2nd), Elise Hayashi (3rd) </p>
-        <img src="images/award_fall15/driving.jpg"></img>
-
-        <p> IC Maniacs: Virgil Tang (1st), James Young (2nd) </p>
-        <img src="images/award_fall15/IC.jpg"></img>
-
-         <p> Sturdy Oaks </p>
-        <img src="images/award_fall15/sturdy.jpg"></img>
-
-<div> 
-<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
