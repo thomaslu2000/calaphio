@@ -33,6 +33,64 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<div class="newsItem">
+        <br/>
+        <h2>Congratulations to the Spring 2016 Pledge Committee!</h2>
+        <p class="date"> Monday, December 8 2015</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <img src="images/pcomm_sp16/patrick.jpg"></img>
+                    <p class="center"><strong>  Leadership Trainer </strong>: <a href="profile.php?user_id=2873">Patrick Chang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_sp16/james.jpg"></img>
+                    <p class="center"><strong> Adminstrative Trainer</strong>: <a href="profile.php?user_id=2920">James Young</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_sp16/christine.jpg"></img>
+                    <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=1623">Christine Fang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_sp16/elaine.jpg"></img>
+                    <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=1623">Elaine Do</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_sp16/estelle.jpg"></img>
+                    <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2859">Estelle Yeung</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_sp16/sophia.jpg"></img>
+                    <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2859">Sophia Du</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_sp16/antony.jpg"></img>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=2073">Antony Nguyen</a></p>
+                </div>
+
+                 <div class="person-picture">
+                    <img src="images/pcomm_sp16/caroline.jpg"></img>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=2073">Caroline Ba</a></p>
+                </div>
+
+                 <div class="person-picture">
+                    <img src="images/pcomm_sp16/lisa.jpg"></img>
+                    <p class="center"><strong>Historian Trainer</strong>: <a href="profile.php?user_id=2073">Lisa Hoang</a></p>
+                </div>
+
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
+    </div>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2> Congratulations to the Fall 2015 Award Recipients! </h2>
