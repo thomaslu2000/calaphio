@@ -72,7 +72,7 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <img src="images/excomm_f15/karen.png"></img>
+                    <img src="images/excomm_f15/karen.jpeg"></img>
                     <p class="center"><strong>  President </strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
                 </div>
 
@@ -92,7 +92,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <img src="images/excomm_f15/kelsey.jpg"></img>
+                    <img src="images/excomm_f15/kelsey.jpeg"></img>
                     <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
                 </div>
 
@@ -135,7 +135,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <img src="images/pcomm_f15/virgiljpg"></img>
+                    <img src="images/pcomm_f15/virgil.jpg"></img>
                     <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=2873">Virgil Tang</a></p>
                 </div>
 
