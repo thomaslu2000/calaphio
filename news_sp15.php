@@ -66,26 +66,98 @@ if (!$g_user->is_logged_in()) {
     <p style="margin-bottom: 1em">Congratulations on being elected to Fall 2015's Executive Committee and Pledge Committee! Under your great leadership and guidance, we are confident that Gamma Gamma will strive!
     </p>
 
-    <p style="margin: 1.5em 0px;">
-        <font size="5"><b><i>Fall 2015 Executive Committee</i></b></font><br>
-        <b>President</b>: Karen Wu<br>
-        <b>Administrative VP</b>: Audrey Tsai<br>
-        <b>Membership VP</b>: Nicki Bartak<br>
-        <b>Service VP</b>: Alex Quan<br>
-        <b>Finance VP</b>: Kelsey Chan<br>
-        <b>Fellowship VP</b>: Allison Tong<br>
-        <b>Pledgemaster</b>: Lakana Bun<br>
-        <b>Historian</b>: Moncarol Wang<br>
-    </p>
+    <div class="newsItem">
+        <br/>
+        <h2>Fall 2015 Executive Committee</h2>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <img src="images/excomm_f15/karen.png"></img>
+                    <p class="center"><strong>  President </strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
+                </div>
 
-    <p style="margin: 1.5em 0px;">
-        <font size="5"><b><i>Fall 2015 Pledge Committee</b></i></font><br>
-        <b>Leadership Committee Trainer</b>: Ellie Hung, Kathleen Wong<br>
-        <b>Fellowship Committee Trainer</b>: Trinh Huynh, Sangmo Arya<br>
-        <b>Service Committee Trainer</b>: Kirk Chiu, Virgil Tang<br>
-        <b>Finance Committee Trainer</b>: Sherri Zhang, Tenzin Paldon<br>
-        <b>Historian Committee Trainer</b>: Joanna Choi<br>
-    </p>
+                <div class="person-picture">
+                    <img src="images/excomm_f15/audrey.jpg"></img>
+                    <p class="center"><strong> Administrative VP</strong>: <a href="profile.php?user_id=2192">Audrey Tsai</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f15/nicki.jpg"></img>
+                    <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=2851">Nicki Bartak</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f15/alex.jpg"></img>
+                    <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=2432">Alex Quan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f15/kelsey.jpg"></img>
+                    <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f15/allison.jpg"></img>
+                    <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2874">Allison Tong</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f15/joseph.jpg"></img>
+                    <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=2175">Joseph Gapuz</a></p>
+                </div>
+
+                 <div class="person-picture">
+                    <img src="images/excomm_f15/moncarol.jpg"></img>
+                    <p class="center"><strong>Historian VP</strong>: <a href="profile.php?user_id=2888">Moncarol Wang</a></p>
+                </div>
+
+        <h2>Congratulations to the Fall 2015 Pledge Committee!</h2>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <img src="images/pcomm_f15/ellie.jpg"></img>
+                    <p class="center"><strong>  Leadership Trainer </strong>: <a href="profile.php?user_id=2858">Ellie Hung</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_f15/sangmo.jpg"></img>
+                    <p class="center"><strong> Fellowship Trainer</strong>: <a href="profile.php?user_id=2889">Sangmo Arya</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_f15/trinh.jpg"></img>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=2859">Trinh Huynh</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_f15/kirk.jpg"></img>
+                    <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=2854">Kirk Chiu</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_f15/virgiljpg"></img>
+                    <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=2873">Virgil Tang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_f15/tenzin.jpg"></img>
+                    <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2870">Tenzin Paldon</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/pcomm_f15/sherri.jpg"></img>
+                    <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2882">Sherri Zhang</a></p>
+                </div>
+
+                 <div class="person-picture">
+                    <img src="images/pcomm_f15/joanna.jpg"></img>
+                    <p class="center"><strong>Historian Trainer</strong>: <a href="profile.php?user_id=2855">Joanna Choi</a></p>
+                </div>
+
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
     <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
 </div>
 

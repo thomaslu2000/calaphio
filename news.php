@@ -33,6 +33,7 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <br/>
         <h2>Congratulations to the Spring 2016 Pledge Committee!</h2>
@@ -90,6 +91,7 @@ if (!$g_user->is_logged_in()) {
 
         <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
     </div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
