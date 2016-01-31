@@ -58,7 +58,7 @@ if (!$g_user->is_logged_in()) {
 
     <br> Alpha Phi Omega welcomes you back to school! </br> 
     
-    <p>-<a href="profile.php?user_id=2859">Trinh Huynh (CM)</a></p>
+    <p>-<a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
 </div>
 
 
