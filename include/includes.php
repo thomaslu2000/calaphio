@@ -9,7 +9,7 @@ if (isset($_REQUEST['sid'])) {
 session_start();
 header("Cache-control: private"); // Hack to fix IE sessions
 ob_start();
-require('settings/Settings.php');
+require('/home/calaphio/configs/members.calaphio.com/Settings.php');
 //require('/home/calaphi/settings/Settings.php');
 if (SESSION_DEBUG) {
 	print_r($_SESSION);
