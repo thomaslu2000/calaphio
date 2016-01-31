@@ -4,7 +4,7 @@ require("include/Template.class.php");
 require("include/Calendar.class.php");
 Template::print_head(array());
 Template::print_body_header('Home', 'ADMIN');
-if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase") || !($g_user->data['user_id'] == 1412 || $g_user->data['user_id'] == 2888)) /*ERROR IF NOT KELSEY C. OR JEFF M.*/{
+if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase") || !($g_user->data['user_id'] == 2993 || $g_user->data['user_id'] == 2873)) /*ERROR IF NOT RYAN Y. OR VIRGIL T.*/{
 	trigger_error("You must be logged in as an admin and a historian to access this feature", E_USER_ERROR);
 } else {
 
