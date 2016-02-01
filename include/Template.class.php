@@ -88,14 +88,23 @@ DOCHERE_print_head;
 				"BUDGET" => "https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit#gid=1283827056",
 				"AWARDS" => "awards.php"
 				),
-			'Brothers' => array(
+			'Service' => array(
 				"HOME" => "news.php",
 				"CALENDAR" => "calendar.php",
 				"BROTHERS" => "roster.php", 
-				"WIKI" => "ggwiki.php", 
 				"SERVICE" => "service.php",
 				"FELLOWSHIP" => "fellowship.php",
 				"BYLAWS" => "bylaws.php",
+				"REIMBURSEMENT" => "reimbursement.php"
+				),
+			'Fellowship' => array(
+				"HOME" => "news.php",
+				"CALENDAR" => "calendar.php",
+				"BROTHERS" => "roster.php", 
+				"SERVICE" => "service.php",
+				"FELLOWSHIP" => "fellowship.php",
+				"BYLAWS" => "bylaws.php",
+				"REIMBURSEMENT" => "reimbursement.php"
 				),
 			// 'Members' => array(
 			// 	"HOME" => "news.php",
