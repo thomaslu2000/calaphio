@@ -49,11 +49,11 @@ img#header {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: -5px;
     padding-bottom: 10px;
     background-color: #FFF;
     opacity: 1;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     border: solid 2px #afb6b9;
 }
 #paperHeader {
@@ -90,8 +90,6 @@ img#header {
     width: 1000px;
     height: 325px;
     margin-top: -50px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     background-image: url(images/new_quote2.jpg);
 }
 #paperHeader ul {
@@ -132,7 +130,7 @@ img#header {
 }
 #paperSubHeader #welcomeBar {
     width: 1000px;
-    height: 61px;
+    height: 48px;
     line-height: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -234,10 +232,16 @@ img#header {
     background-color: #D9D9D9
 }
 #paper .upcomingEvents .eventBox .title a {
-    color: #000
+    color: #000;
+    font-weight: 700;
 }
 #paper .upcomingEvents .eventBox .date {
-    font-weight: 400
+    font-weight: 700;
+    color: #222;
+}
+
+#paper .upcomingEvents .eventBox .location {
+    color: #222;
 }
 #paper .shoutbox .postingBox {
     font-size: 8pt;
