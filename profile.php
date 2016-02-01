@@ -213,7 +213,7 @@ function print_profile($user_id) {
 	$about_me .= "<div class=\"about-me\">";
 	$about_me .= "<div class=\"section\">";
 	$about_me .= "<h2 class=\"title\">";
-	$about_me .= "About me";
+	$about_me .= "About Me";
 	$about_me .= "</h2>";
 	if ($g_user->data['user_id'] == $user_id) {
 		$about_me .= "<p class=\"description\"><button href=\"ggwiki_edit.php?function=edit_main_human&user_id=$user_id\" class=\"edit\" onclick=\"return popup('ggwiki_edit.php?function=edit_main_human&user_id=$user_id', 550, 560)\" resize=\"none\">Edit About Me</button></p>";
