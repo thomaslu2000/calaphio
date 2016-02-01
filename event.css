@@ -6,7 +6,7 @@ div.errorMessage {
 
 body {
 	margin: 0px;
-	background-color: #000;
+	background-color:#fff;
 }
 
 #event {
@@ -81,7 +81,7 @@ body {
 }
 
 #event_body {
-	background-color: #fff;
+	
 }
 
 #event_special_people {
