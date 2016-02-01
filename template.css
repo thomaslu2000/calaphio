@@ -31,7 +31,8 @@ div.imagewrap {
     margin-top: 30px;
 }
 h1 {
-    font-size: 16pt
+    font-size: 17pt;
+    font-family: 'Open Sans';
 }
 h2 {
     font-size: 20pt;
@@ -357,7 +358,7 @@ ul#gallery img {
 }
 strong,
 #paper .upcomingEvents .eventBox .title {
-    font-weight: 700
+    font-weight: 300;
 }
 #paperSubHeader #welcomeBar #logout,
 #paper .login form {
