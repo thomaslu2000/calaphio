@@ -4884,7 +4884,7 @@ button.close {
 #event_title {
 	font-weight: bold;
 	font-size: 12pt;
-	padding: 2px;
+	padding: 4px 2px 4px 20px;
 	background-color: #d5e4f2;
 	color: #3298ff;
 }
@@ -4892,7 +4892,7 @@ button.close {
 #event_navbar {
 	text-align: right;
 	float: right;
-	margin: 5px 0px 5px 5px;
+	margin: 10px 10px 5px 5px;
 	padding: 5px;
 	background-color: white;
 	border: solid 1px rgba(0, 0, 0, .4);
@@ -4912,6 +4912,7 @@ button.close {
 
 #event_body {
 	background-color: #fff;
+	padding: 10px 20px 10px 20px;
 }
 
 #event_special_people {
