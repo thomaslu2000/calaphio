@@ -14,7 +14,7 @@ $calendar = new Calendar();
 <script language="javascript" type="text/javascript" src="popup.js"></script>
 <script language="javascript" type="text/javascript" src="jquery-1.8.1.min.js"></script>
 <script language="javascript" type="text/javascript" src="bootstrap.min.js"></script>
-
+<link type="text/css" rel="stylesheet" href="bootstrap.css" />
 <?php
 $calendar->make_title();
 ?>
