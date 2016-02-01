@@ -149,6 +149,7 @@ body {
 	text-transform: none;
 	color: #3298ff;
 	font-weight: 400;
+	background-color: #09477f;
 }
 a {
 	color: #3298FF;
@@ -4910,7 +4911,7 @@ button.close {
 }
 
 #event_body {
-	
+	background-color: #fff;
 }
 
 #event_special_people {
