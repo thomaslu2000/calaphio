@@ -8,15 +8,10 @@
 	font-weight: bold;
 	background-color: #B4B5D6;
 	border: solid 1px black;
-	color: #232741;
-	padding: 3px;
 }
 
 #requirements td {
-	margin: 0;
-	padding-top: 10px;
-	padding-right: 3px;
-	padding-left: 0px;
+	width: auto;
 }
 
 #requirements td.hours {
