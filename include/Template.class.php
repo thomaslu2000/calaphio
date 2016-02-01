@@ -80,7 +80,6 @@ DOCHERE_print_head;
 				"BUDGET" => "https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit#gid=1283827056",
 				),
 			'Calendar' => array(
-				"HOME" => "news.php",
 				"ADD EVENT" => array("popup", "add_event.php"),
 				"CALENDAR" => "calendar.php",
 				"BROTHERS" => "roster.php", 
