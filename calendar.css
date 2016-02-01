@@ -1,118 +1,104 @@
 #month_selection {
-	text-align: left;
+    text-align: left
 }
-
 #calendar {
-	width: 100%;
-	border: solid 2px #5588ff; 
-	border-radius: 15px;  /* not working */ 
-	background-color: white;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px; 
-	color: #444E58;
-	border-collapse: collapse;
-	margin-bottom: 20px; 
-	margin-top: 20px; 
-	text-transform: uppercase; 
+    width: 100%;
+    border: solid 2px #5588ff;
+    border-radius: 15px; /* not working */
+    background-color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #444E58;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-
 #calendar ul {
-	list-style: none;
-	margin: 0px;
-	padding: 2px;
+    list-style: none;
+    margin: 0px;
+    padding: 2px;
 }
-
 #calendar a {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
-
 #calendar a:hover {
-	text-decoration: underline;
+    text-decoration: underline
 }
-
 #calendar caption {
-	text-align: center;
-	font-size: 25px;
-	font-weight: 500;
-	color: #5588FF;
-	margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #5588FF;
+    margin-bottom: 10px;
 }
-
 #calendar tr {
-}
 
-#calendar th, #calendar td {
-	width: 14%;
-	padding: 2px;
-	border-width: 0px 2px 2px 0px;
-	border-radius: 5px; 
-	border-style: solid;
-	border-color: #3366ff; 
-	font-size: 12px;
 }
-
-#calendar th {
-	color: #3366ff;
-	background-color: #99ccff;
-	text-align: center;
-	font-weight: normal;
-}
-
+#calendar th,
 #calendar td {
- 	color: black
-	background-color: white;
- 	text-align: left;
-	vertical-align: top;
-	height: 100px;
+    width: 14%;
+    padding: 2px;
+    border-width: 0px 2px 2px 0px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #3366ff;
+    font-size: 12px;
 }
-
+#calendar th {
+    color: #3366ff;
+    background-color: #99ccff;
+    text-align: center;
+    font-weight: normal;
+}
+#calendar td {
+    color: black background-color: white;
+    text-align: left;
+    vertical-align: top;
+    height: 100px;
+}
 #calendar td a.dateTitle {
-	display: block;
-	color: #666666;
-	/* background-image: url('images/dateTitleGradient.jpg'); */
-	background-repeat: repeat-x;
-	height: 20px;
-	line-height: 17px;
-	padding-left: 2px;
-	font-weight: normal;
+    display: block;
+    color: #666666;
+    /* background-image: url('images/dateTitleGradient.jpg'); */
+    background-repeat: repeat-x;
+    height: 20px;
+    line-height: 17px;
+    padding-left: 2px;
+    font-weight: normal;
 }
-
 #calendar td.shade {
-	background-color: #99ccff;
+    background-color: #99ccff
 }
-
 #calendar td.today {
-	/*background-color: #fbc84f;*/
-	background-color: #ffffaa;
+    /*background-color: #fbc84f;*/
+    background-color: #ffffaa;
 }
-
 #calendar .attending {
-	color: red;
+    color: red
 }
-
-#calendar span, .upcomingEvents span {
-	font-weight: bold;
-	color: black;
+#calendar span,
+.upcomingEvents span {
+    font-weight: bold;
+    color: black;
 }
-
-#calendar .service, .upcomingEvents .service {
-	color: red;
+#calendar .service,
+.upcomingEvents .service {
+    color: red
 }
-
-#calendar .fellowship, .upcomingEvents .fellowship {
-	color: blue;
+#calendar .fellowship,
+.upcomingEvents .fellowship {
+    color: blue
 }
-
-#calendar .fundraiser, .upcomingEvents .fundraiser {
-	color: green;
+#calendar .fundraiser,
+.upcomingEvents .fundraiser {
+    color: green
 }
-
 #calendar .deleted {
-	color: gray;
-	text-decoration: line-through;
+    color: gray;
+    text-decoration: line-through;
 }
-#calendar .auto_deleted{
-	color: green;
-	text-decoration: line-through;
+#calendar .auto_deleted {
+    color: green;
+    text-decoration: line-through;
 }
