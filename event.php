@@ -8,13 +8,13 @@ $calendar = new Calendar();
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<link type="text/css" rel="stylesheet" href="bootstrap.css" />
 <link type="text/css" rel="stylesheet" href="site.css" />
 <link type="text/css" rel="stylesheet" href="calendar.css" />
 <link type="text/css" rel="stylesheet" href="event.css" />
 <script language="javascript" type="text/javascript" src="popup.js"></script>
 <script language="javascript" type="text/javascript" src="jquery-1.8.1.min.js"></script>
 <script language="javascript" type="text/javascript" src="bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="bootstrap.css" />
 <?php
 $calendar->make_title();
 ?>
