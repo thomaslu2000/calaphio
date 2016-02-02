@@ -12,7 +12,7 @@
 
 .profile-picture img{
 	width: 200px;
-	height: 300px;
+	height: auto;
 	padding-left: 50px;
 }
 
