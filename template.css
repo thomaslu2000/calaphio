@@ -22,8 +22,12 @@ a:hover {
 div {
     display: block;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-right: 7px;
+}
+
+#apo_short_search_result {
+    padding: 0;
 }
 div.imagewrap {
     display: block;
@@ -34,8 +38,8 @@ h1 {
     font-size: 17pt;
     font-family: 'Open Sans';
     padding-bottom: 8px;
+    margin-right: 107px;
 }
-
 h2 {
     font-size: 20pt;
     margin-right: 107px;
@@ -48,10 +52,6 @@ h2.title {
 h3 {
     font-weight: 400;
     text-decoration: underline;
-}
-
-.profile-info h1 {
-    margin-right: 0;
 }
 img#header {
     display: none
