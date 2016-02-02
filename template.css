@@ -239,12 +239,11 @@ img#header {
     font-weight: 700;
 }
 #paper .upcomingEvents .eventBox .date {
-    font-weight: 700;
-    color: #222;
+    color: #0947ff;
 }
 
 #paper .upcomingEvents .eventBox .location {
-    color: #222;
+    color: #0947ff;
 }
 #paper .shoutbox .postingBox {
     font-size: 8pt;
