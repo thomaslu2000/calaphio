@@ -124,12 +124,16 @@ p.success {
     margin-top:15px;
     margin-bottom: 10px;
     margin-right: 0;
+    color: #666;
+    font-family: Open Sans, sans-serif;
 }
 
 p.description {
-    margin-left: 20px;
     margin-bottom: 10px;
-    line-height: 1.3em;    
+    line-height: 1.4em;
+}
+
+.subsection.description {
 }
 
 p.related_article {
