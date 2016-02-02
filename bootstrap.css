@@ -3927,8 +3927,8 @@ button.close {
 }
 @media (max-width: 767px) {
   body {
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom,
@@ -4693,8 +4693,8 @@ button.close {
 }
 @media (max-width: 979px) {
   body {
-	padding-top: 20px;
-  }
+	/* padding-top: 20px; */
+	}
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     position: static;
@@ -4842,6 +4842,7 @@ button.close {
 	margin: 10px 10px 0px 10px;
 	font-family: 'Verdana';
 	font-size: 8pt;
+	color: #666;
 }
 
 #event form {
@@ -4858,7 +4859,7 @@ button.close {
 }
 
 #event_details td {
-	
+	color: #666;
 }
 
 #event_description_title {
@@ -4866,7 +4867,7 @@ button.close {
 }
 
 #event_description {
-	
+	color: #666;
 }
 
 #event_attendees {
@@ -4886,7 +4887,7 @@ button.close {
 #event_title {
 	font-weight: bold;
 	font-size: 12pt;
-	padding: 4px 2px 4px 20px;
+	padding: 10px 2px 10px 20px;
 	background-color: #d5e4f2;
 	color: #3298ff;
 }
@@ -4938,6 +4939,7 @@ button.close {
 #event_comments_title {
 	font-weight: bold;
 	text-align: left;
+	color: #3298ff;
 	margin-bottom: 3px;
 }
 
