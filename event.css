@@ -6,6 +6,7 @@ div.errorMessage {
 
 body {
 	margin: 0px;
+	background-color: #fff;
 }
 
 #event {
@@ -50,6 +51,7 @@ body {
 
 #event_attendees th {
 	text-align: left;
+	color: #3298ff;
 }
 
 #event_title {
@@ -57,6 +59,7 @@ body {
 	font-size: 12pt;
 	padding: 2px;
 	background-color: #d5e4f2;
+	color: #3298ff;
 }
 
 #event_navbar {
@@ -65,7 +68,8 @@ body {
 	margin: 5px 0px 5px 5px;
 	padding: 5px;
 	background-color: white;
-	border: dashed 1px black;
+	border: solid 1px rgba(0, 0, 0, .4);
+	color: #3298ff;
 }
 
 #event_navbar ul {
@@ -109,7 +113,7 @@ body {
 
 .event_comment {
 	margin: 0px 0px 3px 0px;
-	border: dashed 1px black;
+	border: solid 1px rgba(0, 0, 0, 0.4);
 }
 
 .event_comment_body {
@@ -139,3 +143,6 @@ body {
 #event_post_comment {
 	text-align: center;
 }
+
+/*=======EVERYTHING BELOW HERE IS COPIED AND PASTED FROM THE BOOTSTRAP.CSS FILE=======*/
+

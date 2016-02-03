@@ -4,16 +4,15 @@
 
 #calendar {
 	width: 100%;
-	border: solid 2px #5588ff; 
-	border-radius: 15px;  /* not working */ 
+	border: solid 2px #5588ff;
+	border-radius: 15px;/* not working */
 	background-color: white;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px; 
+	font-size: 14px;
 	color: #444E58;
 	border-collapse: collapse;
-	margin-bottom: 20px; 
-	margin-top: 20px; 
-	text-transform: uppercase; 
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 #calendar ul {

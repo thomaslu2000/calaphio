@@ -146,9 +146,10 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
-	color: #3366FF;
 	text-transform: none;
+	color: #3298ff;
 	font-weight: 400;
+	background-color: #09477f;
 }
 a {
 	color: #3298FF;
@@ -2012,9 +2013,11 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-tabs {
   border-bottom: 1px solid #ddd;
+  padding-bottom: 0;
 }
 .nav-tabs > li {
   margin-bottom: -1px;
+  padding-bottom: 0px;
 }
 .nav-tabs > li > a {
   padding-top: 8px;
@@ -3924,8 +3927,8 @@ button.close {
 }
 @media (max-width: 767px) {
   body {
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom,
@@ -4690,8 +4693,8 @@ button.close {
 }
 @media (max-width: 979px) {
   body {
-	padding-top: 20px;
-  }
+	/* padding-top: 20px; */
+	}
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     position: static;
@@ -4833,4 +4836,142 @@ button.close {
     height: auto !important;
     overflow: visible !important;
   }
+}
+
+#event {
+	margin: 10px 10px 0px 10px;
+	font-family: 'Verdana';
+	font-size: 8pt;
+	color: #666;
+}
+
+#event form {
+	margin: 0px;
+}
+
+#event_details caption {
+	display: none;
+}
+
+#event_details th {
+	text-align: left;
+	font-weight: normal;
+}
+
+#event_details td {
+	color: #666;
+}
+
+#event_description_title {
+	
+}
+
+#event_description {
+	color: #666;
+}
+
+#event_attendees {
+	width: 100%;
+	clear: both;
+}
+
+#event_attendees caption {
+	display: none;
+}
+
+#event_attendees th {
+	text-align: left;
+	color: #3298ff;
+}
+
+#event_title {
+	font-weight: bold;
+	font-size: 12pt;
+	padding: 10px 2px 10px 20px;
+	background-color: #d5e4f2;
+	color: #3298ff;
+}
+
+#event_navbar {
+	text-align: right;
+	float: right;
+	margin: 10px 10px 5px 5px;
+	padding: 5px;
+	background-color: white;
+	border: solid 1px rgba(0, 0, 0, .4);
+	color: #3298ff;
+}
+
+#event_navbar ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#event_navbar button {
+	width: 112px;
+	margin: 2px;
+}
+
+#event_body {
+	background-color: #fff;
+	padding: 10px 20px 10px 20px;
+}
+
+#event_special_people {
+    height: 15px;
+}
+
+#event_driver {
+  	text-align: center;
+}
+
+#event_photographer {
+        float: right;
+}
+
+#event_comments {
+	margin: 1.5em 0px 1.5em 0px;
+	padding: 5px;
+	background-color: #d5e4f2;
+}
+
+#event_comments_title {
+	font-weight: bold;
+	text-align: left;
+	color: #3298ff;
+	margin-bottom: 3px;
+}
+
+.event_comment {
+	margin: 0px 0px 3px 0px;
+	border: solid 1px rgba(0, 0, 0, 0.4);
+}
+
+.event_comment_body {
+	padding: 5px;
+}
+
+
+.event_comment_like {
+	padding-left: 5px;
+}
+
+
+/*
+.event_comment_like {
+	padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 5px center;    
+    background-image:url('images/facebooklikebutton.png');
+}
+*/
+
+.event_comment_signature {
+	padding: 2px;
+	text-align: right;
+}
+
+#event_post_comment {
+	text-align: center;
 }

@@ -64,13 +64,14 @@ table {
 }
 
 td.key {
-    font-weight: bold;
+    font-size: 14px;
     padding-bottom: 5px;
 }
 
 td.value {
     padding-left: 1em;
     padding-bottom: 5px;
+    font-size: 14px;
 }
 
 div.edit_button {
@@ -122,12 +123,17 @@ p.success {
 .subtitle {
     margin-top:15px;
     margin-bottom: 10px;
+    margin-right: 0;
+    color: #666;
+    font-family: Open Sans, sans-serif;
 }
 
 p.description {
-    margin-left: 20px;
     margin-bottom: 10px;
-    line-height: 1.3em;    
+    line-height: 1.4em;
+}
+
+.subsection.description {
 }
 
 p.related_article {
@@ -167,7 +173,7 @@ div.subsubject {
 }
 
 .section {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 div.bottom_button {
@@ -200,3 +206,4 @@ thead.position_table {
 input.button {
     padding: 3px;
 }
+

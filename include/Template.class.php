@@ -74,31 +74,37 @@ DOCHERE_print_head;
 				"HOME" => "news.php",
 				"CALENDAR" => "calendar.php",
 				"BROTHERS" => "roster.php", 
+				"SERVICE" => "service.php",
+				"FELLOWSHIP" => "fellowship.php",
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/1ZztSEtEEgewMOIU4m9PWNswifoGMc8-l4gGOe8Hue8E/edit?usp=sharing ",
-				"SECTION 4" => "http://www.aposection4.org",
-				"REGION X" => "http://www.apor10.org",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit#gid=1283827056",
+				),
+			'Calendar' => array(
+				"HOME" => "news.php",
+				"CALENDAR" => "calendar.php",
+				"REIMBURSE" => "reimbursement.php",
+				"BROTHERS" => "roster.php", 
+				"WIKI" => "ggwiki.php", 
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit#gid=1283827056",
+				"AWARDS" => "awards.php"
 				),
 			'Service' => array(
 				"HOME" => "news.php",
-				"RUSH" => "pledging.php",
+				"CALENDAR" => "calendar.php",
+				"BROTHERS" => "roster.php", 
+				"SERVICE" => "service.php",
 				"FELLOWSHIP" => "fellowship.php",
+				"BYLAWS" => "bylaws.php",
 				"REIMBURSEMENT" => "reimbursement.php"
 				),
 			'Fellowship' => array(
 				"HOME" => "news.php",
-				"RUSH" => "pledging.php",
-				"SERVICE" => "service.php",
-				"REIMBURSEMENT" => "reimbursement.php"
-				),
-			'Calendar' => array(
-				"HOME" => "news.php",
-				"ADD EVENT" => array("popup", "add_event.php"),
 				"CALENDAR" => "calendar.php",
-				"REQUIREMENTS" => "profile.php?requirements=true&user_id=" . $g_user->data['user_id'],
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/1ZztSEtEEgewMOIU4m9PWNswifoGMc8-l4gGOe8Hue8E/edit?usp=sharing",
-				"REIMBURSEMENT" => "reimbursement.php",
-				"AWARDS" => "awards.php"
+				"BROTHERS" => "roster.php", 
+				"SERVICE" => "service.php",
+				"FELLOWSHIP" => "fellowship.php",
+				"BYLAWS" => "bylaws.php",
+				"REIMBURSEMENT" => "reimbursement.php"
 				),
 			// 'Members' => array(
 			// 	"HOME" => "news.php",

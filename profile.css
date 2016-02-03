@@ -13,25 +13,27 @@
 .profile-picture img{
 	width: 200px;
 	height: auto;
+	padding-left: 50px;
 }
 
 .profile-picture {
-	padding: 20px;
+	padding: 25px;
 }
 
 .profile-info {
 	float: left;
-	padding: 20px;
+	padding: 40px 20px 0px 0px;
 }
 
 .basic-info {
 	width: 440px;
-	margin-top: 20px;
+	margin-left: 100px;
+	margin-top: 25px;
 }
 
 .profile-left {
-	width: 720px;
-	float: left;
+	width: 970px;
+	margin: 0px auto;
 }
 
 .profile-right {
@@ -40,12 +42,12 @@
 }
 
 table.basic-info td{
-	font-size: 14px;
 }
 
 table.basic-info td.key{
 	color: gray;
 	font-weight: normal;
+	font-family: Open Sans;
 }
 
 .profile-content {

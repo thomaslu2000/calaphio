@@ -213,7 +213,7 @@ function print_profile($user_id) {
 	$about_me .= "<div class=\"about-me\">";
 	$about_me .= "<div class=\"section\">";
 	$about_me .= "<h2 class=\"title\">";
-	$about_me .= "About me";
+	$about_me .= "About Me";
 	$about_me .= "</h2>";
 	if ($g_user->data['user_id'] == $user_id) {
 		$about_me .= "<p class=\"description\"><button href=\"ggwiki_edit.php?function=edit_main_human&user_id=$user_id\" class=\"edit\" onclick=\"return popup('ggwiki_edit.php?function=edit_main_human&user_id=$user_id', 550, 560)\" resize=\"none\">Edit About Me</button></p>";
@@ -828,7 +828,7 @@ function print_requirements($user_id) {
 $ic_events
 </table>
 <table>
-<caption>Attend 3 out of 5 rush events: 1 Info Night, Meet the Chapter, +1 Rush Event of Choice - You have completed $rush_events_count</caption>
+<caption>Attend 1 Info Night and Post, Meet the Chapter, 1 Rush Event, and 4 Hours of Flyering - You have completed $rush_events_count</caption>
 $rush_events
 </table>
 <table>
@@ -888,6 +888,8 @@ $fellowship_events
 <table width="100%">
 <caption>Complete 5 leadership credits - You can get credit by doing any of the following:</caption>
 <tr><td axis="name">Serving on a committee - <a href="mh_chairs.php">Search for one here</a> <strong>(required)</strong></td></tr>
+<tr><td axis="name">Sponsoring (1 credit)</td></tr>
+<tr><td axis="name">Each additional rush event you attend with your sponsoree after MTC (1 credit)</td></tr>
 <tr><td axis="name">Submit 3 (original content) Stylus Submissions (1 credit)</td></tr>
 <tr><td axis="name">Chairing 2 events (1 credit)</td></tr>
 <tr><td axis="name">Attending a LEADS workshop (1 credit)</td></tr>
