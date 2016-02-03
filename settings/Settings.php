@@ -3,11 +3,19 @@
 /*********************
  * DATABASE SETTINGS *
  *********************/
+<<<<<<< HEAD
+define("DB_HOST",		"mysql.calaphio.com");
+define("DB_USER",		"website");
+define("DB_PASSWORD",		"GammaGammaAdmin");
+define("DB_DATABASE",		"website");
+define("TABLE_PREFIX",		"apo_");
+=======
 define("DB_HOST",	 "calaphio");
 define("DB_USER",	 "apo");
 define("DB_PASSWORD", "GammaGammaAdmin");
 define("DB_DATABASE",	 "website");
 define("TABLE_PREFIX",	 "apo_");
+>>>>>>> origin/master
 
 /********************
  * SESSION SETTINGS *
