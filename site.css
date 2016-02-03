@@ -8,6 +8,7 @@ div.errorMessage {
 
 div.errorMessage p {
 	margin: 0px;
+	color: #fff;
 }
 
 div.successMessage {
