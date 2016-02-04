@@ -31,7 +31,7 @@ div.successMessage p {
 
 #login_email {
 	float: left;
-	padding: 5px; /* Padding and not margin because floated IE6 margin are buggy and doubled */
+	padding: 5px;/* Padding and not margin because floated IE6 margin are buggy and doubled */
 }
 
 #login_passphrase {
