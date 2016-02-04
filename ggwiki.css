@@ -122,7 +122,7 @@ p.success {
 
 .subtitle {
     margin-top:15px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     margin-right: 0;
     color: #666;
     font-family: Open Sans, sans-serif;
@@ -166,10 +166,15 @@ div.subsubject {
     margin-bottom: 20px;
 }
 
-.subsection {
+.about-me .subsection {
     margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    line-height: 26px;
+    color: #666;
+}
+
+.position .subsection {
+    line-height: 26px;
+    color: #3298ff;
 }
 
 .section {
