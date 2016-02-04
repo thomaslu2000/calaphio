@@ -24,7 +24,6 @@ div {
     text-align: center;
     padding-top: 10px;
     padding-right: 7px;
-    padding-left: 7px;
 }
 
 #apo_short_search_result {
@@ -228,6 +227,7 @@ img#header {
     width: 208px;
     border: solid 1px #000;
     margin-bottom: 15px;
+    padding: 10 7 10 7;
 }
 #paper .upcomingEvents hr {
     width: 95%;
