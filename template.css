@@ -375,7 +375,8 @@ strong,
 }
 #paperSubHeader #welcomeBar #logout,
 #paper .login form {
-    float: right
+    float: right;
+    margin-right: 10px;
 }
 #paper .upcomingEvents .moduleTitle,
 #paper .mailer .moduleTitle,
