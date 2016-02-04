@@ -13,8 +13,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquot
 }
 
 #apo_short_search_input {
-    padding-bottom: 0;
-    font-size: 16px;
+    padding-bottom: 3px;
+    font-size: 15px;
 }
 
 table{border-collapse:collapse;border-spacing:0;}

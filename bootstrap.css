@@ -154,6 +154,8 @@ body {
 a {
 	color: #3298FF;
 	text-decoration: none;
+	font-weight: 500;
+	font-size: 17px;
 }
 a:hover {
   color: #005580;
