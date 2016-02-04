@@ -94,6 +94,7 @@
 
 #calendar span, .upcomingEvents span {
 	font-weight: bold;
+	font-family: Helvetica;
 	color: black;
 }
 
