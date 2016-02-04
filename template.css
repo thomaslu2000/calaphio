@@ -159,6 +159,8 @@ img#header {
     color: #ffb81c;
     text-decoration: none;
     margin-right: 6px;
+    font-family: Open Sans;
+    font-size: 18px;
 }
 #paperSubHeader #welcomeBar a:hover {
     text-decoration: none;
