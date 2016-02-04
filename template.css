@@ -395,6 +395,7 @@ strong,
     border: solid 1px #000;
     margin-bottom: 15px;
     background-color: #D3D4FB;
+    padding: 10 7 10 7;
 }
 #paper .mailer .messageBody,
 #paper .mailer .recipients {
