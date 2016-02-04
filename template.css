@@ -208,7 +208,8 @@ img#header {
     color: #FCB81C;
 }
 #paper {
-    padding: 15px
+    padding: 15px;
+    padding-top: 25px;
 }
 #paper .login {
     height: 2px;
