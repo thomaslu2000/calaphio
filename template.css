@@ -245,6 +245,7 @@ img#header {
     color: #000;
     font-weight: 700;
     font-family: Helvetica;
+    font-size: 13px;
 }
 #paper .upcomingEvents .eventBox .date {
     color: #0947ff;
