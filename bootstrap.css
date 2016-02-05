@@ -170,6 +170,10 @@ a:hover {
   text-decoration: underline;
 }
 
+#event-comment a {
+    font-weight: bold;
+}
+
 .newsItem a {
     font-size: 17px;
 }
@@ -4987,6 +4991,10 @@ button.close {
 .event_comment_signature {
 	padding: 2px;
 	text-align: right;
+}
+
+.event_comment_signature a {
+    font-weight: bold;
 }
 
 #event_post_comment {
