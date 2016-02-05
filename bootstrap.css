@@ -70,6 +70,10 @@ a:hover,
 a:active {
   outline: 0;
 }
+
+#paperLayer2 a {
+    font-size: 17px;
+}
 sub,
 sup {
   position: relative;
@@ -157,9 +161,17 @@ a {
 	font-weight: 500;
 	font-size: 11px;
 }
+
+.eventList a {
+    font-size: 17px;
+}
 a:hover {
   color: #005580;
   text-decoration: underline;
+}
+
+.newsItem a {
+    font-size: 17px;
 }
 .img-rounded {
   -webkit-border-radius: 6px;
