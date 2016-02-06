@@ -1,12 +1,13 @@
 div.wiki_wrapper {
-    padding: 20px 40px 30px 10px;
+    padding: 0 10 0 10;
+    margin-top: -60px;
 }
 
 div.search_wrapper {
-/*  margin-top: 70px;   */
-    margin-top: 110px;
     float: right;
-}
+    padding-bottom: 0;
+    padding-top: 115px;
+    }
 
 #search_input {
     width: 200px;
@@ -88,9 +89,7 @@ div.cleaner {
 /*  width: 150px;   */
     height:100px;
     width: 100px;
-    padding-top: 5px;
-    margin-bottom: 10px;
-}
+    padding-top: 5px;margin-bottom: 20px;}
 
 p.error {
     border: 1px solid;
