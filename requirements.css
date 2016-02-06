@@ -4,7 +4,6 @@
 }
 
 #requirements caption {
-	width: 100%;
 	font-weight: bold;
 	background-color: #B4B5D6;
 	border: solid 1px black;
@@ -26,7 +25,7 @@
 
 #requirements td.date {
 	width: 75px;
-	padding-left: 5px;
+	padding-left: 20px;
 	font-size: 15px;
 }
 

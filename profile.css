@@ -66,9 +66,12 @@ table.basic-info td.key{
 }
 
 #requirements table {
-	width: 99%;
+	width: 97%;
+	margin: 0 auto;
+	margin-bottom: 20px;
 }
 
 #requirements td.hours {
 	width: 75px;
+	padding-right: 20px;
 }
