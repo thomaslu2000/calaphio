@@ -26,6 +26,13 @@ div {
     /* padding-right: 7px; */
 }
 
+#requirements tr a {
+    font-size: 15px;
+}
+
+#requirements .date {
+}
+
 #apo_short_search_result {
     padding: 0;
 }

@@ -14,9 +14,8 @@
 
 #requirements td {
 	margin: 0;
-	padding-top: 10px;
-	padding-right: 3px;
-	padding-left: 0px;
+	padding: 10 0 4 16;
+	font-size: 15px;
 }
 
 #requirements td.hours {
@@ -28,6 +27,7 @@
 #requirements td.date {
 	width: 75px;
 	padding-left: 5px;
+	font-size: 15px;
 }
 
 #requirements td.attendance {
