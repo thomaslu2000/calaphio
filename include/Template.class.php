@@ -95,7 +95,7 @@ DOCHERE_print_head;
 				"SERVICE" => "service.php",
 				"FELLOWSHIP" => "fellowship.php",
 				"BYLAWS" => "bylaws.php",
-				"REIMBURSEMENT" => "reimbursement.php"
+				"REIMBURSE" => "reimbursement.php"
 				),
 			'Fellowship' => array(
 				"HOME" => "news.php",
@@ -104,7 +104,7 @@ DOCHERE_print_head;
 				"SERVICE" => "service.php",
 				"FELLOWSHIP" => "fellowship.php",
 				"BYLAWS" => "bylaws.php",
-				"REIMBURSEMENT" => "reimbursement.php"
+				"REIMBURSE" => "reimbursement.php"
 				),
 			// 'Members' => array(
 			// 	"HOME" => "news.php",
