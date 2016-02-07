@@ -38,6 +38,7 @@
 	font-size: 25px;
 	font-weight: 500;
 	color: #5588FF;
+	font-family: 'Open Sans';
 	margin-bottom: 10px;
 }
 
@@ -56,7 +57,7 @@
 
 #calendar th {
 	color: #3366ff;
-	background-color: #99ccff;
+	background-color: #eff;
 	text-align: center;
 	font-weight: normal;
 }
@@ -81,12 +82,11 @@
 }
 
 #calendar td.shade {
-	background-color: #99ccff;
+	background-color: #eff;
 }
 
 #calendar td.today {
-	/*background-color: #fbc84f;*/
-	background-color: #ffffaa;
+	background-color: #FFFBBB;
 }
 
 #calendar .attending {
