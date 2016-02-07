@@ -60,6 +60,7 @@
 	background-color: #eff;
 	text-align: center;
 	font-weight: normal;
+	padding: 4 0 4 0;
 }
 
 #calendar td {
@@ -73,11 +74,10 @@
 #calendar td a.dateTitle {
 	display: block;
 	color: #666666;
-	/* background-image: url('images/dateTitleGradient.jpg'); */
 	background-repeat: repeat-x;
 	height: 20px;
 	line-height: 17px;
-	padding-left: 2px;
+	padding: 2 0 0 2;
 	font-weight: normal;
 }
 
