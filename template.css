@@ -254,6 +254,23 @@ img#header {
     font-family: Helvetica;
     font-size: 13px;
 }
+
+span.fellowship {
+    color: blue;
+}
+
+span.service {
+	color: red;
+}
+
+span.fundraiser {
+	color: green;
+}
+
+span.ic {
+	color: darkgoldenrod;
+}
+
 #paper .upcomingEvents .eventBox .date {
     color: #0947ff;
     font-family: Helvetica;

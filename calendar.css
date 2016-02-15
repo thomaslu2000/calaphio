@@ -96,7 +96,10 @@
 #calendar span, .upcomingEvents span {
 	font-weight: bold;
 	font-family: Helvetica;
-	color: black;
+}
+
+#calendar .ic {
+	color: darkgoldenrod;
 }
 
 #calendar .service, .upcomingEvents .service {
