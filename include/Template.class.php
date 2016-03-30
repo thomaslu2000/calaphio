@@ -76,8 +76,8 @@ DOCHERE_print_head;
 				"REIMBURSE" => "reimbursement.php",
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
-				"SERVICE" => "service.php",
-				"FELLOWSHIP" => "fellowship.php",
+				"BYLAWS" => "bylaws.php",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit?pref=2&pli=1#gid=1283827056.php",
 				),
 			'Calendar' => array(
 				"HOME" => "news.php",
@@ -85,8 +85,8 @@ DOCHERE_print_head;
 				"REIMBURSE" => "reimbursement.php",
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
-				"SERVICE" => "service.php",
-				"FELLOWSHIP" => "fellowship.php",
+				"BYLAWS" => "bylaws.php",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit?pref=2&pli=1#gid=1283827056.php",
 				),
 			'Service' => array(
 				"HOME" => "news.php",
