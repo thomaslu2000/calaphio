@@ -35,6 +35,23 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
+    <h2> ELECTION PLATFORMS </h2>
+    <p class="date">Monday, April 11, 2016</p>
+    <p style="margin-bottom: 1em">
+
+    <br> Hey everyone! Elections is coming up tomorrow, so please take the time to read the platforms of your fellow 
+    candidates in preparation. </br> 
+    <br> 
+    <a href="https://docs.google.com/document/d/1Y4K2GaPYeCWTyvdV_ogeQESonxJy6Mqin5mwNllFqlE" target="_blank"> Pledgemaster Platform Kirk Chiu </a> </a><br>
+    <a href="https://docs.google.com/document/d/1rLWbfIdBVxl8CcmioBx87py0rxXOTqjTHFITBBhmnGw" target="_blank"> Admin VP James Young </a> </a><br>
+    <a href="https://docs.google.com/document/d/14HLIsonQaN6aXNse7BL92Cc5AwpTpy0UIB130RjqmLU" target="_blank"> Historian Stanley Shaw </a> </a><br>
+
+    <p>-<a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
+<div> 
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
         <h2> Announcements </h2>
         <p class="date">Sunday, January 31, 2015</p>
         <p style="margin-bottom: 1em">
