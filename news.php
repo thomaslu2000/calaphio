@@ -33,8 +33,6 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php endif ?>
-
 <div class="newsItem">
         <br/>
         <h2>Congratulations to the Fall 2016 Executive Committee!</h2>
