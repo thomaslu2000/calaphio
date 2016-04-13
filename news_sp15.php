@@ -110,7 +110,13 @@ if (!$g_user->is_logged_in()) {
                     <img src="images/excomm_f15/moncarol.jpg"></img>
                     <p class="center"><strong>Historian VP</strong>: <a href="profile.php?user_id=2888">Moncarol Wang</a></p>
                 </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+    </div>
 
+    <div class="newsItem">
+        <br/>
         <h2>Congratulations to the Fall 2015 Pledge Committee!</h2>
         <div class="collage-container">
             <div class="collage-pictures">
