@@ -33,6 +33,61 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<?php endif ?>
+
+<div class="newsItem">
+        <br/>
+        <h2>Congratulations to the Fall 2016 Executive Committee!</h2>
+        <p class="date"> Wednesday, April 13 2016</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <img src="images/excomm_f16/virgil.jpg"></img>
+                    <p class="center"><strong>President</strong>: <a href="profile.php?user_id=2873">Virgil Tang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/elaine.jpg"></img>
+                    <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=2913">Elaine Do</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/ellie.jpg"></img>
+                    <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=2858">Ellie Hung</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/james.jpg"></img>
+                    <p class="center"><strong>Admin VP</strong>: <a href="profile.php?user_id=2978">James Young</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/antony.jpg"></img>
+                    <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=2869">Antony Nguyen</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/marilyn.jpg"></img>
+                    <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2929">Marilyn Chan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/caroline.jpg"></img>
+                    <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2902">Caroline Ba</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/christine.jpg"></img>
+                    <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2905">Christine Fang</a></p>
+                </div>
+
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>-<a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
+    </div>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2> ELECTION PLATFORMS </h2>
