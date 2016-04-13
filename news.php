@@ -33,6 +33,81 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<div class="newsItem">
+        <br/>
+        <h2>Congratulations to the Fall 2016 Executive Committee!</h2>
+        <p class="date"> Wednesday, April 13 2016</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <img src="images/excomm_f16/virgil.jpg"></img>
+                    <p class="center"><strong>President</strong>: <a href="profile.php?user_id=2873">Virgil Tang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/elaine.jpg"></img>
+                    <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=2913">Elaine Do</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/ellie.jpg"></img>
+                    <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=2858">Ellie Hung</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/james.jpg"></img>
+                    <p class="center"><strong>Admin VP</strong>: <a href="profile.php?user_id=2978">James Young</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/antony.jpg"></img>
+                    <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=2869">Antony Nguyen</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/marilyn.jpg"></img>
+                    <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2929">Marilyn Chan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/caroline.jpg"></img>
+                    <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2902">Caroline Ba</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <img src="images/excomm_f16/christine.jpg"></img>
+                    <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2905">Christine Fang</a></p>
+                </div>
+
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>-<a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
+    </div>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <h2> ELECTION PLATFORMS </h2>
+    <p class="date">Monday, April 11, 2016</p>
+    <p style="margin-bottom: 1em">
+
+    <br> Hey everyone! Elections is coming up tomorrow, so please take the time to read the platforms of your fellow 
+    candidates in preparation. </br> 
+    <br> 
+    <a href="https://docs.google.com/document/d/1Y4K2GaPYeCWTyvdV_ogeQESonxJy6Mqin5mwNllFqlE" target="_blank"> Pledgemaster Platform Kirk Chiu </a> </a><br>
+    <a href="https://docs.google.com/document/d/1Ri2Dw2M15cq9kDrK9WyrOF4tdFPROuap9zAMJXaee7w" target="_blank"> Pledgemaster Platform Ellie Hung</a> </a><br>
+    <a href="https://docs.google.com/document/d/1QBp0ehhCEIQZ8eo9VOi5kW0rz-60Jzojk0SX4ajZF24" target="_blank"> Admin VP Carrie Lin</a> </a><br>
+    <a href="https://docs.google.com/document/d/1rLWbfIdBVxl8CcmioBx87py0rxXOTqjTHFITBBhmnGw" target="_blank"> Admin VP James Young </a> </a><br>
+    <a href="https://docs.google.com/document/d/14HLIsonQaN6aXNse7BL92Cc5AwpTpy0UIB130RjqmLU" target="_blank"> Historian VP Stanley Shiau </a> </a><br>
+    <a href="https://docs.google.com/document/d/1caehLk1PBUCqGoAfjFLCOA2p_lbbNXIotMjW_dfmxKA" target="_blank"> Membership VP Antony Nguyen </a> </a><br>
+    <a href="https://docs.google.com/document/d/1uAleZeVtbwpt7gRPs0kcvpYClA1wlNdG3xO0KMY-AIM" target="_blank"> Service VP Elaine Do </a> </a><br>
+    <a href="https://docs.google.com/document/d/1sl_cNXRlmQ8p4IPpnm1HBuXA9J6uZ36E_g5v8tVqNng" target="_blank"> Service VP Christine Fang </a> </a><br>
+
+    <p>-<a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
+<div> 
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2> Announcements </h2>
