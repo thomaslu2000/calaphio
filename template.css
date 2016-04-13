@@ -43,7 +43,7 @@ div.imagewrap {
 }
 h1 {
     font-size: 17pt;
-    font-family: 'Calibri';
+    font-family: 'Verdana';
     padding-bottom: 8px;
 }
 h2 {
@@ -151,7 +151,7 @@ img#header {
     margin-left: auto;
     margin-right: auto;
     font-size: 15pt;
-    font-family: Calibri;
+    font-family: Verdana;
     text-align: left;
     color: #FFF;
     margin-bottom: 10px;
@@ -165,7 +165,7 @@ img#header {
     color: #ffb81c;
     text-decoration: none;
     margin-right: 6px;
-    font-family: Calibri;
+    font-family: Verdana;
     font-size: 18px;
 }
 #paperSubHeader #welcomeBar a:hover {
@@ -191,7 +191,7 @@ img#header {
     /* width: 100px; */
     height: 30px;
     line-height: 17px;
-    font-family: Calibri, Helvetica, sans-serif;
+    font-family: Verdana, Helvetica, sans-serif;
     font-size: 12pt;
     font-weight: 700;
     text-align: center;
