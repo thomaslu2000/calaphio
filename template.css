@@ -340,7 +340,6 @@ span.ic {
 }
 #paper .newsItem p {
     padding-top: 15px;
-    padding-left: 5px;
     size: 14px;
     line-height: 25px;
     text-align: left;
@@ -393,6 +392,8 @@ ul#gallery img {
 .person-picture {
     float: left;
     margin: 10px;
+    width: 210px;
+    text-align: center;
 }
 .person-picture img {
     width: 200px;
