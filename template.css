@@ -338,7 +338,7 @@ span.ic {
     color: gray;
     text-align: right;
 }
-#paper .newsItem p {
+#paper .newsItem {
     padding-top: 15px;
     size: 14px;
     line-height: 25px;
