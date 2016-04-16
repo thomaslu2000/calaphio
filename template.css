@@ -333,6 +333,7 @@ span.ic {
     size: 25px;
     color: #0333A0;
     font-style: none;
+    text-align: center;
 }
 #paper .newsItem .date {
     color: gray;
@@ -340,6 +341,7 @@ span.ic {
 }
 #paper .newsItem {
     padding-top: 15px;
+    padding-left: 10px;
     size: 14px;
     line-height: 25px;
     text-align: left;
