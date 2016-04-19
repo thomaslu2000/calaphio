@@ -121,7 +121,7 @@ img#header {
     width: 120px;
     text-transform: uppercase;
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-decoration: none;
     font-size: 14pt;
@@ -251,7 +251,7 @@ img#header {
 #paper .upcomingEvents .eventBox .title a {
     color: #000;
     font-weight: 700;
-    font-family: Helvetica;
+    font-family: 'Open Sans', Helvetica;
     font-size: 13px;
 }
 
@@ -273,12 +273,12 @@ span.ic {
 
 #paper .upcomingEvents .eventBox .date {
     color: #0947ff;
-    font-family: Helvetica;
+    font-family: 'Open Sans', Helvetica;
 }
 
 #paper .upcomingEvents .eventBox .location {
     color: #0947ff;
-    font-family: Helvetica;
+    font-family: 'Open Sans', Helvetica;
 }
 #paper .shoutbox .postingBox {
     font-size: 8pt;
@@ -301,7 +301,7 @@ span.ic {
     font-weight: 700;
     font-size: 10pt;
     border: solid 1px #000;
-    font-family: 'Helvetica';
+    font-family: 'Open Sans', 'Helvetica';
     padding: 5 0 5 0;
 }
 #paper .evalnag .eventList {
@@ -367,7 +367,7 @@ span.ic {
     text-align: center;
     font-size: 12pt;
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     padding-bottom: 2px;
 }
 ul#gallery > li {
