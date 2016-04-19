@@ -165,7 +165,7 @@ img#header {
     color: #ffb81c;
     text-decoration: none;
     margin-right: 6px;
-    font-family: Helvetica;
+    font-family: 'Open Sans', Helvetica;
     font-size: 18px;
 }
 #paperSubHeader #welcomeBar a:hover {
