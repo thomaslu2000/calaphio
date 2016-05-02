@@ -57,7 +57,7 @@ if (!$g_user->is_logged_in()) {
 
                 <div class="person-picture">
                     <img src="images/excomm_f16/james.jpg"></img>
-                    <p class="center"><strong>Admin VP</strong>: <br><a href="profile.php?user_id=2978">James Young</a></p>
+                    <p class="center"><strong>Administrative VP</strong>: <br><a href="profile.php?user_id=2978">James Young</a></p>
                 </div>
 
                 <div class="person-picture">
