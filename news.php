@@ -41,22 +41,22 @@ if (!$g_user->is_logged_in()) {
     <div class="collage-container">
         <div class="collage-pictures">
             <div class="person-picture">
-                <img src="images/rush_f16/scottie.jpg"></img>
+                <img href="profile.php?user_id=2461" src="images/rush_f16/scottie.jpg"></img>
                 <p class="center"><a href="profile.php?user_id=2461">Scottie Wan</a></p>
             </div>
 
             <div class="person-picture">
-                <img src="images/rush_f16/jessica.jpg"></img>
+                <img href="profile.php?user_id=3590" src="images/rush_f16/jessica.jpg"></img>
                 <p class="center"><a href="profile.php?user_id=3590">Jessica Tzeng</a></p>
             </div>
 
             <div class="person-picture">
-                <img src="images/rush_f16/gene.jpg"></img>
+                <img href="profile.php?user_id=3569" src="images/rush_f16/gene.jpg"></img>
                 <p class="center"><a href="profile.php?user_id=3569">Gene Ho</a></p>
             </div>
 
             <div class="person-picture">
-                <img src="images/rush_f16/alice.jpg"></img>
+                <img href="profile.php?user_id=3570" src="images/rush_f16/alice.jpg"></img>
                 <p class="center"><a href="profile.php?user_id=3570">Alice Hsieh</a></p>
             </div>
         </div>
