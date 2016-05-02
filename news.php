@@ -36,6 +36,40 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <br/>
+    <h2>Congratulations to the Fall 2016 Rush Chairs!</h2>
+    <p class="date">Sunday, May 1, 2016</p>
+    <div class="collage-container">
+        <div class="collage-pictures">
+            <div class="person-picture">
+                <img src="images/rush_f16/scottie.jpg"></img>
+                <p class="center"><a href="profile.php?user_id=2461">Scottie Wan</a></p>
+            </div>
+
+            <div class="person-picture">
+                <img src="images/rush_f16/jessica.jpg"></img>
+                <p class="center"><a href="profile.php?user_id=3590">Jessica Tzeng</a></p>
+            </div>
+
+            <div class="person-picture">
+                <img src="images/rush_f16/gene.jpg"></img>
+                <p class="center"><a href="profile.php?user_id=3569">Gene Ho</a></p>
+            </div>
+
+            <div class="person-picture">
+                <img src="images/rush_f16/alice.jpg"></img>
+                <p class="center"><a href="profile.php?user_id=3570">Alice Hsieh</a></p>
+            </div>
+        </div>
+        <div style="clear: left;"></div>
+    </div>
+
+    <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+</div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <br/>
     <h2>Congratulations to the Fall 2016 Executive Committee!</h2>
     <p class="date">Wednesday, April 13, 2016</p>
     <div class="collage-container">
