@@ -79,7 +79,7 @@ if (!$g_user->is_logged_in()) {
             <div class="person-picture">
                 <img src="documents/sp15/excomm/finance.jpg"></img>
                 <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
-                
+        
             </div>
             <div class="person-picture">
                 <img src="documents/sp15/excomm/fellowship.jpg"></img>
