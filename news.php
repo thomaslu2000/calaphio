@@ -106,25 +106,25 @@ if (!$g_user->is_logged_in()) {
     <a href="https://docs.google.com/document/d/1sl_cNXRlmQ8p4IPpnm1HBuXA9J6uZ36E_g5v8tVqNng" target="_blank"> Service VP Christine Fang </a> </a><br>
 
     <p>- <a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
-<div> 
+</div> 
 <?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
-        <h2> Announcements </h2>
-        <p class="date">Sunday, January 31, 2015</p>
-        <p style="margin-bottom: 1em">
+    <h2> Announcements </h2>
+    <p class="date">Sunday, January 31, 2015</p>
+    <p style="margin-bottom: 1em">
 
-        <a href="https://docs.google.com/a/berkeley.edu/forms/d/1MjPg04APdItAfAibr83rpupNiywmLQ-xRQ9i30UfImo/viewform" target="_blank"> Caption Contest </a> </a><br>
-        <a href="https://docs.google.com/a/berkeley.edu/forms/d/1JDx2yypHjZj-eUlyFk2wv6Q_n-gNu8MYpNzK7zE2Nt8/viewform?c=0&w=1" target="_blank"> Feedback Form </a> </a><br>
-        <a href="https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit#gid=1283827056" target="_blank"> Updated Budget </a> </a><br>
-        <a href="https://docs.google.com/a/berkeley.edu/forms/d/1o4f1xuGvHm8iShe0wTSfzeUEIYXLRMw1T_oiXkkb0qU/viewform?edit_requested=true" target="_blank"> Spring 2016 Standing  </a> </a><br>
-        <a href="http://members.calaphio.com/event.php?id=149137&sid=1nwRfrB0X-ciuYm54PDTE1" target="_blank"> Big Sib Workshop </a> </a><br>
-        <a href="https://docs.google.com/a/berkeley.edu/forms/d/1kD6ylzuLhlWLL-Yt3rWDNG3-U3yrF9vlDOfJgp_RXWA/viewform"> Fat the Cat </a> </a><br>
-        <a href="https://docs.google.com/presentation/d/1VoFJLVrgGwgqL4ValsD-7uWP3OZmZQ9CdLlWAy_OfTQ/edit#slide=id.p" target="_blank"> CM 1 Slides </a> </a><br>
-        <a href="hhttps://docs.google.com/document/d/1nPYebnIKGZP3BIzdwQhjxgaTiynfCnRrYiX7UbUBC5g/edit " target="_blank"> CM 1 Minutes </a> </a><br>
+    <a href="https://docs.google.com/a/berkeley.edu/forms/d/1MjPg04APdItAfAibr83rpupNiywmLQ-xRQ9i30UfImo/viewform" target="_blank"> Caption Contest </a> </a><br>
+    <a href="https://docs.google.com/a/berkeley.edu/forms/d/1JDx2yypHjZj-eUlyFk2wv6Q_n-gNu8MYpNzK7zE2Nt8/viewform?c=0&w=1" target="_blank"> Feedback Form </a> </a><br>
+    <a href="https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit#gid=1283827056" target="_blank"> Updated Budget </a> </a><br>
+    <a href="https://docs.google.com/a/berkeley.edu/forms/d/1o4f1xuGvHm8iShe0wTSfzeUEIYXLRMw1T_oiXkkb0qU/viewform?edit_requested=true" target="_blank"> Spring 2016 Standing  </a> </a><br>
+    <a href="http://members.calaphio.com/event.php?id=149137&sid=1nwRfrB0X-ciuYm54PDTE1" target="_blank"> Big Sib Workshop </a> </a><br>
+    <a href="https://docs.google.com/a/berkeley.edu/forms/d/1kD6ylzuLhlWLL-Yt3rWDNG3-U3yrF9vlDOfJgp_RXWA/viewform"> Fat the Cat </a> </a><br>
+    <a href="https://docs.google.com/presentation/d/1VoFJLVrgGwgqL4ValsD-7uWP3OZmZQ9CdLlWAy_OfTQ/edit#slide=id.p" target="_blank"> CM 1 Slides </a> </a><br>
+    <a href="hhttps://docs.google.com/document/d/1nPYebnIKGZP3BIzdwQhjxgaTiynfCnRrYiX7UbUBC5g/edit " target="_blank"> CM 1 Minutes </a> </a><br>
 
-    <p>-<a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
+<p>-<a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
 </div>
 <?php endif ?>
 
