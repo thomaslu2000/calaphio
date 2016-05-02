@@ -37,52 +37,52 @@ if (!$g_user->is_logged_in()) {
 <div class="newsItem">
         <br/>
         <h2>Congratulations to the Spring 2016 Pledge Committee!</h2>
-        <p class="date"> Monday, December 8 2015</p>
+        <p class="date"> Monday, December 8,2015</p>
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
                     <img src="images/pcomm_sp16/patrick.jpg"></img>
-                    <p class="center"><strong>Leadership Trainer</strong>: <br></br><a href="profile.php?user_id=2989">Patrick Chang</a></p>
+                    <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=2989">Patrick Chang</a></p>
                 </div>
 
                 <div class="person-picture">
                     <img src="images/pcomm_sp16/james.jpg"></img>
-                    <p class="center"><strong>Adminstrative Trainer</strong>: <br></br><a href="profile.php?user_id=2978">James Young</a></p>
+                    <p class="center"><strong>Adminstrative Trainer</strong>: <br><a href="profile.php?user_id=2978">James Young</a></p>
                 </div>
 
                 <div class="person-picture">
                     <img src="images/pcomm_sp16/christine.jpg"></img>
-                    <p class="center"><strong>Service Trainer</strong>: <br></br><a href="profile.php?user_id=2905">Christine Fang</a></p>
+                    <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=2905">Christine Fang</a></p>
                 </div>
 
                 <div class="person-picture">
                     <img src="images/pcomm_sp16/elaine.jpg"></img>
-                    <p class="center"><strong>Service Trainer</strong>: <br></br><a href="profile.php?user_id=2913">Elaine Do</a></p>
+                    <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=2913">Elaine Do</a></p>
                 </div>
 
                 <div class="person-picture">
                     <img src="images/pcomm_sp16/estelle.jpg"></img>
-                    <p class="center"><strong>Finance Trainer</strong>: <br></br><a href="profile.php?user_id=2974">Estelle Yeung</a></p>
+                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=2974">Estelle Yeung</a></p>
                 </div>
 
                 <div class="person-picture">
                     <img src="images/pcomm_sp16/sophia.jpg"></img>
-                    <p class="center"><strong>Finance Trainer</strong>: <br></br><a href="profile.php?user_id=2939">Sophia Du</a></p>
+                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=2939">Sophia Du</a></p>
                 </div>
 
                 <div class="person-picture">
                     <img src="images/pcomm_sp16/antony.jpg"></img>
-                    <p class="center"><strong>Fellowship Trainer</strong>: <br></br><a href="profile.php?user_id=2869">Antony Nguyen</a></p>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=2869">Antony Nguyen</a></p>
                 </div>
 
                  <div class="person-picture">
                     <img src="images/pcomm_sp16/caroline.jpg"></img>
-                    <p class="center"><strong>Fellowship Trainer</strong>: <br></br><a href="profile.php?user_id=2902">Caroline Ba</a></p>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=2902">Caroline Ba</a></p>
                 </div>
 
                  <div class="person-picture">
                     <img src="images/pcomm_sp16/lisa.jpg"></img>
-                    <p class="center"><strong>Historian Trainer</strong>: <br></br><a href="profile.php?user_id=2857">Lisa Hoang</a></p>
+                    <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=2857">Lisa Hoang</a></p>
                 </div>
 
             </div>
