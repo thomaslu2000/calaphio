@@ -124,7 +124,7 @@ if (!$g_user->is_logged_in()) {
     <a href="https://docs.google.com/presentation/d/1VoFJLVrgGwgqL4ValsD-7uWP3OZmZQ9CdLlWAy_OfTQ/edit#slide=id.p" target="_blank"> CM 1 Slides </a> </a><br>
     <a href="hhttps://docs.google.com/document/d/1nPYebnIKGZP3BIzdwQhjxgaTiynfCnRrYiX7UbUBC5g/edit " target="_blank"> CM 1 Minutes </a> </a><br>
 
-<p>-<a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
+<p>- <a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
 </div>
 <?php endif ?>
 

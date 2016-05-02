@@ -36,7 +36,7 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
-        <h2> Chairing Applications are Out!</h2>
+        <h2> Chairing Applications are out!</h2>
         <p class="date">May 27, 2015</p>
 
     <p style="margin-bottom: 1em">
@@ -54,7 +54,7 @@ if (!$g_user->is_logged_in()) {
 	<a href="https://docs.google.com/forms/d/1iUuQ-pFoiBKiJHDRseYs25y_u-AQr723mO2ptdBQxCY/viewform">Historian</a><br>
     </p>
 
-    <p>-<a href="profile.php?user_id=2192">Audrey(CM)</a></p>
+    <p>- <a href="profile.php?user_id=2192">Audrey (CM)</a></p>
 </div>
 <?php endif ?>
 
