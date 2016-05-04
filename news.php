@@ -41,6 +41,41 @@ if (!$g_user->is_logged_in()) {
     <div class="collage-container">
         <div class="collage-pictures">
             <div class="person-picture">
+                <a href="profile.php?user_id=3569"><img src="images/fall_fellowship/gene.jpg"></img></a>
+                <p class="center"><a href="profile.php?user_id=3569">Gene Ho</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3571"><img src="images/fall_fellowship/bianca.jpg"></img></a>
+                <p class="center"><a href="profile.php?user_id=3571">Bianca Hsueh</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3592"><img src="images/fall_fellowship/nick.jpg"></img></a>
+                <p class="center"><a href="profile.php?user_id=3592">Nick Weis</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3292"><img src="images/fall_fellowship/stanley.jpg"></img></a>
+                <p class="center"><a href="profile.php?user_id=3292">Stanley Shaw</a></p>
+            </div>
+
+        </div>
+        <div style="clear: left;"></div>
+    </div>
+
+    <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+</div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <br/>
+    <h2>Congratulations to the Fall 2016 Pledge Committee!</h2>
+    <p class="date"> Tuesday, May 3, 2016</p>
+    <div class="collage-container">
+        <div class="collage-pictures">
+            <div class="person-picture">
                 <a href="profile.php?user_id=2979"><img src="images/pcomm_fa16/jerianne.jpg"></img></a>
                 <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=2979">Jerianne Lukban</a></p>
             </div>
