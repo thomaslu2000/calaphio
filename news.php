@@ -60,10 +60,7 @@ if (!$g_user->is_logged_in()) {
                 <p class="center"><a href="profile.php?user_id=3570">Alice Hsieh</a></p>
             </div>
         </div>
-        <div style="clear: left;"></div>
     </div>
-    <p style="margin-bottom: 1em">
-
     <br>Brothers, please offer all of your support towards these individuals as they work hard on establishing an amazing Rush!</br> 
     <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
 </div>
