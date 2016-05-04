@@ -36,8 +36,8 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <br/>
-    <h2>Congratulations to the Fall 2016 Pledge Committee!</h2>
-    <p class="date"> Tuesday, May 3, 2016</p>
+    <h2>Congratulations to the Fall Fellowship Chairs!</h2>
+    <p class="date">Wednesday, May 4, 2016</p>
     <div class="collage-container">
         <div class="collage-pictures">
             <div class="person-picture">
@@ -72,7 +72,7 @@ if (!$g_user->is_logged_in()) {
 <div class="newsItem">
     <br/>
     <h2>Congratulations to the Fall 2016 Pledge Committee!</h2>
-    <p class="date"> Tuesday, May 3, 2016</p>
+    <p class="date">Tuesday, May 3, 2016</p>
     <div class="collage-container">
         <div class="collage-pictures">
             <div class="person-picture">
