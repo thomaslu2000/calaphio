@@ -35,57 +35,57 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
-        <br/>
-        <h2>Congratulations to the Fall 2016 Pledge Committee!</h2>
-        <p class="date"> Tuesday, May 3, 2016</p>
-        <div class="collage-container">
-            <div class="collage-pictures">
-                <div class="person-picture">
-                    <a href="profile.php?user_id=2979"><img src="images/pcomm_fa16/jerianne.jpg"></img></a>
-                    <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=2979">Jerianne Lukban</a></p>
-                </div>
-
-                <div class="person-picture">
-                    <a href="profile.php?user_id=3259"><img src="images/pcomm_fa16/karen.jpg"></img></a>
-                    <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=3259">Karen Chou</a></p>
-                </div>
-
-                <div class="person-picture">
-                    <a href="profile.php?user_id=3263"><img src="images/pcomm_fa16/nao.jpg"></img></a>
-                    <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=3263">Nao Yamamoto</a></p>
-                </div>
-
-                <div class="person-picture">
-                    <a href="profile.php?user_id=3277"><img src="images/pcomm_fa16/hyeonji.jpg"></img></a>
-                    <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=3277">Hyeonji Shim</a></p>
-                </div>
-
-                <div class="person-picture">
-                    <a href="profile.php?user_id=3279"><img src="images/pcomm_fa16/virginia.jpg"></img></a>
-                    <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=3279">Virginia Yan</a></p>
-                </div>
-
-                <div class="person-picture">
-                    <a href="profile.php?user_id=3256"><img src="images/pcomm_fa16/jerry.jpg"></img></a>
-                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3256">Jerry Park</a></p>
-                </div>
-
-                <div class="person-picture">
-                    <a href="profile.php?user_id=3272"><img src="images/pcomm_fa16/joseph.jpg"></img></a>
-                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3272">Joseph Lee</a></p>
-                </div>
-
-                 <div class="person-picture">
-                    <a href="profile.php?user_id=3264"><img src="images/pcomm_fa16/jeremy.jpg"></img></a>
-                    <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=3264">Jeremy Lam</a></p>
-                </div>
-
+    <br/>
+    <h2>Congratulations to the Fall 2016 Pledge Committee!</h2>
+    <p class="date"> Tuesday, May 3, 2016</p>
+    <div class="collage-container">
+        <div class="collage-pictures">
+            <div class="person-picture">
+                <a href="profile.php?user_id=2979"><img src="images/pcomm_fa16/jerianne.jpg"></img></a>
+                <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=2979">Jerianne Lukban</a></p>
             </div>
-            <div style="clear: left;"></div>
-        </div>
 
-        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+            <div class="person-picture">
+                <a href="profile.php?user_id=3259"><img src="images/pcomm_fa16/karen.jpg"></img></a>
+                <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=3259">Karen Chou</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3263"><img src="images/pcomm_fa16/nao.jpg"></img></a>
+                <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=3263">Nao Yamamoto</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3277"><img src="images/pcomm_fa16/hyeonji.jpg"></img></a>
+                <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=3277">Hyeonji Shim</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3279"><img src="images/pcomm_fa16/virginia.jpg"></img></a>
+                <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=3279">Virginia Yan</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3256"><img src="images/pcomm_fa16/jerry.jpg"></img></a>
+                <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3256">Jerry Park</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3272"><img src="images/pcomm_fa16/joseph.jpg"></img></a>
+                <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3272">Joseph Lee</a></p>
+            </div>
+
+             <div class="person-picture">
+                <a href="profile.php?user_id=3264"><img src="images/pcomm_fa16/jeremy.jpg"></img></a>
+                <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=3264">Jeremy Lam</a></p>
+            </div>
+
+        </div>
+        <div style="clear: left;"></div>
     </div>
+
+    <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+</div>
 <?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
