@@ -68,6 +68,7 @@ if (!$g_user->is_logged_in()) {
     <iframe width="420" height="315" src="//www.youtube.com/embed/dnA9zU-MafQ" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
