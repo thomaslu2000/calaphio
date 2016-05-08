@@ -588,6 +588,31 @@ $query = new Query("
 $row = $query->fetch_row();
 $fall15_fellowships = $row['count'];
 
+$start = '2015-12-7';
+$end = '2016-5-2';
+$query = new Query("
+		SELECT sum(hours) AS hours FROM apo_calendar_event
+			JOIN apo_calendar_attend USING (event_id)
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$spring16 = $row['hours'];
+$spring16_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			AND evaluated=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$spring16_projects = $row['count'];
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_fellowship=TRUE)
+			AND evaluated=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$spring16_fellowships = $row['count'];
+
 	
 	echo <<<HEREDOC
 <h1>View Total Service Hours</h1>
@@ -618,6 +643,7 @@ $fall15_fellowships = $row['count'];
 <tr><td axis="semester">$fall14_dates (Fall 2014) KHK Semester</td><td axis="hours">$fall14</td><td axis="hours">$fall14_projects</td><td axis="hours">$fall14_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$spring15_dates (Spring 2015) TT Semester</td><td axis="hours">$spring15</td><td axis="hours">$spring15_projects</td><td axis="hours">$spring15_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$fall15_dates (Fall 2015) PMP Semester</td><td axis="hours">$fall15</td><td axis="hours">$fall15_projects</td><td axis="hours">$fall15_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring16_dates (Spring 2016) RBD Semester</td><td axis="hours">$spring16</td><td axis="hours">$spring16_projects</td><td axis="hours">$spring16_fellowships</td><td axis="comments"></td></tr>
 </table>
 
 HEREDOC;
