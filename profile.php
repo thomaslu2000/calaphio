@@ -1153,9 +1153,11 @@ if (isset($_REQUEST['user_id']) && is_numeric($_REQUEST['user_id'])) {
 		echo <<<DOCHERE
 		<div class="profile-left">
 DOCHERE;
+<?php if ($g_user->is_logged_in()): ?>
 		profile_header($user_id);
 		echo <<<DOCHERE
 		<div class="main-profile">
+<?php endif ?>
 DOCHERE;
 		if ($g_user->data['user_id'] == $user_id) {
 			echo <<<DOCHERE
