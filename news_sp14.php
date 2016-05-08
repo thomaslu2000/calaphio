@@ -29,7 +29,7 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
-
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Congratulations to Pooja Shah for getting GG Maniac!</h2>
     <p class="date">May 2nd 2014</p>
@@ -39,8 +39,9 @@ if (!$g_user->is_logged_in()) {
         congratulations when you see her!</p>
     <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
-<?php if($g_user->is_logged_in()): ?>
-    
+<?php endif ?>
+
+<?php if($g_user->is_logged_in()): ?>    
 <div class="newsItem">
     <h2>Notes From CM 8</h2>
     <p class="date">May 2nd, 2014</p>
@@ -52,7 +53,9 @@ if (!$g_user->is_logged_in()) {
     <iframe width="420" height="315" src="//www.youtube.com/embed/-sREi4mbeEA" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Notes From CM 7</h2>
     <p class="date">April 15, 2014</p>
@@ -66,6 +69,7 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Elections is Coming Up! Send in Your Past Election Platforms</h2>
     <p class="date">April 7, 2014</p>
@@ -97,6 +101,8 @@ if (!$g_user->is_logged_in()) {
     </p>
 </div>
 <?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Congratulations to Angela Wu for getting GG Maniac!</h2>
     <p class="date">April 1st, 2014</p>
@@ -106,6 +112,8 @@ if (!$g_user->is_logged_in()) {
     in a conversation with her because she is extremely friendly. </p>
     <p>-<a href="/profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
+
 <?php if($g_user->is_logged_in()): ?>
 <!--<div class="newsItem">
 <h2>Submit to Caption Contest! Last day to submit is April 1, 2014 at 5pm before CM 6 starts!</h2>
@@ -133,6 +141,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Congratulations to Ryan Fong for getting GG Maniac!</h2>
     <p class="date">March 16, 2014</p>
@@ -144,6 +153,8 @@ if (!$g_user->is_logged_in()) {
 		feels very lucky because he is one of the coolest and down to earth people you will ever meet!</p>
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
+
 <?php if($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Notes From CM 5</h2>
@@ -158,6 +169,8 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
 <?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Congratulations to Annie Ferguson for getting GG Maniac!</h2>
     <p class="date">March 1, 2014</p>
@@ -167,6 +180,8 @@ if (!$g_user->is_logged_in()) {
 	<p style="margin-bottom: 1.5em">When you see Annie, thank her to show your appreciation! Maybe give her a ducky or two as well!</p>
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
+
 <?php if($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Submit to Caption Contest! Last day to submit is March 11, 2014 at 5pm before CM 5 starts!</h2>
@@ -180,6 +195,9 @@ if (!$g_user->is_logged_in()) {
 		It really helps to make a better Caption Contest!</b></p>
 	<p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Notes From CM 4</h2>
     <p class="date">March 01, 2014</p>
@@ -193,6 +211,8 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
 <?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Congratulations to James Wang for getting GG Maniac!</h2>
     <p class="date">February 11, 2014</p>
@@ -202,6 +222,8 @@ and is now bigging again this semester! Whenever you need someone to fill up a s
 	<p style="margin-bottom: 1.5em">When you see James, give him a hug and show him your appreciation. For those who do end up being his littles, you will really love having him around! </p>
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Notes From CM 3</h2>
@@ -216,6 +238,8 @@ and is now bigging again this semester! Whenever you need someone to fill up a s
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
 <?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Congratulations to Rebecca Phuong for getting GG Maniac!</h2>
     <p class="date">February 05, 2014</p>
@@ -226,8 +250,9 @@ does as much, if not more than a big should. She pledged JS semester and was Gam
 remember to thank her and congratulate her because she deserves it after putting in so much work!</p>
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
-<?php if ($g_user->is_logged_in()): ?>
+<?php endif ?>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Notes From CM 2</h2>
     <p class="date">February 05, 2014</p>
@@ -240,6 +265,9 @@ remember to thank her and congratulate her because she deserves it after putting
     <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/uygn3MZplUw" frameborder="0" allowfullscreen></iframe>
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Notes From CM 1</h2>
     <p class="date">January 22, 2014</p>
@@ -255,6 +283,8 @@ remember to thank her and congratulate her because she deserves it after putting
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
 <?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Congratulations to Courtney for getting namesake!</h2>
     <p class="date">January 21, 2014</p>
@@ -265,8 +295,9 @@ remember to thank her and congratulate her because she deserves it after putting
 	<p style="margin-bottom: 1.5em">If you ever see Courtney, please join me in congratulating her and strike a conversation to get a feel of her dazzling personality!</p>
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
-<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+<?php endif ?>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
 	<h2>Take a look at our approved Budget!</h2>
     <p class="date">January 21, 2014</p>
@@ -280,10 +311,10 @@ remember to thank her and congratulate her because she deserves it after putting
     <p style="margin-bottom: 1.5em">Sign up for flyering and get some good <strong>CM</strong> pledges!</p>
 	<p style="margin-bottom: 1.5em"><a href="https://docs.google.com/spreadsheets/d/1SSCfj2-rx_HMjs2zx9N-nGbKQk1rf7iPkTyZw-s7SXM/edit#gid=1267904948">Flyering and Chalking Sign Ups!</a></p>
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
-
 </div>
-
 <?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <h2>Congratulations to the Spring 2014 Rush Chairs!</h2>
     <p class="date">December 13, 2013</p>
@@ -309,6 +340,8 @@ remember to thank her and congratulate her because she deserves it after putting
     <p>I know they will recruit amazing new additions to the chapter!</p>
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <br/>
@@ -360,6 +393,7 @@ remember to thank her and congratulate her because she deserves it after putting
     <p>-<a href="profile.php?user_id=1584">Ngoc Tran (MH)</a></p>
 </div>
 <?php endif ?>
+
 <a href="news_fa13.php">Older News ></a>
 <?php
 Template::print_body_footer();
