@@ -613,9 +613,11 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring16_fellowships = $row['count'];
 
-	<?php if ($g_user->is_logged_in()): ?>
-	echo <<<HEREDOC
 	
+	echo <<<HEREDOC
+
+	<?php if ($g_user->is_logged_in()): ?>
+
 <h1>View Total Service Hours</h1>
 <p style="padding: 1em 0px">Note that this is only as accurate as what is reported on the calendar. Events need to be <strong>evaluated</strong> and marked with the appropriate event types to count.</p>
 <table style="width: auto;">
