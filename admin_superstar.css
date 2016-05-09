@@ -10,6 +10,7 @@ table.admin_superstar caption
 	font-weight: bold;
 	background-color: #B4B5D6;
 	border: solid 1px black;
+  padding: 0;
 }
 
 table.admin_superstar td.heading div

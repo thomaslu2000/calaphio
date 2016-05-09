@@ -4,29 +4,48 @@ Code licensed under the BSD License:
 http://developer.yahoo.net/yui/license.txt
 version: 0.10.0
 */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{
-	margin: 0;
-	padding-top: 3;
-	/* padding-right: 3px; */
-	padding-bottom: 10px;
-	padding-left: 0px;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding-top: 3;
+    /* padding-right: 3px; */
+    padding-bottom: 10px;
+    padding-left: 0px;
 }
 
-#apo_short_search_input {
+#
+apo_short_search_input {
     padding-bottom: 3px;
     font-size: 15px;
 }
 
-table{border-collapse:collapse;border-spacing:0;}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
-fieldset,img{border:0;}
+fieldset, img {
+    border: 0;
+}
 
-address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+address, caption, cite, code, dfn, em, strong, th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
 
-ol,ul {list-style:none;}
+ol, ul {
+    list-style: none;
+}
 
-caption,th {text-align:center;}
+caption, th {
+    text-align: center;
+    padding: 0 10 0 10;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:100%;}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100 % ;
+}
 
-q:before,q:after{content:'';}
+q: before, q: after {
+    content: '';
+}
