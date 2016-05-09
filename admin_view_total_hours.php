@@ -614,7 +614,7 @@ $row = $query->fetch_row();
 $spring16_fellowships = $row['count'];
 
 	
-	echo <<<HEREDOC>>>
+	echo <<<HEREDOC
 
 	<?php if ($g_user->is_logged_in()): ?>
 
