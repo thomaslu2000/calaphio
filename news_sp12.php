@@ -1,18 +1,15 @@
 <?php
 require("include/includes.php");
 require("include/Calendar.class.php");
-require("include/Template.class.php");
-require("include/Shoutbox.class.php");
+require("include/Template.class.php");// require("include/Shoutbox.class.php");
 require("include/EvalNag.class.php");
 Template::print_head(array("site.css", "calendar.css", "excel.css"));
 Template::print_body_header('Home', 'NEWS');
 
 $evalnag = new EvalNag();
 echo $evalnag->display("2007-01-01");
-
-$shoutbox = new Shoutbox();
-$shoutbox->process();
-echo $shoutbox->display();
+// $shoutbox = new Shoutbox();// $shoutbox->process();
+// echo $shoutbox->display();
 
 Calendar::print_upcoming_events(5);
 

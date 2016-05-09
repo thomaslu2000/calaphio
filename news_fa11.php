@@ -1,18 +1,15 @@
 <?php
 require("include/includes.php");
 require("include/Calendar.class.php");
-require("include/Template.class.php");
-require("include/Shoutbox.class.php");
+require("include/Template.class.php");// require("include/Shoutbox.class.php");
 require("include/EvalNag.class.php");
 Template::print_head(array("site.css", "calendar.css", "excel.css"));
 Template::print_body_header('Home', 'NEWS');
 
 $evalnag = new EvalNag();
 echo $evalnag->display("2007-01-01");
-
-$shoutbox = new Shoutbox();
-$shoutbox->process();
-echo $shoutbox->display();
+// $shoutbox = new Shoutbox();// $shoutbox->process();
+// echo $shoutbox->display();
 
 Calendar::print_upcoming_events(5);
 
@@ -564,7 +561,16 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 		<p class="date">September 19, 2011</p>
 		<p style="margin-bottom: 1.5em">
 
-		Tomorrow night, Tuesday Sept. 20th, is the ritual ceremony and then CM3 in 159 Mulford at 7:00 PM.<br><br>		<i><b>Ritual:</b></i><br>		Please wear <b>business casual attire</b>. Similar to what we expect the pledges to wear:<br>		No jeans/sweatshirts/sneakers<br>		No clubbing clothes<br>		Don't forget your pins!<br>		No laptops and cell phones during the event<br><br>		Please arrive in <font color="red">159 Mulford no later than 7:00 PM</font> (try to be there at 6:50 PM to be safe)!	
+		Tomorrow night, Tuesday Sept. 20th, is the ritual ceremony and then CM3 in 159 Mulford at 7:00 PM.<br><br>
+
+		<i><b>Ritual:</b></i><br>
+		Please wear <b>business casual attire</b>. Similar to what we expect the pledges to wear:<br>
+		No jeans/sweatshirts/sneakers<br>
+		No clubbing clothes<br>
+		Don't forget your pins!<br>
+		No laptops and cell phones during the event<br><br>
+
+		Please arrive in <font color="red">159 Mulford no later than 7:00 PM</font> (try to be there at 6:50 PM to be safe)!	
 		</p>
 		<p>-<a href="roster.php?function=Search&user_id=1190">Tomomasa Terazaki (GL)</a></p>
 	</div>
