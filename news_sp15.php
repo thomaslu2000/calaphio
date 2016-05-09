@@ -29,7 +29,7 @@ $g_user->print_mailer(false);
 $g_user->print_personal_messages();
 
 if (!$g_user->is_logged_in()) {
-	echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
+    echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
 }
 
 ?>
@@ -41,17 +41,17 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin-bottom: 1em">
     Brothers, <br><br>
-	Please take some time to look over the applications and complete them early so you all don't have to worry about them later on!<br>
-	The deadline to apply for chairing positions will be August 1st, 2015. <br>
-	Please note that some chairing positions have an earlier deadline than the rest. <br><br>
-	-Karen <br><br>
-	<a href="https://docs.google.com/forms/d/1QPCq-Y_8TevPHKrdpOZh4LKC3QNH8IrUNogLJ0vb9HA/viewform">President</a><br>
-	<a href="https://docs.google.com/forms/d/1gjZkbPDBu0m_lPqprOEb8FxOyxBqVdpC7b2IpZMoGNg/viewform">Administrative</a><br>
-	<a href="https://docs.google.com/forms/d/1e8vTh2Vl2XflZNxQ0NYALOXds47ulUvwbvSTJz2_yrs/viewform?c=0&w=1">Membership</a><br>
-	<a href="https://docs.google.com/forms/d/1fzg1a_cxqxyg4TSrwMAuMaGtT8oiltUC6hQhV8WfhIY/viewform?c=0&w=1">Service</a><br>
-	<a href="https://docs.google.com/forms/d/1aBwJeFzi83cuoUslveY66QJYaWyBgpFuiKgR9mPES40/viewform?c=0&w=1">Finance</a><br>
-	<a href="https://docs.google.com/forms/d/1BKpE3568sdGkyzvknzqVZdb_gTQiMm-vdw7hN1oSCIQ/viewform?c=0&w=1">Fellowship</a><br>
-	<a href="https://docs.google.com/forms/d/1iUuQ-pFoiBKiJHDRseYs25y_u-AQr723mO2ptdBQxCY/viewform">Historian</a><br>
+    Please take some time to look over the applications and complete them early so you all don't have to worry about them later on!<br>
+    The deadline to apply for chairing positions will be August 1st, 2015. <br>
+    Please note that some chairing positions have an earlier deadline than the rest. <br><br>
+    -Karen <br><br>
+    <a href="https://docs.google.com/forms/d/1QPCq-Y_8TevPHKrdpOZh4LKC3QNH8IrUNogLJ0vb9HA/viewform">President</a><br>
+    <a href="https://docs.google.com/forms/d/1gjZkbPDBu0m_lPqprOEb8FxOyxBqVdpC7b2IpZMoGNg/viewform">Administrative</a><br>
+    <a href="https://docs.google.com/forms/d/1e8vTh2Vl2XflZNxQ0NYALOXds47ulUvwbvSTJz2_yrs/viewform?c=0&w=1">Membership</a><br>
+    <a href="https://docs.google.com/forms/d/1fzg1a_cxqxyg4TSrwMAuMaGtT8oiltUC6hQhV8WfhIY/viewform?c=0&w=1">Service</a><br>
+    <a href="https://docs.google.com/forms/d/1aBwJeFzi83cuoUslveY66QJYaWyBgpFuiKgR9mPES40/viewform?c=0&w=1">Finance</a><br>
+    <a href="https://docs.google.com/forms/d/1BKpE3568sdGkyzvknzqVZdb_gTQiMm-vdw7hN1oSCIQ/viewform?c=0&w=1">Fellowship</a><br>
+    <a href="https://docs.google.com/forms/d/1iUuQ-pFoiBKiJHDRseYs25y_u-AQr723mO2ptdBQxCY/viewform">Historian</a><br>
     </p>
 
     <p>- <a href="profile.php?user_id=2192">Audrey (CM)</a></p>
@@ -173,7 +173,7 @@ if (!$g_user->is_logged_in()) {
         <h2>Notes From CM 8</h2>
         <p class="date">May 5, 2015</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 8!<br>
-            <a href="https://docs.google.com/presentation/d/1CM2fsAqCXcpDGUQ2OVJ0WjNn-OupvW5V1pijy0X0iak/edit">CM 8 Slides</a><br>			
+            <a href="https://docs.google.com/presentation/d/1CM2fsAqCXcpDGUQ2OVJ0WjNn-OupvW5V1pijy0X0iak/edit">CM 8 Slides</a><br>          
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/FTYn-OhkBik" frameborder="0" allowfullscreen></iframe>
         <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
     </div>
@@ -184,7 +184,7 @@ if (!$g_user->is_logged_in()) {
         <h2>Notes From CM 7</h2>
         <p class="date">May 5, 2015</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 7!<br>
-            <a href="https://docs.google.com/presentation/d/1KM0rJbNQc7eNSxcQF6NbwKV6UUjNk5VXyE7lVMGV91k/edit?usp=sharing">CM 7 Slides</a><br>			
+            <a href="https://docs.google.com/presentation/d/1KM0rJbNQc7eNSxcQF6NbwKV6UUjNk5VXyE7lVMGV91k/edit?usp=sharing">CM 7 Slides</a><br>          
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/sn6FYzFKM0A" frameborder="0" allowfullscreen></iframe>
         <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
     </div>
@@ -195,7 +195,7 @@ if (!$g_user->is_logged_in()) {
         <h2>Notes From CM 6</h2>
         <p class="date">April 1, 2015</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 6!<br>
-            <a href="https://docs.google.com/presentation/d/1ZoXVRohlI4ey1sQaohWZwwh0cpc_Vn1SXBv2De1y7BA/edit?usp=sharing">CM 6 Slides</a> | <a href="https://docs.google.com/document/d/12X5IJR3CxuXKA_rJraYws9sMaoHIsrw-LPFhtrN34w4/edit">CM 6 Minutes</a><br>				
+            <a href="https://docs.google.com/presentation/d/1ZoXVRohlI4ey1sQaohWZwwh0cpc_Vn1SXBv2De1y7BA/edit?usp=sharing">CM 6 Slides</a> | <a href="https://docs.google.com/document/d/12X5IJR3CxuXKA_rJraYws9sMaoHIsrw-LPFhtrN34w4/edit">CM 6 Minutes</a><br>                
             Submit your <a href="http://goo.gl/forms/33SHQjKbD7">Caption Contest</a> and <a href="http://goo.gl/forms/GA3QFrpTTf">Richard Golden Duck</a>!</p>
             New Spring 15 Budget: <a href="https://docs.google.com/a/berkeley.edu/spreadsheets/d/1CgFV2Pt4AWtsJTbh4asi2Xi_CoshFJgHvfK93lAneC0/edit#gid=0">Budget</a><br>
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/2MFJ-Dbm5zU" frameborder="0" allowfullscreen></iframe>
@@ -208,7 +208,7 @@ if (!$g_user->is_logged_in()) {
         <h2>Notes From CM 5</h2>
         <p class="date">March 10, 2015</p>
         <p style="margin-bottom: 1em">Here are the documents from CM 5!<br>
-            <a href="https://docs.google.com/presentation/d/1tm0l9tAwi9gSYk90kjN0RQPmL3UehpXK_jsqpWrZ3aM/edit?usp=sharing">CM 5 Slides</a> | <a href="https://docs.google.com/document/d/12X5IJR3CxuXKA_rJraYws9sMaoHIsrw-LPFhtrN34w4/edit">CM 5 Minutes</a><br>				
+            <a href="https://docs.google.com/presentation/d/1tm0l9tAwi9gSYk90kjN0RQPmL3UehpXK_jsqpWrZ3aM/edit?usp=sharing">CM 5 Slides</a> | <a href="https://docs.google.com/document/d/12X5IJR3CxuXKA_rJraYws9sMaoHIsrw-LPFhtrN34w4/edit">CM 5 Minutes</a><br>                
             Submit your <a href="http://goo.gl/forms/ief54YXKdw">Caption Contest</a> and <a href="http://goo.gl/forms/GA3QFrpTTf">Richard Golden Duck</a>!</p>
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/9-b3-oDHh0U" frameborder="0" allowfullscreen></iframe>
         <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
@@ -252,97 +252,97 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
-	<div class="newsItem">
-		<h2>What does it mean to be an Active?</h2>
-		<p class="date">February 4, 2015</p>
+    <div class="newsItem">
+        <h2>What does it mean to be an Active?</h2>
+        <p class="date">February 4, 2015</p>
         <p style="margin-bottom: 1em">
         We asked a question to the chapter, “What does it mean to be an active?”<br>
         Here are some answers I would like to share!<br><br>
-		<i>“To be proactive in the chapter, willing to demonstrate leadership and go out of your way to help a brother in need”</i><br><br>
-		<i>“To become one who takes initiative and acts as a mentor”</i><br><br>
-		<i>“Participating in chapter events with enthusiasm and being a good representative of the chapter”</i><br><br>
-		<i>“Someone who is an example to follow, who inspires and motivates people to be the best version of themselves day in and day out.”</i><br><br>
-		<i>“Accountable, Respectable”</i><br><br>
-		<i>“Someone who isn’t afraid of making mistakes and is keen to pass the wisdom around LFS”</i><br><br>
-		<i>“Getting fat with brothers”</i><br><br>
-		<i>“To be of LFS”</i><br><br>
-		<i>“Brotherhood”</i></p>
-		<p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
-	</div>
+        <i>“To be proactive in the chapter, willing to demonstrate leadership and go out of your way to help a brother in need”</i><br><br>
+        <i>“To become one who takes initiative and acts as a mentor”</i><br><br>
+        <i>“Participating in chapter events with enthusiasm and being a good representative of the chapter”</i><br><br>
+        <i>“Someone who is an example to follow, who inspires and motivates people to be the best version of themselves day in and day out.”</i><br><br>
+        <i>“Accountable, Respectable”</i><br><br>
+        <i>“Someone who isn’t afraid of making mistakes and is keen to pass the wisdom around LFS”</i><br><br>
+        <i>“Getting fat with brothers”</i><br><br>
+        <i>“To be of LFS”</i><br><br>
+        <i>“Brotherhood”</i></p>
+        <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+    </div>
 <?php endif ?>
 
 
 <?php if ($g_user->is_logged_in()): ?>
-	<div class="newsItem">
-		<h2>Section 4 Awards</h2>
-		<p class="date">February 4, 2015</p>
-		<p style="margin-bottom: 1em">
-			Section 4 is accepting Chapter Awards and Individual Awards now!<br>
-			Here are some information about Section 4 Awards:
-		</p>
+    <div class="newsItem">
+        <h2>Section 4 Awards</h2>
+        <p class="date">February 4, 2015</p>
+        <p style="margin-bottom: 1em">
+            Section 4 is accepting Chapter Awards and Individual Awards now!<br>
+            Here are some information about Section 4 Awards:
+        </p>
 
-		<p style="margin-bottom: 1em">
-			<font size="3"><b><u>Chapter Awards</u></b></font><br>
-			
-			<ul style="list-style: inside disc; margin-bottom: 2em;">
-				<li><font size="3">Chapter Gold Pan Award - Leadership</font></li>
-			<ul style="list-style: circle; margin-left: 4em">
-				<li>Leadership development</li>
-				<li>Participation in Sectionals, Regionals, Nationals</li>
-				<li>Hosting of events, especially IC events</li>
-			</ul>
-			
-				<li><font size="3">Chapter Gold Pan Award - Fellowship</font></li>
-			<ul style="list-style: circle; margin-left: 4em">
-				<li>Variety of activities promoting fellowship</li>
-				<li>Promotion of Brotherhood</li>
-			</ul>
-
-				<li><font size="3">Chapter Gold Pan Award - Service</font></li>
-			<ul style="list-style: circle; margin-left: 4em">
-				<li>Chapter initiated projects</li>
-				<li>4 C’s</li>
-				<li>Chapter-wide participation</li>
-				<li>Service with IC/Alumni</li>
-			</ul>
-
-				<li><font size="3">Chapter Gold Pan Award - Overall Program</font></li>
-			<ul style="list-style: circle; margin-left: 4em">
-				<li>Balance between areas of program</li>
-				<li>Completion of a National Service Week project, Spring Youth Service Day project</li>
-			</ul>
-
-				<li><font size="3">Most Improved Chapter Award</font></li>
-			<ul style="list-style: circle; margin-left: 4em">
-				<li>Increased number of member, service, and fellowship activities, and types of innovative programs</li>
-				<li>Improvement of the strength of LFS</li>
-			</ul>
-
-				<li><font size="3">Inter Chapter Award</font></li>
-			<ul style="list-style: circle; margin-left: 4em">
-				<li>To the chapter with the highest percentage of members that have visited the most chapters within one year.</li>
+        <p style="margin-bottom: 1em">
+            <font size="3"><b><u>Chapter Awards</u></b></font><br>
+            
+            <ul style="list-style: inside disc; margin-bottom: 2em;">
+                <li><font size="3">Chapter Gold Pan Award - Leadership</font></li>
+            <ul style="list-style: circle; margin-left: 4em">
+                <li>Leadership development</li>
+                <li>Participation in Sectionals, Regionals, Nationals</li>
+                <li>Hosting of events, especially IC events</li>
             </ul>
-			</p>
+            
+                <li><font size="3">Chapter Gold Pan Award - Fellowship</font></li>
+            <ul style="list-style: circle; margin-left: 4em">
+                <li>Variety of activities promoting fellowship</li>
+                <li>Promotion of Brotherhood</li>
+            </ul>
+
+                <li><font size="3">Chapter Gold Pan Award - Service</font></li>
+            <ul style="list-style: circle; margin-left: 4em">
+                <li>Chapter initiated projects</li>
+                <li>4 C’s</li>
+                <li>Chapter-wide participation</li>
+                <li>Service with IC/Alumni</li>
+            </ul>
+
+                <li><font size="3">Chapter Gold Pan Award - Overall Program</font></li>
+            <ul style="list-style: circle; margin-left: 4em">
+                <li>Balance between areas of program</li>
+                <li>Completion of a National Service Week project, Spring Youth Service Day project</li>
+            </ul>
+
+                <li><font size="3">Most Improved Chapter Award</font></li>
+            <ul style="list-style: circle; margin-left: 4em">
+                <li>Increased number of member, service, and fellowship activities, and types of innovative programs</li>
+                <li>Improvement of the strength of LFS</li>
+            </ul>
+
+                <li><font size="3">Inter Chapter Award</font></li>
+            <ul style="list-style: circle; margin-left: 4em">
+                <li>To the chapter with the highest percentage of members that have visited the most chapters within one year.</li>
+            </ul>
+            </p>
             <br>
-		
-		<p style="margin-bottom: 1em">
-			<font size="3"><b><u>Individual Award</u></b></font><br>
-			<ul style="list-style: inside disc; margin-bottom: 2em;">
-				<li><font size="3">Ocho Award</font></li>
-			<ul style="list-style: circle; margin-left: 4em">
-				<li>To individuals who have visited 8 or more different chapters within one year, measured from one Spring Sectionals to the next.</li>
-				<li>Due on April 16th. Submit application to tracy.m.yamato@gmail.com</li>
-				<li><a href="https://drive.google.com/open?id=0B1PYMBbhnLMsNDNQNmpuRmRWdW8&authuser=1">Application Link</a></li>
-			</ul>
+        
+        <p style="margin-bottom: 1em">
+            <font size="3"><b><u>Individual Award</u></b></font><br>
+            <ul style="list-style: inside disc; margin-bottom: 2em;">
+                <li><font size="3">Ocho Award</font></li>
+            <ul style="list-style: circle; margin-left: 4em">
+                <li>To individuals who have visited 8 or more different chapters within one year, measured from one Spring Sectionals to the next.</li>
+                <li>Due on April 16th. Submit application to tracy.m.yamato@gmail.com</li>
+                <li><a href="https://drive.google.com/open?id=0B1PYMBbhnLMsNDNQNmpuRmRWdW8&authuser=1">Application Link</a></li>
             </ul>
-		</p>
+            </ul>
+        </p>
 
-		<p>
-			For more information, please visit <a href="https://www.facebook.com/download/231109787082270/Section%204%20Awards%202014.pdf">here</a>! 
-		</p>
+        <p>
+            For more information, please visit <a href="https://www.facebook.com/download/231109787082270/Section%204%20Awards%202014.pdf">here</a>! 
+        </p>
         <br>
-		<p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
-	</div>
+        <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
+    </div>
 <?php endif ?>
 
 
