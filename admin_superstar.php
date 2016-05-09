@@ -71,6 +71,9 @@ while ($row = $query->fetch_row()) {
 		$attended = $row['attendedTime'];
 		$flaked = $row['flakedTime'] == NULL ? 0 : $row['flakedTime'];
 		$total = $row['totalTime'];
+		$total = $total * 4;
+		$total = floor($total);
+		$total = $total / 4;
 		$ranking .= "<tr><td class=\"rank\">$rank</td><td class=\"name\">$name</td><td class=\"attendedTime\">$attended</td><td class=\"flakedTime\">$flaked</td><td class=\"totalTime\">$total</td></tr>\r\n";
 		$ranknum++;
 		}
