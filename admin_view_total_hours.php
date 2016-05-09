@@ -421,7 +421,7 @@ $query = new Query("
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $fall12 = $row['hours'];
-$fall12 = round($fall12);
+$fall12 = floor($fall12);
 $fall12_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
@@ -447,7 +447,7 @@ $query = new Query("
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $spring13 = $row['hours'];
-$spring13 = round($spring13);
+$spring13 = floor($spring13);
 $spring13_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
@@ -473,7 +473,7 @@ $query = new Query("
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $fall13 = $row['hours'];
-$fall13 = round($fall13);
+$fall13 = floor($fall13);
 $fall13_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
@@ -499,7 +499,7 @@ $query = new Query("
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $spring14 = $row['hours'];
-$spring14 = round($spring14);
+$spring14 = floor($spring14);
 $spring14_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
@@ -526,7 +526,7 @@ $query = new Query("
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $fall14 = $row['hours'];
-$fall14 = round($fall14);
+$fall14 = floor($fall14);
 $fall14_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
@@ -552,7 +552,7 @@ $query = new Query("
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $spring15 = $row['hours'];
-$spring15 = round($spring15);
+$spring15 = floor($spring15);
 $spring15_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
@@ -578,7 +578,7 @@ $query = new Query("
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $fall15 = $row['hours'];
-$fall15 = round($fall15);
+$fall15 = floor($fall15);
 $fall15_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
@@ -604,7 +604,7 @@ $query = new Query("
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
 $spring16 = $row['hours'];
-$spring16 = round($spring16);
+$spring16 = floor($spring16);
 $spring16_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
