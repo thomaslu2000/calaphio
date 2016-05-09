@@ -21,27 +21,27 @@ table.admin_superstar td.heading div
 
 table.admin_superstar td.rank
 {
-  padding-left: 1em;
+  text-align: center;
 }
 
 table.admin_superstar td.name
 {
-  padding-left: 1em;
+  text-align: center;
 }
 
 table.admin_superstar td.attendedTime
 {
-  padding-left: 1em;
+  text-align: center;
 }
 
 table.admin_superstar td.flakedTime
 {
-  padding-left: 1em;
+  text-align: center;
 }
 
 table.admin_superstar td.totalTime
 {
-  padding-left: 1em;
+  text-align: center;
 }
 
 table.admin_superstar td.
