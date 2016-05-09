@@ -260,10 +260,6 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
 </div>
 
-
-
-
-
 <a href="news_fa15.php">Older News ></a>
 <?php
 $template->print_body_footer();
