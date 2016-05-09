@@ -596,7 +596,8 @@ $query = new Query("
 			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
 			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
-$spring16 = echo round($row['hours']);
+$spring16 = $row['hours'];
+$spring16 = round($spring16);
 $spring16_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
 
 $query = new Query("
