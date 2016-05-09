@@ -22,8 +22,6 @@ a:hover {
 div {
     display: block;
     text-align: center;
-    padding-top: 10px;
-    /* padding-right: 7px; */
 }
 
 #requirements tr a {
@@ -147,8 +145,8 @@ img#header {
 }
 #paperSubHeader #welcomeBar {
     width: 1000px;
-    height: 48px;
-    line-height: 30px;
+    height: 60px;
+    line-height: 60px;
     margin-left: auto;
     margin-right: auto;
     font-size: 15pt;
