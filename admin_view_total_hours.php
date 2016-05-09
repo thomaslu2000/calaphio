@@ -646,7 +646,7 @@ $spring16_fellowships = $row['count'];
 <tr><td axis="semester">$fall14_dates (Fall 2014) KHK Semester</td><td axis="hours">$fall14</td><td axis="hours">$fall14_projects</td><td axis="hours">$fall14_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$spring15_dates (Spring 2015) TT Semester</td><td axis="hours">$spring15</td><td axis="hours">$spring15_projects</td><td axis="hours">$spring15_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$fall15_dates (Fall 2015) PMP Semester</td><td axis="hours">$fall15</td><td axis="hours">$fall15_projects</td><td axis="hours">$fall15_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring16_dates (Spring 2016) RBD Semester</td><td axis="hours">echo round($spring16);</td><td axis="hours">$spring16_projects</td><td axis="hours">$spring16_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring16_dates (Spring 2016) RBD Semester</td><td axis="hours">$spring16</td><td axis="hours">$spring16_projects</td><td axis="hours">$spring16_fellowships</td><td axis="comments"></td></tr>
 </table>
 <?php endif ?>
 
