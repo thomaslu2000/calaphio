@@ -69,6 +69,10 @@ while ($row = $query->fetch_row()) {
 		$lastname = $row['lastname'];
 		$name = $firstname . " " . $lastname . " (" . $row['pledgeclass'] . ")";
 		$attended = $row['attendedTime'];
+		$attended = $row['totalTime'];
+		$attended = $attended * 4;
+		$attended = floor($attended);
+		$attended = $attended / 4;
 		$flaked = $row['flakedTime'] == NULL ? 0 : $row['flakedTime'];
 		$total = $row['totalTime'];
 		$total = $total * 4;
