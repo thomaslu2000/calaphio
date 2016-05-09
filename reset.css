@@ -4,13 +4,17 @@ Code licensed under the BSD License:
 http://developer.yahoo.net/yui/license.txt
 version: 0.10.0
 */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
     margin: 0;
     padding: 6 0;
 }
 
-#
-apo_short_search_input {
+input {
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+#apo_short_search_input {
     padding-bottom: 3px;
     font-size: 15px;
 }
