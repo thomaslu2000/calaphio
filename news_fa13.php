@@ -2,7 +2,7 @@
 require("include/includes.php");
 require("include/Calendar.class.php");
 require("include/Template.class.php");
-require("include/Shoutbox.class.php");
+// require("include/Shoutbox.class.php");
 require("include/EvalNag.class.php");
 require("include/GGManiacNag.class.php");
 Template::print_head(array("site.css", "calendar.css", "excel.css"));
@@ -14,9 +14,9 @@ echo $evalnag->display("2007-01-01");
 $gg_maniac_nag = new GGManiacNag();
 echo $gg_maniac_nag->display();
 
-$shoutbox = new Shoutbox();
-$shoutbox->process();
-echo $shoutbox->display();
+// $shoutbox = new Shoutbox();
+// $shoutbox->process();
+// echo $shoutbox->display();
 
 Calendar::print_upcoming_events(5);
 
