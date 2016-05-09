@@ -60,3 +60,7 @@ table.admin_superstar p.right
 	margin-left: 15px;
 	float: right;
 }
+
+tr {
+  padding: 5 0 5 0;
+}
