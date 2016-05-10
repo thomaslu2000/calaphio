@@ -13,8 +13,8 @@
  * calendar add evaluations
  * calendar view evaluations
  */
-define('CALENDAR_POPUP_WIDTH', 100%);
-define('CALENDAR_POPUP_HEIGHT', 100%);
+define('CALENDAR_POPUP_WIDTH', 1000);
+define('CALENDAR_POPUP_HEIGHT', 1000);
 
 class Calendar {
 	
