@@ -101,7 +101,7 @@ class Calendar {
 		} else if ($row['type_custom'] == 12) {
 			$prefix = '<span class="active" style="color: #609;">[ACT]</span> ';
 		} else if ($row['type_alumni']) {
-			$prefix = '<span class="alumni" style="color: #F60;">[ALM]</span> ';
+			$prefix = '<span class="alumni" style="color: #ff9933;">[ALM]</span> ';
 		} else if ($row['type_fellowship']) {
 			$prefix = '<span class="fellowship">[FEL]</span> ';
 		} else if ($row['type_custom'] == 1 || $row['type_custom'] == 3 || $row['type_custom'] == 4 || $row['type_custom'] == 5 || $row['type_custom'] == 6 || $row['type_custom'] == 7 || $row['type_custom'] == 11 || $row['type_custom'] == 13 || $row['type_pledge_meeting']) {
