@@ -111,7 +111,7 @@ class Calendar {
 		} else if($row['type_custom']== 15){
 			$prefix = '<span class="active" style="color: #00FFFF;">[SPON]</span> ';
 			
-		}else {
+		} else {
 			$prefix = '';
 		}
 		$event_id = $row['event_id'];
@@ -1207,7 +1207,7 @@ DOCHERE_comments;
 				$body = <<<DOCHERE_event_body
 <table id="event_attendees">
 <caption>Event Attendees</caption>
-<tr><th axis="name">Name</th><th axis="pledgeclass">Pledge Class</th><th axis="photographer"></th><th axis="driving">Driving</th><th axis="phone">Contact</th><th axis="cell">Phone #</th><th axis="signup">Signed Up</th>$remove_attendee_heading</tr>
+<tr><th axis="name">Name</th><th axis="pledgeclass">Pledge Class</th><th axis="photographer">Photographer</th><th axis="driving">Driving</th><th axis="phone">Contact</th><th axis="cell">Phone #</th><th axis="signup">Signed Up</th>$remove_attendee_heading</tr>
 $attendees
 $waitlist
 </table>
