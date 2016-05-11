@@ -1082,7 +1082,7 @@ HEREDOC;
 			while ($row = $query->fetch_row()) {
 				$driving = $row['driver'] ? $row['driver'] : "";
 
-				$photographer = $row['photographer'] ? "<Center><img src=\"images/Camera_icon.gif\" width=20 height=22></Center>" : "";
+				$photographer = $row['photographer'] ? "<img src=\"images/Camera_icon.gif\" width=20 height=22>" : "";
 				$signup_time = date("m-d-Y H:i:s", strtotime($row['signup_time']));
 				$attendee_count++;
 				$attendee_emails[] = $row['email'];
