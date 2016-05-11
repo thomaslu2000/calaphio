@@ -126,7 +126,7 @@ class Calendar {
 		$popup_height = CALENDAR_POPUP_HEIGHT;
 		$total = is_null($attendee_count_hash) ? "": sprintf(" <b>[%d]</b>",$attendee_count_hash[$event_id]);
 		$session_id = session_id(); // JavaScript popups in IE tend to block cookies, so need to explicitly set session id
-		return "<a href=\"event.php?id=$event_id\" class=\"$class\" onclick=\"return popup('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$prefix$title $total</a>";
+		return "<a href=\"event.php?id=$event_id\" class=\"$class\" onclick=\"return window.open('event.php?id=$event_id&sid=$session_id', $popup_width, $popup_height)\">$prefix$title $total</a>";
 	}
 	
 	function format_list_minutes($class, $select, $interval) {
@@ -1469,7 +1469,7 @@ DOCHERE_calendar_header;
 				$referrer = urlencode($_SERVER['REQUEST_URI']);
 				echo <<<DOCHERE_calendar_day
     <td axis="$day_of_week" class="$class">
-      <a href="add_event.php?year=$internal_year&month=$internal_month&day=$internal_day&referrer=$referrer" class="dateTitle" onclick="return popup('add_event.php?year=$internal_year&month=$internal_month&day=$internal_day&sid=$session_id&referrer=$referrer', $popup_width, $popup_height)">$month$day</a>
+      <a href="add_event.php?year=$internal_year&month=$internal_month&day=$internal_day&referrer=$referrer" class="dateTitle" onclick="return window.open('add_event.php?year=$internal_year&month=$internal_month&day=$internal_day&sid=$session_id&referrer=$referrer', $popup_width, $popup_height)">$month$day</a>
       <ul>
 $event_items
 $fundraiser_items
