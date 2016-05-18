@@ -20,7 +20,7 @@ class Calendar {
 	
 	var $event_type_names = array(
 		'type_interchapter' => 'Interchapter',
-		'type_interchapter_half' => 'Interchapter Half',
+		'type_interchapter_half' => 'Dynasty',
 		'type_service_chapter' => 'Service to Chapter',
 		'type_service_campus' => 'Service to Campus',
 		'type_service_community' => 'Service to Community',
