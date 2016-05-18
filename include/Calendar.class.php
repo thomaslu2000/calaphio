@@ -90,13 +90,13 @@ class Calendar {
 	function format_event_title($row, $attendee_count_hash=NULL) {
 		if ($row['type_scouting']) {
 			$prefix = '<span class="service" style="color: #0CF;">[BSA]</span> ';
-		} else if ($row['type_interchapter']]) {
+		} else if ($row['type_interchapter']) {
 			$prefix = '<span class="ic">[IC]</span> ';
 		} else if ($row['type_rush']) {
 			$prefix = '<span class="rush" style="color: #F3C;">[RUSH]</span> ';
 		} else if ($row['type_fundraiser']) {
 			$prefix = '<span class="fundraiser">[FUN]</span> ';
-		} else if ($row['type_interchapter_half']]) {
+		} else if ($row['type_interchapter_half']) {
 			$prefix = '<span class="dynasty" style="color: #800000">[DYN]</span> ';
 		} else if ($row['type_service_campus'] || $row['type_service_chapter'] || $row['type_service_community'] || $row['type_service_country']) {
 			$prefix = '<span class="service">[SER]</span> ';
