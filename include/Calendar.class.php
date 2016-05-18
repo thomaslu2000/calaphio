@@ -92,6 +92,8 @@ class Calendar {
 			$prefix = '<span class="service" style="color: #654321;">[BSA]</span> ';
 		} else if ($row['type_interchapter']) {
 			$prefix = '<span class="ic">[IC]</span> ';
+		} else if ($row['type_active_meeting']) {
+			$prefix = '<span class="active_meeting" style="color: #1a1a1a;">[CM]</span> ';
 		} else if ($row['type_rush']) {
 			$prefix = '<span class="rush" style="color: #F3C;">[RUSH]</span> ';
 		} else if ($row['type_fundraiser']) {
