@@ -33,8 +33,7 @@ class Calendar {
 		'type_alumni' => 'Alumni',
 		'type_family' => 'Family',
 		'type_active_meeting' => 'Active Meeting',
-		'type_pledge_meeting' => 'Pledge Meeting',
-		'type_dynasty' => 'Dynasty');
+		'type_pledge_meeting' => 'Pledge Meeting');
 	
 	/**
 	 * This is an array in which the key references the event type field
@@ -55,8 +54,7 @@ class Calendar {
 		'type_alumni' => true,
 		'type_family' => true,
 		'type_active_meeting' => true,
-		'type_pledge_meeting' => true,
-		'type_dynasty' => true);
+		'type_pledge_meeting' => true);
 	
 	/**
 	 * Custom event types need to special handling.
@@ -96,8 +94,6 @@ class Calendar {
 			$prefix = '<span class="ic">[IC]</span> ';
 		} else if ($row['type_rush']) {
 			$prefix = '<span class="rush" style="color: #F3C;">[RUSH]</span> ';
-		} else if ($row['type_dynasty']) {
-			$prefix = '<span class="dynasty" style="color: #800000;">[DYN]</span> ';
 		} else if ($row['type_fundraiser']) {
 			$prefix = '<span class="fundraiser">[FUN]</span> ';
 		} else if ($row['type_service_campus'] || $row['type_service_chapter'] || $row['type_service_community'] || $row['type_service_country']) {
@@ -475,7 +471,7 @@ DOCHERE_print_add_evaluation;
 <tr><td axis="Chapter"><input type="checkbox" name="type_leadership"$type_leadership />Leadership</td><td axis="Fellowship"><input type="checkbox" name="type_family"$type_family />Family</td><td axis="Service"><input type="checkbox" name="type_service_community"$type_service_community />Community</td></tr>
 <tr><td axis="Chapter"><input type="checkbox" name="type_rush"$type_rush />Rush</td><td axis="Fellowship"><input type="checkbox" name="type_scouting"$type_scouting />Scouting</td><td axis="Service"><input type="checkbox" name="type_service_country"$type_service_country />Country</td></tr>
 <tr><td axis="Chapter"><input type="checkbox" name="type_custom_selected"$type_custom_selected /><select name="type_custom">$type_custom</select></td><td axis="Fellowship"><input type="checkbox" name="type_interchapter"$type_interchapter />Interchapter</td><td axis="Service"><input type="checkbox" name="type_fundraiser"$type_fundraiser />Fundraiser</td></tr>
-<tr><td axis="Chapter"><input type="checkbox" name="type_dynasty"$type_dynasty />Dynasty</td><td axis="Fellowship"><input type="checkbox" name="type_interchapter_half"$type_interchapter_half />Interchapter Half</td><td axis="Service"></td></tr>
+<tr><td axis="Chapter"><input type="checkbox" name="type_interchapter_half"$type_interchapter_half />Dynasty</td><td axis="Fellowship"></td><td axis="Service"></td></tr>
 <tr>
   <td class="fieldName" axis="Field Name">Description</td>
   <td class="fieldInput" axis="Field Input" colspan="3"><textarea id="addEventDescription" name="description" rows="4" cols="40">$description</textarea></td>
@@ -791,7 +787,7 @@ DOCHERE_print_replace_person;
 <tr><td axis="Chapter"><input type="checkbox" name="type_leadership"$type_leadership />Leadership</td><td axis="Fellowship"><input type="checkbox" name="type_family"$type_family />Family</td><td axis="Service"><input type="checkbox" name="type_service_community"$type_service_community />Community</td></tr>
 <tr><td axis="Chapter"><input type="checkbox" name="type_rush"$type_rush />Rush</td><td axis="Fellowship"><input type="checkbox" name="type_scouting"$type_scouting />Scouting</td><td axis="Service"><input type="checkbox" name="type_service_country"$type_service_country />Country</td></tr>
 <tr><td axis="Chapter"><input type="checkbox" name="type_custom_selected"$type_custom_selected /><select name="type_custom">$type_custom</select></td><td axis="Fellowship"><input type="checkbox" name="type_interchapter"$type_interchapter />Interchapter</td><td axis="Service"><input type="checkbox" name="type_fundraiser"$type_fundraiser />Fundraiser</td></tr>
-<tr><td axis="Chapter"><input type="checkbox" name="type_dynasty"$type_dynasty />Dynasty</td><td axis="Fellowship"><input type="checkbox" name="type_interchapter_half"$type_interchapter_half />Interchapter Half</td><td axis="Service"></td></tr>
+<tr><td axis="Chapter"><input type="checkbox" name="type_interchapter_half"$type_interchapter_half />Dynasty</td><td axis="Fellowship"></td><td axis="Service"></td></tr>
 <tr>
   <td class="fieldName" axis="Field Name">Description</td>
   <td class="fieldInput" axis="Field Input" colspan="3"><textarea id="addEventDescription" name="description" rows="4" cols="40">$description</textarea></td>
