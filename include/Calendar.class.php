@@ -20,7 +20,7 @@ class Calendar {
 	
 	var $event_type_names = array(
 		'type_interchapter' => 'Interchapter',
-		'type_interchapter_half' => 'Dynasty',
+		'type_interchapter_half' => 'Dynasty', // Someone pls change 'type_interchapter_half' to 'type_dynasty' eventually in the database as well
 		'type_service_chapter' => 'Service to Chapter',
 		'type_service_campus' => 'Service to Campus',
 		'type_service_community' => 'Service to Community',
@@ -89,7 +89,7 @@ class Calendar {
 	 * and returns an HTML formatted title. */
 	function format_event_title($row, $attendee_count_hash=NULL) {
 		if ($row['type_scouting']) {
-			$prefix = '<span class="service" style="color: #0CF;">[BSA]</span> ';
+			$prefix = '<span class="service" style="color: #654321;">[BSA]</span> ';
 		} else if ($row['type_interchapter']) {
 			$prefix = '<span class="ic">[IC]</span> ';
 		} else if ($row['type_rush']) {
@@ -113,7 +113,7 @@ class Calendar {
 		} else if ($row['type_custom'] == 14) {
 			$prefix = '<span class="active" style="color: #355E3B;">[ADM]</span> ';
 		} else if($row['type_custom']== 15){
-			$prefix = '<span class="active" style="color: #00FFFF;">[LFS]</span> ';
+			$prefix = '<span class="active" style="color: #00e6e6;">[LFS]</span> ';
 			
 		} else {
 			$prefix = '';
