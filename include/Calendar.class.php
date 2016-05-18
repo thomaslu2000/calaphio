@@ -90,27 +90,27 @@ class Calendar {
 	function format_event_title($row, $attendee_count_hash=NULL) {
 		if ($row['type_scouting']) {
 			$prefix = '<span class="service" style="color: #0CF;">[BSA]</span> ';
-		} else if ($row['type_interchapter'] || $row['type_interchapter_half']) {
+		}  if ($row['type_interchapter'] || $row['type_interchapter_half']) {
 			$prefix = '<span class="ic">[IC]</span> ';
-		} else if ($row['type_rush']) {
+		}  if ($row['type_rush']) {
 			$prefix = '<span class="rush" style="color: #F3C;">[RUSH]</span> ';
-		} else if ($row['type_fundraiser']) {
+		}  if ($row['type_fundraiser']) {
 			$prefix = '<span class="fundraiser">[FUN]</span> ';
-		} else if ($row['type_service_campus'] || $row['type_service_chapter'] || $row['type_service_community'] || $row['type_service_country']) {
+		}  if ($row['type_service_campus'] || $row['type_service_chapter'] || $row['type_service_community'] || $row['type_service_country']) {
 			$prefix = '<span class="service">[SER]</span> ';
-		} else if ($row['type_custom'] == 12) {
+		}  if ($row['type_custom'] == 12) {
 			$prefix = '<span class="active" style="color: #609;">[ACT]</span> ';
-		} else if ($row['type_alumni']) {
+		}  if ($row['type_alumni']) {
 			$prefix = '<span class="alumni" style="color: #ff9933;">[ALM]</span> ';
-		} else if ($row['type_fellowship']) {
+		}  if ($row['type_fellowship']) {
 			$prefix = '<span class="fellowship">[FEL]</span> ';
-		} else if ($row['type_family']) {
+		}  if ($row['type_family']) {
 			$prefix = '<span class="family" style="color: #9acd32;">[FAM]</span> ';
-		} else if ($row['type_custom'] == 1 || $row['type_custom'] == 3 || $row['type_custom'] == 4 || $row['type_custom'] == 5 || $row['type_custom'] == 6 || $row['type_custom'] == 7 || $row['type_custom'] == 11 || $row['type_custom'] == 13 || $row['type_pledge_meeting']) {
+		}  if ($row['type_custom'] == 1 || $row['type_custom'] == 3 || $row['type_custom'] == 4 || $row['type_custom'] == 5 || $row['type_custom'] == 6 || $row['type_custom'] == 7 || $row['type_custom'] == 11 || $row['type_custom'] == 13 || $row['type_pledge_meeting']) {
 			$prefix = '<span class="pledge" style="color: #399;">[PLE]</span> ';
-		} else if ($row['type_custom'] == 14) {
+		}  if ($row['type_custom'] == 14) {
 			$prefix = '<span class="active" style="color: #355E3B;">[ADM]</span> ';
-		} else if($row['type_custom']== 15){
+		}  if($row['type_custom']== 15){
 			$prefix = '<span class="active" style="color: #00FFFF;">[SPON]</span> ';
 			
 		} else {
