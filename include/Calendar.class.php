@@ -55,7 +55,7 @@ class Calendar {
 		'type_alumni' => true,
 		'type_family' => true,
 		'type_active_meeting' => true,
-		'type_pledge_meeting' => true
+		'type_pledge_meeting' => true,
 		'type_dynasty' => true);
 	
 	/**
