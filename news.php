@@ -49,7 +49,7 @@ if (!$g_user->is_logged_in()) {
     Hello Gamma Gamma, <br><br>
     Please take some time to look over the applications and complete them early so you all don't have to worry about them later on!<br><br>
     The deadline to apply for chairing positions will be July 31st, 2016, but please note that some chairing positions have an earlier deadline than the rest. <br><br>
-    <a href="http://goo.gl/forms/6uLGb5x1zT63tJRf" target="_blank">President</a><br>
+    <a href="http://goo.gl/forms/6uLGb5x1zT63tJRf2" target="_blank">President</a><br>
     <a href="https://goo.gl/LZpi7T" target="_blank">Administrative VP</a><br>
     <a href="http://goo.gl/forms/Ri0b7WzGfg8wPvtR2" target="_blank">Membership VP</a><br>
     <a href="http://goo.gl/forms/d0eEQxAbMlYxDALE3" target="_blank">Service VP</a><br>
