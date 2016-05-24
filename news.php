@@ -33,6 +33,35 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<div class="newsItem">
+        <h2>Why are you checking the APO website right now? It's summer!</h2>
+        <p style="margin-bottom: 1em">
+
+    <br> Alpha Phi Omega welcomes you back to school! </br> 
+</div>
+
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+        <h2>ExComm Chairing Applications are out!</h2>
+        <p class="date">May 23, 2016</p>
+
+    <p style="margin-bottom: 1em">
+    Hello Gamma Gamma, <br><br>
+    Please take some time to look over the applications and complete them early so you all don't have to worry about them later on!<br><br>
+    The deadline to apply for chairing positions will be July 31st, 2016, but please note that some chairing positions have an earlier deadline than the rest. <br><br>
+    <a href="http://goo.gl/forms/6uLGb5x1zT63tJRf" target="_blank">President</a><br>
+    <a href="https://goo.gl/LZpi7T" target="_blank">Administrative VP</a><br>
+    <a href="http://goo.gl/forms/Ri0b7WzGfg8wPvtR2" target="_blank">Membership VP</a><br>
+    <a href="http://goo.gl/forms/d0eEQxAbMlYxDALE3" target="_blank">Service VP</a><br>
+    <a href="http://goo.gl/forms/xRFSQQrzWaecouz92" target="_blank">Finance VP</a><br>
+    <a href="http://goo.gl/forms/hMFbalcnPqx2tw5N2" target="_blank">Fellowship VP</a><br>
+    <a href="http://goo.gl/forms/7bCq7bddhGzmATmA3" target="_blank">Historian</a><br>
+    </p>
+
+    <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+</div>
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
     <br/>
@@ -251,6 +280,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
+<?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2> Welcome Brothers of Gamma Gamma!</h2>
         <p style="margin-bottom: 1em">
@@ -259,6 +289,7 @@ if (!$g_user->is_logged_in()) {
     
     <p>- <a href="profile.php?user_id=2859">Trinh Huynh (KHK)</a></p>
 </div>
+<?php endif ?>
 
 <a href="news_fa15.php">Older News ></a>
 <?php
