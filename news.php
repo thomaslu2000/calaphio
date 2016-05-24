@@ -34,10 +34,10 @@ if (!$g_user->is_logged_in()) {
 ?>
 
 <div class="newsItem">
-        <h2>Why are you checking the APO website right now? It's summer!</h2>
+        <h2>Why are you checking the APO website right now?</h2>
         <p style="margin-bottom: 1em">
 
-    <br> Alpha Phi Omega welcomes you back to school! </br> 
+    <br>It's summer!</br> 
 </div>
 
 <?php if ($g_user->is_logged_in()): ?>
