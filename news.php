@@ -37,13 +37,13 @@ if (!$g_user->is_logged_in()) {
         <h2>Why are you checking the APO website right now?</h2>
         <p style="margin-bottom: 1em">
 
-    <br>It's summer!</br> 
+    <br>It's summer! We'll start things up again in the fall!</br> 
 </div>
 
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2>ExComm Chairing Applications are out!</h2>
-        <p class="date">May 23, 2016</p>
+        <p class="date">Monday, May 23, 2016</p>
 
     <p style="margin-bottom: 1em">
     Hello Gamma Gamma, <br><br>
