@@ -55,7 +55,7 @@ if ($g_user->data['user_id'] == 1190 || $g_user->data['user_id'] == 1086) {
 }
 
 			echo <<<DOCHERE
-<h1>PComm Power (PMP)</h1>
+<h1>PComm Power (Fall 2016 Namesake)</h1>
 <br/>
 DOCHERE;
 
@@ -67,8 +67,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
 	
 	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname FROM apo_users join apo_pledges using (user_id) where depledged=0 order by apo_users.lastname"));
 
-	$start_date = strtotime("2016-01-01");
-	$end_date = strtotime("2016-05-30");
+	$start_date = strtotime("2016-09-01");
+	$end_date = strtotime("2016-12-31");
 	$sql_start_date = date("Y-m-d", $start_date);
 	$sql_end_date = date("Y-m-d", $end_date);
 	
@@ -233,7 +233,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
 			$leadership = "3 Leadership Credits: $leadership_count Leadership Credits <br/>";
 		}
 
-$interfam_events = "";
+		/**
+		// Do not need to factor interfams events into requirements anymore; uncomment if this changes
+
+		$interfam_events = "";
 		$interfam_events_count = 0;
 		$queryInter = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
 			JOIN %scalendar_attend USING (event_id)
@@ -253,6 +256,7 @@ $interfam_events = "";
 		} else {
 			$interfam_events = "1 Interfams: $interfam_events_count Interfams <br/>";
 		}
+		*/
 
 		// Retrieve ExComm Meeting events
 		$excomm_events = "";
