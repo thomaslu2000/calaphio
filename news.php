@@ -33,6 +33,50 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
+<div class="newsItem">
+    <br/>
+    <h2>Congratulations to the Fall 2016 Dynasty Directors!</h2>
+    <p class="date">Wednesday, June 1, 2016</p>
+    <div class="collage-container">
+        <div class="collage-pictures">
+            <div class="person-picture">
+                <a href="profile.php?user_id=2855"><img src="images/dcomm_fa16/joanna.jpg"></img></a>
+                <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=2855">Joanna Choi</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3266"><img src="images/dcomm_fa16/sierra.jpg"></img></a>
+                <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=3266">Sierra Lou</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=2870"><img src="images/dcomm_fa16/tenzin.jpg"></img></a>
+                <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=2870">Tenzin Paldon</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=2882"><img src="images/dcomm_fa16/sherri.jpg"></img></a>
+                <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=2882">Sherri Zhang</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=2989"><img src="images/dcomm_fa16/patty.jpg"></img></a>
+                <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=2989">Patrick Chang</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=2907"><img src="images/dcomm_fa16/claudia.jpg"></img></a>
+                <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=2907">Claudia Lim</a></p>
+            </div>
+        </div>
+        <div style="clear: left;"></div>
+    </div>
+
+    <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+</div>
+<?php endif ?>
+
 <div class="newsItem">
         <h2>Why are you checking the APO website right now?</h2>
         <p style="margin-bottom: 1em">
