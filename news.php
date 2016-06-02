@@ -41,32 +41,32 @@ if (!$g_user->is_logged_in()) {
     <div class="collage-container">
         <div class="collage-pictures">
             <div class="person-picture">
-                <a href="profile.php?user_id=2855"><img src="images/dcomm_fa16/joanna.jpg"></img></a>
+                <a href="profile.php?user_id=2855"><img src="images/dcomm_fa16/joanna.jpg" onmouseover="this.src='images/dcomm_fa16/joanna2.jpg'" onmouseout="this.src='images/dcomm_fa16/joanna.jpg'"></img></a>
                 <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=2855">Joanna Choi</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=3266"><img src="images/dcomm_fa16/sierra.jpg"></img></a>
+                <a href="profile.php?user_id=3266"><img src="images/dcomm_fa16/sierra.jpg" onmouseover="this.src='images/dcomm_fa16/sierra2.jpg'" onmouseout="this.src='images/dcomm_fa16/sierra.jpg'"></img></a>
                 <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=3266">Sierra Lou</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=2870"><img src="images/dcomm_fa16/tenzin.jpg"></img></a>
+                <a href="profile.php?user_id=2870"><img src="images/dcomm_fa16/tenzin.jpg" onmouseover="this.src='images/dcomm_fa16/tenzin2.jpg'" onmouseout="this.src='images/dcomm_fa16/tenzin.jpg'"></img></a>
                 <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=2870">Tenzin Paldon</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=2882"><img src="images/dcomm_fa16/sherri.jpg"></img></a>
+                <a href="profile.php?user_id=2882"><img src="images/dcomm_fa16/sherri.jpg" onmouseover="this.src='images/dcomm_fa16/sherri2.jpg'" onmouseout="this.src='images/dcomm_fa16/sherri.jpg'"></img></a>
                 <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=2882">Sherri Zhang</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=2989"><img src="images/dcomm_fa16/patty.jpg"></img></a>
+                <a href="profile.php?user_id=2989"><img src="images/dcomm_fa16/patty.jpg" onmouseover="this.src='images/dcomm_fa16/patty2.jpg'" onmouseout="this.src='images/dcomm_fa16/patty.jpg'"></img></a>
                 <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=2989">Patrick Chang</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=2907"><img src="images/dcomm_fa16/claudia.jpg"></img></a>
+                <a href="profile.php?user_id=2907"><img src="images/dcomm_fa16/claudia.jpg" onmouseover="this.src='images/dcomm_fa16/claudia2.jpg'" onmouseout="this.src='images/dcomm_fa16/claudia.jpg'"></img></a>
                 <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=2907">Claudia Lim</a></p>
             </div>
         </div>
