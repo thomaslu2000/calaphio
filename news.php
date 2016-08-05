@@ -157,8 +157,6 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php endif ?>
-
 <div class="newsItem">
         <h2>Welcome Gamma Gamma!</h2>
         <p style="margin-bottom: 1em">
