@@ -146,7 +146,7 @@ if (!$g_user->is_logged_in()) {
     <p style="margin: 1.5em 0px;">
         <b><u>HISTORIAN:</u></b><br>
         <b>Historian Assistant:</b> Stanley Shaw<br>
-        <b>Alumni Relations Chairs:</b> Gordon Mah, Veronica Hall, Jeremy Lam, Audrey Tsai<br>
+        <b>Alumni Relations Chairs:</b> Gordon Mah, Jeremy Lam, Audrey Tsai<br>
         <b>* Scrapbook Chairs:</b> Molly Caldwell, Kira Wong<br>
         <b>* Photography Chairs:</b> Adrian Peneyra, Jerry Park<br>
         <b>GG Maniac Chairs:</b> Kerry Feng, Kira Wong<br>
