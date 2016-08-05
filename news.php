@@ -55,7 +55,7 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin: 1.5em 0px;">
         <b><u>SERVICE VP:</u></b><br>
-        <b>Active-Day of Service Chairs </b>(2)<br>
+        <b>Active Day of Service Chairs </b>(2)<br>
         <b>IC/GG Sewing Chairs </b>(2)<br>
         <b>Project Open Hand Chair </b>(1)<br>
         <b>Berkeley Food and Housing Chair </b>(1)<br>
