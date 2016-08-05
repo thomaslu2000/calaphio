@@ -104,7 +104,7 @@ if (!$g_user->is_logged_in()) {
         <b>Dynasty Directors:</b> Joanna Choi, Sierra Lou, Tenzin Paldon, Sherri Zhang, Patrick Chang, Claudia Lim<br>
         <b>Membership VP Assistants:</b> Alice Hsieh, Jessica Tzeng, Yanan Wang, Veronica Hall<br>
         <b>Gear Chairs:</b> Bianca Hsueh, Nina Nguyen<br>
-        <b>Roll Call Chairs:</b> Jessica Lee, Miranda Zhou, Jeremy Lam, Serena Wu<br>
+        <b>* Roll Call Chairs:</b> Jessica Lee, Miranda Zhou, Jeremy Lam, Serena Wu<br>
         <b>Sunshine Chairs:</b> Leona Chen, Spencer Liu<br>
     </p>
 
