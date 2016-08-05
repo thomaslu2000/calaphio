@@ -41,7 +41,7 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin-bottom: 1em">
     Hello everyone, <br><br>
-    ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!<p><br><br>
+    ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!<p>
 
     <p style="margin: 1.5em 0px;">
         <b><u>PRESIDENT:</u></b><br>
