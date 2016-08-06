@@ -37,7 +37,7 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2>Open Chairing Positions!</h2>
-        <p class="date">August 5, 2016 at 12:56pm</p>
+        <p class="date">August 5, 2016 at 6:03pm</p>
 
     <p style="margin-bottom: 1em">
     Hello everyone, <br><br>
@@ -74,7 +74,7 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2>Fall 2016 Executive Committee Chairs</h2>
-        <p class="date">August 5, 2016 at 6:03pm</p>
+        <p class="date">August 5, 2016 at 12:54pm</p>
 
     <p style="margin: 1.5em 0px;">
         * Denotes chairing positions with committees
