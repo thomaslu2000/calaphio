@@ -63,6 +63,7 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin: 1.5em 0px;">
         <b><u>FELLOWSHIP VP:</u></b><br>
+        <b>GG Events Chairs </b>(1)<br>
         <b>IC Events Chairs </b>(2)<br>
     </p>
 
@@ -73,14 +74,14 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
 <div class="newsItem">
         <h2>Fall 2016 Executive Committee Chairs</h2>
-        <p class="date">August 5, 2016 at 12:54pm</p>
+        <p class="date">August 5, 2016 at 6:03pm</p>
 
     <p style="margin: 1.5em 0px;">
         * Denotes chairing positions with committees
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <b><u>PRESIDENT</u>:</b><br>
+        <b><u>PRESIDENT:</u></b><br>
         <b>* Fall Fellowship Chairs:</b> Gene Ho, Bianca Hsueh, Nick Weis, Stanley Shaw<br>
         <b>Parliamentarian:</b> Joseph Lee<br>
         <b>Sergeant-at-Arms:</b> Calvin Lui, Naomichi Yamamoto<br>
@@ -89,7 +90,7 @@ if (!$g_user->is_logged_in()) {
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <b><u>ADMIN VP</u>:</b><br>
+        <b><u>ADMIN VP:</u></b><br>
         <b>Admin VP Assistant:</b> Jerry Park<br>
         <b>Webmasters:</b> Jeffrey Li, Thaniel Directo, Edson Romero, Audrey Tsai<br>
         <b>* Stylus Chairs:</b> Bianca Hsueh, Claire Li, Miranda Zhou<br>
@@ -99,7 +100,7 @@ if (!$g_user->is_logged_in()) {
     </p>
 
      <p style="margin: 1.5em 0px;">
-        <b><u>MEMBERSHIP VP</u>:</b><br>
+        <b><u>MEMBERSHIP VP:</u></b><br>
         <b>* Rush Chairs:</b> Gene Ho, Alice Hsieh, Jessica Tzeng, Scottie Wan<br>
         <b>Dynasty Directors:</b> Joanna Choi, Sierra Lou, Tenzin Paldon, Sherri Zhang, Patrick Chang, Claudia Lim<br>
         <b>Membership VP Assistants:</b> Alice Hsieh, Jessica Tzeng, Yanan Wang, Veronica Hall<br>
@@ -109,7 +110,7 @@ if (!$g_user->is_logged_in()) {
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <b><u>SERVICE VP</u>:</b><br>
+        <b><u>SERVICE VP:</u></b><br>
         <b>Service VP Assistants:</b> Kerry Feng, Nina Nguyen, Miranda Zhou<br>
         <b>* Hallcarn Chairs:</b> Leona Chen, Kerry Feng, Claire Li, Gordon Mah, Isaac Zheng<br>
         <b>* Campus-Wide Service Project Chairs:</b> Jessica Lee, Nick Weis<br>
@@ -118,14 +119,14 @@ if (!$g_user->is_logged_in()) {
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <b><u>FINANCE VP</u>:</b><br>
+        <b><u>FINANCE VP:</u></b><br>
         <b>Finance VP Assistant:</b> Hermes Ip<br>
         <b>Fundraiser Chairs:</b> Joshua Jacobs, Jessica Lee, Jerry Park, Hyeonji Shim<br>
         <b>Reimbursement Chairs:</b> Leona Chen, Alexander Feng<br>
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <b><u>FELLOWSHIP VP</u>:</b><br>
+        <b><u>FELLOWSHIP VP:</u></b><br>
         <b>Fellowship VP Assistants:</b> Gene Ho, Spencer Liu<br>
         <b>* Hotspot Chairs:</b> Dinasha Dahanayake, Yanan Wang, Nick Weis, Yitian Zhang, Yuki Mizuno<br>
         <b>GG Sports Chairs:</b> Jayant Raman, Naomichi Yamamoto<br>
@@ -144,7 +145,7 @@ if (!$g_user->is_logged_in()) {
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <b><u>HISTORIAN</u>:</b><br>
+        <b><u>HISTORIAN:</u></b><br>
         <b>Historian Assistant:</b> Stanley Shaw<br>
         <b>Alumni Relations Chairs:</b> Gordon Mah, Jeremy Lam, Audrey Tsai<br>
         <b>* Scrapbook Chairs:</b> Molly Caldwell, Kira Wong<br>
