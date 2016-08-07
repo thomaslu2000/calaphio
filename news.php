@@ -49,11 +49,6 @@ if (!$g_user->is_logged_in()) {
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <b><u>ADMIN VP:</u></b><br>
-        <b>Funpack Chair </b>(1)<br>
-    </p>
-
-    <p style="margin: 1.5em 0px;">
         <b><u>SERVICE VP:</u></b><br>
         <b>Active Day of Service Chairs </b>(2)<br>
         <b>IC/GG Sewing Chairs </b>(2)<br>
@@ -63,7 +58,7 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin: 1.5em 0px;">
         <b><u>FELLOWSHIP VP:</u></b><br>
-        <b>GG Events Chairs </b>(1)<br>
+        <b>GG Events Chair </b>(1)<br>
         <b>IC Events Chairs </b>(2)<br>
     </p>
 
@@ -94,7 +89,7 @@ if (!$g_user->is_logged_in()) {
         <b>Admin VP Assistant:</b> Jerry Park<br>
         <b>Webmasters:</b> Jeffrey Li, Thaniel Directo, Edson Romero, Audrey Tsai<br>
         <b>* Stylus Chairs:</b> Bianca Hsueh, Claire Li, Miranda Zhou<br>
-        <b>* Funpack Chair:</b> Nina Nguyen<br>
+        <b>* Funpack Chairs:</b> Nina Nguyen, Lisa Hoang<br>
         <b>Academic Chair:</b> Chris Janssen<br>
         <b>Mobile Dev Chairs:</b> Jeffrey Li, Joseph Lee, Yuki Mizuno<br>
     </p>
@@ -135,7 +130,7 @@ if (!$g_user->is_logged_in()) {
     </p>
 
     <p style="margin: 1.5em 0px;">
-        <b><u>PLEDGEMASTER</u>:</b><br>
+        <b><u>PLEDGEMASTER:</u></b><br>
         <b>Leadership Trainer:</b> Jerianne Lukban<br>
         <b>Fellowship Trainers:</b> Hyeonji Shim, Naomichi Yamamoto<br>
         <b>Service Trainer:</b> Virginia Yan<br>
@@ -162,7 +157,7 @@ if (!$g_user->is_logged_in()) {
         <h2>Welcome Gamma Gamma!</h2>
         <p style="margin-bottom: 1em">
 
-    <br>With school almost starting, it's about time to get back into an APO mentality. Just remember that we're all students first and need to prioritize school over APO, and to focus on quality service over quantity. Good luck this semester!</br> 
+    <br>Since school is almost starting, it's about time to get back into the APO mentality. Just remember that we're all students first and need to prioritize school, and to focus on quality service over quantity. Good luck this semester!</br> 
     
     <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
 </div>
