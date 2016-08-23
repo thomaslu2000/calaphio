@@ -621,6 +621,32 @@ $query = new Query("
 $row = $query->fetch_row();
 $spring16_fellowships = $row['count'];
 
+$start = '2016-5-3';
+$end = '2016-12-5';
+$query = new Query("
+		SELECT sum(hours) AS hours FROM apo_calendar_event
+			JOIN apo_calendar_attend USING (event_id)
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$fall16 = $row['hours'];
+$fall16 = floor($fall16);
+$fall16_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			AND evaluated=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$fall16_projects = $row['count'];
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_fellowship=TRUE)
+			AND evaluated=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$fall16_fellowships = $row['count'];
+
 	
 	echo <<<HEREDOC
 
