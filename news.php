@@ -50,16 +50,17 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin: 1.5em 0px;">
         <b><u>SERVICE VP:</u></b><br>
-        <b>Active Day of Service Chairs </b>(2)<br>
+        <b>Active Day of Service Chairs </b>(1)<br>
         <b>IC/GG Sewing Chairs </b>(2)<br>
         <b>Project Open Hand Chair </b>(1)<br>
         <b>Berkeley Food and Housing Chair </b>(1)<br>
+        <b>Campus-Wide Service Project Chairs </b>(2)<br>
     </p>
 
     <p style="margin: 1.5em 0px;">
         <b><u>FELLOWSHIP VP:</u></b><br>
-        <b>GG Events Chair </b>(1)<br>
-        <b>IC Events Chairs </b>(2)<br>
+        <b>GG Events Chair </b>(2)<br>
+        <b>IC Events Chair </b>(1)<br>
     </p>
 
     <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
@@ -79,7 +80,7 @@ if (!$g_user->is_logged_in()) {
         <b><u>PRESIDENT:</u></b><br>
         <b>* Fall Fellowship Chairs:</b> Gene Ho, Bianca Hsueh, Nick Weis, Stanley Shaw<br>
         <b>Parliamentarian:</b> Joseph Lee<br>
-        <b>Sergeant-at-Arms:</b> Calvin Lui, Naomichi Yamamoto<br>
+        <b>Sergeant-at-Arms:</b> Calvin Lui, Richard Wong, Naomichi Yamamoto<br>
         <b>IC/Public Relations Chairs:</b> Gordon Mah, Veronica Hall<br>
         <b>* Professional Development Chair:</b> Henry Chen<br>
     </p>
@@ -91,7 +92,7 @@ if (!$g_user->is_logged_in()) {
         <b>* Stylus Chairs:</b> Bianca Hsueh, Claire Li, Miranda Zhou<br>
         <b>* Funpack Chairs:</b> Nina Nguyen, Lisa Hoang<br>
         <b>Academic Chair:</b> Chris Janssen<br>
-        <b>Mobile Dev Chairs:</b> Jeffrey Li, Joseph Lee, Yuki Mizuno<br>
+        <b>Mobile Dev Chairs:</b> Joseph Lee, Yuki Mizuno, Edson Romero<br>
     </p>
 
      <p style="margin: 1.5em 0px;">
@@ -108,6 +109,8 @@ if (!$g_user->is_logged_in()) {
         <b><u>SERVICE VP:</u></b><br>
         <b>Service VP Assistants:</b> Kerry Feng, Nina Nguyen, Miranda Zhou<br>
         <b>* Hallcarn Chairs:</b> Leona Chen, Kerry Feng, Claire Li, Gordon Mah, Isaac Zheng<br>
+        <b>Active Day of Service Chair:</b> William Liao<br>
+        <b>IC/GG Sewing Chair:</b> Joanna Choi<br>
         <b>* Campus-Wide Service Project Chairs:</b> Jessica Lee, Nick Weis<br>
         <b>YTA Beartrax/Mosswood Chairs:</b> Molly Caldwell, Jayant Raman, Stanley Shaw<br>
         <b>Service Buddies Chairs:</b> Isaac Zheng, Claudia Lim<br>
@@ -125,7 +128,7 @@ if (!$g_user->is_logged_in()) {
         <b>Fellowship VP Assistants:</b> Gene Ho, Spencer Liu<br>
         <b>* Hotspot Chairs:</b> Dinasha Dahanayake, Yanan Wang, Nick Weis, Yitian Zhang, Yuki Mizuno<br>
         <b>GG Sports Chairs:</b> Jayant Raman, Naomichi Yamamoto<br>
-        <b>GG Events Chair:</b> Veronica Hall<br>
+        <b>IC Events Chair:</b> Karen Chou<br>
         <b>* Banquet Chairs:</b> Joshua Jacobs, Jessica Tzeng, Claudia Lim, Joanna Choi<br>
     </p>
 

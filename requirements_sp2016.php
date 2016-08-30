@@ -59,8 +59,8 @@ if ($g_user->is_logged_in()) {
 	}
 	
 	$is_active = !$is_pledge;
-	$start_date = strtotime("2016-5-3");
-	$end_date = strtotime("2016-12-5");
+	$start_date = strtotime("2013-12-10");
+	$end_date = strtotime("2014-5-5");
 	$sql_start_date = date("Y-m-d", $start_date);
 	$sql_end_date = date("Y-m-d", $end_date);
 	$user_id = $g_user->data['user_id'];
