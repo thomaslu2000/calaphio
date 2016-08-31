@@ -429,7 +429,8 @@ if (!$g_user->is_logged_in()) {
         <p style="margin-bottom: 1em">Here are the documents from CM 1!<br>
             Excomm Powerpoint Slides:<a href="https://docs.google.com/a/calaphio.com/presentation/d/1CZIzn8gb5EC64YtW_tWEOVxyhaQv1IpL0DQzCOesMOo/edit#slide=id.g5824adeec_193"> CM 1 Slides</a><br>
             And here are the <a href="https://docs.google.com/a/calaphio.com/document/d/1xAiRGk0aOvFXGC_OcKugTsRJdTuHq_rhr9Qr55UDcUY/edit">Active Requirements</a> & 
-            <a href="https://docs.google.com/a/calaphio.com/spreadsheets/d/1ASILS5dhWOf0F78D3LBrydRED-b7_42c6_GJb_oA5-s/edit#gid=0">Budget.</a></p>
+            <a href="https://docs.google.com/a/calaphio.com/spreadsheets/d/1ASILS5dhWOf0F78D3LBrydRED-b7_42c6_GJb_oA5-s/edit#gid=0">Budget.</a>
+        </p>
             <iframe style="margin-bottom: 1em" width="480" height="360" src="//www.youtube.com/embed/NtV0Yso1gqI" frameborder="0" allowfullscreen></iframe>
         <p>-<a href="profile.php?user_id=2448">Jason Lee (CM)</a></p>
     </div>

@@ -10,7 +10,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase")) {
 } else if (isset($_REQUEST['cancel'])) {
 	$poll_id = $_REQUEST['cancel'];
 	$query = new Query(sprintf("UPDATE gg_maniac_polls SET cancelled=TRUE WHERE id=%s", $poll_id));
-	header( 'Location: http://live.calaphio.com/admin_GG_maniac.php' );
+	header( 'Location: http://members.calaphio.com/admin_GG_maniac.php' );
 } else if (isset($_REQUEST['month']) && isset($_REQUEST['day']) && isset($_REQUEST['year']) && isset($_REQUEST['poll_name'])) {
 	if ($_REQUEST['poll_name'] == "") {
 		trigger_error("Cannot Create Poll w/ no Poll Name", E_USER_ERROR);	

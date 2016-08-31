@@ -35,36 +35,40 @@ if (!$g_user->is_logged_in()) {
 ?>
 
 <?php if ($g_user->is_logged_in()): ?>
-<div class="newsItem">
-        <h2>Open Chairing Positions!</h2>
-        <p class="date">August 7, 2016 at 12:33am</p>
+    <div class="newsItem">
+        <h2>CM 1 Recap</h2>
+        <p class="date">August 31, 2016 at 12:31am</p>
+        <b>ANNOUNCEMENTS:</b><br>
+        <p style="margin-bottom: 1em">
+        ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!<p>
 
-    <p style="margin-bottom: 1em">
-    Hello everyone, <br><br>
-    ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!<p>
+        <p style="margin-bottom: 1em 0px;">
+            <b><u>SERVICE VP:</u></b><br>
+            <b>Active Day of Service Chairs </b>(1)<br>
+            <b>IC/GG Sewing Chairs </b>(2)<br>
+            <b>Project Open Hand Chair </b>(1)<br>
+            <b>Berkeley Food and Housing Chair </b>(1)<br>
+            <b>Campus-Wide Service Project Chairs </b>(2)<br>
+        </p>
 
-    <p style="margin: 1.5em 0px;">
-        <b><u>PRESIDENT:</u></b><br>
-        <b>Sergeant-at-Arms </b>(1)<br>
-    </p>
+        <p style="margin: 1.5em 0px;">
+            <b><u>FELLOWSHIP VP:</u></b><br>
+            <b>GG Events Chair </b>(2)<br>
+            <b>IC Events Chair </b>(1)<br>
+        </p>
 
-    <p style="margin: 1.5em 0px;">
-        <b><u>SERVICE VP:</u></b><br>
-        <b>Active Day of Service Chairs </b>(1)<br>
-        <b>IC/GG Sewing Chairs </b>(2)<br>
-        <b>Project Open Hand Chair </b>(1)<br>
-        <b>Berkeley Food and Housing Chair </b>(1)<br>
-        <b>Campus-Wide Service Project Chairs </b>(2)<br>
-    </p>
-
-    <p style="margin: 1.5em 0px;">
-        <b><u>FELLOWSHIP VP:</u></b><br>
-        <b>GG Events Chair </b>(2)<br>
-        <b>IC Events Chair </b>(1)<br>
-    </p>
-
-    <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
-</div>
+        <p style="margin-bottom: 1em">Also, here are the following documents from CM 1:<br><br>
+            <a href="http://goo.gl/1A0TFE" target="_blank">CM 1 Slides</a><br>
+            <a href="http://goo.gl/AsFDzl" target="_blank">Fall 2016 Budget</a><br>
+            <a href="http://goo.gl/iVGGbA" target="_blank">Active Requirements</a><br>
+            <a href="http://goo.gl/EmjuND" target="_blank">Pledge Requirements</a><br>
+            <a href="http://goo.gl/YPSpnl" target="_blank">Caption Contest</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=114">GG Maniac 2 Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
+        </p>
+        <p>CM1 Slideshow:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/siHADfaStaY" frameborder="0" allowfullscreen></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
 <?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>

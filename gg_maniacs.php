@@ -10,18 +10,140 @@ Template::print_body_header('Home', 'NEWS');
 ?>
 <h1>Gamma Gamma Maniacs!</h1>
 <div class="newsItem">
+    <h2 class="center">RBD Semester GG Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Jerry Park</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Nicole Mak</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Elise Hayashi</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Sierra Lou</p>
+		
+		</div>
+		<div class="person-picture">
+			<p class="center">Hyeonji Shim</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Katharine Sen</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">RBD Semester Pledge Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Adrian Peneyra</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Josh Jacobs</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Gene Ho</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">PMP Semester GG Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Dian Jiang</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">James Young</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Ya-An Hsiung</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Elaine Do</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Sophia Du</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Claudia Lim</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Annie Yu</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Marilyn Chan</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">PMP Semester Pledge Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Stanley Shaw</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Serena Wu</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Virginia Yan</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
     <h2 class="center">TT Semester GG Maniacs!</h2>
     <div class="collage-container">
 	<div class="collage-pictures">
 		<div class="person-picture">
-			<p class="center">Antony Nguyen </p>
+			<p class="center">Antony Nguyen</p>
 		</div>
 		<div class="person-picture">
-			<p class="center">Kirk Chiu </p>
+			<p class="center">Kirk Chiu</p>
 		</div>
-		<div class=<"person-picture'>
-			<p class-"center">Elizabeth Yuen</p>
-		</div?
+		<div class="person-picture">
+			<p class="center">Elizabeth Yuen</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Ellie Hung</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Lisa Hoang</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Tenzin Paldon</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Sangmo Arya</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">TT Semester Pledge Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Benny Chang</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Kelly Luu</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Cloudia Chenqin</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>
@@ -41,7 +163,6 @@ Template::print_body_header('Home', 'NEWS');
 		</div>
 		<div class="person-picture">
 			<p class="center">Cathy Yin</p>
-		
 		</div>
 		<div class="person-picture">
 			<p class="center">Vivian Rubio</p>
@@ -52,7 +173,6 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Kathleen Wong</p>
 		</div>
-		
 	</div>
 	<div style="clear: left;"></div>
     </div>
