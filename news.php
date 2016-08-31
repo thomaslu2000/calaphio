@@ -59,6 +59,7 @@ if (!$g_user->is_logged_in()) {
 
         <p style="margin-bottom: 1em">Also, here are the following documents from CM 1:<br><br>
             <a href="http://goo.gl/1A0TFE" target="_blank">CM 1 Slides</a><br>
+            <a href="http://goo.gl/E7zu6E" target="_blank">CM 1 Minutes</a><br>
             <a href="http://goo.gl/AsFDzl" target="_blank">Fall 2016 Budget</a><br>
             <a href="http://goo.gl/iVGGbA" target="_blank">Active Requirements</a><br>
             <a href="http://goo.gl/EmjuND" target="_blank">Pledge Requirements</a><br>
