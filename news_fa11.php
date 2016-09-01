@@ -70,7 +70,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 -->
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring 2012 Pledge Committee</h2>
 		<p class="date">December 7, 2011</p>
@@ -89,7 +89,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Banquet Slideshow!</h2>
 		<p class="date">December 7, 2011</p>
@@ -103,7 +103,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM8 Recap & End of Semester Forum</h2>
 		<p class="date">December 7, 2011</p>
@@ -118,7 +118,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>GG Maniac #3</h2>
 		<p class="date">December 1, 2011</p>
@@ -133,7 +133,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>ACTIVES! Finish Your Requirements + PComm & Rush Applications!</h2>
 		<p class="date">November 23, 2011</p>
@@ -147,7 +147,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Good Luck Pledges!</h2>
 		<p class="date">November 21, 2011</p>
@@ -157,7 +157,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>GG Maniac #2</h2>
 		<p class="date">November 17, 2011</p>
@@ -172,7 +172,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM7 Recap</h2>
 		<p class="date">November 17, 2011</p>
@@ -191,7 +191,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring 2012 Executive Committee</h2>
 		<p class="date">November 16, 2011</p>
@@ -210,7 +210,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Please Read: Fall 2011 Election Platforms</h2>
 		<p class="date">November 9, 2011</p>
@@ -234,7 +234,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Send Your Election Platforms</h2>
 		<p class="date">November 7, 2011</p>
@@ -253,7 +253,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Talent Show is Friday!</h2>
 		<p class="date">November 2, 2011</p>
@@ -268,7 +268,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Active Spotlight #3!</h2>
 		<p class="date">November 2, 2011</p>
@@ -283,7 +283,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM6 Recap</h2>
 		<p class="date">November 2, 2011</p>
@@ -303,7 +303,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM6 is Nominations</h2>
 		<p class="date">October 31, 2011</p>
@@ -318,7 +318,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Fall Fellowship! GO GO GO GAMMA GAMMA!</h2>
 		<p class="date">October 27, 2011</p>
@@ -351,7 +351,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 <!--
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 	<h2>CM6 Stylus: Movie Theme!</h2>
 	<p class="date">October 24, 2011</p>
@@ -366,7 +366,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 -->
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM5 Recap</h2>
 		<p class="date">October 20, 2011</p>
@@ -386,7 +386,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Broomball!</h2>
 		<p class="date">October 13, 2011</p>
@@ -404,7 +404,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>List of Chairs and Committees</h2>
 		<p class="date">October 12, 2011</p>
@@ -464,7 +464,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 <?php endif ?>
 -->
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM4 Recap</h2>
 		<p class="date">October 7, 2011</p>
@@ -507,7 +507,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Active Spotlight #2 & GG Maniac #1!</h2>
 		<p class="date">October 5, 2011</p>
@@ -527,7 +527,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM3 Recap</h2>
 		<p class="date">September 23, 2011</p>
@@ -555,7 +555,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Ritual & CM3</h2>
 		<p class="date">September 19, 2011</p>
@@ -642,7 +642,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM2 Recap</h2>
 		<p class="date">September 8, 2011</p>
@@ -660,7 +660,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Active Spotlight #1!</h2>
 		<p class="date">September 7, 2011</p>
@@ -750,7 +750,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM1 Recap</h2>
 		<p class="date">August 31, 2011</p>
@@ -780,7 +780,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 	<h2>New Semester! New APhiO!</h2>
 	<p class="date">August 10, 2011</p>
@@ -789,7 +789,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 	<h2>"Like" our new Facebook Page</h2>
 	<p class="date">May 31, 2011</p>
@@ -799,7 +799,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Fall 2011 Pledge Committee</h2>
 		<p class="date">May 6, 2011</p>
@@ -815,7 +815,7 @@ For now we have just a few things to tell you about Regionals 2012! <br>
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Fall 2011 Executive Committee</h2>
 		<p class="date">April 15, 2011</p>

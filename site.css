@@ -8,7 +8,7 @@ div.errorMessage {
 
 div.errorMessage p {
 	margin: 0px;
-	color: #fff;
+	/*color: #fff; <--- Did this to make error messages invisible that I couldn't get rid of on the home screen before*/
 }
 
 div.successMessage {

@@ -30,7 +30,7 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>The amazing and memorable banquet slideshow is up!</h2>
     <p class="date">December 16, 2013</p>
@@ -39,7 +39,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Spring 2014 Chairing Applications Are Available!</h2>
     <p class="date">December 15, 2013</p>
@@ -60,7 +60,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to Tin Oi for winning GG Maniac!</h2>
     <p class="date">December 13, 2013</p>
@@ -74,7 +74,7 @@ when you see her!</p>
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>CM8 Recap</h2>
     <p class="date">December 3, 2013</p>
@@ -85,7 +85,7 @@ when you see her!</p>
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to Jejee for winning GG Maniac!</h2>
     <p class="date">November 30, 2013</p>
@@ -98,7 +98,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations Spring 2014 Executive Committee!</h2>
     <p class="date">November 21, 2013</p>
@@ -115,7 +115,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Election Platforms!</h2>
     <p class="date">November 18, 2013</p>
@@ -127,7 +127,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Christopher Ching</h2>
     <p class="date">November 17, 2013</p>
@@ -138,7 +138,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>POTW #5</h2>
     <p class="date">November 17, 2013</p>
@@ -150,7 +150,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>CM6</h2>
     <p class="date">November 5, 2013</p>
@@ -161,7 +161,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Ben Le</h2>
     <p class="date">November 5, 2013</p>
@@ -172,7 +172,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>POTW #4</h2>
     <p class="date">October 27, 2013</p>
@@ -182,7 +182,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>CM5</h2>
     <p class="date">October 27, 2013</p>
@@ -193,7 +193,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>POTW #3</h2>
     <p class="date">October 27, 2013</p>
@@ -203,7 +203,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Zachary Lee</h2>
     <p class="date">October 24, 2013</p>
@@ -214,7 +214,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>CM4</h2>
     <p class="date">October 10, 2013</p>
@@ -224,7 +224,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Photo of the Week #2</h2>
     <p class="date">September  26, 2013</p>
@@ -234,7 +234,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Kevin Nguyen</h2>
     <p class="date">September  26, 2013</p>
@@ -245,7 +245,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>CM3 Recap</h2>
     <p class="date">September  26, 2013</p>
@@ -257,7 +257,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Photo of the Week</h2>
     <p class="date">September  25, 2013</p>
@@ -267,7 +267,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Sridatta Thatipamala</h2>
     <p class="date">September  19, 2013</p>
@@ -278,7 +278,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>CM2 Recap</h2>
     <p class="date">September 17, 2013</p>
@@ -298,7 +298,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>CM1 Slides & Minutes</h2>
     <p class="date">September 5, 2013</p>
@@ -314,7 +314,7 @@ her family loves her presence just as the chapter appreciates everything she has
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Fall 2013 Budget & Requirements</h2>
     <p class="date">August 29, 2013</p>

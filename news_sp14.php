@@ -29,7 +29,7 @@ if (!$g_user->is_logged_in()) {
 }
 
 ?>
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to Pooja Shah for getting GG Maniac!</h2>
     <p class="date">May 2nd 2014</p>
@@ -55,7 +55,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Notes From CM 7</h2>
     <p class="date">April 15, 2014</p>
@@ -70,7 +70,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Elections is Coming Up! Send in Your Past Election Platforms</h2>
     <p class="date">April 7, 2014</p>
@@ -103,7 +103,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to Angela Wu for getting GG Maniac!</h2>
     <p class="date">April 1st, 2014</p>
@@ -142,7 +142,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to Ryan Fong for getting GG Maniac!</h2>
     <p class="date">March 16, 2014</p>
@@ -171,7 +171,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to Annie Ferguson for getting GG Maniac!</h2>
     <p class="date">March 1, 2014</p>
@@ -198,7 +198,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Notes From CM 4</h2>
     <p class="date">March 01, 2014</p>
@@ -213,7 +213,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to James Wang for getting GG Maniac!</h2>
     <p class="date">February 11, 2014</p>
@@ -225,7 +225,7 @@ and is now bigging again this semester! Whenever you need someone to fill up a s
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Notes From CM 3</h2>
     <p class="date">February 11, 2014</p>
@@ -240,7 +240,7 @@ and is now bigging again this semester! Whenever you need someone to fill up a s
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to Rebecca Phuong for getting GG Maniac!</h2>
     <p class="date">February 05, 2014</p>
@@ -253,7 +253,7 @@ remember to thank her and congratulate her because she deserves it after putting
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Notes From CM 2</h2>
     <p class="date">February 05, 2014</p>
@@ -268,7 +268,7 @@ remember to thank her and congratulate her because she deserves it after putting
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Notes From CM 1</h2>
     <p class="date">January 22, 2014</p>
@@ -285,7 +285,7 @@ remember to thank her and congratulate her because she deserves it after putting
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to Courtney for getting namesake!</h2>
     <p class="date">January 21, 2014</p>
@@ -298,7 +298,7 @@ remember to thank her and congratulate her because she deserves it after putting
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Take a look at our approved Budget!</h2>
     <p class="date">January 21, 2014</p>
@@ -315,7 +315,7 @@ remember to thank her and congratulate her because she deserves it after putting
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to the Spring 2014 Rush Chairs!</h2>
     <p class="date">December 13, 2013</p>
@@ -343,7 +343,7 @@ remember to thank her and congratulate her because she deserves it after putting
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <br/>
     <h2>Congratulations to the Spring 2014 Pledge Committee</h2>

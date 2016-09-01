@@ -22,7 +22,7 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 8 Stylus & SmugMug</h2>
 		<p class="date">May 3, 2010</p>
@@ -33,7 +33,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Election Platforms</h2>
 	  <p class="date">April 11, 2010</p>
@@ -45,7 +45,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring Cleaning</h2>
 		<p class="date">April 8, 2010</p>
@@ -63,7 +63,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 		<h2>Spring 2010 Banquet: A Venetian Affair</h2>
 <p class="date">April 7, 2010</p>
@@ -94,7 +94,7 @@ if (!$g_user->is_logged_in()) {
   -<a href="roster.php?function=Search&user_id=957">Sitong Peng (WK)</a>            	      </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Stuff from CM4</h2>
 		<p class="date">March 28, 2010</p>
@@ -109,7 +109,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Stuff from CM4</h2>
 		<p class="date">March 3, 2010</p>
@@ -130,7 +130,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Stuff from CM3</h2>
 		<p class="date">February 10, 2010</p>
@@ -163,7 +163,7 @@ if (!$g_user->is_logged_in()) {
 		<p>-<a href="roster.php?function=Search&user_id=979">Samantha Paras (WK)</a></p>
 	</div>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Stuff from CM2</h2>
 		<p class="date">January 26, 2010</p>
@@ -181,7 +181,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Stylus Info</h2>
 		<p class="date">January 20, 2010</p>
@@ -197,7 +197,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>1 down, 7 more to go...</h2>
 		<p class="date">January 20, 2010</p>
@@ -213,7 +213,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Get ready for CM1!</h2>
 		<p class="date">January 18, 2010</p>

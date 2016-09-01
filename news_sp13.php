@@ -44,7 +44,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 -->
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Congratulations to GG Maniac, Susan Guan</h2>
     <p class="date">May 15, 2013</p>
@@ -76,7 +76,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 	<h2>Congratulations to the new Excomm!</h2>
     <p class="date">April 17, 2013</p>
@@ -111,7 +111,7 @@ if (!$g_user->is_logged_in()) {
     <p>-<a href="roster.php?function=Search&user_id=1216">Tony Le (JLC)</a></p>
 </div>
 <?php endif ?>
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Election Platforms!</h2>
 		<p class="date">April 14, 2012</p>
@@ -126,7 +126,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 
 <div class="newsItem">
 	<h2>Congratulations to GG Maniac, Debbie Yan</h2>
@@ -157,7 +157,7 @@ if (!$g_user->is_logged_in()) {
 
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Notes From CM 5</h2>
     <p class="date">March 12, 2013</p>
@@ -196,7 +196,7 @@ if (!$g_user->is_logged_in()) {
 
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Notes From CM 4</h2>
     <p class="date">February 28, 2013</p>
@@ -244,7 +244,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 	<h2>Congratulations to GG Maniac, Nancy Tran!</h2>
 	<p class="date">February 13, 2013</p>
@@ -256,7 +256,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 		<h2>Notes from CM3</h2>
 		<p class="date">February 13, 2013</p>
@@ -280,7 +280,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 	<h2>Membership Spotlight: Jamie Hum!</h2>
 	<p class="date">February 05, 2013</p>
@@ -291,7 +291,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 	<h2>Congratulations to GG Maniac, Rosie Fan!</h2>
 	<p class="date">February 05, 2013</p>
@@ -302,7 +302,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 		<h2>Notes from CM2</h2>
 		<p class="date">January 23, 2013</p>
@@ -324,7 +324,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 	<h2>Congratulations to our Spring 2013 Namesake, Kingsley Kuang!</h2>
 	<p class="date">January 23, 2013</p>
@@ -337,7 +337,7 @@ if (!$g_user->is_logged_in()) {
 
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
 		<h2>Notes from CM1</h2>
 		<p class="date">January 23, 2013</p>
@@ -358,7 +358,7 @@ if (!$g_user->is_logged_in()) {
 
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring 2013 Budget and Requirements!</h2>
 		<p class="date">January 22, 2013</p>
@@ -376,7 +376,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring 2013 Pledge Committee</h2>
 		<p class="date">Dec 5, 2012</p>
@@ -395,7 +395,7 @@ if (!$g_user->is_logged_in()) {
 		</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring 2013 Executive Committee</h2>
 		<p class="date">November 14, 2012</p>

@@ -55,7 +55,7 @@ if ($g_user->data['user_id'] == 1190 || $g_user->data['user_id'] == 1086) {
 }
 
 			echo <<<DOCHERE
-<h1>PComm Power (Fall 2016 Namesake)</h1>
+<h1>PComm Power (FH)</h1>
 <br/>
 DOCHERE;
 
@@ -294,7 +294,7 @@ $excomm_events
 DOCHERE;
 	}
 			echo <<<DOCHERE
-Pay your \$45 active dues (\$55 at CM3, \$65 at CM5) <br/>
+Pay your \$50 active dues (\$60 at CM3, \$70 at CM5) <br/>
 Attend Ritual <br/>
 Join a Pledge committee <br/>
 Join an ExComm committee - <a href="cpz_chairs.php">Search for one here</a> <br/>
@@ -302,10 +302,9 @@ Demonstrate leadership within the pledge committee <br/>
 Complete committee requirements <br/>
 Attend both pledge class service projects <br/>
 Attend Sib Social <br/>
-Attend Broomball <br/>
 Attend Talent Show <br/>
 Attend Campout <br/>
-Attend 2 pledge committee office hours <br/>
+Attend all of PComm's office hours <br/>
 Attend all pledge reviews <br/>
 Pass all pledge quizzes <br/>
 Write 20 interviews (1 page, double spaced) <br/>

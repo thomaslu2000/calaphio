@@ -361,7 +361,7 @@ while ($row = $query->fetch_row()) {
 	}
 }
 
-$query = new Query(sprintf("SELECT semester FROM apo_semesters ORDER BY semester ASC"));
+$query = new Query(sprintf("SELECT semester FROM apo_semesters ORDER BY start DESC"));
 while ($row = $query->fetch_row()) {
 	$semester = $row['semester'];
 	if ($semester == $_REQUEST['semester']) {

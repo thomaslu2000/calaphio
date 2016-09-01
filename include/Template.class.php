@@ -1,4 +1,4 @@
-<?php
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): 
 
     $picDir  = opendir("header_photos");
     $picFile = array();

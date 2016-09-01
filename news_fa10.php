@@ -22,7 +22,7 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring 2011 Pledge Committee</h2>
 		<p class="date">December 9, 2010</p>
@@ -39,7 +39,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring 2011 Executive Committee</h2>
 		<p class="date">November 17, 2010</p>
@@ -58,7 +58,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Read me</h2>
 		<p class="date">November 16, 2010</p>
@@ -67,7 +67,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Spring 2011 ExComm Nominations</h2>
 		<p class="date">November 4, 2010</p>
@@ -79,7 +79,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Fall 2010 Budget</h2>
 		<p class="date">October 26, 2010</p>
@@ -109,7 +109,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Minutes Thus Far</h2>
 		<p class="date">October 12, 2010</p>
@@ -135,7 +135,7 @@ if (!$g_user->is_logged_in()) {
 		<p>-<a href="roster.php?function=Search&amp;user_id=875">Justin Abantao (CC)</a></p>
 	</div>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Fall 2010 Pledge Committee</h2>
 		<p class="date">May 9, 2010</p>
@@ -152,7 +152,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Fall 2010 Executive Committee</h2>
 		<p class="date">April 14, 2010</p>

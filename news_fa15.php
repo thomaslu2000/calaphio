@@ -33,7 +33,7 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <br/>
     <h2>Congratulations to the Spring 2016 Pledge Committee!</h2>
@@ -93,7 +93,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2> Congratulations to the Fall 2015 Award Recipients! </h2>
         <p class="date"> Monday, December 7, 2015 </p>
@@ -170,7 +170,7 @@ if (!$g_user->is_logged_in()) {
         <p>-<a href="profile.php?user_id=2192">Audrey Tsai (CM)</a></p>
     </div>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2> ELECTION PLATFORMS </h2>
         <p class="date">Monday, November 16, 2015</p>
@@ -198,7 +198,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2> CM 6 Recap </h2>
         <p class="date">Thursday, November 12, 2015</p>
@@ -222,7 +222,7 @@ if (!$g_user->is_logged_in()) {
 
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2> CM Recap </h2>
         <p class="date">Wednesday, October 28, 2015</p>
@@ -245,7 +245,7 @@ if (!$g_user->is_logged_in()) {
 <div> 
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2> CM 3 Recap </h2>
         <p class="date">Monday, September 28, 2015</p>
@@ -277,7 +277,7 @@ if (!$g_user->is_logged_in()) {
 
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2> CM 2 Recap </h2>
         <p class="date">Wednesday, September 16, 2015</p>
@@ -314,7 +314,7 @@ if (!$g_user->is_logged_in()) {
 
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2> Welcome Back to School, Gamma Gamma!</h2>
         <p class="date">Thursday, September 3, 2015</p>

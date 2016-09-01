@@ -30,7 +30,7 @@ if (!$g_user->is_logged_in()) {
 
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Notes from CM 8 & End of Semester Forum</h2>
         <p class="date">December 2, 2014</p>
@@ -99,7 +99,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Notes From CM 7</h2>
         <p class="date">November 18, 2014</p>
@@ -114,7 +114,7 @@ if (!$g_user->is_logged_in()) {
     </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Spring 2015 Platforms</h2>
         <p class="date">November 17, 2014</p>
@@ -127,7 +127,7 @@ if (!$g_user->is_logged_in()) {
         </div>
     <?php endif ?>
 
-    <?php if ($g_user->is_logged_in()): ?>
+    <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Notes from CM 6--Nominations</h2>
         <p class="date">November 4, 2014</p>
@@ -143,7 +143,7 @@ if (!$g_user->is_logged_in()) {
         </div>
     <?php endif ?>
 
-    <?php if ($g_user->is_logged_in()): ?>
+    <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Notes From CM 5</h2>
         <p class="date">October 21, 2014</p>
@@ -156,7 +156,7 @@ if (!$g_user->is_logged_in()) {
         </div>
     <?php endif ?>
 
-    <?php if ($g_user->is_logged_in()): ?>
+    <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Notes From CM 4</h2>
         <p class="date">October 7, 2014</p>
@@ -169,7 +169,7 @@ if (!$g_user->is_logged_in()) {
         </div>
     <?php endif ?>
 
-    <?php if ($g_user->is_logged_in()): ?>
+    <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Notes From CM 3</h2>
         <p class="date">September 23, 2014</p>
@@ -185,7 +185,7 @@ if (!$g_user->is_logged_in()) {
         </div>
     <?php endif ?>
 
-    <?php if ($g_user->is_logged_in()): ?>
+    <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Notes From CM 2</h2>
         <p class="date">September 16, 2014</p>
@@ -253,7 +253,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>Notes From CM 1</h2>
         <p class="date">September 2, 2014</p>
@@ -291,7 +291,7 @@ if (!$g_user->is_logged_in()) {
         <p>-<a href="profile.php?user_id=2055">Kelsey Chan (KK)</a></p>
     </div>
 
-    <?php if ($g_user->is_logged_in()): ?>
+    <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <br/>
         <h2>Congratulations to the Fall 2014 Pledge Committee</h2>

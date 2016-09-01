@@ -34,12 +34,12 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>CM 1 Recap</h2>
         <p class="date">August 31, 2016 at 12:31am</p>
-        <b>ANNOUNCEMENTS:</b><br>
-        <p style="margin-bottom: 1em">
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
         ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!<p>
 
         <p style="margin-bottom: 1em 0px;">
@@ -57,7 +57,7 @@ if (!$g_user->is_logged_in()) {
             <b>IC Events Chair </b>(1)<br>
         </p>
 
-        <p style="margin-bottom: 1em">Also, here are the following documents from CM 1:<br><br>
+        <p style="margin-bottom: 1em;">Also, here are the following documents from CM 1:<br><br>
             <a href="http://goo.gl/1A0TFE" target="_blank">CM 1 Slides</a><br>
             <a href="http://goo.gl/E7zu6E" target="_blank">CM 1 Minutes</a><br>
             <a href="http://goo.gl/AsFDzl" target="_blank">Fall 2016 Budget</a><br>

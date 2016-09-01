@@ -30,7 +30,7 @@ if (!$g_user->is_logged_in()) {
 	<p>-<a href="roster.php?function=Search&user_id=600">Geoffrey Lee (GAS)</a></p>
 </div>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Fall 2011 Pledge Committee</h2>
 		<p class="date">May 6, 2011</p>
@@ -46,7 +46,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Banquet Follow-up</h2>
 		<p class="date">May 5, 2011</p>
@@ -60,7 +60,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Banquet</h2>
 		<p class="date">April 28, 2011</p>
@@ -72,7 +72,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 8 Stuff</h2>
 		<p class="date">April 28, 2011</p>
@@ -86,7 +86,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Activation</h2><BR>
 		Activation will be this Friday, April 22, 2011.<br><BR>
@@ -96,7 +96,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Fall 2011 Executive Committee</h2>
 		<p class="date">April 15, 2011</p>
@@ -115,7 +115,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 7 Stuff</h2>
 		<p class="date">April 15, 2011</p>
@@ -134,7 +134,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>GG Maniac!</h2>
 		<p class="date">April 15, 2011</p>
@@ -153,7 +153,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Read me</h2>
 		<p class="date">April 12, 2011</p>
@@ -162,7 +162,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>IC Luau & Thank You Banquet</h2>
 		<p><b><br>IC Luau</b><br><br>
@@ -179,7 +179,7 @@ if (!$g_user->is_logged_in()) {
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 6 Stuff</h2>
 		<p class="date">April 1, 2011</p>
@@ -202,7 +202,7 @@ Meet at 10am at Underhill tomorrow and if you have any campout materials, like c
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Active Spotlight!</h2>
 		<p class="date">March 17, 2011</p>
@@ -216,7 +216,7 @@ Meet at 10am at Underhill tomorrow and if you have any campout materials, like c
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 5 Stuff</h2>
 		<p class="date">March 11, 2011</p>
@@ -233,7 +233,7 @@ Meet at 10am at Underhill tomorrow and if you have any campout materials, like c
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 4 Stuff</h2>
 		<p class="date">March 1, 2011</p>
@@ -251,7 +251,7 @@ Meet at 10am at Underhill tomorrow and if you have any campout materials, like c
 <?php endif ?>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 3 Stuff</h2>
 		<p class="date">February 10, 2011</p>
@@ -268,7 +268,7 @@ Meet at 10am at Underhill tomorrow and if you have any campout materials, like c
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 2 Stuff</h2>
 		<p class="date">February 5, 2011</p>
@@ -300,7 +300,7 @@ Meet at 10am at Underhill tomorrow and if you have any campout materials, like c
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>CM 1 Stuff</h2>
 		<p class="date">January 24, 2011</p>
@@ -327,7 +327,7 @@ Meet at 10am at Underhill tomorrow and if you have any campout materials, like c
 	</div>
 
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>New Semester, New Budget!</h2>
 		<p class="date">January 17, 2011</p>

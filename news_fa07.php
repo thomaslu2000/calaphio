@@ -61,7 +61,7 @@ HEREDOC;
 	}
 }
 ?>
-<?php if ($g_user->is_logged_in()) { ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()) { ?>
 	<div class="newsItem">
 		<h2>Administrivia</h2>
 		<p class="date">December 5, 2007</p>
@@ -85,7 +85,7 @@ HEREDOC;
 		<p style="margin-bottom: 1.5em">UPDATE 11/13, 11:50am: Added Francesca Wang's platform for Membership VP.</p>
 		<p>-<a href="roster.php?function=Search&user_id=600">Geoffrey Lee (GAS)</a></p>
 	</div>
-<?php if ($g_user->is_logged_in()) { ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()) { ?>
 	<div class="newsItem">
 		<h2>Administrivia</h2>
 		<p class="date">November 5, 2007</p>
@@ -111,7 +111,7 @@ HEREDOC;
 		<p style="margin-bottom: 1.5em">Hey hey! Hau made us a wonderful website for Sectionals! Check it out at <a href="http://www.calaphio.com/sectionals">http://www.calaphio.com/sectionals</a> and register for sectionals! The last day for early registration is Oct 6.</p>
 		<p>Peace out. -<a href="roster.php?function=Search&user_id=600">Geoffrey Lee (GAS)</a></p>
 	</div>
-<?php if ($g_user->is_logged_in()) { ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()) { ?>
 	<div class="newsItem">
 		<h2>Administrivia</h2>
 		<p class="date">September 21, 2007</p>

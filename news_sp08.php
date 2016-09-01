@@ -61,7 +61,7 @@ HEREDOC;
 	}
 }
 ?>
-<?php if ($g_user->is_logged_in()) { ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()) { ?>
 	<div class="newsItem">
 		<h2>Administrivia</h2>
 		<p class="date">May 10, 2008</p>
@@ -121,7 +121,7 @@ HEREDOC;
 		<p style="margin-bottom: 1.5em">EDIT: We didn't realize that the transaction fee was so expensive ($1.08 per person), so we've increased the online price. If you do not want to pay the transaction fee, you may pay Banquet Comm in-person (Debbie, Tracy, and Vivian).</p>
 		<p>-<a href="roster.php?function=Search&user_id=600">Geoffrey Lee (GAS)</a></p>
 	</div>
-<?php if ($g_user->is_logged_in()) { ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()) { ?>
 	<div class="newsItem">
 		<h2>Active Spotlight!</h2>
 		<p class="date">April 8, 2008</p>
@@ -140,7 +140,7 @@ HEREDOC;
 		<p style="margin-bottom: 1.5em">I sincerely apologize for the recent spate of chapter website downtime. Since I don't have control of this issue, I have setup a temporary mirror for our chapter website on my personal website until our web-host can fix their problems. You can reach the temporary mirror here: <a href="http://calaphio-mirror.dreamhosters.com">http://calaphio-mirror.dreamhosters.com</a></p>
 		<p>-<a href="roster.php?function=Search&user_id=600">Geoffrey Lee (GAS)</a></p>
 	</div>
-<?php if ($g_user->is_logged_in()) { ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()) { ?>
 	<div class="newsItem">
 		<h2>Administrivia</h2>
 		<p class="date">March 20, 2008</p>
@@ -182,7 +182,7 @@ HEREDOC;
 		<p style="margin-bottom: 1.5em">Hey y'all, so I'm a total dork and forgot to update the requirements page. Anyway, <a href="requirements.php">it's updated now!</a></p>
 		<p>-<a href="roster.php?function=Search&user_id=600">Geoffrey Lee (GAS)</a></p>
 	</div>
-<?php if ($g_user->is_logged_in()) { ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()) { ?>
 	<div class="newsItem">
 		<h2>Administrivia</h2>
 		<p class="date">February 2, 2008</p>

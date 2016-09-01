@@ -33,7 +33,7 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <br/>
     <h2>Congratulations to the Fall 2016 Dynasty Directors!</h2>
@@ -84,7 +84,7 @@ if (!$g_user->is_logged_in()) {
     <br>It's summer! We'll start things up again in the fall!</br> 
 </div>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2>ExComm Chairing Applications are out!</h2>
         <p class="date">Monday, May 23, 2016</p>
@@ -106,7 +106,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <br/>
     <h2>Congratulations to the Fall Fellowship Chairs!</h2>
@@ -141,7 +141,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <br/>
     <h2>Congratulations to the Fall 2016 Pledge Committee!</h2>
@@ -196,7 +196,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <br/>
     <h2>Congratulations to the Fall 2016 Rush Chairs!</h2>
@@ -228,7 +228,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <br/>
     <h2>Congratulations to the Fall 2016 Executive Committee!</h2>
@@ -283,7 +283,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2> ELECTION PLATFORMS </h2>
     <p class="date">Monday, April 11, 2016</p>
@@ -305,7 +305,7 @@ if (!$g_user->is_logged_in()) {
 </div> 
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2> Announcements </h2>
     <p class="date">Sunday, January 31, 2015</p>
@@ -324,7 +324,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
         <h2> Welcome Brothers of Gamma Gamma!</h2>
         <p style="margin-bottom: 1em">

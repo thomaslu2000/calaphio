@@ -22,7 +22,7 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Happy Holidays and Happy New Semester! =)</h2>
 		<p class="date">December 24, 2008</p>
@@ -31,7 +31,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Congratulations NextComm!</h2>
 		<p class="date">December 1, 2008</p>
@@ -50,7 +50,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Election Platforms!</h2>
 		<p class="date">November 17, 2008</p>
@@ -65,7 +65,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Admin Lovin'</h2>
 		<p class="date">November 14, 2008</p>
@@ -79,7 +79,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Active Spotlight!</h2>
 		<p class="date">November 6, 2008</p>
@@ -87,7 +87,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Admin Lovin'</h2>
 		<p class="date">October 21, 2008</p>
@@ -96,7 +96,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Admin Lovin'</h2>
 		<p class="date">October 21, 2008</p>
@@ -105,7 +105,7 @@ if (!$g_user->is_logged_in()) {
 	</div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Admin Lovin'</h2>
 		<p class="date">October 10, 2008</p>
@@ -123,7 +123,7 @@ if (!$g_user->is_logged_in()) {
 			-<a href="roster.php?function=Search&amp;user_id=730">Christina Lee (MLN)</a>
 		</p>
 	</div>
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Active Spotlight!</h2>
 		<p class="date">October 7, 2008</p>
@@ -188,7 +188,7 @@ if (!$g_user->is_logged_in()) {
 		</p>
 		<p>-<a href="roster.php?function=Search&user_id=600">Geoffrey Lee (GAS)</a></p>
 	</div>
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 	<div class="newsItem">
 		<h2>Congratulations to Kevin Wong, DSK Recipient</h2>
 		<p class="date">May 12, 2008</p>

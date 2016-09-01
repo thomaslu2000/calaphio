@@ -657,31 +657,31 @@ $fall16_fellowships = $row['count'];
 <table style="width: auto;">
 <caption></caption>
 <tr><th axis="semester" style="width: 300px; font-weight: bold; padding: 0px 2px">Semester</th><th axis="hours" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Hours</th><th axis="projects" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Events</th><th axis="fellowships" style="width: 100px; font-weight: bold; padding: 0px 2px">Fellowships</th><th axis="Comments" style="font-weight: bold; padding: 0px 2px">Comments</th></tr>
-<tr><td axis="semester">$fall04_dates (Fall 2004)</td><td axis="hours">$fall04</td><td axis="hours">$fall04_projects</td><td axis="hours">$fall04_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring05_dates (Spring 2005)</td><td axis="hours">$spring05</td><td axis="hours">$spring05_projects</td><td axis="hours">$spring05_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall05_dates (Fall 2005)</td><td axis="hours">$fall05</td><td axis="hours">$fall05_projects</td><td axis="hours">$fall05_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring06_dates (Spring 2006)</td><td axis="hours">$spring06</td><td axis="hours">$spring06_projects</td><td axis="hours">$spring06_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall06_dates (Fall 2006)</td><td axis="hours">$fall06</td><td axis="hours">$fall06_projects</td><td axis="hours">$fall06_fellowships</td><td axis="comments">Driving to a service project counted as 1 service hour.</td></tr>
-<tr><td axis="semester">$spring07_dates (Spring 2007)</td><td axis="hours">$spring07</td><td axis="hours">$spring07_projects</td><td axis="hours">$spring07_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall07_dates (Fall 2007) JCJ Semester</td><td axis="hours">$fall07</td><td axis="hours">$fall07_projects</td><td axis="hours">$fall07_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring08_dates (Spring 2008) CC Semester</td><td axis="hours">$spring08</td><td axis="hours">$spring08_projects</td><td axis="hours">$spring08_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall08_dates (Fall 2008) WK Semester</td><td axis="hours">$fall08</td><td axis="hours">$fall08_projects</td><td axis="hours">$fall08_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring09_dates (Spring 2009) ST Semester</td><td axis="hours">$spring09</td><td axis="hours">$spring09_projects</td><td axis="hours">$spring09_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall09_dates (Fall 2009) JM Semester</td><td axis="hours">$fall09</td><td axis="hours">$fall09_projects</td><td axis="hours">$fall09_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring10_dates (Spring 2010) GL Semester</td><td axis="hours">$spring10</td><td axis="hours">$spring10_projects</td><td axis="hours">$spring10_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall10_dates (Fall 2010)  JLC Semester</td><td axis="hours">$fall10</td><td axis="hours">$fall10_projects</td><td axis="hours">$fall10_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring11_dates (Spring 2011) KS Semester</td><td axis="hours">$spring11</td><td axis="hours">$spring11_projects</td><td axis="hours">$spring11_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall11_dates (Fall 2011) CPZ Semester</td><td axis="hours">$fall11</td><td axis="hours">$fall11_projects</td><td axis="hours">$fall11_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring12_dates (Spring 2012) JS Semester</td><td axis="hours">$spring12</td><td axis="hours">$spring12_projects</td><td axis="hours">$spring12_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall12_dates (Fall 2012) MH Semester</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring13_dates (Spring 2013) KK Semester</td><td axis="hours">$spring13</td><td axis="hours">$spring13_projects</td><td axis="hours">$spring13_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall13_dates (Fall 2013) DE Semester</td><td axis="hours">$fall13</td><td axis="hours">$fall13_projects</td><td axis="hours">$fall13_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring14_dates (Spring 2014) CM Semester</td><td axis="hours">$spring14</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall14_dates (Fall 2014) KHK Semester</td><td axis="hours">$fall14</td><td axis="hours">$fall14_projects</td><td axis="hours">$fall14_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring15_dates (Spring 2015) TT Semester</td><td axis="hours">$spring15</td><td axis="hours">$spring15_projects</td><td axis="hours">$spring15_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$fall15_dates (Fall 2015) PMP Semester</td><td axis="hours">$fall15</td><td axis="hours">$fall15_projects</td><td axis="hours">$fall15_fellowships</td><td axis="comments"></td></tr>
-<tr><td axis="semester">$spring16_dates (Spring 2016) RBD Semester</td><td axis="hours">$spring16</td><td axis="hours">$spring16_projects</td><td axis="hours">$spring16_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$fall16_dates (Fall 2016) FH Semester</td><td axis="hours">$fall16</td><td axis="hours">$fall16_projects</td><td axis="hours">$fall16_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring16_dates (Spring 2016) RBD Semester</td><td axis="hours">$spring16</td><td axis="hours">$spring16_projects</td><td axis="hours">$spring16_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall15_dates (Fall 2015) PMP Semester</td><td axis="hours">$fall15</td><td axis="hours">$fall15_projects</td><td axis="hours">$fall15_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring15_dates (Spring 2015) TT Semester</td><td axis="hours">$spring15</td><td axis="hours">$spring15_projects</td><td axis="hours">$spring15_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall14_dates (Fall 2014) KHK Semester</td><td axis="hours">$fall14</td><td axis="hours">$fall14_projects</td><td axis="hours">$fall14_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring14_dates (Spring 2014) CM Semester</td><td axis="hours">$spring14</td><td axis="hours">$spring14_projects</td><td axis="hours">$spring14_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall13_dates (Fall 2013) DE Semester</td><td axis="hours">$fall13</td><td axis="hours">$fall13_projects</td><td axis="hours">$fall13_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring13_dates (Spring 2013) KK Semester</td><td axis="hours">$spring13</td><td axis="hours">$spring13_projects</td><td axis="hours">$spring13_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall12_dates (Fall 2012) MH Semester</td><td axis="hours">$fall12</td><td axis="hours">$fall12_projects</td><td axis="hours">$fall12_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring12_dates (Spring 2012) JS Semester</td><td axis="hours">$spring12</td><td axis="hours">$spring12_projects</td><td axis="hours">$spring12_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall11_dates (Fall 2011) CPZ Semester</td><td axis="hours">$fall11</td><td axis="hours">$fall11_projects</td><td axis="hours">$fall11_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring11_dates (Spring 2011) KS Semester</td><td axis="hours">$spring11</td><td axis="hours">$spring11_projects</td><td axis="hours">$spring11_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall10_dates (Fall 2010)  JLC Semester</td><td axis="hours">$fall10</td><td axis="hours">$fall10_projects</td><td axis="hours">$fall10_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring10_dates (Spring 2010) GL Semester</td><td axis="hours">$spring10</td><td axis="hours">$spring10_projects</td><td axis="hours">$spring10_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall09_dates (Fall 2009) JM Semester</td><td axis="hours">$fall09</td><td axis="hours">$fall09_projects</td><td axis="hours">$fall09_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring09_dates (Spring 2009) ST Semester</td><td axis="hours">$spring09</td><td axis="hours">$spring09_projects</td><td axis="hours">$spring09_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall08_dates (Fall 2008) WK Semester</td><td axis="hours">$fall08</td><td axis="hours">$fall08_projects</td><td axis="hours">$fall08_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring08_dates (Spring 2008) CC Semester</td><td axis="hours">$spring08</td><td axis="hours">$spring08_projects</td><td axis="hours">$spring08_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall07_dates (Fall 2007) JCJ Semester</td><td axis="hours">$fall07</td><td axis="hours">$fall07_projects</td><td axis="hours">$fall07_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring07_dates (Spring 2007)</td><td axis="hours">$spring07</td><td axis="hours">$spring07_projects</td><td axis="hours">$spring07_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall06_dates (Fall 2006)</td><td axis="hours">$fall06</td><td axis="hours">$fall06_projects</td><td axis="hours">$fall06_fellowships</td><td axis="comments">Driving to a service project counted as 1 service hour.</td></tr>
+<tr><td axis="semester">$spring06_dates (Spring 2006)</td><td axis="hours">$spring06</td><td axis="hours">$spring06_projects</td><td axis="hours">$spring06_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall05_dates (Fall 2005)</td><td axis="hours">$fall05</td><td axis="hours">$fall05_projects</td><td axis="hours">$fall05_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring05_dates (Spring 2005)</td><td axis="hours">$spring05</td><td axis="hours">$spring05_projects</td><td axis="hours">$spring05_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$fall04_dates (Fall 2004)</td><td axis="hours">$fall04</td><td axis="hours">$fall04_projects</td><td axis="hours">$fall04_fellowships</td><td axis="comments"></td></tr>
 </table>
 <?php endif ?>
 
