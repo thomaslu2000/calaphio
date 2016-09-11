@@ -87,19 +87,21 @@ class Calendar {
 	/**
 	 * This takes in an associative array containing data for an event
 	 * and returns an HTML formatted title. */
-	function format_event_title($row, $attendee_count_hash=NULL) {
-		if ($row['type_scouting']) {
+	static function format_event_title($row, $attendee_count_hash=NULL) {
+		 if ($row['type_active_meeting']) {
+			$prefix = '<span class="active_meeting" style="color: #336699;">[CM]</span> ';
+		} else if ($row['type_scouting']) {
 			$prefix = '<span class="service" style="color: #654321;">[BSA]</span> ';
 		} else if ($row['type_interchapter']) {
 			$prefix = '<span class="ic">[IC]</span> ';
-		} else if ($row['type_active_meeting']) {
-			$prefix = '<span class="active_meeting" style="color: #336699;">[CM]</span> ';
 		} else if ($row['type_rush']) {
 			$prefix = '<span class="rush" style="color: #F3C;">[RUSH]</span> ';
 		} else if ($row['type_fundraiser']) {
 			$prefix = '<span class="fundraiser">[FUN]</span> ';
 		} else if ($row['type_interchapter_half']) {
 			$prefix = '<span class="dynasty" style="color: #800000">[DYN]</span> ';
+		}  else if($row['type_custom']== 15){
+			$prefix = '<span class="active" style="color: #00e6e6;">[LFS]</span> ';	
 		} else if ($row['type_service_campus'] || $row['type_service_chapter'] || $row['type_service_community'] || $row['type_service_country']) {
 			$prefix = '<span class="service">[SER]</span> ';
 		} else if ($row['type_custom'] == 12) {
@@ -114,9 +116,6 @@ class Calendar {
 			$prefix = '<span class="family" style="color: #9acd32;">[FAM]</span> ';
 		} else if ($row['type_custom'] == 14) {
 			$prefix = '<span class="active" style="color: #355E3B;">[ADM]</span> ';
-		} else if($row['type_custom']== 15){
-			$prefix = '<span class="active" style="color: #00e6e6;">[LFS]</span> ';
-			
 		} else {
 			$prefix = '';
 		}
@@ -1213,7 +1212,7 @@ DOCHERE_comments;
 				$body = <<<DOCHERE_event_body
 <table id="event_attendees">
 <caption>Event Attendees</caption>
-<tr><th axis="name">Name</th><th axis="pledgeclass">Pledge Class</th><th axis="photographer"></th><th axis="driving">Driving</th><th axis="phone">Contact</th><th axis="cell">Phone #</th><th axis="signup">Signed Up</th>$remove_attendee_heading</tr>
+<tr><th axis="name">Name</th><th axis="pledgeclass">Class</th><th axis="photographer"></th><th axis="driving">Driving</th><th axis="phone">How to reach me</th><th axis="cell">Phone #</th><th axis="signup">Signed Up</th>$remove_attendee_heading</tr>
 $attendees
 $waitlist
 </table>
@@ -1381,7 +1380,7 @@ DOCHERE_log;
 		echo <<<DOCHERE_calendar_header
 <div id="month_selection">
 <form id="monthSelect" action="#" method="get">
-<select name="timestamp">$select_month_options</select> <input class="btn btn-primary btn-mini" type="submit" value="Go!" /> <a href="calendar.php?year=$prev_year&month=$prev_month">Prev</a> <a href="calendar.php?year=$next_year&month=$next_month">Next</a>
+<select name="timestamp" style="padding: 2 12 4 2;">$select_month_options</select> <input class="btn btn-primary btn-mini" type="submit" value="Go!" /> <a href="calendar.php?year=$prev_year&month=$prev_month">Prev</a> <a href="calendar.php?year=$next_year&month=$next_month">Next</a>
 
 <div style="float:right">
 <a href="event_search.php">Event Search</a>
@@ -1390,7 +1389,7 @@ DOCHERE_log;
 </form>
 </div>
 <form>
-<select name=navi onkeypress="location.href = this.form.navi.options[this.form.navi.selectedIndex].value">
+<select name="navi" style="padding: 2 12 4 2;" onkeypress="location.href = this.form.navi.options[this.form.navi.selectedIndex].value">
 	<option value="#" selected>Calendar
 	<option value="service_calendar.php?year=$this_year&month=$this_month">Service Calendar
 	<option value="service_calendar_chapter.php?year=$this_year&month=$this_month">Service Calendar - Chapter
@@ -1511,7 +1510,7 @@ DOCHERE_comments_feed;
 </table>
 $feed
 <form id="monthSelect2" action="#" method="get" style="margin-top: 1em;">
-<select name="timestamp">$select_month_options</select> <input class="btn btn-primary btn-mini" type="submit" value="Go!" /> <a href="calendar.php?year=$prev_year&month=$prev_month">Prev</a> <a href="calendar.php?year=$next_year&month=$next_month">Next</a>
+<select name="timestamp" style="padding: 2 12 4 2;"">$select_month_options</select> <input class="btn btn-primary btn-mini" type="submit" value="Go!" /> <a href="calendar.php?year=$prev_year&month=$prev_month">Prev</a> <a href="calendar.php?year=$next_year&month=$next_month">Next</a>
 </form>
 
 

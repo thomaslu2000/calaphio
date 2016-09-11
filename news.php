@@ -45,7 +45,7 @@ if (!$g_user->is_logged_in()) {
         <p style="margin-bottom: 1em 0px;">
             <b><u>SERVICE VP:</u></b><br>
             <b>Active Day of Service Chairs </b>(1)<br>
-            <b>IC/GG Sewing Chairs </b>(2)<br>
+            <b>IC/GG Sewing Chairs </b>(1)<br>
             <b>Project Open Hand Chair </b>(1)<br>
             <b>Berkeley Food and Housing Chair </b>(1)<br>
             <b>Campus-Wide Service Project Chairs </b>(2)<br>
@@ -93,11 +93,10 @@ if (!$g_user->is_logged_in()) {
     <p style="margin: 1.5em 0px;">
         <b><u>ADMIN VP:</u></b><br>
         <b>Admin VP Assistant:</b> Jerry Park<br>
-        <b>Webmasters:</b> Jeffrey Li, Thaniel Directo, Edson Romero, Audrey Tsai<br>
+        <b>Webmasters:</b> Jeffrey Li, Thaniel Directo, Yuki Mizuno, Edson Romero, Audrey Tsai<br>
         <b>* Stylus Chairs:</b> Bianca Hsueh, Claire Li, Miranda Zhou<br>
         <b>* Funpack Chairs:</b> Nina Nguyen, Lisa Hoang<br>
         <b>Academic Chair:</b> Chris Janssen<br>
-        <b>Mobile Dev Chairs:</b> Joseph Lee, Yuki Mizuno, Edson Romero<br>
     </p>
 
      <p style="margin: 1.5em 0px;">

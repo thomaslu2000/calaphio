@@ -223,7 +223,7 @@ DOCHERE_print_body_footer;
 	function print_disclaimer() {
 		echo <<<DOCHERE_print_disclaimer
 <div id="disclaimer">
-  <p style="margin-bottom: 1em;">112 Hearst Gym #4520 Berkeley, CA 94720-4520 / ASUC Funded / Wheelchair Accessible</p>
+  <p style="margin-bottom: 1em;">432 Eshleman Hall, MC 4500 Berkeley, CA  94720-4500 / ASUC Funded / Wheelchair Accessible</p>
   <p style="margin-bottom: 1em;">This electronic document is intended for public viewing and is solely for personal reference. It should not be considered an authoritative source nor an official publication of Alpha Phi Omega. Inquiries regarding Alpha Phi Omega and its official publications may be directed to: Alpha Phi Omega, 14901 E. 42nd Street, Independence, MO, 64055 - USA. "Alpha Phi Omega" is a copyrighted, registered trademark in the USA. All rights reserved.</p>
   <p>This electronic document also does not represent any opinion or statement of the University of California, Berkeley.</p>
 </div>
