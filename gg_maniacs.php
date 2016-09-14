@@ -10,6 +10,17 @@ Template::print_body_header('Home', 'NEWS');
 ?>
 <h1>Gamma Gamma Maniacs!</h1>
 <div class="newsItem">
+    <h2 class="center">FH Semester GG Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Jessica Tzeng</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
     <h2 class="center">RBD Semester GG Maniacs!</h2>
     <div class="collage-container">
 	<div class="collage-pictures">

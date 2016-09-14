@@ -77,7 +77,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit?pref=2&pli=1#gid=1283827056.php",
+				"BUDGET" => "http://goo.gl/AsFDzl",
 				),
 			'Calendar' => array(
 				"HOME" => "news.php",
@@ -86,7 +86,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/1Juk1XldLPt6m2SJw2773ECmbEUHzVCo3S2ZKAnr-1pE/edit?pref=2&pli=1#gid=1283827056.php",
+				"BUDGET" => "http://goo.gl/AsFDzl",
 				),
 			'Service' => array(
 				"HOME" => "news.php",

@@ -34,30 +34,48 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
-        <h2>CM 1 Recap</h2>
-        <p class="date">August 31, 2016 at 12:31am</p>
+        <h2>CM 2 Recap</h2>
+        <p class="date">September 13, 2016 at 11:28pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">
-        ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!<p>
+        Since <a href="https://members.calaphio.com/event.php?id=150029&sid=PoiVrJ55xC5OaAPfxB5wm1" target="_blank">CM 3</a> is next Tuesday, the <a href="https://members.calaphio.com/gg_maniac_vote.php?id=115">GG Maniac 3 Poll</a> will close on Wednesday 9/14 at 11:59pm! Remember that you cannot vote for past GG Maniacs or past Pledge Maniacs.</p>
+
+        <p style="margin: 0.5em 0px;">
+        Also, ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!</p>
 
         <p style="margin-bottom: 1em 0px;">
             <b><u>SERVICE VP:</u></b><br>
-            <b>Active Day of Service Chairs </b>(1)<br>
-            <b>IC/GG Sewing Chairs </b>(1)<br>
+            <b>Active Day of Service Chair </b>(1)<br>
             <b>Project Open Hand Chair </b>(1)<br>
             <b>Berkeley Food and Housing Chair </b>(1)<br>
-            <b>Campus-Wide Service Project Chairs </b>(2)<br>
         </p>
 
         <p style="margin: 1.5em 0px;">
             <b><u>FELLOWSHIP VP:</u></b><br>
-            <b>GG Events Chair </b>(2)<br>
             <b>IC Events Chair </b>(1)<br>
         </p>
 
-        <p style="margin-bottom: 1em;">Also, here are the following documents from CM 1:<br><br>
+        <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 2:<br><br>
+            <a href="https://goo.gl/Mpfnna" target="_blank">CM 2 Slides</a><br>
+            <a href="https://goo.gl/bmtzHA" target="_blank">CM 2 Minutes</a><br>
+            <a href="https://goo.gl/lMru4o" target="_blank">Caption Contest</a><br>
+            <a href="https://goo.gl/SdJd5S" target="_blank">Testbank</a><br>
+            <a href="https://goo.gl/6sJIuC" target="_blank">Alumni Mentorship Interest Form</a><br>
+        </p>
+        <p>CM 2 Slideshow:<br><br><iframe src="https://drive.google.com/file/d/0B-KJt7fvwz4OME1UbzlFd1p6WTA/preview" width="560" height="315"></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>CM 1 Recap</h2>
+        <p class="date">August 31, 2016 at 12:31am</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">Here are the following documents from CM 1:<br><br>
             <a href="http://goo.gl/1A0TFE" target="_blank">CM 1 Slides</a><br>
             <a href="http://goo.gl/E7zu6E" target="_blank">CM 1 Minutes</a><br>
             <a href="http://goo.gl/AsFDzl" target="_blank">Fall 2016 Budget</a><br>
@@ -66,7 +84,7 @@ if (!$g_user->is_logged_in()) {
             <a href="http://goo.gl/YPSpnl" target="_blank">Caption Contest</a><br>
             <a href="https://members.calaphio.com/gg_maniac_vote.php?id=114">GG Maniac 2 Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
         </p>
-        <p>CM1 Slideshow:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/siHADfaStaY" frameborder="0" allowfullscreen></iframe></p>
+        <p>CM 1 Slideshow:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/siHADfaStaY" frameborder="0" allowfullscreen></iframe></p>
         <br>
         <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
     </div>
@@ -114,8 +132,8 @@ if (!$g_user->is_logged_in()) {
         <b>Service VP Assistants:</b> Kerry Feng, Nina Nguyen, Miranda Zhou<br>
         <b>* Hallcarn Chairs:</b> Leona Chen, Kerry Feng, Claire Li, Gordon Mah, Isaac Zheng<br>
         <b>Active Day of Service Chair:</b> William Liao<br>
-        <b>IC/GG Sewing Chair:</b> Joanna Choi<br>
-        <b>* Campus-Wide Service Project Chairs:</b> Jessica Lee, Nick Weis<br>
+        <b>IC/GG Sewing Chairs:</b> Kerry Feng, Joanna Choi<br>
+        <b>* Campus-Wide Service Project Chairs:</b> Jessica Lee, Nick Weis, Audrey Tsai, Scottie Wan<br>
         <b>YTA Beartrax/Mosswood Chairs:</b> Molly Caldwell, Jayant Raman, Stanley Shaw<br>
         <b>Service Buddies Chairs:</b> Isaac Zheng, Claudia Lim<br>
     </p>
@@ -132,6 +150,7 @@ if (!$g_user->is_logged_in()) {
         <b>Fellowship VP Assistants:</b> Gene Ho, Spencer Liu<br>
         <b>* Hotspot Chairs:</b> Dinasha Dahanayake, Yanan Wang, Nick Weis, Yitian Zhang, Yuki Mizuno<br>
         <b>GG Sports Chairs:</b> Jayant Raman, Naomichi Yamamoto<br>
+        <b>GG Events Chairs:</b> Selena Fung, Ya-An Hsiung<br>
         <b>IC Events Chair:</b> Karen Chou<br>
         <b>* Banquet Chairs:</b> Joshua Jacobs, Jessica Tzeng, Claudia Lim, Joanna Choi<br>
     </p>
