@@ -24,9 +24,9 @@ echo $gg_maniac_nag->display();
 
 $calendar->print_upcoming_events(5);
 
-// <-- messing with bootstrap code, commented out for now --> $g_user->process_mailer(false);
-// <-- messing with bootstrap code, commented out for now -->  $g_user->print_mailer(false);
-// <-- messing with bootstrap code, commented out for now -->  $g_user->print_personal_messages();
+$g_user->process_mailer(false);
+$g_user->print_mailer(false);
+$g_user->print_personal_messages();
 
 
 if (!$g_user->is_logged_in()) {
@@ -38,7 +38,7 @@ if (!$g_user->is_logged_in()) {
     <div class="newsItem">
         <h2>GG Maniac 2 Spotlight</h2>
         <p class="date">September 15, 2016 at 8:46pm</p>
-        <div class="row-fluid" style="margin-top: 1em; text-align: center;">
+        <div class="row-fluid" style="margin-top: 1em; text-align: center; height: 300px;">
             <div class="span6">
                 <div><img src="images/gg_maniacs_fa16/jessica.jpg" onmouseover="this.src='images/gg_maniacs_fa16/jessica2.jpg'" onmouseout="this.src='images/gg_maniacs_fa16/jessica.jpg'" style="width: 75%; border:1px solid black;" height="275" width="275"></img>
                 </div>
