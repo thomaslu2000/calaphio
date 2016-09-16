@@ -36,6 +36,27 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>GG Maniac 2 Spotlight</h2>
+        <p class="date">September 15, 2016 at 8:46pm</p>
+        <div class="row-fluid" style="margin-top: 1em; text-align: center;">
+            <div class="span6">
+                <div><img src="images/gg_maniacs_fa16/jessica.jpg" onmouseover="this.src='images/gg_maniacs_fa16/jessica2.jpg'" onmouseout="this.src='images/gg_maniacs_fa16/jessica.jpg'" style="width: 75%; border:1px solid black;" height="275" width="275"></img>
+                </div>
+            </div>
+            <div class="span6" style="text-align: left;">
+                    <h1 style="margin-top: 1.25em; margin-bottom: 0.75em;" href="profile.php?user_id=3590">Jessica Tzeng</h1>
+                    <li>Pledge Class: RBD</p>
+                    <li>Rush Chair for Membership VP</p>
+                    <li>MVP Assistant and Finance VP Assistant</p><br>
+            </p></div>
+        </div>
+        <p style="margin: 1em 0px;">
+        Ever since Jessica pledged last semester, she has helped our chapter tremendously, from being an exceptional pledge to helping create a great rush. She works very hard and represents APO well. If you see her, be sure to congratulate her!</p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 2 Recap</h2>
         <p class="date">September 13, 2016 at 11:28pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
