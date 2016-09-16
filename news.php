@@ -24,15 +24,36 @@ echo $gg_maniac_nag->display();
 
 $calendar->print_upcoming_events(5);
 
-$g_user->process_mailer(false);
-$g_user->print_mailer(false);
-$g_user->print_personal_messages();
+// <-- messing with bootstrap code, commented out for now --> $g_user->process_mailer(false);
+// <-- messing with bootstrap code, commented out for now -->  $g_user->print_mailer(false);
+// <-- messing with bootstrap code, commented out for now -->  $g_user->print_personal_messages();
 
 
 if (!$g_user->is_logged_in()) {
     echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
 }
 ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>GG Maniac 2 Spotlight</h2>
+        <p class="date">September 15, 2016 at 8:46pm</p>
+        <div class="row-fluid" style="margin-top: 1em; text-align: center;">
+            <div class="span6">
+                <div><img src="images/gg_maniacs_fa16/jessica.jpg" onmouseover="this.src='images/gg_maniacs_fa16/jessica2.jpg'" onmouseout="this.src='images/gg_maniacs_fa16/jessica.jpg'" style="width: 75%; border:1px solid black;" height="275" width="275"></img>
+                </div>
+            </div>
+            <div class="span6" style="text-align: left;">
+                    <h1 style="margin-top: 1.25em; margin-bottom: 0.75em;" href="profile.php?user_id=3590">Jessica Tzeng</h1>
+                    <li>Pledge Class: RBD</p>
+                    <li>Rush Chair for Membership VP</p>
+                    <li>MVP Assistant and Finance VP Assistant</p><br>
+            </p></div>
+        </div>
+        <p style="margin: 1em 0px;">
+        Ever since Jessica pledged last semester, she has helped our chapter tremendously, from being an exceptional pledge to helping create a great rush. She works very hard and represents APO well. If you see her, be sure to congratulate her!</p>
+    </div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
@@ -52,13 +73,13 @@ if (!$g_user->is_logged_in()) {
             <b>Berkeley Food and Housing Chair </b>(1)<br>
         </p>
 
-        <p style="margin: 1.5em 0px;">
+        <p style="margin:1.5em 0px 1em 0px;">
             <b><u>FELLOWSHIP VP:</u></b><br>
             <b>IC Events Chair </b>(1)<br>
         </p>
 
         <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 2:<br><br>
-            <a href="https://goo.gl/Mpfnna" target="_blank">CM 2 Slides</a><br>
+            <a href="https://goo.gl/rZ5cVS" target="_blank">CM 2 Slides</a><br>
             <a href="https://goo.gl/bmtzHA" target="_blank">CM 2 Minutes</a><br>
             <a href="https://goo.gl/lMru4o" target="_blank">Caption Contest</a><br>
             <a href="https://goo.gl/SdJd5S" target="_blank">Testbank</a><br>
@@ -140,7 +161,7 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin: 1.5em 0px;">
         <b><u>FINANCE VP:</u></b><br>
-        <b>Finance VP Assistant:</b> Hermes Ip<br>
+        <b>Finance VP Assistant:</b> Hermes Ip, Jessica Tzeng<br>
         <b>Fundraiser Chairs:</b> Joshua Jacobs, Jessica Lee, Jerry Park, Hyeonji Shim<br>
         <b>Reimbursement Chairs:</b> Leona Chen, Alexander Feng<br>
     </p>
@@ -168,7 +189,7 @@ if (!$g_user->is_logged_in()) {
     <p style="margin: 1.5em 0px;">
         <b><u>HISTORIAN:</u></b><br>
         <b>Historian Assistant:</b> Stanley Shaw<br>
-        <b>Alumni Relations Chairs:</b> Gordon Mah, Jeremy Lam, Audrey Tsai<br>
+        <b>Alumni Relations Chairs:</b> William Liao, Gordon Mah, Jeremy Lam, Audrey Tsai<br>
         <b>* Scrapbook Chairs:</b> Molly Caldwell, Kira Wong<br>
         <b>* Photography Chairs:</b> Adrian Peneyra, Jerry Park<br>
         <b>GG Maniac Chairs:</b> Kerry Feng, Kira Wong<br>

@@ -4,6 +4,9 @@
 	require("include/Template.class.php");
 	Template::print_head(array("ggwiki.css"));
 	Template::print_body_header('Brothers', 'WIKI');
+
+$template = new Template();
+
 ?>
 
 <script type="text/javascript" src="ajax.js"></script>
