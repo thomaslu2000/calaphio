@@ -34,7 +34,7 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>CM 2 Recap</h2>
         <p class="date">September 13, 2016 at 11:28pm</p>
@@ -47,7 +47,6 @@ if (!$g_user->is_logged_in()) {
 
         <p style="margin-bottom: 1em 0px;">
             <b><u>SERVICE VP:</u></b><br>
-            <b>Active Day of Service Chair </b>(1)<br>
             <b>Project Open Hand Chair </b>(1)<br>
             <b>Berkeley Food and Housing Chair </b>(1)<br>
         </p>
@@ -70,7 +69,7 @@ if (!$g_user->is_logged_in()) {
     </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in()): ?>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>CM 1 Recap</h2>
         <p class="date">August 31, 2016 at 12:31am</p>
@@ -131,7 +130,7 @@ if (!$g_user->is_logged_in()) {
         <b><u>SERVICE VP:</u></b><br>
         <b>Service VP Assistants:</b> Kerry Feng, Nina Nguyen, Miranda Zhou<br>
         <b>* Hallcarn Chairs:</b> Leona Chen, Kerry Feng, Claire Li, Gordon Mah, Isaac Zheng<br>
-        <b>Active Day of Service Chair:</b> William Liao<br>
+        <b>Active Day of Service Chair:</b> William Liao, Sierra Lou<br>
         <b>IC/GG Sewing Chairs:</b> Kerry Feng, Joanna Choi<br>
         <b>* Campus-Wide Service Project Chairs:</b> Jessica Lee, Nick Weis, Audrey Tsai, Scottie Wan<br>
         <b>YTA Beartrax/Mosswood Chairs:</b> Molly Caldwell, Jayant Raman, Stanley Shaw<br>
