@@ -16,6 +16,9 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Jessica Tzeng</p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Bianca Hsueh</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>

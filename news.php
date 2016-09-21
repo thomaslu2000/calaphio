@@ -34,16 +34,16 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
-<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
-        <h2>CM 2 Recap</h2>
-        <p class="date">September 13, 2016 at 11:28pm</p>
+        <h2>CM 3 Recap</h2>
+        <p class="date">September 21, 2016 at 12:04am</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">
-        Since <a href="https://members.calaphio.com/event.php?id=150029&sid=PoiVrJ55xC5OaAPfxB5wm1" target="_blank">CM 3</a> is next Tuesday, the <a href="https://members.calaphio.com/gg_maniac_vote.php?id=115">GG Maniac 3 Poll</a> will close on Wednesday 9/14 at 11:59pm! Remember that you cannot vote for past GG Maniacs or past Pledge Maniacs.</p>
+        Welcome FH Pledges! I'll be posting a recap of each chapter meeting within 24 hours that it ends. We hope you all enjoy pledging this semester! And good luck to PComm! We hope you guide a great new group of pledges into the chapter.</p>
 
         <p style="margin: 0.5em 0px;">
-        Also, ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!</p>
+        Actives, ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!</p>
 
         <p style="margin-bottom: 1em 0px;">
             <b><u>SERVICE VP:</u></b><br>
@@ -56,7 +56,30 @@ if (!$g_user->is_logged_in()) {
             <b>IC Events Chair </b>(1)<br>
         </p>
 
-        <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 2:<br><br>
+        <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 3:<br><br>
+            <a href="https://goo.gl/pfgY4f" target="_blank">CM 3 Slides</a><br>
+            <a href="https://goo.gl/HqDKKD" target="_blank">CM 3 Minutes</a><br>
+            <a href="https://goo.gl/g5fg9Q" target="_blank">Caption Contest</a><br>
+            <a href="https://goo.gl/forms/CoVvEesgevlwga9C3" target="_blank">Om Nom</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=117" target="_blank">GG Maniac 4 Poll </a>(cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
+            <a href="https://goo.gl/SdJd5S" target="_blank">Testbank</a><br>
+            <a href="https://goo.gl/6sJIuC" target="_blank">Alumni Mentorship Interest Form</a><br>
+        </p>
+        <p>CM 3 Slideshow:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/zOOlwca72Qk" frameborder="0" allowfullscreen></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+    <div class="newsItem">
+        <h2>CM 2 Recap</h2>
+        <p class="date">September 13, 2016 at 11:28pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+        Since <a href="https://members.calaphio.com/event.php?id=150029&sid=PoiVrJ55xC5OaAPfxB5wm1" target="_blank">CM 3</a> is next Tuesday, the <a href="https://members.calaphio.com/gg_maniac_vote.php?id=115">GG Maniac 3 Poll</a> will close on Wednesday 9/14 at 11:59pm! Remember that you cannot vote for past GG Maniacs or past Pledge Maniacs.</p>
+
+        <p style="margin-bottom: 1em;">Also, here are the following documents from CM 2:<br><br>
             <a href="https://goo.gl/rZ5cVS" target="_blank">CM 2 Slides</a><br>
             <a href="https://goo.gl/bmtzHA" target="_blank">CM 2 Minutes</a><br>
             <a href="https://goo.gl/lMru4o" target="_blank">Caption Contest</a><br>
@@ -139,7 +162,7 @@ if (!$g_user->is_logged_in()) {
 
     <p style="margin: 1.5em 0px;">
         <b><u>FINANCE VP:</u></b><br>
-        <b>Finance VP Assistant:</b> Hermes Ip, Jessica Tzeng<br>
+        <b>Finance VP Assistants:</b> Hermes Ip, Jessica Tzeng<br>
         <b>Fundraiser Chairs:</b> Joshua Jacobs, Jessica Lee, Jerry Park, Hyeonji Shim<br>
         <b>Reimbursement Chairs:</b> Leona Chen, Alexander Feng<br>
     </p>
