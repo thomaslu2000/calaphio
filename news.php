@@ -40,7 +40,7 @@ if (!$g_user->is_logged_in()) {
         <p class="date">September 21, 2016 at 12:04am</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">
-        Welcome FH Pledges! I'll be posting a recap of each chapter meeting within 24 hours that it ends. We hope you all enjoy pledging this semester! And good luck to PComm! We hope you guide a great new group of pledges into the chapter.</p>
+        Welcome FH Pledges! I'll be posting a recap of each chapter meeting within 24 hours that it ends. We hope you all enjoy pledging this semester! And good luck to PComm, we hope you guide a great new group of pledges into the chapter!</p>
 
         <p style="margin: 0.5em 0px;">
         Actives, ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!</p>
