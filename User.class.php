@@ -417,7 +417,7 @@ DOCHERE_process_change_passphrase;
 <tr><td axis="name">City</td><td axis="value"><input type="text" name="city", value="$row[city]" /></td></tr>
 <tr><td axis="name">Zipcode</td><td axis="value"><input type="text" name="zipcode", value="$row[zipcode]" /></td></tr>
 <tr><td axis="name">How to reach me</td><td axis="value"><input type="text" name="phone", value="$row[phone]" /></td></tr>
-<tr><td axis="name">Cell Phone</td><td axis="value"><input type="text" name="cellphone", value="$row[cellphone]" /></td></tr>
+<tr><td axis="name">Phone #</td><td axis="value"><input type="text" name="cellphone", value="$row[cellphone]" /></td></tr>
 <tr><td axis="name">Major</td><td axis="value"><input type="text" name="major", value="$row[major]" /></td></tr>
 <tr><td axis="name">AIM</td><td axis="value"><input type="text" name="aim", value="$row[aim]" /></td></tr>
 <tr><td axis="name">Birthday</td><td axis="value"><select name="birthday_month">$month</select><select name="birthday_day">$day</select><select name="birthday_year">$year</select></td></tr>

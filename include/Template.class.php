@@ -106,6 +106,15 @@ DOCHERE_print_head;
 				"BYLAWS" => "bylaws.php",
 				"REIMBURSE" => "reimbursement.php"
 				),
+			'Wiki' => array(
+				"HOME" => "news.php",
+				"CALENDAR" => "calendar.php",
+				"REIMBURSE" => "reimbursement.php",
+				"BROTHERS" => "roster.php", 
+				"GG WIKI" => "ggwiki.php", 
+				"BYLAWS" => "bylaws.php",
+				"BUDGET" => "http://goo.gl/AsFDzl",
+				),
 			// 'Members' => array(
 			// 	"HOME" => "news.php",
 			// 	"HISTORY" => "history.php",

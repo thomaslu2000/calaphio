@@ -39,14 +39,14 @@ if (isset($_REQUEST['active_name']) && isset($_REQUEST['reason'])) {
 
 echo <<<DOCHERE
 	<h2>$poll_name</h2>
-	<p style="color: #000;">Remember you cannot vote for <a href="gg_maniacs.php">Past Maniacs!</a></p>
+	<p style="color: #000; padding: 25px 60px 15px 60px;">Remember that you CANNOT vote for <a href="gg_maniacs.php">Past Maniacs</a> as the vote will not count. Current PComm and ExComm are also ineligble to win, even if they have not previously won.</p>
 	<div style="margin-top:1em">
 		<form id="GGManiacVote" action="#" method="post" onsubmit="">
 			<span style="font-weight:bold;margin-right:1em"> Active Name </span>
 			<input type="text" name="active_name">
 			</br>
-			<span style="font-weight:bold;margin-top:1em;display:block"> Why Did You Vote For This Active? </span>
-    		<textarea  style="display:block;margin-top:1em" id="ggManiacVoteReason" name="reason" rows="4" cols="60"></textarea>
+			<span style="font-weight:bold;margin-top:1em;margin-bottom:1em;display:block;"> Why Did You Vote For This Active? </span>
+    		<textarea  style="display:block;padding-top:1em;margin:0 auto;" id="ggManiacVoteReason" name="reason" rows="4" cols="60"></textarea>
     		<input class="btn btn-primary btn-small" style="margin-top:1em" type="submit" value="Submit Vote">
     	</form>
 	</div>	
