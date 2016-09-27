@@ -46,7 +46,7 @@ echo <<<DOCHERE
 			<input type="text" name="active_name">
 			</br>
 			<span style="font-weight:bold;margin-top:1em;margin-bottom:1em;display:block;"> Why Did You Vote For This Active? </span>
-    		<textarea  style="display:block;padding-top:1em;margin:0 auto;" id="ggManiacVoteReason" name="reason" rows="4" cols="60"></textarea>
+    		<textarea  style="display:block;padding-top:0.25em;margin:0 auto;" id="ggManiacVoteReason" name="reason" rows="4" cols="60"></textarea>
     		<input class="btn btn-primary btn-small" style="margin-top:1em" type="submit" value="Submit Vote">
     	</form>
 	</div>	

@@ -195,6 +195,7 @@ if (!$g_user->is_logged_in()) {
         <b>* Photography Chairs:</b> Adrian Peneyra, Jerry Park<br>
         <b>GG Maniac Chairs:</b> Kerry Feng, Kira Wong<br>
         <b>Chapter Wiki Chair:</b> Chris Janssen<br>
+        <b>Slideshow Chair:</b> John Stoumbos<br>
     </p>
     
     <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>

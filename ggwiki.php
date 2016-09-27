@@ -486,8 +486,8 @@ $template = new Template();
 				  $subcontent .= "<p class=\"description\">";
 				  $array = array();
 				}
-				if ($position_type == 1 || $position_type == 2 || $position_type == 3 || $position_type == 4 || $position_type == 7 || $position_type == 8) {
-				  	if ($position_type == 3 || $position_type == 4) {
+				if ($position_type == 1 || $position_type == 2 || $position_type == 3 || $position_type == 4 || $position_type == 7 || $position_type == 8 || $position_type == 15) {
+				  	if ($position_type == 3 || $position_type == 4 || $position_type == 15) {
 						$sentence = "<b>" . $position_name . "</b>: " . $position_title . "<br />";
 					}
 					else {

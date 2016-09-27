@@ -41,7 +41,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if($g_user->is_logged_in()): ?>    
+<?php if($g_user->is_logged_in() && !$g_user->is_pledge()): ?>    
 <div class="newsItem">
     <h2>Notes From CM 8</h2>
     <p class="date">May 2nd, 2014</p>
@@ -115,7 +115,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if($g_user->is_logged_in()): ?>
+<?php if($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <!--<div class="newsItem">
 <h2>Submit to Caption Contest! Last day to submit is April 1, 2014 at 5pm before CM 6 starts!</h2>
 <p class="date">March 27, 2014</p>
@@ -156,7 +156,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if($g_user->is_logged_in()): ?>
+<?php if($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Notes From CM 5</h2>
     <p class="date">March 15, 2014</p>
@@ -183,7 +183,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 <?php endif ?>
 
-<?php if($g_user->is_logged_in()): ?>
+<?php if($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
 <div class="newsItem">
     <h2>Submit to Caption Contest! Last day to submit is March 11, 2014 at 5pm before CM 5 starts!</h2>
     <p class="date">March 05, 2014</p>
