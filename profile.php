@@ -342,7 +342,7 @@ function print_requirements($user_id) {
 				$title_link = event_link($row['event_id'], $row['title']);
 				$ic_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
 				if ($row['attended']) {
-					$ic_events_count += .5;
+					$ic_events_count += 0;
 				}
 			}
 			
@@ -818,7 +818,7 @@ function print_requirements($user_id) {
 <div style="margin:1em 0em">
 	<form action="#" method="post" onsubmit="">
 		<span style="font-weight:bold;margin-right:1em"> Semester </span>
-		<select id="semester" name="semester">$semesters</select>
+		<select id="semester" name="semester" style="padding:3 3 6 2;">$semesters</select>
 		<input class="btn btn-primary btn-small" type="submit" value="View">
 	</form>
 </div>	
