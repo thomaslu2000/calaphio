@@ -343,11 +343,10 @@ function print_requirements($user_id) {
 				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
 				$title_link = event_link($row['event_id'], $row['title']);
 
-				/** $dynasty_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
+				$dynasty_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
 				if ($row['attended']) {
 					$dynasty_events_count++;
 				}
-				*/
 			}
 			
 			
