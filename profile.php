@@ -329,7 +329,9 @@ function print_requirements($user_id) {
 					$ic_events_count++;
 				}
 			}
-			// Retrieve IC Half's
+			// Retrieve Dynasty events
+			$dynasty_events = "";
+			$dynasty_events_count = 0;
 			$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
 				JOIN %scalendar_attend USING (event_id)
 				WHERE type_interchapter_half=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
@@ -341,9 +343,9 @@ function print_requirements($user_id) {
 				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
 				$title_link = event_link($row['event_id'], $row['title']);
 
-				/** $ic_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
+				/** $dynasty_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
 				if ($row['attended']) {
-					$ic_events_count += 0;
+					$dynasty_events_count++;
 				}
 				*/
 			}
@@ -828,6 +830,10 @@ function print_requirements($user_id) {
 <table>
 <caption>Complete 1 IC credit - You have completed $ic_events_count</caption>
 $ic_events
+</table>
+<table>
+<caption>Attend 1 Dynasty event - You have attended $dynasty_events_count</caption>
+$dynasty_events
 </table>
 <table>
 <caption>Attend 1 Info Night and Post, Meet the Chapter, 1 Rush Event, and 4 Hours of Flyering - You have completed $rush_events_count</caption>
