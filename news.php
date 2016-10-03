@@ -156,7 +156,7 @@ if (!$g_user->is_logged_in()) {
         <b>Active Day of Service Chair:</b> William Liao, Sierra Lou<br>
         <b>IC/GG Sewing Chairs:</b> Kerry Feng, Joanna Choi<br>
         <b>* Campus-Wide Service Project Chairs:</b> Jessica Lee, Nick Weis, Audrey Tsai, Scottie Wan<br>
-        <b>YTA Beartrax/Mosswood Chairs:</b> Molly Caldwell, Jayant Raman, Stanley Shaw<br>
+        <b>YTA Beartrax/Mosswood Chairs:</b> Molly Caldwell, Stanley Shaw<br>
         <b>Service Buddies Chairs:</b> Isaac Zheng, Claudia Lim<br>
     </p>
 

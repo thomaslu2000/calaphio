@@ -96,7 +96,14 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 			//	$ic_events_count--;
 			}
 		}
-		//Retrieve IC Halfs
+		if ($ic_events_count < 1) {
+			$ic_events = "<FONT COLOR='RED'>1 IC Credit: $ic_events_count Credits <br/></FONT>";
+		} else {
+			$ic_events = "1 IC Credit: $ic_events_count Credits <br/>";
+		}
+		//Retrieve Dynasty events
+		$dynasty_events = "";
+		$dynasty_events_count = 0;
 		$queryICHalf = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
 			JOIN %scalendar_attend USING (event_id)
 			WHERE type_interchapter_half=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
@@ -105,15 +112,15 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 			$sql_start_date, $sql_end_date, $user_id));
 		while ($row = $queryICHalf->fetch_row()) {
 			if ($row['attended']) {
-				$ic_events_count += .5;
+				$dynasty_events_count++;
 			//} else if ($row['flaked']) {
 			//	$ic_events_count--;
 			}
 		}
-		if ($ic_events_count < 1) {
-			$ic_events = "<FONT COLOR='RED'>1 IC Credit: $ic_events_count Credits <br/></FONT>";
+		if ($dynasty_events_count < 1) {
+			$dynasty_events = "<FONT COLOR='RED'>1 Dynasty Event: $dynasty_events_count Events <br/></FONT>";
 		} else {
-			$ic_events = "1 IC Credit: $ic_events_count Credits <br/>";
+			$dynasty_events = "1 Dynasty Event: $ic_events_count Events <br/>";
 		}
 
 		// Retrieve Service events
