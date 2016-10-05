@@ -60,6 +60,7 @@ if (!$g_user->is_logged_in()) {
         <ul>
             <li style="list-style-type: square; margin-left: 1em;">Calendar Events</li>
             <li style="list-style-type: square; margin-left: 1em;">Office Hours</li>
+            <li style="list-style-type: square; margin-left: 1em;">Chummings</li>
         </ul>
         <p style="margin-top: 0.5em;">You may NOT kill people <b>10 minutes before or after</b> the following:</p>
         <ul>
