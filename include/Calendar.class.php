@@ -1229,7 +1229,7 @@ $driver
 $comments
 
 <div name="event_post_comment" id="event_post_comment">
-<form action="email-scr" method="post">
+<form action="#" method="post">
 <div><textarea name="body" rows="10" cols="50"></textarea></div>
 <div><button class="btn btn-small" type="submit" name="function" value="Post Comment">Post Comment</button></div>
 </form>
