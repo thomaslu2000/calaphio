@@ -75,6 +75,7 @@ if (!$g_user->is_logged_in()) {
             <li style="list-style-type: square; margin-left: 1em;"><b>PComm/DComm targets:</b> At least <b>3 members of PComm</b> or <b>2 members of DComm</b> are together.</li>
             <li style="list-style-type: square; margin-left: 1em;"><b>Pledges:</b> Whenever a pledge is a target, if at least <b>3 pledges</b> are together, PComm/DComm cannot kill them no matter what.</li>
         </ul>
+        
         <p style="margin: 0.5em;">If anyone has questions (there are a lot of rules so it's understandable) then please message Antony. If anyone starts to feel like they cannot go to class or leave their homes because assassins is too intense or the rules are not adequate, please let Antony know as well. Good luck! Remember that first place gets a free banquet ticket.</p>
 
         <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>

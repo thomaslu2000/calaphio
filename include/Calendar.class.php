@@ -104,6 +104,8 @@ class Calendar {
 			$prefix = '<span class="dynasty" style="color: #800000">[DYN]</span> ';
 		}  else if($row['type_custom']== 15){
 			$prefix = '<span class="active" style="color: #00e6e6;">[LFS]</span> ';	
+		} else if ($row['type_custom'] == 1 || $row['type_custom'] == 3 || $row['type_custom'] == 4 || $row['type_custom'] == 5 || $row['type_custom'] == 6 || $row['type_custom'] == 7 || $row['type_custom'] == 11 || $row['type_custom'] == 13 || $row['type_pledge_meeting']) {
+			$prefix = '<span class="pledge" style="color: #399;">[PLE]</span> ';
 		} else if ($row['type_service_campus'] || $row['type_service_chapter'] || $row['type_service_community'] || $row['type_service_country']) {
 			$prefix = '<span class="service">[SER]</span> ';
 		} else if ($row['type_custom'] == 12) {
@@ -112,8 +114,6 @@ class Calendar {
 			$prefix = '<span class="alumni" style="color: #ff9933;">[ALM]</span> ';
 		} else if ($row['type_fellowship']) {
 			$prefix = '<span class="fellowship">[FEL]</span> ';
-		} else if ($row['type_custom'] == 1 || $row['type_custom'] == 3 || $row['type_custom'] == 4 || $row['type_custom'] == 5 || $row['type_custom'] == 6 || $row['type_custom'] == 7 || $row['type_custom'] == 11 || $row['type_custom'] == 13 || $row['type_pledge_meeting']) {
-			$prefix = '<span class="pledge" style="color: #399;">[PLE]</span> ';
 		} else if ($row['type_family']) {
 			$prefix = '<span class="family" style="color: #9acd32;">[FAM]</span> ';
 		} else if ($row['type_custom'] == 14) {
