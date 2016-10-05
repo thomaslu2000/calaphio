@@ -19,6 +19,9 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Bianca Hsueh</p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Nick Weis</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>

@@ -376,6 +376,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 			echo <<<DOCHERE
 <b>$firstname $lastname ($pledgeclass):</b><br/>
 $ic_events
+$dynasty_events
 $rush_events
 $tabling_events
 $fundraiser_events

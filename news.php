@@ -36,27 +36,95 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>How tf Does Assassins Work?</h2>
+        <p class="date">October 5, 2016 at 12:03am</p>
+        <p style="margin: 0.5em 0px;">
+        There's a lot of rules, but please bear with them.</p>
+
+        <p style="margin-top: 1em;"><b><u>KILLINGS:</u></b><br></p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">Families need at least <b>2 bigs</b> AND <b>2 littles</b> together to kill a target</li>
+            <li style="list-style-type: square; margin-left: 1em;">PComm/DComm need at least <b>4 members</b>. If PComm is involved, they must be from at least <b>2 different committees</b> (aka Jerry + Joseph + 2 DComm members will not count).</li>
+            <li style="list-style-type: square; margin-left: 1em;">You must shout the name of the target when near them, then everyone must tag the target with spoons. Forks and knives do not count. Throwing the spoons does not count.</li>
+        </ul>
+
+        <p style="margin-top: 1em;"><b><u>PROOF OF A KILL:</u></b><br></p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">Photo evidence: target must be holding a paper with their own name and the name of the family that killed them (if you get killed, don't refuse to take a picture).</li>
+            <li style="list-style-type: square; margin-left: 1em;">Email photo evidence to assassins@calaphio.com (include the date and time of the kill).</li>
+            <li style="list-style-type: square; margin-left: 1em;">Failure to complete the above steps will null any kill attempts.</li>
+        </ul>
+
+        <p style="margin-top: 1em;"><b><u>IMMUNITY:</u></b><br></p>
+        <p style="margin-top: 0.5em;">You may NOT kill people <b>30 minutes before or after</b> the following:</p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">Calendar Events</li>
+            <li style="list-style-type: square; margin-left: 1em;">Office Hours</li>
+        </ul>
+        <p style="margin-top: 0.5em;">You may NOT kill people <b>10 minutes before or after</b> the following:</p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">Hotspot</li>
+            <li style="list-style-type: square; margin-left: 1em;">Work</li>
+            <li style="list-style-type: square; margin-left: 1em;">Class (so don't skip class *cough* Scottie Wan *cough*)</li>
+        </ul>
+        
+        <p style="margin-top: 0.5em;">And you may NOT kill people at their homes/dorms, nor right after they leave. Finally, certain types of targets are immune under the following conditions:</p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;"><b>Family target:</b> At least <b>2 bigs</b> AND <b>2 littles</b> are together.</li>
+            <li style="list-style-type: square; margin-left: 1em;"><b>PComm/DComm targets:</b> At least <b>3 members of PComm</b> or <b>2 members of DComm</b> are together.</li>
+            <li style="list-style-type: square; margin-left: 1em;"><b>Pledges:</b> Whenever a pledge is a target, if at least <b>3 pledges</b> are together, PComm/DComm cannot kill them no matter what.</li>
+        </ul>
+        <p style="margin: 0.5em;">If anyone has questions (there are a lot of rules so it's understandable) then please message Antony. If anyone starts to feel like they cannot go to class or leave their homes because assassins is too intense or the rules are not adequate, please let Antony know as well. Good luck! Remember that first place gets a free banquet ticket.</p>
+
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>CM 4 Recap</h2>
+        <p class="date">October 4, 2016 at 11:54pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+        Pledges and actives, please join Fall Fellowship Committee, the chairs work incredibly hard and any support from the chapter is much appreciated. A lot of work goes unrecognized in the chapter so please join their committee if you can.</p>
+
+        <p style="margin: 0.5em 0px;">
+        Actives, ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!</p>
+
+        <p style="margin-bottom: 1em 0px;">
+            <b><u>FELLOWSHIP VP:</u></b><br>
+            <b>IC Events Chair </b>(1)<br>
+        </p>
+
+        <p style="margin:1.5em 0px 1em 0px;">
+            <b><u>HISTORIAN:</u></b><br>
+            <b>Slideshow Chair </b>(1)<br>
+        </p>
+
+        <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 4:<br><br>
+            <a href="https://goo.gl/knCSz4" target="_blank">CM 4 Slides</a><br>
+            <a href="https://goo.gl/0Sp6V8" target="_blank">CM 4 Minutes</a><br>
+            <a href="https://goo.gl/A6knYW" target="_blank">Caption Contest</a><br>
+            <a href="https://goo.gl/forms/CoVvEesgevlwga9C3" target="_blank">Om Nom</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=118" target="_blank">GG Maniac 5 Poll </a>(cannot vote for people in this list <a href="https://members.calaphio.com/gg_maniacs.php" target="_blank">here</a>, otherwise the vote will not count)<br>
+            <a href="https://goo.gl/SdJd5S" target="_blank">Testbank</a><br>
+        </p>
+        <p style="margin: 0.5em 0px;">
+        There is no slideshow for CM4 gg</p>
+        <br>
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 3 Recap</h2>
         <p class="date">September 21, 2016 at 12:04am</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">
         Welcome FH Pledges! I'll be posting a recap of each chapter meeting within 24 hours that it ends. We hope you all enjoy pledging this semester! And good luck to PComm, we hope you guide a great new group of pledges into the chapter!</p>
 
-        <p style="margin: 0.5em 0px;">
-        Actives, ExComm still needs chairs for the following positions (amounts needed are in parenthesis). If you are interested in any of them, please contact the respective ExComm member in charge. Thanks!</p>
-
-        <p style="margin-bottom: 1em 0px;">
-            <b><u>SERVICE VP:</u></b><br>
-            <b>Project Open Hand Chair </b>(1)<br>
-            <b>Berkeley Food and Housing Chair </b>(1)<br>
-        </p>
-
-        <p style="margin:1.5em 0px 1em 0px;">
-            <b><u>FELLOWSHIP VP:</u></b><br>
-            <b>IC Events Chair </b>(1)<br>
-        </p>
-
-        <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 3:<br><br>
+        <p style="margin-bottom: 1em;">Also, here are the following documents from CM 3:<br><br>
             <a href="https://goo.gl/pfgY4f" target="_blank">CM 3 Slides</a><br>
             <a href="https://goo.gl/HqDKKD" target="_blank">CM 3 Minutes</a><br>
             <a href="https://goo.gl/g5fg9Q" target="_blank">Caption Contest</a><br>
@@ -157,6 +225,8 @@ if (!$g_user->is_logged_in()) {
         <b>IC/GG Sewing Chairs:</b> Kerry Feng, Joanna Choi<br>
         <b>* Campus-Wide Service Project Chairs:</b> Jessica Lee, Nick Weis, Audrey Tsai, Scottie Wan<br>
         <b>YTA Beartrax/Mosswood Chairs:</b> Molly Caldwell, Stanley Shaw<br>
+        <b>Project Open Hand Chair:</b> Jeffrey Li<br>
+        <b>Berkeley Food and HOusing Chair:</b> Gene Ho<br>
         <b>Service Buddies Chairs:</b> Isaac Zheng, Claudia Lim<br>
     </p>
 
@@ -195,7 +265,6 @@ if (!$g_user->is_logged_in()) {
         <b>* Photography Chairs:</b> Adrian Peneyra, Jerry Park<br>
         <b>GG Maniac Chairs:</b> Kerry Feng, Kira Wong<br>
         <b>Chapter Wiki Chair:</b> Chris Janssen<br>
-        <b>Slideshow Chair:</b> John Stoumbos<br>
     </p>
     
     <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
