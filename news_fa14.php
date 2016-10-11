@@ -54,43 +54,43 @@ if (!$g_user->is_logged_in()) {
             <div class="person-picture">
                 <img src="documents/sp15/excomm/president.jpg"></img>
                 <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
-                
+
             </div>
             <div class="person-picture">
                 <img src="documents/sp15/excomm/service.jpg"></img>
                 <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=1400">Debra Yan</a></p>
-                
+
             </div>
             <div class="person-picture">
                 <img src="documents/sp15/excomm/pledgemaster.jpg"></img>
                 <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1443">James Wang</a></p>
-                
+
             </div>
             <div class="person-picture">
                 <img src="documents/sp15/excomm/admin.jpg"></img>
                 <p class="center"><strong>Administrative VP</strong>: <a href="profile.php?user_id=2448">Jason Lee</a></p>
-                
+
             </div>
             <div class="person-picture">
                 <img src="documents/sp15/excomm/membership.jpg"></img>
                 <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=1405">Rebecca Phuong</a></p>
-                
+
             </div>
             <div class="person-picture">
                 <img src="documents/sp15/excomm/finance.jpg"></img>
                 <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
-        
+
             </div>
             <div class="person-picture">
                 <img src="documents/sp15/excomm/fellowship.jpg"></img>
                 <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=2054">Ann Chan</a></p>
-                
+
             </div>
             <div class="person-picture">
                 <img src="documents/sp15/excomm/historian.jpg"></img>
-                <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p> 
+                <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p>
             </div>
-            
+
         </div>
         <div style="clear: left;"></div>
     </div>
@@ -207,44 +207,44 @@ if (!$g_user->is_logged_in()) {
                 <div class="person-picture">
                     <img src="documents/fa14/excomm/president.jpg"></img>
                     <p class="center"><strong>President</strong>: <a href="profile.php?user_id=1412">Jeff Ma</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/excomm/service.jpg"></img>
                     <p class="center"><strong>Service VP</strong>: <a href="profile.php?user_id=1426">Susan Guan</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
-                    <img src="documents/fa14/excomm/pledgemaster.jpg"></img>
+                    <img src="documents/fa14/excomm/"></img>
                     <p class="center"><strong>Pledgemaster</strong>: <a href="profile.php?user_id=1591">Christopher Wen</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/excomm/admin.jpg"></img>
                     <p class="center"><strong>Administrative VP</strong>: <a href="profile.php?user_id=2055">Kelsey Chan</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/excomm/membership.jpg"></img>
                     <p class="center"><strong>Membership VP</strong>: <a href="profile.php?user_id=1400">Debbie Yan</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/excomm/finance.jpg"></img>
                     <p class="center"><strong>Finance VP</strong>: <a href="profile.php?user_id=1437">Jane Tam</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/excomm/fellowship.jpg"></img>
                     <p class="center"><strong>Fellowship VP</strong>: <a href="profile.php?user_id=1623">Karen Wu</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/excomm/historian.jpg"></img>
                     <p class="center"><strong>Historian</strong>: <a href="profile.php?user_id=1433">Rita Mae Nuevo</a></p>
-                    
+
                 </div>
-                
+
             </div>
             <div style="clear: left;"></div>
         </div>
@@ -274,7 +274,7 @@ if (!$g_user->is_logged_in()) {
                 <div class="person-picture">
                     <img src="documents/fa14/rush/rebecca_phuong.jpg"></img>
                     <p class="center"><a href="profile.php?user_id=1405">Rebecca Phuong</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/rush/kevin_lu.jpg"></img>
@@ -302,44 +302,44 @@ if (!$g_user->is_logged_in()) {
                 <div class="person-picture">
                     <img src="documents/fa14/pcomm/edith_ho.jpg"></img>
                     <p class="center"><strong>Leadership Trainer</strong>: <a href="profile.php?user_id=2142">Edith Ho</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/pcomm/tyler_weng.jpg"></img>
                     <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=1378">Tyler Weng</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/pcomm/sharon_wang.jpg"></img>
                     <p class="center"><strong>Fellowship Trainer</strong>: <a href="profile.php?user_id=2155">Sharon Wang</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/pcomm/james_wang.jpg"></img>
                     <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=1443">James Wang</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/pcomm/pooja_shah.jpg"></img>
                     <p class="center"><strong>Service Trainer</strong>: <a href="profile.php?user_id=1673">Pooja Shah</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/pcomm/joanna_chang.jpg"></img>
                     <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2139">Joanna Chang</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/pcomm/angela_wu.jpg"></img>
                     <p class="center"><strong>Finance Trainer</strong>: <a href="profile.php?user_id=2153">Angela Wu</a></p>
-                    
+
                 </div>
                 <div class="person-picture">
                     <img src="documents/fa14/pcomm/lakana_bun.jpg"></img>
                     <p class="center"><strong>Historian Trainer</strong>: <a href="profile.php?user_id=2136">Lakana Bun</a></p>
-                    
+
                 </div>
-                
+
             </div>
             <div style="clear: left;"></div>
         </div>
