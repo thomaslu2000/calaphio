@@ -479,7 +479,7 @@ DOCHERE_print_add_evaluation;
 <tr><td axis="Chapter"><input type="checkbox" name="type_interchapter_half"$type_interchapter_half />Dynasty</td><td axis="Fellowship"></td><td axis="Service"></td></tr>
 <tr>
   <td class="fieldName" axis="Field Name">Description</td>
-  <td class="fieldInput" axis="Field Input" colspan="3"><textarea id="addEventDescription" name="description" rows="4" cols="40">$description</textarea></td>
+  <td class="fieldInput" axis="Field Input" colspan="3"><textarea id="addEventDescription" name="description" rows="10" cols="48">$description</textarea></td>
 </tr>
 </table>
 <div style="text-align:center">

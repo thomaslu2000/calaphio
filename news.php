@@ -34,6 +34,37 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+    <div class="newsItem">
+        <h2>Pledge Feedback Form</h2>
+        <p class="date">October 12, 2016 at 7:36am</p>
+        <p style="margin-top: 1em;">Hello actives,<br></p>
+        <p style="margin: 0.5em 0px;">
+        PComm wants you to be more involved in the pledge program! We understand that we can’t always be everywhere to observe our pledges, so we would like to extend our invitation to you guys to be our additional eyes and ears. We appreciate you taking the time to mention pledges and we will take your observations into consideration. </p>
+
+        <p style="margin: 0.5em 0px;">
+        Below is an active comment Google form. Please use this form for the following purposes:</p>
+
+        <p style="margin: 0.5em 0px;">
+        1. General pledge observations – commendable/discouraged behavior</p>
+
+        <p style="margin: 0.5em 0px;">
+        2. Pledges’ attitudes – are they proactive/lazy at service? Do they seem well integrated at service/fellowships? Are they committed/dedicated to what they’re doing?</p>
+
+        <p style="margin: 0.5em 0px;">
+        3. Merit/demerit suggestions – give specific examples of actions that you believe deserves recognition </p>
+
+        <p style="margin: 0.75em 0px;">
+        Please click the Pledge Feedback Form <a href="https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLScZ88JEXnVBI5luagaAmB1ENZczm-Kgc7EVHM0VBgcL_OohSw/viewform" target="_blank">here</a>.</p>
+
+        <p style="margin: 0.5em 0px;">
+        P.S. if you're wondering, pledges can't see this post.</p>
+
+        <br>
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>How tf Does Assassins Work?</h2>
@@ -43,7 +74,7 @@ if (!$g_user->is_logged_in()) {
 
         <p style="margin-top: 1em;"><b><u>KILLINGS:</u></b><br></p>
         <ul>
-            <li style="list-style-type: square; margin-left: 1em;">Families need at least <b>2 bigs</b> AND <b>2 littles</b> together to kill a target</li>
+            <li style="list-style-type: square; margin-left: 1em;">Families need at least <b>2 bigs/aunts/uncles/unofficials</b> AND <b>2 littles</b> together to kill a target</li>
             <li style="list-style-type: square; margin-left: 1em;">PComm/DComm need at least <b>4 members</b>. If PComm is involved, they must be from at least <b>2 different committees</b> (aka Jerry + Joseph + 2 DComm members will not count).</li>
             <li style="list-style-type: square; margin-left: 1em;">You must shout the name of the target when near them, then everyone must tag the target with spoons. Forks and knives do not count. Throwing the spoons does not count.</li>
         </ul>
@@ -75,7 +106,7 @@ if (!$g_user->is_logged_in()) {
             <li style="list-style-type: square; margin-left: 1em;"><b>PComm/DComm targets:</b> At least <b>3 members of PComm</b> or <b>2 members of DComm</b> are together.</li>
             <li style="list-style-type: square; margin-left: 1em;"><b>Pledges:</b> Whenever a pledge is a target, if at least <b>3 pledges</b> are together, PComm/DComm cannot kill them no matter what.</li>
         </ul>
-        
+
         <p style="margin: 0.5em;">If anyone has questions (there are a lot of rules so it's understandable) then please message Antony. If anyone starts to feel like they cannot go to class or leave their homes because assassins is too intense or the rules are not adequate, please let Antony know as well. Good luck! Remember that first place gets a free banquet ticket.</p>
 
         <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
