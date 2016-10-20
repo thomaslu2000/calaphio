@@ -40,14 +40,14 @@ if (!$g_user->is_logged_in()) {
         <p class="date">October 19, 2016 at 7:35pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">
-        Everyone in the family system is a target in assassins now, so remember that there are no killings at calendar events, hotspot, office hours, and in people's homes. You need <b>2 bigs/aunts/uncles</b> and <b>2 littles</b> to make a kill.</p>
+        Everyone in the family system is a target in assassins now, so remember that there are no killings at calendar events, hotspot, office hours, and in people's homes. You need <b>2 bigs/aunts/uncles</b> and <b>2 littles</b> to make a kill. The <b>2 families</b> with the <b>most deaths</b> by the beginning of next CM will be disqualified from assassins. Good luck!</p>
 
         <p style="margin-bottom: 1em;">Also, here are the following documents from CM 5:<br><br>
             <a href="https://goo.gl/XZrOip" target="_blank">CM 5 Slides</a><br>
-            <a href="error.html" target="_blank">CM 5 Minutes</a><br>
+            <a href="https://goo.gl/EPjyQT" target="_blank">CM 5 Minutes</a><br>
             <a href="https://goo.gl/vbU756" target="_blank">Caption Contest</a><br>
             <a href="https://goo.gl/forms/CoVvEesgevlwga9C3" target="_blank">Om Nom</a><br>
-            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=119" target="_blank">GG Maniac 6 Poll </a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=119" target="_blank">GG Maniac 6 Poll</a><br>
             <a href="https://goo.gl/SdJd5S" target="_blank">Testbank</a><br>
         </p>
         <p>CM 5 Slideshow:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/GZTJzAMrxXg" frameborder="0" allowfullscreen></iframe></p>
