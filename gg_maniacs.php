@@ -22,6 +22,20 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Nick Weis</p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Kerry Feng</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">FH Semester Pledge Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Max Yun</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>
