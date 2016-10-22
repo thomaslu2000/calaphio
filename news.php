@@ -36,6 +36,51 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>IC Meeting Dates</h2>
+        <p class="date">October 22, 2016 at 10:21am</p>
+        <p style="margin: 0.5em 0px;">
+        For those of you who wish to complete their IC credit (or just wish to support their IC brothers), here is a list of the weekly IC meeting times:</p>
+
+        <p style="margin-top: 1em;"><b><u>SUNDAYS:</u></b><br></p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">UC Merced (Alpha Eta Gamma Chapter) - <b>5PM</b></li>
+            <li style="list-style-type: square; margin-left: 1em;">Sacramento State (Kappa Sigma Chapter) - <b>5:30PM</b></li>
+            <li style="list-style-type: square; margin-left: 1em;">San Jose State (Gamma Beta Chapter) - <b>6:30PM</b></li>
+            <li style="list-style-type: square; margin-left: 1em;">Chico State (Eta Psi Chapter) - <b>6:30PM</b></li>
+            <li style="list-style-type: square; margin-left: 1em;">UC Santa Cruz (Alpha Gamma Nu Chapter) - <b>6:30PM</b></li>
+            <li style="list-style-type: square; margin-left: 1em;">Stanford (Zeta Chapter) - <b>7PM</b></li>
+            <li style="list-style-type: square; margin-left: 1em;">UC Davis (Iota Phi Chapter) - <b>7PM</b></li>
+            <li style="list-style-type: square; margin-left: 1em;">University of the Pacific (Alpha Alpha Xi Chapter) - <b>7PM</b></li>
+        </ul>
+
+        <p style="margin-top: 1em;"><b><u>MONDAYS:</u></b><br></p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">CSU East Bay (Omicron Zeta Chapter) - <b>8PM</b></li>
+        </ul>
+
+        <p style="margin-top: 1em;"><b><u>TUESDAYS:</u></b><br></p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">San Francisco State (Mu Zeta Chapter) - <b>7:30PM</b></li>
+        </ul>
+
+        <p style="margin-top: 1em;"><b><u>WEDNESDAYS:</u></b><br></p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">University of San Francisco (Alpha Epsilon Nu Chapter) - <b>6:30PM</b></li>
+        </ul>
+
+        <p style="margin-top: 1em;"><b><u>FRIDAYS:</u></b><br></p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">CSU Stanislaus (Alpha Eta Kappa Chapter) - <b>5PM</b></li>
+        </ul>
+
+        <p style="margin: 0.5em 0px;">If you would like to know more, please contact <a href="https://members.calaphio.com/profile.php?user_id=3582">Gordon Mah</a> or <a href="https://members.calaphio.com/profile.php?user_id=3288">Veronica Hall</a> for more information about how to attend.</p>
+
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 5 Recap</h2>
         <p class="date">October 19, 2016 at 7:35pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
@@ -129,7 +174,7 @@ if (!$g_user->is_logged_in()) {
             <li style="list-style-type: square; margin-left: 1em;"><b>Pledges:</b> Whenever a pledge is a target, if at least <b>3 pledges</b> are together, PComm/DComm cannot kill them no matter what.</li>
         </ul>
 
-        <p style="margin: 0.5em;">If anyone has questions (there are a lot of rules so it's understandable) then please message Antony. If anyone starts to feel like they cannot go to class or leave their homes because assassins is too intense or the rules are not adequate, please let Antony know as well. Good luck! Remember that first place gets a free banquet ticket.</p>
+        <p style="margin: 0.5em 0px;">If anyone has questions (there are a lot of rules so it's understandable) then please message Antony. If anyone starts to feel like they cannot go to class or leave their homes because assassins is too intense or the rules are not adequate, please let Antony know as well. Good luck!</p>
 
         <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
     </div>
