@@ -40,13 +40,13 @@ if (!$g_user->is_logged_in()) {
         <p class="date">November 1, 2016 at 11:33pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">
-        Thank you to everyone who attended nominations today. And congratulations to everyone who accepted a nomination to run for ExComm. It may be a huge responsibility, but your willingness and enthusiasm for the position will help the chapter continue to succeed in providing quality service to the community as well as the active body. If you did not attend nominations, you may view the nominees <a href="https://docs.google.com/spreadsheets/d/1NAxz4GNAgMWXWuf2WI6WSFAv_vc1TzcFa2_VON14t5o/edit#gid=0">here</a>.</p>
+        Thank you to everyone who attended nominations today. And congratulations to everyone who accepted a nomination to run for ExComm. It may be a huge responsibility, but your willingness and enthusiasm for the position will help the chapter continue to succeed in providing quality service to the community as well as the active body. If you did not attend nominations, you may view the nominees <a href="https://docs.google.com/spreadsheets/d/1NAxz4GNAgMWXWuf2WI6WSFAv_vc1TzcFa2_VON14t5o/" target="_blank">here</a>.</p>
 
         <p style="margin: 0.5em 0px;">
         For those who take their nomination seriously, please submit a <b>PLATFORM</b> with your <b>APO RESUME</b> to me by <b>Sunday, November 13 at 11:59pm</b>. Please submit your platform in a <b>Google Doc</b> and send it to me either through my email (preferred) at <a href="mailto: admin-vp@calaphio.com">admin-vp@calaphio.com</a> or through Facebook.</p>
 
         <p style="margin: 0.5em 0px;">
-        If you wish to see an example of a platform, you can check out an old one <a href="https://docs.google.com/document/d/1hXmP1ZXWBl-XVhbchMclh07kJHrfXFiyg7aTQ1Y7fTA/">here</a>.</p>
+        If you wish to see an example of a platform, you can check out an old one <a href="https://docs.google.com/document/d/1hXmP1ZXWBl-XVhbchMclh07kJHrfXFiyg7aTQ1Y7fTA/" target="_blank">here</a>.</p>
 
         <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 6:<br><br>
             <a href="https://goo.gl/IYk3f5" target="_blank">CM 6 Slides</a><br>
