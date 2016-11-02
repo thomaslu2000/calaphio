@@ -36,6 +36,34 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 6 Recap</h2>
+        <p class="date">November 1, 2016 at 11:33pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+        Thank you to everyone who attended nominations today. And congratulations to everyone who accepted a nomination to run for ExComm. It may be a huge responsibility, but your willingness and enthusiasm for the position will help the chapter continue to succeed in providing quality service to the community as well as the active body. If you did not attend nominations, you may view the nominees <a href="https://docs.google.com/spreadsheets/d/1NAxz4GNAgMWXWuf2WI6WSFAv_vc1TzcFa2_VON14t5o/edit#gid=0">here</a>.</p>
+
+        <p style="margin: 0.5em 0px;">
+        For those who take their nomination seriously, please submit a <b>PLATFORM</b> with your <b>APO RESUME</b> to me by <b>Sunday, November 13 at 11:59pm</b>. Please submit your platform in a <b>Google Doc</b> and send it to me either through my email (preferred) at <a href="mailto: admin-vp@calaphio.com">admin-vp@calaphio.com</a> or through Facebook.</p>
+
+        <p style="margin: 0.5em 0px;">
+        If you wish to see an example of a platform, you can check out an old one <a href="https://docs.google.com/document/d/1hXmP1ZXWBl-XVhbchMclh07kJHrfXFiyg7aTQ1Y7fTA/">here</a>.</p>
+
+        <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 6:<br><br>
+            <a href="https://goo.gl/IYk3f5" target="_blank">CM 6 Slides</a><br>
+            <a href="https://goo.gl/RNdE6r" target="_blank">CM 6 Minutes</a><br>
+            <a href="https://goo.gl/LQkrzv" target="_blank">Caption Contest</a><br>
+            <a href="https://goo.gl/forms/CoVvEesgevlwga9C3" target="_blank">Om Nom</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=120" target="_blank">GG Maniac 7 Poll</a><br>
+            <a href="https://goo.gl/SdJd5S" target="_blank">Testbank</a><br>
+        </p>
+        <p>CM 6 Slideshow:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/aVKDScOIRSw" frameborder="0" allowfullscreen></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>IC Meeting Dates</h2>
         <p class="date">October 22, 2016 at 10:21am</p>
         <p style="margin: 0.5em 0px;">
@@ -107,7 +135,7 @@ if (!$g_user->is_logged_in()) {
         <p class="date">October 12, 2016 at 7:36am</p>
         <p style="margin-top: 1em;">Hello actives,<br></p>
         <p style="margin: 0.5em 0px;">
-        PComm wants you to be more involved in the pledge program! We understand that we can’t always be everywhere to observe our pledges, so we would like to extend our invitation to you guys to be our additional eyes and ears. We appreciate you taking the time to mention pledges and we will take your observations into consideration. </p>
+        PComm wants you to be more involved in the pledge program! We understand that we can’t always be everywhere to observe our pledges, so we would like to extend our invitation to you guys to be our additional eyes and ears. We appreciate you taking the time to mention pledges and we will take your observations into consideration.</p>
 
         <p style="margin: 0.5em 0px;">
         Below is an active comment Google form. Please use this form for the following purposes:</p>
@@ -122,7 +150,7 @@ if (!$g_user->is_logged_in()) {
         3. Merit/demerit suggestions – give specific examples of actions that you believe deserves recognition </p>
 
         <p style="margin: 0.75em 0px;">
-        Please click the Pledge Feedback Form <a href="https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLScZ88JEXnVBI5luagaAmB1ENZczm-Kgc7EVHM0VBgcL_OohSw/viewform" target="_blank">here</a>.</p>
+        Please check out the Pledge Feedback Form <a href="https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLScZ88JEXnVBI5luagaAmB1ENZczm-Kgc7EVHM0VBgcL_OohSw/viewform" target="_blank">here</a>.</p>
 
         <p style="margin: 0.5em 0px;">
         P.S. if you're wondering, pledges can't see this post.</p>

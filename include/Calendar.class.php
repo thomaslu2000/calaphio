@@ -1,7 +1,5 @@
 <?php
 
-require("email-script.php");
-
 /**
  * AVAILABLE PERMISSIONS:
  * calendar view deleted

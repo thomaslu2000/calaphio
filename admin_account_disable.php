@@ -75,9 +75,8 @@ HEREDOC;
 <strong>Depledged</strong> means that the person will not appear on the Roster page.
 </p>
 <p style="margin: 1em 0px;">
-Don't forget to click "Submit" to save your changes.
+Don't forget to click "Submit" at the bottom of the page to save your changes.
 </p>
-<button type="submit" name="submit">Submit</button>
 <form method="post" action="">
 <table style="margin-bottom: 1.5em;">
 <caption></caption>
@@ -86,6 +85,7 @@ $pledges
 <tr><th axis="name" style="font-weight: bold; padding-top: 1em;">Name</th><th axis="pledgeclass" style="font-weight: bold; padding-top: 1em;">Pledgeclass</th><th axis="disabled" style="font-weight: bold; padding-left: 1em; padding-top: 1em;">Disabled</th><th axis="depledged" style="font-weight: bold; padding-left: 1em; padding-top: 1em;">Depledged</th></tr>
 $actives
 </table>
+<button type="submit" name="submit">Submit</button>
 </form>
 
 

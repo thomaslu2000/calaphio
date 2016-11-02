@@ -25,6 +25,9 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Kerry Feng</p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Nina Nguyen</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>
@@ -35,6 +38,9 @@ Template::print_body_header('Home', 'NEWS');
 	<div class="collage-pictures">
 		<div class="person-picture">
 			<p class="center">Max Yun</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Elaine Chung</p>
 		</div>
 	</div>
 	<div style="clear: left;"></div>
