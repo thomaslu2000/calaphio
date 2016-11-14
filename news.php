@@ -22,6 +22,7 @@ echo $gg_maniac_nag->display();
 // $shoutbox->process();
 // echo $shoutbox->display();
 
+// ---THIS IS INTERFERING WITH BOOTSTRAP FOR DISPLAYING PLATFORMS IN NEWSFEED, WILL ADD IT BACK LATER --- 
 $calendar->print_upcoming_events(5);
 
 $g_user->process_mailer(false);
@@ -34,6 +35,8 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+
+
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 6 Recap</h2>
@@ -43,7 +46,7 @@ if (!$g_user->is_logged_in()) {
         Thank you to everyone who attended nominations today. And congratulations to everyone who accepted a nomination to run for ExComm. It may be a huge responsibility, but your willingness and enthusiasm for the position will help the chapter continue to succeed in providing quality service to the community as well as the active body. If you did not attend nominations, you may view the nominees <a href="https://docs.google.com/spreadsheets/d/1NAxz4GNAgMWXWuf2WI6WSFAv_vc1TzcFa2_VON14t5o/" target="_blank">here</a>.</p>
 
         <p style="margin: 0.5em 0px;">
-        For those who take their nomination seriously, please submit a <b>PLATFORM</b> with your <b>APO RESUME</b> to me by <b>Sunday, November 13 at 11:59pm</b>. Please submit your platform in a Google Doc and send it to me either through my email (preferred) at <a href="mailto: admin-vp@calaphio.com">admin-vp@calaphio.com</a> or through Facebook.</p>
+        For those who take their nomination seriously, please submit a <b>PLATFORM</b> with your <b>APO RESUME</b> to me by <b>Monday, November 14 at 11:59pm</b>. Please submit your platform in a Google Doc and send it to me either through my email (preferred) at <a href="mailto: admin-vp@calaphio.com">admin-vp@calaphio.com</a> or through Facebook.</p>
 
         <p style="margin: 0.5em 0px;">
         If you wish to see an example of a platform, you can check out an old one <a href="https://docs.google.com/document/d/1hXmP1ZXWBl-XVhbchMclh07kJHrfXFiyg7aTQ1Y7fTA/" target="_blank">here</a>.</p>
@@ -354,7 +357,7 @@ if (!$g_user->is_logged_in()) {
         <b>* Campus-Wide Service Project Chairs:</b> Jessica Lee, Nick Weis, Audrey Tsai, Scottie Wan<br>
         <b>YTA Beartrax/Mosswood Chairs:</b> Molly Caldwell, Stanley Shaw<br>
         <b>Project Open Hand Chair:</b> Jeffrey Li<br>
-        <b>Berkeley Food and HOusing Chair:</b> Gene Ho<br>
+        <b>Berkeley Food and Housing Chair:</b> Gene Ho<br>
         <b>Service Buddies Chairs:</b> Isaac Zheng, Claudia Lim<br>
     </p>
 
