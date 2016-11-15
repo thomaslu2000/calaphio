@@ -22,8 +22,7 @@ echo $gg_maniac_nag->display();
 // $shoutbox->process();
 // echo $shoutbox->display();
 
-// ---THIS IS INTERFERING WITH BOOTSTRAP FOR DISPLAYING PLATFORMS IN NEWSFEED, WILL ADD IT BACK LATER --- 
-$calendar->print_upcoming_events(5);
+// ---THIS IS INTERFERING WITH BOOTSTRAP FOR DISPLAYING PLATFORMS IN NEWSFEED, WILL ADD IT BACK LATER $calendar->print_upcoming_events(5);
 
 $g_user->process_mailer(false);
 $g_user->print_mailer(false);
@@ -35,7 +34,75 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+            <h2>Election Platforms</h2>
+            <p class="date">November 15, 2016 at 1:00am</p>
 
+        <p style="margin: 1.5em 0px .5em 0px;">
+            Thank you again to those who submitted platforms for elections! Here are the following submissions for each position:
+        </p>
+
+        <div>
+            <div class="row">
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>PRESIDENT:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/1Qr9ir" target="_blank">Joseph Lee</a></p>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/c8rTtF" target="_blank">Antony Nguyen</a></p>
+                </div>
+
+                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>SERVICE VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/TCF5ZI" target="_blank">Christine Fang</a></p>
+                </div>
+
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>PLEDGEMASTER:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/Qo9E30" target="_blank">Virgil Tang</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>ADMIN VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/46qcre" target="_blank">Jerry Park</a></p>
+                </div>
+
+                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>MEMBERSHIP VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/sSL1my" target="_blank">Veronica Hall</a></p>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/OjaDpx" target="_blank">Ellie Hung</a></p>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/ENKsje" target="_blank">Sierra Lou</a></p>
+                </div>
+
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>FINANCE VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/wKuapp" target="_blank">Hermes Ip</a></p>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/0naf2o" target="_blank">Jessica Lee</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>FELLOWSHIP VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/3mq55V" target="_blank">Jeremy Lam</a></p>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/CNCL2T" target="_blank">Claudia Lim</a></p>
+                </div>
+
+                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>HISTORIAN:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://goo.gl/hZzEJl" target="_blank">Stanley Shaw</a></p>
+                </div>
+            </div>
+        </div>
+
+        <p style="margin: 1.5em 0px;">
+            I encourage all actives and pledges to read through these platforms thoroughly, as each candidate has spent a lot of time preparing and revising their platforms. Remember that if you did not submit a platform, you may still run on the day of Elections.
+        </p>
+        
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
