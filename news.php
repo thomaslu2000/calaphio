@@ -22,7 +22,7 @@ echo $gg_maniac_nag->display();
 // $shoutbox->process();
 // echo $shoutbox->display();
 
-// ---THIS IS INTERFERING WITH BOOTSTRAP FOR DISPLAYING PLATFORMS IN NEWSFEED, WILL ADD IT BACK LATER $calendar->print_upcoming_events(5);
+$calendar->print_upcoming_events(5);
 
 $g_user->process_mailer(false);
 $g_user->print_mailer(false);
@@ -33,6 +33,60 @@ if (!$g_user->is_logged_in()) {
     echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
 }
 ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <br/>
+        <h2>Congratulations to the Spring 2017 Executive Committee!</h2>
+        <p class="date">November 16, 2016 at 4:54am</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3272"><img src="images/excomm_sp17/joseph.jpg" onmouseover="this.src='images/excomm_sp17/joseph2.jpg'" onmouseout="this.src='images/excomm_sp17/joseph.jpg'"></img></a>
+                    <p class="center"><strong>President</strong>: <br><a href="profile.php?user_id=3272">Joseph Lee</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2905"><img src="images/excomm_sp17/christine.jpg" onmouseover="this.src='images/excomm_sp17/christine2.jpg'" onmouseout="this.src='images/excomm_sp17/christine.jpg'"></img></a>
+                    <p class="center"><strong>Service VP</strong>: <br><a href="profile.php?user_id=2905">Christine Fang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2873"><img src="images/excomm_sp17/virgil.jpg" onmouseover="this.src='images/excomm_sp17/virgil2.jpg'" onmouseout="this.src='images/excomm_sp17/virgil.jpg'"></img></a>
+                    <p class="center"><strong>Pledgemaster</strong>: <br><a href="profile.php?user_id=2873">Virgil Tang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3256"><img src="images/excomm_sp17/jerry.jpg" onmouseover="this.src='images/excomm_sp17/jerry2.jpg'" onmouseout="this.src='images/excomm_sp17/jerry.jpg'"></img></a>
+                    <p class="center"><strong>Admin VP</strong>: <br><a href="profile.php?user_id=3256">Jerry Park</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2858"><img src="images/excomm_sp17/ellie.jpg" onmouseover="this.src='images/excomm_sp17/ellie2.jpg'" onmouseout="this.src='images/excomm_sp17/ellie.jpg'"></img></a>
+                    <p class="center"><strong>Membership VP</strong>: <br><a href="profile.php?user_id=2858">Ellie Hung</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3572"><img src="images/excomm_sp17/hermes.jpg" onmouseover="this.src='images/excomm_sp17/hermes2.jpg'" onmouseout="this.src='images/excomm_sp17/hermes.jpg'"></img></a>
+                    <p class="center"><strong>Finance VP</strong>: <br><a href="profile.php?user_id=3572">Hermes Ip</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3264"><img src="images/excomm_sp17/jeremy.jpg" onmouseover="this.src='images/excomm_sp17/jeremy2.jpg'" onmouseout="this.src='images/excomm_sp17/jeremy.jpg'"></img></a>
+                    <p class="center"><strong>Fellowship VP</strong>: <br><a href="profile.php?user_id=3264">Jeremy Lam</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3292"><img src="images/excomm_sp17/stanley.jpg" onmouseover="this.src='images/excomm_sp17/stanley2.jpg'" onmouseout="this.src='images/excomm_sp17/stanley.jpg'"></img></a>
+                    <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=3292">Stanley Shaw</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
