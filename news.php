@@ -37,8 +37,8 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <br/>
-        <h2>Congratulations to the Spring 2017 Executive Committee!</h2>
-        <p class="date">November 16, 2016 at 4:54am</p>
+        <h2>Congrats to the Spring 2017 Executive Committee!</h2>
+        <p class="date">November 16, 2016 at 5:48am</p>
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
@@ -58,7 +58,7 @@ if (!$g_user->is_logged_in()) {
 
                 <div class="person-picture">
                     <a href="profile.php?user_id=3256"><img src="images/excomm_sp17/jerry.jpg" onmouseover="this.src='images/excomm_sp17/jerry2.jpg'" onmouseout="this.src='images/excomm_sp17/jerry.jpg'"></img></a>
-                    <p class="center"><strong>Admin VP</strong>: <br><a href="profile.php?user_id=3256">Jerry Park</a></p>
+                    <p class="center"><strong>Administrative VP</strong>: <br><a href="profile.php?user_id=3256">Jerry Park</a></p>
                 </div>
 
                 <div class="person-picture">
@@ -84,6 +84,28 @@ if (!$g_user->is_logged_in()) {
             <div style="clear: left;"></div>
         </div>
 
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>CM 7 Recap</h2>
+        <p class="date">November 16, 2016 at 5:33am</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+        Fall Fellowship was a success! Thank you to everyone who participated in the event. And as this semester's pledging process nears its end, we hope all the pledges successfully cross. Thanksgiving Break is quickly approaching, so everyone finish strong!</p>
+
+        <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 7:<br><br>
+            <a href="https://goo.gl/5tXn4z" target="_blank">CM 7 Slides</a><br>
+            <a href="https://goo.gl/ePEJdk" target="_blank">CM 7 Minutes</a><br>
+            <a href="https://goo.gl/cjYxXC" target="_blank">Caption Contest</a><br>
+            <a href="https://goo.gl/forms/CoVvEesgevlwga9C3" target="_blank">Om Nom</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=121" target="_blank">GG Maniac 8 Poll</a><br>
+            <a href="https://goo.gl/SdJd5S" target="_blank">Testbank</a><br>
+        </p>
+        <p>CM 7 Slideshow:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/pTMj7cXiE-U" frameborder="0" allowfullscreen></iframe></p>
+        <br>
         <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
     </div>
 <?php endif ?>
