@@ -28,6 +28,9 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Nina Nguyen</p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Veronica Hall</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>
@@ -41,6 +44,9 @@ Template::print_body_header('Home', 'NEWS');
 		</div>
 		<div class="person-picture">
 			<p class="center">Elaine Chung</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Sam Mahdad</p>
 		</div>
 	</div>
 	<div style="clear: left;"></div>
