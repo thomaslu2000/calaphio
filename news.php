@@ -36,6 +36,24 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>Applying for Active Awards</h2>
+        <p class="date">November 18, 2016 at 7:27pm</p>
+        <p style="margin: 0.5em 0px;">
+        It is time to apply for active awards! Please preview the respective requirements to obtain each award <a href="https://members.calaphio.com/awards.php" target="_blank">here</a>. Application deadline is the end of <b>CM 8</b> on <b>Tuesday, November 29</b>. Please turn in either a hard copy at CM or submit your application via email to <a href="mailto:president@calaphio.com">president@calaphio.com</a>.</p>
+
+        <p style="margin-top: 0.5em 0px;"><b>Procedure for email submission of application:</b></p>
+        <ul>
+            <li style="list-style-type: square; margin-left: 1em;">Print out your requirements page in PDF format.</li>
+            <li style="list-style-type: square; margin-left: 1em;">Indicate the award(s) you are applying for.</li>
+            <li style="list-style-type: square; margin-left: 1em;">Highlight the items on the page that fulfill each award requirement.</li>
+            <li style="list-style-type: square; margin-left: 1em;">Email this PDF to <a href="mailto:president@calaphio.com">president@calaphio.com</a> with the subject line: <b>"[APO] LFS Award Application"</b></li>
+        <br>
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <br/>
         <h2>Congrats to the Spring 2017 Executive Committee!</h2>
         <p class="date">November 16, 2016 at 5:48am</p>
