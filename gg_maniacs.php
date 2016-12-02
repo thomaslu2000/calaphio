@@ -31,6 +31,9 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Veronica Hall</p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Gordon Mah</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>

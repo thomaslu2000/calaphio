@@ -36,6 +36,24 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 8 Recap</h2>
+        <p class="date">December 2, 2016 at 1:12pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+        After an unfortunate accident at YTA Mosswood, we have allocated half of Fall Fellowship funds and all of muggings to help rebuild the Mosswood Recreational Center. Thank you to all the actives who showed up to CM, as we had just enough for quorum!</p>
+
+        <p style="margin-bottom: 1em;">Also, here are the following documents from CM 8:<br><br>
+            <a href="https://docs.google.com/presentation/d/1PgBiAlWxMHpihgfExLWsV8UZfWqisxkxgRPdMovHFv8/" target="_blank">CM 8 Slides</a><br>
+            <a href="https://goo.gl/SdJd5S" target="_blank">Testbank</a><br>
+        </p>
+        <p>CM 8 Slideshow:<br><br><iframe src="https://drive.google.com/file/d/0B-KJt7fvwz4OX2NTT1h1bzVqOUk/preview" width="560" height="315"></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>Applying for Active Awards</h2>
         <p class="date">November 18, 2016 at 7:27pm</p>
         <p style="margin: 0.5em 0px;">
@@ -114,7 +132,7 @@ if (!$g_user->is_logged_in()) {
         <p style="margin: 0.5em 0px;">
         Fall Fellowship was a success! Thank you to everyone who participated in the event. And as this semester's pledging process nears its end, we hope all the pledges successfully cross. Thanksgiving Break is quickly approaching, so everyone finish strong!</p>
 
-        <p style="margin-bottom: 1em;">Finally, here are the following documents from CM 7:<br><br>
+        <p style="margin-bottom: 1em;">Also, here are the following documents from CM 7:<br><br>
             <a href="https://goo.gl/5tXn4z" target="_blank">CM 7 Slides</a><br>
             <a href="https://goo.gl/ePEJdk" target="_blank">CM 7 Minutes</a><br>
             <a href="https://goo.gl/cjYxXC" target="_blank">Caption Contest</a><br>
