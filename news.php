@@ -106,17 +106,17 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3635"><img src="images/rush_sp17/charles.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/lisa.jpg'"></img></a>
+                    <a href="profile.php?user_id=3635"><img src="images/rush_sp17/charles.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/charles.jpg'"></img></a>
                     <p class="center"><a href="profile.php?user_id=3635">Charles Wang</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3578"><img src="images/rush_sp17/claire.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/lisa.jpg'"></img></a>
+                    <a href="profile.php?user_id=3578"><img src="images/rush_sp17/claire.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/claire.jpg'"></img></a>
                     <p class="center"><a href="profile.php?user_id=3578">Claire Li</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3619"><img src="images/rush_sp17/vivian.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/lisa.jpg'"></img></a>
+                    <a href="profile.php?user_id=3619"><img src="images/rush_sp17/vivian.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/vivian.jpg'"></img></a>
                     <p class="center"><a href="profile.php?user_id=3619">Vivian Liu</a></p>
                 </div>
             </div>
