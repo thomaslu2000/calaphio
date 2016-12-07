@@ -38,7 +38,7 @@ if (!$g_user->is_logged_in()) {
     <div class="newsItem">
         <br/>
         <h2>Congrats to the Spring 2017 Pledge Committee!</h2>
-        <p class="date">November 16, 2016 at 4:11am</p>
+        <p class="date">December 7, 2016 at 4:11am</p>
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
