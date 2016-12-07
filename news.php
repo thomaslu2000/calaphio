@@ -47,42 +47,42 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3266"><img src="images/pcomm_sp17/sierra.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/sierra.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/sierra.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/sierra.jpg'"></img></a>
                     <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=3266">Sierra Lou</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3582"><img src="images/pcomm_sp17/gordon.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/gordon.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/gordon.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/gordon.jpg'"></img></a>
                     <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=3582">Gordon Mah</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3568"><img src="images/pcomm_sp17/kerry.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/kerry.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/kerry.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/kerry.jpg'"></img></a>
                     <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=3568">Kerry Feng</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3592"><img src="images/pcomm_sp17/nick.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/nick.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/nick.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/nick.jpg'"></img></a>
                     <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=3592">Nick Weis</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3584"><img src="images/pcomm_sp17/adrian.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/adrian.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/adrian.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/adrian.jpg'"></img></a>
                     <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3584">Adrian Peneyra</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3573"><img src="images/pcomm_sp17/josh.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/josh.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/josh.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/josh.jpg'"></img></a>
                     <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3573">Joshua Jacobs</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3599"><img src="images/pcomm_sp17/miranda.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/miranda.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/miranda.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/miranda.jpg'"></img></a>
                     <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=3599">Miranda Zhou</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3593"><img src="images/pcomm_sp17/kira.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/kira.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/kira.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/kira.jpg'"></img></a>
                     <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=3593">Kira Wong</a></p>
                 </div>
             </div>
