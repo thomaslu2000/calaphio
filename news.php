@@ -36,6 +36,99 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <br/>
+        <h2>Congrats to the Spring 2017 Pledge Committee!</h2>
+        <p class="date">November 16, 2016 at 4:11am</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/pcomm_sp17/marilyn.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/marilyn.jpg'"></img></a>
+                    <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=2929">Marilyn Chan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3266"><img src="images/pcomm_sp17/sierra.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/sierra.jpg'"></img></a>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=3266">Sierra Lou</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3582"><img src="images/pcomm_sp17/gordon.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/gordon.jpg'"></img></a>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=3582">Gordon Mah</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3568"><img src="images/pcomm_sp17/kerry.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/kerry.jpg'"></img></a>
+                    <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=3568">Kerry Feng</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3592"><img src="images/pcomm_sp17/nick.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/nick.jpg'"></img></a>
+                    <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=3592">Nick Weis</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3584"><img src="images/pcomm_sp17/adrian.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/adrian.jpg'"></img></a>
+                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3584">Adrian Peneyra</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3573"><img src="images/pcomm_sp17/josh.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/josh.jpg'"></img></a>
+                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3573">Joshua Jacobs</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3599"><img src="images/pcomm_sp17/miranda.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/miranda.jpg'"></img></a>
+                    <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=3599">Miranda Zhou</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3593"><img src="images/pcomm_sp17/kira.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/pcomm_sp17/kira.jpg'"></img></a>
+                    <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=3593">Kira Wong</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <br/>
+        <h2>Congrats to the Spring 2017 Rush Chairs!</h2>
+        <p class="date">December 7, 2016 at 3:51am</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2857"><img src="images/rush_sp17/lisa.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/lisa.jpg'"></img></a>
+                    <p class="center"><a href="profile.php?user_id=2857">Lisa Hoang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3635"><img src="images/rush_sp17/charles.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/lisa.jpg'"></img></a>
+                    <p class="center"><a href="profile.php?user_id=3635">Charles Wang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3578"><img src="images/rush_sp17/claire.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/lisa.jpg'"></img></a>
+                    <p class="center"><a href="profile.php?user_id=3578">Claire Li</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3619"><img src="images/rush_sp17/vivian.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/rush_sp17/lisa.jpg'"></img></a>
+                    <p class="center"><a href="profile.php?user_id=3619">Vivian Liu</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 8 Recap</h2>
         <p class="date">December 2, 2016 at 1:12pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
@@ -449,7 +542,7 @@ if (!$g_user->is_logged_in()) {
     </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 2 Recap</h2>
         <p class="date">September 13, 2016 at 11:28pm</p>
@@ -470,7 +563,7 @@ if (!$g_user->is_logged_in()) {
     </div>
 <?php endif ?>
 
-<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 1 Recap</h2>
         <p class="date">August 31, 2016 at 12:31am</p>
