@@ -684,7 +684,7 @@ $spring17_fellowships = $row['count'];
 <table style="width: auto;">
 <caption></caption>
 <tr><th axis="semester" style="width: 300px; font-weight: bold; padding: 0px 2px">Semester</th><th axis="hours" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Hours</th><th axis="projects" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Events</th><th axis="fellowships" style="width: 100px; font-weight: bold; padding: 0px 2px">Fellowships</th><th axis="Comments" style="font-weight: bold; padding: 0px 2px">Comments</th></tr>
-<tr><td axis="semester">$fall16_dates (Spring 2017) MMC Semester</td><td axis="hours">$spring17</td><td axis="hours">$spring17_projects</td><td axis="hours">$spring17_fellowships</td><td axis="comments"></td></tr>
+<tr><td axis="semester">$spring17_dates (Spring 2017) MMC Semester</td><td axis="hours">$spring17</td><td axis="hours">$spring17_projects</td><td axis="hours">$spring17_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$fall16_dates (Fall 2016) FH Semester</td><td axis="hours">$fall16</td><td axis="hours">$fall16_projects</td><td axis="hours">$fall16_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$spring16_dates (Spring 2016) RBD Semester</td><td axis="hours">$spring16</td><td axis="hours">$spring16_projects</td><td axis="hours">$spring16_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$fall15_dates (Fall 2015) PMP Semester</td><td axis="hours">$fall15</td><td axis="hours">$fall15_projects</td><td axis="hours">$fall15_fellowships</td><td axis="comments"></td></tr>
