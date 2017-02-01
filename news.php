@@ -36,6 +36,19 @@ if (!$g_user->is_logged_in()) {
 
 
 <?php if ($g_user->is_logged_in()): ?>
+	<div class="newsItem">
+        <h2>CM 2 Recap</h2>
+        <p class="date">January 31, 2017</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">Here are the following documents from CM 2:<br><br>
+            <a href="https://docs.google.com/presentation/d/1eVVx1vUafZBov4xw29o5n669GZi6fcOU2RU-tENOSlM" target="_blank">CM 2 Slides</a><br>
+            <a href="https://goo.gl/forms/IRuNDdJor6iismek2" target="_blank">Caption Contest</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=123">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
+        </p>
+        <br>
+        <p>- <a href="profile.php?user_id=3256">Jerry Park (PMP)</a></p>
+    </div>
+
     <div class="newsItem">
         <h2>CM 1 Recap</h2>
         <p class="date">January 17, 2017</p>
