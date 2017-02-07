@@ -46,7 +46,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://members.calaphio.com/gg_maniac_vote.php?id=123">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
         </p>
         <br>
-        <p>- <a href="profile.php?user_id=3256">Jerry Park (PMP)</a></p>
+        <p>- <a href="profile.php?user_id=3633">Kimberly Tze (FH)</a></p>
     </div>
 
     <div class="newsItem">
