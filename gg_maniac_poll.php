@@ -17,6 +17,8 @@ $poll_name = $row['poll_name'];
 
 $table_rows = '<tr>
 			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voter ID </td>
+			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> First Name </td>
+			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Last Name </td>
 			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voted For: </td>
 			   <td style="font-weight:bold;width:500px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em;word-wrap: break-word;"> Reason </td>
 			   <tr>';
@@ -28,6 +30,8 @@ while ($row = $query->fetch_row()) {
 	$table_rows .= <<<DOCHERE
 					<tr>
 					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $user_id </td>
+					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $firstname </td>
+					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $lastname </td>
 					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $name </td>
 					<td style="width:500px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em;word-wrap: break-word;"> $reason </td>
 					<tr>
