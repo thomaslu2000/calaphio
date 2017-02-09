@@ -13,7 +13,8 @@ $row = $query->fetch_row();
 $poll_name = $row['poll_name'];
 
 $table_rows = '<tr>
-			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Active Name </td>
+			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voter ID </td>
+			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voted For: </td>
 			   <td style="font-weight:bold;width:500px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em;word-wrap: break-word;"> Reason </td>
 			   <tr>';
 $query = new Query(sprintf("SELECT user_id, name, reason FROM gg_maniac_votes WHERE poll_id=%s ORDER BY name ASC", $_REQUEST['id']));
@@ -22,6 +23,7 @@ while ($row = $query->fetch_row()) {
 	$reason = $row['reason'];
 	$table_rows .= <<<DOCHERE
 					<tr>
+					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $user_id </td>
 					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $name </td>
 					<td style="width:500px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em;word-wrap: break-word;"> $reason </td>
 					<tr>
