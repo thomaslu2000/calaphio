@@ -16,6 +16,9 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Charles Wang</p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Vivian Liu</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>

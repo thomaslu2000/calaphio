@@ -39,7 +39,7 @@ if (isset($_REQUEST['active_name']) && isset($_REQUEST['reason'])) {
 
 echo <<<DOCHERE
 	<h2>$poll_name</h2>
-	<p style="color: #000; padding: 25px 60px 15px 60px;">Remember that you CANNOT vote for <a href="gg_maniacs.php">Past Maniacs</a> as the vote will not count. Current PComm and ExComm are also ineligble to win, even if they have not previously won.</p>
+	<p style="color: #000; padding: 25px 60px 15px 60px;">Remember that you CANNOT vote for <a href="gg_maniacs.php">Past Maniacs</a> as the vote will not count. Current PComm, ExComm, and DComm are also ineligble to win, even if they have not previously won.</p>
 	<div style="margin-top:1em">
 		<form id="GGManiacVote" action="#" method="post" onsubmit="">
 			<span style="font-weight:bold;margin-right:1em"> Active Name </span>
