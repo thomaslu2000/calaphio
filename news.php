@@ -41,11 +41,16 @@ if (!$g_user->is_logged_in()) {
         <p class="date">February 7, 2017</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">Here are the following documents from CM 3:<br><br>
-            <a href="https://docs.google.com/presentation/d/1CPT4BYGePliVWx67NogKaqE1M6gTJZteqESPVm_bNYg">CM 3 Slides</a><br>
+            <a href="https://docs.google.com/presentation/d/1CPT4BYGePliVWx67NogKaqE1M6gTJZteqESPVm_bNYg" target="_blank">CM 3 Slides</a><br>
             <a href="https://goo.gl/forms/aadmNzMjIQyqpu6Z2" target="_blank">Caption Contest</a><br>
+            <a href="https://goo.gl/forms/fmfvwC4LasklDRnu1" target="_blank">Service Buddies Signup</a> (due before CM4)<br>
+            <a href="https://goo.gl/forms/DCty53oDaSxnxHux2" target="_blank">Fellowship Buddies Signup</a> (due before CM4)<br>
             <a href="https://members.calaphio.com/gg_maniac_vote.php?id=124">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
-            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2">Chapter Feedback Form</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
+            <a href="https://www.youtube.com/watch?v=WRzVTyX1AOs" target="_blank">CM3 Video</a> edited by
+                <a href="profile.php?user_id=2924">Kelly Luu (TT)</a> and <a href="profile.php?user_id=2192">Audrey Tsai (CM)</a><br>
         </p>
+        <p>CM 3 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/WRzVTyX1AOs" frameborder="0" allowfullscreen></iframe></p>
         <br>
         <p>- <a href="profile.php?user_id=3597">Yitian Zhang XD (RBD)</a></p>
     </div>
@@ -58,7 +63,10 @@ if (!$g_user->is_logged_in()) {
             <a href="https://docs.google.com/presentation/d/1eVVx1vUafZBov4xw29o5n669GZi6fcOU2RU-tENOSlM" target="_blank">CM 2 Slides</a><br>
             <a href="https://goo.gl/forms/IRuNDdJor6iismek2" target="_blank">Caption Contest</a><br>
             <a href="https://members.calaphio.com/gg_maniac_vote.php?id=123">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
+            <a href="https://www.youtube.com/watch?v=4jWo9xhuLsk" target="_blank">CM2 Video</a> edited by
+                <a href="profile.php?user_id=3292">Stanley Shaw (PMP)</a> and <a href="profile.php?user_id=3606">Elaine Chung (FH)</a><br>
         </p>
+        <p>CM 2 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/4jWo9xhuLsk" frameborder="0" allowfullscreen></iframe></p>
         <br>
         <p>- <a href="profile.php?user_id=3633">Kimberly Tze (FH)</a></p>
     </div>
