@@ -24,12 +24,12 @@ $table_rows = '<tr>
 			   <tr>';
 $query = new Query(sprintf("SELECT apo_users.firstname, apo_users.lastname, gg_maniac_votes.name, gg_maniac_votes.reason FROM apo_users INNER JOIN gg_maniac_votes ON apo_users.user_id = gg_maniac_votes.user_id WHERE poll_id=%s", $_REQUEST['id']));
 while ($row = $query->fetch_row()) {
-	$user_id = $row['user_id'];
+	$firstname = $row['firstname'];
+	$lastname = $row['lastname'];
 	$name = $row['name'];
 	$reason = $row['reason'];
 	$table_rows .= <<<DOCHERE
 					<tr>
-					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $user_id </td>
 					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $firstname </td>
 					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $lastname </td>
 					<td style="width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> $name </td>
