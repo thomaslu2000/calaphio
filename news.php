@@ -47,7 +47,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2">Chapter Feedback Form</a><br>
         </p>
         <br>
-        <p>- <a href="profile.php?user_id=3597">Yitian Zhang (RBD)</a></p>
+        <p>- <a href="profile.php?user_id=3597">Yitian Zhang XD (RBD)</a></p>
     </div>
 
 	<div class="newsItem">
