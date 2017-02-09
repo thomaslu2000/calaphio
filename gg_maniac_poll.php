@@ -16,7 +16,6 @@ $row = $query->fetch_row();
 $poll_name = $row['poll_name'];
 
 $table_rows = '<tr>
-			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voter ID </td>
 			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> First Name </td>
 			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Last Name </td>
 			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voted For: </td>
