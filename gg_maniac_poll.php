@@ -20,7 +20,7 @@ $table_rows = '<tr>
 			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voted For: </td>
 			   <td style="font-weight:bold;width:500px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em;word-wrap: break-word;"> Reason </td>
 			   <tr>';
-$query = new Query(sprintf("SELECT user_id, name, reason FROM gg_maniac_votes WHERE poll_id=%s ORDER BY name ASC UNION ALL SELECT user_id,firstname,lastname FROM apo_users GROUP BY user_id", $_REQUEST['id']));
+$query = new Query(sprintf("SELECT user_id, name, reason FROM gg_maniac_votes WHERE poll_id=%s UNION ALL SELECT user_id,firstname,lastname FROM apo_users GROUP BY user_id", $_REQUEST['id']));
 while ($row = $query->fetch_row()) {
 	$user_id = $row['user_id'];
 	$name = $row['name'];
