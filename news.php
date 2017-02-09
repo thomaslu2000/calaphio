@@ -36,6 +36,20 @@ if (!$g_user->is_logged_in()) {
 
 
 <?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>CM 3 Recap</h2>
+        <p class="date">February 7, 2017</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">Here are the following documents from CM 3:<br><br>
+            <a href="https://docs.google.com/presentation/d/1CPT4BYGePliVWx67NogKaqE1M6gTJZteqESPVm_bNYg">CM 3 Slides</a><br>
+            <a href="https://goo.gl/forms/aadmNzMjIQyqpu6Z2" target="_blank">Caption Contest</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=124">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2">Chapter Feedback Form</a><br>
+        </p>
+        <br>
+        <p>- <a href="profile.php?user_id=3597">Yitian Zhang (RBD)</a></p>
+    </div>
+
 	<div class="newsItem">
         <h2>CM 2 Recap</h2>
         <p class="date">January 31, 2017</p>
