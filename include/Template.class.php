@@ -77,7 +77,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "http://goo.gl/AsFDzl",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1TkP2OkJu74SZQuIwbU23hJdPyxCWc3EVlZqSVjI9EpI/",
 				),
 			'Calendar' => array(
 				"HOME" => "news.php",
@@ -86,7 +86,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "http://goo.gl/AsFDzl",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1TkP2OkJu74SZQuIwbU23hJdPyxCWc3EVlZqSVjI9EpI/",
 				),
 			'Service' => array(
 				"HOME" => "news.php",
@@ -113,7 +113,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "http://goo.gl/AsFDzl",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1TkP2OkJu74SZQuIwbU23hJdPyxCWc3EVlZqSVjI9EpI/",
 				),
 			// 'Members' => array(
 			// 	"HOME" => "news.php",
