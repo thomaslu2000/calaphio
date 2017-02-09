@@ -45,7 +45,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://goo.gl/forms/aadmNzMjIQyqpu6Z2" target="_blank">Caption Contest</a><br>
             <a href="https://members.calaphio.com/gg_maniac_vote.php?id=124">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
             <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2">Chapter Feedback Form</a><br>
-            <a href="https://www.youtube.com/watch?v=WRzVTyX1AOs">CM3 Video</a> (edited by
+            <a href="https://www.youtube.com/watch?v=WRzVTyX1AOs">CM3 Video</a> edited by
                 <a href="profile.php?user_id=3597">Kelly Luu (TT)</a> and <a href="profile.php?user_id=3597">Audrey Tsai (CM)</a><br>
         </p>
         <br>
