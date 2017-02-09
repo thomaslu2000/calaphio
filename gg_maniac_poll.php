@@ -19,6 +19,7 @@ $table_rows = '<tr>
 			   <tr>';
 $query = new Query(sprintf("SELECT user_id, name, reason FROM gg_maniac_votes WHERE poll_id=%s ORDER BY name ASC", $_REQUEST['id']));
 while ($row = $query->fetch_row()) {
+	$user_id = $row['user_id'];
 	$name = $row['name'];
 	$reason = $row['reason'];
 	$table_rows .= <<<DOCHERE
