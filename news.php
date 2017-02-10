@@ -188,7 +188,10 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
 </div>
 
-<a href="news_fa16.php">Older News ></a>
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+    <a href="news_fa16.php">Older News ></a>
+<?php endif ?>
+
 <?php
 $template->print_body_footer();
 $template->print_disclaimer();
