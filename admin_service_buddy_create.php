@@ -45,7 +45,7 @@ while ($row = $query->fetch_row()) {
 		$begin = $row['begin'];
 		$end = $row['end'];
 		$buddy_link = "apo_service_buddy.php" . "?id=" . $id; 
-		$remove_buddy_link = "admin_service_buddy_create.php" . "?cancel=" . $id;
+		$remove_buddy_link = "https://members.calaphio.com/admin_service_buddy_create.php" . "?cancel=" . $id;
 		$buddies = $buddies . '<div><a href="'. $buddy_link . '">' . $row['firstname'] . " " . $row['lastname'] . " & " . $row['firstname2'] . " " . $row['lastname2'] . '</a> <span> Begin: ' . $begin . '</span>' . '<span> End: ' . $end . '</span>' . '<a href="' . $remove_buddy_link . '"> Delete Pair </a></div>';
 	}
 }
