@@ -10,7 +10,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase")) {
 } else if (isset($_REQUEST['cancel'])) {
 	$id = $_REQUEST['cancel'];
 	$query = new Query(sprintf("UPDATE apo_service_buddy SET canceled=TRUE WHERE id=%d", $id));
-	header( 'Location: http://live.calaphio.com/admin_service_buddy_create.php' );
+	header( 'Location: http://members.calaphio.com/admin_service_buddy_create.php' );
 } else if (isset($_REQUEST['month']) && isset($_REQUEST['day']) && isset($_REQUEST['year']) && isset($_REQUEST['person1']) && 
 	isset($_REQUEST['endMonth']) && isset($_REQUEST['endDay']) && isset($_REQUEST['endYear']) && isset($_REQUEST['person2'])) {
 	$start_time = mktime(0, 0, 0, $_REQUEST['month'], $_REQUEST['day'], $_REQUEST['year']);
@@ -45,7 +45,7 @@ while ($row = $query->fetch_row()) {
 		$begin = $row['begin'];
 		$end = $row['end'];
 		$buddy_link = "apo_service_buddy.php" . "?id=" . $id; 
-		$remove_buddy_link = "https://members.calaphio.com/admin_service_buddy_create.php" . "?cancel=" . $id;
+		$remove_buddy_link = "admin_service_buddy_create.php" . "?cancel=" . $id;
 		$buddies = $buddies . '<div><a href="'. $buddy_link . '">' . $row['firstname'] . " " . $row['lastname'] . " & " . $row['firstname2'] . " " . $row['lastname2'] . '</a> <span> Begin: ' . $begin . '</span>' . '<span> End: ' . $end . '</span>' . '<a href="' . $remove_buddy_link . '"> Delete Pair </a></div>';
 	}
 }
