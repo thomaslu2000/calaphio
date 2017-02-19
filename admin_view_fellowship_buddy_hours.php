@@ -12,15 +12,10 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 	$query = new Query("
 		SELECT concat(users.firstname, ' ', users.lastname, ' & ', buddy.firstname, ' ', buddy.lastname) AS pair, 
 		sum(CASE 
-			WHEN event.type_service_campus = TRUE THEN user_attend.hours
-			WHEN event.type_service_chapter = TRUE THEN user_attend.hours
-			WHEN event.type_service_community = TRUE THEN user_attend.hours
-			WHEN event.type_service_community = TRUE THEN user_attend.hours
-			WHEN event.type_fundraiser = TRUE THEN user_attend.hours
-			ELSE 1
+			WHEN event.type_fellowship = TRUE THEN 1
 			END) AS hours
 		, user_buddy.id AS id, user_buddy.begin AS begin, user_buddy.end AS end FROM apo_calendar_attend AS user_attend
-		JOIN apo_calendar_event AS event ON (user_attend.event_id = event.event_id AND event.type_fellowship = FALSE AND (event.type_service_campus = TRUE OR event.type_service_chapter = TRUE OR event.type_service_community = TRUE OR event.type_service_country = TRUE OR event.type_fundraiser = TRUE OR event.type_interchapter = TRUE))
+		JOIN apo_calendar_event AS event ON (user_attend.event_id = event.event_id AND event.type_fellowship = TRUE AND (event.type_service_campus = FALSE OR event.type_service_chapter = FALSE OR event.type_service_community = FALSE OR event.type_service_country = FALSE OR event.type_fundraiser = FALSE OR event.type_interchapter = FALSE))
 		JOIN apo_fellowship_buddy AS user_buddy ON (user_attend.user_id = user_buddy.user_id AND event.date >= user_buddy.begin AND event.date <= user_buddy.end) 
 		JOIN apo_calendar_attend AS buddy_attend ON (user_buddy.buddy_id = buddy_attend.user_id AND user_attend.event_id = buddy_attend.event_id) 
 		JOIN apo_users AS users ON (user_attend.user_id = users.user_id) 
