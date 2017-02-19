@@ -13,6 +13,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 		SELECT concat(users.firstname, ' ', users.lastname, ' & ', buddy.firstname, ' ', buddy.lastname) AS pair, 
 		sum(CASE 
 			WHEN event.type_fellowship = TRUE THEN 1
+			WHEN buddy_attend.chair = 1 THEN 1
 			END) AS hours
 		, user_buddy.id AS id, user_buddy.begin AS begin, user_buddy.end AS end FROM apo_calendar_attend AS user_attend
 		JOIN apo_calendar_event AS event ON (user_attend.event_id = event.event_id AND event.type_fellowship = TRUE AND (event.type_service_campus = FALSE OR event.type_service_chapter = FALSE OR event.type_service_community = FALSE OR event.type_service_country = FALSE OR event.type_fundraiser = FALSE OR event.type_interchapter = FALSE))
