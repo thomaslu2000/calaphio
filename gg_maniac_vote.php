@@ -33,7 +33,7 @@ if (isset($_REQUEST['active_name']) && isset($_REQUEST['reason'])) {
 	    $query = new Query("start transaction");
 		$query = new Query(sprintf("INSERT INTO gg_maniac_votes SET name='%s', reason='%s', poll_id=%s, user_id='%d'", mysql_real_escape_string($_REQUEST['active_name']), mysql_real_escape_string($_REQUEST['reason']), $_REQUEST['id'], $g_user->data['user_id']));
 		$query = new Query("commit");
-		header( 'Location: http://live.calaphio.com' );
+		header( 'Location: http://members.calaphio.com' );
 	}
 }
 
@@ -50,7 +50,124 @@ echo <<<DOCHERE
     		<input class="btn btn-primary btn-small" style="margin-top:1em" type="submit" value="Submit Vote">
     	</form>
 	</div>	
+
+	<h1><a href="gg_maniacs.php">Gamma Gamma Maniacs!</a></h1>
+	<div class="newsItem">
+	    <h2 class="center">MMC Semester GG Maniacs!</h2>
+	    <div class="collage-container">
+		<div class="collage-pictures">
+			<div class="person-picture">
+				<p class="center">Charles Wang</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Vivian Liu</p>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+	    </div>
+	</div>
+	<div class="newsItem">
+	    <h2 class="center">MMC Semester Pledge Maniacs!</h2>
+	    <div class="collage-container">
+		<div class="collage-pictures">
+			
+		</div>
+		<div style="clear: left;"></div>
+	    </div>
+	</div>
+	<div class="newsItem">
+	    <h2 class="center">FH Semester GG Maniacs!</h2>
+	    <div class="collage-container">
+		<div class="collage-pictures">
+			<div class="person-picture">
+				<p class="center">Jessica Tzeng</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Bianca Hsueh</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Nick Weis</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Kerry Feng</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Nina Nguyen</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Veronica Hall</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Gordon Mah</p>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+	    </div>
+	</div>
+	<div class="newsItem">
+	    <h2 class="center">FH Semester Pledge Maniacs!</h2>
+	    <div class="collage-container">
+		<div class="collage-pictures">
+			<div class="person-picture">
+				<p class="center">Max Yun</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Elaine Chung</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Sam Mahdad</p>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+	    </div>
+	</div>
+	<div class="newsItem">
+	    <h2 class="center">RBD Semester GG Maniacs!</h2>
+	    <div class="collage-container">
+		<div class="collage-pictures">
+			<div class="person-picture">
+				<p class="center">Jerry Park</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Nicole Mak</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Elise Hayashi</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Sierra Lou</p>
+			
+			</div>
+			<div class="person-picture">
+				<p class="center">Hyeonji Shim</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Katharine Sen</p>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+	    </div>
+	</div>
+	<div class="newsItem">
+	    <h2 class="center">RBD Semester Pledge Maniacs!</h2>
+	    <div class="collage-container">
+		<div class="collage-pictures">
+			<div class="person-picture">
+				<p class="center">Adrian Peneyra</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Josh Jacobs</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Gene Ho</p>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+	    </div>
+	</div>
 DOCHERE;
+
+
 
 Template::print_body_footer();
 Template::print_disclaimer();
