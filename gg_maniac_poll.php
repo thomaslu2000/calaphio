@@ -14,7 +14,7 @@ $poll_name = $row['poll_name'];
 
 $table_rows = '<tr>
 			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Name </td>
-			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voted For: </td>
+			   <td style="font-weight:bold;width:200px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em"> Voted For </td>
 			   <td style="font-weight:bold;width:500px;padding-top:.5em;padding-bottom:.5em;padding-left:.5em;word-wrap: break-word;"> Reason </td>
 			   <tr>';
 $query = new Query(sprintf("SELECT concat(apo_users.firstname, ' ', apo_users.lastname) AS fullname, gg_maniac_votes.name, gg_maniac_votes.reason FROM apo_users INNER JOIN gg_maniac_votes ON apo_users.user_id = gg_maniac_votes.user_id WHERE poll_id=%s", $_REQUEST['id']));

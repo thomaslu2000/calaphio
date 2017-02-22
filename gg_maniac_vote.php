@@ -62,6 +62,9 @@ echo <<<DOCHERE
 			<div class="person-picture">
 				<p class="center">Vivian Liu</p>
 			</div>
+			<div class="person-picture">
+				<p class="center">Ariel Tsay</p>
+			</div>
 		</div>
 		<div style="clear: left;"></div>
 	    </div>
