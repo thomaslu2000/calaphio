@@ -37,6 +37,25 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 4 Recap</h2>
+        <p class="date">February 24, 2017</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">Here are the following documents from CM 4:<br><br>
+            <a href="https://docs.google.com/presentation/d/1jsKc14SpgEq1iSmlp-lwq5ansGTjVszPYbyMJ5l0WXk" target="_blank">CM 4 Slides</a><br>
+            <a href="https://goo.gl/forms/XHm4DGgMqzFlVNQA3" target="_blank">Caption Contest</a><br>
+            <a href="http://springsectionals2017.weebly.com/" target="_blank">Sectionals Registration</a><br>
+            <a href="https://goo.gl/kc25YI" target="_blank">Sectionals RSVP</a><br>
+            <a href="https://goo.gl/forms/afJkND6OhHPnNtWq1" target="_blank">APO LEADS Signup</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=125">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
+            <a href="https://www.youtube.com/watch?v=UWZhLP-RQZI" target="_blank">CM4 Video</a> edited by
+                <a href="profile.php?user_id=3606">Elaine Chung (FH)</a><br>
+        </p>
+        <p>CM 4 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/UWZhLP-RQZI" frameborder="0" allowfullscreen></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=3256">Jerry (PMP)</a></p>
+    </div>
+
+    <div class="newsItem">
         <h2>CM 3 Recap</h2>
         <p class="date">February 7, 2017</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
