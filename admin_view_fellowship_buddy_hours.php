@@ -15,7 +15,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 			WHEN event.type_fellowship = TRUE THEN 1
 			END) AS hours
 		, user_buddy.id AS id, user_buddy.begin AS begin, user_buddy.end AS end FROM apo_calendar_attend AS user_attend
-		JOIN apo_calendar_event AS event ON (user_attend.event_id = event.event_id AND event.type_fellowship = FALSE AND (event.type_service_campus = TRUE OR event.type_service_chapter = TRUE OR event.type_service_community = TRUE OR event.type_service_country = TRUE OR event.type_fundraiser = TRUE OR event.type_interchapter = TRUE))
+		JOIN apo_calendar_event AS event ON (user_attend.event_id = event.event_id AND event.type_fellowship = TRUE)
 		JOIN apo_fellowship_buddy AS user_buddy ON (user_attend.user_id = user_buddy.user_id AND event.date >= user_buddy.begin AND event.date <= user_buddy.end) 
 		JOIN apo_calendar_attend AS buddy_attend ON (user_buddy.buddy_id = buddy_attend.user_id AND user_attend.event_id = buddy_attend.event_id) 
 		JOIN apo_users AS users ON (user_attend.user_id = users.user_id) 

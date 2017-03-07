@@ -25,7 +25,7 @@ $available_permissions = array(
 	'<a href="admin_view_service_buddy_hours.php">View Service Buddy Hours</a>' => 'admin view requirements',
 	'<a href="admin_service_buddy_create.php">Create Service Buddies</a>' => 'admin view requirements',
 	'<a href="admin_view_fellowship_buddy_hours.php">View Fellowship Buddy Hours (UNDER CONSTRUCTION WEBMASTERS ONLY)</a>' => 'admin view requirements',
-	'<a href="admin_fellowship_buddy_create.php">Create Fellowship Buddies (UNDER CONSTRUCTION WEBMASTERS ONLY)</a>' => 'admin view requirements',);
+	'<a href="admin_fellowship_buddy_create.php">Create Fellowship Buddies</a>' => 'admin view requirements',);
 $is_admin = false;
 foreach ($available_permissions as $permission) {
 	if ($g_user->permit($permission)) {
