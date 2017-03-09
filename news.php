@@ -37,6 +37,24 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 5 Recap</h2>
+        <p class="date">March 8, 2017</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">Here are the following documents from CM 5:<br><br>
+            <a href="https://docs.google.com/presentation/d/10n6Ruku7yz6Dla2juIxu-UTMoZ6V46HGu0TE5eYZTcY" target="_blank">Hitchhiker's Slides to the 5th Chapter Meeting</a><br>
+            <a href="https://goo.gl/forms/0jVDJe9NFScdcs4R2" target="_blank">Caption your president11!1!!</a><br>
+            <a href="http://springsectionals2017.weebly.com/" target="_blank">Sectionals Registration</a><br>
+            Please RSVP to <a href="https://goo.gl/kc25YI" target="_blank">Sectionals!!</a><br>
+            <a href="https://goo.gl/forms/afJkND6OhHPnNtWq1" target="_blank">APO LEADS Signup</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=126">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
+            <a href="https://www.youtube.com/watch?v=PB29WdtGybo" target="_blank">CM5 Video</a> edited by
+                <a href="profile.php?user_id=2192">Audrey Tsai (CM)</a><br> and <a href="profile.php?user_id=2924">Kelly Luu (TT)</a> and <a href="profile.php?user_id=2192">Audrey Tsai (CM)</a><br>
+        </p>
+        <p>CM 4 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/PB29WdtGybo" frameborder="0" allowfullscreen></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=3256">Admin VP</a></p>
+    </div>
+    <div class="newsItem">
         <h2>CM 4 Recap</h2>
         <p class="date">February 24, 2017</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
