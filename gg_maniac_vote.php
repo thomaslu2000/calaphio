@@ -65,6 +65,9 @@ echo <<<DOCHERE
 			<div class="person-picture">
 				<p class="center">Ariel Tsay</p>
 			</div>
+			<div class="person-picture">
+			<p class="center">Audrey Tsai</p>
+		</div>
 		</div>
 		<div style="clear: left;"></div>
 	    </div>
@@ -73,7 +76,9 @@ echo <<<DOCHERE
 	    <h2 class="center">MMC Semester Pledge Maniacs!</h2>
 	    <div class="collage-container">
 		<div class="collage-pictures">
-			
+			<div class="person-picture">
+			<p class="center">Shengmin Xiao</p>
+		</div>
 		</div>
 		<div style="clear: left;"></div>
 	    </div>
