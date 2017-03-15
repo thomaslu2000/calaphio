@@ -1876,7 +1876,7 @@ DOCHERE_print_upcoming_events;
 					$message .= 'Location: ' . $location . '<br/>';
 					$message .= 'Description: ' . $description . '<br/>';
 					$message .= 'Date: ' . $old_date . '<br/>';
-					$message .= 'http://live.calaphio.com/event.php?id=' . $event_id;
+					$message .= 'http://members.calaphio.com/event.php?id=' . $event_id;
 					$message .= '<br/>
 								</body>
 								</html>
@@ -2173,7 +2173,7 @@ DOCHERE_print_upcoming_events;
 					$message .= 'Date: ' . $date . '<br/>';
 					$message .= 'Chair Name: ' . $firstname . " " . $lastname . '<br/>';
 					$message .= 'Email: ' . $email . '<br/>';
-					$message .= 'http://live.calaphio.com/event.php?id=' . $event_id;
+					$message .= 'http://members.calaphio.com/event.php?id=' . $event_id;
 					$message .= '<br/>
 								</body>
 								</html>
@@ -2226,7 +2226,7 @@ DOCHERE_print_upcoming_events;
 						$rowAttend = $queryAttend->fetch_row();
 						$queryAttendEmail = new Query(sprintf("SELECT * FROM %susers WHERE user_id=%d LIMIT 1", TABLE_PREFIX, $rowAttend['user_id']));
 						$rowAttendEmail = $queryAttendEmail->fetch_row();
-						$message = "You are not on the Waitlist anymore for the event, " . $title_event . " on " . $time_event . ". \n" . "http://live.calaphio.com/event.php?id=" . $event_id;
+						$message = "You are not on the Waitlist anymore for the event, " . $title_event . " on " . $time_event . ". \n" . "http://members.calaphio.com/event.php?id=" . $event_id;
 						$message = str_replace(array("’", "–", "—", "“", "”", "&amp;", "&lt;", "&gt;", "&#039;", "&quot;"), array("'", "-", "-", "\"", "\"", "&", "<", ">", "'", "\""), $message);
 						$title_event = str_replace(array("’", "–", "—", "“", "”", "&amp;", "&lt;", "&gt;", "&#039;", "&quot;"), array("'", "-", "-", "\"", "\"", "&", "<", ">", "'", "\""), $title_event);
 						mail($rowAttendEmail['email'], "[APO] Off the waitlist for " . $title_event, $message);
@@ -2277,7 +2277,7 @@ DOCHERE_print_upcoming_events;
 						$rowAttend = $queryAttend->fetch_row();
 						$queryAttendEmail = new Query(sprintf("SELECT * FROM %susers WHERE user_id=%d LIMIT 1", TABLE_PREFIX, $rowAttend['user_id']));
 						$rowAttendEmail = $queryAttendEmail->fetch_row();
-						$message = "You are not on the Waitlist anymore for the event, " . $title_event . " on " . $time_event . ". \n" . "http://live.calaphio.com/event.php?id=" . $event_id;
+						$message = "You are not on the Waitlist anymore for the event, " . $title_event . " on " . $time_event . ". \n" . "http://members.calaphio.com/event.php?id=" . $event_id;
 						$message = str_replace(array("’", "–", "—", "“", "”", "&amp;", "&lt;", "&gt;", "&#039;", "&quot;"), array("'", "-", "-", "\"", "\"", "&", "<", ">", "'", "\""), $message);
 						$title_event = str_replace(array("’", "–", "—", "“", "”", "&amp;", "&lt;", "&gt;", "&#039;", "&quot;"), array("'", "-", "-", "\"", "\"", "&", "<", ">", "'", "\""), $title_event);
 						mail($rowAttendEmail['email'], "[APO] Off the waitlist for " . $title_event, $message);
