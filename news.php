@@ -39,14 +39,13 @@ if (!$g_user->is_logged_in()) {
     <div class="newsItem">
         <h2>Mr. and Mrs. APO Video</h2>
         <p class="date">March 19, 2017</p>
-        <p style="margin-top: 1em;"><b>Mr and Mrs Alpha Phi Omega</b><br></p>
-        <p style="margin: 0.5em 0px;">Go watch the videos presented at Mr and Mrs APhiO<br><br>
-            <a href="https://www.youtube.com/watch?v=PB29WdtGybo" target="_blank"></a> Edited by the wonderful
-                <a href="profile.php?user_id=3292">Stanley Shaw (PMP)</a><br>
+        <p style="margin-top: 1em;"><b>Go watch the videos presented at Mr and Mrs APhiO!</b><br></p>
+            <p><a href="https://www.youtube.com/watch?v=PB29WdtGybo" target="_blank"></a> Edited by the wonderful
+                <a href="profile.php?user_id=3292">Stanley Shaw (PMP)</a>
         </p>
-        <p><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/ecHrkWUZpIo" frameborder="0" allowfullscreen></iframe></p>
-        <p><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/cG2uJcwWfSM" frameborder="0" allowfullscreen></iframe></p>
-        <p>- <a href="profile.php?user_id=3256">Admin VP</a></p>
+        <p><br><iframe width="560" height="315" src="https://www.youtube.com/embed/ecHrkWUZpIo" frameborder="0" allowfullscreen></iframe></p>
+        <p><br><iframe width="560" height="315" src="https://www.youtube.com/embed/cG2uJcwWfSM" frameborder="0" allowfullscreen></iframe></p>
+        <p>- <a href="profile.php?user_id=3256">Your AVP</a></p>
     </div>
     <div class="newsItem">
         <h2>CM 5 Recap</h2>
