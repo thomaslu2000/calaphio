@@ -37,6 +37,18 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>Mr. and Mrs. APO Video</h2>
+        <p class="date">March 19, 2017</p>
+        <p style="margin-top: 1em;"><b>Mr and Mrs Alpha Phi Omega</b><br></p>
+        <p style="margin: 0.5em 0px;">Go watch the videos presented at Mr and Mrs APhiO<br><br>
+            <a href="https://www.youtube.com/watch?v=PB29WdtGybo" target="_blank"></a> Edited by the wonderful
+                <a href="profile.php?user_id=3292">Stanley Shaw (PMP)</a><br>
+        </p>
+        <p><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/ecHrkWUZpIo" frameborder="0" allowfullscreen></iframe></p>
+        <p><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/cG2uJcwWfSM" frameborder="0" allowfullscreen></iframe></p>
+        <p>- <a href="profile.php?user_id=3256">Admin VP</a></p>
+    </div>
+    <div class="newsItem">
         <h2>CM 5 Recap</h2>
         <p class="date">March 8, 2017</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
@@ -92,7 +104,7 @@ if (!$g_user->is_logged_in()) {
         <p>- <a href="profile.php?user_id=3597">Yitian Zhang XD (RBD)</a></p>
     </div>
 
-	<div class="newsItem">
+    <div class="newsItem">
         <h2>CM 2 Recap</h2>
         <p class="date">January 31, 2017</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
