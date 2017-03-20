@@ -90,6 +90,8 @@ class Calendar {
 	function format_event_title($row) {
 		if ($row['type_scouting']) {
 			$prefix = '<span class="service" style="color: #0CF;">[BSA]</span> ';
+		} else if ($row['event_id'] == 152258) {
+			$title = '<b style="color: #8a2be2;">' . $title . '</b>';
 		} else if ($row['type_interchapter'] || $row['type_interchapter_half']) {
 			$prefix = '<span class="ic">[IC]</span> ';
 		} else if ($row['type_rush']) {
