@@ -51,9 +51,9 @@ if (!$g_user->is_logged_in()) {
             <a href="https://www.youtube.com/watch?v=IZ6emdzw8ig" target="_blank">CM6 Video</a> edited by
                 <a href="profile.php?user_id=3606">Elaine Chung (FH)</a> (8-9 hours of editing, press F to pay respects)<br>
         </p>
-        <p>CM 4 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/PB29WdtGybo" frameborder="0" allowfullscreen></iframe></p>
+        <p>CM 6 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/PB29WdtGybo" frameborder="0" allowfullscreen></iframe></p>
         <br>
-        <p>- <a href="profile.php?user_id=2978">Not Admin VP</a></p>
+        <p>- <a href="profile.php?user_id=2978">Not Your Admin VP</a></p>
     </div>
     <div class="newsItem">
         <h2>Mr. and Mrs. APO Video</h2>
