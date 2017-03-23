@@ -37,6 +37,25 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 6 Recap</h2>
+        <p class="date">March 23, 2017</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">Here are the following documents from CM 6:<br><br>
+            <a href="https://docs.google.com/presentation/d/1QoOSEBuVrEizFrK2aauib0klVjR-Mopp6N0Iou8NDjU/" target="_blank">CM6 Slides</a><br>
+            <a href="https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSdN0uc7RtTlbRppbEdGHnIsbwc_cW_O9bD-SYnbKDLuCyYvZQ" target="_blank">Caption Contest</a><br>
+            <a href="http://springsectionals2017.weebly.com/" target="_blank">Sectionals Registration</a><br>
+            Please RSVP to <a href="https://goo.gl/kc25YI" target="_blank">Sectionals!!</a><br>
+            <a href="https://goo.gl/forms/afJkND6OhHPnNtWq1" target="_blank">APO LEADS Signup</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=127">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
+            <a href="https://docs.google.com/spreadsheets/d/1s3z9fXhB17v01FK3woyNgyiYjBuBEJ5wpEgR6cvgcHo" target="_blank">Nominations</a><br>
+            <a href="https://www.youtube.com/watch?v=IZ6emdzw8ig" target="_blank">CM6 Video</a> edited by
+                <a href="profile.php?user_id=3606">Elaine Chung (FH)</a> (8-9 hours of editing, press F to pay respects)<br>
+        </p>
+        <p>CM 4 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/PB29WdtGybo" frameborder="0" allowfullscreen></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=2978">Not Admin VP</a></p>
+    </div>
+    <div class="newsItem">
         <h2>Mr. and Mrs. APO Video</h2>
         <p class="date">March 19, 2017</p>
         <p style="margin-top: 1em;"><b>Go watch the videos presented at Mr and Mrs APhiO!</b><br></p>
@@ -59,7 +78,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://goo.gl/forms/afJkND6OhHPnNtWq1" target="_blank">APO LEADS Signup</a><br>
             <a href="https://members.calaphio.com/gg_maniac_vote.php?id=126">GG Maniac Poll</a> (cannot vote for past GG Maniacs or past Pledge Maniacs)<br>
             <a href="https://www.youtube.com/watch?v=PB29WdtGybo" target="_blank">CM5 Video</a> edited by
-                <a href="profile.php?user_id=2192">Audrey Tsai (CM)</a><br> and <a href="profile.php?user_id=2924">Kelly Luu (TT)</a> and <a href="profile.php?user_id=2192">Audrey Tsai (CM)</a><br>
+                <a href="profile.php?user_id=2192">Audrey Tsai (CM)</a>and <a href="profile.php?user_id=2924">Kelly Luu (TT)<br>
         </p>
         <p>CM 4 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/PB29WdtGybo" frameborder="0" allowfullscreen></iframe></p>
         <br>
