@@ -37,6 +37,59 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+            <h2>Election Platforms</h2>
+            <p class="date">April 10, 2017</p>
+
+        <p style="margin: 1.5em 0px .5em 0px;">
+            Thank you again to those who submitted platforms for elections! Here are the following submissions for each position:
+        </p>
+
+        <div>
+            <div class="row">
+                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>SERVICE VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://docs.google.com/a/berkeley.edu/document/d/1BBkNvjRLoj9ggE4pu1s0Sq6ZvRI9dKiTMjZHsZTLK2U/edit?usp=sharing" target="_blank">Kerry Feng</a></p>
+                </div>
+
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>PLEDGEMASTER:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://docs.google.com/document/d/1kOfVt0DD56fs54VwAryqm7mY9Br75hcRiwp-u-0wcJo/edit?usp=sharing" target="_blank">Jerianne Lukban</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>ADMIN VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://docs.google.com/document/d/1NBB6cAAZS3GIGs8-ZGSpbjjTRM4mQ9toGpl5sONq9qA/edit?usp=sharing" target="_blank">Bianca Hsueh</a></p>
+                </div>
+
+                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>MEMBERSHIP VP:</u></b><br>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>FELLOWSHIP VP:</u></b><br>
+                </div>
+
+                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>HISTORIAN:</u></b><br>
+                </div>
+            </div>
+        </div>
+
+        <p style="margin: 1.5em 0px;">
+            I encourage all actives and pledges to read through these platforms thoroughly, as each candidate has spent a lot of time preparing and revising their platforms. Remember that if you did not submit a platform, you may still run on the day of Elections.
+        </p>
+        
+        <p>- <a href="profile.php?user_id=3256">Jerry Park (PMP)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 6 Recap</h2>
         <p class="date">March 23, 2017</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
