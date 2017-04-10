@@ -55,21 +55,17 @@ if (!$g_user->is_logged_in()) {
                     <b><u>PLEDGEMASTER:</u></b><br>
                     <p style="padding: 3 0;"><a href="https://docs.google.com/document/d/1kOfVt0DD56fs54VwAryqm7mY9Br75hcRiwp-u-0wcJo/edit?usp=sharing" target="_blank">Jerianne Lukban</a></p>
                 </div>
-            </div>
-
-            <div class="row">
                 <div class="span3" style="margin: 1.5em 0px .5em 0px;">
                     <b><u>ADMIN VP:</u></b><br>
                     <p style="padding: 3 0;"><a href="https://docs.google.com/document/d/1NBB6cAAZS3GIGs8-ZGSpbjjTRM4mQ9toGpl5sONq9qA/edit?usp=sharing" target="_blank">Bianca Hsueh</a></p>
                 </div>
-
-                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
-                    <b><u>MEMBERSHIP VP:</u></b><br>
-                </div>
-
             </div>
 
             <div class="row">
+                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>MEMBERSHIP VP:</u></b><br>
+                </div>
+                
                 <div class="span3" style="margin: 1.5em 0px .5em 0px;">
                     <b><u>FELLOWSHIP VP:</u></b><br>
                 </div>
