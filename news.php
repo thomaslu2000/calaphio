@@ -44,6 +44,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://docs.google.com/a/berkeley.edu/document/d/1BBkNvjRLoj9ggE4pu1s0Sq6ZvRI9dKiTMjZHsZTLK2U/edit?usp=sharing" target="_blank">Service VP Platform Kerry Feng</a><br>
             <a href="https://docs.google.com/document/d/1NBB6cAAZS3GIGs8-ZGSpbjjTRM4mQ9toGpl5sONq9qA/edit?usp=sharing" target="_blank">Admin VP Platform Bianca Hsueh</a><br>
             <a href="https://docs.google.com/document/d/1kOfVt0DD56fs54VwAryqm7mY9Br75hcRiwp-u-0wcJo/edit?usp=sharing" target="_blank">Pledgemaster Platform Jerianne Lukban</a><br>
+            <a href="https://docs.google.com/document/d/18I4GM6ftFh0-VYNUEt0qX5-II6iGtey7kWfuJDW5hqU/edit" target="_blank">Fellowship VP Platform Josh Jacobs</a><br>
         </p>
 
         <p style="margin: 1.5em 0px;">
