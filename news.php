@@ -37,6 +37,20 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 7 Recap</h2>
+        <p class="date">April 11, 2017</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">Here are the following documents from CM 7:<br><br>
+            <a href="https://docs.google.com/presentation/d/1bBN4kbY_b6fsKY6jatjq4YgMhqGFUR2Y21S8jyjtFrs" target="_blank">CM7 Slides</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback</a><br>
+            <a href="https://www.youtube.com/watch?v=pEBRqbdaj60" target="_blank">CM7 Video</a> edited by
+                <a href="profile.php?user_id=2192">Audrey Tsai (CM)</a>and <a href="profile.php?user_id=2924">Kelly Luu (TT)<br>
+        </p>
+        <p>CM 6 Video:<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/pEBRqbdaj60" frameborder="0" allowfullscreen></iframe></p>
+        <br>
+        <p>- <a href="profile.php?user_id=3256">Your future Historian</a></p>
+    </div>
+    <div class="newsItem">
             <h2>Election Platforms</h2>
             <p class="date">April 10, 2017</p>
 
@@ -55,9 +69,6 @@ if (!$g_user->is_logged_in()) {
         
         <p>- <a href="profile.php?user_id=3256">Jerry Park (PMP)</a></p>
     </div>
-<?php endif ?>
-
-<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 6 Recap</h2>
         <p class="date">March 23, 2017</p>
