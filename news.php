@@ -34,6 +34,59 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <br/>
+        <h2>Congrats to the Fall 2017 Executive Committee!</h2>
+        <p class="date">April 12, 2017</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3272"><img src="images/excomm_fa17/joseph.jpg" onmouseover="this.src='images/excomm_fa17/joseph2.jpg'" onmouseout="this.src='images/excomm_fa17/joseph.jpg'"></img></a>
+                    <p class="center"><strong>President</strong>: <br><a href="profile.php?user_id=3272">Joseph Lee</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3568"><img src="images/excomm_fa17/kerry.jpg" onmouseover="this.src='images/excomm_fa17/kerry2.jpg'" onmouseout="this.src='images/excomm_fa17/kerry.jpg'"></img></a>
+                    <p class="center"><strong>Service VP</strong>: <br><a href="profile.php?user_id=3568">Kerry Feng</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2979"><img src="images/excomm_fa17/jerianne.jpg" onmouseover="this.src='images/excomm_fa17/jerianne2.jpg'" onmouseout="this.src='images/excomm_fa17/jerianne.jpg'"></img></a>
+                    <p class="center"><strong>Pledgemaster</strong>: <br><a href="profile.php?user_id=2979">Jerianne Lukban</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3571"><img src="images/excomm_fa17/bianca.jpg" onmouseover="this.src='images/excomm_fa17/bianca2.jpg'" onmouseout="this.src='images/excomm_fa17/bianca.jpg'"></img></a>
+                    <p class="center"><strong>Administrative VP</strong>: <br><a href="profile.php?user_id=3571">Bianca Hsueh</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_fa17/marilyn.jpg" onmouseover="this.src='images/excomm_fa17/marilyn2.jpg'" onmouseout="this.src='images/excomm_fa17/marilyn.jpg'"></img></a>
+                    <p class="center"><strong>Membership VP</strong>: <br><a href="profile.php?user_id=2929">Marilyn Chan</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3572"><img src="images/excomm_fa17/hermes.jpg" onmouseover="this.src='images/excomm_fa17/hermes2.jpg'" onmouseout="this.src='images/excomm_fa17/hermes.jpg'"></img></a>
+                    <p class="center"><strong>Finance VP</strong>: <br><a href="profile.php?user_id=3572">Hermes Ip</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3266"><img src="images/excomm_fa17/sierra.jpg" onmouseover="this.src='images/excomm_fa17/sierra2.jpg'" onmouseout="this.src='images/excomm_fa17/sierra.jpg'"></img></a>
+                    <p class="center"><strong>Fellowship VP</strong>: <br><a href="profile.php?user_id=3266">Sierra Lou</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3256"><img src="images/excomm_fa17/jerry.jpg" onmouseover="this.src='images/excomm_fa17/jerry2.jpg'" onmouseout="this.src='images/excomm_fa17/jerry.jpg'"></img></a>
+                    <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=3256">Jerry Park</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
