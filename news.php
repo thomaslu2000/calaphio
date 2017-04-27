@@ -36,6 +36,19 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 8 Recap</h2>
+        <p class="date">April 26, 2017</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">Here are the following documents from CM 8:<br><br>
+            <a href="https://docs.google.com/presentation/d/15GTclgqxT_0F3Yu7AQIS-uWhSxilIqQ_kNbZDOlkpGg" target="_blank">CM8 Slides</a><br>
+            Apply for the General Leadership, Fellowship, and Service awards!<br>
+            <a href="https://members.calaphio.com/awards.php">GG Awards Requirements</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback</a><br>
+            <a href="https://docs.google.com/spreadsheets/u/1/d/1aJt0L4JZVhAA5pA5DX8OaPeFtEvonCT6TPlpMqXW0c8" target="_blank">Banquet Rides</a><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTyF_VI6iGImGVGud_1nbn5UgAsvoDOFScco2ddKiEcsK6Fw" target="_blank">IC Families Signup</a><br>
+        <p>- <a href="profile.php?user_id=3256">Admin VP Signing out</a></p>
+    </div>
+    <div class="newsItem">
         <br/>
         <h2>Congrats to the Fall 2017 Executive Committee!</h2>
         <p class="date">April 12, 2017</p>
