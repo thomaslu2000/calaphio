@@ -37,6 +37,40 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <br/>
+        <h2>Congrats to the Fall 2017 Rush Chairs!</h2>
+        <p class="date">May 8, 2016</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3606"><img src="images/rush_fa17/marilyn.jpg" onmouseover="this.src='images/rush_fa17/elaine.jpg'" onmouseout="this.src='images/rush_fa17/marilyn.jpg'"></img></a>
+                    <p class="center"><a href="profile.php?user_id=3606">Elaine Chung</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4628"><img src="images/rush_fa17/marilyn.jpg" onmouseover="this.src='images/rush_fa17/pia.jpg'" onmouseout="this.src='images/rush_fa17/marilyn.jpg'"></img></a>
+                    <p class="center"><a href="profile.php?user_id=4628">Pia Lopez</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4624"><img src="images/rush_fa17/marilyn.jpg" onmouseover="this.src='images/rush_fa17/hailey.jpg'" onmouseout="this.src='images/rush_fa17/marilyn.jpg'"></img></a>
+                    <p class="center"><a href="profile.php?user_id=4624">Hailey Swart</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4687"><img src="images/rush_fa17/marilyn.jpg" onmouseover="this.src='images/rush_fa17/seline.jpg'" onmouseout="this.src='images/rush_fa17/marilyn.jpg'"></img></a>
+                    <p class="center"><a href="profile.php?user_id=4687">Seline Ting</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <br/>
         <h2>Congrats to the Fall 2017 Pledge Committee!</h2>
         <p class="date">May 3, 2017</p>
         <div class="collage-container">
@@ -48,7 +82,7 @@ if (!$g_user->is_logged_in()) {
 
                 <div class="person-picture">
                     <a href="profile.php?user_id=3629"><img src="images/pcomm_fa17/juan.jpg" onmouseover="this.src='images/pcomm_fa17/juan2.jpg'" onmouseout="this.src='images/pcomm_fa17/juan.jpg'"></img></a>
-                    <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=3629">Juan Rosario</a></p>
+                    <p class="center"><strong>Admin Trainer</strong>: <br><a href="profile.php?user_id=3629">Juan Rosario</a></p>
                 </div>
 
                 <div class="person-picture">
