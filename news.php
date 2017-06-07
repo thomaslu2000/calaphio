@@ -447,7 +447,7 @@ if (!$g_user->is_logged_in()) {
 
     <br>Since school is almost starting, it's about time to get back into the APO mentality. Just remember that we're all students first and need to prioritize school, and to focus on quality service over quantity. Good luck this semester!</br> 
     
-    <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    <p>- <a href="profile.php?user_id=2978">James E Young (TT)</a></p>
 </div>
 
 <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
