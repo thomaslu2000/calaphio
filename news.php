@@ -41,7 +41,7 @@ if (!$g_user->is_logged_in()) {
 
         <p style="margin-bottom: 1em">
         Hi Gamma Gamma, <br><br>
-        Please take some time to peruse through the applications to see what chairing positions interst you!<br><br>
+        Please take some time to peruse through the applications to see what chairing positions interest you!<br><br>
         The deadline to apply for chairing positions will be Friday, August 17, 2017 at 11:59PM.<br><br>
         <a href="https://goo.gl/forms/Tj4vW250PbgbyGJk2" target="_blank">President</a><br>
         <a href="https://goo.gl/forms/UKajyJJUFAZX8MLi1" target="_blank">Administrative VP</a><br>
