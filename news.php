@@ -34,6 +34,28 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+    <div class="newsItem">
+            <h2>ExComm Chairing Applications!</h2>
+            <p class="date">July 16, 2017 at 12pm</p>
+
+        <p style="margin-bottom: 1em">
+        Hello Gamma Gamma, <br><br>
+        Please take some time to look over the applications and complete them early so you all don't have to worry about them later on!<br><br>
+        The deadline to apply for chairing positions will be January 8th, 2017 at 2:00AM.<br><br>
+        <a href="https://goo.gl/forms/8HkvlPsDSqFfo8NA2" target="_blank">President</a><br>
+        <a href="https://goo.gl/forms/A43aHLNuH2ljszKf1" target="_blank">Administrative VP</a><br>
+        <a href="https://goo.gl/forms/SlLcZuQc5a37SnQQ2" target="_blank">Membership VP</a><br>
+        <a href="https://goo.gl/forms/vHH7WvYRTCPyF4up1" target="_blank">Service VP</a><br>
+        <a href="https://goo.gl/forms/UACvBM8DRUv8WmN92" target="_blank">Finance VP</a><br>
+        <a href="https://goo.gl/oeOixE" target="_blank">Fellowship VP</a><br>
+        <a href="https://goo.gl/n4Z15e" target="_blank">Historian</a><br>
+        </p>
+
+        <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+    </div>
+<?php endif ?>
+
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <br/>
