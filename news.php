@@ -38,7 +38,7 @@ if (!$g_user->is_logged_in()) {
     <div class="newsItem">
         <br/>
         <h2>Congrats to the Fall 2017 Rush Chairs!</h2>
-        <p class="date">May 8, 2016</p>
+        <p class="date">May 8, 2017</p>
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
