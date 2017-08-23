@@ -123,11 +123,6 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3638"><img src="images/pcomm_fa17/monica.jpg" onmouseover="this.src='images/pcomm_fa17/monica2.jpg'" onmouseout="this.src='images/pcomm_fa17/monica.jpg'"></img></a>
-                    <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=3638">Monica Wong</a></p>
-                </div>
-
-                <div class="person-picture">
                     <a href="profile.php?user_id=3569"><img src="images/pcomm_fa17/gene.jpg" onmouseover="this.src='images/pcomm_fa17/gene2.jpg'" onmouseout="this.src='images/pcomm_fa17/gene.jpg'"></img></a>
                     <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=3569">Gene Ho</a></p>
                 </div>
