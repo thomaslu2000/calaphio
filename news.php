@@ -149,7 +149,7 @@ if (!$g_user->is_logged_in()) {
 </div>
 
 <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
-    <a href="news_fa16.php">Older News ></a>
+    <a href="news_sp17.php">Older News ></a>
 <?php endif ?>
 
 <?php
