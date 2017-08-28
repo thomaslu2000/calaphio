@@ -29,23 +29,6 @@ $g_user->print_mailer(false);
 $g_user->print_personal_messages();
 
 
-if (!$g_user->is_logged_in()) {
-    echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
-}
-?>
-
-<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
-    <div class="newsItem">
-            <h2>Test Post</h2>
-            <p class="date">August 25, 2017 at 7:30pm</p>
-
-        <p style="margin-bottom: 1em">
-        Sup fam<br>
-        </p>
-
-        <p>- <a href="profile.php?user_id=3571">Bianca Hsueh (RBD)</a></p>
-    </div>
-<?php endif ?>
 
 
 <!-- <?php if ($g_user->is_logged_in()): ?>
