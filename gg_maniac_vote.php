@@ -66,8 +66,17 @@ echo <<<DOCHERE
 				<p class="center">Ariel Tsay</p>
 			</div>
 			<div class="person-picture">
-			<p class="center">Audrey Tsai</p>
-		</div>
+				<p class="center">Audrey Tsai</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Vivian Leduc</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Juan Rosario</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Anna Park</p>
+			</div>
 		</div>
 		<div style="clear: left;"></div>
 	    </div>
@@ -77,8 +86,14 @@ echo <<<DOCHERE
 	    <div class="collage-container">
 		<div class="collage-pictures">
 			<div class="person-picture">
-			<p class="center">Shengmin Xiao</p>
-		</div>
+				<p class="center">Shengmin Xiao</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Roni Shen</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Hailey Swart</p>
+			</div>
 		</div>
 		<div style="clear: left;"></div>
 	    </div>
