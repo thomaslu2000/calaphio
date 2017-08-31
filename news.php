@@ -36,8 +36,8 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
-        <h2>CM 4 Recap</h2>
-        <p class="date">October 4, 2016 at 11:54pm</p>
+        <h2>CM 1 Recap</h2>
+        <p class="date">August 30, 2017 at 5:11pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">
 		ExComm still needs chairs! Please contact the ExComm member you would like to chair under if you are interested in any of the following positions. Chairing is a great way to be involved in the chapter, and to take on a leadership role!</p>
