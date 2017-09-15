@@ -36,6 +36,45 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 2 Recap</h2>
+        <p class="date">September 14, 2017 at 9:01pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+            Effective immediately, if you are attending a service event alone, you must take a photo of yourself at the event and upload it to SmugMug in order to receive service hours.
+            <br><br>
+            ExComm still needs chairs! Please contact the ExComm member you would like to chair under if you are interested in any of the following positions. Chairing is a great way to be involved in the chapter, and to take on a leadership role!
+        </p>
+
+        <p style="margin-bottom: 1em 0px;">
+            <b><u>ADMIN VP:</u></b><br>
+            <b> Stylus </b>(2)<br>
+        </p>
+        <p style="margin-bottom: 1em 0px;">
+            <b><u>SERVICE VP:</u></b><br>
+            <b> HallCarn </b>(3)<br>
+        </p>
+        <p style="margin-bottom: 1em 0px;">
+            <b><u>FINANCE VP:</u></b><br>
+            <b> Concessions </b>(Infinity)<br>
+        </p>
+        <p style="margin-bottom: 1em 0px;">
+            <b><u>FELLOWSHIP VP:</u></b><br>
+            <b> Roll Call </b>(3-4)<br>
+            <b> Hotspot </b>(1)<br>
+        </p>
+        <br>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 2:<br>
+            <a href="https://docs.google.com/presentation/d/11-Xgzao1torCak0pgjQo8WL2toT-YkTcQayYuEiyGiM/edit?usp=sharing" target="_blank">CM 2 Slides</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=130" target="_blank">CM 3 GG Maniac (Cannot vote for past pledge/GG maniacs, ExComm/DComm/PComm)</a><br>
+            <a href="https://goo.gl/forms/ol7uOFtojmeMWdKA2" target="_blank">Caption Contest</a><br>
+            <a href="https://docs.google.com/document/d/1lV7RILSiour6ldjJ2jeZlql792LzcFAgrcEGhUKZmlc/edit?usp=sharing" target="_blank">Smugmug, Chegg, CourseHero Logins and Princeton Review Discount Code</a><br>
+            <a href="https://www.youtube.com/watch?v=OOIFeke6Yf4">CM 2 Video</a>
+
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+
+    <div class="newsItem">
         <h2>CM 1 Recap</h2>
         <p class="date">August 30, 2017 at 5:11pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
