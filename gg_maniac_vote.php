@@ -53,6 +53,20 @@ echo <<<DOCHERE
 
 	<h1><a href="gg_maniacs.php">Gamma Gamma Maniacs!</a></h1>
 	<div class="newsItem">
+	    <h2 class="center">DP Semester GG Maniacs!</h2>
+	    <div class="collage-container">
+		<div class="collage-pictures">
+			<div class="person-picture">
+				<p class="center">Pia Lopez</p>
+			</div>
+			<div class="person-picture">
+				<p class="center">Kyle Tse</p>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+	    </div>
+	</div>
+	<div class="newsItem">
 	    <h2 class="center">MMC Semester GG Maniacs!</h2>
 	    <div class="collage-container">
 		<div class="collage-pictures">

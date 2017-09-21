@@ -36,6 +36,41 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 3 Recap</h2>
+        <p class="date">September 21, 2017 at 4:15pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+            As we welcome our new pledges, please keep in mind what was gone over in today’s CM about creating a safe and welcoming environment for pledges. Our main goal as a chapter in addition to service is to ensure that we have a community that everyone feels comfortable in. If you have any questions or concerns, please feel free to reach out to a member of ExComm.
+            <br><br>
+            On a separate note, we still need chairs! Please contact Hermes or Sierra if you would like to chair for one of their positions.
+        </p>
+
+        <p style="margin-bottom: 1em 0px;">
+            <b><u>FINANCE VP:</u></b><br>
+            <b> Concessions </b>(∞)<br>
+        </p>
+        <p style="margin-bottom: 1em 0px;">
+            <b><u>FELLOWSHIP VP:</u></b><br>
+            <b> Roll Call </b>(3-4) - You don't have to be a dancer<br>
+            <b> Hotspot </b>(1) - Must be able to fill Tues 12-2pm slot<br>
+        </p>
+        <br>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 3:<br>
+            <a href="https://docs.google.com/presentation/d/1UKt_NmpzUldRXyPAI2XP33cvMhcUbrAqtNQIGixXiT8/edit?usp=sharing" target="_blank">CM 3 Slides</a><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU9x4odc7HkKyVs60i-9MzqTeKbCG9EvS1SIAMzPkzW8poYw/viewform" target="_blank">Fall Fellowship Registration/Info</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=131" target="_blank">CM 4 GG Maniac (Cannot vote for past pledge/GG maniacs, ExComm/DComm/PComm)</a><br>
+            <a href="https://goo.gl/forms/lA3O4FPVsitkxStX2" target="_blank">Caption Contest</a><br>
+            <a href="https://docs.google.com/document/d/1lV7RILSiour6ldjJ2jeZlql792LzcFAgrcEGhUKZmlc/edit?usp=sharing" target="_blank">Smugmug, Chegg, CourseHero Logins and Princeton Review Discount Code</a><br>
+            <a href="https://www.youtube.com/watch?v=rzh4xyx3YL0">CM 3 Video</a>
+
+            <p>- <a href="profile.php?user_id=3571">Bianca Hsueh (RBD)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+    <div class="newsItem">
         <h2>CM 2 Recap</h2>
         <p class="date">September 14, 2017 at 9:01pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
@@ -73,7 +108,9 @@ if (!$g_user->is_logged_in()) {
             <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
         </p>
     </div>
+<?php endif ?>
 
+<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <div class="newsItem">
         <h2>CM 1 Recap</h2>
         <p class="date">August 30, 2017 at 5:11pm</p>
