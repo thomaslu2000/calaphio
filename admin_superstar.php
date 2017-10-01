@@ -33,7 +33,7 @@ if (!$g_user->is_logged_in()) {
 	trigger_error("You must be logged in to view this page.");
 } else {
 $import_http_request = array(
-	"start" => date("2016-12-06"),
+	"start" => date("2017-05-03"),
 	"end" => date("Y-m-d", strtotime("now"))
 	);
 foreach ($import_http_request as $var => $default) {
