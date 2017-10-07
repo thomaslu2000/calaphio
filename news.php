@@ -58,7 +58,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
             <a href="/stylus/CM4_Stylus.pdf" target="_blank">Stylus</a><br>
             <a href="https://goo.gl/forms/SMoDDzzhXj5DSyyi1" target="_blank">Caption Contest</a><br>
-            <a href="https://www.youtube.com/watch?v=HANneC7jTd0">CM 3 Video</a>
+            <a href="https://www.youtube.com/watch?v=HANneC7jTd0">CM 4 Video</a>
 
             <p>- <a href="profile.php?user_id=4630">Ryan Lee (MMC)</a></p>
         </p>
