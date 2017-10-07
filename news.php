@@ -42,15 +42,14 @@ if (!$g_user->is_logged_in()) {
         <p style="margin: 0.5em 0px;">
             As a reminder, if you do service alone, you must take a picture of yourself at the service event, and then upload it to SmugMug (please do not email them to Kerry!).The following committees need people to help them out! Please talk to one of the chairs (in parentheses) of the committee to join: 
         </p>
-        <br>
-        <ul style="list-style-type:disc">
-            <li> Stylus (<i>Colleen Yu, Pia Lopez, Shengmin Xiao</i>) </li>
-            <li> FunPack (<i>Lara Yedikian, Karissa Lapuz</i>) </li>
-            <li> Hot Spot (<i>Eric Liu, Lara Yedikian</i>) </li>
-            <li> Roll Call (<i>Shengmin Xiao</i> - <a href="https://goo.gl/forms/ea8LpljdeZceyVBi1" target="_blank"></a> ) </li>
-            <li> Banquet (<i>Gene Ho, Jia Chen, Hyeonji Shim</i>) </li>
-            <li> Film (<i>Laura Zhu, Christina Liu</i>) </li>
-            <li> Photography (<i> Stanley Shaw, Lily Huang</i>) </li>
+        <ul>
+            <li style="list-style-type:disc; margin-left: 2em;"> Stylus (<i>Colleen Yu, Pia Lopez, Shengmin Xiao</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> FunPack (<i>Lara Yedikian, Karissa Lapuz</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Hot Spot (<i>Eric Liu, Lara Yedikian</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Roll Call (<i>Shengmin Xiao</i> - <a href="https://goo.gl/forms/ea8LpljdeZceyVBi1" target="_blank"></a> ) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Banquet (<i>Gene Ho, Jia Chen, Hyeonji Shim</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Film (<i>Laura Zhu, Christina Liu</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Photography (<i> Stanley Shaw, Lily Huang</i>) </li>
         </ul>
         <br>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 4:<br>
