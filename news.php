@@ -46,7 +46,7 @@ if (!$g_user->is_logged_in()) {
             <li style="list-style-type:disc; margin-left: 2em;"> Stylus (<i>Colleen Yu, Pia Lopez, Shengmin Xiao</i>) </li>
             <li style="list-style-type:disc; margin-left: 2em;"> FunPack (<i>Lara Yedikian, Karissa Lapuz</i>) </li>
             <li style="list-style-type:disc; margin-left: 2em;"> Hot Spot (<i>Eric Liu, Lara Yedikian</i>) </li>
-            <li style="list-style-type:disc; margin-left: 2em;"> Roll Call (<i>Shengmin Xiao</i> - <a href="https://goo.gl/forms/ea8LpljdeZceyVBi1" target="_blank"></a> ) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Roll Call (<i>Shengmin Xiao</i> - <a href="https://goo.gl/forms/ea8LpljdeZceyVBi1" target="_blank">Roll Call Form</a> ) </li>
             <li style="list-style-type:disc; margin-left: 2em;"> Banquet (<i>Gene Ho, Jia Chen, Hyeonji Shim</i>) </li>
             <li style="list-style-type:disc; margin-left: 2em;"> Film (<i>Laura Zhu, Christina Liu</i>) </li>
             <li style="list-style-type:disc; margin-left: 2em;"> Photography (<i> Stanley Shaw, Lily Huang</i>) </li>
