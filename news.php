@@ -36,6 +36,40 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 4 Recap</h2>
+        <p class="date">October 7, 2017 at 1:20pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+            As a reminder, if you do service alone, you must take a picture of yourself at the service event, and then upload it to SmugMug (please do not email them to Kerry!).The following committees need people to help them out! Please talk to one of the chairs (in parentheses) of the committee to join: 
+        </p>
+        <br>
+        <ul>
+            <li> Stylus (<i> Colleen Yu, Pia Lopez, Shengmin Xiao </i>) </li>
+            <li> FunPack (<i> Lara Yedikian, Karissa Lapuz </i>) </li>
+            <li> Hot Spot (<i> Eric Liu, Lara Yedikian </i>) </li>
+            <li> Roll Call (<i> Shengmin Xiao </i> - https://goo.gl/forms/ea8LpljdeZceyVBi1 ) </li>
+            <li> Banquet (<i> Gene Ho, Jia Chen, Hyeonji Shim </i>) </li>
+            <li> Film (<i> Laura Zhu, Christina Liu </i>) </li>
+            <li> Photography (<i> Stanley Shaw, Lily Huang </i>) </li>
+        </ul>
+        <br>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 4:<br>
+            <a href="https://docs.google.com/presentation/d/14CrjskmVmdxZ9xkyk81sZOgvF5ByXFwbDTmkZYOtSv4/edit?usp=sharing" target="_blank">CM 4 Slides</a><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU9x4odc7HkKyVs60i-9MzqTeKbCG9EvS1SIAMzPkzW8poYw/viewform" target="_blank">Fall Fellowship Registration/Info</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
+            <a href="/stylus/CM4_Stylus.pdf" target="_blank">Stylus</a><br>
+            <a href="https://goo.gl/forms/SMoDDzzhXj5DSyyi1" target="_blank">Caption Contest</a><br>
+            <a href="https://www.youtube.com/watch?v=HANneC7jTd0">CM 3 Video</a>
+
+            <p>- <a href="profile.php?user_id=4630">Ryan Lee (MMC)</a></p>
+        </p>
+
+
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 3 Recap</h2>
         <p class="date">September 21, 2017 at 4:15pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
