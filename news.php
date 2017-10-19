@@ -36,6 +36,41 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 5 Recap</h2>
+        <p class="date">October 18, 2017 at 6:20pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+            Campout has been moved to Nov 10-11 at Camp Herms! Drivers are needed, so please post whether you can drive or not. The following committees need people to help them out! Please talk to one of the chairs (in parentheses) of the committee to join:         
+        </p>
+        <ul>
+            <li style="list-style-type:disc; margin-left: 2em;"> Stylus (<i>Colleen Yu, Pia Lopez, Shengmin Xiao</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> FunPack (<i>Lara Yedikian, Karissa Lapuz</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Roll Call (<i>Shengmin Xiao</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Banquet (<i>Gene Ho, Jia Chen, Hyeonji Shim</i> - <a href="https://goo.gl/forms/pzMOiZxFaaaylsHg1" target="_blank">Banquet Form</a> ) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Film (<i>Laura Zhu, Christina Liu</i>) </li>
+            <li style="list-style-type:disc; margin-left: 2em;"> Photography (<i> Stanley Shaw, Lily Huang</i>) </li>
+        </ul>
+        <p style="margin: 0.5em 0px;">
+            If you are interested in being pen pals with a brother from UIUC, please message Joseph for more information!
+        </p>
+        <br>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 5:<br>
+            <a href="https://docs.google.com/presentation/d/14CrjskmVmdxZ9xkyk81sZOgvF5ByXFwbDTmkZYOtSv4/edit?usp=sharing" target="_blank">CM 5 Slides</a><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU9x4odc7HkKyVs60i-9MzqTeKbCG9EvS1SIAMzPkzW8poYw/viewform" target="_blank">Fall Fellowship Registration/Info: Please fill this form out by the end of the week, so that rides can be arranged!</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
+            <a href="/stylus/CM5_Stylus.pdf" target="_blank">Stylus</a><br>
+            <a href="https://goo.gl/forms/6G29i05ORDZ3ldLo1" target="_blank">Caption Contest</a><br>
+            <a href="https://www.youtube.com/watch?v=k0qxgSqQbkk">CM 5 Video</a>
+
+            <p>- <a href="profile.php?user_id=4630">Ryan Lee (MMC)</a></p>
+        </p>
+
+
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 4 Recap</h2>
         <p class="date">October 7, 2017 at 1:20pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
