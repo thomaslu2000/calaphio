@@ -55,7 +55,7 @@ if (!$g_user->is_logged_in()) {
         </p>
         <br>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 5:<br>
-            <a href="https://docs.google.com/presentation/d/14CrjskmVmdxZ9xkyk81sZOgvF5ByXFwbDTmkZYOtSv4/edit?usp=sharing" target="_blank">CM 5 Slides</a><br>
+            <a href="https://docs.google.com/presentation/d/1zHKjMnowMLo_pABU7fPIpAkkpL9NYJkfcevrjTEeV_A/edit?usp=sharing" target="_blank">CM 5 Slides</a><br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU9x4odc7HkKyVs60i-9MzqTeKbCG9EvS1SIAMzPkzW8poYw/viewform" target="_blank">Fall Fellowship Registration/Info: Please fill this form out by the end of the week, so that rides can be arranged!</a><br>
             <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
             <a href="/stylus/CM5_Stylus.pdf" target="_blank">Stylus</a><br>
