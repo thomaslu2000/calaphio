@@ -36,6 +36,32 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 6 Recap</h2>
+        <p class="date">November 1, 2017 at 4:23pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+            Nominations <br>
+            Congratulations to all of our nominees! Just a reminder that any active is able to run for an ExComm position, regardless if they have a nomination or not. Therefore, if you plan on running, please email your platform to admin-vp@calaphio.com by <b>Sunday, 11/12 11:59pm</b>. If you have any questions about any ExComm position, feel free to talk to anyone on ExComm and we will share with you our thoughts!
+            <a href="https://docs.google.com/spreadsheets/d/1GzWw27HozuImRkISRc0K1UID810DkKYpMAK3mJiIkRU/edit?usp=sharing" target="_blank">Click here to view nominations.</a>
+        </p>
+        <br>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 6:<br>
+            <a href="https://docs.google.com/presentation/d/1C3sqPUIMP64iuerO84xTHHwCUNXXSoG5DiFy86gvBFg/edit?usp=sharing" target="_blank">CM 6 Slides</a><br>
+            <a href="https://goo.gl/forms/Jo6gtPxpLsXNrn8P2" target="_blank">Fill out this form if you are going to Fall Fellowship!</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
+            <a href="/stylus/fa17/CM6_Stylus.pdf" target="_blank">Stylus</a><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxjhKWXDYQuROJToXT9DQ1AefSdA5tPZT5E5eyqlZSK17yJA/viewform?vc=0&c=0&w=1" target="_blank">Gear Order Form</a><br>
+            <a href="https://goo.gl/forms/0l3xciwCr9iSvMAC3" target="_blank">Banquet RSVP Form</a><br>
+            <a href="https://goo.gl/forms/1gj1eKBTFxPJ32Iu2" target="_blank">Caption Contest</a><br>
+            <a href="https://www.youtube.com/watch?v=VqdJmVCB7F4">CM 5 Video</a>
+
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 5 Recap</h2>
         <p class="date">October 18, 2017 at 6:20pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
@@ -58,7 +84,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://docs.google.com/presentation/d/1zHKjMnowMLo_pABU7fPIpAkkpL9NYJkfcevrjTEeV_A/edit?usp=sharing" target="_blank">CM 5 Slides</a><br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU9x4odc7HkKyVs60i-9MzqTeKbCG9EvS1SIAMzPkzW8poYw/viewform" target="_blank">Fall Fellowship Registration/Info: Please fill this form out by the end of the week, so that rides can be arranged!</a><br>
             <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
-            <a href="/stylus/CM5_Stylus.pdf" target="_blank">Stylus</a><br>
+            <a href="/stylus/fa17/CM5_Stylus.pdf" target="_blank">Stylus</a><br>
             <a href="https://goo.gl/forms/6G29i05ORDZ3ldLo1" target="_blank">Caption Contest</a><br>
             <a href="https://www.youtube.com/watch?v=k0qxgSqQbkk">CM 5 Video</a>
 
@@ -91,7 +117,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://docs.google.com/presentation/d/14CrjskmVmdxZ9xkyk81sZOgvF5ByXFwbDTmkZYOtSv4/edit?usp=sharing" target="_blank">CM 4 Slides</a><br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU9x4odc7HkKyVs60i-9MzqTeKbCG9EvS1SIAMzPkzW8poYw/viewform" target="_blank">Fall Fellowship Registration/Info</a><br>
             <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
-            <a href="/stylus/CM4_Stylus.pdf" target="_blank">Stylus</a><br>
+            <a href="/stylus/fa17/CM4_Stylus.pdf" target="_blank">Stylus</a><br>
             <a href="https://goo.gl/forms/SMoDDzzhXj5DSyyi1" target="_blank">Caption Contest</a><br>
             <a href="https://www.youtube.com/watch?v=HANneC7jTd0">CM 4 Video</a>
 
