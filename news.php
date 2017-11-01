@@ -40,9 +40,9 @@ if (!$g_user->is_logged_in()) {
         <p class="date">November 1, 2017 at 4:23pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
         <p style="margin: 0.5em 0px;">
-            Nominations <br>
+            <a href="https://docs.google.com/spreadsheets/d/1GzWw27HozuImRkISRc0K1UID810DkKYpMAK3mJiIkRU/edit?usp=sharing" target="_blank">Nominations</a> <br>
             Congratulations to all of our nominees! Just a reminder that any active is able to run for an ExComm position, regardless if they have a nomination or not. Therefore, if you plan on running, please email your platform to admin-vp@calaphio.com by <b>Sunday, 11/12 11:59pm</b>. If you have any questions about any ExComm position, feel free to talk to anyone on ExComm and we will share with you our thoughts!
-            <a href="https://docs.google.com/spreadsheets/d/1GzWw27HozuImRkISRc0K1UID810DkKYpMAK3mJiIkRU/edit?usp=sharing" target="_blank">Click here to view nominations.</a>
+            
         </p>
         <br>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 6:<br>
@@ -53,7 +53,7 @@ if (!$g_user->is_logged_in()) {
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxjhKWXDYQuROJToXT9DQ1AefSdA5tPZT5E5eyqlZSK17yJA/viewform?vc=0&c=0&w=1" target="_blank">Gear Order Form</a><br>
             <a href="https://goo.gl/forms/0l3xciwCr9iSvMAC3" target="_blank">Banquet RSVP Form</a><br>
             <a href="https://goo.gl/forms/1gj1eKBTFxPJ32Iu2" target="_blank">Caption Contest</a><br>
-            <a href="https://www.youtube.com/watch?v=VqdJmVCB7F4">CM 5 Video</a>
+            <a href="https://www.youtube.com/watch?v=VqdJmVCB7F4">CM 6 Video</a>
 
             <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
         </p>
