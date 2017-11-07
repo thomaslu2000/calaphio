@@ -65,7 +65,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 	trigger_error("You must be logged in as an admin to access this feature", E_USER_ERROR);
 } else {
 	
-	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass FROM apo_users join apo_actives using (user_id, firstname,lastname) order by lastname, firstname"));
+	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass FROM apo_users join apo_actives using (user_id) order by lastname, firstname"));
 
 	$start_date = strtotime("2016-12-06");
 	$end_date = strtotime("2017-05-05");
