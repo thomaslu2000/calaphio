@@ -51,7 +51,7 @@ if (!$g_user->is_logged_in()) {
                     <p style="padding: 3 0;"><a href="/fall2017_platforms/president.pdf" target="_blank">Stanley Shaw</a></p>
                 </div>
 
-                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                <div class="span2" style="margin: 1.5em 0px .5em 0px;">
                     <b><u>SERVICE VP:</u></b><br>
                     <p style="padding: 3 0;"><a href="/fall2017_platforms/svp.pdf" target="_blank">Edith Lai</a></p>
                 </div>
@@ -61,12 +61,12 @@ if (!$g_user->is_logged_in()) {
                     <p style="padding: 3 0;"><a href="/fall2017_platforms/pm.pdf" target="_blank">Qiao Li</a></p>
                 </div>
 
-                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                <div class="span4" style="margin: 1.5em 0px .5em 0px;">
                     <b><u>FINANCE VP:</u></b><br>
                     <p style="padding: 3 0;"><a href="/fall2017_platforms/finvp.pdf" target="_blank">Shengmin Xiao</a></p>
                 </div>
 
-                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                <div class="span4" style="margin: 1.5em 0px .5em 0px;">
                     <b><u>FELLOWSHIP VP:</u></b><br>
                     <p style="padding: 3 0;"><a href="/fall2017_platforms/fvp.pdf" target="_blank">Seline Ting</a></p>
                 </div>
