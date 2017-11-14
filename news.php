@@ -35,6 +35,53 @@ if (!$g_user->is_logged_in()) {
 ?>
 
 <?php if ($g_user->is_logged_in()): ?>
+
+    <div class="newsItem">
+            <h2>Election Platforms</h2>
+            <p class="date">November 13, 2016 at 5:30pm</p>
+
+        <p style="margin: 1.5em 0px .5em 0px;">
+            Thank you again to those who submitted platforms for elections! Here are the following submissions for each position:
+        </p>
+
+        <div>
+            <div class="row">
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>PRESIDENT:</u></b><br>
+                    <p style="padding: 3 0;"><a href="/fall2017_platforms/president.pdf" target="_blank">Stanley Shaw</a></p>
+                </div>
+
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>SERVICE VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="https://docs.google.com/document/d/1G5w8WFckEQN6S7DNhutwWBSghmTa9euhSIUxiKeV65g/edit" target="_blank">Edith Lai</a></p>
+                </div>
+
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>PLEDGEMASTER:</u></b><br>
+                    <p style="padding: 3 0;"><a href="/fall2017_platforms/pm.docx" target="_blank">Qiao Li</a></p>
+                </div>
+
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>FINANCE VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="/fall2017_platforms/finvp.pdf" target="_blank">Shengmin Xiao</a></p>
+                </div>
+
+                <div class="span3" style="margin: 1.5em 0px .5em 0px;">
+                    <b><u>FELLOWSHIP VP:</u></b><br>
+                    <p style="padding: 3 0;"><a href="/fall2017_platforms/fvp.pdf" target="_blank">Seline Ting</a></p>
+                </div>
+            </div>
+        </div>
+
+        <p style="margin: 1.5em 0px;">
+            I highly encourage all actives and pledges to read over each platform prior to Elections. In addition, if you did not submit a platform, you may still run on the day of Elections. Good luck to everyone who runs for an ExComm position!
+        </p>
+        
+        <p>- <a href="profile.php?user_id=2978">Ryan Lee (MMC)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 6 Recap</h2>
         <p class="date">November 1, 2017 at 4:23pm</p>
