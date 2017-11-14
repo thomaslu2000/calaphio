@@ -22,7 +22,7 @@ echo $gg_maniac_nag->display();
 // $shoutbox->process();
 // echo $shoutbox->display();
 
-$calendar->print_upcoming_events(5);
+// $calendar->print_upcoming_events(5);
 
 $g_user->process_mailer(false);
 $g_user->print_mailer(false);
