@@ -53,12 +53,12 @@ if (!$g_user->is_logged_in()) {
 
                 <div class="span3" style="margin: 1.5em 0px .5em 0px;">
                     <b><u>SERVICE VP:</u></b><br>
-                    <p style="padding: 3 0;"><a href="https://docs.google.com/document/d/1G5w8WFckEQN6S7DNhutwWBSghmTa9euhSIUxiKeV65g/edit" target="_blank">Edith Lai</a></p>
+                    <p style="padding: 3 0;"><a href="/fall2017_platforms/svp.pdf" target="_blank">Edith Lai</a></p>
                 </div>
 
                 <div class="span3" style="margin: 1.5em 0px .5em 0px;">
                     <b><u>PLEDGEMASTER:</u></b><br>
-                    <p style="padding: 3 0;"><a href="/fall2017_platforms/pm.docx" target="_blank">Qiao Li</a></p>
+                    <p style="padding: 3 0;"><a href="/fall2017_platforms/pm.pdf" target="_blank">Qiao Li</a></p>
                 </div>
 
                 <div class="span3" style="margin: 1.5em 0px .5em 0px;">
