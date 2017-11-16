@@ -35,7 +35,29 @@ if (!$g_user->is_logged_in()) {
 ?>
 
 <?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>CM 7 Recap</h2>
+        <p class="date">November 15, 2017 at 5:32pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+            First, as mentioned during CM, please do <b>NOT</b> bring/eat food in our reserved rooms when we are having APO events. Second, thank you to all of the nominees for running for ExComm positions during Elections! It was wonderful seeing all of the new ideas brought forward on how our chapter can improve. Finally, good luck to all of the pledges on the upcoming pledge test!  
+        </p>
+        <br>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 7:<br>
+            <a href="https://docs.google.com/presentation/d/1l8QmZENa7EC_cejiBfUx0v2o8PNUCmpakuLcBrH9MaA/edit?usp=sharing" target="_blank">CM 7 Slides</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
+            <a href="https://docs.google.com/spreadsheets/d/1bk1E2z-1zXbbBDHyPs84ZflJ3Xurfh1PwmhZ4CtD-cg/edit#gid=0" target="_blank">Fall Fellowship Logistics/Rides</a><br>
+            <a href="/stylus/fa17/CM7_Stylus.pdf" target="_blank">Stylus</a><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxjhKWXDYQuROJToXT9DQ1AefSdA5tPZT5E5eyqlZSK17yJA/viewform?vc=0&c=0&w=1" target="_blank">Gear Order Form</a><br>
+            <a href="https://goo.gl/forms/Pi7tI0smuY3IRQaH3" target="_blank">Caption Contest</a><br>
+            <a href="https://www.youtube.com/watch?v=0yDqRug7QyA">CM 7 Video</a>
 
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
             <h2>Election Platforms</h2>
             <p class="date">November 13, 2016 at 5:30pm</p>
