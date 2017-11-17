@@ -45,6 +45,7 @@ if (!$g_user->is_logged_in()) {
         <br>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 7:<br>
             <a href="https://docs.google.com/presentation/d/1l8QmZENa7EC_cejiBfUx0v2o8PNUCmpakuLcBrH9MaA/edit?usp=sharing" target="_blank">CM 7 Slides</a><br>
+            <a href="https://goo.gl/forms/j2ENerwynT2tfrvU2" target="_blank">Banquet Grams Form</a><br>
             <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
             <a href="https://docs.google.com/spreadsheets/d/1bk1E2z-1zXbbBDHyPs84ZflJ3Xurfh1PwmhZ4CtD-cg/edit#gid=0" target="_blank">Fall Fellowship Logistics/Rides</a><br>
             <a href="/stylus/fa17/CM7_Stylus.pdf" target="_blank">Stylus</a><br>
