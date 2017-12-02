@@ -42,42 +42,42 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/stan2.jpg" onmouseover="this.src='images/excomm_sp18/stan.jpg'" onmouseout="this.src='images/excomm_sp18/stan.jpg'"></img></a>
+                    <a href="profile.php?user_id=3292"><img src="images/excomm_sp18/stan2.jpg" onmouseover="this.src='images/excomm_sp18/stan.jpg'" onmouseout="this.src='images/excomm_sp18/stan.jpg'"></img></a>
                     <p class="center"><strong>President</strong>: <br><a href="pro2file.php?user_id=3292">Stanley Shaw</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/edith2.jpg" onmouseover="this.src='images/excomm_sp18/edith.jpg'" onmouseout="this.src='images/excomm_sp18/edith2.jpg'"></img></a>
+                    <a href="profile.php?user_id=4607"><img src="images/excomm_sp18/edith2.jpg" onmouseover="this.src='images/excomm_sp18/edith.jpg'" onmouseout="this.src='images/excomm_sp18/edith2.jpg'"></img></a>
                     <p class="center"><strong>Service VP</strong>: <br><a href="profile.php?user_id=4607">Edith Lai</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/qiao2.jpg" onmouseover="this.src='images/excomm_sp18/qiao.jpg'" onmouseout="this.src='images/excomm_sp18/qiao2.jpg'"></img></a>
+                    <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao2.jpg" onmouseover="this.src='images/excomm_sp18/qiao.jpg'" onmouseout="this.src='images/excomm_sp18/qiao2.jpg'"></img></a>
                     <p class="center"><strong>Pledgemaster</strong>: <br><a href="profile.php?user_id=3617">Qiao Li</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/melissa2.jpg" onmouseover="this.src='images/excomm_sp18/melissa.jpg'" onmouseout="this.src='images/excomm_sp18/melissa2.jpg'"></img></a>
+                    <a href="profile.php?user_id=3628"><img src="images/excomm_sp18/melissa2.jpg" onmouseover="this.src='images/excomm_sp18/melissa.jpg'" onmouseout="this.src='images/excomm_sp18/melissa2.jpg'"></img></a>
                     <p class="center"><strong>Administrative VP</strong>: <br><a href="profile.php?user_id=3628">Melissa Quach</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/iris2.jpg" onmouseover="this.src='images/excomm_sp18/iris.jpg'" onmouseout="this.src='images/excomm_sp18/iris2.jpg'"></img></a>
+                    <a href="profile.php?user_id=4613"><img src="images/excomm_sp18/iris2.jpg" onmouseover="this.src='images/excomm_sp18/iris.jpg'" onmouseout="this.src='images/excomm_sp18/iris2.jpg'"></img></a>
                     <p class="center"><strong>Membership VP</strong>: <br><a href="profile.php?user_id=4613">Iris Xu</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/shengmin2.jpg" onmouseover="this.src='images/excomm_sp18/shengmin.jpg'" onmouseout="this.src='images/excomm_sp18/shengmin2.jpg'"></img></a>
+                    <a href="profile.php?user_id=4622"><img src="images/excomm_sp18/shengmin2.jpg" onmouseover="this.src='images/excomm_sp18/shengmin.jpg'" onmouseout="this.src='images/excomm_sp18/shengmin2.jpg'"></img></a>
                     <p class="center"><strong>Finance VP</strong>: <br><a href="profile.php?user_id=4622">Shengmin Xiao</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/yanni2.jpg" onmouseover="this.src='images/excomm_sp18/yanni.jpg'" onmouseout="this.src='images/excomm_sp18/yanni2.jpg'"></img></a>
+                    <a href="profile.php?user_id=3608"><img src="images/excomm_sp18/yanni2.jpg" onmouseover="this.src='images/excomm_sp18/yanni.jpg'" onmouseout="this.src='images/excomm_sp18/yanni2.jpg'"></img></a>
                     <p class="center"><strong>Fellowship VP</strong>: <br><a href="profile.php?user_id=3608">Yanni Guo</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/shao2.jpg" onmouseover="this.src='images/excomm_sp18/shao.jpg'" onmouseout="this.src='images/excomm_sp18/shao2.jpg'"></img></a>
+                    <a href="profile.php?user_id=3639"><img src="images/excomm_sp18/shao2.jpg" onmouseover="this.src='images/excomm_sp18/shao.jpg'" onmouseout="this.src='images/excomm_sp18/shao2.jpg'"></img></a>
                     <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=3639">Shao Xu</a></p>
                 </div>
             </div>
