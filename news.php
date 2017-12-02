@@ -63,11 +63,6 @@ if (!$g_user->is_logged_in()) {
     </div>
 <?php endif ?>
 
-if (!$g_user->is_logged_in()) {
-    echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
-}
-?>
-
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 7 Recap</h2>
