@@ -28,22 +28,52 @@ $g_user->process_mailer(false);
 $g_user->print_mailer(false);
 $g_user->print_personal_messages();
 
-
 if (!$g_user->is_logged_in()) {
     echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
 }
 ?>
 
-<?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
+<?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
-            <h2>Test Post</h2>
-            <p class="date">August 25, 2017 at 7:30pm</p>
+        <br/>
+        <h2>Congrats to the Fall 2017 Dynasty Directors!</h2>
+        <p class="date">December 2, 2017 at 2:29pm</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_fa17/caro.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/caro.jpg'"></img></a>
+                    <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=2902">Caroline Ba</a></p>
+                </div>
 
-        <p style="margin-bottom: 1em">
-        Sup fam<br>
-        </p>
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/kevin.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/kevin.jpg'"></img></a>
+                    <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=3615">Kevin Lay</a></p>
+                </div>
 
-        <p>- <a href="profile.php?user_id=3571">Bianca Hsueh (RBD)</a></p>
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/ariel.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/Ariel.jpg'"></img></a>
+                    <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=3630">Ariel Tsay</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/sam.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/sam.jpg'"></img></a>
+                    <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=3620">Sam Mahdad</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/josh.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/josh.jpg'"></img></a>
+                    <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=3573">Josh Jacobs</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/miranda.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/miranda.jpg'"></img></a>
+                    <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=3599">Miranda Zhou</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
     </div>
 <?php endif ?>
 
