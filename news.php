@@ -36,6 +36,60 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <br/>
+        <h2>Congrats to the Spring 2018 Executive Committee!</h2>
+        <p class="date">December 2, 2017 at 2:31pm</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/stan2.jpg" onmouseover="this.src='images/excomm_sp18/stan.jpg'" onmouseout="this.src='images/excomm_sp18/stan.jpg'"></img></a>
+                    <p class="center"><strong>President</strong>: <br><a href="pro2file.php?user_id=3292">Stanley Shaw</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/edith2.jpg" onmouseover="this.src='images/excomm_sp18/edith.jpg'" onmouseout="this.src='images/excomm_sp18/edith2.jpg'"></img></a>
+                    <p class="center"><strong>Service VP</strong>: <br><a href="profile.php?user_id=4607">Edith Lai</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/qiao2.jpg" onmouseover="this.src='images/excomm_sp18/qiao.jpg'" onmouseout="this.src='images/excomm_sp18/qiao2.jpg'"></img></a>
+                    <p class="center"><strong>Pledgemaster</strong>: <br><a href="profile.php?user_id=3617">Qiao Li</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/melissa2.jpg" onmouseover="this.src='images/excomm_sp18/melissa.jpg'" onmouseout="this.src='images/excomm_sp18/melissa2.jpg'"></img></a>
+                    <p class="center"><strong>Administrative VP</strong>: <br><a href="profile.php?user_id=3628">Melissa Quach</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/iris2.jpg" onmouseover="this.src='images/excomm_sp18/iris.jpg'" onmouseout="this.src='images/excomm_sp18/iris2.jpg'"></img></a>
+                    <p class="center"><strong>Membership VP</strong>: <br><a href="profile.php?user_id=4613">Iris Xu</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/shengmin2.jpg" onmouseover="this.src='images/excomm_sp18/shengmin.jpg'" onmouseout="this.src='images/excomm_sp18/shengmin2.jpg'"></img></a>
+                    <p class="center"><strong>Finance VP</strong>: <br><a href="profile.php?user_id=4622">Shengmin Xiao</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/yanni2.jpg" onmouseover="this.src='images/excomm_sp18/yanni.jpg'" onmouseout="this.src='images/excomm_sp18/yanni2.jpg'"></img></a>
+                    <p class="center"><strong>Fellowship VP</strong>: <br><a href="profile.php?user_id=3608">Yanni Guo</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=2929"><img src="images/excomm_sp18/shao2.jpg" onmouseover="this.src='images/excomm_sp18/shao.jpg'" onmouseout="this.src='images/excomm_sp18/shao2.jpg'"></img></a>
+                    <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=3639">Shao Xu</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 8 Recap</h2>
         <p class="date">December 1, 2017 at 10:00pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
