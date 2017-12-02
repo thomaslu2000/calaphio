@@ -19,6 +19,38 @@ Template::print_body_header('Home', 'NEWS');
 		<div class="person-picture">
 			<p class="center">Kyle Tse</p>
 		</div>
+		<div class="person-picture">
+			<p class="center">Karissa Lapuz</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Eric Liu</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Jeffrey Zhang</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Iris Xu</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Lara Yedikian</p>
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+    </div>
+</div>
+<div class="newsItem">
+    <h2 class="center">DP Semester Pledge Maniacs!</h2>
+    <div class="collage-container">
+	<div class="collage-pictures">
+		<div class="person-picture">
+			<p class="center">Richard Nguyen</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Pearl Yang</p>
+		</div>
+		<div class="person-picture">
+			<p class="center">Michelle Zhao</p>
+		</div>
 	</div>
 	<div style="clear: left;"></div>
     </div>

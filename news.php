@@ -36,6 +36,40 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 8 Recap</h2>
+        <p class="date">December 1, 2017 at 10:00pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+            As we approach the end of the semester, please be sure to evaluate all of your events, so that actives have an accurate record of their requirements.
+        </p>
+        <p style="margin: 0.5em 0px;">
+            Congratulations to all of our DP pledges for successfully completing pledging! We are all excited to see what you will do in the chapter in the future, so good luck to all of you! As you are all actives, you now have access to our Smugmug, Chegg, and CourseHero accounts; information for the accounts is listed below. Please do not share the account information with people outside of APO, or with pledges in future semesters as our academic resources are an active privilege.
+        </p>
+        <br>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 8:<br>
+            <a href="https://docs.google.com/presentation/d/13NdhWM6zLuFcp75D8M91LUJeqSNmbIBj3ZJFNsvUqkI/edit?usp=sharing" target="_blank">CM 8 Slides</a><br>
+            <a href="https://goo.gl/forms/j2ENerwynT2tfrvU2" target="_blank">Banquet Grams Form</a><br>
+            <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
+            <a href="https://drive.google.com/drive/folders/1R8rxvyuNB_8ueSkCqKIb5lDVZJBdFG-B" target="_blank">Stylus</a><br>
+            <a href="https://docs.google.com/document/d/1lV7RILSiour6ldjJ2jeZlql792LzcFAgrcEGhUKZmlc/edit?usp=sharing" target="_blank">Smugmug, Chegg, CourseHero Logins and Princeton Review Discount Code: </a><br>
+
+        <p style="margin: 0.5em 0px;">
+            Good luck with finals everyone!
+        </p>
+        <br>
+
+            <p>- <a href="profile.php?user_id=2978">James Young (TT)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+if (!$g_user->is_logged_in()) {
+    echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
+}
+?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 7 Recap</h2>
         <p class="date">November 15, 2017 at 5:32pm</p>
         <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
