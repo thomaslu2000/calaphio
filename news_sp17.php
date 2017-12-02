@@ -41,32 +41,32 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/dcomm_fa17/caro.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/caro.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_fa17/caro.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_fa17/caro.jpg'"></img></a>
                     <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=2902">Caroline Ba</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/kevin.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/kevin.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_fa17/kevin.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_fa17/kevin.jpg'"></img></a>
                     <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=3615">Kevin Lay</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/ariel.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/Ariel.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_fa17/ariel.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_fa17/Ariel.jpg'"></img></a>
                     <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=3630">Ariel Tsay</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/sam.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/sam.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_fa17/sam.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_fa17/sam.jpg'"></img></a>
                     <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=3620">Sam Mahdad</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/josh.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/josh.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_fa17/josh.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_fa17/josh.jpg'"></img></a>
                     <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=3573">Josh Jacobs</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=2929"><img src="images/dcomm_sp17/miranda.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_sp17/miranda.jpg'"></img></a>
+                    <a href="profile.php?user_id=2929"><img src="images/dcomm_fa17/miranda.jpg" onmouseover="this.src='images/pcomm_sp17/marilyn2.jpg'" onmouseout="this.src='images/dcomm_fa17/miranda.jpg'"></img></a>
                     <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=3599">Miranda Zhou</a></p>
                 </div>
             </div>
