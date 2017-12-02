@@ -48,7 +48,6 @@ if (!$g_user->is_logged_in()) {
         <br>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 8:<br>
             <a href="https://docs.google.com/presentation/d/13NdhWM6zLuFcp75D8M91LUJeqSNmbIBj3ZJFNsvUqkI/edit?usp=sharing" target="_blank">CM 8 Slides</a><br>
-            <a href="https://goo.gl/forms/j2ENerwynT2tfrvU2" target="_blank">Banquet Grams Form</a><br>
             <a href="https://goo.gl/forms/SBxOtddcLhLhTcRe2" target="_blank">Chapter Feedback Form</a><br>
             <a href="stylus/fa17/CM8_Stylus.pdf" target="_blank">Stylus</a><br>
             <a href="https://docs.google.com/document/d/1lV7RILSiour6ldjJ2jeZlql792LzcFAgrcEGhUKZmlc/edit?usp=sharing" target="_blank">Smugmug, Chegg, CourseHero Logins and Princeton Review Discount Code: </a><br>
