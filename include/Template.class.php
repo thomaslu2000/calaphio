@@ -77,7 +77,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/1yQqZmaYAqE8-X82CRVUHxz3bFqRBcD3ERXYypFMyZn8/edit#gid=1920631949",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1_likKooN3V6Zx3a0sYaSdImWtB1ZERMEahTdf9nXofM/edit?usp=sharing",
 				),
 			'Calendar' => array(
 				"HOME" => "news.php",
@@ -86,7 +86,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/1TkP2OkJu74SZQuIwbU23hJdPyxCWc3EVlZqSVjI9EpI/",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1_likKooN3V6Zx3a0sYaSdImWtB1ZERMEahTdf9nXofM/edit?usp=sharing",
 				),
 			'Service' => array(
 				"HOME" => "news.php",
@@ -113,7 +113,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/1TkP2OkJu74SZQuIwbU23hJdPyxCWc3EVlZqSVjI9EpI/",
+				"BUDGET" => "https://docs.google.com/spreadsheets/d/1_likKooN3V6Zx3a0sYaSdImWtB1ZERMEahTdf9nXofM/edit?usp=sharing",
 				),
 			// 'Members' => array(
 			// 	"HOME" => "news.php",
