@@ -34,6 +34,35 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>CM 2 Recap</h2>
+        <p class="date">February 2, 2017 at 10:52pm</p>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 2:<br>
+            <a href="https://docs.google.com/presentation/d/1s5jE8q4m7jCUOvS2wWNvmmGoQtAueVso7iA0PbnI53A/edit?usp=sharing" target="_blank">CM 2 Slides</a><br>
+            <a href="https://www.youtube.com/watch?v=EPDcg6dHOyc" target="_blank">CM 2 Video</a><br>
+            <a href="https://docs.google.com/forms/d/1FgN80OuoJ49-4K6PCJGrK7pEYZIywEILoyhk5aYmUMU/viewform?edit_requested=true" target="_blank">Caption Contest</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=138" target="_blank">CM 3 GG Maniac</a><br>
+            <a href="tinyurl.com/servicebuds" target="_blank">Service Buddies Sign Up</a><br>
+            <a href="tinyurl.com/kittyservice" target="_blank">Interested in volunteering with cats?</a><br>
+
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>CM 1 Recap</h2>
+        <p class="date">January 30, 2017 at 11:15am</p>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 1:<br>
+            <a href="https://docs.google.com/presentation/d/1rzOUkpWzjOHGnuqsk_-doUtlHvFTWBeQKvZG6v9iMKQ/edit?usp=sharing" target="_blank">CM 1 Slides</a><br>
+
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
 <div class="newsItem">
         <h2>Welcome Gamma Gamma!</h2>
         <p style="margin-bottom: 1em">
