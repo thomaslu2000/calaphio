@@ -36,6 +36,26 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 5 Recap</h2>
+        <p>Push through pledges! It’s already pr3 and you’re almost there! Do your hours, go to fellowships, hit up your fam/pbros, and just get to know everyone! As for actives, thank you guys for being you and for helping this chapter thrive! Remember to hit up anyone on Excomm if you have any concerns or recommendations on what we could be doing better! We’re here for you guys, so let’s communicate! </p>
+        <p class="date">March 7, 2018 at 11:56am</p>
+        <p>
+            Dues: $70 until Shengmin yells again. <br>
+            In the description of the venmo payment please put: [FULL NAME]_Dues
+        </p>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 5:<br>
+            <a href="https://docs.google.com/presentation/d/1CKdRner49gnT8cVPlVe4irs9Ysp7NwMgTWkyXSV3wu8/edit?usp=sharing">CM 5 Slides</a><br>
+            <a href="https://www.youtube.com/watch?v=n38pjvTT2gM" target="_blank">CM 5 Video</a><br>
+            <a href="https://docs.google.com/forms/d/1ICA0nq5xscEmHAXCK5OGGPElyLmUHzIm9h42TP35Ecs/edit" target="_blank">Caption Contest</a><br>
+            <a href="https://goo.gl/forms/W3Q49HoBmDBZNNyj2" target="_blank">Chapter Feedback Form</a><br>
+
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 4 Recap</h2>
         <p class="date">March 7, 2018 at 11:56am</p>
         <p> Dues: $60 until CM5 </p>
