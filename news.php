@@ -36,8 +36,23 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 4 Recap</h2>
+        <p class="date">March 7, 2018 at 11:56am</p>
+        <p> Dues: $60 until CM5 </p>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 4:<br>
+            <a href="https://docs.google.com/presentation/d/10Ki9JX1GMC9e-Qf6scBwDPvlX8rMYxpgoeaZnpbLm3Q/edit?usp=sharing" target="_blank">CM 4 Slides</a><br>
+            <a href="https://www.youtube.com/watch?v=syKTFEHTfYc" target="_blank">CM 4 Video</a><br>
+            <a href="https://docs.google.com/forms/d/1jYpbYVNAuX_pZaC0ZuAQYoq99hyG0ele5j0Z5ao7uTg/edit" target="_blank">Caption Contest</a><br>
+
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 3 Recap</h2>
-        <p class="date">February 8, 2017 at 8:52pm</p>
+        <p class="date">February 8, 2018 at 8:52pm</p>
         <p> Welcome to Gamma Gamma, pledges!! xD This semester will be a long and tiring one, but it will be worth it! Don’t stress too much about pledging, and remember to have fun and think about why you decided to first pledge. Never place any Aphio events before your academics, but do try to find a way to manage your time in order to balance out the two! If you ever feel overwhelmed about anything, feel free to message anyone. Good luck this semester! - Melissa </p>
         <p> Dues: $60 until CM6 (cash or checks only. NO VENMO) </p>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 3:<br>
@@ -55,7 +70,7 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 2 Recap</h2>
-        <p class="date">February 2, 2017 at 10:52pm</p>
+        <p class="date">February 2, 2018 at 10:52pm</p>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 2:<br>
             <a href="https://docs.google.com/presentation/d/1s5jE8q4m7jCUOvS2wWNvmmGoQtAueVso7iA0PbnI53A/edit?usp=sharing" target="_blank">CM 2 Slides</a><br>
             <a href="https://www.youtube.com/watch?v=EPDcg6dHOyc" target="_blank">CM 2 Video</a><br>
@@ -72,7 +87,7 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 1 Recap</h2>
-        <p class="date">January 30, 2017 at 11:15am</p>
+        <p class="date">January 30, 2018 at 11:15am</p>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 1:<br>
             <a href="https://docs.google.com/presentation/d/1rzOUkpWzjOHGnuqsk_-doUtlHvFTWBeQKvZG6v9iMKQ/edit?usp=sharing" target="_blank">CM 1 Slides</a><br>
 
