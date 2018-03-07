@@ -36,6 +36,24 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 3 Recap</h2>
+        <p class="date">February 8, 2017 at 8:52pm</p>
+        <p> Welcome to Gamma Gamma, pledges!! xD This semester will be a long and tiring one, but it will be worth it! Don’t stress too much about pledging, and remember to have fun and think about why you decided to first pledge. Never place any Aphio events before your academics, but do try to find a way to manage your time in order to balance out the two! If you ever feel overwhelmed about anything, feel free to message anyone. Good luck this semester! - Melissa </p>
+        <p> Dues: $60 until CM6 (cash or checks only. NO VENMO) </p>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 3:<br>
+            <a href="https://docs.google.com/presentation/d/182SmK016m2b_P4XXuks65WJiEI17-HccIITUCdois9I/edit?usp=sharing" target="_blank">CM 3 Slides</a><br>
+            <a href="https://vimeo.com/254634367?activityReferer=1" target="_blank">CM 3 Video</a><br>
+            <a href="tinyurl.com/captioncontestxDDD" target="_blank">Caption Contest</a><br>
+            <a href="https://members.calaphio.com/gg_maniac_vote.php?id=139" target="_blank">CM 4 GG Maniac </a><br>
+            <a href="https://docs.google.com/forms/d/1x3rj7I7teFdftMdoLj92g-Be_SYUeUL30sHhirFpne0/edit?ts=5a71670c" target="_blank">Alumni Mentorship Program</a><br>
+            <a href="tinyurl.com/stylusxD" target="_blank">Stylus Ideas</a><br>
+            <p>- <a href="profile.php?user_id=4610">Jeffrey Zhang (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 2 Recap</h2>
         <p class="date">February 2, 2017 at 10:52pm</p>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 2:<br>
