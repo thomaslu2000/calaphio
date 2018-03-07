@@ -37,8 +37,8 @@ if (!$g_user->is_logged_in()) {
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 5 Recap</h2>
-        <p>Push through pledges! It’s already pr3 and you’re almost there! Do your hours, go to fellowships, hit up your fam/pbros, and just get to know everyone! As for actives, thank you guys for being you and for helping this chapter thrive! Remember to hit up anyone on Excomm if you have any concerns or recommendations on what we could be doing better! We’re here for you guys, so let’s communicate! </p>
         <p class="date">March 7, 2018 at 11:56am</p>
+        <p>Push through pledges! It’s already pr3 and you’re almost there! Do your hours, go to fellowships, hit up your fam/pbros, and just get to know everyone! As for actives, thank you guys for being you and for helping this chapter thrive! Remember to hit up anyone on Excomm if you have any concerns or recommendations on what we could be doing better! We’re here for you guys, so let’s communicate! </p>
         <p>
             Dues: $70 until Shengmin yells again. <br>
             In the description of the venmo payment please put: [FULL NAME]_Dues
