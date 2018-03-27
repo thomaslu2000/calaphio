@@ -38,8 +38,8 @@ if (!$g_user->is_logged_in()) {
     <div class="newsItem">
         <h2>CM 6 Recap</h2>
         <p class="date">March 23, 2018 at 2:58pm</p>
-        <p>Congratulations to all of our nominees! Just a reminder that any active is able to run for an Excomm position, regardless if they have a nomination or not. Therefore, if you plan on running, please email your platform to <a href="mailto:admin-vp@calaphio.com">admin-vp@calaphio.com</a> by <strong>Sunday, 4/8 11:59pm</strong>. If you have any questions about any Excomm position, feel free to talk to anyone on Excomm and we will share with you our thoughts!</p>
-        <p><strong>Dues:</strong> $70 until Shengmin yells again.</p>
+        <p>Congratulations to all of our nominees! Just a reminder that any active is able to run for an Excomm position, regardless if they have a nomination or not. Therefore, if you plan on running, please email your platform to <a href="mailto:admin-vp@calaphio.com">admin-vp@calaphio.com</a> by <b>Sunday, 4/8 11:59pm</b>. If you have any questions about any Excomm position, feel free to talk to anyone on Excomm and we will share with you our thoughts!</p>
+        <p><b>Dues:</b> $70 until Shengmin yells again.</p>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 6:<br>
             <a href="https://docs.google.com/presentation/d/15QV_hhxNpBqW6BXZtEv3ws6Dju7Y50Y_bT-wkjsyJyM/edit?usp=sharing" target="_blank">CM 6 Slides</a><br>
             <a href="https://www.youtube.com/watch?v=kwTTHwsQF4M" target="_blank">CM 6 Video</a><br>
