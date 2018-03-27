@@ -36,6 +36,25 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 6 Recap</h2>
+        <p class="date">March 23, 2018 at 2:58pm</p>
+        <p>Congratulations to all of our nominees! Just a reminder that any active is able to run for an Excomm position, regardless if they have a nomination or not. Therefore, if you plan on running, please email your platform to admin-vp@calaphio.com by Sunday, 4/8 11:59pm. If you have any questions about any Excomm position, feel free to talk to anyone on Excomm and we will share with you our thoughts!</p>
+        <p>Dues: $70 until Shengmin yells again.</p>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 6:<br>
+            <a href="https://docs.google.com/presentation/d/15QV_hhxNpBqW6BXZtEv3ws6Dju7Y50Y_bT-wkjsyJyM/edit?usp=sharing" target="_blank">CM 6 Slides</a><br>
+            <a href="https://www.youtube.com/watch?v=kwTTHwsQF4M" target="_blank">CM 6 Video</a><br>
+            <a href="https://docs.google.com/forms/d/1KjGZr_HTByqBHbGqafQCcOIioRVOFocyHCWYmpbwMtg/edit" target="_blank">Caption Contest</a><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePMXUfpmUJ095iofVRyQCqpyUDYoqOgD0q_t0V5SukbAl76w/viewform" target="_blank">Chapter Feedback Form</a><br>
+            <a href="https://docs.google.com/forms/d/1MzyrG2Kl5vCYkOe58G0_OMv2rd7c4XTfPoqW8IASIa8/viewform?edit_requested=true" target="_blank">Banquet RSVP Form</a><br>
+            <a href="https://www.facebook.com/events/385698871891827/" target="_blank">Spring Sectionals Event/Info Page</a><br>
+
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 5 Recap</h2>
         <p class="date">March 7, 2018 at 11:56am</p>
         <p>Push through pledges! It’s already pr3 and you’re almost there! Do your hours, go to fellowships, hit up your fam/pbros, and just get to know everyone! As for actives, thank you guys for being you and for helping this chapter thrive! Remember to hit up anyone on Excomm if you have any concerns or recommendations on what we could be doing better! We’re here for you guys, so let’s communicate! </p>
@@ -44,7 +63,7 @@ if (!$g_user->is_logged_in()) {
             In the description of the venmo payment please put: [FULL NAME]_Dues
         </p>
         <p style="margin-bottom: 1em;">Here are the following documents from CM 5:<br>
-            <a href="https://docs.google.com/presentation/d/1CKdRner49gnT8cVPlVe4irs9Ysp7NwMgTWkyXSV3wu8/edit?usp=sharing">CM 5 Slides</a><br>
+            <a href="https://docs.google.com/presentation/d/1CKdRner49gnT8cVPlVe4irs9Ysp7NwMgTWkyXSV3wu8/edit?usp=sharing" target="_blank">CM 5 Slides</a><br>
             <a href="https://www.youtube.com/watch?v=n38pjvTT2gM" target="_blank">CM 5 Video</a><br>
             <a href="https://docs.google.com/forms/d/1ICA0nq5xscEmHAXCK5OGGPElyLmUHzIm9h42TP35Ecs/edit" target="_blank">Caption Contest</a><br>
             <a href="https://goo.gl/forms/W3Q49HoBmDBZNNyj2" target="_blank">Chapter Feedback Form</a><br>
