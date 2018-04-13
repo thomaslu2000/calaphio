@@ -36,6 +36,23 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>Candidate Platforms</h2>
+        <p class="date">April 9, 2018 at 4:13pm</p>
+        <p> Hello everyone. It's time for elections again! Elections should not have to be a long, tedious, and boring time. Instead, it should be an open time for a honest discussion about the chapter. </p>
+        <p> For inspiration, I encourage everyone to read about Melissa Quach's journey in last semester's elections (told by Iris Xu), shared <a href="https://www.linkedin.com/pulse/go-gamma-iris-xu/"> here </a>... Please leave a comment if you are inspired! </p>
+        <p style="margin-bottom: 1em;">Here are the following platforms for the many candidates for Executive Committee:<br>
+            <a href="https://drive.google.com/file/d/0B1PYMBbhnLMsTnhJUmM2N1FmV2R4amRDVWh1WTFHRWVKN1Jn/view?usp=sharing"> Eric Liu - Pledgemas ter </a> <br>
+            <a href="https://docs.google.com/document/d/13Cad2uXxHZcdaTaPFMTT5cwgea1OFbmCFA5aEsL9Kvo/edit?usp=sharing"> Seline Ting - Fellowship VP </a> <br>
+            <a href="https://docs.google.com/document/d/1CkOZkORjS87WuWYDYuOUgXIL-LUUw0lrMvsKrK138lI/edit?usp=sharing"> Seline Ting - Membership VP </a> <br>
+        </p>
+        <p> iLFS, </p>
+        <p>- <a href="profile.php?user_id=4610">Jeffrey Zhang (MMC)</a></p>
+    </div>
+<?php endif ?>
+
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>CM 6 Recap</h2>
         <p class="date">March 23, 2018 at 2:58pm</p>
         <p>Congratulations to all of our nominees! Just a reminder that any active is able to run for an Excomm position, regardless if they have a nomination or not. Therefore, if you plan on running, please email your platform to <a href="mailto:admin-vp@calaphio.com">admin-vp@calaphio.com</a> by <b>Sunday, 4/8 11:59pm</b>. If you have any questions about any Excomm position, feel free to talk to anyone on Excomm and we will share with you our thoughts!</p>
