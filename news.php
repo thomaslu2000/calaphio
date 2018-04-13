@@ -36,6 +36,24 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
+        <h2>CM 7 Recap</h2>
+        <p class="date">April 13, 2018 at 11:47pm</p>
+        <p>Message: Congrats to the new Excomm, and thank you to everyone that ran and sat through the whole process! Wishing the new Excomm the best of luck! Also, good luck to the pledges on finishing the rest of the semester off! Study hard and crush that 6 hour long pledge test!! Cross strong :p </p>
+        <p><b>Dues:</b> $70 until Shengmin yells again.</p>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 7:<br>
+            <a href="https://docs.google.com/presentation/d/1oBlXMjnOD8jttZslv22bi70g8h9T1dIg3GiaAnAh-LU/edit?usp=sharing" target="_blank">CM 7 Slides</a><br>
+            <a href="https://docs.google.com/forms/d/1kdy685SEgYEsxJOQLo9I_4oB1bSDFelIVL2-qVKFFa4/edit" target="_blank">Caption Contest</a><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePMXUfpmUJ095iofVRyQCqpyUDYoqOgD0q_t0V5SukbAl76w/viewform" target="_blank">Chapter Feedback Form</a><br>
+            <a href="https://docs.google.com/forms/d/1MzyrG2Kl5vCYkOe58G0_OMv2rd7c4XTfPoqW8IASIa8/viewform?edit_requested=true" target="_blank">Banquet RSVP Form</a><br>
+            <a href="https://drive.google.com/drive/u/1/folders/1yKPwXYoFvC_Wmz2VZ0zVGaKF9-Uvz_Tg" target="_blank">Previous Styluses</a><br>
+
+            <p>- <a href="profile.php?user_id=4631">Kyle Tse (MMC)</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
         <h2>Candidate Platforms</h2>
         <p class="date">April 9, 2018 at 4:13pm</p>
         <p> Hello everyone. It's time for elections again! Elections should not have to be a long, tedious, and boring time. Instead, it should be an open time for a honest discussion about the chapter. </p>
