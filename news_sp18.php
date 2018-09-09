@@ -109,7 +109,7 @@ if (!$g_user->is_logged_in()) {
         </p>
         <br>
 
-            <p>- <a href="profile.php?user_id=2978">Shengmin Xiao (MMC</a></p>
+            <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC</a></p>
         </p>
     </div>
 <?php endif ?>
