@@ -34,6 +34,88 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <br/>
+        <h2>Congrats to the Fall 2018 Executive Committee!</h2>
+        <p class="date">August 31, 2018 at 2:31pm</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3292"><img src="images/excomm_sp18/stan2.jpg" onmouseover="this.src='images/excomm_sp18/stan.jpg'" onmouseout="this.src='images/excomm_sp18/stan.jpg'"></img></a>
+                    <p class="center"><strong>President</strong>: <br><a href="pro2file.php?user_id=3292">Stanley Shaw</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4622"><img src="images/excomm_sp18/shengmin2.jpg" onmouseover="this.src='images/excomm_sp18/shengmin.jpg'" onmouseout="this.src='images/excomm_sp18/shengmin2.jpg'"></img></a>
+                    <p class="center"><strong>Finance VP</strong>: <br><a href="profile.php?user_id=4622">Shengmin Xiao</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3582"><img src="images/excomm_f18/gordon2.jpg" onmouseover="this.src='images/excomm_f18/gordon.jpg'" onmouseout="this.src='images/excomm_f18/gordon2.jpg'"></img></a>
+                    <p class="center"><strong>Service VP</strong>: <br><a href="profile.php?user_id=3582">Gordon Mah</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4609"><img src="images/excomm_f18/eric2.jpg" onmouseover="this.src='images/excomm_f18/eric.jpg'" onmouseout="this.src='images/excomm_f18/eric2.jpg'"></img></a>
+                    <p class="center"><strong>Pledgemaster</strong>: <br><a href="profile.php?user_id=4609">Eric Liu</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4608"><img src="images/excomm_f18/carol2" onmouseover="this.src='images/excomm_f18/carol'" onmouseout="this.src='images/excomm_f18/carol2'"></img></a>
+                    <p class="center"><strong>Administrative VP</strong>: <br><a href="profile.php?user_id=4608">Carol He</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao2.jpg" onmouseover="this.src='images/excomm_sp18/qiao.jpg'" onmouseout="this.src='images/excomm_sp18/qiao2.jpg'"></img></a>
+                    <p class="center"><strong>Membership VP</strong>: <br><a href="profile.php?user_id=3617">Qiao Li</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4687"><img src="images/excomm_f18/seline2.jpg" onmouseover="this.src='images/excomm_f18/seline.jpg'" onmouseout="this.src='images/excomm_f18/seline2.jpg'"></img></a>
+                    <p class="center"><strong>Fellowship VP</strong>: <br><a href="profile.php?user_id=4687">Seline Ting</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4772"><img src="images/excomm_f18/brian2.jpg" onmouseover="this.src='images/excomm_f18/brian.jpg'" onmouseout="this.src='images/excomm_f18/brian2.jpg'"></img></a>
+                    <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=4772">Brian Gan</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+
+        <p>- <a href="profile.php?user_id=4631">Shengmin Xiao (MMC)</a></p>
+    </div>
+<?php endif ?>
+
+<?php if ($g_user->is_logged_in()): ?>
+    <div class="newsItem">
+        <h2>CM 8 Recap</h2>
+        <p class="date">August 31, 2018 at 1:00pm</p>
+        <p style="margin-top: 1em;"><b>ANNOUNCEMENTS:</b><br></p>
+        <p style="margin: 0.5em 0px;">
+            As we approach the end of the semester, please be sure to evaluate all of your events, so that actives have an accurate record of their requirements.
+        </p>
+        <p style="margin: 0.5em 0px;">
+            Congratulations to all of our RT pledges for successfully completing pledging! We are all excited to see what you will do in the chapter in the future, so good luck to all of you! As you are all actives, you now have access to our Smugmug, Chegg, and CourseHero accounts. Please do not share the account information with people outside of APO, or with pledges in future semesters as our academic resources are an active privilege.
+        </p>
+        <br>
+        <p style="margin-bottom: 1em;">Here are the following documents from CM 8:<br>
+            <a href="https://docs.google.com/presentation/d/1KpF_gVT6kGf-NRn7BUm0DN3CfLJX9dthNvZB7QoUv5g/edit?usp=sharing">CM 8 Slides</a><br>
+
+        <p style="margin: 0.5em 0px;">
+            Have a great summer everyone!
+        </p>
+        <br>
+
+            <p>- <a href="profile.php?user_id=2978">Shengmin Xiao (MMC</a></p>
+        </p>
+    </div>
+<?php endif ?>
+
+
+
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 7 Recap</h2>
