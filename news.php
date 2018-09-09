@@ -50,7 +50,7 @@ if (!$g_user->is_logged_in()) {
 		<p style="margin-bottom: 1em 0px;">
             <b><u>PRESIDENT:</u></b><br>
             <b> Parliamentarian </b>(1)<br>
-            <b> Professional Development Chair </b>b>(2)<br>
+            <b> Professional Development Chair </b>(2)<br>
         </p>
 
         <p style="margin-bottom: 1em 0px;">
