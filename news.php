@@ -40,10 +40,11 @@ if (!$g_user->is_logged_in()) {
         <h2>CM 1 Recap</h2>
         <p class="date">September 9, 2018 at 2:41pm</p>
 
-    "Welcome back actives! I hope everyone had a restful and fun summer." - Carol He 
+    "Welcome back actives! I hope everyone had a restful and fun summer." - Carol He</p> 
 
 
-	ExComm still needs chairs! Please contact the respective ExComm member if you are interested in any of the following positions. Chairing is a great way to be involved in the chapter, and to take on a leadership role! Actives need 5 chairing credits to maintain good standing, so please look into the following:</p>
+	<b>ExComm still needs chairs!</b> Please contact the respective ExComm member if you are interested in any of the following positions. Chairing is a great way to be involved in the chapter, and to take on a leadership role! Actives need 5 chairing credits to maintain good standing, so please look into the following:</p>
+
 
 
 		<p style="margin-bottom: 1em 0px;">
@@ -97,47 +98,47 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric" onmouseover="this.src='images/pcomm_fa18/valerie'" onmouseout="this.src='images/pcomm_fa18/valerie.jpg'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/valerie.png'" onmouseout="this.src='images/pcomm_fa18/valerie.png'"></img></a>
                     <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=4697">Valerie Hse</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric" onmouseover="this.src='images/pcomm_fa18/shengmin'" onmouseout="this.src='images/dcomm_fa17/shengmin.jpg'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/shengmin.png'" onmouseout="this.src='images/dcomm_fa17/shengmin.png'"></img></a>
                     <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=4622">Shengmin Xiao</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric" onmouseover="this.src='images/pcomm_fa18/Lara'" onmouseout="this.src='images/pcomm_fa18/Lara.jpg'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/Lara.png'" onmouseout="this.src='images/pcomm_fa18/Lara.png'"></img></a>
                     <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=4688">Lara Yedikian</a></p>
                 </div>
  
  				<div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric" onmouseover="this.src='images/pcomm_fa18/matt'" onmouseout="this.src='images/pcomm_fa18/matt'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/matt.png'" onmouseout="this.src='images/pcomm_fa18/matt.png'"></img></a>
                     <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=4782">Matt Chinn</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric" onmouseover="this.src='images/pcomm_fa18/Pearl'" onmouseout="this.src='images/pcomm_fa18/Pearl'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/Pearl.png'" onmouseout="this.src='images/pcomm_fa18/Pearl.png'"></img></a>
                     <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=4691">Pearl Yang</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.jpg" onmouseover="this.src='images/pcomm_fa18/Michelle'" onmouseout="this.src='images/pcomm_fa18/Michelle'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/Michelle.png'" onmouseout="this.src='images/pcomm_fa18/Michelle.png'"></img></a>
                     <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=4767">Michelle Zhao</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.jpg" onmouseover="this.src='images/pcomm_fa18/Tim'" onmouseout="this.src='images/pcomm_fa18/Tim'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/Tim.png'" onmouseout="this.src='images/pcomm_fa18/Tim.png'"></img></a>
                     <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=4762">Tim Seller</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.jpg" onmouseover="this.src='images/pcomm_fa18/Jamie'" onmouseout="this.src='images/pcomm_fa18/Jamie'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/Jamie.png'" onmouseout="this.src='images/pcomm_fa18/Jamie.png'"></img></a>
                     <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=4762">Jamie Chen</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.jpg" onmouseover="this.src='images/pcomm_fa18/Malaya'" onmouseout="this.src='images/pcomm_fa18/Malay'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/eric.png" onmouseover="this.src='images/pcomm_fa18/Malaya.png'" onmouseout="this.src='images/pcomm_fa18/Malaya.png'"></img></a>
                     <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=4781">Mayala Neri</a></p>
                 </div>
             </div>
@@ -157,32 +158,32 @@ if (!$g_user->is_logged_in()) {
     <div class="collage-container">
         <div class="collage-pictures">
             <div class="person-picture">
-                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/fofo'" onmouseout="this.src='images/dcomm_fa18/fofo'"></img></a>
+                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/fofo.png'" onmouseout="this.src='images/dcomm_fa18/fofo.png'"></img></a>
                 <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=4692">Phoung Nguyen</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/vivian'" onmouseout="this.src='images/dcomm_fa18/vivian'"></img></a>
+                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/vivian.png'" onmouseout="this.src='images/dcomm_fa18/vivian.png'"></img></a>
                 <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=3619">Vivian Liu</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/karissa'" onmouseout="this.src='images/dcomm_fa18/karissa'"></img></a>
+                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/karissa.png'" onmouseout="this.src='images/dcomm_fa18/karissa.png'"></img></a>
                 <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=4685">Karissa Lapuz</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/edith'" onmouseout="this.src='images/dcomm_fa18/edith'"></img></a>
+                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/edith.png'" onmouseout="this.src='images/dcomm_fa18/edith.png'"></img></a>
                 <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=4607">Edith Lai</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/melissa'" onmouseout="this.src='images/dcomm_fa18/melissa'"></img></a>
+                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/melissa.png'" onmouseout="this.src='images/dcomm_fa18/melissa.png'"></img></a>
                 <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=3628">Melissa Quach</a></p>
             </div>
 
             <div class="person-picture">
-                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/jose'" onmouseout="this.src='images/dcomm_fa18/jose'"></img></a>
+                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/jose.png'" onmouseout="this.src='images/dcomm_fa18/jose.png'"></img></a>
                 <p class="center"><strong>Omega Director</strong>: <br><a href="profile.php?user_id=4798">Jose Reyes-Hernandez</a></p>
             </div>
         </div>
