@@ -63,7 +63,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4608"><img src="images/excomm_f18/carol2" onmouseover="this.src='images/excomm_f18/carol'" onmouseout="this.src='images/excomm_f18/carol2'"></img></a>
+                    <a href="profile.php?user_id=4608"><img src="images/excomm_f18/carol2.png" onmouseover="this.src='images/excomm_f18/carol.png'" onmouseout="this.src='images/excomm_f18/carol2.png'"></img></a>
                     <p class="center"><strong>Administrative VP</strong>: <br><a href="profile.php?user_id=4608">Carol He</a></p>
                 </div>
 
@@ -78,7 +78,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4772"><img src="images/excomm_f18/brian2.jpg" onmouseover="this.src='images/excomm_f18/brian.jpg'" onmouseout="this.src='images/excomm_f18/brian2.jpg'"></img></a>
+                    <a href="profile.php?user_id=4772"><img src="images/excomm_f18/brian2.JPG" onmouseover="this.src='images/excomm_f18/brian.jpg'" onmouseout="this.src='images/excomm_f18/brian2.JPG'"></img></a>
                     <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=4772">Brian Gan</a></p>
                 </div>
             </div>
