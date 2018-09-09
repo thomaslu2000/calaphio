@@ -40,7 +40,9 @@ if (!$g_user->is_logged_in()) {
         <h2>CM 1 Recap</h2>
         <p class="date">September 9, 2018 at 2:41pm</p>
 
-    Welcome back actives! I hope everyone had a restful and fun summer. 
+    "Welcome back actives! I hope everyone had a restful and fun summer." - Carol He 
+
+
 	ExComm still needs chairs! Please contact the respective ExComm member if you are interested in any of the following positions. Chairing is a great way to be involved in the chapter, and to take on a leadership role! Actives need 5 chairing credits to maintain good standing, so please look into the following:</p>
 
 
