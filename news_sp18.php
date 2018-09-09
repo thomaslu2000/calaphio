@@ -53,12 +53,12 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=3582"><img src="images/excomm_f18/gordon2.jpg" onmouseover="this.src='images/excomm_f18/gordon.jpg'" onmouseout="this.src='images/excomm_f18/gordon.jpg'"></img></a>
+                    <a href="profile.php?user_id=3582"><img src="images/excomm_f18/gordon.jpg" onmouseover="this.src='images/excomm_f18/gordon2.jpg'" onmouseout="this.src='images/excomm_f18/gordon.jpg'"></img></a>
                     <p class="center"><strong>Service VP</strong>: <br><a href="profile.php?user_id=3582">Gordon Mah</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/excomm_f18/eric2.jpg" onmouseover="this.src='images/excomm_f18/eric.jpg'" onmouseout="this.src='images/excomm_f18/eric.jpg'"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/excomm_f18/eric.jpg" onmouseover="this.src='images/excomm_f18/eric2.jpg'" onmouseout="this.src='images/excomm_f18/eric.jpg'"></img></a>
                     <p class="center"><strong>Pledgemaster</strong>: <br><a href="profile.php?user_id=4609">Eric Liu</a></p>
                 </div>
 
@@ -73,12 +73,12 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4687"><img src="images/excomm_f18/seline2.jpg" onmouseover="this.src='images/excomm_f18/seline.jpg'" onmouseout="this.src='images/excomm_f18/seline.jpg'"></img></a>
+                    <a href="profile.php?user_id=4687"><img src="images/excomm_f18/seline.jpg" onmouseover="this.src='images/excomm_f18/seline2.jpg'" onmouseout="this.src='images/excomm_f18/seline.jpg'"></img></a>
                     <p class="center"><strong>Fellowship VP</strong>: <br><a href="profile.php?user_id=4687">Seline Ting</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4772"><img src="images/excomm_f18/brian2.JPG" onmouseover="this.src='images/excomm_f18/brian.jpg'" onmouseout="this.src='images/excomm_f18/brian.JPG'"></img></a>
+                    <a href="profile.php?user_id=4772"><img src="images/excomm_f18/brian.jpg" onmouseover="this.src='images/excomm_f18/brian2.png'" onmouseout="this.src='images/excomm_f18/brian.jpg'"></img></a>
                     <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=4772">Brian Gan</a></p>
                 </div>
             </div>
