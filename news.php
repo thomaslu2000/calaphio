@@ -99,7 +99,7 @@ if (!$g_user->is_logged_in()) {
             <div class="collage-pictures">
                 <div class="person-picture">
                     <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/Eric.png" onmouseover="this.src='images/pcomm_fa18/Valerie.png'" onmouseout="this.src='images/pcomm_fa18/Valerie.png'"></img></a>
-                    <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=4697">Valerie Hse</a></p>
+                    <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=4697">Valerie Hsieh</a></p>
                 </div>
 
                 <div class="person-picture">
@@ -129,7 +129,7 @@ if (!$g_user->is_logged_in()) {
 
                 <div class="person-picture">
                     <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/Eric.png" onmouseover="this.src='images/pcomm_fa18/Tim.png'" onmouseout="this.src='images/pcomm_fa18/Tim.png'"></img></a>
-                    <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=4762">Tim Seller</a></p>
+                    <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=4762">Tim Sellers</a></p>
                 </div>
 
                 <div class="person-picture">
@@ -139,7 +139,7 @@ if (!$g_user->is_logged_in()) {
 
                 <div class="person-picture">
                     <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/Eric.png" onmouseover="this.src='images/pcomm_fa18/Malaya.png'" onmouseout="this.src='images/pcomm_fa18/Malaya.png'"></img></a>
-                    <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=4781">Mayala Neri</a></p>
+                    <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=4781">Malaya Neri</a></p>
                 </div>
             </div>
             <div style="clear: left;"></div>
