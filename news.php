@@ -124,7 +124,7 @@ if (!$g_user->is_logged_in()) {
 
                 <div class="person-picture">
                     <a href="profile.php?user_id=4609"><img src="images/pcomm_fa18/Eric.png" onmouseover="this.src='images/pcomm_fa18/Michelle.png'" onmouseout="this.src='images/pcomm_fa18/Michelle.png'"></img></a>
-                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=4767">Michelle Zhao</a></p>
+                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=4767">Michelle MJ Zhao</a></p>
                 </div>
 
                 <div class="person-picture">
