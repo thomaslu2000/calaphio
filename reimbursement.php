@@ -10,12 +10,7 @@ Template::print_body_header('Calendar', 'REIMBURSE');
 <?php if ($g_user->is_logged_in()): ?>
 
 
-	<h2><b>REIMBURSEMENTS</h2><br/>
-
 	
-
-	<p>Electronic Receipts - Submit necessary documents on google form<br/><br/>
-
 	<p>Physical Copy of Receipts - write down these information for reimbursements  <br/>
 	and give it to either <a href="profile.php?user_id=4803">Samantha Wang</a>, <a href="profile.php?user_id=4795">Kevin Chuang</a>, or <a href="profile.php?user_id=4796">Evelyn Chan</a>: <br/><br/>
 	Name <br/>
