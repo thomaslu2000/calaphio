@@ -7,8 +7,6 @@ Template::print_body_header('Calendar', 'REIMBURSE');
 ?>
 
 
-echo '<i style="color:black;font-size:30px;font-family:calibri ;">
-      hello php color </i> 
 
 <?php if ($g_user->is_logged_in()): ?>
 
