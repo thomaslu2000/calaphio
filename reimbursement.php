@@ -6,10 +6,9 @@ Template::print_head(array());
 Template::print_body_header('Calendar', 'REIMBURSE');
 ?>
 
-if (!$g_user->is_logged_in()) {
-    echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
-}
-?>
+
+echo '<i style="color:black;font-size:30px;font-family:calibri ;">
+      hello php color </i> 
 
 <?php if ($g_user->is_logged_in()): ?>
 
