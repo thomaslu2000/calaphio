@@ -157,24 +157,25 @@ if (!$g_user->is_logged_in()) {
     <p class="date">September 9, 2018 at 2:38pm</p>
     <div class="collage-container">
         <div class="collage-pictures">
-            <div class="person-picture">
-                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/fofo.png'" onmouseout="this.src='images/dcomm_fa18/fofo.png'"></img></a>
-                <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=4692">Phoung Nguyen</a></p>
-            </div>
-
-            <div class="person-picture">
-                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/vivian.png'" onmouseout="this.src='images/dcomm_fa18/vivian.png'"></img></a>
-                <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=3619">Vivian Liu</a></p>
-            </div>
 
             <div class="person-picture">
                 <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/karissa.png'" onmouseout="this.src='images/dcomm_fa18/karissa.png'"></img></a>
-                <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=4685">Karissa Lapuz</a></p>
+                <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=4685">Karissa Lapuz</a></p>
             </div>
 
             <div class="person-picture">
                 <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/edith.png'" onmouseout="this.src='images/dcomm_fa18/edith.png'"></img></a>
-                <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=4607">Edith Lai</a></p>
+                <p class="center"><strong>Alpha Director</strong>: <br><a href="profile.php?user_id=4607">Edith Lai</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/fofo.png'" onmouseout="this.src='images/dcomm_fa18/fofo.png'"></img></a>
+                <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=4692">Phuong Nguyen</a></p>
+            </div>
+
+            <div class="person-picture">
+                <a href="profile.php?user_id=3617"><img src="images/excomm_sp18/qiao.jpg" onmouseover="this.src='images/dcomm_fa18/vivian.png'" onmouseout="this.src='images/dcomm_fa18/vivian.png'"></img></a>
+                <p class="center"><strong>Phi Director</strong>: <br><a href="profile.php?user_id=3619">Vivian Liu</a></p>
             </div>
 
             <div class="person-picture">

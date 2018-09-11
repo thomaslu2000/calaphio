@@ -723,7 +723,34 @@ $query = new Query("
 			WHERE (type_fellowship=TRUE)
 			AND evaluated=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
 $row = $query->fetch_row();
-$spring18_fellowships = $row['count'];	
+$spring18_fellowships = $row['count'];
+
+
+$start = '2018-5-1';
+$end = '2018-12-5';
+$query = new Query("
+		SELECT sum(hours) AS hours FROM apo_calendar_event
+			JOIN apo_calendar_attend USING (event_id)
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			AND flaked=FALSE AND attended=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$fall18 = $row['hours'];
+$fall18 = floor($fall18);
+$fall18_dates = date("M d, Y", strtotime($start)) . " - " . date("M d, Y", strtotime($end));
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE)
+			AND evaluated=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$fall18_projects = $row['count'];
+
+$query = new Query("
+		SELECT count(*) AS count FROM apo_calendar_event
+			WHERE (type_fellowship=TRUE)
+			AND evaluated=TRUE AND deleted=FALSE AND date BETWEEN '$start' AND '$end'");
+$row = $query->fetch_row();
+$fall18_fellowships = $row['count'];	
 	echo <<<HEREDOC
 
 	<?php if ($g_user->is_logged_in()): ?>
@@ -733,6 +760,7 @@ $spring18_fellowships = $row['count'];
 <table style="width: auto;">
 <caption></caption>
 <tr><th axis="semester" style="width: 300px; font-weight: bold; padding: 0px 2px">Semester</th><th axis="hours" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Hours</th><th axis="projects" style="width: 70px; font-weight: bold; padding: 0px 2px">Service Events</th><th axis="fellowships" style="width: 100px; font-weight: bold; padding: 0px 2px">Fellowships</th><th axis="Comments" style="font-weight: bold; padding: 0px 2px">Comments</th></tr>
+<tr><td axis="semester">$fall18_dates (Fall 2018) PVL Semester</td><td axis="hours">$fall18</td><td axis="hours">$fall18_projects</td><td axis="hours">$sfall18_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$spring18_dates (Spring 2018) RT Semester</td><td axis="hours">$spring18</td><td axis="hours">$spring18_projects</td><td axis="hours">$spring18_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$fall17_dates (Fall 2017) DP Semester</td><td axis="hours">$fall17</td><td axis="hours">$fall17_projects</td><td axis="hours">$fall17_fellowships</td><td axis="comments"></td></tr>
 <tr><td axis="semester">$spring17_dates (Spring 2017) MMC Semester</td><td axis="hours">$spring17</td><td axis="hours">$spring17_projects</td><td axis="hours">$spring17_fellowships</td><td axis="comments"></td></tr>
