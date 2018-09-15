@@ -36,16 +36,17 @@ if (!$g_user->is_logged_in()) {
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
-        <h2>CM 3 Recap</h2>
+        <h2>CM 2 Recap</h2>
         <p class="date">September 14, 2018 at 10:49pm</p>
 
-            <a href="https://docs.google.com/presentation/d/1v_AmhhZncpRzXYgHxoWsLEu3tsiUS5ABYUd6XslxILo/edit?usp=sharing" target="_blank">CM 1 Slides</a><br>
+            <a href="https://docs.google.com/presentation/d/1D21PuV0KZg_31IdVwL7nvHt7G5wbTswwuNkmil4ApH8/edit#slide=id.p" target="_blank">CM 2 Slides</a><br>
             <a href="https://members.calaphio.com/reimbursement.php" target="_blank">Reimbursements</a><br>
             <a href="https://members.calaphio.com/gg_maniac_vote.php?id=146" target="_blank">CM 3 GG Maniac</a><br>
             <a href="https://docs.google.com/spreadsheets/d/1vDGebsyI3XCyHPidl5y7mCutUcD6aHZCz0xoyj-zcnk/edit#gid=1589878783" target="_blank">ExComm Chairing Positions Available</a><br>
     
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>
+<?php endif ?>
 
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
