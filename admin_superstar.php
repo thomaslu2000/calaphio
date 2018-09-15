@@ -39,7 +39,7 @@ $import_http_request = array(
 foreach ($import_http_request as $var => $default) {
 	if (isset($_REQUEST[$var])) {
 		$$var = $_REQUEST[$var];
-	} else {
+	} else { 
 		$$var = $default;
 	}
 }
