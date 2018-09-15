@@ -43,7 +43,7 @@ foreach ($import_http_request as $var => $default) {
 		$$var = $default;
 	}
 }
- 
+
 if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 	trigger_error("You must be logged in as an admin to access this feature", E_USER_ERROR);
 } else {
