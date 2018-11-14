@@ -34,6 +34,58 @@ if (!$g_user->is_logged_in()) {
 }
 ?>
 
+
+
+
+    <?php if  ("2018-11-27 21:00:00" < date("Y-m-d H:i:s")): ?>
+    <div class="newsItem">
+        <h2>CM 8 Recap</h2>
+        <p class="date">Nov 27, 2018 at 9pm</p>
+        <a href="https://drive.google.com/open?id=1IoUGUnGMWiQLe7ZuXGDGriFAKC6_DZnMbbIFeTogl_A">CM 8 Slides</a><br>
+        <p>- <a href="http://members.calaphio.com/profile.php?user_id=4922">Ronnie Ghose(DE)</a></p>
+    </div>
+    <?php endif; ?>
+
+
+    <?php if  ("2018-11-13 21:00:00" < date("Y-m-d H:i:s")): ?>
+    <div class="newsItem">
+        <h2>CM 7 Recap</h2>
+        <p class="date">Nov 13, 2018 at 9pm</p>
+        <a href="https://drive.google.com/open?id=1E_59GKkbQkC0bsbkCQGme1rvVVajNTRs8ooJVjjJdg0">CM 7 Slides</a><br>
+        <p>- <a href="http://members.calaphio.com/profile.php?user_id=4922">Ronnie Ghose(DE)</a></p>
+    </div>
+    <?php endif; ?>
+
+
+    <?php if  ("2018-10-30 21:00:00" < date("Y-m-d H:i:s")): ?>
+    <div class="newsItem">
+        <h2>CM 6 Recap</h2>
+        <p class="date">Oct 30, 2018 at 9pm</p>
+        <a href="https://drive.google.com/open?id=1ii9R9MCZ4Tvu7EKxzeXE78RHqidHIYnzQIo6M8ZT45Q">CM 6 Slides</a><br>
+        <p>- <a href="http://members.calaphio.com/profile.php?user_id=4922">Ronnie Ghose(DE)</a></p>
+    </div>
+    <?php endif; ?>
+
+
+    <?php if  ("2018-10-16 21:00:00" < date("Y-m-d H:i:s")): ?>
+    <div class="newsItem">
+        <h2>CM 5 Recap</h2>
+        <p class="date">Oct 16, 2018 at 9pm</p>
+        <a href="https://drive.google.com/open?id=1Nxw3XbQBFL6NVLYok4SSsDsY7r5lWWp5Hy3JsXwdsq0">CM 5 Slides</a><br>
+        <p>- <a href="http://members.calaphio.com/profile.php?user_id=4922">Ronnie Ghose(DE)</a></p>
+    </div>
+    <?php endif; ?>
+
+
+    <?php if  ("2018-10-02 21:00:00" < date("Y-m-d H:i:s")): ?>
+    <div class="newsItem">
+        <h2>CM 4 Recap</h2>
+        <p class="date">Oct 2, 2018 at 9pm</p>
+        <a href="https://drive.google.com/open?id=17qAwREsqpLEjHiiIyNR6NtkKx3gMqohFjSF8OiqFacs">CM 4 Slides</a><br>
+        <p>- <a href="http://members.calaphio.com/profile.php?user_id=4922">Ronnie Ghose(DE)</a></p>
+    </div>
+    <?php endif; ?>
+
 <?php if ($g_user->is_logged_in()): ?>
     <div class="newsItem">
         <h2>CM 3 Recap</h2>
