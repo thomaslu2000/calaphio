@@ -9,13 +9,13 @@ Template::print_body_header('Calendar', 'REIMBURSE');
 
 	<h2><b>REIMBURSEMENTS</h2><br/>
 
-	<p>You are required to fill out the following <a href="https://goo.gl/forms/wl4B7QyoexsN5R4c2" target="_blank">FORM</a><br/>
+	<p>You are required to fill out the following <a href="https://goo.gl/forms/6nRJD4CyjqbIv1WF3" target="_blank">FORM</a><br/>
 
 	<p>Electronic Receipts - Submit necessary documents on google form<br/><br/>
 
 	
 	<p>Physical Copy of Receipts - write down these information for reimbursements  <br/>
-	and give it to either <a href="profile.php?user_id=4803">Samantha Wang</a>, <a href="profile.php?user_id=4795">Kevin Chuang</a>, or <a href="profile.php?user_id=4796">Evelyn Chan</a>: <br/><br/>
+	and give it to either <a href="profile.php?user_id=4930">Michael Li</a>, <a href="profile.php?user_id=4794">Kevin Ma</a>, <a href="profile.php?user_id=4949">Isabella Chin</a>, or <a href="profile.php?user_id=4945">Jacky Chen</a>: <br/><br/>
 	Name <br/>
 	SID <br/>
 	E-Mail <br/>
