@@ -69,6 +69,7 @@ DOCHERE_print_head;
 		// 	'Calendar' => "calendar.php",
 		// 	'Members' => "roster.php",
 		// 	'Contact' => "contact.php");
+        $budget_link = "https://docs.google.com/spreadsheets/d/12kanN2toPyzNI1eTulrm4kQwzENht8A4yp3RRZ_37YI/edit?usp=sharing";
 		$section_array = array(
 			'Home' => array(
 				"HOME" => "news.php",
@@ -77,7 +78,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/12kanN2toPyzNI1eTulrm4kQwzENht8A4yp3RRZ_37YI/edit?usp=sharing",
+				"BUDGET" => $budget_link,
 				),
 			'Calendar' => array(
 				"HOME" => "news.php",
@@ -86,7 +87,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/12kanN2toPyzNI1eTulrm4kQwzENht8A4yp3RRZ_37YI/edit?usp=sharing",
+				"BUDGET" => $budget_link,
 				),
 			'Service' => array(
 				"HOME" => "news.php",
@@ -113,7 +114,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
 				"BYLAWS" => "bylaws.php",
-				"BUDGET" => "https://docs.google.com/spreadsheets/d/12kanN2toPyzNI1eTulrm4kQwzENht8A4yp3RRZ_37YI/edit?usp=sharing",
+				"BUDGET" => $budget_link,
 				),
 			// 'Members' => array(
 			// 	"HOME" => "news.php",
