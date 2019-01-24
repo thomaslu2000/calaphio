@@ -18,7 +18,7 @@ Template::print_body_header('Home', 'PROFILES');
 <form method="get" action="" onsubmit="return false">
 User Search: <input id="apo_short_search_input" type="text" />
 </form>
-<div id="apo_short_search_result" style="padding-left: 15ex"></div>
+<div id="apo_short_search_result"></div>
 </br>
 <?php
 
