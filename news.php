@@ -61,10 +61,10 @@ template
     Welcome back actives! 
 
 
-        <br>
+        <br><br>
 
         <p style="margin-bottom: 1em;">CM1 Recap:<br>
-            <a href="#" target="_blank">CM 1 Slides - Coming Soon</a><br>
+            <a href="https://docs.google.com/presentation/d/1OZVChKEq2kEQ_zy6Dx_gJ8EIDG9oRGUy0YdojF0lFPM/edit?fbclid=IwAR1JudikQRpfBD_SGaEpyMCKiKAw--eTfJHU7qZB_rEoU8JDGKvj4kMb_uU#slide=id.g4e3a01238a_1_104" target="_blank">CM 1 Slides</a><br>
             <a href="https://docs.google.com/spreadsheets/d/1nGL7EFeRhQ29fJM0GRoQS_ZgHgY5GZs2rRDUNLiIRaI/edit?usp=sharing" target="_blank">Spring 2019 Budget</a><br>
  			<a href="https://docs.google.com/spreadsheets/d/1UHi-jXJE81ivCynymgVezzy69_cPS-x5Jxgfaf0HBPE/edit?fbclid=IwAR3t5rzV3nPVztEY26uZq-PVHI5C4jeQDt8J8mHnx6MR-MNr_xy8TiIXWEQ#gid=1589878783" target="_blank">Spring Excomm Chairing Positions</a><br>
  			<a href="https://goo.gl/forms/zMPfMIbR9e5Nyfgu2" target="_blank">Website Suggestion Form</a><br>
