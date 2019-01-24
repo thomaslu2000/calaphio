@@ -687,10 +687,8 @@ DOCHERE_process_roster_results_wrapper;
 <br />
 <script type="text/javascript" src="ajax.js"></script>
 <script type="text/javascript" src="short_search.js"></script>
-<form method="get" action="" onsubmit="return false">
 Quick Search: <input id="apo_short_search_input" type="text" />
-</form>
-<div id="apo_short_search_result" style="padding-left: 15ex"></div>
+<div id="apo_short_search_result"></div>
 
 
 $search_results_wrapper

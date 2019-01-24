@@ -1,20 +1,48 @@
 <?php
-require 'include/includes.php';
-header('Content-type: text/xml');
-echo <<<HEREDOC
-<?xml version="1.0" encoding="UTF-8" ?>
-<results>
+require_once ('include/includes.php');
 
-HEREDOC;
-$abbrev = substr($_GET['name'], 0, 2);
-if (preg_match('/^[a-zA-Z][a-zA-Z]$/', $abbrev)) {
-  $query = new Query(sprintf("SELECT user_id, firstname, lastnamee, pledgeclass FROM apo_users WHERE firstname LIKE '%s%%' AND depledged=FALSE ORDER BY user_id DESC", $abbrev));
-  while ($row = $query->fetch_row()) {
-    echo sprintf("<user user_id=\"%d\"><![CDATA[%s %s (%s)]]></user>\r\n", $row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass']);
-  }
+$s = "";
+if(isset($_POST["search-data"])){
+    $search_query = Query::escape_string($_POST["search-data"]);
+    $query = new Query("SELECT user_id, email, firstname, lastname, phone, cellphone, birthday, major, pledgeclass, shirtsize FROM apo_users
+				WHERE CONCAT(firstname,' ',lastname) LIKE '$search_query%' ORDER BY user_id DESC LIMIT 20");
+    $s.= "
+    </ br>
+    </ br>
+    <table style='width: 100%;'>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Cellphone</th>
+        <th>Birthday</th>
+        <th>Major</th>
+        <th>Pledgeclass</th>
+        <th>Shirt Size</th>
+      </tr>";
+    while($row = $query->fetch_row()) {
+        $fullname = $row['firstname'] . ' ' . $row['lastname'];
+        $user_id = $row["user_id"];
+        $email = $row["email"];
+        $phone = $row["phone"];
+        $cell = $row["cellphone"];
+        $bday = $row["birthday"];
+        $major = $row["major"];
+        $pc = $row["pledgeclass"];
+        $shirt = $row["shirtsize"];
+        $s.= "
+        <tr>
+            <td><a href='profile.php?user_id=$user_id'>$fullname</a></th>
+            <td>$email </td>
+            <td>$phone </td>
+            <td>$cell </td>
+            <td>$bday </td>
+            <td>$major </td>
+            <td>$pc </td>
+            <td>$shirt </td>
+        </tr>";
+    }
+    $s.= "</table>";
 }
-echo <<<HEREDOC
-</results>
-
-HEREDOC;
+echo $s; 
 ?>
