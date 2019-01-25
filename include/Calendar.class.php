@@ -1456,14 +1456,21 @@ DOCHERE_calendar_header;
 				$fellowship_items = "";
 				$fundraiser_items = "";
 				while ($row && strtotime($row['date']) <= $current_day) {
+                    $query_highlight = new Query("SELECT highlighted FROM apo_calendar_event_highlighted WHERE event_id=".$row['event_id']);
+                    if ($query_highlight->num_rows()>0 && $query_highlight->fetch_row()['highlighted']==1){
+                        $highlight = " class='highlighted'";
+                    } else{
+                        $highlight = "";
+                    }
+                    
 					if (($row['type_service_chapter'] | $row['type_service_campus'] | $row['type_service_community'] | $row['type_service_country']) && ! $row['type_fundraiser']) {
-						$service_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
+						$service_items .= "        <li style=\"line-height:15px;\"$highlight>" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					} elseif ($row['type_fellowship']) {
-						$fellowship_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
+						$fellowship_items .= "        <li style=\"line-height:15px;\"$highlight>" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					} elseif ($row['type_fundraiser']) {
-						$fundraiser_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
+						$fundraiser_items .= "        <li style=\"line-height:15px;\"$highlight>" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					} else {
-						$event_items .= "        <li style=\"line-height:15px;\">" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
+						$event_items .= "        <li style=\"line-height:15px;\"$highlight>" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
 					}
 					$row = $query->fetch_row();
 				}
