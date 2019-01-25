@@ -1147,6 +1147,13 @@ HEREDOC;
 				$driver = "";
 			}
 			$post_comment = $g_user->is_logged_in() ? '<li><a href="#event_post_comment">Post Comment</a></li>' : '';
+            
+            //Using delete permissions bc normal members seem to have the others and too lazy to add
+            $query_highlight = new Query("SELECT highlighted FROM apo_calendar_event_highlighted WHERE event_id=$event_id");
+            $event_highlighted = $query_highlight->num_rows()>0 && $query_highlight->fetch_row()['highlighted'];
+            $highlight_event = !$event_highlighted && $g_user->is_logged_in() && $g_user->permit("calendar delete events") ? "<li><a href=\"?id=$event_id&function=highlight\" onclick=\"return confirm('Are you sure you want to HIGHLIGHT this event?')\">Highlight Event</a></li>" : '';
+            $unhighlight_event = $event_highlighted && $g_user->is_logged_in() && $g_user->permit("calendar delete events") ? "<li><a href=\"?id=$event_id&function=unhighlight\" onclick=\"return confirm('Are you sure you want to UNHIGHLIGHT this event?')\">Unhighlight Event</a></li>" : '';
+            
 			$delete_event = !$deleted && $g_user->is_logged_in() && $g_user->permit("calendar delete events") ? "<li><a href=\"?id=$event_id&function=delete\" onclick=\"return confirm('Are you sure you want to DELETE this event?')\">Delete Event</a></li>" : '';
 			$restore_event = $deleted && $g_user->is_logged_in() && $g_user->permit("calendar delete events") ? "<li><a href=\"?id=$event_id&function=restore\" onclick=\"return confirm('Are you sure you want to Restore this event?')\">Restore Event</a></li>" : '';
 			$view_access_logs = $is_chair || $g_user->permit("calendar view logs") ? '<li><a href="event_log.php?id=' . $event_id . '">View Access Logs</a></li>' : '';
@@ -1255,6 +1262,8 @@ $email_chair
 $email_attendees
 $add_people
 $edit_event
+$highlight_event
+$unhighlight_event
 $delete_event
 $restore_event
 $view_access_logs
@@ -2435,6 +2444,30 @@ DOCHERE_print_upcoming_events;
 				$query = new Query("commit");
 				
 				break;
+            case 'highlight':
+                if ($g_user->permit("calendar delete events")) {
+					$description = "Event highlighted";
+					$query = new Query("start transaction");
+					$query = new Query(sprintf("INSERT INTO %scalendar_event_highlighted SET event_id=%d, highlighted=1", TABLE_PREFIX, $event_id));
+					$query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description));
+					$query = new Query("commit");
+				} else {
+					trigger_error("You don't permission to do that.", E_USER_ERROR);
+					return;
+				}
+                break;
+            case 'unhighlight':
+                if ($g_user->permit("calendar delete events")) {
+					$description = "Event unhighlighted";
+					$query = new Query("start transaction");
+					$query = new Query(sprintf("DELETE FROM %scalendar_event_highlighted WHERE event_id=%d LIMIT 1", TABLE_PREFIX, $event_id));
+					$query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description));
+					$query = new Query("commit");
+				} else {
+					trigger_error("You don't permission to do that.", E_USER_ERROR);
+					return;
+				}
+                break;
 			case 'delete':
 				if ($g_user->permit("calendar delete events")) {
 					$description = "Event deleted";
