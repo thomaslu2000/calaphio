@@ -300,13 +300,15 @@ function print_requirements($user_id) {
 			$end_date = strtotime($row['end']);	
 			$sql_start_date = date("Y-m-d", $start_date);
 			$sql_end_date = date("Y-m-d", $end_date);
+            $sem = $_REQUEST['semester'];
 		} else {
-			$query = new Query(sprintf("SELECT start, end FROM apo_semesters ORDER BY end DESC LIMIT 1"));
+			$query = new Query(sprintf("SELECT semester, start, end FROM apo_semesters ORDER BY end DESC LIMIT 1"));
 			$row = $query->fetch_row();
 			$start_date = strtotime($row['start']);
 			$end_date = strtotime($row['end']);
 			$sql_start_date = date("Y-m-d", $start_date);
 			$sql_end_date = date("Y-m-d", $end_date);
+            $sem = $row['semester'];
 		}
 		$user_id = $g_user->data['user_id'];
 		
@@ -799,23 +801,40 @@ function print_requirements($user_id) {
 					$semesters = $semesters . '<option class="" value="' . $semester . '" >' . $semester . '</option>';
 				}
 			}
-			
-			/*// Retrieve Driver Miles
-			$driving_events = "";
-			$miles = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair, hours, driver, miles FROM %scalendar_event
-						JOIN %scalendar_attend USING (event_id)
-						WHERE deleted=FALSE AND date BETWEEN '%s' AND '%s' AND miles<>0 AND user_id=%d ORDER BY date ASC",
-			TABLE_PREFIX, TABLE_PREFIX,
-			TABLE_PREFIX,
-			$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				$miles = $row['miles'] . ' miles';
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$driving_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$miles</td></tr>\r\n";
-			}*/
+            
+            // Retrieve Leadershp Credits
+            $leadership_events = "";
+            $leadership_count = 0;
+            $sem_arr = explode(' ', $sem);
+            $query = new Query(sprintf("SELECT position_title, apo_wiki_positions.position_type as type FROM apo_wiki_positions JOIN apo_wiki_positions_basic_info USING (basic_info_id) WHERE user_id=%d AND semester='%s' AND year=%d AND (apo_wiki_positions.position_type=5 OR apo_wiki_positions.position_type=11) ORDER BY apo_wiki_positions.ordering ASC", $user_id, $sem_arr[0]=="Spring" ? 0 : 1, $sem_arr[1]));
+            while ($row = $query->fetch_row()) {
+                $title = $row['position_title'];
+                $type = $row['type'];
+                if ($type!=11 || !($title=="Unofficial" || $title=="Little")){
+                    if($type == 5){
+                        // Chairing
+                        $credits = 1;
+                        $prefix = "Chairing: ";
+                    } elseif($type == 11 and $title == 'Big'){
+                        // Bigging
+                        $credits = 2;
+                        $prefix = "Family: ";
+                    } else{
+                        //uncle/aunt
+                        $credits = 1;
+                        $prefix = "Family: ";
+                    }
+                    $leadership_events .= "<tr><td axis='title'>$prefix $title $type</td><td axis='credits'>$credits</td></tr>";
+                    $leadership_events_count+=$credits;
+                }
+			}
+            // leadershp credit from chairing events
+            $query = new Query(sprintf("SELECT count(*) as chairs FROM apo_calendar_attend JOIN apo_calendar_event USING (event_id) WHERE user_id=%u AND chair=1 AND date BETWEEN '%s' AND '%s'", $user_id, $sql_start_date, $sql_end_date));
+            $row = $query->fetch_row();
+            $chairing_times = $row['chairs'];
+            $credits = floor($chairing_times / 2);
+            $leadership_events .= "<tr><td axis='title'>Signed up to chair $chairing_times events</td><td axis='credits'>$credits</td></tr>";
+            $leadership_events_count+=$credits;
 		
 			echo <<<DOCHERE
 <div style="margin:1em 0em">
@@ -891,6 +910,10 @@ $fellowship_events
 <caption>Pay your \$50 active dues (\$60 at CM3, $70 at CM6)</caption>
 </table>
 
+<table>
+<caption>Acquire 5 leadership credits - You have acquired $leadership_events_count</caption>
+$leadership_events
+</table>
 
 <table width="100%">
 <caption>Complete 5 leadership credits - You can get credit by doing any of the following:</caption>
