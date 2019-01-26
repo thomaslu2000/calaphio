@@ -895,7 +895,7 @@ DOCHERE_edit_event;
 
 DOCHERE;
 		}
-		
+        
 		// Get the evaluation questions
 		$questions = "";
 		$query = new Query(sprintf("SELECT %sevent_evaluation.user_id, firstname, lastname, pledgeclass, text_response, numerical_response, description, type FROM %sevent_evaluation JOIN %sevent_evaluation_control USING (field_id) JOIN %susers ON (%sevent_evaluation.user_id = %susers.user_id) WHERE event_id=%d ORDER BY ordering DESC",
@@ -1100,7 +1100,6 @@ HEREDOC;
 						$attendee_count, $row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass'], $photographer, $driving, $row['phone'], $row['cellphone'], $signup_time);
 				}
 			}
-			
 			// Figure out user permissions
 			// This code needs to be cleaned up
 			$five_days_expired = $now >= strtotime("-5 days", $event_time);
@@ -1213,7 +1212,16 @@ Posted by <strong>$name</strong> @ $post_time$delete_comment
 </div>
 
 DOCHERE_comments;
-			}
+			} //CHANGE THE LINKS WHEN THE SEMESTER CHANGES
+            if(in_array("Rush", $event_types_array)){
+                $smug_link = "https://calaphio.smugmug.com/upload/wbHrmR/rush";
+            } elseif (in_array("Service to Country", $event_types_array) || in_array("Service to Community", $event_types_array) || in_array("Service to Chapter", $event_types_array) || in_array("Service to Campus", $event_types_array) || in_array("Fundraiser", $event_types_array)){
+                $smug_link = "https://calaphio.smugmug.com/upload/M2JDwn/service";
+            } elseif(in_array("Fellowship", $event_types_array)){
+                $smug_link = "https://calaphio.smugmug.com/upload/HV9RSN/fellowships";
+            } else{
+                $smug_link = "https://calaphio.smugmug.com/upload/jCgBSR/upload";
+            }
 			
 			if ($g_user->is_logged_in()) {
 				$body = <<<DOCHERE_event_body
@@ -1283,6 +1291,7 @@ $view_evaluation
 <tr><th axis="chairs">Chair(s):</th><td axis="chairs">$chairs</td></tr>
 <tr><th axis="cutoff">Cutoff:</th><td axis="cutoff">$signup_cutoff</td></tr>
 <tr><th axis="limit">Limit:</th><td axis="limit">$signup_limit</td></tr>
+<tr><th axis="upload">Smugmug:</th><td axis="upload"><a href='$smug_link' target="_blank">Upload Your Photos Here!</a></td></tr>
 </table>
 
 <div id="event_description_title"><hr />Description:</div>
