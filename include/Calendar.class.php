@@ -1222,7 +1222,7 @@ DOCHERE_comments;
             } else{
                 $smug_link = "https://calaphio.smugmug.com/upload/jCgBSR/upload";
             }
-			
+			$smugmug = $g_user->is_logged_in() ? "<a href='$smug_link' target='_blank'>Upload Your Photos Here!</a>" : "Must Be Logged In to Access!";
 			if ($g_user->is_logged_in()) {
 				$body = <<<DOCHERE_event_body
 <table id="event_attendees">
@@ -1291,7 +1291,7 @@ $view_evaluation
 <tr><th axis="chairs">Chair(s):</th><td axis="chairs">$chairs</td></tr>
 <tr><th axis="cutoff">Cutoff:</th><td axis="cutoff">$signup_cutoff</td></tr>
 <tr><th axis="limit">Limit:</th><td axis="limit">$signup_limit</td></tr>
-<tr><th axis="upload">Smugmug:</th><td axis="upload"><a href='$smug_link' target="_blank">Upload Your Photos Here!</a></td></tr>
+<tr><th axis="upload">Smugmug:</th><td axis="upload">$smugmug</td></tr>
 </table>
 
 <div id="event_description_title"><hr />Description:</div>
