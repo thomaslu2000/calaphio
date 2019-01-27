@@ -39,22 +39,26 @@ class Template {
     
     <script language="javascript" type="text/javascript" src="popup.js"></script>
     <script language="javascript" type="text/javascript" src="bootstrap.min.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/home/calaphio/members.calaphio.com/favicon/apple-touch-icon.png" type="image/x-icon" >
-    <link rel="icon" type="image/png" sizes="32x32" href="/home/calaphio/members.calaphio.com/favicon/favicon-32x32.png" type="image/x-icon" >
-    <link rel="icon" type="image/png" sizes="16x16" href="/home/calaphio/members.calaphio.com/favicon/favicon-16x16.png" type="image/x-icon" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/home/calaphio/members.calaphio.com/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/home/calaphio/members.calaphio.com/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/home/calaphio/members.calaphio.com/favicon/favicon-16x16.png">
     <link rel="manifest" href="/home/calaphio/members.calaphio.com/favicon/site.webmanifest">
     <link rel="mask-icon" href="/home/calaphio/members.calaphio.com/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/home/calaphio/members.calaphio.com/favicon/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="/home/calaphio/members.calaphio.com/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/home/calaphio/members.calaphio.com/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+
 $css_include  <title>Alpha Phi Omega - Gamma Gamma Chapter at University of California Berkeley</title>
 $meta
 </head>
 
 DOCHERE_print_head;
 	}
+/**
 
+*/
 	/**
 	 * $section and $page are case sensitive. */
 	function print_body_header($section, $page) {
