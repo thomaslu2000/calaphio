@@ -824,7 +824,7 @@ function print_requirements($user_id) {
                         $credits = 1;
                         $prefix = "Family: ";
                     }
-                    $leadership_events .= "<tr><td axis='title'>$prefix $title $type</td><td axis='credits'>$credits</td></tr>";
+                    $leadership_events .= "<tr><td axis='title'>$prefix $title</td><td axis='credits'>$credits</td></tr>";
                     $leadership_events_count+=$credits;
                 }
 			}
