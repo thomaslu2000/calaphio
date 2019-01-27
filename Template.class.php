@@ -29,16 +29,24 @@ class Template {
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <link type="text/css" rel="stylesheet" href="reset.css" />
-  <link type="text/css" rel="stylesheet" media="screen" href="$template" />
-  <link type="text/css" rel="stylesheet" media="screen" href="site.css" />
-  <link type="text/css" rel="stylesheet" media="print" href="print.css" />
-  <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="http://www.calaphio.com/apo_favicon.ico" />
-  <script language="javascript" type="text/javascript" src="popup.js"></script>
-  <script language="javascript" type="text/javascript" src="bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link type="text/css" rel="stylesheet" href="reset.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="$template" />
+    <link type="text/css" rel="stylesheet" media="screen" href="site.css" />
+    <link type="text/css" rel="stylesheet" media="print" href="print.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/home/calaphio/members.calaphio.com/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/home/calaphio/members.calaphio.com/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/home/calaphio/members.calaphio.com/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/home/calaphio/members.calaphio.com/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/home/calaphio/members.calaphio.com/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/home/calaphio/members.calaphio.com/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/home/calaphio/members.calaphio.com/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script language="javascript" type="text/javascript" src="popup.js"></script>
+    <script language="javascript" type="text/javascript" src="bootstrap.min.js"></script>
 $css_include  <title>Alpha Phi Omega - Gamma Gamma Chapter at University of California Berkeley</title>
 $meta
 </head>
