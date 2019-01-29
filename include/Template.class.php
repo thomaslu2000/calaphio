@@ -182,7 +182,7 @@ DOCHERE_print_head;
 		}
 
 		// Process welcome bar
-		$logout = $g_user->is_logged_in() ? "<a href=\"logout.php\">Logout</a>" : "<div style=\"float: right\">Region 10 - Section 4</div>";
+		$logout = $g_user->is_logged_in() ? "<a href=\"logout.php\">Logout</a>" : "<div style=\"float: right\">Region A Section A-2</div>";
 		$welcome_message = $g_user->is_logged_in() ? "Hello, " . $g_user->data['firstname'] . " " . $g_user->data['lastname'] . "! " . "<a href=\"profile.php?user_id=" . $g_user->data['user_id'] . "\">(My Profile)</a>"  : "Welcome to the Gamma Gamma Chapter of Alpha Phi Omega!";
 		$notifications = ($g_user->is_logged_in() &&  $g_user->data['user_id'] == 2000) ? "<div class=\"dropdown\" style=\"display:inline\">
             <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Dropdown trigger</a>
@@ -201,7 +201,7 @@ DOCHERE_print_head;
 
 		echo <<<DOCHERE_print_body_header
 <body>
-<img id="header" src="images/header.jpg" alt="Region 10 Section 4 APO Gamma Gamma at Berkeley" />
+<img id="header" src="images/header.jpg" alt="Region A Section A-2 APO Gamma Gamma at Berkeley" />
 <div id="paperLayer1">
   <div id="paperLayer2">
     <div id="paperHeader">
