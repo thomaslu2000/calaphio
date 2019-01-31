@@ -213,6 +213,10 @@ class User {
 		return in_array($action_type, $this->data['permissions']);
 	}
 	
+    function change_data($dataname, $data){
+        $this->data[$dataname] = $data;
+    }
+    
 	function print_change_passphrase() {
 		if (!$this->is_logged_in()) {
 			trigger_error("You must be logged in to change your passphrase.", E_USER_ERROR);

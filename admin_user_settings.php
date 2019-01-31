@@ -25,7 +25,7 @@ else
             if ($query->affected_rows() == 0) trigger_warning('error adding settings');
         }
             
-        $g_user->data['hide_deleted'] = $hide_del;
+        $g_user->change_data('hide_deleted', $hide_del);
         echo "
         <h2 style='color: red'> Settings Successfully Changed $a</h2>
         ";
