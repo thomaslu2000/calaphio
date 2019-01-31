@@ -113,6 +113,7 @@ function basic_info($user_id) {
 		$info .= info_maker_helper("Address", $row['address']);
 		$info .= info_maker_helper("Shirt Size", $row['shirtsize']);
 		$info .= info_maker_helper("Birthday", $row['birthday']);
+        $info .= info_maker_helper("Dynasty", $row['dynasty']);
 		$info .= "</table>";
 	}
 	return $info;
