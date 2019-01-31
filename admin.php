@@ -6,6 +6,7 @@ Template::print_body_header('Home', 'ADMIN');
 
 $available_permissions = array(
     '<a href="admin_user_settings.php">Change Admin Settings</a>' => 'admin view requirements',
+    '<a href="admin_undisable_user.php">Disable/Undisable a User</a>' => 'admin account disable',
 	'<a href="batch_load.php">Add Pledges</a>' => 'admin add users',
 	'<a href="admin_account_disable.php">Account Access Control</a>' => 'admin account disable',
 	'<a href="admin_change_passphrase.php">Reset User Passphrase</a>' => 'admin change passphrase',
