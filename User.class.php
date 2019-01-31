@@ -148,6 +148,11 @@ class User {
 			while ($row_perm = $query_perm->fetch_row()) {
 				$this->data['permissions'][] = $row_perm['action_type'];
 			}
+            if (in_array("calendar view deleted", $this->data['permissions'])){
+                $query = new Query(sprintf("SELECT hide_deleted FROM %suser_settings WHERE user_id=%d", TABLE_PREFIX, $this->data['user_id']));
+                $this->data['hide_deleted'] = ($row_del = $query->fetch_row() and $row_del['hide_deleted']==1);
+            }
+            
 			
 			// Update the user's login timestamp
 			$query_timestamp = new Query(sprintf("UPDATE %susers SET last_login = '%s' WHERE user_id=%d LIMIT 1", TABLE_PREFIX, date("Y-m-d H:i:s"), $this->data['user_id']));
@@ -201,7 +206,10 @@ class User {
 	
 	/**
 	 * Returns true if user has the given permissions action_type */
-	function permit($action_type) {
+	function permit($action_type, $pure_permission = FALSE) {
+        if (!$pure_permission && $action_type === "calendar view deleted" && in_array("calendar view deleted", $this->data['permissions'])){
+            return !$this->data['hide_deleted'];
+        }
 		return in_array($action_type, $this->data['permissions']);
 	}
 	

@@ -5,6 +5,7 @@ Template::print_head(array());
 Template::print_body_header('Home', 'ADMIN');
 
 $available_permissions = array(
+    '<a href="admin_user_settings.php">Change Admin Settings</a>' => 'admin view requirements',
 	'<a href="batch_load.php">Add Pledges</a>' => 'admin add users',
 	'<a href="admin_account_disable.php">Account Access Control</a>' => 'admin account disable',
 	'<a href="admin_change_passphrase.php">Reset User Passphrase</a>' => 'admin change passphrase',
@@ -25,7 +26,8 @@ $available_permissions = array(
 	'<a href="admin_view_service_buddy_hours.php">View Service Buddy Hours</a>' => 'admin view requirements',
 	'<a href="admin_service_buddy_create.php">Create Service Buddies</a>' => 'admin view requirements',
 	'<a href="admin_view_fellowship_buddy_hours.php">View Fellowship Buddy Hours (UNDER CONSTRUCTION WEBMASTERS ONLY)</a>' => 'admin view requirements',
-	'<a href="admin_fellowship_buddy_create.php">Create Fellowship Buddies</a>' => 'admin view requirements',);
+	'<a href="admin_fellowship_buddy_create.php">Create Fellowship Buddies</a>' => 'admin view requirements',
+    );
 $is_admin = false;
 foreach ($available_permissions as $permission) {
 	if ($g_user->permit($permission)) {
