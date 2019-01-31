@@ -40,11 +40,10 @@ HEREDOC;
 
 ?>
 
-    <h1>Change User Settings</h1>
+    <h1>Enter ID number of user</h1>
 
     <?php
-        if ($g_user->permit("calendar view deleted", TRUE)){
-            $sel = (!$g_user->permit("calendar view deleted")) ? " selected":"";
+        if ($g_user->permit("admin account disable", TRUE)){
             echo <<<HEREDOC
     <form method="post" action="">
     <input type="number" name='pid' id='pid'>
