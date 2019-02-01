@@ -105,7 +105,7 @@ img#header {
     width: 1000px;
     height: 325px;
     margin-top: -50px;
-    background-image: url(images/new_quote2.jpg);
+    background: url(images/new_quote2.jpg) center top no-repeat;
 }
 #paperHeader ul {
     height: 120px;
