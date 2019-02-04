@@ -37,8 +37,8 @@ div.errorMessage {
 	background-color: #d5e4f2;
 }
 
-#add_evaluation tr.odd {
-	
+#add_evaluation tr.odd td{
+	background-color: #b6dcfd;
 }
 
 #add_evaluation td.center, #add_evaluation th.center {

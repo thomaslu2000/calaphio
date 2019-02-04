@@ -233,6 +233,7 @@ class Calendar {
 			$firstname = $row['firstname'];
 			$lastname = $row['lastname'];
 			$row_class = $odd_row ? "odd" : "";
+            $odd_row = !$odd_row;
 			$waitlist_disabled = $signup_limit && $attendee_count > $signup_limit ? " checked=\"checked\"" : " disabled=\"disabled\"";
 			if (isset($_SESSION['$event_id']) && $_SESSION['$event_id']['error']) {
 				$attend_selected = $_SESSION['$event_id']["attend$user_id"] == 'attended' ? " checked=\"checked\"" : "";
@@ -876,6 +877,7 @@ DOCHERE_edit_event;
 			$realMiles = $row['miles'] / $row['driver'];
 			$attendee_count++;
 			$row_class = $odd_row ? "odd" : "";
+            $row_class = !$row_class;
 			$attended = $row['attended'] && !$row['chair'] ? "<span style=\"font-weight: bold\">X</span>" : "&nbsp;";
 			$chaired = $row['chair'] ? "<span style=\"font-weight: bold\">X</span>" : "&nbsp;";
 			$flaked = $row['flaked'] ? "<span style=\"font-weight: bold\">X</span>" : "&nbsp;";
