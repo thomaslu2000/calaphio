@@ -52,9 +52,10 @@ if (!$g_user->is_logged_in()) {
 -->
      
       <?php if (!$g_user->is_pledge()): ?>
+        
       <div class="newsItem">
             <h2>Proposed Amendment</h2>
-            <p class="date">January 28, 2018 at 10:49pm</p>
+            <p class="date">February 6, 2018 at 10:49pm</p>
             <p>
                 Section 4.5 (Open Meetings) of the bylaws to be changed from: <br><br>
                 "All Chapter meetings shall be open to all members of the chapter. 
@@ -66,6 +67,14 @@ if (!$g_user->is_logged_in()) {
             </p>
         </div>   
     <?php endif ?>
+      <div class="newsItem">
+        <h2>CM 2 Recap</h2>
+        <p class="date">February 6, 2018 at 10:49pm</p>
+
+            <a href="https://docs.google.com/presentation/d/1kk0rhXaQqbnD4M5HayIK5Q753mov665nI2D9XBOExv8/edit#slide=id.p" target="_blank">CM 2 Slides</a><br>
+    
+    <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
+    </div>
        <div class="newsItem">
             <h2>Award Information</h2>
             <p class="date">January 28, 2018 at 10:49pm</p>
