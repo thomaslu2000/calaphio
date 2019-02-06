@@ -50,7 +50,22 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>   
 -->
+     
       <?php if (!$g_user->is_pledge()): ?>
+      <div class="newsItem">
+            <h2>Proposed Amendment</h2>
+            <p class="date">January 28, 2018 at 10:49pm</p>
+            <p>
+                Section 4.5 (Open Meetings) of the bylaws to be changed from: <br><br>
+                "All Chapter meetings shall be open to all members of the chapter. 
+                Exceptions may be made when certain aspects of the pledge program are being discussed."
+                <br><br> to include the highlighted: <br><br>
+                "All Chapter meetings shall be open to all members of the chapter.
+                <b style="background-color: Yellow"> Any person from outside the chapter may only attend if given an invitation by the chair.</b>
+                Exceptions may be made when certain aspects of the pledge program are being discussed."
+            </p>
+        </div>   
+    <?php endif ?>
        <div class="newsItem">
             <h2>Award Information</h2>
             <p class="date">January 28, 2018 at 10:49pm</p>
@@ -120,7 +135,6 @@ if (!$g_user->is_logged_in()) {
               </tr>
             </table>
         </div>   
-    <?php endif ?>
     
     
     <div class="newsItem">
