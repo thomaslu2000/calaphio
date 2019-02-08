@@ -10,7 +10,6 @@ $view_hours_code = '<h1>View Total Service Hours</h1>
 <p style="padding: 1em 0px">Note that this is only as accurate as what is reported on the calendar. Events need to be <strong>evaluated</strong> and marked with the appropriate event types to count.</p>
 <table style="width: auto;">
 <caption></caption>
-<<<<<<< HEAD
 <tr><th axis="semester" style="width: 40%; font-weight: bold; padding: 0px 2px">Semester</th><th axis="hours" style="width: 20%; font-weight: bold; padding: 0px 2px">Service Hours</th><th axis="projects" style="width: 20%; font-weight: bold; padding: 0px 2px">Service Events</th><th axis="fellowships" style="width: 20%; font-weight: bold; padding: 0px 2px">Fellowships</th></tr>';
 
 $semesters_query = new Query("SELECT semester, start, end, namesake_short FROM apo_semesters ORDER BY id DESC");
