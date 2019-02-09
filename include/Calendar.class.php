@@ -298,13 +298,22 @@ DOCHERE_print_add_evaluation_attendees;
 			
 			$questions .= "<div class=\"question\">$question</div>\r\n<div class=\"$answer_class\">$answer</div>\r\n";
 		}
-		
+        
+        //Check if event is a fellowship
+        $query = new Query(sprintf("SELECT type_fellowship FROM %scalendar_event WHERE event_id=%d LIMIT 1",
+			TABLE_PREFIX, $event_id));
+        $row = $query->fetch_row();
+        $illegal_fellowship = $row['type_fellowship'] && $attendee_count < 5;
+		$not_enough_attending = $illegal_fellowship ? "<h3 style='color: red'> 
+        This fellowship does not have enough people and will not count after you evaluate! </h3>" : "";
+        
 		echo <<<DOCHERE_print_add_evaluation
 <div id="add_evaluation">
 <form action="evaluate_event.php" method="post">
 <table id="evaluation_attendance">
 <caption id="event_title">
 $title
+$not_enough_attending
 <div class="subtitle">Select the "Hours" checkbox to assign a special amount of hours.</div>
 <div class="subtitle">Note that you must finish adding people before filling out the evaluation.</div>
 <div class="subtitle">Lastly, you may not assign 0 hours.</div>
@@ -332,6 +341,7 @@ $questions
 <button type="submit" name="function" value="Submit Evaluation">Submit Evaluation</button>
 </div>
 <input type="hidden" name="id" value="$event_id" />
+<input type="hidden" name="illegal-fellowship" value="$illegal_fellowship" />
 </div>
 </form>
 </div>
@@ -1640,6 +1650,11 @@ DOCHERE_print_upcoming_events;
 		}
 		$event_hours = $_POST['event_hours'];
 		
+        //Sets event to deleted if the fellowship was illegal
+        if (isset($_POST['illegal-fellowship']) and $_POST['illegal-fellowship']){
+            $query = new Query(sprintf("UPDATE %scalendar_event SET deleted=TRUE WHERE event_id=%d LIMIT 1", TABLE_PREFIX, $event_id));
+        }
+        
 		// Get the attendees
 		$timestamp = date("Y-m-d H:i:s");
 		$query = new Query("START TRANSACTION");
@@ -1756,9 +1771,9 @@ DOCHERE_print_upcoming_events;
 					TABLE_PREFIX, $event_id, $row['field_id'], $g_user->data['user_id'], $response, $response));
 			}
 		}
-		
 		$query = new Query(sprintf("UPDATE %scalendar_event SET evaluated=TRUE, signup_lock=TRUE WHERE event_id=%d LIMIT 1", TABLE_PREFIX, $event_id));
-		$query = new Query("COMMIT");
+//        $query = new Query("COMMIT");
+        $query = new Query("COMMIT");
 		$_SESSION['$event_id']['error'] = false;
 		$g_user->redirect("evaluation.php?id=$event_id");
 		return true;
