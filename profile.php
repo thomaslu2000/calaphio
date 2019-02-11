@@ -829,6 +829,14 @@ function print_requirements($user_id) {
                     $leadership_events_count+=$credits;
                 }
 			}
+            // credits from stuff put in by admin
+            $query = new Query(sprintf("SELECT num_credits, reason FROM apo_leadership_credits WHERE user_id=%d", $user_id));
+            while ($row = $query->fetch_row()) {
+                $num_credits = $row['num_credits'];
+                $reason = $row['reason'];
+                $leadership_events .= "<tr><td axis='title'>$reason</td><td axis='credits'>$num_credits</td></tr>";
+                $leadership_events_count+=$num_credits;
+			}
             // leadershp credit from chairing events
             $query = new Query(sprintf("SELECT count(*) as chairs FROM apo_calendar_attend JOIN apo_calendar_event USING (event_id) WHERE user_id=%u AND chair=1 AND date BETWEEN '%s' AND '%s'", $user_id, $sql_start_date, $sql_end_date));
             $row = $query->fetch_row();

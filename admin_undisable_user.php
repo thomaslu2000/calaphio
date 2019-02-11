@@ -49,7 +49,12 @@ HEREDOC;
     <input type="number" name='pid' id='pid'>
     <button type="submit">Submit</button>
     </form>
-
+    <br><br>
+    <script type="text/javascript" src="ajax.js"></script>
+    <script type="text/javascript" src="short_search.js"></script>
+    Quick Search: <input id="apo_short_search_input" type="text" />
+    <br>
+    <div id="apo_short_search_result"></div>
 HEREDOC;
         }
     }
