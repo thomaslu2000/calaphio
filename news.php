@@ -50,9 +50,148 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>   
 -->
+     <div class="newsItem">
+        <br/>
+        <h2>Congrats to the Spring 2019 Executive Committee!</h2>
+        <p class="date">February 2, 2019</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4622"><img src="images/excomm_sp19/shengmin.jpg"></img></a>
+                    <p class="center"><strong>President</strong>: <br><a href="profile.php?user_id=4622">Shengmin Xiao</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4792"><img src="images/excomm_sp19/michelle.jpg"></img></a>
+                    <p class="center"><strong>Service VP</strong>: <br><a href="profile.php?user_id=4792">Michelle Chang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4781"><img src="images/excomm_sp19/malaya.jpg"></img></a>
+                    <p class="center"><strong>Pledgemaster</strong>: <br><a href="profile.php?user_id=4781">Malaya Neri</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4697"><img src="images/excomm_sp19/valerie.jpg"></img></a>
+                    <p class="center"><strong>Administrative VP</strong>: <br><a href="profile.php?user_id=4697">Valerie Hsieh</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4688"><img src="images/excomm_sp19/lara.jpg"></img></a>
+                    <p class="center"><strong>Membership VP</strong>: <br><a href="profile.php?user_id=4688">Lara Yedikian</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4798"><img src="images/excomm_sp19/jose.jpg"></img></a>
+                    <p class="center"><strong>Finance VP</strong>: <br><a href="profile.php?user_id=4798">Jose Reyes-Hernandez</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4782"><img src="images/excomm_sp19/matt.jpg"></img></a>
+                    <p class="center"><strong>Fellowship VP</strong>: <br><a href="profile.php?user_id=4782">Matt Chinn</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4804"><img src="images/excomm_sp19/ralen.jpg"></img></a>
+                    <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=4804">Ralen Van Domelen</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+    </div>
+    
+    <div class="newsItem">
+        <br/>
+        <h2>Congrats to the Spring 2019 Pledge Committee!</h2>
+        <p class="date">February 2, 2019</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4789"><img src="images/pcomm_sp19/hang.jpg"></img></a>
+                    <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=4789">Hang Mai</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4804"><img src="images/pcomm_sp19/ralen.jpg"></img></a>
+                    <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=4804">Ralen Van Domelen</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4919"><img src="images/pcomm_sp19/chloe.jpg"></img></a>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=4919">Chloe Coultrip</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4753"><img src="images/pcomm_sp19/alex.jpg"></img></a>
+                    <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=4753">Alex Liu</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4921"><img src="images/pcomm_sp19/alissa.jpg"></img></a>
+                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=4921">Alissa Byun</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4788"><img src="images/pcomm_sp19/michael.jpg"></img></a>
+                    <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=4788">Michael Tang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4807"><img src="images/pcomm_sp19/melanie.jpg"></img></a>
+                    <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=4807">Melanie Gee</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4686"><img src="images/pcomm_sp19/christina.jpg"></img></a>
+                    <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=4686">Christina Liu</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+    </div>
+    
+    <div class="newsItem">
+        <br/>
+        <h2>Congrats to the Spring 2019 Dynasty Committee!</h2>
+        <p class="date">February 2, 2019</p>
+        <div class="collage-container">
+            <div class="collage-pictures">
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4609"><img src="images/dcomm_sp19/eric.jpg"></img></a>
+                    <p class="center"><strong>Alpha Dynasty Director</strong>: <br><a href="profile.php?user_id=4609">Eric Liu</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4805"><img src="images/dcomm_sp19/sabrina.jpg"></img></a>
+                    <p class="center"><strong>Phi Dynasty Director</strong>: <br><a href="profile.php?user_id=4805">Sabrina Chua</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4691"><img src="images/dcomm_sp19/pearl.jpg"></img></a>
+                    <p class="center"><strong>Omega Dynasty Director</strong>: <br><a href="profile.php?user_id=4691">Pearl Yang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4803"><img src="images/dcomm_sp19/samantha.jpg"></img></a>
+                    <p class="center"><strong>Alpha Dynasty Director</strong>: <br><a href="profile.php?user_id=4803">Samantha Wang</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4794"><img src="images/dcomm_sp19/kevinm.jpg"></img></a>
+                    <p class="center"><strong>Phi Dynasty Director</strong>: <br><a href="profile.php?user_id=4794">Kevin Ma</a></p>
+                </div>
+
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4795"><img src="images/dcomm_sp19/kevinc.jpg"></img></a>
+                    <p class="center"><strong>Omega Dynasty Director</strong>: <br><a href="profile.php?user_id=4795">Kevin Chuang</a></p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+    </div>
      
       <?php if (!$g_user->is_pledge()): ?>
-        
+    
       <div class="newsItem">
             <h2>Proposed Amendment</h2>
             <p class="date">February 6, 2018 at 10:49pm</p>
