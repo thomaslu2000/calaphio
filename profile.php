@@ -830,7 +830,7 @@ function print_requirements($user_id) {
                 }
 			}
             // credits from stuff put in by admin
-            $query = new Query(sprintf("SELECT num_credits, reason FROM apo_leadership_credits WHERE user_id=%d", $user_id));
+            $query = new Query(sprintf("SELECT num_credits, reason FROM apo_leadership_credits WHERE user_id=%d AND date BETWEEN '%s' AND '%s'", $user_id, $sql_start_date, $sql_end_date));
             while ($row = $query->fetch_row()) {
                 $num_credits = $row['num_credits'];
                 $reason = $row['reason'];

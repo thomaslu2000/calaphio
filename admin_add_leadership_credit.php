@@ -18,8 +18,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin account disable"))
                     $names .= $row['firstname'] . " " . $row['lastname'] . ", ";
                     $credits = $_POST['credits'];
                     $query = new Query(sprintf("
-                    INSERT INTO apo_leadership_credits (user_id, donor_id, num_credits, reason)
-                    VALUES ('%d', '%d', '%d', '%s')", $pid, $_POST['donor-name'], $credits, $_POST['reason']));
+                    INSERT INTO apo_leadership_credits (user_id, donor_id, num_credits, reason, date)
+                    VALUES ('%d', '%d', '%d', '%s', '%s')", $pid, $_POST['donor-name'], $credits, $_POST['reason'], date("Y-m-d")));
                 }
             }
                 
