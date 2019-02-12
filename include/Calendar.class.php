@@ -1119,7 +1119,7 @@ HEREDOC;
 			$query = new Query(sprintf("SELECT chair, driver FROM %scalendar_attend WHERE event_id=%d AND user_id=%d LIMIT 1", TABLE_PREFIX, $event_id, $g_user->data['user_id']));
 			if ($row = $query->fetch_row()) {
 				$signup = '';
-				$make_me_chair = !$signup_hardlock && !$row['chair'] && $chair_count < $max_chairs ? "<li><form action=\"event.php\" method=\"post\"><button class=\"btn btn-small\" type=\"submit\" name=\"function\" value=\"Make Me Chair\">Make Me Chair</button><input type=\"hidden\" name=\"id\" value=\"$event_id\" /></form></li>" : '';
+				$make_me_chair = $g_user->permit("admin add users", TRUE) || (!$signup_hardlock && !$row['chair'] && $chair_count < $max_chairs) ? "<li><form action=\"event.php\" method=\"post\"><button class=\"btn btn-small\" type=\"submit\" name=\"function\" value=\"Make Me Chair\">Make Me Chair</button><input type=\"hidden\" name=\"id\" value=\"$event_id\" /></form></li>" : '';
 				$take_me_off = $is_chair && $five_days_expired ? '<strong>Chair Can\'t Drop</strong>' : (!$signup_lock ? "<li><form action=\"event.php\" method=\"post\"><button class=\"btn btn-small\" type=\"submit\" name=\"function\" value=\"Take Me Off\">Take Me Off</button><input type=\"hidden\" name=\"id\" value=\"$event_id\" /></form></li>" : '<strong>Signup Closed</strong>');
 				if (!$is_photographer) {
 					$photographer = "<li><form action=\"event.php\" method=\"post\"><button class=\"btn btn-small\" type=\"submit\" name=\"function\" value=\"Make Me Photographer\">Make Me Photographer</button><input type=\"hidden\" name=\"id\" value=\"$event_id\" /></form></li>";
