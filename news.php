@@ -67,7 +67,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4781"><img src="images/excomm_sp19/malaya.jpg"></img></a>
+                    <a href="profile.php?user_id=4781"><img src="images/excomm_sp19/malaya.jpg"  onmouseover="this.src='images/excomm_sp19/malaya2.jpg'" onmouseout="this.src='images/excomm_sp19/malaya.jpg'"></img></a>
                     <p class="center"><strong>Pledgemaster</strong>: <br><a href="profile.php?user_id=4781">Malaya Neri</a></p>
                 </div>
 
@@ -139,6 +139,11 @@ if (!$g_user->is_logged_in()) {
                 <div class="person-picture">
                     <a href="profile.php?user_id=4807"><img src="images/pcomm_sp19/melanie.jpg"  onmouseover="this.src='images/pcomm_sp19/melanie2.jpg'" onmouseout="this.src='images/pcomm_sp19/melanie.jpg'"></img></a>
                     <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=4807">Melanie Gee</a></p>
+                </div>
+                
+                <div class="person-picture">
+                    <a href="profile.php?user_id=4808"><img src="images/pcomm_sp19/gary.jpg"  onmouseover="this.src='images/pcomm_sp19/gary2.jpg'" onmouseout="this.src='images/pcomm_sp19/gary.jpg'"></img></a>
+                    <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=4808">Gary Zhu</a></p>
                 </div>
 
                 <div class="person-picture">
