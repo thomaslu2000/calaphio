@@ -77,7 +77,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4688"><img src="images/excomm_sp19/lara.jpg"></img></a>
+                    <a href="profile.php?user_id=4688"><img src="images/excomm_sp19/lara.jpg" onmouseover="this.src='images/excomm_sp19/lara2.jpg'" onmouseout="this.src='images/excomm_sp19/lara.jpg'"></img></a>
                     <p class="center"><strong>Membership VP</strong>: <br><a href="profile.php?user_id=4688">Lara Yedikian</a></p>
                 </div>
 
@@ -107,7 +107,7 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4789"><img src="images/pcomm_sp19/hang.jpg"></img></a>
+                    <a href="profile.php?user_id=4789"><img src="images/pcomm_sp19/hang.jpg" onmouseover="this.src='images/pcomm_sp19/hang2.png'" onmouseout="this.src='images/pcomm_sp19/hang.jpg'"></img></a>
                     <p class="center"><strong>Leadership Trainer</strong>: <br><a href="profile.php?user_id=4789">Hang Mai</a></p>
                 </div>
 
@@ -117,32 +117,32 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4919"><img src="images/pcomm_sp19/chloe.jpg"></img></a>
+                    <a href="profile.php?user_id=4919"><img src="images/pcomm_sp19/chloe.jpg" onmouseover="this.src='images/pcomm_sp19/chloe2.jpg'" onmouseout="this.src='images/pcomm_sp19/chloe.jpg'"></img></a>
                     <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=4919">Chloe Coultrip</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4753"><img src="images/pcomm_sp19/alex.jpg"></img></a>
+                    <a href="profile.php?user_id=4753"><img src="images/pcomm_sp19/alex.jpg"  onmouseover="this.src='images/pcomm_sp19/alex2.jpg'" onmouseout="this.src='images/pcomm_sp19/alex.jpg'"></img></a>
                     <p class="center"><strong>Fellowship Trainer</strong>: <br><a href="profile.php?user_id=4753">Alex Liu</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4921"><img src="images/pcomm_sp19/alissa.jpg"></img></a>
+                    <a href="profile.php?user_id=4921"><img src="images/pcomm_sp19/alissa.jpg"  onmouseover="this.src='images/pcomm_sp19/alissa2.jpg'" onmouseout="this.src='images/pcomm_sp19/alissa.jpg'"></img></a>
                     <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=4921">Alissa Byun</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4788"><img src="images/pcomm_sp19/michael.jpg"></img></a>
+                    <a href="profile.php?user_id=4788"><img src="images/pcomm_sp19/michael.jpg" onmouseover="this.src='images/pcomm_sp19/michael2.jpg'" onmouseout="this.src='images/pcomm_sp19/michael.jpg'"></img></a>
                     <p class="center"><strong>Finance Trainer</strong>: <br><a href="profile.php?user_id=4788">Michael Tang</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4807"><img src="images/pcomm_sp19/melanie.jpg"></img></a>
+                    <a href="profile.php?user_id=4807"><img src="images/pcomm_sp19/melanie.jpg"  onmouseover="this.src='images/pcomm_sp19/melanie2.jpg'" onmouseout="this.src='images/pcomm_sp19/melanie.jpg'"></img></a>
                     <p class="center"><strong>Service Trainer</strong>: <br><a href="profile.php?user_id=4807">Melanie Gee</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4686"><img src="images/pcomm_sp19/christina.jpg"></img></a>
+                    <a href="profile.php?user_id=4686"><img src="images/pcomm_sp19/christina.jpg"  onmouseover="this.src='images/pcomm_sp19/christina2.jpg'" onmouseout="this.src='images/pcomm_sp19/christina.jpg'"></img></a>
                     <p class="center"><strong>Historian Trainer</strong>: <br><a href="profile.php?user_id=4686">Christina Liu</a></p>
                 </div>
             </div>
@@ -157,7 +157,7 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4609"><img src="images/dcomm_sp19/eric.jpg"></img></a>
+                    <a href="profile.php?user_id=4609"><img src="images/dcomm_sp19/eric.jpg" onmouseover="this.src='images/dcomm_sp19/eric2.jpg'" onmouseout="this.src='images/dcomm_sp19/eric.jpg'"></img></a>
                     <p class="center"><strong>Alpha Dynasty Director</strong>: <br><a href="profile.php?user_id=4609">Eric Liu</a></p>
                 </div>
 
@@ -167,22 +167,22 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4691"><img src="images/dcomm_sp19/pearl.jpg"></img></a>
+                    <a href="profile.php?user_id=4691"><img src="images/dcomm_sp19/pearl.jpg"  onmouseover="this.src='images/dcomm_sp19/pearl2.jpg'" onmouseout="this.src='images/dcomm_sp19/pearl.jpg'"></img></a>
                     <p class="center"><strong>Omega Dynasty Director</strong>: <br><a href="profile.php?user_id=4691">Pearl Yang</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4803"><img src="images/dcomm_sp19/samantha.jpg"></img></a>
+                    <a href="profile.php?user_id=4803"><img src="images/dcomm_sp19/samantha.jpg" onmouseover="this.src='images/dcomm_sp19/samantha2.jpg'" onmouseout="this.src='images/dcomm_sp19/samantha.jpg'"></img></a>
                     <p class="center"><strong>Alpha Dynasty Director</strong>: <br><a href="profile.php?user_id=4803">Samantha Wang</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4794"><img src="images/dcomm_sp19/kevinm.jpg"></img></a>
+                    <a href="profile.php?user_id=4794"><img src="images/dcomm_sp19/kevinm.jpg"  onmouseover="this.src='images/dcomm_sp19/kevinm2.jpg'" onmouseout="this.src='images/dcomm_sp19/kevinm.jpg'"></img></a>
                     <p class="center"><strong>Phi Dynasty Director</strong>: <br><a href="profile.php?user_id=4794">Kevin Ma</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4795"><img src="images/dcomm_sp19/kevinc.jpg"></img></a>
+                    <a href="profile.php?user_id=4795"><img src="images/dcomm_sp19/kevinc.jpg"  onmouseover="this.src='images/dcomm_sp19/kevinc2.jpg'" onmouseout="this.src='images/dcomm_sp19/kevinc.jpg'"></img></a>
                     <p class="center"><strong>Omega Dynasty Director</strong>: <br><a href="profile.php?user_id=4795">Kevin Chuang</a></p>
                 </div>
             </div>
