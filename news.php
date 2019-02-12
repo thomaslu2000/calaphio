@@ -92,7 +92,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4804"><img src="images/excomm_sp19/ralen.jpg"></img></a>
+                    <a href="profile.php?user_id=4804"><img src="images/excomm_sp19/ralen.jpg"  onmouseover="this.src='images/excomm_sp19/ralen2.jpg'" onmouseout="this.src='images/excomm_sp19/ralen.jpg'"></img></a>
                     <p class="center"><strong>Historian</strong>: <br><a href="profile.php?user_id=4804">Ralen Van Domelen</a></p>
                 </div>
             </div>
@@ -112,7 +112,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4804"><img src="images/pcomm_sp19/ralen.jpg"></img></a>
+                    <a href="profile.php?user_id=4804"><img src="images/pcomm_sp19/ralen.jpg"   onmouseover="this.src='images/pcomm_sp19/ralen2.jpg'" onmouseout="this.src='images/pcomm_sp19/ralen.jpg'"></img></a>
                     <p class="center"><strong>Administrative Trainer</strong>: <br><a href="profile.php?user_id=4804">Ralen Van Domelen</a></p>
                 </div>
 
