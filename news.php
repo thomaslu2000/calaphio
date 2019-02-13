@@ -167,7 +167,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4805"><img src="images/dcomm_sp19/sabrina.jpg"></img></a>
+                    <a href="profile.php?user_id=4805"><img src="images/dcomm_sp19/sabrina.jpg"  onmouseover="this.src='images/dcomm_sp19/sabrina2.jpg'" onmouseout="this.src='images/dcomm_sp19/sabrina.jpg'"></img></a>
                     <p class="center"><strong>Phi Dynasty Director</strong>: <br><a href="profile.php?user_id=4805">Sabrina Chua</a></p>
                 </div>
 
