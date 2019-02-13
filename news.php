@@ -82,7 +82,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4798"><img src="images/excomm_sp19/jose.jpg"></img></a>
+                    <a href="profile.php?user_id=4798"><img src="images/excomm_sp19/jose.jpg" onmouseover="this.src='images/excomm_sp19/jose2.png'" onmouseout="this.src='images/excomm_sp19/jose.jpg'"></img></a>
                     <p class="center"><strong>Finance VP</strong>: <br><a href="profile.php?user_id=4798">Jose Reyes-Hernandez</a></p>
                 </div>
 
