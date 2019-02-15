@@ -121,6 +121,15 @@ function basic_info($user_id) {
 
 function print_profile($user_id) {
 	global $g_user;
+    $hide_family = false;
+    if ($g_user->is_pledge()) {
+        $current_month = (int) (date('m') > 7); // 0 in spring, 1 in fall
+        $current_year = date('Y'); //return current year, i.e. 2001
+        $query = new Query(sprintf("SELECT 1 FROM apo_wiki_positions as pos, apo_wiki_positions_basic_info as bas WHERE user_id=%d AND pos.basic_info_id=bas.basic_info_id AND (pos.position_type=4 OR pos.position_title LIKE '%%Dynasty Director') AND bas.semester=%u AND bas.year=%u", $user_id, $current_month, $current_year));
+        if ($row = $query->fetch_row()){
+            $hide_family = true;
+        }
+    }
 	$content .= "<div class=\"position\">";
 	$content .= "<div class=\"section\">";
 	$content .= "<h2 class=\"title\">";
@@ -174,10 +183,16 @@ function print_profile($user_id) {
 		}
 		elseif ($position_type == 6 || $position_type == 11 || $position_type == 12 || $position_type == 13) {
 		  	if ($position_type == 11) {
-				$sentence = $position_title . " for " . $position_name . " (Small Family)<br />"; 
+				$sentence = $position_title . " for " . $position_name . " (Small Family)<br />";
+                if ($hide_family) {
+                    $sentence = "";
+                }
 			}
 		  	elseif ($position_type == 12) {
 				$sentence = $position_title . " for " . $position_name . " (Big Family)<br />"; 
+                if ($hide_family) {
+                    $sentence = "";
+                }
 			}
 			else {
 				$sentence = $position_title . " for " . $position_name . "<br />"; 

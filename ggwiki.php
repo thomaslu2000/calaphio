@@ -237,9 +237,22 @@ $template = new Template();
 		}
 
 		function content_maker ($page_id, $is_admin) {
+            global $g_user;
 			$content = "";
 			$counter = 0;
 			$query = new Query(sprintf("SELECT * FROM apo_wiki_contents WHERE page_id=%d and parent_content_id=0 ORDER BY content_ordering ASC", $page_id));
+            
+            //hiding fams of dcomm and pcomm from pledges
+            $hidden_fam_ids = array();
+            if ($g_user->is_pledge()) {
+                $hidden_fam_query = new Query(sprintf("SELECT user_id FROM apo_wiki_positions as pos, apo_wiki_positions_basic_info as bas WHERE pos.basic_info_id=bas.basic_info_id AND (pos.position_type=4 OR pos.position_title LIKE '%%Dynasty Director') AND semester=%u AND year=%u", (int) (date('m') > 7), date('Y')));
+                //finds this semesters pcomm and dcomm
+                
+                while ($row = $hidden_fam_query->fetch_row()){
+                    $hidden_fam_ids[] = $row['user_id'];
+                }
+            }
+            
 			while ($row = $query->fetch_row()) {
 				$content_id = $row['content_id'];
 				$content_name = $row['content_name'];
@@ -324,13 +337,14 @@ $template = new Template();
 					$content .= "<tbody class=\"position_table\">";
 					$human_query = new Query(sprintf("SELECT * FROM apo_wiki_positions WHERE basic_info_id=%d ORDER BY ordering ASC", $basic_info_id));
 					while($human_row = $human_query->fetch_row()) {
+                        if (($position_type == 11 || $position_type == 12) && in_array($human_row['user_id'], $hidden_fam_ids)) continue;
 						$user_query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d", $human_row['user_id']));
 						$user_row = $user_query->fetch_row();
 						$name = "<a href=\"ggwiki.php?user_id=" . $user_row['user_id'] . "#home\" > " . $user_row['firstname'] . " " . $user_row['lastname'] . " </a>";
 						$pc = $user_row['pledgeclass'];
 						$pt = $human_row['position_title'];
 						$content .= "<tr class=\"position_table\">";
-						$content .= "<th class=\"position_table\">$name</th>";
+						$content .= "<th class=\"position_table\">$name </th>";
 						$content .= "<th class=\"position_table\">$pc</th>";
 						$content .= "<th class=\"position_table\">$pt</th>";
 						$content .= "</tr>";
