@@ -50,6 +50,19 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>   
 -->
+    <div class="newsItem">
+        <h2>CM 3 Recap</h2>
+        <p class="date">February 15, 2018 at 10:49pm</p>
+
+            <a href="https://docs.google.com/presentation/d/1pPuxW_C5XxYEulUcZFHjM1sJ_ptwEkJbIlqR86ClCgc/edit#slide=id.g4ef1cfe739_7_0" target="_blank">CM 3 Slides</a><br>
+            <a href="https://tinyurl.com/apowebsite" target="_blank">Website Maintainance Form</a><br>
+            <a href="https://tinyurl.com/s19stylus" target="_blank">Stylus Suggestion Form</a><br>
+            <a href="https://goo.gl/forms/seK1QqmjdrW5p6Is2" target="_blank">Service Feedback Form</a><br>
+            <a href="https://goo.gl/forms/1ZB1yodHOUJkqjVC2" target="_blank">GG Event Suggestion Form</a><br>
+            <a href="https://goo.gl/forms/2xlq1GABhboIfbGE2" target="_blank">Join Hotspot Committee Form</a><br>
+    
+    <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
+    </div>
      <div class="newsItem">
         <br/>
         <h2>Congrats to the Spring 2019 Executive Committee!</h2>
