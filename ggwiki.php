@@ -257,6 +257,9 @@ $template = new Template();
 				$content_id = $row['content_id'];
 				$content_name = $row['content_name'];
 				$description = $row['description'];
+                if ($g_user->is_pledge() && $content_name == "Family System") {
+                    $description = "Note: Pledges Cannot See DComm and PComm Families";
+                }
 				$link_id = $row['link_id'];
 				$link_human_type = $row['link_human_type'];
 				$pos = $counter + 1;
