@@ -472,11 +472,22 @@ $template = new Template();
 		}
 			
 		function content_maker_human($user_id) {
+            global $g_user;
+            $hide_family = false;
+            if ($g_user->is_pledge()) {
+                $current_month = (int) (date('m') > 7); // 0 in spring, 1 in fall
+                $current_year = date('Y'); //return current year, i.e. 2001
+                $query = new Query(sprintf("SELECT 1 FROM apo_wiki_positions as pos, apo_wiki_positions_basic_info as bas WHERE user_id=%d AND pos.basic_info_id=bas.basic_info_id AND (pos.position_type=4 OR pos.position_title LIKE '%%Dynasty Director') AND bas.semester=%u AND bas.year=%u", $user_id, $current_month, $current_year));
+                if ($row = $query->fetch_row()){
+                    $hide_family = true;
+                }
+            }
 			$content .= "<div class=\"position\">";
 			$content .= "<div class=\"section\">";
 			$content .= "<h2 class=\"title\">";
 			$content .= Positions;
 			$content .= "</h2>";
+            
 			$query = new Query(sprintf("SELECT * FROM apo_wiki_positions as pos, apo_wiki_positions_basic_info as bas WHERE user_id=%d and pos.basic_info_id=bas.basic_info_id ORDER BY bas.year ASC, bas.semester ASC, pos.position_type ASC", $user_id));
 			while ($row = $query->fetch_row()) {
 				$position_type = $row['position_type'];
@@ -514,9 +525,15 @@ $template = new Template();
 				elseif ($position_type == 6 || $position_type == 11 || $position_type == 12 || $position_type == 13) {
 				  	if ($position_type == 11) {
 						$sentence = $position_title . " for " . $position_name . " (Small Family)<br />"; 
+                        if ($hide_family) {
+                            $sentence = "";
+                        }
 					}
 				  	elseif ($position_type == 12) {
 						$sentence = $position_title . " for " . $position_name . " (Big Family)<br />"; 
+                        if ($hide_family) {
+                            $sentence = "";
+                        }
 					}
 					else {
 						$sentence = $position_title . " for " . $position_name . "<br />"; 
