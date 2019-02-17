@@ -242,6 +242,8 @@ $template = new Template();
 			$counter = 0;
 			$query = new Query(sprintf("SELECT * FROM apo_wiki_contents WHERE page_id=%d and parent_content_id=0 ORDER BY content_ordering ASC", $page_id));
             
+            //change this to hide/unhide families
+            $hide_all_fams = true;
             //hiding fams of dcomm and pcomm from pledges
             $hidden_fam_ids = array();
             if ($g_user->is_pledge()) {
@@ -340,7 +342,7 @@ $template = new Template();
 					$content .= "<tbody class=\"position_table\">";
 					$human_query = new Query(sprintf("SELECT * FROM apo_wiki_positions WHERE basic_info_id=%d ORDER BY ordering ASC", $basic_info_id));
 					while($human_row = $human_query->fetch_row()) {
-                        if (($position_type == 11 || $position_type == 12) && in_array($human_row['user_id'], $hidden_fam_ids)) continue;
+                        if (($position_type == 11 || $position_type == 12) && ($hide_all_fams || in_array($human_row['user_id'], $hidden_fam_ids))) continue;
 						$user_query = new Query(sprintf("SELECT * FROM apo_users WHERE user_id=%d", $human_row['user_id']));
 						$user_row = $user_query->fetch_row();
 						$name = "<a href=\"ggwiki.php?user_id=" . $user_row['user_id'] . "#home\" > " . $user_row['firstname'] . " " . $user_row['lastname'] . " </a>";
@@ -473,15 +475,7 @@ $template = new Template();
 			
 		function content_maker_human($user_id) {
             global $g_user;
-            $hide_family = false;
-            if ($g_user->is_pledge()) {
-                $current_month = (int) (date('m') > 7); // 0 in spring, 1 in fall
-                $current_year = date('Y'); //return current year, i.e. 2001
-                $query = new Query(sprintf("SELECT 1 FROM apo_wiki_positions as pos, apo_wiki_positions_basic_info as bas WHERE user_id=%d AND pos.basic_info_id=bas.basic_info_id AND (pos.position_type=4 OR pos.position_title LIKE '%%Dynasty Director') AND bas.semester=%u AND bas.year=%u", $user_id, $current_month, $current_year));
-                if ($row = $query->fetch_row()){
-                    $hide_family = true;
-                }
-            }
+            $hide_family = $g_user->hide_family($user_id);
 			$content .= "<div class=\"position\">";
 			$content .= "<div class=\"section\">";
 			$content .= "<h2 class=\"title\">";
