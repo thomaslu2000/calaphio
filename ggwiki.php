@@ -243,10 +243,10 @@ $template = new Template();
 			$query = new Query(sprintf("SELECT * FROM apo_wiki_contents WHERE page_id=%d and parent_content_id=0 ORDER BY content_ordering ASC", $page_id));
             
             //change this to hide/unhide families
-            $hide_all_fams = true;
+            $hide_all_fams = User::$hide_all_fams;
             //hiding fams of dcomm and pcomm from pledges
             $hidden_fam_ids = array();
-            if ($g_user->is_pledge()) {
+            if (!$hide_all_fams and $g_user->is_pledge()) {
                 $hidden_fam_query = new Query(sprintf("SELECT user_id FROM apo_wiki_positions as pos, apo_wiki_positions_basic_info as bas WHERE pos.basic_info_id=bas.basic_info_id AND (pos.position_type=4 OR pos.position_title LIKE '%%Dynasty Director') AND semester=%u AND year=%u", (int) (date('m') > 7), date('Y')));
                 //finds this semesters pcomm and dcomm
                 
@@ -260,6 +260,7 @@ $template = new Template();
 				$content_name = $row['content_name'];
 				$description = $row['description'];
                 if ($g_user->is_pledge() && $content_name == "Family System") {
+                    if ($hide_all_fams) continue;
                     $description = "Note: Pledges Cannot See DComm and PComm Families";
                 }
 				$link_id = $row['link_id'];
