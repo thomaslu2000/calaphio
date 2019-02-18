@@ -70,12 +70,12 @@ if (!$g_user->is_logged_in()) {
         <div class="collage-container">
             <div class="collage-pictures">
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4622"><img src="images/excomm_sp19/shengmin.jpg"></img></a>
+                    <a href="profile.php?user_id=4622"><img src="images/excomm_sp19/shengmin.jpg"  onmouseover="this.src='images/excomm_sp19/shengmin2.jpg'" onmouseout="this.src='images/excomm_sp19/shengmin.jpg'"></img></a>
                     <p class="center"><strong>President</strong>: <br><a href="profile.php?user_id=4622">Shengmin Xiao</a></p>
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4792"><img src="images/excomm_sp19/michelle.jpg"></img></a>
+                    <a href="profile.php?user_id=4792"><img src="images/excomm_sp19/michelle.jpg"  onmouseover="this.src='images/excomm_sp19/michelle2.jpg'" onmouseout="this.src='images/excomm_sp19/michelle.jpg'"></img></a>
                     <p class="center"><strong>Service VP</strong>: <br><a href="profile.php?user_id=4792">Michelle Chang</a></p>
                 </div>
 
@@ -100,7 +100,7 @@ if (!$g_user->is_logged_in()) {
                 </div>
 
                 <div class="person-picture">
-                    <a href="profile.php?user_id=4782"><img src="images/excomm_sp19/matt.jpg"></img></a>
+                    <a href="profile.php?user_id=4782"><img src="images/excomm_sp19/matt.jpg"  onmouseover="this.src='images/excomm_sp19/matt2.jpg'" onmouseout="this.src='images/excomm_sp19/matt.jpg'"></img></a>
                     <p class="center"><strong>Fellowship VP</strong>: <br><a href="profile.php?user_id=4782">Matt Chinn</a></p>
                 </div>
 
