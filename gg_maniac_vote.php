@@ -52,189 +52,243 @@ echo <<<DOCHERE
 	</div>	
 
 	<h1><a href="gg_maniacs.php">Gamma Gamma Maniacs!</a></h1>
-	<div class="newsItem">
-    <h2 class="center">DP Semester GG Maniacs!</h2>
-    <div class="collage-container">
-	<div class="collage-pictures">
-		<div class="person-picture">
-			<p class="center">Pia Lopez</p>
-		</div>
-		<div class="person-picture">
-			<p class="center">Kyle Tse</p>
-		</div>
-		<div class="person-picture">
-			<p class="center">Karissa Lapuz</p>
-		</div>
-		<div class="person-picture">
-			<p class="center">Eric Liu</p>
-		</div>
-		<div class="person-picture">
-			<p class="center">Jeffrey Zhang</p>
-		</div>
-		<div class="person-picture">
-			<p class="center">Iris Xu</p>
-		</div>
-		<div class="person-picture">
-			<p class="center">Lara Yedikian</p>
-		</div>
-	</div>
-	<div style="clear: left;"></div>
-    </div>
-</div>
-<div class="newsItem">
-    <h2 class="center">DP Semester Pledge Maniacs!</h2>
-    <div class="collage-container">
-	<div class="collage-pictures">
-		<div class="person-picture">
-			<p class="center">Richard Nguyen</p>
-		</div>
-		<div class="person-picture">
-			<p class="center">Pearl Yang</p>
-		</div>
-		<div class="person-picture">
-			<p class="center">Michelle Zhao</p>
-		</div>
-	</div>
-	<div style="clear: left;"></div>
-    </div>
-</div>
-	<div class="newsItem">
-	    <h2 class="center">MMC Semester GG Maniacs!</h2>
-	    <div class="collage-container">
-		<div class="collage-pictures">
-			<div class="person-picture">
-				<p class="center">Charles Wang</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Vivian Liu</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Ariel Tsay</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Audrey Tsai</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Vivian Leduc</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Juan Rosario</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Anna Park</p>
-			</div>
-		</div>
-		<div style="clear: left;"></div>
-	    </div>
-	</div>
-	<div class="newsItem">
-	    <h2 class="center">MMC Semester Pledge Maniacs!</h2>
-	    <div class="collage-container">
-		<div class="collage-pictures">
-			<div class="person-picture">
-				<p class="center">Shengmin Xiao</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Roni Shen</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Hailey Swart</p>
-			</div>
-		</div>
-		<div style="clear: left;"></div>
-	    </div>
-	</div>
-	<div class="newsItem">
-	    <h2 class="center">FH Semester GG Maniacs!</h2>
-	    <div class="collage-container">
-		<div class="collage-pictures">
-			<div class="person-picture">
-				<p class="center">Jessica Tzeng</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Bianca Hsueh</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Nick Weis</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Kerry Feng</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Nina Nguyen</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Veronica Hall</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Gordon Mah</p>
-			</div>
-		</div>
-		<div style="clear: left;"></div>
-	    </div>
-	</div>
-	<div class="newsItem">
-	    <h2 class="center">FH Semester Pledge Maniacs!</h2>
-	    <div class="collage-container">
-		<div class="collage-pictures">
-			<div class="person-picture">
-				<p class="center">Max Yun</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Elaine Chung</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Sam Mahdad</p>
-			</div>
-		</div>
-		<div style="clear: left;"></div>
-	    </div>
-	</div>
-	<div class="newsItem">
-	    <h2 class="center">RBD Semester GG Maniacs!</h2>
-	    <div class="collage-container">
-		<div class="collage-pictures">
-			<div class="person-picture">
-				<p class="center">Jerry Park</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Nicole Mak</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Elise Hayashi</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Sierra Lou</p>
-			
-			</div>
-			<div class="person-picture">
-				<p class="center">Hyeonji Shim</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Katharine Sen</p>
-			</div>
-		</div>
-		<div style="clear: left;"></div>
-	    </div>
-	</div>
-	<div class="newsItem">
-	    <h2 class="center">RBD Semester Pledge Maniacs!</h2>
-	    <div class="collage-container">
-		<div class="collage-pictures">
-			<div class="person-picture">
-				<p class="center">Adrian Peneyra</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Josh Jacobs</p>
-			</div>
-			<div class="person-picture">
-				<p class="center">Gene Ho</p>
-			</div>
-		</div>
-		<div style="clear: left;"></div>
-	    </div>
-	</div>
 DOCHERE;
+$year = date("Y");
+$semester = (int) (date("m") > 7);
+for($counter=0; $counter < 8; $counter++){
+
+    $semester_name = $semester ? "Fall" : "Spring";
+    //GG Maniacs
+    echo "
+    <div class='newsItem'>
+    <h2 class='center'>$semester_name $year GG Maniacs!</h2>
+        <div class='collage-container'>
+        <div class='collage-pictures'>";
+    
+    $query = new Query("SELECT firstname, lastname FROM apo_wiki_positions as pos JOIN apo_users USING (user_id) JOIN apo_wiki_positions_basic_info as bas USING (basic_info_id) WHERE pos.`position_type`=9 AND year=$year AND semester=$semester");
+    while($row = $query->fetch_row()){
+        $name = $row['firstname'] . " " . $row['lastname'];
+        echo "
+        <div class='person-picture'>
+			<p class='center'>$name</p>
+		</div>
+        ";  
+    }
+    echo '
+        </div>
+        <div style="clear: left;"></div>
+        </div>
+    </div>';
+    
+    // Pledge Maniacs
+    echo "
+    <div class='newsItem'>
+    <h2 class='center'>$semester_name $year Pledge Maniacs!</h2>
+        <div class='collage-container'>
+        <div class='collage-pictures'>";
+    
+    $query = new Query("SELECT firstname, lastname FROM apo_wiki_positions as pos JOIN apo_users USING (user_id) JOIN apo_wiki_positions_basic_info as bas USING (basic_info_id) WHERE pos.`position_type`=10 AND year=$year AND semester=$semester");
+    while($row = $query->fetch_row()){
+        $name = $row['firstname'] . " " . $row['lastname'];
+        echo "
+        <div class='person-picture'>
+			<p class='center'>$name</p>
+		</div>
+        ";  
+    }
+    echo '
+        </div>
+        <div style="clear: left;"></div>
+        </div>
+    </div>';
+    if ($semester==0){
+        $year--;
+    }
+    $semester = 1-$semester;
+}
+//	<div class="newsItem">
+//    <h2 class="center">DP Semester GG Maniacs!</h2>
+//    <div class="collage-container">
+//	<div class="collage-pictures">
+//		<div class="person-picture">
+//			<p class="center">Pia Lopez</p>
+//		</div>
+//		<div class="person-picture">
+//			<p class="center">Kyle Tse</p>
+//		</div>
+//		<div class="person-picture">
+//			<p class="center">Karissa Lapuz</p>
+//		</div>
+//		<div class="person-picture">
+//			<p class="center">Eric Liu</p>
+//		</div>
+//		<div class="person-picture">
+//			<p class="center">Jeffrey Zhang</p>
+//		</div>
+//		<div class="person-picture">
+//			<p class="center">Iris Xu</p>
+//		</div>
+//		<div class="person-picture">
+//			<p class="center">Lara Yedikian</p>
+//		</div>
+//	</div>
+//	<div style="clear: left;"></div>
+//    </div>
+//</div>
+//<div class="newsItem">
+//    <h2 class="center">DP Semester Pledge Maniacs!</h2>
+//    <div class="collage-container">
+//	<div class="collage-pictures">
+//		<div class="person-picture">
+//			<p class="center">Richard Nguyen</p>
+//		</div>
+//		<div class="person-picture">
+//			<p class="center">Pearl Yang</p>
+//		</div>
+//		<div class="person-picture">
+//			<p class="center">Michelle Zhao</p>
+//		</div>
+//	</div>
+//	<div style="clear: left;"></div>
+//    </div>
+//</div>
+//	<div class="newsItem">
+//	    <h2 class="center">MMC Semester GG Maniacs!</h2>
+//	    <div class="collage-container">
+//		<div class="collage-pictures">
+//			<div class="person-picture">
+//				<p class="center">Charles Wang</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Vivian Liu</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Ariel Tsay</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Audrey Tsai</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Vivian Leduc</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Juan Rosario</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Anna Park</p>
+//			</div>
+//		</div>
+//		<div style="clear: left;"></div>
+//	    </div>
+//	</div>
+//	<div class="newsItem">
+//	    <h2 class="center">MMC Semester Pledge Maniacs!</h2>
+//	    <div class="collage-container">
+//		<div class="collage-pictures">
+//			<div class="person-picture">
+//				<p class="center">Shengmin Xiao</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Roni Shen</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Hailey Swart</p>
+//			</div>
+//		</div>
+//		<div style="clear: left;"></div>
+//	    </div>
+//	</div>
+//	<div class="newsItem">
+//	    <h2 class="center">FH Semester GG Maniacs!</h2>
+//	    <div class="collage-container">
+//		<div class="collage-pictures">
+//			<div class="person-picture">
+//				<p class="center">Jessica Tzeng</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Bianca Hsueh</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Nick Weis</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Kerry Feng</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Nina Nguyen</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Veronica Hall</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Gordon Mah</p>
+//			</div>
+//		</div>
+//		<div style="clear: left;"></div>
+//	    </div>
+//	</div>
+//	<div class="newsItem">
+//	    <h2 class="center">FH Semester Pledge Maniacs!</h2>
+//	    <div class="collage-container">
+//		<div class="collage-pictures">
+//			<div class="person-picture">
+//				<p class="center">Max Yun</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Elaine Chung</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Sam Mahdad</p>
+//			</div>
+//		</div>
+//		<div style="clear: left;"></div>
+//	    </div>
+//	</div>
+//	<div class="newsItem">
+//	    <h2 class="center">RBD Semester GG Maniacs!</h2>
+//	    <div class="collage-container">
+//		<div class="collage-pictures">
+//			<div class="person-picture">
+//				<p class="center">Jerry Park</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Nicole Mak</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Elise Hayashi</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Sierra Lou</p>
+//			
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Hyeonji Shim</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Katharine Sen</p>
+//			</div>
+//		</div>
+//		<div style="clear: left;"></div>
+//	    </div>
+//	</div>
+//	<div class="newsItem">
+//	    <h2 class="center">RBD Semester Pledge Maniacs!</h2>
+//	    <div class="collage-container">
+//		<div class="collage-pictures">
+//			<div class="person-picture">
+//				<p class="center">Adrian Peneyra</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Josh Jacobs</p>
+//			</div>
+//			<div class="person-picture">
+//				<p class="center">Gene Ho</p>
+//			</div>
+//		</div>
+//		<div style="clear: left;"></div>
+//	    </div>
+//	</div>
+//DOCHERE;
 
 
 
