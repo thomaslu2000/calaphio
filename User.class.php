@@ -220,11 +220,12 @@ class User {
     
     function hide_family($hide_id) {
         //remove to unhide active fams but keep p/dcomm hidden
-        if(User::$hide_all_fams){
-            return true;
-        }
+        
         $hide_family = false;
         if (!$this->is_logged_in() or $this->is_pledge()) {
+            if(User::$hide_all_fams){
+                return true;
+            }
             $current_month = (int) (date('m') > 7); // 0 in spring, 1 in fall
             $current_year = date('Y'); //return current year, i.e. 2001
             $query = new Query(sprintf("SELECT 1 FROM apo_wiki_positions as pos, apo_wiki_positions_basic_info as bas WHERE user_id=%d AND pos.basic_info_id=bas.basic_info_id AND (pos.position_type=4 OR pos.position_title LIKE '%%Dynasty Director') AND bas.semester=%u AND bas.year=%u", $hide_id, $current_month, $current_year));
