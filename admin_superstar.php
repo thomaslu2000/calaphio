@@ -154,7 +154,7 @@ DOCHERE;
 	$firstname = $row['firstname'];
 			$lastname = $row['lastname'];
 			$name = $firstname . " " . $lastname . " (" . $row['pledgeclass'] . ")";
-			$drivenMiles = $row['drivenMiles'];
+			$drivenMiles = round($row['drivenMiles'], 2);
 			$ranking .= "<tr><td class=\"rank\">$rank</td><td class=\"name\">$name</td><td class=\"totalTime\">$drivenMiles</td></tr>\r\n";
 			$ranknum++;
 	}

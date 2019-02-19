@@ -1743,7 +1743,7 @@ DOCHERE_print_upcoming_events;
 					return false;
 				}		
 			}
-			$query2 = new Query(sprintf("UPDATE %scalendar_attend SET attended=%s, chair=%s, flaked=%s, driver=%d, hours=%f, miles=%d WHERE event_id=%s AND user_id=%s LIMIT 1",
+			$query2 = new Query(sprintf("UPDATE %scalendar_attend SET attended=%s, chair=%s, flaked=%s, driver=%d, hours=%f, miles=%f WHERE event_id=%s AND user_id=%s LIMIT 1",
 				TABLE_PREFIX, $attended, $chaired, $flaked, $driver, $hours, $miles, $event_id, $user_id));
 			$query2 = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, target_user_id=%d, timestamp='%s', description='%s'",
 					TABLE_PREFIX, $event_id, $g_user->data['user_id'], $user_id, $timestamp, $description));
