@@ -27,8 +27,6 @@ $calendar->print_upcoming_events(5);
 $g_user->process_mailer(false);
 $g_user->print_mailer(false);
 $g_user->print_personal_messages();
-
-
 if (!$g_user->is_logged_in()) {
     echo '<img style="float: right" src="images/lfs_banner.png" alt="LFS" />';
 }

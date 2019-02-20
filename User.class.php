@@ -8,17 +8,23 @@ class User {
 	function User() {
 		// Setup session data
 		if (!isset($_SESSION['user'])) {
-			$this->data = array();
-			$this->data['user_id'] = 0;
-			$this->data['permissions'] = array();
+            if (isset($_COOKIE['userdata'])){
+                $this->data = json_decode($_COOKIE['userdata'], true);
+                $_SESSION['user'] = $this->data;
+            } else {
+                $this->data = array();
+                $this->data['user_id'] = 0;
+                $this->data['permissions'] = array();
+
+                // Grab public user permissions
+                $query = new Query(sprintf("SELECT action_type FROM %spermissions WHERE public_users=TRUE", TABLE_PREFIX));
+                while ($row = $query->fetch_row()) {
+                    $this->data['permissions'][] = $row['action_type'];
+                }
+
+                $_SESSION['user'] =& $this->data; 
+            }
 			
-			// Grab public user permissions
-			$query = new Query(sprintf("SELECT action_type FROM %spermissions WHERE public_users=TRUE", TABLE_PREFIX));
-			while ($row = $query->fetch_row()) {
-				$this->data['permissions'][] = $row['action_type'];
-			}
-			
-			$_SESSION['user'] =& $this->data;
 			if (USER_DEBUG) {
 				trigger_error("Creating new User object... not logged in.", E_USER_NOTICE);
 				print_r($_SESSION);
@@ -33,11 +39,17 @@ class User {
 				echo "<br />";
 			}
 		}
+        
 		
 		// Process user login
 		if (isset($_POST['login_email']) && isset($_POST['login_passphrase'])) {
 			$this->login($_POST['login_email'], $_POST['login_passphrase']);
 		}
+        
+        if(!isset($_COOKIE['userdata']) || $_COOKIE['userid'] == 0){  
+            setcookie('userdata', json_encode($this->data), time() + 86400*30);
+            setcookie('userid', $this->data['user_id'], time() + 86400*30);
+        }
 	}
 	
 	/**
@@ -89,7 +101,7 @@ class User {
 	/**
 	 * Returns true if user is logged in. */
 	function is_logged_in() {
-		return isset($this->data['user_id']) && $this->data['user_id'] > 0;
+        return isset($this->data['user_id']) && $this->data['user_id'] > 0;
 	}
 	
 	/**
@@ -160,7 +172,7 @@ class User {
 			
 			// Register for Gallery
 			ApoGallery::register($this->data['user_id'], $this->data['firstname'] . ' ' . $this->data['lastname'], $row['pledgeclass'], $this->data['email']);
-			
+            
 			// Process login redirect
 			if (isset($this->data['login_redirect'])) {
 				$url = $this->data['login_redirect'];
@@ -202,6 +214,8 @@ class User {
 	function logout() {
 		@session_unset();
 		@session_destroy();
+        setcookie("userdata", "", time() - 3600);
+        setcookie('userid', "", time() - 3600);
 		$this->redirect(".");
 	}
 	
