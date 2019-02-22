@@ -1158,7 +1158,7 @@ $fellowship_events
 <tr><td axis="name">Attend Ritual</td></tr>
 <tr><td axis="name">Wear Pledge Pin</td></tr>
 <tr><td axis="name">Join a Pledge committee</td></tr>
-<tr><td axis="name">Join an ExComm committee - <a href="mh_chairs.php">Search for one here</a></td></tr>
+<tr><td axis="name">Join an ExComm committee - <a href="https://docs.google.com/spreadsheets/d/1BrUecX-x0UFbGDXhKDeweIAe_oC9P16OhNDxpC9-dlM/edit?usp=sharing">Search for one here</a></td></tr>
 <tr><td axis="name">Attend Sib Social</td></tr>
 <tr><td axis="name">Complete committee requirements</td></tr>
 <tr><td axis="name">Attend Pledge Class Retreat</td></tr>
