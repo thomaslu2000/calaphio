@@ -3,7 +3,7 @@
 class User {
 	
 	var $data; // User session data is stored here
-    static $hide_all_fams = true; // change this to toggle showing active families for pledges (pcomm and dcomm is always hidden for them)
+    static $hide_all_fams = false; // change this to toggle showing active families for pledges (pcomm and dcomm is always hidden for them)
 	
 	function User() {
 		// Setup session data
