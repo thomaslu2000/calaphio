@@ -64,13 +64,46 @@ DOCHERE;
 if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 	trigger_error("You must be logged in as an admin to access this feature", E_USER_ERROR);
 } else {
-	
-	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass FROM apo_users join apo_actives using (user_id) order by lastname, firstname"));
+    
+    echo '<form action="" method="post">
+  <select name="sem">';
+    $query = new Query(sprintf("SELECT semester, namesake_short FROM apo_semesters ORDER BY id DESC"));
+    while ($row = $query->fetch_row()){
+        $sem = $row['semester'];
+        $namesake = $row['namesake_short'];
+        echo "<option value='$sem'>$namesake $sem</option>";
+    }
+  echo '</select>
+  <br>
+  <input type="submit" value="Enter">
+</form>
+<br>';
 
-	$start_date = strtotime("2018-05-05");
-	$end_date = strtotime("2018-12-10");
+DOCHERE;
+	
+    if (isset($_POST['sem'])){
+        $sem = $_POST['sem'];
+        $query = new Query(sprintf("SELECT semester, namesake_short, start, end FROM apo_semesters WHERE semester='$sem' LIMIT 1"));
+    } else {
+        $query = new Query(sprintf("SELECT semester, namesake_short, start, end FROM apo_semesters ORDER BY id DESC LIMIT 1"));
+    }
+    $row = $query->fetch_row();
+    $semester = $row['semester'];
+    $namesake = $row['namesake_short'];
+    
+    echo "
+    <div align='center'>
+    $semester $namesake semester
+    </div>
+    <br />
+    ";
+    
+	$start_date = strtotime($row['start']);
+	$end_date = strtotime($row['end']);
 	$sql_start_date = date("Y-m-d", $start_date);
 	$sql_end_date = date("Y-m-d", $end_date);
+    
+	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname, pledgeclass FROM apo_users join apo_actives using (user_id) order by lastname, firstname"));
 	
 	$result = "";
 	
