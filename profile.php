@@ -302,16 +302,18 @@ function print_requirements($user_id) {
 		
 		$is_active = !$is_pledge;
 		if (isset($_REQUEST['semester'])) {
-			$query = new Query(sprintf("SELECT start, end FROM apo_semesters WHERE semester='%s'", $_REQUEST['semester']));
+			$query = new Query(sprintf("SELECT start, end, id FROM apo_semesters WHERE semester='%s'", $_REQUEST['semester']));
 			$row = $query->fetch_row();
+            $sem_id = $row['id'];
 			$start_date = strtotime($row['start']);
 			$end_date = strtotime($row['end']);	
 			$sql_start_date = date("Y-m-d", $start_date);
 			$sql_end_date = date("Y-m-d", $end_date);
             $sem = $_REQUEST['semester'];
 		} else {
-			$query = new Query(sprintf("SELECT semester, start, end FROM apo_semesters ORDER BY end DESC LIMIT 1"));
+			$query = new Query(sprintf("SELECT semester, start, end, id FROM apo_semesters ORDER BY end DESC LIMIT 1"));
 			$row = $query->fetch_row();
+            $sem_id = $row['id'];
 			$start_date = strtotime($row['start']);
 			$end_date = strtotime($row['end']);
 			$sql_start_date = date("Y-m-d", $start_date);
@@ -810,6 +812,16 @@ function print_requirements($user_id) {
 				}
 			}
             
+            // Retrieve Coffee Chats
+            $queryCoffee = new Query("SELECT cm, attended FROM apo_coffee_chats WHERE user_id=$user_id AND semester=$sem_id");
+            $coffeeCount = 0;
+            while($row = $queryCoffee->fetch_row()) {
+                $coffeeCount += $row['attended'];
+                $cm = $row['cm'];
+                $attended = $row['attended'] ? "Attended" : "Didn't Attend";
+                $coffee .=  "<tr><td axis='title'>CM $cm</td><td axis='attended'>$attended</td></tr>";
+            }
+            
             // Retrieve Leadershp Credits
             $leadership_events = "";
             $leadership_count = 0;
@@ -929,6 +941,10 @@ $fellowship_events
 <table>
 <caption>Acquire 5 leadership credits - You have acquired $leadership_events_count</caption>
 $leadership_events
+</table>
+<table>
+<caption>Complete 4 coffee chats - You have completed $coffeeCount coffee chats</caption>
+$coffee
 </table>
 
 <table width="100%">

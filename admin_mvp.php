@@ -83,11 +83,12 @@ DOCHERE;
 	
     if (isset($_POST['sem'])){
         $sem = $_POST['sem'];
-        $query = new Query(sprintf("SELECT semester, namesake_short, start, end FROM apo_semesters WHERE semester='$sem' LIMIT 1"));
+        $query = new Query(sprintf("SELECT id, semester, namesake_short, start, end FROM apo_semesters WHERE semester='$sem' LIMIT 1"));
     } else {
-        $query = new Query(sprintf("SELECT semester, namesake_short, start, end FROM apo_semesters ORDER BY id DESC LIMIT 1"));
+        $query = new Query(sprintf("SELECT id, semester, namesake_short, start, end FROM apo_semesters ORDER BY id DESC LIMIT 1"));
     }
     $row = $query->fetch_row();
+    $sem_id = $row['id'];
     $semester = $row['semester'];
     $namesake = $row['namesake_short'];
     
@@ -362,7 +363,16 @@ DOCHERE;
 		} else {
 			$chaptermeeting_events = "5 Chapter Meetings: $chaptermeeting_events_count Meetings <br/>";
 		}
-
+        
+        // Retrieve Coffee Chats
+        $queryCoffee = new Query("SELECT SUM(attended) as c FROM apo_coffee_chats WHERE user_id=$user_id AND semester=$sem_id");
+        if($row = $queryCoffee->fetch_row()) {
+            $coffeeCount = $row['c'];
+        }
+        $coffee = "4 Coffee Chats: $coffeeCount Coffee Chats <br/>";
+        if ($coffeeCount < 4) {
+			$coffee = "<FONT COLOR='RED'> $coffee </FONT>";
+		}
 
 		// Retrieve Leadership Credit
 		$leadership = "";
@@ -408,6 +418,7 @@ DOCHERE;
 
 			echo <<<DOCHERE
 <b>$firstname $lastname ($pledgeclass):</b><br/>
+$coffee
 $ic_events
 $dynasty_events
 $rush_events
