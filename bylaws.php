@@ -12,7 +12,7 @@ if (!$g_user->is_logged_in()) {
 <p>This is our Bylaws and Constitution. If you are interested, please read it.<br>
 <br>
 <br>
-<a href="https://docs.google.com/document/d/1VLHwuLhXGo4POvNqJw3Z0VKzfBA0U3_sk1xcKrqC5bw/edit#">Gamma Gamma Constitution and Bylaws</a><br>
+<a href="https://docs.google.com/document/d/1Ndh2pYdeZtB-l6xaLhAi23Kr7IfakBJoZokbJ4d3o-k/edit?usp=sharing">Gamma Gamma Constitution and Bylaws</a><br>
 <br>
 <a href="https://docs.google.com/document/d/1jYqmqp5uSSdhQLpTCtSpUEkWaRvT4JKftiD-n2Q-HgI#">Gamma Gamma Risk Management Policy</a><br>
 <br>
