@@ -48,9 +48,76 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>   
 -->
+   <div class="newsItem">
+        <h2>CM 4 Recap</h2>
+        <p class="date">March 3, 2019 at 10:49pm</p>
+
+            <a href="https://docs.google.com/presentation/d/1pPuxW_C5XxYEulUcZFHjM1sJ_ptwEkJbIlqR86ClCgc/edit#slide=id.g4ef1cfe739_7_0" target="_blank">CM 4 Slides</a><br>
+    
+    <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
+    </div>
+    
+    <div class="newsItem">
+        <h2>Biweekly Service Newsletter</h2>
+        <p class="date">March 3, 2019 at 10:49pm</p>
+        <p>
+            The SVP brings to you the biweekly SERVICE NEWSLETTER!
+<br><br>
+Before we get into the upcoming events, I would just like to encourage you all to sign up for our two major APO-INITIATED EVENTS, which will occur in April:<br><br>
+
+• April 13: <a href="http://tinyurl.com/yyr3fsof" target="_blank">SPRING YOUTH SERVICE DAY (SYSD): </a><br>
+A super chill and fun Kids Zone event where you’ll be managing a booth and helping kids enjoy Cal Day 😊<br>
+<br>
+            • April 26: <a href="http://tinyurl.com/yxgjzh38" target="_blank">COLLEGE DAY:</a><br>
+We’ll be showing high school kids from Oakland what college life is like, give them a tour of the Cal campus, and have a panel of guest speakers (you may be one of them!) to give them some guidance on their academic journey<br>
+<br>
+UPCOMING OPEN SERVICE EVENTS:<br>
+<br>
+            • Mar 6: <a href="http://tinyurl.com/y6o6c7h9" target="_blank">iPhoneography, a Free Photo Berkeley Workshop: </a><br>
+Learn to take bomb pics with your phone 😉<br>
+<br>
+            • Mar 9: <a href="http://tinyurl.com/yxtjrh6f" target="_blank">Engineering for Kids Day: </a><br>
+Help kids have a fun day learning about science and engineering!<br>
+<br>
+            • Mar 10: <a href="http://tinyurl.com/y4a9nu7u" target="_blank">Community Photoshoot hosted by FPB: </a><br>
+Putting our photography skillz to practice photographing ASUC Senator Khan's office<br>
+<br>
+            • Mar 16: Suicide Prevention Walk:</a><br>
+Come volunteer, support and cheer on the people walking for this cause 😊<br>
+<br>
+• Mar 17: <a href="http://tinyurl.com/yyrh64ce" target="_blank">Jewish Contemporary Museum: </a><br>
+It'll be like an adventure disguised as service<br>
+<br>
+• Mar 20: <a href="http://tinyurl.com/y6pl3sxu" target="_blank">Blood Drive: </a><br>
+Help make blood donations as smooth and safe as possible<br>
+I will also put up calendar events to help table (promote) for this event<br>
+<br>
+• Mar 22: <a href="http://tinyurl.com/yybvfk8r" target="_blank">IC/GG Service: </a><br>
+Do a chill service activity with your IC bros!<br>
+<br>
+• Mar 22-24: <a href="http://tinyurl.com/yxh4mm4c" target="_blank">Chinese Martial Arts Tournament (CMAT) 27: </a><br>
+Help make this tournament as awesome as it can be!<br>
+<br>
+• Mar 30: <a href="http://tinyurl.com/y3madde6" target="_blank">San Francisco Zoo: <br>
+Volunteering at the zoo? Sounds like an adventure for animals!<br>
+<br>
+SOME TIPS ABOUT DOING SERVICE:<br>
+<br>
+• Take goddamn pictures and videos and upload them to SmugMug! Even if you’re not by yourself! It helps everyone to see pictures of events that they haven’t attended, as it’s the one way that we can encourage each other to attend unfamiliar service events.<br>
+<br>
+• Consider adopting a recurring service event to attend to! You will learn so much from going to an event regularly and interacting with the organizers and other volunteers there.<br>
+<br>
+• Do not be discouraged by slow/boring service events! In these moments, try to be proactive and look for ways to be helpful. Doing service oftentimes involves a lot of waiting around, patience, and mundane tasks, but don’t let that deter you from giving your time selflessly to others 😊<br>
+<br>
+Enjoy!!
+        </p>
+    
+    <p>- <a href="profile.php?user_id=4792">Michelle Chang (RT)</a></p>
+    </div>
+    
     <div class="newsItem">
         <h2>CM 3 Recap</h2>
-        <p class="date">February 15, 2018 at 10:49pm</p>
+        <p class="date">February 15, 2019 at 10:49pm</p>
 
             <a href="https://docs.google.com/presentation/d/1pPuxW_C5XxYEulUcZFHjM1sJ_ptwEkJbIlqR86ClCgc/edit#slide=id.g4ef1cfe739_7_0" target="_blank">CM 3 Slides</a><br>
             <a href="https://tinyurl.com/apowebsite" target="_blank">Website Maintainance Form</a><br>
