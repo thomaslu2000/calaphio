@@ -98,7 +98,7 @@ Do a chill service activity with your IC bros!<br>
 • Mar 22-24: <a href="http://tinyurl.com/yxh4mm4c" target="_blank">Chinese Martial Arts Tournament (CMAT) 27: </a><br>
 Help make this tournament as awesome as it can be!<br>
 <br>
-• Mar 30: <a href="http://tinyurl.com/y3madde6" target="_blank">San Francisco Zoo: <br>
+• Mar 30: <a href="http://tinyurl.com/y3madde6" target="_blank">San Francisco Zoo:</a> <br>
 Volunteering at the zoo? Sounds like an adventure for animals!<br>
 <br>
 SOME TIPS ABOUT DOING SERVICE:<br>
