@@ -52,7 +52,7 @@ if (!$g_user->is_logged_in()) {
         <h2>CM 4 Recap</h2>
         <p class="date">March 3, 2019 at 10:49pm</p>
 
-            <a href="https://docs.google.com/presentation/d/1pPuxW_C5XxYEulUcZFHjM1sJ_ptwEkJbIlqR86ClCgc/edit#slide=id.g4ef1cfe739_7_0" target="_blank">CM 4 Slides</a><br>
+            <a href="https://docs.google.com/presentation/d/1Vn4geIDuUAOJvPKGjIr7bGPXDsrLKtraleFYvVi-gLw/edit?fbclid=IwAR0Q3J6lEXplIHRiKxxUHWLTDDvZUmQFvjWEQk0_9psBCNqADoBdOLvjYww#slide=id.g4e8950cc98_0_256">CM 4 Slides</a><br>
     
     <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
     </div>
