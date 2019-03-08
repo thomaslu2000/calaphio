@@ -22,6 +22,7 @@ $calendar = new Calendar();
 <?php
 $g_user->print_login();
 $g_error->output_error(); 
+
 if (!$calendar->process_add_event()) {
 	$calendar->print_add_event();
 }

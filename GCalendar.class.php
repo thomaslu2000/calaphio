@@ -6,6 +6,7 @@ class GCalendar {
         require __DIR__ . '/vendor/autoload.php';
         $this->client = $this->getClient();
         $this->service = new Google_Service_Calendar($this->client);
+        $this->calendar_id = 'q1htbip14b5k2j8fh9goa0eqt4@group.calendar.google.com';
     }
     
     //cli interface, webmaster use only!!
@@ -42,7 +43,7 @@ class GCalendar {
         $client = new Google_Client();
         $client->setApplicationName('members');
         $client->setScopes(Google_Service_Calendar::CALENDAR);
-        $client->setAuthConfig('credentials.json');
+        $client->setAuthConfig(__DIR__ . '/credentials.json');
         $client->setAccessType('offline');
         $client->setPrompt('select_account consent');
 
@@ -50,7 +51,7 @@ class GCalendar {
         // The file token.json stores the user's access and refresh tokens, and is
         // created automatically when the authorization flow completes for the first
         // time.
-        $tokenPath = 'token.json';
+        $tokenPath = __DIR__ . '/token.json';
         if (file_exists($tokenPath)) {
             $accessToken = json_decode(file_get_contents($tokenPath), true);
             $client->setAccessToken($accessToken);
@@ -79,28 +80,45 @@ class GCalendar {
         return $calendars;
     }
     
-    function addEvent($event_arr) {
-        /*
-        example input:
+    function deleteEvent($id) {
+        $this->service->events->delete($this->calendar_id, $id);
+    }
+    
+    function addEvent($title, $loc, $des, $startAt, $endAt, $id) {
         
-        array(
-          'summary' => 'this is the title',
-          'location' => '123 sesame street',
-          'description' => 'A chance to hear more about Google\'s developer products.',
+        // create event resource object
+        $startAt = str_replace('"', '', $startAt);
+        $endAt = str_replace('"', '', $endAt);
+        if (startAt > endAt) {
+            $endAt = date("Y-m-d H:i:s", strtotime( $startAt ) + 2 * 3600 );
+        }
+        $startAt = str_replace(' ', 'T', $startAt);
+        $endAt = str_replace(' ', 'T', $endAt);
+        $event_arr = array(
+          'summary' => $title,
+          'location' => $loc,
+          'description' => $des,
+            'id' => $id,
           'start' => array(
-            'dateTime' => '2019-03-08T13:00:00-07:00',
+            'dateTime' => $startAt,
             'timeZone' => 'America/Los_Angeles',
           ),
           'end' => array(
-            'dateTime' => '2019-03-08T15:00:00-07:00',
+            'dateTime' => $endAt,
             'timeZone' => 'America/Los_Angeles',
           ),
-        )
-        */
-        $event = new Google_Service_Calendar_Event($event_arr);
-
-        $calendarId = '983e3gkdv6ll90o4v86v2fi6io@group.calendar.google.com';
-        $event = $this->service->events->insert($calendarId, $event);
+        );
+        $newEvent = new Google_Service_Calendar_Event($event_arr);
+        // check if event already exists
+        try {
+            $event = $this->service->events->get($this->calendar_id, $id);
+            $newEvent = $this->service->events->update($this->calendar_id, $id, $newEvent);
+            return $id;
+        } catch (Google_Service_Exception $e) {
+            $newEvent = $this->service->events->insert($this->calendar_id, $newEvent);
+            return $newEvent->id;
+        }
+        
     }
 }
 ?>

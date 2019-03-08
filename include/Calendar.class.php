@@ -15,7 +15,7 @@
  */
 define('CALENDAR_POPUP_WIDTH', 1000);
 define('CALENDAR_POPUP_HEIGHT', 1000);
-
+include ('GCalendar.class.php');
 class Calendar {
 	
 	var $event_type_names = array(
@@ -1971,10 +1971,11 @@ DOCHERE_print_upcoming_events;
 				$multiple_events_end_string = date("Ymd", $multiple_events_end);
 			}
 		}
+
 		
 		// FINALLY done dealing with user input!  T___T
-		
 		if (!$error) {
+            $gcal = new GCalendar();
 			do {
 				if ($time_start == "NULL") {
 					$start_at = $date_string . " " . "00:00:00";
@@ -1983,11 +1984,10 @@ DOCHERE_print_upcoming_events;
 				}
 
 				if ($time_end == "NULL") {
-					$end_at = $date_string . " " . "00:00:00";
+					$end_at = $date_string . " " . "23:59:00";
 				} else {
 					$end_at = $date_string . " " . $time_end;
 				}
-
 				$insert_statement = sprintf("INSERT INTO %scalendar_event SET title='%s', location='%s', 
 					description='%s', date='%s', time_start=%s, time_end=%s, time_allday=%s,
 					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, signup_lock=FALSE, creator_id=%s, time_tba=%s, start_at='%s', end_at='%s'",
@@ -2002,6 +2002,10 @@ DOCHERE_print_upcoming_events;
 				$query = new Query("start transaction");
 				$query = new Query($insert_statement);
 				$event_id = $query->last_insert_id();
+                
+                //add event to google calendar
+                $gcal->addEvent($title, $location, $description, $start_at, $end_at, $event_id);
+                
 				$query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description2));
 				$query = new Query("commit");
 				$old_date = date("m-d-Y", $date);
@@ -2024,6 +2028,8 @@ DOCHERE_print_upcoming_events;
 				} else {
 					$to = false;
 				}
+                
+                
 				if ($to) {
 					$headers  = 'MIME-Version: 1.0' . "\r\n";
 					$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -2216,7 +2222,7 @@ DOCHERE_print_upcoming_events;
 				}
 
 				if ($time_end == "NULL") {
-					$end_at = $date . " " . "00:00:00";
+					$end_at = $date . " " . "23:59:00";
 				} else {
 					$end_at = $date . " " . $time_end;
 				}
@@ -2224,12 +2230,17 @@ DOCHERE_print_upcoming_events;
 					description='%s', date='%s', time_start=%s, time_end=%s, time_allday=%s,
 					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, time_tba=%s, start_at='%s', end_at='%s'",
 					TABLE_PREFIX, $title, $location, $description, $date, $time_start, $time_end, $time_allday, $signup_begin, $signup_cutoff, $signup_limit, $time_tba, $start_at, $end_at);
+                //update event in google calendar
+                $gcal = new GCalendar();
+                $gcal->addEvent($title, $location, $description, $start_at, $end_at, $event_id);
 			} else {
 				$insert_statement = sprintf("UPDATE %scalendar_event SET title='%s', location='%s', 
 					description='%s', time_start=%s, time_end=%s, time_allday=%s,
 					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, time_tba=%s",
 					TABLE_PREFIX, $title, $location, $description, $time_start, $time_end, $time_allday, $signup_begin, $signup_cutoff, $signup_limit, $time_tba);
 			}
+             
+            
 			foreach ($this->filter as $key => $value) {
 				$insert_statement .= ", $key=" . $$key;
 			}
@@ -2242,6 +2253,8 @@ DOCHERE_print_upcoming_events;
 			$query = new Query($insert_statement);
 			$query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description));
 			$query = new Query("commit");
+           
+            
 			if ($event_id) {
 				$g_user->redirect("event.php?id=$event_id&refresh=true");
 			}
@@ -2497,6 +2510,8 @@ DOCHERE_print_upcoming_events;
 			case 'delete':
 				if ($g_user->permit("calendar delete events")) {
 					$description = "Event deleted";
+                    $gcal = new GCalendar();
+                    $gcal->deleteEvent($event_id);
 					$query = new Query("start transaction");
 					$query = new Query(sprintf("UPDATE %scalendar_event SET deleted=TRUE, signup_lock=TRUE WHERE event_id=%d LIMIT 1", TABLE_PREFIX, $event_id));
 					$query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description));
