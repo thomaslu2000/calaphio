@@ -81,7 +81,11 @@ class GCalendar {
     }
     
     function deleteEvent($id) {
-        $this->service->events->delete($this->calendar_id, $id);
+        try {
+            $this->service->events->delete($this->calendar_id, $id);
+        } catch (Google_Service_Exception $e) {
+        }
+        
     }
     
     function addEvent($title, $loc, $des, $startAt, $endAt, $id) {
@@ -89,7 +93,7 @@ class GCalendar {
         // create event resource object
         $startAt = str_replace('"', '', $startAt);
         $endAt = str_replace('"', '', $endAt);
-        if (startAt > endAt) {
+        if (strtotime( $startAt ) > strtotime( $endAt )) {
             $endAt = date("Y-m-d H:i:s", strtotime( $startAt ) + 2 * 3600 );
         }
         $startAt = str_replace(' ', 'T', $startAt);
