@@ -5,7 +5,7 @@ require("include/Template.class.php");
 Template::print_head(array("site.css", "calendar.css"));
 Template::print_body_header('Calendar', 'CALENDAR');
 
-echo "<a href='https://calendar.google.com/calendar?cid=cTFodGJpcDE0YjVrMmo4Zmg5Z29hMGVxdDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ'> Link to Google Calendar </a>";
+echo "Google Calendars: <a href='https://calendar.google.com/calendar/embed?src=sq28uo3jif4hii23l41ub6t2e8%40group.calendar.google.com&ctz=America%2FLos_Angeles'> Fellowships </a> <a href='https://calendar.google.com/calendar/embed?src=nqaqte7vci1aaplii55a1p5404%40group.calendar.google.com&ctz=America%2FLos_Angeles'> Service </a> <a href='https://calendar.google.com/calendar/embed?src=v1np8cnn4hcqb0jevl3ratc4hs%40group.calendar.google.com&ctz=America%2FLos_Angeles'> Other </a>";
 
 $calendar = new Calendar();
 $calendar->print_month();

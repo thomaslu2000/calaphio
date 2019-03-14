@@ -2004,7 +2004,14 @@ DOCHERE_print_upcoming_events;
 				$event_id = $query->last_insert_id();
                 
                 //add event to google calendar
-                $gcal->addEvent($title, $location, $description, $start_at, $end_at, $event_id);
+                if ((isset($_POST['type_service_chapter']) and $_POST['type_service_chapter']=="on") || (isset($_POST['type_service_campus']) and $_POST['type_service_campus']=="on") || (isset($_POST['type_service_community']) and $_POST['type_service_community']=="on") || (isset($_POST['type_service_country']) and $_POST['type_service_country']=="on")) {
+                    $gcal_type = "service";
+                } elseif (isset($_POST['type_fellowship']) and $_POST['type_fellowship'] == "on") {
+                    $gcal_type = "fellowship";
+                } else {
+                    $gcal_type = "none";
+                }
+                $gcal->addEvent($title, $location, $description, $start_at, $end_at, $event_id, $gcal_type);
                 
 				$query = new Query(sprintf("INSERT INTO %sevent_audit_trail SET event_id=%d, user_id=%d, timestamp='%s', description='%s'", TABLE_PREFIX, $event_id, $g_user->data['user_id'], $timestamp, $description2));
 				$query = new Query("commit");
@@ -2231,8 +2238,20 @@ DOCHERE_print_upcoming_events;
 					signup_begin=%s, signup_cutoff=%s, signup_limit=%d, time_tba=%s, start_at='%s', end_at='%s'",
 					TABLE_PREFIX, $title, $location, $description, $date, $time_start, $time_end, $time_allday, $signup_begin, $signup_cutoff, $signup_limit, $time_tba, $start_at, $end_at);
                 //update event in google calendar
+//                if (($row['type_service_chapter'] | $row['type_service_campus'] | $row['type_service_community'] | $row['type_service_country']) && ! $row['type_fundraiser']) {
+//						$service_items .= "        <li style=\"line-height:15px;\"$highlight>" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
+//					} elseif ($row['type_fellowship']) {
+//						$fellowship_items .= "        <li style=\"line-height:15px;\"$highlight>" . $this->format_event_title($row, $attendee_count_hash) . "</li>\r\n";
+//					}
+                if ((isset($_POST['type_service_chapter']) and $_POST['type_service_chapter']=="on") || (isset($_POST['type_service_campus']) and $_POST['type_service_campus']=="on") || (isset($_POST['type_service_community']) and $_POST['type_service_community']=="on") || (isset($_POST['type_service_country']) and $_POST['type_service_country']=="on")) {
+                    $gcal_type = "service";
+                } elseif (isset($_POST['type_fellowship']) and $_POST['type_fellowship'] == "on") {
+                    $gcal_type = "fellowship";
+                } else {
+                    $gcal_type = "none";
+                }
                 $gcal = new GCalendar();
-                $gcal->addEvent($title, $location, $description, $start_at, $end_at, $event_id);
+                $gcal->addEvent($title, $location, $description, $start_at, $end_at, $event_id, $gcal_type);
 			} else {
 				$insert_statement = sprintf("UPDATE %scalendar_event SET title='%s', location='%s', 
 					description='%s', time_start=%s, time_end=%s, time_allday=%s,

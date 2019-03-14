@@ -11,9 +11,16 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin account disable")) {
         $enddate = $_POST['enddate'];
         $gcal = new GCalendar();
         $startdate = $_POST['startdate'];
-		$query = new Query("SELECT event_id, title, location, description, start_at, end_at FROM apo_calendar_event WHERE date >= '$startdate' AND date <= '$enddate' AND deleted=0");
+		$query = new Query("SELECT event_id, title, location, description, start_at, end_at, type_service_chapter, type_service_campus, type_service_community, type_service_country, type_fellowship FROM apo_calendar_event WHERE date >= '$startdate' AND date <= '$enddate' AND deleted=0");
         while ($row = $query->fetch_row()) {
-            $gcal->addEvent($row['title'], $row['location'], $row['description'], $row['start_at'], $row['end_at'], $row['event_id']);
+            if($row['type_service_chapter'] ||  $row['type_service_campus'] || $row['type_service_community'] || $row['type_service_country']) {
+                $gcal_type = "service";
+            } elseif ($row['type_fellowship']) {
+                $gcal_type = "fellowship";
+            } else {
+                $gcal_type = "none";
+            }
+            $gcal->addEvent($row['title'], $row['location'], $row['description'], $row['start_at'], $row['end_at'], $row['event_id'], $gcal_type);
         }
         echo "Events added to calendar";
     }

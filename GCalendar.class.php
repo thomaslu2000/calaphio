@@ -7,6 +7,9 @@ class GCalendar {
         $this->client = $this->getClient();
         $this->service = new Google_Service_Calendar($this->client);
         $this->calendar_id = 'q1htbip14b5k2j8fh9goa0eqt4@group.calendar.google.com';
+        $this->fellowship_id = 'sq28uo3jif4hii23l41ub6t2e8@group.calendar.google.com';
+        $this->service_id = 'nqaqte7vci1aaplii55a1p5404@group.calendar.google.com';
+        $this->other_id = 'v1np8cnn4hcqb0jevl3ratc4hs@group.calendar.google.com';
     }
     
     //cli interface, webmaster use only!!
@@ -82,13 +85,21 @@ class GCalendar {
     
     function deleteEvent($id) {
         try {
-            $this->service->events->delete($this->calendar_id, $id);
+            $this->service->events->delete($this->service_id, $id);
+        } catch (Google_Service_Exception $e) {
+        }
+        try {
+            $this->service->events->delete($this->fellowship_id, $id);
+        } catch (Google_Service_Exception $e) {
+        }
+        try {
+            $this->service->events->delete($this->other_id, $id);
         } catch (Google_Service_Exception $e) {
         }
         
     }
     
-    function addEvent($title, $loc, $des, $startAt, $endAt, $id) {
+    function addEvent($title, $loc, $des, $startAt, $endAt, $id, $type) {
         
         // create event resource object
         $startAt = str_replace('"', '', $startAt);
@@ -113,13 +124,21 @@ class GCalendar {
           ),
         );
         $newEvent = new Google_Service_Calendar_Event($event_arr);
+        if ($type == "service") {
+            $calendar_id = $this->service_id;
+        } elseif ($type == "fellowship") {
+            $calendar_id = $this->fellowship_id;
+        } else {
+            $calendar_id = $this->other_id;
+        }
+        
         // check if event already exists
         try {
-            $event = $this->service->events->get($this->calendar_id, $id);
-            $newEvent = $this->service->events->update($this->calendar_id, $id, $newEvent);
+            $event = $this->service->events->get($calendar_id, $id);
+            $newEvent = $this->service->events->update($calendar_id, $id, $newEvent);
             return $id;
         } catch (Google_Service_Exception $e) {
-            $newEvent = $this->service->events->insert($this->calendar_id, $newEvent);
+            $newEvent = $this->service->events->insert($calendar_id, $newEvent);
             return $newEvent->id;
         }
         
