@@ -50,11 +50,62 @@ if (!$g_user->is_logged_in()) {
 -->
     <div class="newsItem">
         <h2>CM 5 Recap</h2>
-        <p class="date">March 12, 2019 at 10:49pm</p>
+        <p class="date">March 18, 2019 at 10:49pm</p>
             <a href="https://docs.google.com/presentation/d/1yBeONzD3RAhqSj0pK_nrC1BzAoi0iRj9-GtHZNh5MqE/edit?usp=sharing">CM 5 Slides</a><br>
             <a href="https://docs.google.com/document/d/1A8pb2Ym3EDk3Et1lL-PX0p-fGFd-M0J_5aPU4qirUew/edit?usp=sharing">Mid-Semester Forum</a><br>
     
     <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
+    </div>
+    <div class="newsItem">
+        <h2>Biweekly Service Newsletter #3</h2>
+        <p class="date">March 18, 2019 at 10:49pm</p>
+           <p>
+            The SVP brings to you the biweekly SERVICE NEWSLETTER #3!
+<br><br>
+These are two of our most important APO events are occurring next month. I recommend you signing up for at least one of them to experience what it’s like to host a service event on our own!
+<br><br>
+               • April 13: <a href="http://tinyurl.com/yyr3fsof" target="_blank">SPRING YOUTH SERVICE DAY (SYSD): </a><br>
+A super chill and fun Kids Zone event where you’ll be managing a booth and helping kids have fun on Cal Day.
+<br>
+               • April 26: <a href="http://tinyurl.com/yxgjzh38" target="_blank">COLLEGE DAY: </a><br>
+An important event where we show high school kids what college life is about, give them a tour of the campus, and have a panel of students (you may be one of them) to give them your personal take on your academic journey so far.
+<br><br>
+UPCOMING OPEN SERVICE EVENTS:
+<br><br>
+               • Mar 19-20 <a href="http://tinyurl.com/y6pl3sxu" target="_blank">Blood Drive:</a><br>
+We’re sponsoring American Red Cross in their Blood Drive! Help promote the event by tabling/flyering. Canteening shifts are full already!<br>
+<br>
+               • Mar 22 <a href="https://tinyurl.com/y5vblz2p" target="_blank">Esh/Cage Cleanup for SYSD: </a><br>
+We’re scouring through Esh and the Cage to make sure we know what we have and what we need to buy for Spring Youth Service Day. Come help if you’re free, it’ll be chill.<br>
+<br>
+               • Mar 22-24 <a href="http://tinyurl.com/yxh4mm4c" target="_blank">Chinese Martial Arts Tournament (CMAT) 27: </a><br>
+Help make this tournament as awesome as it can be!<br>
+<br>
+               • Apr 3/5 <a href="https://tinyurl.com/y4quel4e" target="_blank">Dog/Cat Friend Orientation: </a><br>
+Walk dogs and/or pet cats at the Berkeley Animal shelter! You must attend orientation before you can volunteer, and commit to 6 months of volunteering (i.e. 24 hours) – but they’re very flexible with this, so you can spread the hours out as much as you need to! *Highly recommend*<br>
+<br>
+               • Apr 5 <a href="https://tinyurl.com/y2cr5g8b" target="_blank">Oakland First Fridays: </a><br>
+Volunteer to make this monthly Oakland event as smooth as possible! Volunteer roles include photographer, gate greeter, booth coordination, social media volunteer, runner, among others.<br>
+<br>
+               • Apr 10 <a href="https://tinyurl.com/y3pjbqq3" target="_blank">Shadow Day: </a><br>
+Show a high school student what a day in your life at college is life by bringing them along!<br>
+<br>
+               • Apr 12 <a href="https://tinyurl.com/y2l7r4yj" target="_blank">Phi Delta Epsilon Philanthropy Show Painting: </a><br>
+A really artsy philanthropy event where artists will paint organs on the models’ bodies. You can volunteer to be an artist or model, with the money being donated to the Children’s Miracle Network Hospital.<br>
+<br>
+               • Apr 15-19 <a href="https://tinyurl.com/yygzlk5w" target="_blank">Museum of Tomorrow: </a><br>
+Help out at the climate change pop-up museum right here on UC Berkeley!!
+<br><br>
+SOME REMINDERS ABOUT DOING SERVICE:
+<br><br>
+• Sign up for SYSD and/or College Day! They are organized by your fellow bros in the chapter and show the effort that goes into hosting our own service events.<br>
+<br>
+• If you’re chairing, you’re responsible for taking pictures (or finding someone who will take pictures) and uploading them to SmugMug, thanks.<br>
+<br>
+• Sing the toast song at the end of the service event! This is non-negotiable, unless there’s only 2 of you in which case it would be really awkward so don’t do it.<br><br>
+The weather is getting better-ish, so the SVP is expecting to see more active bros doing service these coming weeks!<br>
+        </p>
+    <p>- <a href="profile.php?user_id=4792">Michelle Chang (RT)</a></p>
     </div>
    <div class="newsItem">
         <h2>CM 4 Recap</h2>
