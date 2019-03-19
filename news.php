@@ -52,7 +52,7 @@ if (!$g_user->is_logged_in()) {
         <h2>CM 5 Recap</h2>
         <p class="date">March 12, 2019 at 10:49pm</p>
 
-            <a href="https://docs.google.com/spreadsheets/d/1R7KbS7i642MmChloxKEAaXycjBnVsd51npea7lFJVcY/edit#gid=425889304">CM 5 Slides</a><br>
+            <a href="https://docs.google.com/document/d/1A8pb2Ym3EDk3Et1lL-PX0p-fGFd-M0J_5aPU4qirUew/edit?usp=sharing">CM 5 Slides</a><br>
     
     <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
     </div>
