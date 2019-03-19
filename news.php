@@ -51,8 +51,8 @@ if (!$g_user->is_logged_in()) {
     <div class="newsItem">
         <h2>CM 5 Recap</h2>
         <p class="date">March 12, 2019 at 10:49pm</p>
-
-            <a href="https://docs.google.com/document/d/1A8pb2Ym3EDk3Et1lL-PX0p-fGFd-M0J_5aPU4qirUew/edit?usp=sharing">CM 5 Slides</a><br>
+            <a href="https://docs.google.com/presentation/d/1yBeONzD3RAhqSj0pK_nrC1BzAoi0iRj9-GtHZNh5MqE/edit?usp=sharing">CM 5 Slides</a><br>
+            <a href="https://docs.google.com/document/d/1A8pb2Ym3EDk3Et1lL-PX0p-fGFd-M0J_5aPU4qirUew/edit?usp=sharing">Mid-Semester Forum</a><br>
     
     <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
     </div>
