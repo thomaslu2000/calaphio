@@ -524,14 +524,22 @@ DOCHERE_add_event;
 		$search_results = "";
 		if (isset($_REQUEST['function'])) {
 			$where_array = array();
-			if (isset($_REQUEST['firstname']) && $_REQUEST['firstname']) {
-				$firstname = Query::escape_string($_REQUEST['firstname']);
-				$where_array[] = "firstname LIKE '$firstname%'";
-			}
-			if (isset($_REQUEST['lastname']) && $_REQUEST['lastname']) {
-				$lastname = Query::escape_string($_REQUEST['lastname']);
-				$where_array[] = "lastname LIKE '$lastname%'";
-			}
+            if (isset($_REQUEST['multiname']) && $_REQUEST['multiname']) {
+                $multiname_array = array();
+                foreach(explode(", ", $_REQUEST['multiname']) as $name) {
+                    $multiname_array[] = "CONCAT(firstname,' ',lastname) LIKE '$name%'";
+                }
+                $where_array[] = implode(" OR ", $multiname_array);
+            } else {
+                if (isset($_REQUEST['firstname']) && $_REQUEST['firstname']) {
+                    $firstname = Query::escape_string($_REQUEST['firstname']);
+                    $where_array[] = "firstname LIKE '$firstname%'";
+                }
+                if (isset($_REQUEST['lastname']) && $_REQUEST['lastname']) {
+                    $lastname = Query::escape_string($_REQUEST['lastname']);
+                    $where_array[] = "lastname LIKE '$lastname%'";
+                }  
+            }
 			if (isset($_REQUEST['pledgeclass']) && $_REQUEST['pledgeclass']) {
 				$pledgeclass = Query::escape_string(trim($_REQUEST['pledgeclass']));
 				$where_array[] = "pledgeclass = '$pledgeclass'";
@@ -572,6 +580,8 @@ DOCHERE_print_add_people_search;
 <tr><td>Firstname: </td><td><input type="text" name="firstname" /></td></tr>
 <tr><td>Lastname: </td><td><input type="text" name="lastname" /></td></tr>
 <tr><td>Pledgeclass: </td><td><input type="text" name="pledgeclass" /></td></tr>
+<tr><td>Names Separated By Commas: </td><td><input type="text" name="multiname" /></td></tr>
+<tr><td> (i.e. Shengmin, Stanley Shaw, Virgil)</td></tr>
 </table>
 <button type="submit" name="function" value="Search">Search</button> 
 <input type="hidden" name="id" value="$event_id" />
