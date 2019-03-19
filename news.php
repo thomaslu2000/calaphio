@@ -48,6 +48,14 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>   
 -->
+    <div class="newsItem">
+        <h2>CM 5 Recap</h2>
+        <p class="date">March 12, 2019 at 10:49pm</p>
+
+            <a href="https://docs.google.com/spreadsheets/d/1R7KbS7i642MmChloxKEAaXycjBnVsd51npea7lFJVcY/edit#gid=425889304">CM 5 Slides</a><br>
+    
+    <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
+    </div>
    <div class="newsItem">
         <h2>CM 4 Recap</h2>
         <p class="date">March 3, 2019 at 10:49pm</p>
