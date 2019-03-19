@@ -21,6 +21,7 @@ $available_permissions = array(
 	'<a href="admin_admin_power.php">Admin Power Control (For Admin VP)</a>' => 'admin view requirements',
 	'<a href="admin_contact.php">Mailing List (Contact Tab) </a>' => 'admin view requirements',
 	'<a href="admin_actives.php">Active List Update </a>' => 'admin view requirements',
+    '<a href="admin_view_individual_pledge.php">View Individual Pledge Progress</a>' => 'admin view pledge requirements',
 	'<a href="admin_view_pledge_requirements.php">View Pledge Requirements</a>' => 'admin view pledge requirements',
 	'<a href="admin_pcomm.php">PComm Power</a>' => 'admin view requirements',
 	'<a href="admin_pledge_superstar.php">Pledge Superstars</a>' => 'admin view pledge requirements',
