@@ -57,7 +57,7 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
     </div>
     <div class="newsItem">
-        <h2>Biweekly Service Newsletter #3</h2>
+        <h2>Biweekly Service </h2>
         <p class="date">March 18, 2019 at 10:49pm</p>
            <p>
             The SVP brings to you the biweekly SERVICE NEWSLETTER #3!
@@ -65,7 +65,7 @@ if (!$g_user->is_logged_in()) {
 These are two of our most important APO events are occurring next month. I recommend you signing up for at least one of them to experience what it’s like to host a service event on our own!
 <br><br>
                • April 13: <a href="http://tinyurl.com/yyr3fsof" target="_blank">SPRING YOUTH SERVICE DAY (SYSD): </a><br>
-A super chill and fun Kids Zone event where you’ll be managing a booth and helping kids have fun on Cal Day.
+A super chill and fun Kids Zone event where you’ll be managing a booth and helping kids have fun on Cal Day. <br>
 <br>
                • April 26: <a href="http://tinyurl.com/yxgjzh38" target="_blank">COLLEGE DAY: </a><br>
 An important event where we show high school kids what college life is about, give them a tour of the campus, and have a panel of students (you may be one of them) to give them your personal take on your academic journey so far.

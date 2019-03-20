@@ -203,6 +203,44 @@ DOCHERE;
 		
 DOCHERE;
 
+    $ranknum = 1;
+
+	$ranking = "";
+	
+	$query = new Query(sprintf("
+	select *, attendedTime + COALESCE(flakedTime, 0 ) as totalTime
+	from (SELECT firstname, lastname, user_id, pledgeclass, count(hours) as attendedTime
+	FROM (apo_calendar_event JOIN apo_calendar_attend USING (event_id)) Join apo_users USING (user_id)
+	WHERE (type_interchapter=TRUE) AND attended = TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND disabled = 0 Group By user_id) as attendedHours
+	left join (SELECT user_id, count(hours) * -1 as flakedTime
+	FROM (apo_calendar_event JOIN apo_calendar_attend USING (event_id)) Join apo_users USING (user_id)
+	WHERE (type_interchapter = TRUE) AND flaked = TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND disabled = 0 Group By user_id) as flakedHours
+	using (user_id) group by user_id order by totalTime DESC
+	", date("Y-m-d", strtotime($start)), date("Y-m-d", strtotime($end)), date("Y-m-d", strtotime($start)), date("Y-m-d", strtotime($end))));
+	
+	while ($row = $query->fetch_row()) {
+
+		$rank = $ranknum . ".";
+		$firstname = $row['firstname'];
+		$lastname = $row['lastname'];
+		$name = $firstname . " " . $lastname . " (" . $row['pledgeclass'] . ")";
+		$attended = $row['attendedTime'];
+		$flaked = $row['flakedTime'] == NULL ? 0 : $row['flakedTime'];
+		$total = $row['totalTime'];
+		$ranking .= "<tr><td class=\"rank\">$rank</td><td class=\"name\">$name</td><td class=\"attendedTime\">$attended</td><td class=\"flakedTime\">$flaked</td><td class=\"totalTime\">$total</td></tr>\r\n";
+		$ranknum++;
+	}
+	
+	echo <<<DOCHERE
+	<div style="float:right; width:450px;">
+	<table class="admin_superstar">
+	<caption>IC Superstars (Events)</caption>
+	<tr><th>Rank</th><th>Name</th><th>Attended</th><th>Flaked</th><th>Total</th></tr>
+	$ranking
+	</table>
+	</div>
+	
+DOCHERE;
 }
 }
 
