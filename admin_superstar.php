@@ -145,6 +145,7 @@ DOCHERE;
 	FROM (apo_calendar_event JOIN apo_calendar_attend USING (event_id)) JOIN apo_users USING (user_id)
 	WHERE (type_fellowship=TRUE OR type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR
 	type_fundraiser=TRUE OR type_alumni=TRUE OR type_interchapter=TRUE OR (type_custom=5 OR type_custom=12 OR type_custom=13 OR type_custom=3))
+    AND miles > 0
 	AND attended = TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND disabled = 0 Group By user_id order by drivenMiles DESC
 		", date("Y-m-d", strtotime($start)), date("Y-m-d", strtotime($end))));
 	
@@ -232,7 +233,7 @@ DOCHERE;
 	}
 	
 	echo <<<DOCHERE
-	<div style="float:right; width:450px;">
+	<div style="float:left; width:450px;">
 	<table class="admin_superstar">
 	<caption>IC Superstars (Events)</caption>
 	<tr><th>Rank</th><th>Name</th><th>Attended</th><th>Flaked</th><th>Total</th></tr>

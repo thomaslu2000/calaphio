@@ -46,11 +46,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
                 //	$ic_events_count--;
                 }
             }
-            if ($ic_events_count < 1) {
-                $ic_events = "<FONT COLOR='RED'>1 IC Credit: $ic_events_count Credits <br/></FONT>";
-            } else {
-                $ic_events = "1 IC Credit: $ic_events_count Credits <br/>";
-            }
+            $ic_events = "IC Credit: $ic_events_count Credits <br/>";
             //Retrieve Dynasty events
             $dynasty_events = "";
             $dynasty_events_count = 0;
@@ -67,11 +63,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
                 //	$ic_events_count--;
                 }
             }
-            if ($dynasty_events_count < 1) {
-                $dynasty_events = "<FONT COLOR='RED'>1 Dynasty Event: $dynasty_events_count Events <br/></FONT>";
-            } else {
-                $dynasty_events = "1 Dynasty Event: $ic_events_count Events <br/>";
-            }
+            $dynasty_events = "Dynasty Events: $ic_events_count Events <br/>";
 
             // Retrieve Service events
             $service_events = "";
@@ -106,19 +98,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
                     $service_hours -= $row['hours'];
                 }
             }
-            if ($service_hours < 20) {
-                $service_events = "<FONT COLOR='RED'>20 Service Hours: $service_hours Hours <br/></FONT>";
-            } else {
-                $service_events = "20 Service Hours: $service_hours Hours <br/>";
-            }
-
-            $service_total = $service_chapter + $service_campus + $service_community + $service_country;
-
-            if ($service_total < 3) {
-                $four_cs = "<FONT COLOR='RED'>3 Cs of Service: $service_total Cs <br/></FONT>";
-            } else {
-                $four_cs = "3 Cs of Service: $service_total Cs <br/>";
-            }		
+            $service_events = "Service Hours: $service_hours Hours <br/>";
 
             // Retrieve Fellowship events
             $fellowship_events = "";
@@ -136,11 +116,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
                     $fellowship_events_count--;
                 }
             }
-            if ($fellowship_events_count < 5) {
-                $fellowship_events = "<FONT COLOR='RED'>5 Fellowships: $fellowship_events_count Fellowships <br/></FONT>";
-            } else {
-                $fellowship_events = "5 Fellowships: $fellowship_events_count Fellowships <br/>";
-            }
+            $fellowship_events = "Fellowships: $fellowship_events_count Fellowships <br/>";
+           
 
             // Retrieve Fundraiser events
             $fundraiser_events = "";
@@ -158,11 +135,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
                     $fundraiser_events_count--;
                 }
             }
-            if ($fundraiser_events_count < 1) {
-                $fundraiser_events = "<FONT COLOR='RED'>1 Fundraiser: $fundraiser_events_count Fundraiser <br/></FONT>";
-            } else {
-                $fundraiser_events = "1 Fundraiser: $fundraiser_events_count Fundraiser <br/>";
-            }
+            $fundraiser_events = "Fundraisers: $fundraiser_events_count Fundraisers <br/>";
+            
 
             // Retrieve Election events
             $election_events = "";
@@ -182,11 +156,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
                 //	$election_events_count--;
                 }
             }
-            if ($election_events_count < 1) {
-                $election_events = "<FONT COLOR='RED'>1 Election: $election_events_count Election <br/></FONT>";
-            } else {
-                $election_events = "1 Election: $election_events_count Election <br/>";
-            }
+            $election_events = "Elections: $election_events_count Elections <br/>";
 
             // Retrieve Chapter Meeting events
             $chaptermeeting_events = "";
@@ -204,11 +174,8 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
                 //	$chaptermeeting_events_count--;
                 }
             }
-            if ($chaptermeeting_events_count < 5) {
-                $chaptermeeting_events = "<FONT COLOR='RED'>5 Chapter Meetings: $chaptermeeting_events_count Meetings <br/></FONT>";
-            } else {
-                $chaptermeeting_events = "5 Chapter Meetings: $chaptermeeting_events_count Meetings <br/>";
-            }
+            $chaptermeeting_events = "Chapter Meetings: $chaptermeeting_events_count Meetings <br/>";
+    
                 echo <<<DOCHERE
 <b>$firstname $lastname:</b><br/>
 $ic_events
