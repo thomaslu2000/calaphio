@@ -193,7 +193,7 @@ DOCHERE;
     
     echo <<<HEREDOC
     <h2>View Individual Pledge Data</h2>
-    <form method="post" action="    ">
+    <form method="post" action="">
     <p>Pledge's name (can include last name as well): <input type="text" name="name" value="" /> <button type="submit" name="submit">Submit</button>
     </form>
 HEREDOC;
