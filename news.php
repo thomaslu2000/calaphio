@@ -48,6 +48,30 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>   
 -->
+   <div class="newsItem">
+        <h2>CM 5 Recap</h2>
+        <p class="date">March 25, 2019 at 10:49pm</p>
+        <p>
+            Happy Spring Break!<br><br>
+
+Do you want to VOLUNTEER or attend IC events in SOCAL? Here are some of the upcoming events:<br><br>
+
+            <a href="http://members.calaphio.com/event.php?id=156321" target="_blank">Sketchers Marathon with UCLA APhiO</a>: <br>
+Sun 3/24 Multiple Shifts<br><br>
+
+
+            <a href="http://members.calaphio.com/event.php?id=156329" target="_blank">Hollywood Food Coalition</a> (think Berkeley Food and Housing) with UCLA APhiO<br>
+Everyday 2-6:30pm OR 5:45-8:30PM<br><br>
+
+            <a href="http://members.calaphio.com/event.php?id=156320&refresh=true#" target="_blank">[IC] USC General Meeting</a><br>
+Mon 7:30-8:30pm<br><br>
+
+            <a href="http://members.calaphio.com/event.php?id=156288" target="_blank">[IC] SDSU General Meeting</a><br>
+Mon 7-9pm
+        </p>
+    
+    <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
+    </div>
     <div class="newsItem">
         <h2>CM 5 Recap</h2>
         <p class="date">March 18, 2019 at 10:49pm</p>
