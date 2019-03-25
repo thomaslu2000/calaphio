@@ -49,7 +49,7 @@ if (!$g_user->is_logged_in()) {
 </div>   
 -->
    <div class="newsItem">
-        <h2>CM 5 Recap</h2>
+        <h2>Spring Break Opportunities!</h2>
         <p class="date">March 25, 2019 at 10:49pm</p>
         <p>
             Happy Spring Break!<br><br>
@@ -81,7 +81,7 @@ Mon 7-9pm
     <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
     </div>
     <div class="newsItem">
-        <h2>Biweekly Service </h2>
+        <h2>Biweekly Service Newsletter #3</h2>
         <p class="date">March 18, 2019 at 10:49pm</p>
            <p>
             The SVP brings to you the biweekly SERVICE NEWSLETTER #3!
