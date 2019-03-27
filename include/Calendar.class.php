@@ -1104,6 +1104,7 @@ HEREDOC;
 			$attendees = "";
 			$attendee_emails = array();
 			$waitlist = $signup_limit != 0 && $query->num_rows() > $signup_limit ? "<tr><th axis=\"subheading\">Waitlist</th></tr>\r\n" : "";
+            $waitlisted_ids = array();
 			$attendee_count = 0;
 			$remove_attendee_heading = !$signup_hardlock && $is_chair && $now < $event_time || $g_user->permit("calendar drop users") ? "<th axis=\"remove\">Drop</th>" : "";
 			while ($row = $query->fetch_row()) {
@@ -1118,6 +1119,7 @@ HEREDOC;
 					$attendees .= sprintf("<tr><td axis=\"name\">%d. <a href=\"profile.php?user_id=%d\">%s %s</a></td><td axis=\"pledgeclass\">%s</td><td axis=\"photographer\">%s</td><td axis=\"driving\">%s</td><td axis=\"phone\">%s</td><td axis=\"cell\">%s</td><td axis=\"signup\">%s</td>$remove_attendee</tr>\r\n",
 						$attendee_count, $row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass'], $photographer, $driving, $row['phone'], $row['cellphone'], $signup_time);
 				} else {
+                    $waitlisted_ids[] = $row['user_id'];
 					$waitlist .= sprintf("<tr><td axis=\"name\">%d. <a href=\"profile.php?user_id=%d\">%s %s</a></td><td axis=\"pledgeclass\">%s</td><td axis=\"photographer\">%s</td><td axis=\"driving\">%s</td><td axis=\"phone\">%s</td><td axis=\"cell\">%s</td><td axis=\"signup\">%s</td>$remove_attendee</tr>\r\n",
 						$attendee_count, $row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass'], $photographer, $driving, $row['phone'], $row['cellphone'], $signup_time);
 				}
@@ -1129,7 +1131,7 @@ HEREDOC;
 			$query = new Query(sprintf("SELECT chair, driver FROM %scalendar_attend WHERE event_id=%d AND user_id=%d LIMIT 1", TABLE_PREFIX, $event_id, $g_user->data['user_id']));
 			if ($row = $query->fetch_row()) {
 				$signup = '';
-				$make_me_chair = $g_user->permit("admin add users", TRUE) || (!$signup_hardlock && !$row['chair'] && $chair_count < $max_chairs) ? "<li><form action=\"event.php\" method=\"post\"><button class=\"btn btn-small\" type=\"submit\" name=\"function\" value=\"Make Me Chair\">Make Me Chair</button><input type=\"hidden\" name=\"id\" value=\"$event_id\" /></form></li>" : '';
+				$make_me_chair = (!$signup_hardlock && !$row['chair'] && $chair_count < $max_chairs && !in_array($g_user->data['user_id'], $waitlisted_ids)) ? "<li><form action=\"event.php\" method=\"post\"><button class=\"btn btn-small\" type=\"submit\" name=\"function\" value=\"Make Me Chair\">Make Me Chair</button><input type=\"hidden\" name=\"id\" value=\"$event_id\" /></form></li>" : '';
 				$take_me_off = $is_chair && $five_days_expired ? '<strong>Chair Can\'t Drop</strong>' : (!$signup_lock ? "<li><form action=\"event.php\" method=\"post\"><button class=\"btn btn-small\" type=\"submit\" name=\"function\" value=\"Take Me Off\">Take Me Off</button><input type=\"hidden\" name=\"id\" value=\"$event_id\" /></form></li>" : '<strong>Signup Closed</strong>');
 				if (!$is_photographer) {
 					$photographer = "<li><form action=\"event.php\" method=\"post\"><button class=\"btn btn-small\" type=\"submit\" name=\"function\" value=\"Make Me Photographer\">Make Me Photographer</button><input type=\"hidden\" name=\"id\" value=\"$event_id\" /></form></li>";
