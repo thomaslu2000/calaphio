@@ -64,10 +64,14 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view requirements")) {
 		if (isset($_POST['type_custom_selected']) && $_POST['type_custom_selected'] && isset($_POST['type_custom']) && in_array($_POST['type_custom'], array_keys($custom_types))) {
 			$where_statement_array[] = "type_custom=$_POST[type_custom]";
 		}
-		
-		$begin_date = "2016-01-19";
-		$end_date = "2016-05-19";
-	
+        
+        $query = new Query("SELECT semester, start, end FROM apo_semesters ORDER BY id DESC LIMIT 1");
+        if ($row = $query->fetch_row()){
+            $begin_date = $row['start'];
+		    $end_date = $row['end'];
+            $sem_name = $row['semester'];
+        }
+
 		$where_statement = $where_statement_array ? "WHERE " . implode(" OR ", $where_statement_array) : '';
 		
 		$query = new Query(sprintf("SELECT * FROM %susers
@@ -128,7 +132,7 @@ HEREDOC;
 	}
 	
 	echo <<<HEREDOC
-<h1>View Active/Pledge Requirements (TT)</h1>
+<h1>View Active/Pledge Requirements ($sem_name)</h1>
 <form method="post" action="">
 <table>
 <caption></caption>

@@ -53,7 +53,7 @@ if ($g_user->data['user_id'] == 1190 || $g_user->data['user_id'] == 1086) {
 } else {
 	$is_tomo_or_bonnie = false;
 }
-$query = new Query("SELECT semester, start, end FROM apo_semesters WHERE id > 19 ORDER BY id DESC");
+$query = new Query("SELECT semester, start, end FROM apo_semesters ORDER BY id DESC LIMIT 1");
 if ($row = $query->fetch_row()){
     
     $start_date = strtotime($row['start']);
