@@ -864,6 +864,8 @@ function print_requirements($user_id) {
             $leadership_events .= "<tr><td axis='title'>Signed up to chair $chairing_times events</td><td axis='credits'>$credits</td></tr>";
             $leadership_events_count+=$credits;
 		
+            $chairing_link = $GLOBALS['excomm committees'];
+            
 			echo <<<DOCHERE
 <div style="margin:1em 0em">
 	<form action="#" method="post" onsubmit="">
@@ -949,7 +951,7 @@ $coffee
 
 <table width="100%">
 <caption>Complete 5 leadership credits - You can get credit by doing any of the following:</caption>
-<tr><td axis="name">Serving on a committee - <a href="https://docs.google.com/spreadsheets/d/1UHi-jXJE81ivCynymgVezzy69_cPS-x5Jxgfaf0HBPE/edit?fbclid=IwAR0cgax6eLDxahp3ITOPdCjGpuFn0UgvpBp304mgfqQ17S6sUWXXk37RyW4#gid=1589878783">Search for one here</a> <strong>(required)</strong></td></tr>
+<tr><td axis="name">Serving on a committee - <a href="$chairing_link">Search for one here</a> <strong>(required)</strong></td></tr>
 <tr><td axis="name">Sponsoring (1 credit)</td></tr>
 <tr><td axis="name">Each additional rush event you attend with your sponsoree after MTC (1 credit)</td></tr>
 <tr><td axis="name">Submit 3 (original content) Stylus Submissions (1 credit)</td></tr>

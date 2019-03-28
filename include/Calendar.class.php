@@ -1238,13 +1238,13 @@ Posted by <strong>$name</strong> @ $post_time$delete_comment
 DOCHERE_comments;
 			} //CHANGE THE LINKS WHEN THE SEMESTER CHANGES
             if(in_array("Rush", $event_types_array)){
-                $smug_link = "https://calaphio.smugmug.com/upload/wbHrmR/rush";
+                $smug_link = $GLOBALS['smugmug rush'];
             } elseif (in_array("Service to Country", $event_types_array) || in_array("Service to Community", $event_types_array) || in_array("Service to Chapter", $event_types_array) || in_array("Service to Campus", $event_types_array) || in_array("Fundraiser", $event_types_array)){
-                $smug_link = "https://calaphio.smugmug.com/upload/M2JDwn/service";
+                $smug_link = $GLOBALS['smugmug service'];
             } elseif(in_array("Fellowship", $event_types_array)){
-                $smug_link = "https://calaphio.smugmug.com/upload/HV9RSN/fellowships";
+                $smug_link = $GLOBALS['smugmug fellowship'];
             } else{
-                $smug_link = "https://calaphio.smugmug.com/upload/jCgBSR/upload";
+                $smug_link = $GLOBALS['smugmug other'];
             }
 			$smugmug = $g_user->is_logged_in() ? "<a href='$smug_link' target='_blank'>Upload Your Photos Here!</a>" : "Must Be Logged In to Access!";
 			if ($g_user->is_logged_in()) {

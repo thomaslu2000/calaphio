@@ -17,6 +17,7 @@ if (ini_get('register_globals')) {
 
 //date_default_timezone_set(TIMEZONE); This is only supported by PHP 5
 putenv("TZ=" . TIMEZONE);
+require('initVariables.php');
 
 $g_error = new Error();
 $g_user = new User();

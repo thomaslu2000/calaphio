@@ -3,7 +3,6 @@
 class User {
 	
 	var $data; // User session data is stored here
-    static $hide_all_fams = false; // change this to toggle showing active families for pledges (pcomm and dcomm is always hidden for them)
 	
 	function User() {
 		// Setup session data
@@ -237,7 +236,7 @@ class User {
         
         $hide_family = false;
         if (!$this->is_logged_in() or $this->is_pledge()) {
-            if(User::$hide_all_fams){
+            if($GLOBALS['hide all fams']){
                 return true;
             }
             $current_month = (int) (date('m') > 7); // 0 in spring, 1 in fall

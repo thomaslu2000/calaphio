@@ -78,7 +78,7 @@ DOCHERE_print_head;
 		// 	'Calendar' => "calendar.php",
 		// 	'Members' => "roster.php",
 		// 	'Contact' => "contact.php");
-        $budget_link = "https://docs.google.com/spreadsheets/d/1nGL7EFeRhQ29fJM0GRoQS_ZgHgY5GZs2rRDUNLiIRaI/edit?usp=sharing";
+        $budget_link = $GLOBALS['budget'];
 		$section_array = array(
 			'Home' => array(
 				"HOME" => "news.php",

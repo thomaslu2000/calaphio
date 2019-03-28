@@ -243,7 +243,7 @@ $template = new Template();
 			$query = new Query(sprintf("SELECT * FROM apo_wiki_contents WHERE page_id=%d and parent_content_id=0 ORDER BY content_ordering ASC", $page_id));
             
             //change this to hide/unhide families
-            $hide_all_fams = User::$hide_all_fams;
+            $hide_all_fams = $GLOBALS['hide all fams'];
             //hiding fams of dcomm and pcomm from pledges
             $hidden_fam_ids = array();
             if (!$hide_all_fams and $g_user->is_pledge()) {
