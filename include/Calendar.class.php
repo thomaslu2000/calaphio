@@ -625,7 +625,7 @@ DOCHERE_print_add_people;
         $remove_chairs = "<select name='remove' form='remove-chairs'>";
         while ($row = $query->fetch_row()) {
             $remove_chairs .= sprintf("<option value='%d'> %s %s (%s) </option>",
-					$row['user_id'], $row['lastname'], $row['firstname'], $row['pledgeclass']);
+					$row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass']);
 			}
         $remove_chairs .= "</select><br>";
         
@@ -633,7 +633,7 @@ DOCHERE_print_add_people;
         $add_chairs = "<select name='add' form='add-chairs'>";
         while ($row = $query->fetch_row()) {
             $add_chairs .= sprintf("<option value='%d'> %s %s (%s) </option>",
-					$row['user_id'], $row['lastname'], $row['firstname'], $row['pledgeclass']);
+					$row['user_id'], $row['firstname'], $row['lastname'], $row['pledgeclass']);
 			}
         $add_chairs .= "</select><br>";
 		
