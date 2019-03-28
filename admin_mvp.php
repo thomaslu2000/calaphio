@@ -57,7 +57,8 @@ if ($g_user->data['user_id'] == 1190 || $g_user->data['user_id'] == 1086) {
 }
 
 			echo <<<DOCHERE
-<h1>MVP Power (PVL)</h1>
+<h1>MVP Power (PVL)</h1><br>
+<h5>Note: data accounts for signed up future events as well </h5>
 <br/>
 DOCHERE;
 
@@ -418,7 +419,6 @@ DOCHERE;
 
 			echo <<<DOCHERE
 <b>$firstname $lastname ($pledgeclass):</b><br/>
-<h3>Note: data accounts for signed up future events as well </h3><br>
 $coffee
 $ic_events
 $dynasty_events
