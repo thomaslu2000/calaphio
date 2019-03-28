@@ -53,9 +53,17 @@ if ($g_user->data['user_id'] == 1190 || $g_user->data['user_id'] == 1086) {
 } else {
 	$is_tomo_or_bonnie = false;
 }
+$query = new Query("SELECT semester, start, end FROM apo_semesters WHERE id > 19 ORDER BY id DESC");
+if ($row = $query->fetch_row()){
+    
+    $start_date = strtotime($row['start']);
+	$end_date = strtotime($row['end']);
+    $sem_name = $row['semester'];
+}
 
 			echo <<<DOCHERE
-<h1>PComm Power (DP)</h1>
+<h1>PComm Power ($sem_name)</h1><br />
+<h5>Note: data accounts for signed up events as well </h5>
 <br/>
 DOCHERE;
 
@@ -67,8 +75,7 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin view pledge requirements
 	
 	$query = new Query(sprintf("SELECT apo_users.user_id, firstname, lastname FROM apo_users join apo_pledges using (user_id) where depledged=0 order by apo_users.lastname"));
 
-	$start_date = strtotime("2017-05-06");
-	$end_date = strtotime("2017-12-04");
+	
 	$sql_start_date = date("Y-m-d", $start_date);
 	$sql_end_date = date("Y-m-d", $end_date);
 	

@@ -418,6 +418,7 @@ DOCHERE;
 
 			echo <<<DOCHERE
 <b>$firstname $lastname ($pledgeclass):</b><br/>
+<h3>Note: data accounts for signed up future events as well </h3><br>
 $coffee
 $ic_events
 $dynasty_events
