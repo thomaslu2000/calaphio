@@ -598,6 +598,69 @@ $search_results
 
 DOCHERE_print_add_people;
 	}
+    
+    function print_edit_chairs() {
+		global $g_user;
+		
+		if (!isset($_REQUEST['id']) || !is_numeric($_REQUEST['id'])) {
+			trigger_error("Print Edit Chairs: Invalid event id.", E_USER_ERROR);
+			return;
+		} else if (!$g_user->is_logged_in() || !$g_user->permit("calendar add users")) {
+			trigger_error("You must be logged in to an admin account to do that.", E_USER_ERROR);
+			return;
+		}
+		$event_id = $_REQUEST['id'];
+		
+		$search_results = "";
+		if (isset($_REQUEST['func']) && $_REQUEST['func']=="remove") {
+            new Query(sprintf("UPDATE apo_calendar_attend SET chair=FALSE WHERE event_id=%d AND user_id=%d", $event_id, $_REQUEST['remove']));
+            echo "Chair Successfully Removed!";
+		}
+        if (isset($_REQUEST['func']) && $_REQUEST['func']=="add") {
+            new Query(sprintf("UPDATE apo_calendar_attend SET chair=TRUE WHERE event_id=%d AND user_id=%d", $event_id, $_REQUEST['add']));
+            echo "Chair Successfully Added!";
+		}
+        
+        $query = new Query(sprintf("SELECT user_id, email, firstname, lastname, pledgeclass FROM apo_calendar_attend JOIN apo_users USING (user_id) WHERE event_id=%d AND chair=TRUE", $event_id));
+        $remove_chairs = "<select name='remove' form='remove-chairs'>";
+        while ($row = $query->fetch_row()) {
+            $remove_chairs .= sprintf("<option value='%d'> %s %s (%s) </option>",
+					$row['user_id'], $row['lastname'], $row['firstname'], $row['pledgeclass']);
+			}
+        $remove_chairs .= "</select><br>";
+        
+        $query = new Query(sprintf("SELECT user_id, email, firstname, lastname, pledgeclass FROM apo_calendar_attend JOIN apo_users USING (user_id) WHERE event_id=%d AND chair=FALSE", $event_id));
+        $add_chairs = "<select name='add' form='add-chairs'>";
+        while ($row = $query->fetch_row()) {
+            $add_chairs .= sprintf("<option value='%d'> %s %s (%s) </option>",
+					$row['user_id'], $row['lastname'], $row['firstname'], $row['pledgeclass']);
+			}
+        $add_chairs .= "</select><br>";
+		
+		echo <<<DOCHERE
+<div id="edit_chairs">
+<div style="text-align:center">
+<h2> Change Event's Chairs </h2>
+<form action="event_edit_chairs.php" id="remove-chairs">
+    <legend> Remove Chairs From Event </legend>
+    $remove_chairs
+    <input type="hidden" value="remove" name="func">
+    <input type="hidden" name="id" value="$event_id" />
+    <input type="submit">
+</form>
+<br />
+<form action="event_edit_chairs.php" id="add-chairs">
+    <legend> Add Chairs to Event </legend>
+    $add_chairs
+    <input type="hidden" value="add" name="func">
+    <input type="hidden" name="id" value="$event_id" />
+    <input type="submit">
+</form>
+</div>
+</div>
+
+DOCHERE;
+	}
 	
 	function print_replace_person() {
       global $g_user;
@@ -1176,6 +1239,7 @@ HEREDOC;
             $event_highlighted = $query_highlight->num_rows()>0 && $query_highlight->fetch_row()['highlighted'];
             $highlight_event = !$event_highlighted && $g_user->is_logged_in() && $g_user->permit("calendar delete events") ? "<li><a href=\"?id=$event_id&function=highlight\" onclick=\"return confirm('Are you sure you want to HIGHLIGHT this event?')\">Highlight Event</a></li>" : '';
             $unhighlight_event = $event_highlighted && $g_user->is_logged_in() && $g_user->permit("calendar delete events") ? "<li><a href=\"?id=$event_id&function=unhighlight\" onclick=\"return confirm('Are you sure you want to UNHIGHLIGHT this event?')\">Unhighlight Event</a></li>" : '';
+            $edit_chairs = $g_user->is_logged_in() && $g_user->permit("calendar add users") ? '<li><a href="event_edit_chairs.php?id=' . $event_id . '">Edit Chairs</a></li>' : '';
             
 			$delete_event = !$deleted && $g_user->is_logged_in() && $g_user->permit("calendar delete events") ? "<li><a href=\"?id=$event_id&function=delete\" onclick=\"return confirm('Are you sure you want to DELETE this event?')\">Delete Event</a></li>" : '';
 			$restore_event = $deleted && $g_user->is_logged_in() && $g_user->permit("calendar delete events") ? "<li><a href=\"?id=$event_id&function=restore\" onclick=\"return confirm('Are you sure you want to Restore this event?')\">Restore Event</a></li>" : '';
@@ -1294,6 +1358,7 @@ $email_chair
 $email_attendees
 $add_people
 $edit_event
+$edit_chairs
 $highlight_event
 $unhighlight_event
 $delete_event
