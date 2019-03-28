@@ -63,7 +63,6 @@ if ($row = $query->fetch_row()){
 
 			echo <<<DOCHERE
 <h1>PComm Power ($sem_name)</h1><br />
-<h5>Note: data accounts for signed up events as well </h5>
 <br/>
 DOCHERE;
 
