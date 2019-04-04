@@ -50,7 +50,7 @@ if (!$g_user->is_logged_in()) {
 -->
 <div class="newsItem">
         <h2>CM 6 Recap</h2>
-        <p class="date">September 14, 2018 at 10:49pm</p>
+        <p class="date">April 2, 2019 at 10:49pm</p>
 
             <a href="https://docs.google.com/presentation/d/18nNG-Q2-Rberk2ZqQ1W2Rb58sY79O6QT5Ui0jV65VhY/edit#slide=id.p">CM 6 Slides</a><br>
             <a href="https://docs.google.com/spreadsheets/d/1VPKvEPl5k3fiiYaIztR83ot7_aSDbMpyl-n_tAe0bzQ/edit?fbclid=IwAR0VTK7iYXE5hNwukP-jp2X7psaD1Z57hpp-Sr5peUW-q6SiPRUZsBB9rLg#gid=0" target="_blank">Nominations</a><br>
