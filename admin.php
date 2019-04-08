@@ -23,7 +23,7 @@ $available_permissions = array(
 	'<a href="admin_actives.php">Active List Update </a>' => 'admin view requirements',
     '<a href="admin_view_individual_pledge.php">View Individual Pledge Progress</a>' => 'admin view pledge requirements',
 	'<a href="admin_view_pledge_requirements.php">View Pledge Requirements</a>' => 'admin view pledge requirements',
-	'<a href="admin_pcomm.php">PComm Power</a>' => 'admin view requirements',
+	'<a href="admin_pcomm.php">PComm Power</a>' => 'admin view pledge requirements',
 	'<a href="admin_pledge_superstar.php">Pledge Superstars</a>' => 'admin view pledge requirements',
 	'<a href="admin_GG_maniac.php">GG Maniac Control</a>' => 'admin view requirements',
 	'<a href="admin_ggwiki.php">GG Wiki Check</a>' => 'wiki editing',
