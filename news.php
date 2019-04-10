@@ -61,7 +61,7 @@ UPCOMING OPEN SERVICE EVENTS <br><br>
 April 23/24 College Day Training: Must attend a 1-hour training session if you’re volunteering for College Day.<br><br>
 WANT MORE SERVICE EVENTS?<br><br>
 Here’s a (somewhat outdated but still useful) <a href="http://tinyurl.com/yxpurxuy" target="_blank">list</a> of service opportunities in Berkeley:<br>  Some events worth looking into:<br><br>
-• <a href="https://www.berkeleyfoodpantry.org/get_involved " target="_blank">Berkeley Food Pantry: </a> Volunteers help sort and distribute groceries to low-income families.<br>  <br><br>
+• <a href="https://www.berkeleyfoodpantry.org/get_involved " target="_blank">Berkeley Food Pantry: </a> Volunteers help sort and distribute groceries to low-income families.<br><br>
 • <a href="https://botanicalgarden.berkeley.edu/volunteer " target="_blank">UC Berkeley Botanical Garden: </a> Volunteers help with garden shop, special events, docent tours, plant propagation, garden maintenance, etc. <br><br>
 • <a href="https://www.cityofberkeley.info/marina/" target="_blank">Shorebird Nature Center: </a> Volunteers may help with one-time events (beach cleanup, gardening, playground construction) or ongoing projects. <br><br>
 *If you’re interested in pursuing any of these events further, message me so we can discuss it and add it to the calendar*<br><br>
