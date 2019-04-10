@@ -53,7 +53,7 @@ if (!$g_user->is_logged_in()) {
         <p class="date">April 10, 2019 at 9:30am</p>
             <p>The SVP brings to you the biweekly SERVICE NEWSLETTER #4! You have less than one month to complete your requirements and make some memorable experiences through service. <br><br>
 UPCOMING OPEN SERVICE EVENTS <br><br>
-• April 12 :<a href="http://tinyurl.com/y67bvjep" target="_blank">Phi Delta Epsilon Philanthropy Show Painting:</a><br> A cool anatomy show painting that the med frat is organizing as a fundraiser! You can volunteer as an artist or model, no experience necessary!<br><br>
+• April 12 <a href="http://tinyurl.com/y67bvjep" target="_blank">Phi Delta Epsilon Philanthropy Show Painting:</a><br> A cool anatomy show painting that the med frat is organizing as a fundraiser! You can volunteer as an artist or model, no experience necessary!<br><br>
 • April 14 <a href="http://tinyurl.com/y3t4o34e" target="_blank">SPRING YOUTH SERVICE DAY:</a><br> The APO Kids Zone is coming to you on Cal Day! If you have signed up to volunteer, please read the spreadsheet for further details and sign up for the shifts!<br><br>
 • April 15-19 <a href="http://tinyurl.com/yyyl4zme" target="_blank">Museum of Tomorrow:</a><br> A fun pop-up museum on issues of sustainability right here on campus! They need volunteers for 2-hour shifts from 10-6pm throughout this week.<br><br>
 • April 20 <a href="http://tinyurl.com/yyyl4zme" target="_blank">Museum of Tomorrow:</a><br> Hot Meals for the Hungry: http://tinyurl.com/y6eb26td Prepare free meals for our community right across from campus (RSF)! Several orgs volunteer here, so it’s a good place to mingle and see what other service orgs are up to. They also accept clothes donations.<br><br>
@@ -62,7 +62,7 @@ April 23/24 College Day Training: Must attend a 1-hour training session if you�
 WANT MORE SERVICE EVENTS?<br><br>
 Here’s a (somewhat outdated but still useful) <a href="http://tinyurl.com/yxpurxuy" target="_blank">list</a> of service opportunities in Berkeley:<br>  Some events worth looking into:<br><br>
 • <a href="https://www.berkeleyfoodpantry.org/get_involved " target="_blank">Berkeley Food Pantry: </a> Volunteers help sort and distribute groceries to low-income families.<br>  <br><br>
-• a href="https://botanicalgarden.berkeley.edu/volunteer " target="_blank">UC Berkeley Botanical Garden: </a> Volunteers help with garden shop, special events, docent tours, plant propagation, garden maintenance, etc. <br><br>
+• <a href="https://botanicalgarden.berkeley.edu/volunteer " target="_blank">UC Berkeley Botanical Garden: </a> Volunteers help with garden shop, special events, docent tours, plant propagation, garden maintenance, etc. <br><br>
 • <a href="https://www.cityofberkeley.info/marina/" target="_blank">Shorebird Nature Center: </a> Volunteers may help with one-time events (beach cleanup, gardening, playground construction) or ongoing projects. <br><br>
 *If you’re interested in pursuing any of these events further, message me so we can discuss it and add it to the calendar*<br><br>
 DON'T WANT TO DO SERVICE BY YOURSELF?<br><br>
