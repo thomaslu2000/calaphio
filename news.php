@@ -46,8 +46,28 @@ if (!$g_user->is_logged_in()) {
             <a href="https://docs.google.com/spreadsheets/d/1vDGebsyI3XCyHPidl5y7mCutUcD6aHZCz0xoyj-zcnk/edit#gid=1589878783" target="_blank">ExComm Chairing Positions Available</a><br>
     
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
-</div>   
+</div>   pspamffh
 -->
+
+<div class="newsItem">
+        <h2>CANDIDATE PLATFORMS!!!</h2>
+        <p class="date">April 13, 2019 at 10:49pm</p>
+          Here are the written platforms for some of our candidates for the upcoming elections. <br> Submit your platform <a href="http://tinyurl.com/apowebsite" target="_blank">here!</a><br><br><hr>
+          <div align="center">
+               <h4>Service Vice President</h4>
+               <a href="profile.php?user_id=4937">Edward Hsu (PVL)</a>: <a href="https://docs.google.com/document/d/1yyNc--Ue0nOP81_GFBz_ayEtBAvRJI9tPjq8gqlsTlQ/edit?usp=sharing" target="_blank">Service VP Platform</a><br><br><hr><br>
+               <h4>Admin Vice President</h4>
+               <a href="profile.php?user_id=4946">Amber Yim (PVL)</a>: <a href="https://drive.google.com/file/d/1quKR0z5q24qnQdQD-xwLEyS8aH978RNZ/view?usp=sharing" target="_blank">Admin VP Platform</a><br><br><hr><br>
+<!--
+               <h4>Membership Vice President</h4>
+               <a href="profile.php?user_id=4951">Kelly Ochoa (PVL)</a> and <a href="profile.php?user_id=4924">Gavin Hall (PVL)</a>: <a href="https://drive.google.com/file/d/1AD5aPI3Bsd40vIDYsLTNouqb7yR46KoV/view?usp=sharing" target="_blank">Co-Membership VP Platform</a><br><br><hr><br>
+-->
+            </div>
+            
+
+    <p>- <a href="profile.php?user_id=4944">Thomas Lu (PVL)</a></p>
+</div>
+
 <div class="newsItem">
         <h2>Service Newsletter #4</h2>
         <p class="date">April 10, 2019 at 9:30am</p>
