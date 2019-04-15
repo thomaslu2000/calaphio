@@ -55,7 +55,8 @@ if (!$g_user->is_logged_in()) {
           Here are the written platforms for some of our candidates for the upcoming elections. <br> Submit your platform <a href="http://tinyurl.com/apowebsite" target="_blank">here!</a><br><br><hr>
           <div align="center">
                <h4>Service Vice President</h4>
-               <a href="profile.php?user_id=4937">Edward Hsu (PVL)</a>: <a href="https://docs.google.com/document/d/1yyNc--Ue0nOP81_GFBz_ayEtBAvRJI9tPjq8gqlsTlQ/edit?usp=sharing" target="_blank">Service VP Platform</a><br><br><hr><br>
+               <a href="profile.php?user_id=4937">Edward Hsu (PVL)</a>: <a href="https://docs.google.com/document/d/1yyNc--Ue0nOP81_GFBz_ayEtBAvRJI9tPjq8gqlsTlQ/edit?usp=sharing" target="_blank">Service VP Platform</a><br><br>
+               <a href="profile.php?user_id=4924">Gavin Hall (PVL)</a>: <a href="https://drive.google.com/file/d/1bEj0of6loD9bcGAXXh8buYE-OimJMcvF/view?usp=sharing" target="_blank">Service VP Platform</a><br><br><hr><br>
                <h4>Admin Vice President</h4>
                <a href="profile.php?user_id=4946">Amber Yim (PVL)</a>: <a href="https://drive.google.com/file/d/1quKR0z5q24qnQdQD-xwLEyS8aH978RNZ/view?usp=sharing" target="_blank">Admin VP Platform</a><br><br><hr><br>
                <h4>Membership Vice President</h4>
