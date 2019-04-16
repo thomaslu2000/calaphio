@@ -82,7 +82,7 @@ while ($row = $query->fetch_row()) {
 	SELECT user_id, dynasty, count(hours) as totalTime
 	FROM (apo_calendar_event JOIN apo_calendar_attend USING (event_id)) Join apo_users USING (user_id)
 	WHERE (type_interchapter_half=TRUE) AND attended = TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND disabled = 0 Group By user_id
-	", $start, $end, $start, $end));
+	", $start, $end));
 	
 	while ($row = $query->fetch_row()) {
 		$dynasty_attend_array[strtoupper($row['dynasty'])] += $row['totalTime'];
@@ -92,8 +92,43 @@ $total_array = array();
 foreach ($service_array as $key => $service){
     $total_array[$key] = $service + $fellowship_array[$key] + $dynasty_attend_array[$key];
 }
+    
+    $query = new Query(sprintf("
+	SELECT event_id, alpha_points, phi_points, omega_points, title, date
+	FROM (apo_dynasty_competitions JOIN apo_calendar_event USING (event_id)) WHERE date BETWEEN '%s' AND '%s'
+	", $start, $end));
+	
+    $competitions = "";
+    
+	while ($row = $query->fetch_row()) {
+        $data_arr = array();
+        $data_query = new Query(sprintf("
+        SELECT dynasty, COUNT(*) as count
+        FROM apo_calendar_attend JOIN apo_users USING (user_id)
+        WHERE event_id=%u
+        GROUP BY dynasty
+        ", $row['event_id']));
+        
+        while ($data_row = $data_query->fetch_row()) {
+            $data_arr[$data_row['dynasty']] = $row[strtolower($data_row['dynasty'] . "_points") ] * $data_row['count'];
+        }
+        
+        $competitions .= sprintf("
+        <tr>
+            <th scope='row'>$row[title]</th>
+            <td>$data_arr[ALPHA]</td>
+            <td>$data_arr[PHI]</td>
+            <td>$data_arr[OMEGA]</td>
+          </tr>
+        ");
+        foreach ($data_arr as $key => $points){
+            $total_array[$key] += $points;
+        }
+        
+	}
+    
 echo <<<HEREDOC
-<h2>Dynasty Points for $sem (still needs to include points from competitions)</h2>
+<h2>Dynasty Points for $sem</h2>
 <table width="100%">
   <tr>
     <td></td>
@@ -119,6 +154,7 @@ echo <<<HEREDOC
     <td>$dynasty_attend_array[PHI]</td>
     <td>$dynasty_attend_array[OMEGA]</td>
   </tr>
+  $competitions
   <tr>
     <th scope="row">Total Points</th>
     <td><b>$total_array[ALPHA]</b></td>
