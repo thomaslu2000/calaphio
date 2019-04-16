@@ -60,7 +60,8 @@ if (!$g_user->is_logged_in()) {
                <h4>Admin Vice President</h4>
                <a href="profile.php?user_id=4946">Amber Yim (PVL)</a>: <a href="https://drive.google.com/file/d/1quKR0z5q24qnQdQD-xwLEyS8aH978RNZ/view?usp=sharing" target="_blank">Admin VP Platform</a><br><br><hr><br>
                <h4>Membership Vice President</h4>
-               <a href="profile.php?user_id=4951">Kelly Ochoa (PVL)</a> and <a href="profile.php?user_id=4924">Gavin Hall (PVL)</a>: <a href="https://drive.google.com/file/d/1JohaFa1Ok2dxIrJLoslSjl2I_X2aGKYC/view?usp=sharing" target="_blank">Co-Membership VP Platform</a><br><br><hr><br>
+               <a href="profile.php?user_id=4951">Kelly Ochoa (PVL)</a> and <a href="profile.php?user_id=4924">Gavin Hall (PVL)</a>: <a href="https://drive.google.com/file/d/1JohaFa1Ok2dxIrJLoslSjl2I_X2aGKYC/view?usp=sharing" target="_blank">Co-Membership VP Platform</a><br><br>
+               <a href="profile.php?user_id=4941">Ananya Pattnaik (PVL)</a>: <a href="https://drive.google.com/file/d/1gIy-tMNbNljYXyEbyO8UR3tY7TiP1t9S/view?usp=sharing" target="_blank">Membership VP Platform</a><br><br><hr><br>
             </div>
             
 
