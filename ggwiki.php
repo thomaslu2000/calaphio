@@ -3,7 +3,7 @@
 	require("include/Calendar.class.php");
 	require("include/Template.class.php");
 	Template::print_head(array("ggwiki.css"));
-	Template::print_body_header('Brothers', 'WIKI');
+	Template::print_body_header('Home', 'ADMIN');
 
 $template = new Template();
 
