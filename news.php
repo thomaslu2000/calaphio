@@ -48,7 +48,15 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>   pspamffh
 -->
+<div class="newsItem">
+        <h2>CM 7 Recap</h2>
+        <p class="date">April 25, 2019 at 10:49pm</p>
 
+            <a href="https://docs.google.com/presentation/d/1yxunamVuQhNFZShuTpXLpJDkeeXfh2hl6lOfTIMEHZM/edit">CM 7 Slides</a><br>
+    
+    <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
+    </div>
+    
 <div class="newsItem">
         <h2>CANDIDATE PLATFORMS!!!</h2>
         <p class="date">April 13, 2019 at 10:49pm</p>
