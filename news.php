@@ -49,6 +49,46 @@ if (!$g_user->is_logged_in()) {
 </div>   pspamffh
 -->
 <div class="newsItem">
+        <h2>Biweekly Service Newsletter #5</h2>
+        <p class="date">April 29, 2019 at 10:49pm</p>
+           <p>
+            The SVP brings to you the biweekly SERVICE NEWSLETTER #5! You have less than one month to complete your requirements and make some memorable experiences through service.
+<br><br>
+        UPCOMING OPEN SERVICE EVENTS
+<br><br>
+• May 3 <a href="https://tinyurl.com/y64dtx9k" target="_blank">Oakland First Fridays – International Art and Culture:</a> <br>
+I honestly love the theme of this First Fridays, and I think you would too! It’s not the *best* Friday for everyone as Activation will take place this night, but there are volunteer shifts that take place in the morning/afternoon too.
+<br><br>
+• May 4 <a href="https://tinyurl.com/yxlu3lnf" target="_blank">Access to Adventure in Golden Gate Park:</a> <br>
+Another partnership with Support for Families of Children with Disabilities where you can help ensure the kids have fun at this event 😊
+<br><br>
+• May 5 <a href="https://tinyurl.com/yxddxo7o" target="_blank">Julia Robinson Math Festival at Stanfurd:</a> <br>
+It’s a Math Festival to encourage kids to engage in different and creative ways to solve math. At Stanfurd!!
+<br><br>
+• May 11 <a href="https://tinyurl.com/y6hfzgw9" target="_blank">Muir Woods Fundraiser:</a> <br>
+We need a few more people to make this into a fundraiser! We’re talking about nature + money folks!
+<br><br>
+• May 11 <a href="https://tinyurl.com/y4s4njcn" target="_blank">Taiwanese American Cultural Festival:</a> <br>
+I expect you to go if you’re Taiwanese.
+<br><br>
+WANT MORE SERVICE EVENTS?
+<br><br>
+               <a href="http://tinyurl.com/yxpurxuy" target="_blank">Here’s</a> a (somewhat outdated but still useful) list of service opportunities in Berkeley: 
+<br><br>
+I know we’re nearing the end of the semester, but I believe that there isn’t a better time to do service than over the summer! If you are staying in Berkeley, I highly recommend looking into a service project that you’re passionate about and just delving into it over the summer. I know if I were staying here over the summer I would love to spend a good chunk of my time going to the Berkeley Animal Shelter. They are open every day, and there is nothing more therapeutic than walking dogs in the park by the lake and petting cats.
+<br><br>
+There are a lot of opportunities that are currently not on the calendar, but you can EASILY make it available by taking the initiative. Stop complaining about seeing the same service events on the calendar and start adding events yeah?
+<br><br>
+LAST WEEK OF SERVICE BUDDIES
+<br><br>
+Last service buddies pairs have been released for CM 8. Last chance to get to know each other better through service!
+<br><br>
+HAVE FUN GUYS
+
+        </p>
+    <p>- <a href="profile.php?user_id=4792">Michelle Chang (RT)</a></p>
+    </div>
+<div class="newsItem">
         <h2>CM 7 Recap</h2>
         <p class="date">April 25, 2019 at 10:49pm</p>
 
