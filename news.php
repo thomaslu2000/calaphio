@@ -49,6 +49,14 @@ if (!$g_user->is_logged_in()) {
 </div>   pspamffh
 -->
 <div class="newsItem">
+        <h2>End Of Semester Evals</h2>
+        <p class="date">May 1, 2019 at 10:49pm</p>
+
+            <a href="https://docs.google.com/document/d/1ij1q75DkP_c_chsL5EDNz5RMtX7_-tqkqoAZFHafpFw/edit">Minutes</a><br>
+    
+    <p>- <a href="profile.php?user_id=4943">Tiffany Ho (PVL)</a></p>
+    </div>
+<div class="newsItem">
         <h2>Biweekly Service Newsletter #5</h2>
         <p class="date">April 29, 2019 at 10:49pm</p>
            <p>
