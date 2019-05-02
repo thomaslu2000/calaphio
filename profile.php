@@ -365,6 +365,7 @@ function print_requirements($user_id) {
 			// Retrieve Service events
 			$service_events = "";
 			$service_hours = 0;
+			$service_hours_flake = 0;
 			$query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours, driver FROM %scalendar_event
 				JOIN %scalendar_attend USING (event_id)
 				WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE) AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
@@ -399,9 +400,10 @@ function print_requirements($user_id) {
 				if ($row['attended'] && is_numeric($row['hours'])) {
 					$service_hours += $row['hours'];
 				} else if ($row['flaked'] && is_numeric($row['hours'])) {
-					$service_hours -= $row['hours'];
+					$service_hours_flake += $row['hours'];
 				}
 			}
+            $service_hours_total = $service_hours - $service_hours_flake;
 			
 			// Retrieve Service type Chapter
 			$service_type_chapter = "";
@@ -593,6 +595,7 @@ function print_requirements($user_id) {
 			// Retrieve Fellowship events
 			$fellowship_events = "";
 			$fellowship_events_count = 0;
+            $fellowship_events_flaked = 0;
 			$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
 				JOIN %scalendar_attend USING (event_id)
 				WHERE type_fellowship=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
@@ -607,9 +610,10 @@ function print_requirements($user_id) {
 				if ($row['attended']) {
 					$fellowship_events_count++;
 				} else if ($row['flaked']) {
-					$fellowship_events_count--;
+					$fellowship_events_flaked++;
 				}
 			}
+            $fellowship_events_total = $fellowship_events_count - $fellowship_events_flaked;
 			
 			// Retrieve Fundraiser events
 			$fundraiser_events = "";
@@ -913,7 +917,7 @@ $chaptermeeting_events
 $election_events
 </table>
 <table>
-<caption>Complete 20 service hours - You have completed $service_hours hours<br>
+<caption>Complete 20 service hours - You have completed $service_hours_total hours (Attended $service_hours, Flaked $service_hours_flake)<br>
 </caption>
 </table>
 <table>
@@ -933,7 +937,7 @@ $service_type_community
 $service_type_country
 </table>
 <table>
-<caption>Attend 5 fellowships - You have completed $fellowship_events_count</caption>
+<caption>Attend 5 fellowships - You have completed {$fellowship_events_total} (Attended $fellowship_events_count, Flaked $fellowship_events_flaked)</caption>
 $fellowship_events
 </table>
 <table>
