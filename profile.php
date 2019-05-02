@@ -321,7 +321,260 @@ function print_requirements($user_id) {
             $sem = $row['semester'];
 		}
 		$user_id = $g_user->data['user_id'];
-		
+        
+        // Retrieve Service events
+        $service_events = "";
+        $service_hours = 0;
+        $service_hours_flake = 0;
+        $query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours, driver FROM %scalendar_event
+            JOIN %scalendar_attend USING (event_id)
+            WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE) AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+            TABLE_PREFIX, TABLE_PREFIX,
+            TABLE_PREFIX,
+            $sql_start_date, $sql_end_date, $user_id));
+        while ($row = $query->fetch_row()) {
+            $date = date("M d", strtotime($row['date']));
+            //if ($row['driver']) {
+            //	$row['hours'] += 1; // 1 service hour for driving
+            //}
+            $hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
+            if ($hours == '') {
+                if ($row['time_allday']) {
+                    $hours = "All Day";
+                } else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
+                    $hours = "TBA";
+                } else if ($row['time_start'] && $row['time_end']) {
+                    $hours = sprintf("%s to %s", date("g:ia", strtotime($row['time_start'])), date("g:ia", strtotime($row['time_end'])));
+                } else if ($row['time_start']) {
+                    $hours = date("g:ia", strtotime($row['time_start']));
+                } else {
+                    $hours = "TBA";
+                }
+            }
+            if ($row['flaked']) {
+                $hours = "-" . $hours;
+            }
+            $attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
+            $title_link = event_link($row['event_id'], $row['title']);
+            $service_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
+            if ($row['attended'] && is_numeric($row['hours'])) {
+                $service_hours += $row['hours'];
+            } else if ($row['flaked'] && is_numeric($row['hours'])) {
+                $service_hours_flake += $row['hours'];
+            }
+        }
+        $service_hours_total = $service_hours - $service_hours_flake;
+
+        // Retrieve Service type Chapter
+        $service_type_chapter = "";
+        $service_type_chapter_hours = 0;
+        $query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours FROM %scalendar_event
+            JOIN %scalendar_attend USING (event_id)
+            WHERE type_service_chapter=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+            TABLE_PREFIX, TABLE_PREFIX,
+            TABLE_PREFIX,
+            $sql_start_date, $sql_end_date, $user_id));
+        while ($row = $query->fetch_row()) {
+            $date = date("M d", strtotime($row['date']));
+            //if ($row['driver']) {
+            //	$row['hours'] += 1; // 1 service hour for driving
+            //}
+            $hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
+            if ($hours == '') {
+                if ($row['time_allday']) {
+                    $hours = "All Day";
+                } else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
+                    $hours = "(TBA)";
+                } else if ($row['time_start'] && $row['time_end']) {
+                    $start = strtotime($row['time_start']);
+                    $end = strtotime($row['time_end']);
+                    $hours = sprintf("(%.1f hrs)", ($end - $start)/60.0/60.0);
+                } else if ($row['time_start']) {
+                    $hours = "(TBA)";
+                } else {
+                    $hours = "(TBA)";
+                }
+            }
+            if ($row['flaked']) {
+                $hours = "-" . $hours;
+            }
+            $attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
+            $title_link = event_link($row['event_id'], $row['title']);
+            $service_type_chapter .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
+            if ($row['attended'] && is_numeric($row['hours'])) {
+                $service_type_chapter_hours += $row['hours'];
+            } else if ($row['flaked'] && is_numeric($row['hours'])) {
+                $service_type_chapter_hours -= $row['hours'];
+            }
+        }
+
+        // Retrieve Service type Campus
+        $service_type_campus = "";
+        $service_type_campus_hours = 0;
+        $query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours FROM %scalendar_event
+            JOIN %scalendar_attend USING (event_id)
+            WHERE type_service_campus=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+            TABLE_PREFIX, TABLE_PREFIX,
+            TABLE_PREFIX,
+            $sql_start_date, $sql_end_date, $user_id));
+        while ($row = $query->fetch_row()) {
+            $date = date("M d", strtotime($row['date']));
+            //if ($row['driver']) {
+            //	$row['hours'] += 1; // 1 service hour for driving
+            //}
+            $hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
+            if ($row['flaked']) {
+                $hours = "-" . $hours;
+            }
+            if ($hours == '') {
+                if ($row['time_allday']) {
+                    $hours = "All Day";
+                } else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
+                    $hours = "(TBA)";
+                } else if ($row['time_start'] && $row['time_end']) {
+                    $start = strtotime($row['time_start']);
+                    $end = strtotime($row['time_end']);
+                    $hours = sprintf("(%.1f hrs)", ($end - $start)/60.0/60.0);
+                } else if ($row['time_start']) {
+                    $hours = "(TBA)";
+                } else {
+                    $hours = "(TBA)";
+                }
+            }
+            $attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
+            $title_link = event_link($row['event_id'], $row['title']);
+            $service_type_campus .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
+            if ($row['attended'] && is_numeric($row['hours'])) {
+                $service_type_campus_hours += $row['hours'];
+            } else if ($row['flaked'] && is_numeric($row['hours'])) {
+                $service_type_campus_hours -= $row['hours'];
+            }
+        }
+
+        // Retrieve Service type Community
+        $service_type_community = "";
+        $service_type_community_hours = 0;
+        $query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours FROM %scalendar_event
+            JOIN %scalendar_attend USING (event_id)
+            WHERE type_service_community=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+            TABLE_PREFIX, TABLE_PREFIX,
+            TABLE_PREFIX,
+            $sql_start_date, $sql_end_date, $user_id));
+        while ($row = $query->fetch_row()) {
+            $date = date("M d", strtotime($row['date']));
+            //if ($row['driver']) {
+            //	$row['hours'] += 1; // 1 service hour for driving
+            //}
+            $hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
+            if ($hours == '') {
+                if ($row['time_allday']) {
+                    $hours = "All Day";
+                } else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
+                    $hours = "(TBA)";
+                } else if ($row['time_start'] && $row['time_end']) {
+                    $start = strtotime($row['time_start']);
+                    $end = strtotime($row['time_end']);
+                    $hours = sprintf("(%.1f hrs)", ($end - $start)/60.0/60.0);
+                } else if ($row['time_start']) {
+                    $hours = "(TBA)";
+                } else {
+                    $hours = "(TBA)";
+                }
+            }
+            if ($row['flaked']) {
+                $hours = "-" . $hours;
+            }
+            $attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
+            $title_link = event_link($row['event_id'], $row['title']);
+            $service_type_community .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
+            if ($row['attended'] && is_numeric($row['hours'])) {
+                $service_type_community_hours += $row['hours'];
+            } else if ($row['flaked'] && is_numeric($row['hours'])) {
+                $service_type_community_hours -= $row['hours'];
+            }
+        }
+
+        // Retrieve Service type Country
+        $service_type_country = "";
+        $service_type_country_hours = 0;
+        $query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours FROM %scalendar_event
+            JOIN %scalendar_attend USING (event_id)
+            WHERE type_service_country=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+            TABLE_PREFIX, TABLE_PREFIX,
+            TABLE_PREFIX,
+            $sql_start_date, $sql_end_date, $user_id));
+        while ($row = $query->fetch_row()) {
+            $date = date("M d", strtotime($row['date']));
+            //if ($row['driver']) {
+            //	$row['hours'] += 1; // 1 service hour for driving
+            //}
+            $hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
+            if ($hours == '') {
+                if ($row['time_allday']) {
+                    $hours = "All Day";
+                } else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
+                    $hours = "(TBA)";
+                } else if ($row['time_start'] && $row['time_end']) {
+                    $start = strtotime($row['time_start']);
+                    $end = strtotime($row['time_end']);
+                    $hours = sprintf("(%.1f hrs)", ($end - $start)/60.0/60.0);
+                } else if ($row['time_start']) {
+                    $hours = "(TBA)";
+                } else {
+                    $hours = "(TBA)";
+                }
+            }
+            if ($row['flaked']) {
+                $hours = "-" . $hours;
+            }
+            $attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
+            $title_link = event_link($row['event_id'], $row['title']);
+            $service_type_country .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
+            if ($row['attended'] && is_numeric($row['hours'])) {
+                $service_type_country_hours += $row['hours'];
+            } else if ($row['flaked'] && is_numeric($row['hours'])) {
+                $service_type_country_hours -= $row['hours'];
+            }
+        }
+
+        // Retrieve Service type count
+        $service_type_count = 0;
+        if ($service_type_chapter_hours > 0) {
+            $service_type_count++;
+        }
+        if ($service_type_campus_hours > 0) {
+            $service_type_count++;
+        }
+        if ($service_type_community_hours > 0) {
+            $service_type_count++;
+        }
+        if ($service_type_country_hours > 0) {
+            $service_type_count++;
+        }
+
+        // Retrieve Fellowship events
+        $fellowship_events = "";
+        $fellowship_events_count = 0;
+        $fellowship_events_flaked = 0;
+        $query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
+            JOIN %scalendar_attend USING (event_id)
+            WHERE type_fellowship=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+            TABLE_PREFIX, TABLE_PREFIX,
+            TABLE_PREFIX,
+            $sql_start_date, $sql_end_date, $user_id));
+        while ($row = $query->fetch_row()) {
+            $date = date("M d", strtotime($row['date']));
+            $attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
+            $title_link = event_link($row['event_id'], $row['title']);
+            $fellowship_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
+            if ($row['attended']) {
+                $fellowship_events_count++;
+            } else if ($row['flaked']) {
+                $fellowship_events_flaked++;
+            }
+        }
+        $fellowship_events_total = $fellowship_events_count - $fellowship_events_flaked;
+
 		if ($is_active) {
 			// Retrieve IC events
 			$ic_events = "";
@@ -361,259 +614,6 @@ function print_requirements($user_id) {
 				}
 			}
 			
-			
-			// Retrieve Service events
-			$service_events = "";
-			$service_hours = 0;
-			$service_hours_flake = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours, driver FROM %scalendar_event
-				JOIN %scalendar_attend USING (event_id)
-				WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE) AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
-				TABLE_PREFIX, TABLE_PREFIX,
-				TABLE_PREFIX,
-				$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				//if ($row['driver']) {
-				//	$row['hours'] += 1; // 1 service hour for driving
-				//}
-				$hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
-				if ($hours == '') {
-					if ($row['time_allday']) {
-						$hours = "All Day";
-					} else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
-						$hours = "TBA";
-					} else if ($row['time_start'] && $row['time_end']) {
-						$hours = sprintf("%s to %s", date("g:ia", strtotime($row['time_start'])), date("g:ia", strtotime($row['time_end'])));
-					} else if ($row['time_start']) {
-						$hours = date("g:ia", strtotime($row['time_start']));
-					} else {
-						$hours = "TBA";
-					}
-				}
-				if ($row['flaked']) {
-					$hours = "-" . $hours;
-				}
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$service_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
-				if ($row['attended'] && is_numeric($row['hours'])) {
-					$service_hours += $row['hours'];
-				} else if ($row['flaked'] && is_numeric($row['hours'])) {
-					$service_hours_flake += $row['hours'];
-				}
-			}
-            $service_hours_total = $service_hours - $service_hours_flake;
-			
-			// Retrieve Service type Chapter
-			$service_type_chapter = "";
-			$service_type_chapter_hours = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours FROM %scalendar_event
-				JOIN %scalendar_attend USING (event_id)
-				WHERE type_service_chapter=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
-				TABLE_PREFIX, TABLE_PREFIX,
-				TABLE_PREFIX,
-				$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				//if ($row['driver']) {
-				//	$row['hours'] += 1; // 1 service hour for driving
-				//}
-				$hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
-				if ($hours == '') {
-					if ($row['time_allday']) {
-						$hours = "All Day";
-					} else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
-						$hours = "(TBA)";
-					} else if ($row['time_start'] && $row['time_end']) {
-						$start = strtotime($row['time_start']);
-						$end = strtotime($row['time_end']);
-						$hours = sprintf("(%.1f hrs)", ($end - $start)/60.0/60.0);
-					} else if ($row['time_start']) {
-						$hours = "(TBA)";
-					} else {
-						$hours = "(TBA)";
-					}
-				}
-				if ($row['flaked']) {
-					$hours = "-" . $hours;
-				}
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$service_type_chapter .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
-				if ($row['attended'] && is_numeric($row['hours'])) {
-					$service_type_chapter_hours += $row['hours'];
-				} else if ($row['flaked'] && is_numeric($row['hours'])) {
-					$service_type_chapter_hours -= $row['hours'];
-				}
-			}
-
-			// Retrieve Service type Campus
-			$service_type_campus = "";
-			$service_type_campus_hours = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours FROM %scalendar_event
-				JOIN %scalendar_attend USING (event_id)
-				WHERE type_service_campus=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
-				TABLE_PREFIX, TABLE_PREFIX,
-				TABLE_PREFIX,
-				$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				//if ($row['driver']) {
-				//	$row['hours'] += 1; // 1 service hour for driving
-				//}
-				$hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
-				if ($row['flaked']) {
-					$hours = "-" . $hours;
-				}
-				if ($hours == '') {
-					if ($row['time_allday']) {
-						$hours = "All Day";
-					} else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
-						$hours = "(TBA)";
-					} else if ($row['time_start'] && $row['time_end']) {
-						$start = strtotime($row['time_start']);
-						$end = strtotime($row['time_end']);
-						$hours = sprintf("(%.1f hrs)", ($end - $start)/60.0/60.0);
-					} else if ($row['time_start']) {
-						$hours = "(TBA)";
-					} else {
-						$hours = "(TBA)";
-					}
-				}
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$service_type_campus .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
-				if ($row['attended'] && is_numeric($row['hours'])) {
-					$service_type_campus_hours += $row['hours'];
-				} else if ($row['flaked'] && is_numeric($row['hours'])) {
-					$service_type_campus_hours -= $row['hours'];
-				}
-			}
-
-			// Retrieve Service type Community
-			$service_type_community = "";
-			$service_type_community_hours = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours FROM %scalendar_event
-				JOIN %scalendar_attend USING (event_id)
-				WHERE type_service_community=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
-				TABLE_PREFIX, TABLE_PREFIX,
-				TABLE_PREFIX,
-				$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				//if ($row['driver']) {
-				//	$row['hours'] += 1; // 1 service hour for driving
-				//}
-				$hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
-				if ($hours == '') {
-					if ($row['time_allday']) {
-						$hours = "All Day";
-					} else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
-						$hours = "(TBA)";
-					} else if ($row['time_start'] && $row['time_end']) {
-						$start = strtotime($row['time_start']);
-						$end = strtotime($row['time_end']);
-						$hours = sprintf("(%.1f hrs)", ($end - $start)/60.0/60.0);
-					} else if ($row['time_start']) {
-						$hours = "(TBA)";
-					} else {
-						$hours = "(TBA)";
-					}
-				}
-				if ($row['flaked']) {
-					$hours = "-" . $hours;
-				}
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$service_type_community .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
-				if ($row['attended'] && is_numeric($row['hours'])) {
-					$service_type_community_hours += $row['hours'];
-				} else if ($row['flaked'] && is_numeric($row['hours'])) {
-					$service_type_community_hours -= $row['hours'];
-				}
-			}
-
-			// Retrieve Service type Country
-			$service_type_country = "";
-			$service_type_country_hours = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.*, title, date, attended, flaked, chair, hours FROM %scalendar_event
-				JOIN %scalendar_attend USING (event_id)
-				WHERE type_service_country=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
-				TABLE_PREFIX, TABLE_PREFIX,
-				TABLE_PREFIX,
-				$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				//if ($row['driver']) {
-				//	$row['hours'] += 1; // 1 service hour for driving
-				//}
-				$hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
-				if ($hours == '') {
-					if ($row['time_allday']) {
-						$hours = "All Day";
-					} else if ($row['time_start'] == "01:00:00" && $row['time_end'] == "01:00:00") {
-						$hours = "(TBA)";
-					} else if ($row['time_start'] && $row['time_end']) {
-						$start = strtotime($row['time_start']);
-						$end = strtotime($row['time_end']);
-						$hours = sprintf("(%.1f hrs)", ($end - $start)/60.0/60.0);
-					} else if ($row['time_start']) {
-						$hours = "(TBA)";
-					} else {
-						$hours = "(TBA)";
-					}
-				}
-				if ($row['flaked']) {
-					$hours = "-" . $hours;
-				}
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$service_type_country .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
-				if ($row['attended'] && is_numeric($row['hours'])) {
-					$service_type_country_hours += $row['hours'];
-				} else if ($row['flaked'] && is_numeric($row['hours'])) {
-					$service_type_country_hours -= $row['hours'];
-				}
-			}
-
-			// Retrieve Service type count
-			$service_type_count = 0;
-			if ($service_type_chapter_hours > 0) {
-				$service_type_count++;
-			}
-			if ($service_type_campus_hours > 0) {
-				$service_type_count++;
-			}
-			if ($service_type_community_hours > 0) {
-				$service_type_count++;
-			}
-			if ($service_type_country_hours > 0) {
-				$service_type_count++;
-			}
-			
-			// Retrieve Fellowship events
-			$fellowship_events = "";
-			$fellowship_events_count = 0;
-            $fellowship_events_flaked = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
-				JOIN %scalendar_attend USING (event_id)
-				WHERE type_fellowship=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
-				TABLE_PREFIX, TABLE_PREFIX,
-				TABLE_PREFIX,
-				$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$fellowship_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
-				if ($row['attended']) {
-					$fellowship_events_count++;
-				} else if ($row['flaked']) {
-					$fellowship_events_flaked++;
-				}
-			}
-            $fellowship_events_total = $fellowship_events_count - $fellowship_events_flaked;
 			
 			// Retrieve Fundraiser events
 			$fundraiser_events = "";
@@ -993,52 +993,6 @@ DOCHERE;
 				}
 			}
 			
-			// Retrieve Service events
-			$service_events = "";
-			$service_hours = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair, hours, driver FROM %scalendar_event
-				JOIN %scalendar_attend USING (event_id)
-				WHERE (type_service_chapter=TRUE OR type_service_campus=TRUE OR type_service_community=TRUE OR type_service_country=TRUE OR type_fundraiser=TRUE) AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
-				TABLE_PREFIX, TABLE_PREFIX,
-				TABLE_PREFIX,
-				$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				//if ($row['driver']) {
-				//	$row['hours'] += 1; // 1 service hour for driving
-				//}
-				$hours = $row['hours'] ? $row['hours'] . ' hrs' : '';
-				if ($row['flaked']) {
-					$hours = "-" . $hours;
-				}
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$service_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\">$hours</td></tr>\r\n";
-				if ($row['attended'] && is_numeric($row['hours'])) {
-					$service_hours += $row['hours'];
-				} else if ($row['flaked'] && is_numeric($row['hours'])) {
-					$service_hours -= $row['hours'];
-				}
-			}
-					// Retrieve Fellowship events
-			$fellowship_events = "";
-			$fellowship_events_count = 0;
-			$query = new Query(sprintf("SELECT %scalendar_event.event_id, title, date, attended, flaked, chair FROM %scalendar_event
-				JOIN %scalendar_attend USING (event_id)
-				WHERE type_fellowship=TRUE AND deleted=FALSE AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
-				TABLE_PREFIX, TABLE_PREFIX,
-				TABLE_PREFIX,
-				$sql_start_date, $sql_end_date, $user_id));
-			while ($row = $query->fetch_row()) {
-				$date = date("M d", strtotime($row['date']));
-				$attendance = process_attendance($row['attended'], $row['flaked'], $row['chair']);
-				$title_link = event_link($row['event_id'], $row['title']);
-				$fellowship_events .= "<tr><td class=\"date\" axis=\"date\">$date</td><td axis=\"title\">$title_link</td><td class=\"attendance\" axis=\"attendance\">$attendance</td><td class=\"hours\" axis=\"hours\"></td></tr>\r\n";
-				if ($row['attended']) {
-					$fellowship_events_count++;
-				}
-			}
-			
 			// Retrieve Fundraiser events
 			$fundraiser_events = "";
 			$fundraiser_events_count = 0;
@@ -1166,12 +1120,29 @@ $excomm_events
 <caption>Attend 1/2 Interfams - You have completed $interfam_events_count</caption>
 $interfam_events
 </table>
+
 <table>
-<caption>Complete 20 service hours - You have completed $service_hours hours</caption>
-$service_events
+<caption>Complete 20 service hours - You have completed $service_hours_total hours (Attended $service_hours, Flaked $service_hours_flake)<br>
+</caption>
 </table>
 <table>
-<caption>Attend 5 fellowships - You have completed $fellowship_events_count</caption>
+<caption style="background-color: #FFFFFF;border: none;text-decoration: underline;">Service to the Chapter</caption>
+$service_type_chapter
+</table>
+<table>
+<caption style="background-color: #FFFFFF;border: none;text-decoration: underline;">Service to the Campus</caption>
+$service_type_campus
+</table>
+<table>
+<caption style="background-color: #FFFFFF;border: none;text-decoration: underline;">Service to the Community</caption>
+$service_type_community
+</table>
+<table>
+<caption style="background-color: #FFFFFF;border: none;text-decoration: underline;">Service to the Country</caption>
+$service_type_country
+</table>
+<table>
+<caption>Attend 5 fellowships - You have completed {$fellowship_events_total} (Attended $fellowship_events_count, Flaked $fellowship_events_flaked)</caption>
 $fellowship_events
 </table>
 <table>
