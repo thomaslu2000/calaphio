@@ -49,6 +49,38 @@ if (!$g_user->is_logged_in()) {
 </div>   pspamffh
 -->
 <div class="newsItem">
+        <h2>Biweekly Service Newsletter #6</h2>
+        <p class="date">May 6, 2019 at 10:49pm</p>
+           <p>
+            The SVP brings to you the biweekly SERVICE NEWSLETTER #6! This semester is coming to an end and finals are creeping up on us, but there’s no deadline to doing service – so please read on:
+<br><br>
+        UPCOMING OPEN SERVICE EVENTS
+<br><br>
+               • May 6 <a href="https://tinyurl.com/y3cjzvff" target="_blank">FPB Community Photoshoot:</a> <br>
+Last opportunity to practice your photography skills with Stanley! I’ve personally truly enjoyed taking pictures at these photoshoots and getting pointers from Stanley, and if you have any interest in photography you will too.
+<br><br>
+               • May 7 <a href="https://tinyurl.com/y5n88kd4" target="_blank">Cage Move In:</a> <br>
+Ever wonder what kind of sh*t we have in the cage? Well, this is your (last) chance to figure out! We need to move everything from Allan’s place to our new downsized cage. It could take us as little as 1 hour to move everything if you can help out – even better if you can drive.
+<br><br>
+               • May 11 <a href="https://tinyurl.com/y6hfzgw9" target="_blank">Muir Woods Fundraiser: </a><br>
+Are you tired of Berkeley and want to take a breather from studying for finals in a place far from humanity? Muir Woods is the perfect blend of nature, fresh air, and money. We have a driver too.
+<br><br>
+               • May 11 <a href="https://tinyurl.com/y4s4njcn" target="_blank">Taiwanese American Cultural Festival: </a><br>
+Are you Taiwanese or American or – even better – Taiwanese American? Yes, you are. Come join me, thanks.
+<br><br>
+SUMMER SERVICE EVENTS
+<br><br>
+If you are staying here over the summer, it will be the perfect opportunity for you to delve into service events that you couldn’t do due to time conflict. I encourage you all to look into service opportunities outside of those offered in the calendar, and ADD them to the calendar. I know that we all want to see more variety in the service events that our chapter offers, but that can only happen if you put them up on our calendar.
+<br><br>
+Summer can also be a good time to test out possible recurring service events for the incoming year. If there’s a particular cause or organization that you would like to see on our calendar, prime others to like it to through the mere exposure effect. Contact possible organizations, test it out yourself, add them to the calendar, and chances are that by the time next semester rolls around people will be willing to go to them too.
+<br><br>
+BANQUET is tomorrow, at which point I will no longer be your Service VP. But I’ll still be around. I’ll know if you do or don’t do service. Have fun! 😊
+
+        </p>
+    <p>- <a href="profile.php?user_id=4792">Michelle Chang (RT)</a></p>
+    </div>
+
+<div class="newsItem">
         <h2>End Of Semester Evals</h2>
         <p class="date">May 1, 2019 at 10:49pm</p>
 
