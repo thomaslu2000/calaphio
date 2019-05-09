@@ -1526,11 +1526,25 @@
 							$edit .= "<b>Title of $person: $position_title</b><br />";
 							$edit .= "<input type=\"hidden\" name=\"title_$position_id\" value=\"$position_title\" size=\"60\" />";
 						}
-						elseif ($position_type == 9 || $position_type == 10) {
+						elseif ($position_type == 9) {
 							$edit .= "<b>$person - Received at: </b><br />";
 							$edit .= "<select name=\"title_$position_id\">";
 							for ($i = 1; $i < 9; $i++) {
 								$cm_name = "CM" . $i;
+								if ($position_title == $cm_name) {
+									$edit .= "<option value=\"$cm_name\" selected=\"selected\" >$cm_name</option>";
+								}
+								else {
+									$edit .= "<option value=\"$cm_name\">$cm_name</option>";
+								}
+							}
+							$edit .= "</select><br />";
+						}
+                        elseif ($position_type == 10) {
+							$edit .= "<b>$person - Received at: </b><br />";
+							$edit .= "<select name=\"title_$position_id\">";
+							for ($i = 2; $i < 5; $i++) {
+								$cm_name = "PR" . $i;
 								if ($position_title == $cm_name) {
 									$edit .= "<option value=\"$cm_name\" selected=\"selected\" >$cm_name</option>";
 								}
