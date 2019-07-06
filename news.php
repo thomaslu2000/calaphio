@@ -49,6 +49,14 @@ if (!$g_user->is_logged_in()) {
 </div>
 -->
 <div class="newsItem">
+        <h2>Summer Service Smugmug!</h2>
+        <p class="date">July 5, 2019 at 10:49pm</p>
+<p>
+<a href="https://calaphio.smugmug.com/upload/TcKh9q/allenwongsummer" target="_blank"> Summer Service Uploads: </a> <br /> <a href="https://calaphio.smugmug.com/upload/TcKh9q/allenwongsummer" target="_blank"> https://calaphio.smugmug.com/upload/TcKh9q/allenwongsummer </a>
+</p>
+    <p>- <a href="profile.php?user_id=4937">Edward Hsu (PVL)</a></p>
+    </div>
+<div class="newsItem">
         <h2>Summer Service Update!</h2>
         <p class="date">May 28, 2019 at 10:49pm</p>
            <p>
