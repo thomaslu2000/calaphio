@@ -77,7 +77,7 @@ if($row = $query->fetch_row()){
         if ($g_user->permit("admin view requirements") || $g_user->permit("admin view pledge requirements")) {
             $post_id = $row['id'];
             echo "
-            <a href='admin_add_announcement.php?post_id=$post_id'> (Edit Post) </a>
+            <a href='admin_add_announcement.php?post_id=$post_id'> (Edit/Delete Post) </a>
             ";
         }
         

@@ -18,7 +18,11 @@ if (!$g_user->is_logged_in() || !$permitted)
 {
 	trigger_error("You must be logged in as an admin to access this feature", E_USER_ERROR);
 } else{
-    if (isset($_POST['user_id']) && isset($_POST['text']) && isset($_POST['title'])) {
+    if (isset($_REQUEST['post_id']) && is_numeric($_REQUEST['post_id']) && isset($_POST['delete']) && $_POST['delete']=="delete") {
+        $query = new Query(sprintf("DELETE FROM apo_announcements WHERE id=%d", $_REQUEST['post_id']));
+        echo "<h1> Deleted! </h1>";
+    }
+    elseif (isset($_POST['user_id']) && isset($_POST['text']) && isset($_POST['title'])) {
         $text = db_safe_string($_POST['text']);
         $title = db_safe_string($_POST['title']);
         $user_id = $_POST['user_id'];
@@ -60,10 +64,15 @@ if (isset($_REQUEST['post_id']) && is_numeric($_REQUEST['post_id'])) {
         $title = html_entity_decode($row["title"]);
         $text = html_entity_decode($row["text"]);
     echo <<<HEREDOC
-        <script type="text/javascript">
+    <form method="post" action="" >
+        <input type="hidden" value="delete" name="delete">
+        <button type="submit">Delete</button>
+    </form>
+    
+    <script type="text/javascript">
         document.getElementById('title').value = '$title';
         document.getElementById('main-text').value = '$text';
-        </script>
+    </script>
 HEREDOC;
     }
 }
