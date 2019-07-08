@@ -48,6 +48,53 @@ if (!$g_user->is_logged_in()) {
     <p>- <a href="profile.php?user_id=4622">Shengmin Xiao (MMC)</a></p>
 </div>
 -->
+
+<?php 
+
+
+//auto generate news code
+$query = new Query(sprintf("SELECT start, end FROM apo_semesters ORDER BY id DESC LIMIT 1"));
+if($row = $query->fetch_row()){
+    $start_time = $row['start'];
+    $end_time = $row['end'];
+    $query = new Query(sprintf(
+        "SELECT user_id, id, text, publish_time, title, firstname, lastname, pledgeclass
+        FROM apo_announcements 
+        JOIN apo_users USING (user_id)
+        WHERE publish_time > '%s' AND publish_time < '%s'
+        ORDER BY id DESC", $start_time, $end_time));
+    }
+    while($row = $query->fetch_row()){
+        $name_stuff = $row['firstname'] . " " . $row['lastname'] . " (" . $row['pledgeclass'] .")";
+?>
+
+
+<div class="newsItem">
+        <h2> 
+        <?php 
+        echo html_entity_decode($row['title']);
+        
+        if ($g_user->permit("admin view requirements") || $g_user->permit("admin view pledge requirements")) {
+            $post_id = $row['id'];
+            echo "
+            <a href='admin_add_announcement.php?post_id=$post_id'> (Edit Post) </a>
+            ";
+        }
+        
+        ?> 
+        </h2>
+        <p class="date"> <?php echo date('M j Y g:i A', strtotime($row['publish_time'])) ?> </p>
+    <p>
+        <?php echo html_entity_decode($row['text'])?>
+    </p>
+    <p>- <a href="profile.php?user_id=<?php echo $row['user_id'] ?>"><?php echo $name_stuff ?></a></p>
+</div>
+<?php } 
+
+// end auto generate news code
+?>
+
+
 <div class="newsItem">
         <h2>Summer Service Smugmug!</h2>
         <p class="date">July 5, 2019 at 10:49pm</p>
