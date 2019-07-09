@@ -6,7 +6,6 @@ Template::print_body_header('Home', 'ADMIN');
 
 $available_permissions = array(
     '<a href="admin_add_announcement.php">Post Announcement</a>' => 'admin view requirements',
-    '<a href="admin_add_announcement.php">Post Announcement</a>' => 'admin view pledge requirements',
     'Service' => 'title',
 	'<a href="admin_superstar.php">Superstars</a>' => 'admin view requirements',
 	'<a href="admin_view_total_hours.php">View Total Service Hours</a>' => 'admin view requirements',

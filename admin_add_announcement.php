@@ -13,7 +13,7 @@ function db_safe_string($str) {
     return $str;
 }
 
-$permitted = $g_user->permit("admin view requirements") || $g_user->permit("admin view pledge requirements");
+$permitted = $g_user->permit("admin view requirements");
 if (!$g_user->is_logged_in() || !$permitted)
 {
 	trigger_error("You must be logged in as an admin to access this feature", E_USER_ERROR);
