@@ -9,6 +9,7 @@ $available_permissions = array(
     'Service' => 'title',
 	'<a href="admin_superstar.php">Superstars</a>' => 'admin view requirements',
 	'<a href="admin_view_total_hours.php">View Total Service Hours</a>' => 'admin view requirements',
+    '<a href="admin_service_by_category.php">View Service Hours By Category</a>' => 'admin view requirements',
 	'<a href="admin_view_service_projects.php">View Service Report</a>' => 'admin view requirements',
 	'<a href="admin_view_service_buddy_hours.php">View Service Buddy Hours</a>' => 'admin view requirements',
 	'<a href="admin_service_buddy_create.php">Create Service Buddies</a>' => 'admin view requirements',
