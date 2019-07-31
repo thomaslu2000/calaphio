@@ -34,7 +34,7 @@ HEREDOC;
     foreach($four_cs as $c){
         $query = new Query("SELECT sum(hours) as s FROM apo_calendar_attend JOIN apo_calendar_event USING (event_id) WHERE flaked=0 AND date BETWEEN '$start' AND '$end' AND type_service_$c=1");
         if ($row = $query->fetch_row()){
-            $hours = $row['s'];
+            $hours = round($row['s'], 2);
             echo "<tr>
                     <td>Service to the $c<td><td>$hours<td>
                 </tr>";
@@ -42,7 +42,7 @@ HEREDOC;
     }
     $query = new Query("SELECT sum(hours) as s FROM apo_calendar_attend JOIN apo_calendar_event USING (event_id) WHERE flaked=0 AND date BETWEEN '$start' AND '$end' AND (type_service_campus=1 OR type_service_chapter=1 OR type_service_community=1 OR type_service_country=1) AND (description LIKE '%youth%' OR description LIKE '%kid%' OR description LIKE '%child%')");
         if ($row = $query->fetch_row()){
-            $hours = $row['s'];
+            $hours = round($row['s'], 2);
             echo "<tr>
                     <td>Service to the Youths (lower bound)<td><td>$hours<td>
                 </tr>";
