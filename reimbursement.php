@@ -15,7 +15,7 @@ Template::print_body_header('Calendar', 'REIMBURSE');
 
 	
 	<p>Physical Copy of Receipts - write down these information for reimbursements  <br/>
-	and give it to either <a href="profile.php?user_id=4930">Michael Li</a>, <a href="profile.php?user_id=4794">Kevin Ma</a>, <a href="profile.php?user_id=4949">Isabella Chin</a>, or <a href="profile.php?user_id=4945">Jacky Chen</a>: <br/><br/>
+	and give it to either <a href="profile.php?user_id=4946">Amber Yim</a>, <a href="profile.php?user_id=4957">George Wang</a>, <a href="profile.php?user_id=5087">Ozzy Valadez</a>, or <a href="profile.php?user_id=5016">Rachelle DeGuzman</a>: <br/><br/>
 	Name <br/>
 	SID <br/>
 	E-Mail <br/>
