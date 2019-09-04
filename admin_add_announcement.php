@@ -13,6 +13,12 @@ function db_safe_string($str) {
     return $str;
 }
 
+function replace_strong($str) {
+    $str = str_replace("<strong>", "<b>", $str);
+    $str = str_replace("</strong>", "</b>", $str);
+    return $str;
+}
+
 $permitted = $g_user->permit("admin view requirements");
 if (!$g_user->is_logged_in() || !$permitted)
 {
@@ -23,8 +29,10 @@ if (!$g_user->is_logged_in() || !$permitted)
         echo "<h1> Deleted! </h1>";
     }
     elseif (isset($_POST['user_id']) && isset($_POST['text']) && isset($_POST['title'])) {
-        $text = db_safe_string($_POST['text']);
-        $title = db_safe_string($_POST['title']);
+        $text = replace_strong($_POST['text']);
+        $title = replace_strong($_POST['title']);
+        $text = db_safe_string($text);
+        $title = db_safe_string($title);
         $user_id = $_POST['user_id'];
         if (isset($_REQUEST['post_id']) && is_numeric($_REQUEST['post_id'])){
             $query = new Query(sprintf("UPDATE apo_announcements SET text='%s', title='%s' WHERE id=%d", $text, $title, $_REQUEST['post_id']));
