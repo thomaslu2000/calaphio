@@ -32,8 +32,10 @@ if ($g_user->data['user_id'] == 1190) {
 if (!$g_user->is_logged_in()) {
 	trigger_error("You must be logged in to view this page.");
 } else {
+    $date = new Query("SELECT start FROM apo_semesters ORDER BY start DESC LIMIT 1");
+    $date = $date->fetch_row()["start"];
 $import_http_request = array(
-	"start" => date("2018-12-06"),
+	"start" => date($date),
 	"end" => date("Y-m-d", strtotime("now"))
 	);
 foreach ($import_http_request as $var => $default) {
