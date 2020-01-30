@@ -86,7 +86,7 @@ DOCHERE_print_head;
 				"REIMBURSE" => "reimbursement.php",
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
-				"BYLAWS" => "bylaws.php",
+				"USEFUL LINKS" => "links.php",
 				"BUDGET" => $budget_link,
 				),
 			'Calendar' => array(
@@ -95,7 +95,7 @@ DOCHERE_print_head;
 				"REIMBURSE" => "reimbursement.php",
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
-				"BYLAWS" => "bylaws.php",
+				"USEFUL LINKS" => "links.php",
 				"BUDGET" => $budget_link,
 				),
 			'Service' => array(
@@ -104,7 +104,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"SERVICE" => "service.php",
 				"FELLOWSHIP" => "fellowship.php",
-				"BYLAWS" => "bylaws.php",
+				"USEFUL LINKS" => "links.php",
 				"REIMBURSE" => "reimbursement.php"
 				),
 			'Fellowship' => array(
@@ -113,7 +113,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"SERVICE" => "service.php",
 				"FELLOWSHIP" => "fellowship.php",
-				"BYLAWS" => "bylaws.php",
+				"USEFUL LINKS" => "links.php",
 				"REIMBURSE" => "reimbursement.php"
 				),
 			'Wiki' => array(
@@ -122,7 +122,7 @@ DOCHERE_print_head;
 				"REIMBURSE" => "reimbursement.php",
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
-				"BYLAWS" => "bylaws.php",
+				"USEFUL LINKS" => "links.php",
 				"BUDGET" => $budget_link,
 				),
 			// 'Members' => array(
