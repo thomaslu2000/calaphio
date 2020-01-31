@@ -97,6 +97,20 @@ if($row = $query->fetch_row()){
 <?php endif ?>
 
 
+
+<div class="newsItem">
+        <h2>Welcome Gamma Gamma!</h2>
+        <p style="margin-bottom: 1em">
+
+    <br>
+    Since winter break is now over, it's about time to get back into the APO mentality. Just remember that we're all students first and need to prioritize school, and to focus on quality service over quantity. Good luck this semester!
+    <br> 
+    <br>
+    <a href="https://goo.gl/forms/zMPfMIbR9e5Nyfgu2" target="_blank">Website Suggestion Form</a><br>
+    
+    <p>- <a href="profile.php?user_id=4946">Amber Yim</a></p>
+</div>
+
 <?php if ($g_user->is_logged_in() && !$g_user->is_pledge()): ?>
     <a href="news_fa19.php">Older News ></a>
 <?php endif ?>
