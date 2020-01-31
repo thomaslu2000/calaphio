@@ -8,7 +8,7 @@ if (!$g_user->is_logged_in()) {
 	trigger_error("You must be logged in to view our Useful Links.", E_USER_ERROR);
 } else {
 	echo <<<HEREDOC
-<h2><b>Useful Links</b></h2><br/>
+<h2><b>Useful Links</b></h2><br />
 <p>These are some Useful Links provided by our lovely Admin VP. Make sure you are signed into your Berkeley email and signed out of all other accounts before trying to access them.<br>
 <br>
 <br>
