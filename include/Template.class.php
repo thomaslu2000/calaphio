@@ -201,7 +201,7 @@ DOCHERE_print_head;
 
 		echo <<<DOCHERE_print_body_header
 <body>
-<+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ id="header" src="images/header.jpg" alt="Region A Section A-2 APO Gamma Gamma at Berkeley" />
+
 <div id="paperLayer1">
   <div id="paperLayer2">
     <div id="paperHeader">
