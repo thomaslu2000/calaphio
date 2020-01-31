@@ -86,7 +86,7 @@ DOCHERE_print_head;
 				"REIMBURSE" => "reimbursement.php",
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
-				"BYLAWS" => "bylaws.php",
+				"LINKS" => "bylaws.php",
 				"BUDGET" => $budget_link,
 				),
 			'Calendar' => array(
@@ -95,8 +95,8 @@ DOCHERE_print_head;
 				"REIMBURSE" => "reimbursement.php",
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
-				"BYLAWS" => "bylaws.php",
-				"BUDGET" => $budget_link,
+				"LINKS" => "bylaws.php",
+                "BUDGET" => $budget_link,
 				),
 			'Service' => array(
 				"HOME" => "news.php",
@@ -104,7 +104,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"SERVICE" => "service.php",
 				"FELLOWSHIP" => "fellowship.php",
-				"BYLAWS" => "bylaws.php",
+				"LINKS" => "bylaws.php",
 				"REIMBURSE" => "reimbursement.php"
 				),
 			'Fellowship' => array(
@@ -113,7 +113,7 @@ DOCHERE_print_head;
 				"BROTHERS" => "roster.php", 
 				"SERVICE" => "service.php",
 				"FELLOWSHIP" => "fellowship.php",
-				"BYLAWS" => "bylaws.php",
+				"LINKS" => "bylaws.php",
 				"REIMBURSE" => "reimbursement.php"
 				),
 			'Wiki' => array(
@@ -122,7 +122,7 @@ DOCHERE_print_head;
 				"REIMBURSE" => "reimbursement.php",
 				"BROTHERS" => "roster.php", 
 				"GG WIKI" => "ggwiki.php", 
-				"BYLAWS" => "bylaws.php",
+				"LINKS" => "bylaws.php",
 				"BUDGET" => $budget_link,
 				),
 			// 'Members' => array(
@@ -201,7 +201,7 @@ DOCHERE_print_head;
 
 		echo <<<DOCHERE_print_body_header
 <body>
-<img id="header" src="images/header.jpg" alt="Region A Section A-2 APO Gamma Gamma at Berkeley" />
+<+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ id="header" src="images/header.jpg" alt="Region A Section A-2 APO Gamma Gamma at Berkeley" />
 <div id="paperLayer1">
   <div id="paperLayer2">
     <div id="paperHeader">
