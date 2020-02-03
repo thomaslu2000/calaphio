@@ -1,6 +1,6 @@
 <?php
 
-$GLOBALS['budget'] = "https://docs.google.com/spreadsheets/d/1qLt0kQL7v9Y3G4ucab7AON8q3kQgNMh69E1qOlL_LcU/edit?usp=sharing";
+$GLOBALS['budget'] = "https://docs.google.com/spreadsheets/d/1jEC7c6BF3gDVNQhAsq0T7Zh2LxX-_dze75tHIHTY9r0/edit#gid=1283827056";
 $GLOBALS['excomm committees'] = 'https://docs.google.com/spreadsheets/d/1GqlGposJv6hACqMulxbTTvnC7qbppX5dLTN5tGPT6Mk/edit?usp=sharing';
 $GLOBALS['hide all fams'] = false;
 $GLOBALS['smugmug rush'] = "https://calaphio.smugmug.com/upload/wbHrmR/rush";
