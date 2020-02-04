@@ -12,6 +12,9 @@ if (!$g_user->is_logged_in()) {
 <p>These are some Useful Links provided by our lovely Admin VP. Make sure you are signed into your Berkeley email and signed out of all other accounts before trying to access them.<br>
 <br>
 <br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScREpZacbUIqMidtcpTXfNpqPXmVETOlcEV4X2PiIUGFLsmWQ/viewform?edit">Spring 2020 Feedback Form</a>
+<br>
+<br>
 <a href="https://docs.google.com/forms/d/1d56fnlldXb4aSoDlavL6Nj03hIZQZuCS2ATfWJ1XkBE/edit">Room Reservation Requests</a>
 <br>
 <br>
