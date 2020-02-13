@@ -1097,7 +1097,7 @@ DOCHERE;
 			echo <<<DOCHERE
 <div id="requirements">
 <table>
-<caption>Complete 1 IC credit - You have completed $ic_events_count</caption>
+<caption>Complete 1 IC credit (Attend 1 InterChapter event) - You have completed $ic_events_count</caption>
 $ic_events
 </table>
 <table>
@@ -1105,22 +1105,17 @@ $ic_events
 $fundraiser_events
 </table>
 <table>
-<caption>Attend 4/5 chapter meetings - You have completed $chaptermeeting_events_count</caption>
+<caption>Attend 4 of 5 chapter meetings - You have completed $chaptermeeting_events_count</caption>
 $chaptermeeting_events
 </table>
 <table>
-<caption>Attend both elections - You have completed $election_events_count</caption>
+<caption>Attend 1 of 1 Elections (2, if necessary) - You have completed $election_events_count</caption>
 $election_events
 </table>
 <table>
 <caption>Attend 1 ExComm meeting - You have completed $excomm_events_count</caption>
 $excomm_events
 </table>
-<table>
-<caption>Attend 1/2 Interfams - You have completed $interfam_events_count</caption>
-$interfam_events
-</table>
-
 <table>
 <caption>Complete 20 service hours - You have completed $service_hours_total hours (Attended $service_hours, Flaked $service_hours_flake)<br>
 </caption>
@@ -1147,24 +1142,29 @@ $fellowship_events
 </table>
 <table>
 <caption>Other pledge requirements:</caption>
-<tr><td axis="name">Pay $90 Pledge Dues</td></tr>
 <tr><td axis="name">Attend Ritual</td></tr>
-<tr><td axis="name">Wear Pledge Pin</td></tr>
-<tr><td axis="name">Join a Pledge committee</td></tr>
-<tr><td axis="name">Join an ExComm committee</td></tr>
+<tr><td axis="name">Pay $90 Pledge Dues</td></tr>
+<tr><td axis="name">Wear Pledge Pin at all times (except the 5 S's)</td></tr>
+<tr><td axis="name">Attend 5 of 5 Pledge Reviews (PRs)</td></tr>
+<tr><td axis="name">Pass 4 of 4 Pledge Review Quizzes</td></tr>
 <tr><td axis="name">Attend Sib Social</td></tr>
-<tr><td axis="name">Complete committee requirements</td></tr>
-<tr><td axis="name">Attend Pledge Class Retreat</td></tr>
-<tr><td axis="name">Attend Pledge Class Service Projects</td></tr>
+<tr><td axis="name">Attend Pledge Class Retreat (PCR)</td></tr>
+<tr><td axis="name">Attend Pledge Class Service Project I (PCSP I)</td></tr>
 <tr><td axis="name">Attend Pledge Class Fellowship</td></tr>
-<tr><td axis="name">Attend Talent Show</td></tr>
+<tr><td axis="name">Attend Pledge Class Service Project II (PCSP II)</td></tr>
 <tr><td axis="name">Attend Campout</td></tr>
-<tr><td axis="name">Attend all Pledge Reviews (5)</td></tr>
-<tr><td axis="name">Pass all Pledge Quizzes (4)</td></tr>
-<tr><td axis="name">Attend 1 Office Hour per Pledge Committee Member (8 total)</td></tr>
-<tr><td axis="name">Fill out 30 Interviews</td></tr>
+<tr><td axis="name">Attend Talent Show/Mr. & Mrs. APO</td></tr>
+<tr><td axis="name">Attend 1 Dynasty Event</td></tr>
+<tr><td axis="name">Attend 1 Alumni Event</td></tr>
+<tr><td axis="name">Attend 1 Pledge Class Bonding (PCB)</td></tr>
+<tr><td axis="name">Attend Mid-Semester Forum</td></tr>
+<tr><td axis="name">Join an ExComm committee</td></tr>
+<tr><td axis="name">Attend 1 of each PComm Office Hours (11 total)</td></tr>
+<tr><td axis="name">Complete 25 Interviews</td></tr>
+<tr><td axis="name">Complete 3 Chumming Assignments</td></tr>
 <tr><td axis="name">Complete 4 reflections</td></tr>
-<tr><td axis="name">Complete 2/3 of Active Signature Sheet</td></tr>
+<tr><td axis="name">Complete Committee Requirements</td></tr>
+<tr><td axis="name">Complete Signature Sheets</td></tr>
 <tr><td axis="name">Complete Pledge Binder</td></tr>
 <tr><td axis="name">Pass Pledge Test</td></tr>
 <tr><td axis="name">Attend Activation</td></tr>
