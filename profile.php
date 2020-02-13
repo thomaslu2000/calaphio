@@ -938,7 +938,6 @@ $dynasty_events
 <caption>Other Active Requirements:</caption>
 <tr><td axis="name">Pay Active Dues</td></tr>
 <tr><td axis="name">Attend 2 of 4 Chapter Events (Ritual, Activation, Mid-Semester Forum, End-of-Semester Forum)</td></tr>
-<tr><td axis="name">Join an ExComm Committee (this is separate from the Chair 2 Positions requirement: you must Chair 2 Positions AND Join an ExComm Committee) </td></tr>
 <tr><td axis="name">Chair 1 Service Event</td></tr>
 <tr><td axis="name">Chair 1 Fellowship</td></tr>
 <tr><td axis="name">Attend 1 Rush Workshop</td></tr>

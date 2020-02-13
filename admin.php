@@ -27,7 +27,6 @@ $available_permissions = array(
 	'<a href="admin_view_requirements.php">View Active/Pledge Requirements</a>' => 'admin view requirements',
 	'<a href="admin_view_individual_requirements.php">View Individual Requirements by Semester</a>' => 'admin view requirements',
     '<a href="admin_set_dynasty.php">Change Dynasties</a>' => 'admin view requirements',
-	'<a href="admin_view_dynasty_points.php"> View Dynasty Points </a>' => 'admin view requirements',
     '<a href="admin_dynasty_competitions.php"> Set Dynasty Competition Winners </a>' => 'admin view requirements',
 	'<a href="admin_mvp.php">MVP Power</a>' => 'admin view requirements',
     'Pledges' => 'title',
