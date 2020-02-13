@@ -1130,6 +1130,7 @@ $excomm_events
 <tr><td axis="name">Attend 1 Dynasty Event</td></tr>
 <tr><td axis="name">Attend 1 Alumni Event</td></tr>
 <tr><td axis="name">Attend 1 Pledge Class Bonding (PCB)</td></tr>
+<tr><td axis="name">Attend 2 Calendar Events with your Family before PR2</td></tr>
 <tr><td axis="name">Attend Mid-Semester Forum</td></tr>
 <tr><td axis="name">Join an ExComm Committee</td></tr>
 <tr><td axis="name">Attend 1 of each PComm Office Hours (11 total)</td></tr>
