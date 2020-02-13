@@ -880,44 +880,7 @@ function print_requirements($user_id) {
 </div>	
 <div id="requirements">
 <table>
-<caption>Complete 1 IC credit - You have completed $ic_events_count</caption>
-$ic_events
-</table>
-<table>
-<caption>Attend 1 Dynasty event - You have attended $dynasty_events_count</caption>
-$dynasty_events
-</table>
-<table>
-<caption>Attend 1 Info Night and Post, Meet the Chapter, 1 Rush Event, and 4 Hours of Flyering - You have completed $rush_events_count</caption>
-$rush_events
-</table>
-<table>
-<caption>Attend 1 out of 3 Sponsorship Events - You have completed $sponsorship_events_count</caption>
-$sponsorship_events
-</table>
-</table>
-<table>
-<caption>Complete 4 hours tabling - You have completed $tabling_hours hours</caption>
-$tabling_events
-</table>
-<table>
-<caption>Attend 1 fundraiser - You have completed $fundraiser_events_count</caption>
-$fundraiser_events
-</table>
-<table>
-<caption>Attend 3/5 chapter events (Ritual, Interviews/Vote-in, Activation, 2 Forums) - You have completed $chapter_events_count</caption>
-$chapter_events
-</table>
-<table>
-<caption>Attend 5/8 chapter meetings - You have completed $chaptermeeting_events_count</caption>
-$chaptermeeting_events
-</table>
-<table>
-<caption>Attend elections - You have completed $election_events_count</caption>
-$election_events
-</table>
-<table>
-<caption>Complete 20 service hours - You have completed $service_hours_total hours (Attended $service_hours, Flaked $service_hours_flake)<br>
+<caption>Complete 20 Service Hours - You have completed $service_hours_total hours (Attended $service_hours, Flaked $service_hours_flake)<br>
 </caption>
 </table>
 <table>
@@ -937,38 +900,48 @@ $service_type_community
 $service_type_country
 </table>
 <table>
-<caption>Attend 5 fellowships - You have completed {$fellowship_events_total} (Attended $fellowship_events_count, Flaked $fellowship_events_flaked)</caption>
+<caption>Attend 5 Fellowships - You have completed {$fellowship_events_total} (Attended $fellowship_events_count, Flaked $fellowship_events_flaked)</caption>
 $fellowship_events
 </table>
 <table>
-<caption>Pay your \$50 active dues (\$60 at CM3, $70 at CM6)</caption>
-</table>
-
-<table>
-<caption>Acquire 5 leadership credits - You have acquired $leadership_events_count</caption>
-$leadership_events
+<caption>Attend 1 Fundraiser - You have completed $fundraiser_events_count</caption>
+$fundraiser_events
 </table>
 <table>
-<caption>Complete 4 coffee chats - You have completed $coffeeCount coffee chats</caption>
-$coffee
+<caption>Complete 1 IC Credit (Attend 1 InterChapter Event) - You have completed $ic_events_count</caption>
+$ic_events
 </table>
-
+<table>
+<caption>Attend 5 of 8 Chapter Meetings - You have completed $chaptermeeting_events_count</caption>
+$chaptermeeting_events
+</table>
+<table>
+<caption>Attend 1 of 1 Elections (2, if necessary) - You have completed $election_events_count</caption>
+$election_events
+</table>
+<table>
+<caption>Attend 1 Info Night, Meet the Chapter, 3 Rush Events, and complete 4 Hours of Rush Flyering - You have completed $rush_events_count</caption>
+$rush_events
+</table>
+<table>
+<caption>Attend 2 Dynasty Events - You have attended $dynasty_events_count</caption>
+$dynasty_events
+</table>
 <table width="100%">
-<caption>Complete 5 leadership credits - You can get credit by doing any of the following:</caption>
-<tr><td axis="name">Serving on a committee - <a href="$chairing_link">Search for one here</a> <strong>(required)</strong></td></tr>
-<tr><td axis="name">Sponsoring (1 credit)</td></tr>
-<tr><td axis="name">Each additional rush event you attend with your sponsoree after MTC (1 credit)</td></tr>
-<tr><td axis="name">Submit 3 (original content) Stylus Submissions (1 credit)</td></tr>
-<tr><td axis="name">Chairing 2 events (1 credit)</td></tr>
-<tr><td axis="name">Attending a LEADS workshop (1 credit)</td></tr>
-<tr><td axis="name">Driving to 3 events (1 credit)</td></tr>
-<tr><td axis="name">Attending Nationals, Sectionals, or Regionals (1 credit)</td></tr>
-<tr><td axis="name">Participating in Leadership Workshop (1 credit)</td></tr>
-<tr><td axis="name">Attending Mid-semester or End-of-semester forum (if not used as a chapter event) (1 credit)</td></tr>
-<tr><td axis="name">Being a Big, Aunt, Uncle, or Parent (MUST ATTEND Campout, Pledge Class Fellowship, 1/2 Active-pledge bondings, 1/2 Spirit Week Events) (1 credit)</td></tr>
-<tr><td axis="name">Become a sponsor (MUST ATTEND 1 fellowship and 1 service event with your sponsoree)(1 credit)</td></tr>
-<tr><td axis="name"> Chair a committee (separate from serving on a committee)(1 credit)</td></tr>
-
+<caption>Chair 2 Positions - You can get credit for this by doing any of the following:</caption>
+<tr><td axis="name">Serving on ExComm (counts as 2 positions)</td></tr>
+<tr><td axis="name">Serving on PComm (counts as 2 positions)</td></tr>
+<tr><td axis="name">Serving on DComm (counts as 2 positions)</td></tr>
+<tr><td axis="name">Being a Big -- this excludes Aunts, Uncles, and Unofficials (counts as 1 position)</td></tr>
+</table>
+<table>
+<caption>Other Active Requirements:</caption>
+<tr><td axis="name">Pay Active Dues</td></tr>
+<tr><td axis="name">Attend 2 of 4 Chapter Events (Ritual, Activation, Mid-Semester Forum, End-of-Semester Forum)</td></tr>
+<tr><td axis="name">Join an ExComm Committee (this is separate from the Chair 2 Positions requirement: you must Chair 2 Positions AND Join an ExComm Committee) </td></tr>
+<tr><td axis="name">Chair 1 Service Event</td></tr>
+<tr><td axis="name">Chair 1 Fellowship</td></tr>
+<tr><td axis="name">Attend 1 Rush Workshop</td></tr>
 </table>
 </div>
 
@@ -1097,27 +1070,7 @@ DOCHERE;
 			echo <<<DOCHERE
 <div id="requirements">
 <table>
-<caption>Complete 1 IC credit (Attend 1 InterChapter event) - You have completed $ic_events_count</caption>
-$ic_events
-</table>
-<table>
-<caption>Attend 1 Fundraiser - You have completed $fundraiser_events_count</caption>
-$fundraiser_events
-</table>
-<table>
-<caption>Attend 4 of 5 chapter meetings - You have completed $chaptermeeting_events_count</caption>
-$chaptermeeting_events
-</table>
-<table>
-<caption>Attend 1 of 1 Elections (2, if necessary) - You have completed $election_events_count</caption>
-$election_events
-</table>
-<table>
-<caption>Attend 1 ExComm meeting - You have completed $excomm_events_count</caption>
-$excomm_events
-</table>
-<table>
-<caption>Complete 20 service hours - You have completed $service_hours_total hours (Attended $service_hours, Flaked $service_hours_flake)<br>
+<caption>Complete 20 Service Hours - You have completed $service_hours_total hours (Attended $service_hours, Flaked $service_hours_flake)<br>
 </caption>
 </table>
 <table>
@@ -1137,11 +1090,35 @@ $service_type_community
 $service_type_country
 </table>
 <table>
-<caption>Attend 5 fellowships - You have completed {$fellowship_events_total} (Attended $fellowship_events_count, Flaked $fellowship_events_flaked)</caption>
+<caption>Attend 5 Fellowships - You have completed {$fellowship_events_total} (Attended $fellowship_events_count, Flaked $fellowship_events_flaked)</caption>
 $fellowship_events
 </table>
 <table>
-<caption>Other pledge requirements:</caption>
+<caption>Attend 4 of 5 Chapter Meetings - You have completed $chaptermeeting_events_count</caption>
+$chaptermeeting_events
+</table>
+<table>
+<caption>Attend 1 of 1 Elections (2, if necessary) - You have completed $election_events_count</caption>
+$election_events
+</table>
+<table>
+<caption>Attend 1 Fundraiser - You have completed $fundraiser_events_count</caption>
+$fundraiser_events
+</table>
+<table>
+<caption>Attend 1 Dynasty Event - You have attended $dynasty_events_count</caption>
+$dynasty_events
+</table>
+<table>
+<caption>Complete 1 IC Credit (Attend 1 InterChapter Event) - You have completed $ic_events_count</caption>
+$ic_events
+</table>
+<table>
+<caption>Attend 1 ExComm Meeting - You have completed $excomm_events_count</caption>
+$excomm_events
+</table>
+<table>
+<caption>Other Pledge Requirements:</caption>
 <tr><td axis="name">Attend Ritual</td></tr>
 <tr><td axis="name">Pay $90 Pledge Dues</td></tr>
 <tr><td axis="name">Wear Pledge Pin at all times (except the 5 S's)</td></tr>
@@ -1154,15 +1131,14 @@ $fellowship_events
 <tr><td axis="name">Attend Pledge Class Service Project II (PCSP II)</td></tr>
 <tr><td axis="name">Attend Campout</td></tr>
 <tr><td axis="name">Attend Talent Show/Mr. & Mrs. APO</td></tr>
-<tr><td axis="name">Attend 1 Dynasty Event</td></tr>
 <tr><td axis="name">Attend 1 Alumni Event</td></tr>
 <tr><td axis="name">Attend 1 Pledge Class Bonding (PCB)</td></tr>
 <tr><td axis="name">Attend Mid-Semester Forum</td></tr>
-<tr><td axis="name">Join an ExComm committee</td></tr>
+<tr><td axis="name">Join an ExComm Committee</td></tr>
 <tr><td axis="name">Attend 1 of each PComm Office Hours (11 total)</td></tr>
 <tr><td axis="name">Complete 25 Interviews</td></tr>
 <tr><td axis="name">Complete 3 Chumming Assignments</td></tr>
-<tr><td axis="name">Complete 4 reflections</td></tr>
+<tr><td axis="name">Complete 4 Reflections</td></tr>
 <tr><td axis="name">Complete Committee Requirements</td></tr>
 <tr><td axis="name">Complete Signature Sheets</td></tr>
 <tr><td axis="name">Complete Pledge Binder</td></tr>
