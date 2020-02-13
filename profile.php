@@ -1126,6 +1126,7 @@ $excomm_events
 <tr><td axis="name">Attend Pledge Class Service Project II (PCSP II)</td></tr>
 <tr><td axis="name">Attend Campout</td></tr>
 <tr><td axis="name">Attend Talent Show/Mr. & Mrs. APO</td></tr>
+<tr><td axis="name">Attend Judgement Night</td></tr>
 <tr><td axis="name">Attend 1 Dynasty Event</td></tr>
 <tr><td axis="name">Attend 1 Alumni Event</td></tr>
 <tr><td axis="name">Attend 1 Pledge Class Bonding (PCB)</td></tr>
