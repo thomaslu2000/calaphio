@@ -1106,10 +1106,6 @@ $election_events
 $fundraiser_events
 </table>
 <table>
-<caption>Attend 1 Dynasty Event - You have attended $dynasty_events_count</caption>
-$dynasty_events
-</table>
-<table>
 <caption>Complete 1 IC Credit (Attend 1 InterChapter Event) - You have completed $ic_events_count</caption>
 $ic_events
 </table>
@@ -1131,6 +1127,7 @@ $excomm_events
 <tr><td axis="name">Attend Pledge Class Service Project II (PCSP II)</td></tr>
 <tr><td axis="name">Attend Campout</td></tr>
 <tr><td axis="name">Attend Talent Show/Mr. & Mrs. APO</td></tr>
+<tr><td axis="name">Attend 1 Dynasty Event</td></tr>
 <tr><td axis="name">Attend 1 Alumni Event</td></tr>
 <tr><td axis="name">Attend 1 Pledge Class Bonding (PCB)</td></tr>
 <tr><td axis="name">Attend Mid-Semester Forum</td></tr>
