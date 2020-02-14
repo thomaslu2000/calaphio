@@ -15,6 +15,9 @@ if (!$g_user->is_logged_in()) {
 <a href="https://docs.google.com/forms/d/e/1FAIpQLScREpZacbUIqMidtcpTXfNpqPXmVETOlcEV4X2PiIUGFLsmWQ/viewform?edit">Spring 2020 Feedback Form</a>
 <br>
 <br>
+<a href="https://docs.google.com/forms/d/1LV5UcYRKmrGvSyYNUJCliFSXEwEFrPBxiQFignWRboU/edit?usp=sharing">Website Suggestion Form</a>
+<br>
+<br>
 <a href="https://docs.google.com/forms/d/1d56fnlldXb4aSoDlavL6Nj03hIZQZuCS2ATfWJ1XkBE/edit">Room Reservation Requests</a>
 <br>
 <br>
