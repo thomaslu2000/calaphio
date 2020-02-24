@@ -399,6 +399,48 @@ echo <<<DOCHERE_print_gg_maniac_poll_create
 	$active_event
 	<br/>
 DOCHERE_print_gg_maniac_poll_create;
+echo "
+<br />
+<h2> Attended Events </h2>
+<table width='100%'>
+<tr>
+<th>Event Title / Link to Event</th>
+<th>Hours</th>
+<th>Chair?</th>
+</tr>";
+$query = new Query(sprintf("SELECT %scalendar_event.event_id as eid, title, date, hours, attended, flaked, chair FROM %scalendar_event
+		JOIN %scalendar_attend USING (event_id)
+		WHERE deleted=FALSE AND chair=1 AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+		TABLE_PREFIX, TABLE_PREFIX,
+		TABLE_PREFIX,
+		$sql_start_date, $sql_end_date, $user_id));
+while ($row = $query->fetch_row()) {
+	if ($row['attended']) {
+		echo sprintf("
+		<tr style='border: 1px solid black;'> 
+		<td> <a href='event.php?id=%s' target='_blank'> %s </a> </td>
+		<td> %s </td>
+		<td> %s </td>
+		", $row['eid'], $row['title'], $row['hours'], "Yes!");
+	}
+}
+$query = new Query(sprintf("SELECT %scalendar_event.event_id as eid, title, date, hours, attended, flaked, chair FROM %scalendar_event
+		JOIN %scalendar_attend USING (event_id)
+		WHERE deleted=FALSE AND chair=0 AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+		TABLE_PREFIX, TABLE_PREFIX,
+		TABLE_PREFIX,
+		$sql_start_date, $sql_end_date, $user_id));
+	while ($row = $query->fetch_row()) {
+		if ($row['attended']) {
+			echo sprintf("
+			<tr style='border: 1px solid black;'> 
+			<td> <a href='event.php?id=%s' target='_blank'> %s </a> </td>
+			<td> %s </td>
+			<td> %s </td>
+			", $row['eid'], $row['title'], $row['hours'], "Nah...");
+		}
+	}
+echo "</table>";
 
 Template::print_body_footer();
 Template::print_disclaimer();
