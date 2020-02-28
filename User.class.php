@@ -13,13 +13,6 @@ class User {
             } else {
                 $this->data = array();
                 $this->data['user_id'] = 0;
-                $this->data['permissions'] = array();
-
-		// Grab public user permissions
-				$query = new Query(sprintf("SELECT action_type FROM %spermissions WHERE public_users=TRUE", TABLE_PREFIX));
-				while ($row = $query->fetch_row()) {
-					$this->data['permissions'][] = $row['action_type'];
-				}
                 
 
                 $_SESSION['user'] =& $this->data; 
@@ -43,13 +36,21 @@ class User {
 		
 		// Process user login 
 		$this->data['permissions'] = array();
+
+		// Grab public user permissions
+		$query = new Query(sprintf("SELECT action_type FROM %spermissions WHERE public_users=TRUE", TABLE_PREFIX));
+		while ($row = $query->fetch_row()) {
+			$this->data['permissions'][] = $row['action_type'];
+		}
+
+		// Check if Log In
 		if (isset($_POST['login_email']) && isset($_POST['login_passphrase'])) {
 			$this->login($_POST['login_email'], $_POST['login_passphrase']);
 		} else if (isset($this->data['user_id'])){
-			 $this->getPermissions();
+			 $this->);
 		}
 		
-        if(!isset($_COOKIE['userdata']) || $_COOKIE['userid'] == 0){ 
+        if(!isset($_COOKIE['userdata'getPermissions(]) || $_COOKIE['userid'] == 0){ 
             setcookie('userdata', json_encode($this->data), time() + 86400*30);
             setcookie('userid', $this->data['user_id'], time() + 86400*30);
         }
