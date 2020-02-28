@@ -46,7 +46,7 @@ class User {
 		if (isset($_POST['login_email']) && isset($_POST['login_passphrase'])) {
 			$this->login($_POST['login_email'], $_POST['login_passphrase']);
 		} else {
-			getPermissions();
+			// getPermissions();
 		}
 		
         if(!isset($_COOKIE['userdata']) || $_COOKIE['userid'] == 0){ 
