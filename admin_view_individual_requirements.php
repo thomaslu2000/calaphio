@@ -347,6 +347,48 @@ if (!$g_user->is_logged_in() || !$g_user->permit("admin change passphrase")) {
 	} else {
 		$active_event = "0 Active Event: $active_events_count Active Event <br/>";
 	}
+	$attended_table = "
+	<br />
+	<h2> Attended Events </h2>
+	<table width='100%'>
+	<tr>
+	<th>Event Title / Link to Event</th>
+	<th>Hours</th>
+	<th>Chair?</th>
+	</tr>";
+	$query = new Query(sprintf("SELECT %scalendar_event.event_id as eid, title, date, hours, attended, flaked, chair FROM %scalendar_event
+			JOIN %scalendar_attend USING (event_id)
+			WHERE deleted=FALSE AND chair=1 AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+			TABLE_PREFIX, TABLE_PREFIX,
+			TABLE_PREFIX,
+			$sql_start_date, $sql_end_date, $user_id));
+	while ($row = $query->fetch_row()) {
+		if ($row['attended']) {
+			$attended_table .= sprintf("
+			<tr style='border: 1px solid black;'> 
+			<td> <a href='event.php?id=%s' target='_blank'> %s </a> </td>
+			<td> %s </td>
+			<td> %s </td>
+			", $row['eid'], $row['title'], $row['hours'], "Yes!");
+		}
+	}
+	$query = new Query(sprintf("SELECT %scalendar_event.event_id as eid, title, date, hours, attended, flaked, chair FROM %scalendar_event
+			JOIN %scalendar_attend USING (event_id)
+			WHERE deleted=FALSE AND chair=0 AND date BETWEEN '%s' AND '%s' AND user_id=%d ORDER BY date ASC",
+			TABLE_PREFIX, TABLE_PREFIX,
+			TABLE_PREFIX,
+			$sql_start_date, $sql_end_date, $user_id));
+		while ($row = $query->fetch_row()) {
+			if ($row['attended']) {
+				$attended_table .= sprintf("
+				<tr style='border: 1px solid black;'> 
+				<td> <a href='event.php?id=%s' target='_blank'> %s </a> </td>
+				<td> %s </td>
+				<td> %s </td>
+				", $row['eid'], $row['title'], $row['hours'], "Nah...");
+			}
+		}
+	$attended_table .= "</table>";
 }
 
 $query = new Query(sprintf("SELECT apo_actives.user_id as user_id, firstname, lastname FROM apo_users INNER JOIN apo_actives ON apo_actives.user_id = apo_users.user_id ORDER BY firstname ASC"));
@@ -398,7 +440,9 @@ echo <<<DOCHERE_print_gg_maniac_poll_create
 	$leadership
 	$active_event
 	<br/>
+	$attended_table
 DOCHERE_print_gg_maniac_poll_create;
+
 
 Template::print_body_footer();
 Template::print_disclaimer();
