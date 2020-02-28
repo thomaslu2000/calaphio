@@ -45,8 +45,8 @@ class User {
 		$this->data['permissions'] = array();
 		if (isset($_POST['login_email']) && isset($_POST['login_passphrase'])) {
 			$this->login($_POST['login_email'], $_POST['login_passphrase']);
-		} else {
-			// getPermissions();
+		} else if (isset($this->data['user_id'])){
+			 $this->getPermissions();
 		}
 		
         if(!isset($_COOKIE['userdata']) || $_COOKIE['userid'] == 0){ 
@@ -168,7 +168,7 @@ class User {
 			$_SESSION['user'] = $this->data;
 			
 			// Grab all of the user's permissions
-			getPermissions();
+			$this->getPermissions();
             if (in_array("calendar view deleted", $this->data['permissions'])){
                 $query = new Query(sprintf("SELECT hide_deleted FROM %suser_settings WHERE user_id=%d", TABLE_PREFIX, $this->data['user_id']));
                 $this->data['hide_deleted'] = ($row_del = $query->fetch_row() and $row_del['hide_deleted']==1);
