@@ -10,7 +10,6 @@ class User {
             if (isset($_COOKIE['userdata'])){
                 $this->data = json_decode($_COOKIE['userdata'], true);
                 $_SESSION['user'] = $this->data;
-                $this->data['permissions'] = array();
             } else {
                 $this->data = array();
                 $this->data['user_id'] = 0;
@@ -43,7 +42,7 @@ class User {
         
 		
 		// Process user login 
-		// $this->data['permissions'] = array();
+		$this->data['permissions'] = array();
 		if (isset($_POST['login_email']) && isset($_POST['login_passphrase'])) {
 			$this->login($_POST['login_email'], $_POST['login_passphrase']);
 		}
