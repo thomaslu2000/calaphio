@@ -12,7 +12,14 @@ class User {
                 $_SESSION['user'] = $this->data;
             } else {
                 $this->data = array();
-                $this->data['user_id'] = 0;
+				$this->data['user_id'] = 0;
+				$this->data['permissions'] = array();
+
+				// Grab public user permissions
+				$query = new Query(sprintf("SELECT action_type FROM %spermissions WHERE public_users=TRUE", TABLE_PREFIX));
+				while ($row = $query->fetch_row()) {
+				$this->data['permissions'][] = $row['action_type'];
+				}
                 
 
                 $_SESSION['user'] =& $this->data; 
@@ -37,11 +44,7 @@ class User {
 		// Process user login 
 		$this->data['permissions'] = array();
 
-		// Grab public user permissions
-		$query = new Query(sprintf("SELECT action_type FROM %spermissions WHERE public_users=TRUE", TABLE_PREFIX));
-		while ($row = $query->fetch_row()) {
-			$this->data['permissions'][] = $row['action_type'];
-		}
+		
 
 		// Check if Log In
 		if (isset($_POST['login_email']) && isset($_POST['login_passphrase'])) {
