@@ -45,6 +45,8 @@ class User {
 		$this->data['permissions'] = array();
 		if (isset($_POST['login_email']) && isset($_POST['login_passphrase'])) {
 			$this->login($_POST['login_email'], $_POST['login_passphrase']);
+		} else {
+			getPermissions();
 		}
 		
         if(!isset($_COOKIE['userdata']) || $_COOKIE['userid'] == 0){ 
@@ -123,6 +125,13 @@ class User {
 		return isset($email) && eregi('^[0-9a-zA-Z\._\-]+@[0-9a-zA-Z\._\-]+\.[a-zA-Z]+$', $email);
 	}
 	
+	function getPermissions() {
+		$query_perm = new Query(sprintf("SELECT DISTINCT action_type FROM %spermissions_groups JOIN %spermissions USING (group_id) WHERE user_id=%d UNION SELECT action_type FROM %spermissions WHERE all_members=TRUE", TABLE_PREFIX, TABLE_PREFIX, $this->data['user_id'], TABLE_PREFIX));
+		while ($row_perm = $query_perm->fetch_row()) {
+			$this->data['permissions'][] = $row_perm['action_type'];
+		}
+	}
+
 	/**
 	 * Returns true on successful login. */
 	function login($email, $passphrase) {
@@ -159,10 +168,7 @@ class User {
 			$_SESSION['user'] = $this->data;
 			
 			// Grab all of the user's permissions
-			$query_perm = new Query(sprintf("SELECT DISTINCT action_type FROM %spermissions_groups JOIN %spermissions USING (group_id) WHERE user_id=%d UNION SELECT action_type FROM %spermissions WHERE all_members=TRUE", TABLE_PREFIX, TABLE_PREFIX, $this->data['user_id'], TABLE_PREFIX));
-			while ($row_perm = $query_perm->fetch_row()) {
-				$this->data['permissions'][] = $row_perm['action_type'];
-			}
+			getPermissions();
             if (in_array("calendar view deleted", $this->data['permissions'])){
                 $query = new Query(sprintf("SELECT hide_deleted FROM %suser_settings WHERE user_id=%d", TABLE_PREFIX, $this->data['user_id']));
                 $this->data['hide_deleted'] = ($row_del = $query->fetch_row() and $row_del['hide_deleted']==1);
